@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A股 AI 选股工具</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="terminal-shell">
+      <header class="topbar">
+        <div class="brand-lockup">
+          <p class="eyebrow">Market Terminal</p>
+          <div class="brand-title-row">
+            <h1>A股 AI 选股工具</h1>
+            <span class="terminal-badge">LIVE SCAN</span>
+          </div>
+        </div>
+        <div class="topbar-meta">
+          <span id="updated-at" class="meta-pill">刷新：--</span>
+          <a class="meta-link" href="/docs" target="_blank" rel="noreferrer">API 文档</a>
+        </div>
+      </header>
+
+      <section class="market-strip">
+        <article id="market-sentiment-tile" class="market-tile market-sentiment-tile">
+          <span class="tile-label">市场情绪</span>
+          <strong id="sentiment-value" class="tile-value">--</strong>
+          <small id="sentiment-summary">--</small>
+        </article>
+        <article class="market-tile">
+          <span class="tile-label">建议仓位比例</span>
+          <strong id="exposure-value" class="tile-value">--</strong>
+          <small>过滤器</small>
+        </article>
+        <article class="market-tile">
+          <span class="tile-label">市场广度</span>
+          <strong id="breadth-value" class="tile-value">--</strong>
+          <small>广度</small>
+        </article>
+        <article class="market-tile">
+          <span class="tile-label">候选股数量</span>
+          <strong id="signal-count-value" class="tile-value">--</strong>
+          <small>当日</small>
+        </article>
+      </section>
+
+      <section class="sentiment-overview">
+        <article id="sentiment-overview-card" class="sentiment-hero-card">
+          <div class="detail-subhead">
+            <h3>市场情绪</h3>
+            <span id="sentiment-temperature-label" class="subhead-meta">--</span>
+          </div>
+          <div class="sentiment-headline-row">
+            <strong id="sentiment-headline" class="sentiment-headline">--</strong>
+            <span id="sentiment-action-bias" class="emotion-bias-chip">--</span>
+          </div>
+          <p id="sentiment-hero-summary" class="body-copy">--</p>
+          <div class="sentiment-temperature-panel">
+            <div class="temperature-meta-row">
+              <span>情绪温度</span>
+              <strong id="sentiment-temperature-value">--</strong>
+            </div>
+            <div class="temperature-bar-track">
+              <div id="sentiment-temperature-fill" class="temperature-bar-fill"></div>
+            </div>
+          </div>
+          <div id="sentiment-tag-row" class="tag-row">
+            <span>--</span>
+          </div>
+        </article>
+        <article id="sentiment-playbook-card" class="sentiment-side-card">
+          <div class="detail-subhead">
+            <h3>策略</h3>
+            <span class="subhead-meta">Playbook</span>
+          </div>
+          <p id="sentiment-action-note" class="secondary-copy">--</p>
+          <ul id="sentiment-playbook" class="risk-list">
+            <li>--</li>
+          </ul>
+        </article>
+        <article id="sentiment-watch-card" class="sentiment-side-card">
+          <div class="detail-subhead">
+            <h3>留意</h3>
+            <span class="subhead-meta">Watch</span>
+          </div>
+          <div class="sentiment-metric-grid">
+            <div class="sentiment-metric-card">
+              <span>广度</span>
+              <strong id="sentiment-breadth-metric">--</strong>
+            </div>
+            <div class="sentiment-metric-card">
+              <span>动量</span>
+              <strong id="sentiment-momentum-metric">--</strong>
+            </div>
+            <div class="sentiment-metric-card">
+              <span>北向</span>
+              <strong id="sentiment-northbound-metric">--</strong>
+            </div>
+          </div>
+          <ul id="sentiment-watchouts" class="risk-list">
+            <li>--</li>
+          </ul>
+        </article>
+      </section>
+
+      <main class="workspace-grid">
+        <div class="left-rail">
+          <section class="panel sectors-panel">
+            <div class="panel-header">
+              <h2>行业轮动</h2>
+            </div>
+            <div id="sector-summary-bar" class="sector-summary-bar">
+              <p class="empty-state">--</p>
+            </div>
+            <div id="sector-list" class="stack-list">
+              <p class="empty-state">--</p>
+            </div>
+          </section>
+
+          <section class="panel trade-sidebar-panel">
+            <div class="panel-header detail-header detail-header-row">
+              <div class="detail-header-main">
+                <h2>历史交易诊断</h2>
+                <p id="trade-coverage-text">--</p>
+              </div>
+              <div class="ai-action-row header-action-row">
+                <button id="trade-ai-analysis-button" type="button" class="ai-action-button">
+                  AI 交易复盘
+                </button>
+              </div>
+            </div>
+            <div id="trade-sidebar-summary" class="trade-sidebar-summary">
+              <p class="empty-state">--</p>
+            </div>
+
+            <form id="trade-import-form" class="import-form">
+              <label class="field-group">
+                <span>导入模板</span>
+                <select id="trade-profile-select" name="profile_id"></select>
+              </label>
+              <label class="field-group">
+                <span>交易文件</span>
+                <input id="trade-file-input" name="file" type="file" accept=".csv,.xlsx" />
+              </label>
+              <button id="trade-import-button" type="submit" class="primary-action-button">导入</button>
+              <p id="trade-import-status" class="secondary-copy">CSV / XLSX</p>
+            </form>
+
+            <div class="detail-block compact-block">
+              <div class="detail-subhead">
+                <h3>导入指引</h3>
+                <span class="subhead-meta">Broker Guide</span>
+              </div>
+              <div id="trade-profile-guide" class="stack-list">
+                <p class="empty-state">--</p>
+              </div>
+            </div>
+
+            <div class="detail-block compact-block">
+              <div class="detail-subhead">
+                <h3>交易画像</h3>
+                <span class="subhead-meta">Style Profile</span>
+              </div>
+              <div id="trade-style-profile" class="trade-style-card">
+                <p class="empty-state">--</p>
+              </div>
+            </div>
+
+            <div id="trade-summary-metrics" class="trade-metrics-grid compact-grid">
+              <p class="empty-state">--</p>
+            </div>
+
+            <div class="detail-block compact-block">
+              <div class="detail-subhead">
+                <h3>主要结论</h3>
+                <span class="subhead-meta">Key Findings</span>
+              </div>
+              <div id="trade-error-patterns" class="stack-list compact-stack">
+                <p class="empty-state">--</p>
+              </div>
+              <div id="trade-effective-patterns" class="stack-list compact-stack secondary-insight-stack">
+                <p class="empty-state">--</p>
+              </div>
+              <ul id="trade-recommendations" class="risk-list compact-risk-list">
+                <li>--</li>
+              </ul>
+            </div>
+
+            <div class="detail-block compact-block">
+              <div class="detail-subhead">
+                <h3>最近批次</h3>
+                <span class="subhead-meta">Import History</span>
+              </div>
+              <div id="trade-batch-list" class="stack-list compact-stack">
+                <p class="empty-state">--</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="analysis-grid">
+          <section class="panel candidates-panel">
+            <div class="panel-header">
+              <h2>AI 候选池</h2>
+              <p id="signal-subtitle">--</p>
+            </div>
+            <div id="mode-toolbar" class="mode-toolbar">
+              <p class="empty-state">--</p>
+            </div>
+            <div id="signal-list" class="signal-list">
+              <p class="empty-state">--</p>
+            </div>
+          </section>
+
+          <section class="panel detail-overview-panel">
+            <div class="panel-header detail-header detail-header-row">
+              <div class="detail-header-main">
+                <h2>个股总览</h2>
+                <p id="detail-subtitle">--</p>
+              </div>
+              <div class="ai-action-row header-action-row">
+                <button id="refresh-ai-risk-button" type="button" class="ai-action-button">
+                  AI 交易执行分析
+                </button>
+              </div>
+            </div>
+
+            <div class="detail-overview-stack">
+              <div id="detail-quick-grid" class="detail-quick-grid">
+                <p class="empty-state">--</p>
+              </div>
+
+              <div class="detail-block insight-block">
+                <div class="detail-subhead">
+                  <h3>核心判断</h3>
+                  <span class="subhead-meta">Research Thesis</span>
+                </div>
+                <p id="detail-thesis" class="body-copy">--</p>
+                <div id="detail-reason-tags" class="tag-row">
+                  <span>--</span>
+                </div>
+                <div id="detail-reason-list" class="selection-reason-list">
+                  <p class="empty-state">--</p>
+                </div>
+                <p id="detail-market-context" class="secondary-copy"></p>
+              </div>
+
+              <div class="detail-block feature-block">
+                <div class="detail-subhead">
+                  <h3>核心特征</h3>
+                  <span class="subhead-meta">Score Matrix</span>
+                </div>
+                <div id="feature-grid" class="feature-grid">
+                  <p class="empty-state">--</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="detail-bottom-grid">
+            <section class="panel event-panel">
+              <div class="detail-subhead">
+                <h3>近期事件</h3>
+                <span class="subhead-meta">Event Stream</span>
+              </div>
+              <div id="event-tab-toolbar" class="event-tab-toolbar">
+                <button type="button" class="event-tab-chip active">官方公告</button>
+                <button type="button" class="event-tab-chip">资讯/研报</button>
+              </div>
+              <div id="event-tone-toolbar" class="event-tone-toolbar">
+                <button type="button" class="event-tone-chip active">全部</button>
+                <button type="button" class="event-tone-chip">利好</button>
+                <button type="button" class="event-tone-chip">中性</button>
+                <button type="button" class="event-tone-chip">风险</button>
+              </div>
+              <div id="event-list" class="stack-list">
+                <p class="empty-state">--</p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div id="ai-analysis-modal" class="ai-modal is-hidden" aria-hidden="true">
+      <div id="ai-analysis-backdrop" class="ai-modal-backdrop"></div>
+      <section class="ai-modal-panel" role="dialog" aria-modal="true" aria-labelledby="ai-analysis-title">
+        <div class="ai-modal-header">
+          <div>
+            <p class="eyebrow">AI Output</p>
+            <h2 id="ai-analysis-title">AI 交易执行分析</h2>
+          </div>
+          <button id="ai-analysis-close" type="button" class="ai-modal-close">关闭</button>
+        </div>
+        <div id="ai-analysis-modal-body" class="ai-modal-body">
+          <p class="empty-state">--</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
