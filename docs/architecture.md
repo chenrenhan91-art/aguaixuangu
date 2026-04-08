@@ -27,9 +27,9 @@
 
 ## 展示层设计
 
-- 默认展示入口为 `backend/app/static/index.html`
-- `app.js` 负责调用 API 并渲染候选池、个股详情和历史交易诊断页面
-- `styles.css` 提供单页仪表盘样式
+- 默认展示入口为项目根目录 `index.html`
+- 离线页面由 `data_pipeline/renderers/preview_html.py` 生成
+- 页面所需样式与交互脚本已内嵌进 `index.html`
 
 ## 替换真实数据时的建议顺序
 

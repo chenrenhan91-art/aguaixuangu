@@ -2133,8 +2133,13 @@ __EMBEDDED_CSS__
 
 
 def render_preview_html(snapshot: dict, output_path: Path) -> None:
-    backend_static_dir = Path(__file__).resolve().parents[2] / "backend" / "app" / "static"
-    embedded_css = (backend_static_dir / "styles.css").read_text(encoding="utf-8")
+    existing_index = output_path if output_path.exists() else Path(__file__).resolve().parents[2] / "index.html"
+    existing_text = existing_index.read_text(encoding="utf-8")
+    style_start = existing_text.find("<style>")
+    style_end = existing_text.find("</style>", style_start + 7)
+    if style_start == -1 or style_end == -1:
+        raise FileNotFoundError("Unable to locate embedded CSS source for index.html generation.")
+    embedded_css = existing_text[style_start + len("<style>") : style_end].strip("\n")
     merged_snapshot = merge_cached_ai_analysis(snapshot, output_path)
     market_payload = load_market_preview_payload(merged_snapshot)
     trade_profiles_payload, trade_diagnostics_payload = load_trade_preview_payload()

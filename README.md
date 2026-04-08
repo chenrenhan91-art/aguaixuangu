@@ -51,7 +51,7 @@ make pipeline-candidates
 
 - 拉取 AKShare 行业和个股真实数据
 - 基于新闻标题和摘要做事件抽取
-- 在项目根目录导出一个可直接双击预览的 `A股AI选股工具预览.html`
+- 在项目根目录导出唯一的离线页面 `index.html`
 
 ## 当前骨架包含的能力
 

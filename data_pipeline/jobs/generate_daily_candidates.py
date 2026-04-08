@@ -1,7 +1,6 @@
 import json
 from datetime import datetime
 from pathlib import Path
-from shutil import copyfile
 
 from data_pipeline.config import load_config
 from data_pipeline.renderers.preview_html import render_preview_html
@@ -23,17 +22,14 @@ def run_generate_daily_candidates() -> dict[str, str]:
     dated_output_path.write_text(payload, encoding="utf-8")
     latest_output_path.write_text(payload, encoding="utf-8")
 
-    preview_path = config.project_root / "A股AI选股工具预览.html"
-    primary_html_path = config.project_root / "A股AI选股工具.html"
-    render_preview_html(snapshot, primary_html_path)
-    copyfile(primary_html_path, preview_path)
+    index_html_path = config.project_root / "index.html"
+    render_preview_html(snapshot, index_html_path)
 
     return {
         "trade_date": trade_date,
         "json_output": str(latest_output_path),
         "dated_json_output": str(dated_output_path),
-        "primary_html": str(primary_html_path),
-        "preview_html": str(preview_path),
+        "index_html": str(index_html_path),
         "candidate_count": str(len(snapshot["candidate_pool"])),
     }
 

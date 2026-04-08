@@ -3,15 +3,13 @@ from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
-from fastapi.staticfiles import StaticFiles
 
 from app.api.router import api_router
 from app.core.config import get_settings
 
 
 settings = get_settings()
-static_dir = Path(__file__).resolve().parent / "static"
-index_file = static_dir / "index.html"
+index_file = Path(__file__).resolve().parents[2] / "index.html"
 
 app = FastAPI(
     title=settings.app_name,
@@ -26,8 +24,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-app.mount("/static", StaticFiles(directory=static_dir), name="static")
 
 
 @app.get("/", include_in_schema=False)
