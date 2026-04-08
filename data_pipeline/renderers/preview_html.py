@@ -327,6 +327,10 @@ __EMBEDDED_CSS__
 
       .detail-bottom-grid {
         grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: minmax(0, 1.52fr) minmax(320px, 0.88fr);
+        gap: 10px;
+        align-items: stretch;
       }
 
       .preview-rail .panel {
@@ -567,6 +571,10 @@ __EMBEDDED_CSS__
           grid-template-columns: minmax(330px, 0.9fr) minmax(0, 1.56fr);
         }
 
+        .detail-bottom-grid {
+          grid-template-columns: minmax(0, 1.34fr) minmax(296px, 0.92fr);
+        }
+
         .diagnostics-layout {
           grid-template-columns: minmax(300px, 0.9fr) minmax(640px, 1.4fr);
         }
@@ -580,6 +588,10 @@ __EMBEDDED_CSS__
         }
 
         .analysis-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .detail-bottom-grid {
           grid-template-columns: 1fr;
         }
 
@@ -780,6 +792,35 @@ __EMBEDDED_CSS__
                 <div id="event-tone-toolbar" class="event-tone-toolbar"></div>
                 <div id="event-list" class="stack-list"></div>
               </section>
+
+              <section class="panel quick-import-panel">
+                <div class="panel-header">
+                  <div>
+                    <h2>交割单导入</h2>
+                    <p>Excel / CSV</p>
+                  </div>
+                  <button id="trade-quick-open-button" type="button" class="ghost-button">查看诊断</button>
+                </div>
+                <form id="trade-quick-import-form" class="import-form">
+                  <label class="field-group">
+                    <span>导入模板</span>
+                    <select id="trade-quick-profile-select" name="profile_id"></select>
+                  </label>
+                  <label class="field-group">
+                    <span>交易文件</span>
+                    <input id="trade-quick-file-input" name="file" type="file" accept=".csv,.txt,.xlsx,.xls" />
+                  </label>
+                  <button id="trade-quick-import-button" type="submit" class="primary-button">导入并生成诊断</button>
+                  <p id="trade-quick-import-status" class="secondary-copy">支持 Excel / CSV 本地解析</p>
+                </form>
+                <div class="detail-block compact-block">
+                  <div class="detail-subhead">
+                    <h3>字段模板</h3>
+                    <span class="subhead-meta">Excel Schema</span>
+                  </div>
+                  <div id="trade-quick-field-grid" class="field-grid"></div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
@@ -801,7 +842,7 @@ __EMBEDDED_CSS__
                 </label>
                 <label class="field-group">
                   <span>交易文件</span>
-                  <input id="trade-file-input" name="file" type="file" accept=".csv,.txt,.xlsx" />
+                  <input id="trade-file-input" name="file" type="file" accept=".csv,.txt,.xlsx,.xls" />
                 </label>
                 <button id="trade-import-button" type="submit" class="primary-button">导入</button>
                 <p id="trade-import-status" class="secondary-copy">CSV / XLSX</p>
@@ -836,6 +877,7 @@ __EMBEDDED_CSS__
             <section class="panel">
               <div class="panel-header">
                 <h2>交易风格画像</h2>
+                <button id="trade-ai-review-button" type="button" class="ghost-button">AI 交易复盘</button>
               </div>
               <div id="trade-style-card" class="style-card"></div>
               <div id="trade-summary-grid" class="trade-summary-grid four-col"></div>
@@ -897,6 +939,7 @@ __EMBEDDED_CSS__
       </section>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <script>
       const snapshot = __SNAPSHOT_JSON__;
       const marketPayload = __MARKET_PAYLOAD_JSON__;
@@ -974,6 +1017,51 @@ __EMBEDDED_CSS__
               <div class="tag-row">
                 <span>模型预留</span>
                 <span>弹窗输出</span>
+              </div>
+            </section>
+          `;
+        }
+
+        if (aiRiskAnalysis.trader_profile || aiRiskAnalysis.behavior_tags || aiRiskAnalysis.adjustments) {
+          const meta = [
+            aiRiskAnalysis.generated_at ? `生成 ${formatDateTime(aiRiskAnalysis.generated_at)}` : null,
+            aiRiskAnalysis.model || "本地结构化分析",
+            `置信度 ${Math.round(Number(aiRiskAnalysis.confidence || 0.62) * 100)} / 100`,
+          ].filter(Boolean);
+          return `
+            <section class="ai-modal-window">
+              <div class="ai-window-head">
+                <h3 class="ai-modal-title">AI 交易复盘</h3>
+                <div class="ai-window-meta">
+                  ${meta.map((item) => `<span class="ai-meta-chip">${item}</span>`).join("")}
+                </div>
+              </div>
+              <p class="ai-modal-summary">${aiRiskAnalysis.summary || "--"}</p>
+              <div class="ai-insight-grid">
+                <article class="ai-insight-card full-span">
+                  <strong>交易者画像</strong>
+                  <p class="ai-key-line">${aiRiskAnalysis.trader_profile || "--"}</p>
+                </article>
+                <article class="ai-insight-card">
+                  <strong>优势延续</strong>
+                  <ul class="ai-list">${(aiRiskAnalysis.strengths || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                </article>
+                <article class="ai-insight-card">
+                  <strong>风险修正</strong>
+                  <ul class="ai-list">${(aiRiskAnalysis.weaknesses || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                </article>
+                <article class="ai-insight-card">
+                  <strong>行为标签</strong>
+                  <div class="tag-row">${(aiRiskAnalysis.behavior_tags || []).map((item) => `<span>${item}</span>`).join("") || "<span>--</span>"}</div>
+                </article>
+                <article class="ai-insight-card">
+                  <strong>优化动作</strong>
+                  <ul class="ai-list">${(aiRiskAnalysis.adjustments || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                </article>
+                <article class="ai-insight-card full-span">
+                  <strong>下一阶段计划</strong>
+                  <ul class="ai-list">${(aiRiskAnalysis.next_cycle_plan || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                </article>
               </div>
             </section>
           `;
@@ -1121,14 +1209,21 @@ __EMBEDDED_CSS__
         );
       }
 
+      function setCurrentView(view) {
+        if (!view || view === state.currentView) {
+          return;
+        }
+        state.currentView = view;
+        renderViewTabs();
+      }
+
       function setupViewTabs() {
         document.querySelectorAll(".view-tab").forEach((button) => {
           button.addEventListener("click", () => {
-            if (!button.dataset.view || button.dataset.view === state.currentView) {
+            if (!button.dataset.view) {
               return;
             }
-            state.currentView = button.dataset.view;
-            renderViewTabs();
+            setCurrentView(button.dataset.view);
           });
         });
       }
@@ -1611,10 +1706,26 @@ __EMBEDDED_CSS__
         return Number.isFinite(parsed) ? parsed : fallback;
       }
 
+      function excelSerialToDateString(value) {
+        const serial = Number(value);
+        if (!Number.isFinite(serial)) {
+          throw new Error("invalid excel date");
+        }
+        const wholeDays = Math.floor(serial);
+        const utcMillis = Date.UTC(1899, 11, 30) + wholeDays * 24 * 60 * 60 * 1000;
+        return new Date(utcMillis).toISOString().slice(0, 10);
+      }
+
       function parseTradeDate(value) {
+        if (typeof value === "number" && Number.isFinite(value) && value > 20000) {
+          return excelSerialToDateString(value);
+        }
         const raw = String(value || "").trim();
         if (!raw) {
           throw new Error("missing trade date");
+        }
+        if (/^\\d{5}$/.test(raw)) {
+          return excelSerialToDateString(Number(raw));
         }
         if (/^\\d{8}$/.test(raw)) {
           return `${raw.slice(0, 4)}-${raw.slice(4, 6)}-${raw.slice(6, 8)}`;
@@ -1634,6 +1745,48 @@ __EMBEDDED_CSS__
           return "sell";
         }
         throw new Error("unsupported side");
+      }
+
+      async function parseSpreadsheetFile(file) {
+        const filename = String(file?.name || "").toLowerCase();
+        if (filename.endsWith(".csv") || filename.endsWith(".txt")) {
+          return {
+            rows: parseCsvText(await file.text()),
+            detectedFormat: "csv",
+          };
+        }
+        if (filename.endsWith(".xlsx") || filename.endsWith(".xls")) {
+          if (!window.XLSX) {
+            throw new Error("当前页面未成功加载 Excel 解析库，请刷新后重试。");
+          }
+          const buffer = await file.arrayBuffer();
+          const workbook = window.XLSX.read(buffer, {
+            type: "array",
+            cellDates: false,
+            raw: false,
+          });
+          const sheetName = workbook.SheetNames.find((name) => {
+            const sheet = workbook.Sheets[name];
+            return sheet && sheet["!ref"];
+          });
+          if (!sheetName) {
+            throw new Error("Excel 中没有可读取的工作表。");
+          }
+          const sheet = workbook.Sheets[sheetName];
+          const rows = window.XLSX.utils.sheet_to_json(sheet, {
+            defval: "",
+            raw: false,
+            blankrows: false,
+          });
+          if (!rows.length) {
+            throw new Error("Excel 中没有有效数据行。");
+          }
+          return {
+            rows,
+            detectedFormat: "xlsx",
+          };
+        }
+        throw new Error("当前仅支持 CSV、TXT、XLSX、XLS 文件。");
       }
 
       function standardizeTrades(rows, broker) {
@@ -1777,7 +1930,41 @@ __EMBEDDED_CSS__
         return `${value > 0 ? "+" : ""}${percent}%`;
       }
 
-      function buildTradeDiagnostics(trades, broker, filename) {
+      function buildOfflineTradeAiAnalysis(payload) {
+        const style = payload.style_profile || {};
+        const strengths = (payload.effective_patterns || []).map((item) => item.detail).slice(0, 2);
+        const weaknesses = (payload.error_patterns || []).map((item) => item.detail).slice(0, 2);
+        const behaviorTags = [...(style.traits || []).slice(0, 2)];
+        if ((payload.summary_metrics || []).find((item) => item.label === "闭环交易数" && Number(item.value) < 8)) {
+          behaviorTags.push("样本偏少");
+        }
+        if (!strengths.length) {
+          strengths.push("当前样本下没有明显失真，主要优势来自相对稳定的交易节奏。");
+        }
+        if (!weaknesses.length) {
+          weaknesses.push("当前没有突出的结构性错误，但仍需继续扩大样本验证策略稳定性。");
+        }
+        return {
+          status: "offline_structured",
+          model: "local-structured-review",
+          confidence: Math.min(0.84, 0.52 + Math.min((payload.recent_batches?.[0]?.imported_count || 0) / 40, 0.26)),
+          summary: `${style.display_name || "当前交易风格"}为主，当前复盘更适合围绕已验证有效的场景继续收紧开仓条件。`,
+          trader_profile: style.summary || "等待更多闭环交易后再提升风格判断强度。",
+          strengths,
+          weaknesses,
+          behavior_tags: behaviorTags,
+          adjustments: (payload.recommendations || []).slice(0, 3),
+          next_cycle_plan: [
+            "先保留当前最有效的交易模板，减少模式外出手。",
+            "把下一阶段的开仓条件写成清单，只记录是否满足，不凭感觉决策。",
+            "累计更多闭环交易后，再复核胜率、盈亏比和持仓周期是否稳定。",
+          ],
+          source: "offline_rules",
+          generated_at: new Date().toISOString(),
+        };
+      }
+
+      function buildTradeDiagnostics(trades, broker, filename, detectedFormat = "csv") {
         const roundTrips = computeRoundTrips(trades);
         const styleProfile = inferTradeStyle(roundTrips, trades);
         const wins = roundTrips.filter((item) => item.pnl > 0);
@@ -1852,19 +2039,19 @@ __EMBEDDED_CSS__
           batch_id: `offline-${Date.now()}`,
           imported_at: new Date().toISOString(),
           broker,
-          source_type: "offline_csv",
+          source_type: "offline_import",
           filename,
-          detected_format: "csv",
+          detected_format: detectedFormat,
           row_count: trades.length,
           imported_count: trades.length,
           ignored_count: 0,
           symbol_count: new Set(trades.map((item) => item.symbol)).size,
           start_date: tradeDates[0],
           end_date: tradeDates[tradeDates.length - 1],
-          notes: "离线 HTML 本地解析结果，仅在当前页面有效。",
+          notes: `离线 HTML 本地解析结果，仅在当前页面有效。当前格式：${String(detectedFormat || "csv").toUpperCase()}。`,
         };
 
-        return {
+        const payload = {
           status: "offline_live",
           account_label: `${broker} 本地导入结果`,
           coverage_text: `已在离线页面解析 ${trades.length} 条成交记录，覆盖 ${batch.start_date} 至 ${batch.end_date}。`,
@@ -1887,24 +2074,39 @@ __EMBEDDED_CSS__
           recommendations: recommendations.slice(0, 4),
           recent_batches: [batch],
         };
+        payload.ai_analysis = buildOfflineTradeAiAnalysis(payload);
+        return payload;
       }
 
       function renderTradeProfiles() {
-        const select = document.getElementById("trade-profile-select");
-        select.innerHTML = "";
-        state.tradeProfiles.forEach((profile) => {
-          const option = document.createElement("option");
-          option.value = profile.profile_id;
-          option.textContent = `${profile.display_name} · ${profile.recommended_format}`;
-          select.appendChild(option);
+        const selects = [
+          document.getElementById("trade-profile-select"),
+          document.getElementById("trade-quick-profile-select"),
+        ].filter(Boolean);
+
+        selects.forEach((select) => {
+          select.innerHTML = "";
+          state.tradeProfiles.forEach((profile) => {
+            const option = document.createElement("option");
+            option.value = profile.profile_id;
+            option.textContent = `${profile.display_name} · ${profile.recommended_format}`;
+            select.appendChild(option);
+          });
+          select.addEventListener("change", () => {
+            renderTradeGuide(select.value);
+            selects.forEach((otherSelect) => {
+              if (otherSelect !== select) {
+                otherSelect.value = select.value;
+              }
+            });
+          });
         });
-        select.addEventListener("change", () => renderTradeGuide(select.value));
+
         if (state.tradeProfiles.length) {
           renderTradeGuide(state.tradeProfiles[0].profile_id);
         }
 
-        const fieldGrid = document.getElementById("trade-field-grid");
-        fieldGrid.innerHTML = state.tradeStandardFields
+        const fullFieldMarkup = state.tradeStandardFields
           .map(
             (field) => `
               <article class="field-card">
@@ -1918,6 +2120,26 @@ __EMBEDDED_CSS__
             `,
           )
           .join("");
+        const quickFieldMarkup = state.tradeStandardFields
+          .slice(0, 6)
+          .map(
+            (field) => `
+              <article class="field-card">
+                <strong>${field.display_name}</strong>
+                <p>${field.required ? "必填" : "可选"} · ${field.description}</p>
+              </article>
+            `,
+          )
+          .join("");
+
+        const fieldGrid = document.getElementById("trade-field-grid");
+        if (fieldGrid) {
+          fieldGrid.innerHTML = fullFieldMarkup;
+        }
+        const quickFieldGrid = document.getElementById("trade-quick-field-grid");
+        if (quickFieldGrid) {
+          quickFieldGrid.innerHTML = quickFieldMarkup;
+        }
       }
 
       function renderTradeGuide(profileId) {
@@ -1975,6 +2197,10 @@ __EMBEDDED_CSS__
         state.tradeDiagnostics = payload;
         setText("trade-coverage-text", payload.coverage_text || "暂无交易诊断。");
         renderTradeSidebarSummary(payload);
+        const tradeAiButton = document.getElementById("trade-ai-review-button");
+        if (tradeAiButton) {
+          tradeAiButton.disabled = !payload?.ai_analysis;
+        }
 
         const styleCard = document.getElementById("trade-style-card");
         const style = payload.style_profile || {};
@@ -2039,12 +2265,23 @@ __EMBEDDED_CSS__
           : '<p class="empty-state">暂无最近批次记录。</p>';
       }
 
-      function setupTradeImport() {
-        const form = document.getElementById("trade-import-form");
-        const fileInput = document.getElementById("trade-file-input");
-        const select = document.getElementById("trade-profile-select");
-        const status = document.getElementById("trade-import-status");
-        const button = document.getElementById("trade-import-button");
+      function setupTradeImportForm({
+        formId,
+        fileInputId,
+        selectId,
+        statusId,
+        buttonId,
+        switchToDiagnostics = false,
+        openAiReviewOnSuccess = true,
+      }) {
+        const form = document.getElementById(formId);
+        const fileInput = document.getElementById(fileInputId);
+        const select = document.getElementById(selectId);
+        const status = document.getElementById(statusId);
+        const button = document.getElementById(buttonId);
+        if (!form || !fileInput || !select || !status || !button) {
+          return;
+        }
         form.addEventListener("submit", async (event) => {
           event.preventDefault();
           const file = fileInput.files?.[0];
@@ -2052,31 +2289,60 @@ __EMBEDDED_CSS__
             status.textContent = "请先选择一个导出的交易文件。";
             return;
           }
-          if (!file.name.toLowerCase().endsWith(".csv") && !file.name.toLowerCase().endsWith(".txt")) {
-            status.textContent = "离线 HTML 当前只支持 CSV 即时解析；如需 XLSX，请使用在线版。";
-            return;
-          }
           button.disabled = true;
           button.textContent = "解析中...";
           try {
-            const text = await file.text();
-            const rows = parseCsvText(text);
+            const { rows, detectedFormat } = await parseSpreadsheetFile(file);
             const profile = state.tradeProfiles.find((item) => item.profile_id === select.value);
             const trades = standardizeTrades(rows, profile?.broker || "离线导入");
-            const diagnostics = buildTradeDiagnostics(trades, profile?.broker || "离线导入", file.name);
+            const diagnostics = buildTradeDiagnostics(
+              trades,
+              profile?.broker || "离线导入",
+              file.name,
+              detectedFormat,
+            );
             renderTradeDiagnostics(diagnostics);
-            status.textContent = `本地解析完成：${trades.length} 条成交记录，诊断已刷新。`;
+            status.textContent = `本地解析完成：${trades.length} 条成交记录，${String(detectedFormat).toUpperCase()} 已刷新诊断。`;
+            if (switchToDiagnostics) {
+              setCurrentView("diagnostics");
+            }
+            if (openAiReviewOnSuccess && diagnostics?.ai_analysis) {
+              openAiAnalysisModal(diagnostics.ai_analysis);
+            }
           } catch (error) {
             status.textContent = error instanceof Error ? error.message : "本地解析失败，请检查文件格式。";
           } finally {
             button.disabled = false;
-            button.textContent = "本地解析并刷新诊断";
+            button.textContent = "导入并生成诊断";
           }
+        });
+      }
+
+      function setupTradeImport() {
+        setupTradeImportForm({
+          formId: "trade-import-form",
+          fileInputId: "trade-file-input",
+          selectId: "trade-profile-select",
+          statusId: "trade-import-status",
+          buttonId: "trade-import-button",
+          switchToDiagnostics: false,
+          openAiReviewOnSuccess: true,
+        });
+        setupTradeImportForm({
+          formId: "trade-quick-import-form",
+          fileInputId: "trade-quick-file-input",
+          selectId: "trade-quick-profile-select",
+          statusId: "trade-quick-import-status",
+          buttonId: "trade-quick-import-button",
+          switchToDiagnostics: true,
+          openAiReviewOnSuccess: true,
         });
       }
 
       function setupAiModal() {
         const button = document.getElementById("refresh-ai-risk-button");
+        const tradeButton = document.getElementById("trade-ai-review-button");
+        const quickOpenButton = document.getElementById("trade-quick-open-button");
         const closeButton = document.getElementById("ai-analysis-close");
         const backdrop = document.getElementById("ai-analysis-backdrop");
         const modal = document.getElementById("ai-analysis-modal");
@@ -2087,6 +2353,16 @@ __EMBEDDED_CSS__
             const payload = getCurrentModePayload();
             const detail = payload?.stock_details?.[state.currentSymbol];
             openAiAnalysisModal(detail?.ai_risk_analysis || null);
+          });
+        }
+        if (tradeButton) {
+          tradeButton.addEventListener("click", () => {
+            openAiAnalysisModal(state.tradeDiagnostics?.ai_analysis || null);
+          });
+        }
+        if (quickOpenButton) {
+          quickOpenButton.addEventListener("click", () => {
+            setCurrentView("diagnostics");
           });
         }
         if (closeButton) {
