@@ -4,6 +4,7 @@ from fastapi.testclient import TestClient
 
 from app.core.config import get_settings
 from app.main import app
+from app.services.trade_diagnostics import _standardize_rows
 
 
 client = TestClient(app)
@@ -119,6 +120,67 @@ def test_trade_diagnostics_import_and_summary(monkeypatch, tmp_path) -> None:
     assert len(summary_payload["summary_metrics"]) >= 1
     assert len(summary_payload["recommendations"]) >= 1
     assert "ai_analysis" in summary_payload
+
+
+def test_trade_diagnostics_standardize_wps_xls_rows() -> None:
+    rows = [
+        {
+            "交易日期": 20240227.0,
+            "证券代码": "799999",
+            "证券名称": "登记指定",
+            "买卖方向": "买入",
+            "证券类别": "指定交易",
+            "业务标志": "指定交易",
+            "成交数量": "1.00",
+            "成交价格": "1.00000000",
+            "成交金额": "0.00",
+            "清算金额": "0.00",
+            "成交时间": 181426.0,
+            "净佣金": "0.00",
+            "风险金": "0.00",
+        },
+        {
+            "交易日期": 20240228.0,
+            "证券代码": "002713",
+            "证券名称": "东易日盛",
+            "买卖方向": "买入",
+            "证券类别": "股票",
+            "业务标志": "证券买入",
+            "成交数量": "3200.00",
+            "成交价格": "6.56000000",
+            "成交金额": "20992.00",
+            "清算金额": "-20997.21",
+            "成交时间": 141907.0,
+            "净佣金": "3.60",
+            "风险金": "0.00",
+        },
+        {
+            "交易日期": 20240229.0,
+            "证券代码": "002713",
+            "证券名称": "东易日盛",
+            "买卖方向": "卖出",
+            "证券类别": "股票",
+            "业务标志": "证券卖出",
+            "成交数量": "-3200.00",
+            "成交价格": "6.58000000",
+            "成交金额": "21056.00",
+            "清算金额": "21040.26",
+            "成交时间": 130148.0,
+            "净佣金": "3.60",
+            "风险金": "0.00",
+        },
+    ]
+
+    trades, ignored_rows = _standardize_rows(rows, broker="其他券商", source_type="excel")
+
+    assert len(trades) == 2
+    assert ignored_rows == ["row-1"]
+    assert trades[0].trade_date.isoformat() == "2024-02-28"
+    assert trades[0].trade_time == "14:19:07"
+    assert trades[1].trade_time == "13:01:48"
+    assert trades[1].side == "sell"
+    assert trades[1].quantity == 3200
+    assert trades[1].net_amount == 21040.26
 
 
 def test_trade_diagnostics_ai_analysis_endpoint(monkeypatch) -> None:

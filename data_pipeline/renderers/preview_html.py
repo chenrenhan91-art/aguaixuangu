@@ -1,4 +1,5 @@
 import json
+import os
 import sys
 from copy import deepcopy
 from pathlib import Path
@@ -28,6 +29,103 @@ def merge_cached_ai_analysis(snapshot: dict, output_path: Path) -> dict:
 
 
 def load_trade_preview_payload() -> tuple[dict, dict]:
+    if os.getenv("A_SHARE_EMBED_LIVE_TRADE_PREVIEW") != "1":
+        return (
+            {
+                "profiles": [
+                    {
+                        "profile_id": "generic_csv",
+                        "display_name": "通用 CSV / Excel",
+                        "broker": "其他券商",
+                        "supported_extensions": [".csv", ".xlsx", ".xls"],
+                        "recommended_format": "CSV 优先",
+                        "description": "支持本地 Excel / CSV 导入，登录后可同步到个人历史。",
+                        "export_steps": [
+                            "从券商客户端导出历史成交或交割单明细。",
+                            "保留日期、代码、方向、数量、价格等核心字段。",
+                            "建议优先直接上传原始导出表格，不要二次改列名。",
+                        ],
+                    }
+                ],
+                "standard_fields": [
+                    {
+                        "field_name": "trade_date",
+                        "display_name": "成交日期",
+                        "required": True,
+                        "description": "支持 YYYY-MM-DD、YYYY/MM/DD、YYYYMMDD。",
+                    },
+                    {
+                        "field_name": "symbol",
+                        "display_name": "证券代码",
+                        "required": True,
+                        "description": "系统会自动补齐为 6 位代码。",
+                    },
+                    {
+                        "field_name": "side",
+                        "display_name": "买卖方向",
+                        "required": True,
+                        "description": "支持 买入 / 卖出 / buy / sell。",
+                    },
+                    {
+                        "field_name": "quantity",
+                        "display_name": "成交数量",
+                        "required": True,
+                        "description": "整数股数。",
+                    },
+                    {
+                        "field_name": "price",
+                        "display_name": "成交价格",
+                        "required": True,
+                        "description": "单笔成交均价或成交价。",
+                    },
+                ],
+            },
+            {
+                "status": "demo",
+                "account_label": "登录后查看你的诊断历史",
+                "coverage_text": "当前展示的是演示诊断。登录后导入交割单，可自动生成个人 AI 复盘并保存历史。",
+                "latest_batch": None,
+                "summary_metrics": [
+                    {"label": "闭环交易数", "value": "36", "detail": "示例数据中的已完成买卖配对。"},
+                    {"label": "胜率", "value": "52.8%", "detail": "盈利单占比略高，但稳定性一般。"},
+                    {"label": "盈亏比", "value": "1.34", "detail": "总盈利 / 总亏损。"},
+                    {"label": "平均持仓", "value": "4.6 天", "detail": "更接近 3-8 天的短波段打法。"},
+                ],
+                "style_profile": {
+                    "style_id": "swing_short",
+                    "display_name": "短波段交易型",
+                    "confidence": 0.76,
+                    "summary": "盈利主要来自趋势延续阶段的 3 到 8 天持有，频繁换股会明显拉低表现。",
+                    "traits": ["偏好热点行业龙头", "更适合确认后跟随", "不适合高频冲动交易"],
+                },
+                "win_loss_comparison": [
+                    {"label": "盈利单平均持有", "value": "6.1 天", "detail": "赚钱时更愿意耐心持有。"},
+                    {"label": "亏损单平均持有", "value": "2.4 天", "detail": "止损尚算及时，但容易追高后回撤。"},
+                    {"label": "盈利单平均收益", "value": "+8.2%", "detail": "大多来自顺势延续与二次突破。"},
+                    {"label": "亏损单平均回撤", "value": "-5.9%", "detail": "集中在情绪高位接力与弱势环境出手。"},
+                ],
+                "error_patterns": [
+                    {
+                        "title": "热点追高后回落",
+                        "detail": "亏损单多数发生在放量冲高次日才介入，买点偏后。",
+                        "severity": "medium",
+                    }
+                ],
+                "effective_patterns": [
+                    {
+                        "title": "板块共振时顺势跟随有效",
+                        "detail": "行业主线明确、成交额同步放大时，交易胜率更高。",
+                        "severity": "positive",
+                    }
+                ],
+                "recommendations": [
+                    "把主要精力放在 3 到 8 天的趋势延续交易，不必追求日内频繁切换。",
+                    "热点股只做第一次回踩确认，不在连续加速后再追入。",
+                ],
+                "recent_batches": [],
+            },
+        )
+
     backend_root = Path(__file__).resolve().parents[2] / "backend"
     if str(backend_root) not in sys.path:
         sys.path.insert(0, str(backend_root))
@@ -50,7 +148,7 @@ def load_trade_preview_payload() -> tuple[dict, dict]:
                         "profile_id": "generic_csv",
                         "display_name": "通用 CSV / Excel",
                         "broker": "其他券商",
-                        "supported_extensions": [".csv", ".xlsx"],
+                        "supported_extensions": [".csv", ".xlsx", ".xls"],
                         "recommended_format": "CSV 优先",
                         "description": "离线版建议优先使用 CSV，本页支持本地即时解析。",
                         "export_steps": [
@@ -192,6 +290,12 @@ def load_market_preview_payload(snapshot: dict) -> dict:
         }
 
 
+def build_frontend_snapshot(snapshot: dict, output_path: Path) -> dict:
+    merged_snapshot = merge_cached_ai_analysis(snapshot, output_path)
+    merged_snapshot["ui_market_payload"] = load_market_preview_payload(merged_snapshot)
+    return merged_snapshot
+
+
 TEMPLATE = """<!doctype html>
 <html lang="zh-CN">
   <head>
@@ -328,8 +432,8 @@ __EMBEDDED_CSS__
       .detail-bottom-grid {
         grid-column: 1 / -1;
         display: grid;
-        grid-template-columns: minmax(0, 1.52fr) minmax(320px, 0.88fr);
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 8px;
         align-items: stretch;
       }
 
@@ -571,10 +675,6 @@ __EMBEDDED_CSS__
           grid-template-columns: minmax(330px, 0.9fr) minmax(0, 1.56fr);
         }
 
-        .detail-bottom-grid {
-          grid-template-columns: minmax(0, 1.34fr) minmax(296px, 0.92fr);
-        }
-
         .diagnostics-layout {
           grid-template-columns: minmax(300px, 0.9fr) minmax(640px, 1.4fr);
         }
@@ -588,10 +688,6 @@ __EMBEDDED_CSS__
         }
 
         .analysis-grid {
-          grid-template-columns: 1fr;
-        }
-
-        .detail-bottom-grid {
           grid-template-columns: 1fr;
         }
 
@@ -615,6 +711,152 @@ __EMBEDDED_CSS__
           grid-template-columns: 1fr;
         }
       }
+
+      .runtime-pill-group {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+      }
+
+      .runtime-status-pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 11px;
+        border-radius: 10px;
+        border: 1px solid rgba(78, 208, 255, 0.18);
+        background: rgba(78, 208, 255, 0.08);
+        color: #b8eeff;
+        font-size: 0.84rem;
+      }
+
+      .runtime-status-pill.warning {
+        border-color: rgba(255, 181, 58, 0.22);
+        background: rgba(255, 181, 58, 0.08);
+        color: #ffd986;
+      }
+
+      .auth-button,
+      .ghost-button.secondary {
+        min-height: 34px;
+        padding: 0 12px;
+        border-radius: 10px;
+        border: 1px solid rgba(124, 150, 176, 0.2);
+        background: rgba(12, 22, 34, 0.94);
+        color: #eef4fb;
+        cursor: pointer;
+      }
+
+      .auth-button.primary {
+        border-color: rgba(255, 181, 58, 0.26);
+        background: rgba(255, 181, 58, 0.1);
+        color: var(--accent-strong);
+      }
+
+      .auth-button.is-hidden,
+      .auth-panel-note.is-hidden {
+        display: none;
+      }
+
+      .auth-panel-note {
+        margin-top: 10px;
+        border-left: 3px solid rgba(255, 181, 58, 0.72);
+      }
+
+      .user-history-chip {
+        border-color: rgba(69, 212, 131, 0.22);
+        background: rgba(69, 212, 131, 0.08);
+        color: #87f0b0;
+      }
+
+      .auth-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 130;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .auth-modal.is-hidden {
+        display: none;
+      }
+
+      .auth-modal-panel {
+        position: relative;
+        z-index: 1;
+        width: min(460px, calc(100vw - 28px));
+        border-radius: 16px;
+        border: 1px solid rgba(124, 150, 176, 0.18);
+        background:
+          linear-gradient(90deg, rgba(255, 181, 58, 0.06), transparent 22%),
+          linear-gradient(180deg, rgba(7, 14, 22, 0.99), rgba(9, 18, 28, 0.99));
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+        padding: 18px 18px 16px;
+      }
+
+      .auth-modal-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+
+      .auth-modal-head h3 {
+        margin: 4px 0 0;
+        font-size: 1.16rem;
+      }
+
+      .auth-close {
+        border: 1px solid var(--line);
+        background: rgba(12, 22, 34, 0.92);
+        color: var(--text-dim);
+        border-radius: 10px;
+        min-width: 42px;
+        min-height: 34px;
+        cursor: pointer;
+      }
+
+      .auth-grid {
+        margin-top: 14px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .auth-grid input {
+        width: 100%;
+        padding: 11px 12px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: rgba(10, 18, 28, 0.98);
+        color: #f4f8fc;
+      }
+
+      .auth-actions {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        margin-top: 2px;
+      }
+
+      .auth-status-text {
+        margin: 8px 0 0;
+        color: var(--text-dim);
+        font-size: 0.84rem;
+      }
+
+      .auth-helper-list {
+        margin: 12px 0 0;
+        padding-left: 18px;
+        color: var(--text-dim);
+        font-size: 0.82rem;
+      }
+
+      .auth-helper-list li + li {
+        margin-top: 6px;
+      }
     </style>
   </head>
   <body>
@@ -624,12 +866,18 @@ __EMBEDDED_CSS__
           <p class="eyebrow">Market Terminal</p>
           <div class="brand-title-row">
             <h1>A股 AI 选股工具</h1>
-            <span class="terminal-badge">OFFLINE HTML</span>
+            <span class="terminal-badge">STATIC PAGE</span>
           </div>
         </div>
         <div class="topbar-meta">
           <span id="updated-at" class="meta-pill">刷新：--</span>
           <span id="trade-date" class="meta-pill">交易日：--</span>
+          <div class="runtime-pill-group">
+            <span id="runtime-mode-pill" class="runtime-status-pill warning">GitHub Pages · Worker 待配置</span>
+            <span id="auth-status-pill" class="runtime-status-pill">未登录</span>
+            <button id="auth-open-button" type="button" class="auth-button primary">登录</button>
+            <button id="auth-logout-button" type="button" class="auth-button is-hidden">退出</button>
+          </div>
         </div>
       </header>
 
@@ -792,35 +1040,6 @@ __EMBEDDED_CSS__
                 <div id="event-tone-toolbar" class="event-tone-toolbar"></div>
                 <div id="event-list" class="stack-list"></div>
               </section>
-
-              <section class="panel quick-import-panel">
-                <div class="panel-header">
-                  <div>
-                    <h2>交割单导入</h2>
-                    <p>Excel / CSV</p>
-                  </div>
-                  <button id="trade-quick-open-button" type="button" class="ghost-button">查看诊断</button>
-                </div>
-                <form id="trade-quick-import-form" class="import-form">
-                  <label class="field-group">
-                    <span>导入模板</span>
-                    <select id="trade-quick-profile-select" name="profile_id"></select>
-                  </label>
-                  <label class="field-group">
-                    <span>交易文件</span>
-                    <input id="trade-quick-file-input" name="file" type="file" accept=".csv,.txt,.xlsx,.xls" />
-                  </label>
-                  <button id="trade-quick-import-button" type="submit" class="primary-button">导入并生成诊断</button>
-                  <p id="trade-quick-import-status" class="secondary-copy">支持 Excel / CSV 本地解析</p>
-                </form>
-                <div class="detail-block compact-block">
-                  <div class="detail-subhead">
-                    <h3>字段模板</h3>
-                    <span class="subhead-meta">Excel Schema</span>
-                  </div>
-                  <div id="trade-quick-field-grid" class="field-grid"></div>
-                </div>
-              </section>
             </div>
           </div>
         </div>
@@ -831,10 +1050,14 @@ __EMBEDDED_CSS__
           <aside class="diagnostics-sidebar">
             <section class="panel">
               <div class="panel-header">
-                <h2>本地导入交割单</h2>
+                <h2>交割单导入</h2>
                 <p id="trade-coverage-text">--</p>
               </div>
               <div id="trade-sidebar-summary" class="trade-sidebar-summary"></div>
+              <article id="auth-panel-note" class="upload-note-card auth-panel-note">
+                <strong>登录后可同步历史</strong>
+                <p>本页在未接入账号体系前仍可本地解析；配置登录与 Worker 后，诊断历史会按用户隔离保存。</p>
+              </article>
               <form id="trade-import-form" class="import-form">
                 <label class="field-group">
                   <span>导入模板</span>
@@ -939,10 +1162,46 @@ __EMBEDDED_CSS__
       </section>
     </div>
 
+    <div id="auth-modal" class="auth-modal is-hidden" aria-hidden="true">
+      <div id="auth-modal-backdrop" class="ai-modal-backdrop"></div>
+      <section class="auth-modal-panel" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+        <div class="auth-modal-head">
+          <div>
+            <p class="eyebrow">Account</p>
+            <h3 id="auth-modal-title">登录后查看你的诊断历史</h3>
+          </div>
+          <button id="auth-close-button" type="button" class="auth-close">关闭</button>
+        </div>
+        <div class="auth-grid">
+          <input id="auth-email-input" type="email" placeholder="邮箱" autocomplete="email" />
+          <input id="auth-password-input" type="password" placeholder="密码" autocomplete="current-password" />
+          <div class="auth-actions">
+            <button id="auth-signin-button" type="button" class="primary-button">登录</button>
+            <button id="auth-signup-button" type="button" class="ghost-button secondary">注册</button>
+          </div>
+        </div>
+        <p id="auth-modal-status" class="auth-status-text">配置 Supabase 后可启用登录与个人诊断历史。</p>
+        <ul class="auth-helper-list">
+          <li>前端只保留公开的匿名登录密钥，AI 与历史写入都走 Worker 代理。</li>
+          <li>交割单会先在浏览器本地解析，再发送结构化结果到 Worker。</li>
+        </ul>
+      </section>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
     <script>
-      const snapshot = __SNAPSHOT_JSON__;
-      const marketPayload = __MARKET_PAYLOAD_JSON__;
+      const APP_RUNTIME = {
+        siteChannel: "github_pages",
+        snapshotUrl: "./data/processed/daily_candidates_latest.json",
+        aiProxyBaseUrl: "",
+        authProvider: "supabase",
+        supabaseUrl: "",
+        supabaseAnonKey: "",
+        schedules: ["12:05", "15:05"],
+      };
+
+      let snapshot = __SNAPSHOT_JSON__;
+      let marketPayload = __MARKET_PAYLOAD_JSON__;
       const importProfilesPayload = __TRADE_PROFILES_JSON__;
       const initialDiagnostics = __TRADE_DIAGNOSTICS_JSON__;
 
@@ -955,6 +1214,10 @@ __EMBEDDED_CSS__
         tradeDiagnostics: initialDiagnostics,
         tradeProfiles: importProfilesPayload.profiles || [],
         tradeStandardFields: importProfilesPayload.standard_fields || [],
+        authReady: false,
+        authConfigured: false,
+        user: null,
+        supabaseClient: null,
       };
 
       const CSV_HEADER_ALIASES = {
@@ -1006,6 +1269,317 @@ __EMBEDDED_CSS__
         if (element) {
           element.textContent = value;
         }
+      }
+
+      function hasProxyRuntime() {
+        return Boolean(APP_RUNTIME.aiProxyBaseUrl);
+      }
+
+      function hasSupabaseRuntime() {
+        return Boolean(APP_RUNTIME.supabaseUrl && APP_RUNTIME.supabaseAnonKey);
+      }
+
+      function getProxyUrl(path) {
+        if (!hasProxyRuntime()) {
+          return "";
+        }
+        return `${APP_RUNTIME.aiProxyBaseUrl.replace(/\/$/, "")}${path}`;
+      }
+
+      function buildHistoryCacheKey() {
+        const identity = state.user?.email || state.user?.id || "anonymous";
+        return `aguai:trade-history:${identity}`;
+      }
+
+      function loadCachedTradeHistory() {
+        try {
+          const raw = window.localStorage.getItem(buildHistoryCacheKey());
+          return raw ? JSON.parse(raw) : null;
+        } catch (_error) {
+          return null;
+        }
+      }
+
+      function saveCachedTradeHistory(payload) {
+        try {
+          window.localStorage.setItem(buildHistoryCacheKey(), JSON.stringify(payload));
+        } catch (_error) {
+          // Ignore localStorage quota failures in static mode.
+        }
+      }
+
+      function updateRuntimeChrome() {
+        const runtimePill = document.getElementById("runtime-mode-pill");
+        if (runtimePill) {
+          const modeText = hasProxyRuntime()
+            ? `GitHub Pages · Worker 代理 · ${APP_RUNTIME.schedules.join(" / ")}`
+            : `GitHub Pages · 本地回退 · ${APP_RUNTIME.schedules.join(" / ")}`;
+          runtimePill.textContent = modeText;
+          runtimePill.classList.toggle("warning", !hasProxyRuntime());
+        }
+        const authNote = document.getElementById("auth-panel-note");
+        if (authNote) {
+          authNote.classList.toggle("is-hidden", Boolean(state.user));
+        }
+      }
+
+      function updateAuthChrome() {
+        const authPill = document.getElementById("auth-status-pill");
+        const openButton = document.getElementById("auth-open-button");
+        const logoutButton = document.getElementById("auth-logout-button");
+        if (authPill) {
+          if (state.user) {
+            authPill.textContent = state.user.email || state.user.id || "已登录";
+            authPill.classList.add("user-history-chip");
+          } else if (hasSupabaseRuntime()) {
+            authPill.textContent = "未登录";
+            authPill.classList.remove("user-history-chip");
+          } else {
+            authPill.textContent = "登录待配置";
+            authPill.classList.remove("user-history-chip");
+          }
+        }
+        if (openButton) {
+          openButton.classList.toggle("is-hidden", Boolean(state.user));
+        }
+        if (logoutButton) {
+          logoutButton.classList.toggle("is-hidden", !state.user);
+        }
+      }
+
+      function openAuthModal() {
+        const modal = document.getElementById("auth-modal");
+        if (!modal) {
+          return;
+        }
+        modal.classList.remove("is-hidden");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeAuthModal() {
+        const modal = document.getElementById("auth-modal");
+        if (!modal) {
+          return;
+        }
+        modal.classList.add("is-hidden");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+      async function ensureSupabaseClient() {
+        if (!hasSupabaseRuntime()) {
+          return null;
+        }
+        if (state.supabaseClient) {
+          return state.supabaseClient;
+        }
+        const module = await import("https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm");
+        state.supabaseClient = module.createClient(APP_RUNTIME.supabaseUrl, APP_RUNTIME.supabaseAnonKey, {
+          auth: {
+            persistSession: true,
+            autoRefreshToken: true,
+          },
+        });
+        return state.supabaseClient;
+      }
+
+      async function getAccessToken() {
+        if (!state.supabaseClient) {
+          return "";
+        }
+        const { data } = await state.supabaseClient.auth.getSession();
+        return data?.session?.access_token || "";
+      }
+
+      async function syncAuthState() {
+        if (!hasSupabaseRuntime()) {
+          state.authReady = true;
+          updateAuthChrome();
+          updateRuntimeChrome();
+          return;
+        }
+        const client = await ensureSupabaseClient();
+        const {
+          data: { session },
+        } = await client.auth.getSession();
+        state.user = session?.user || null;
+        state.authReady = true;
+        updateAuthChrome();
+        updateRuntimeChrome();
+        if (state.user) {
+          await loadTradeHistoryFromRemote();
+        }
+        client.auth.onAuthStateChange(async (_event, nextSession) => {
+          state.user = nextSession?.user || null;
+          updateAuthChrome();
+          updateRuntimeChrome();
+          if (state.user) {
+            await loadTradeHistoryFromRemote();
+          } else {
+            renderTradeDiagnostics(initialDiagnostics);
+          }
+        });
+      }
+
+      async function submitAuth(mode) {
+        const status = document.getElementById("auth-modal-status");
+        if (!hasSupabaseRuntime()) {
+          if (status) {
+            status.textContent = "请先在 APP_RUNTIME 中填写 Supabase URL 和匿名密钥。";
+          }
+          return;
+        }
+        const email = document.getElementById("auth-email-input")?.value?.trim();
+        const password = document.getElementById("auth-password-input")?.value || "";
+        if (!email || !password) {
+          if (status) {
+            status.textContent = "请输入邮箱和密码。";
+          }
+          return;
+        }
+        const client = await ensureSupabaseClient();
+        try {
+          if (status) {
+            status.textContent = mode === "signup" ? "注册中..." : "登录中...";
+          }
+          if (mode === "signup") {
+            const { error } = await client.auth.signUp({ email, password });
+            if (error) {
+              throw error;
+            }
+            if (status) {
+              status.textContent = "注册请求已提交，请检查邮箱确认链接。";
+            }
+          } else {
+            const { error } = await client.auth.signInWithPassword({ email, password });
+            if (error) {
+              throw error;
+            }
+            if (status) {
+              status.textContent = "登录成功，正在同步历史记录...";
+            }
+            closeAuthModal();
+          }
+        } catch (error) {
+          if (status) {
+            status.textContent = error instanceof Error ? error.message : "登录失败，请稍后重试。";
+          }
+        }
+      }
+
+      async function loadTradeHistoryFromRemote() {
+        const cached = loadCachedTradeHistory();
+        if (cached) {
+          renderTradeDiagnostics(cached);
+        }
+        if (!state.user || !hasProxyRuntime()) {
+          return;
+        }
+        try {
+          const token = await getAccessToken();
+          const response = await fetch(getProxyUrl("/api/trade-diagnostics/history"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              ...(token ? { Authorization: `Bearer ${token}` } : {}),
+            },
+            body: JSON.stringify({
+              user_id: state.user.id,
+              email: state.user.email,
+            }),
+          });
+          if (!response.ok) {
+            throw new Error(`history ${response.status}`);
+          }
+          const payload = await response.json();
+          if (payload?.diagnostics) {
+            renderTradeDiagnostics(payload.diagnostics);
+            saveCachedTradeHistory(payload.diagnostics);
+          }
+        } catch (_error) {
+          // Keep cached or embedded diagnostics when remote history is unavailable.
+        }
+      }
+
+      async function loadLatestSnapshot() {
+        if (!APP_RUNTIME.snapshotUrl) {
+          return;
+        }
+        try {
+          const response = await fetch(`${APP_RUNTIME.snapshotUrl}?t=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`snapshot ${response.status}`);
+          }
+          const remoteSnapshot = await response.json();
+          if (!remoteSnapshot?.strategy_modes) {
+            return;
+          }
+          snapshot = remoteSnapshot;
+          marketPayload = remoteSnapshot.ui_market_payload || marketPayload;
+          state.selectedMode = snapshot.default_mode || state.selectedMode || "balanced";
+          bootstrapSelector();
+        } catch (_error) {
+          // Keep the embedded snapshot as a safe fallback on GitHub Pages.
+        }
+      }
+
+      async function requestTradeDiagnosticsAnalysis(payload) {
+        if (!hasProxyRuntime()) {
+          return payload.localDiagnostics;
+        }
+        const token = await getAccessToken();
+        const response = await fetch(getProxyUrl("/api/trade-diagnostics/analyze"), {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          },
+          body: JSON.stringify({
+            user_id: state.user?.id || null,
+            email: state.user?.email || null,
+            profile_id: payload.profileId,
+            broker: payload.broker,
+            filename: payload.filename,
+            detected_format: payload.detectedFormat,
+            trades: payload.trades,
+            local_diagnostics: payload.localDiagnostics,
+          }),
+        });
+        if (!response.ok) {
+          throw new Error("AI 诊断服务暂时不可用，已回退到本地解析。");
+        }
+        const remote = await response.json();
+        return remote?.diagnostics || payload.localDiagnostics;
+      }
+
+      async function requestExecutionAnalysis(detail, signal) {
+        if (!detail) {
+          return null;
+        }
+        if (!hasProxyRuntime()) {
+          return detail.ai_risk_analysis || null;
+        }
+        const token = await getAccessToken();
+        const response = await fetch(getProxyUrl("/api/stocks/execution-analysis"), {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            ...(token ? { Authorization: `Bearer ${token}` } : {}),
+          },
+          body: JSON.stringify({
+            user_id: state.user?.id || null,
+            email: state.user?.email || null,
+            symbol: detail.symbol,
+            mode_id: state.selectedMode,
+            signal,
+            detail,
+            trade_date: snapshot.trade_date,
+          }),
+        });
+        if (!response.ok) {
+          throw new Error("AI 执行分析服务暂不可用。");
+        }
+        const remote = await response.json();
+        return remote?.analysis || detail.ai_risk_analysis || null;
       }
 
       function buildAiAnalysisMarkup(aiRiskAnalysis) {
@@ -2079,29 +2653,18 @@ __EMBEDDED_CSS__
       }
 
       function renderTradeProfiles() {
-        const selects = [
-          document.getElementById("trade-profile-select"),
-          document.getElementById("trade-quick-profile-select"),
-        ].filter(Boolean);
-
-        selects.forEach((select) => {
-          select.innerHTML = "";
-          state.tradeProfiles.forEach((profile) => {
-            const option = document.createElement("option");
-            option.value = profile.profile_id;
-            option.textContent = `${profile.display_name} · ${profile.recommended_format}`;
-            select.appendChild(option);
-          });
-          select.addEventListener("change", () => {
-            renderTradeGuide(select.value);
-            selects.forEach((otherSelect) => {
-              if (otherSelect !== select) {
-                otherSelect.value = select.value;
-              }
-            });
-          });
+        const select = document.getElementById("trade-profile-select");
+        if (!select) {
+          return;
+        }
+        select.innerHTML = "";
+        state.tradeProfiles.forEach((profile) => {
+          const option = document.createElement("option");
+          option.value = profile.profile_id;
+          option.textContent = `${profile.display_name} · ${profile.recommended_format}`;
+          select.appendChild(option);
         });
-
+        select.addEventListener("change", () => renderTradeGuide(select.value));
         if (state.tradeProfiles.length) {
           renderTradeGuide(state.tradeProfiles[0].profile_id);
         }
@@ -2120,25 +2683,10 @@ __EMBEDDED_CSS__
             `,
           )
           .join("");
-        const quickFieldMarkup = state.tradeStandardFields
-          .slice(0, 6)
-          .map(
-            (field) => `
-              <article class="field-card">
-                <strong>${field.display_name}</strong>
-                <p>${field.required ? "必填" : "可选"} · ${field.description}</p>
-              </article>
-            `,
-          )
-          .join("");
 
         const fieldGrid = document.getElementById("trade-field-grid");
         if (fieldGrid) {
           fieldGrid.innerHTML = fullFieldMarkup;
-        }
-        const quickFieldGrid = document.getElementById("trade-quick-field-grid");
-        if (quickFieldGrid) {
-          quickFieldGrid.innerHTML = quickFieldMarkup;
         }
       }
 
@@ -2195,6 +2743,9 @@ __EMBEDDED_CSS__
 
       function renderTradeDiagnostics(payload) {
         state.tradeDiagnostics = payload;
+        if (state.user) {
+          saveCachedTradeHistory(payload);
+        }
         setText("trade-coverage-text", payload.coverage_text || "暂无交易诊断。");
         renderTradeSidebarSummary(payload);
         const tradeAiButton = document.getElementById("trade-ai-review-button");
@@ -2295,14 +2846,24 @@ __EMBEDDED_CSS__
             const { rows, detectedFormat } = await parseSpreadsheetFile(file);
             const profile = state.tradeProfiles.find((item) => item.profile_id === select.value);
             const trades = standardizeTrades(rows, profile?.broker || "离线导入");
-            const diagnostics = buildTradeDiagnostics(
+            const localDiagnostics = buildTradeDiagnostics(
               trades,
               profile?.broker || "离线导入",
               file.name,
               detectedFormat,
             );
+            const diagnostics = await requestTradeDiagnosticsAnalysis({
+              profileId: select.value,
+              broker: profile?.broker || "离线导入",
+              filename: file.name,
+              detectedFormat,
+              trades,
+              localDiagnostics,
+            });
             renderTradeDiagnostics(diagnostics);
-            status.textContent = `本地解析完成：${trades.length} 条成交记录，${String(detectedFormat).toUpperCase()} 已刷新诊断。`;
+            status.textContent = hasProxyRuntime()
+              ? `已提交 ${trades.length} 条成交记录，${String(detectedFormat).toUpperCase()} 诊断已同步。`
+              : `本地解析完成：${trades.length} 条成交记录，${String(detectedFormat).toUpperCase()} 已刷新诊断。`;
             if (switchToDiagnostics) {
               setCurrentView("diagnostics");
             }
@@ -2310,7 +2871,7 @@ __EMBEDDED_CSS__
               openAiAnalysisModal(diagnostics.ai_analysis);
             }
           } catch (error) {
-            status.textContent = error instanceof Error ? error.message : "本地解析失败，请检查文件格式。";
+            status.textContent = error instanceof Error ? error.message : "交割单解析失败，请检查文件格式。";
           } finally {
             button.disabled = false;
             button.textContent = "导入并生成诊断";
@@ -2328,41 +2889,44 @@ __EMBEDDED_CSS__
           switchToDiagnostics: false,
           openAiReviewOnSuccess: true,
         });
-        setupTradeImportForm({
-          formId: "trade-quick-import-form",
-          fileInputId: "trade-quick-file-input",
-          selectId: "trade-quick-profile-select",
-          statusId: "trade-quick-import-status",
-          buttonId: "trade-quick-import-button",
-          switchToDiagnostics: true,
-          openAiReviewOnSuccess: true,
-        });
       }
 
       function setupAiModal() {
         const button = document.getElementById("refresh-ai-risk-button");
         const tradeButton = document.getElementById("trade-ai-review-button");
-        const quickOpenButton = document.getElementById("trade-quick-open-button");
         const closeButton = document.getElementById("ai-analysis-close");
         const backdrop = document.getElementById("ai-analysis-backdrop");
         const modal = document.getElementById("ai-analysis-modal");
+        const authOpenButton = document.getElementById("auth-open-button");
+        const authLogoutButton = document.getElementById("auth-logout-button");
+        const authCloseButton = document.getElementById("auth-close-button");
+        const authBackdrop = document.getElementById("auth-modal-backdrop");
+        const authSigninButton = document.getElementById("auth-signin-button");
+        const authSignupButton = document.getElementById("auth-signup-button");
 
         if (button) {
           button.disabled = false;
-          button.addEventListener("click", () => {
+          button.addEventListener("click", async () => {
             const payload = getCurrentModePayload();
             const detail = payload?.stock_details?.[state.currentSymbol];
-            openAiAnalysisModal(detail?.ai_risk_analysis || null);
+            const signal = (payload?.items || []).find((item) => item.symbol === state.currentSymbol) || null;
+            const originalText = button.textContent;
+            button.disabled = true;
+            button.textContent = "分析中...";
+            try {
+              const analysis = await requestExecutionAnalysis(detail, signal);
+              openAiAnalysisModal(analysis || null);
+            } catch (error) {
+              openAiAnalysisModal(detail?.ai_risk_analysis || { summary: error instanceof Error ? error.message : "AI 执行分析暂时不可用。" });
+            } finally {
+              button.disabled = false;
+              button.textContent = originalText;
+            }
           });
         }
         if (tradeButton) {
           tradeButton.addEventListener("click", () => {
             openAiAnalysisModal(state.tradeDiagnostics?.ai_analysis || null);
-          });
-        }
-        if (quickOpenButton) {
-          quickOpenButton.addEventListener("click", () => {
-            setCurrentView("diagnostics");
           });
         }
         if (closeButton) {
@@ -2376,6 +2940,35 @@ __EMBEDDED_CSS__
             closeAiAnalysisModal();
           }
         });
+        if (authOpenButton) {
+          authOpenButton.addEventListener("click", openAuthModal);
+        }
+        if (authCloseButton) {
+          authCloseButton.addEventListener("click", closeAuthModal);
+        }
+        if (authBackdrop) {
+          authBackdrop.addEventListener("click", closeAuthModal);
+        }
+        if (authSigninButton) {
+          authSigninButton.addEventListener("click", async () => {
+            await submitAuth("signin");
+          });
+        }
+        if (authSignupButton) {
+          authSignupButton.addEventListener("click", async () => {
+            await submitAuth("signup");
+          });
+        }
+        if (authLogoutButton) {
+          authLogoutButton.addEventListener("click", async () => {
+            if (!state.supabaseClient) {
+              state.user = null;
+              updateAuthChrome();
+              return;
+            }
+            await state.supabaseClient.auth.signOut();
+          });
+        }
       }
 
       function bootstrapSelector() {
@@ -2399,8 +2992,12 @@ __EMBEDDED_CSS__
         setupViewTabs();
         setupAiModal();
         renderViewTabs();
+        updateRuntimeChrome();
+        updateAuthChrome();
         bootstrapSelector();
         bootstrapDiagnostics();
+        syncAuthState();
+        loadLatestSnapshot();
       });
     </script>
   </body>
@@ -2416,8 +3013,8 @@ def render_preview_html(snapshot: dict, output_path: Path) -> None:
     if style_start == -1 or style_end == -1:
         raise FileNotFoundError("Unable to locate embedded CSS source for index.html generation.")
     embedded_css = existing_text[style_start + len("<style>") : style_end].strip("\n")
-    merged_snapshot = merge_cached_ai_analysis(snapshot, output_path)
-    market_payload = load_market_preview_payload(merged_snapshot)
+    merged_snapshot = snapshot if snapshot.get("ui_market_payload") else build_frontend_snapshot(snapshot, output_path)
+    market_payload = merged_snapshot.get("ui_market_payload") or load_market_preview_payload(merged_snapshot)
     trade_profiles_payload, trade_diagnostics_payload = load_trade_preview_payload()
 
     html = (

@@ -3,13 +3,14 @@ from datetime import datetime
 from pathlib import Path
 
 from data_pipeline.config import load_config
-from data_pipeline.renderers.preview_html import render_preview_html
+from data_pipeline.renderers.preview_html import build_frontend_snapshot, render_preview_html
 from data_pipeline.selection_engine import generate_daily_candidates
 
 
 def run_generate_daily_candidates() -> dict[str, str]:
     config = load_config()
-    snapshot = generate_daily_candidates()
+    raw_snapshot = generate_daily_candidates()
+    snapshot = build_frontend_snapshot(raw_snapshot, config.project_root / "index.html")
 
     trade_date = snapshot["trade_date"]
     processed_dir = config.processed_data_dir

@@ -33,7 +33,7 @@ SUPPORTED_IMPORT_PROFILES = [
         profile_id="eastmoney_excel",
         display_name="东方财富证券导出",
         broker="东方财富证券",
-        supported_extensions=[".xlsx", ".csv"],
+        supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
         description="优先支持券商客户端导出的交割单或历史成交表格。",
         export_steps=[
@@ -46,7 +46,7 @@ SUPPORTED_IMPORT_PROFILES = [
         profile_id="ths_generic",
         display_name="同花顺/券商交易端导出",
         broker="同花顺系交易端",
-        supported_extensions=[".xlsx", ".csv"],
+        supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
         description="适配常见的同花顺交易端与券商联营客户端导出文件。",
         export_steps=[
@@ -59,7 +59,7 @@ SUPPORTED_IMPORT_PROFILES = [
         profile_id="huatai",
         display_name="华泰证券导出",
         broker="华泰证券",
-        supported_extensions=[".xlsx", ".csv"],
+        supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
         description="适配以交割流水和历史成交为主的常见表头。",
         export_steps=[
@@ -72,7 +72,7 @@ SUPPORTED_IMPORT_PROFILES = [
         profile_id="generic_csv",
         display_name="通用 CSV / Excel",
         broker="其他券商",
-        supported_extensions=[".xlsx", ".csv"],
+        supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="CSV 优先",
         description="适合其他券商或已自行整理过列名的交易流水文件。",
         export_steps=[
@@ -100,7 +100,7 @@ STANDARD_FIELDS = [
 ]
 
 HEADER_ALIASES = {
-    "trade_date": ["成交日期", "成交时间", "日期", "发生日期", "委托日期", "业务日期"],
+    "trade_date": ["成交日期", "交易日期", "成交时间", "日期", "发生日期", "委托日期", "业务日期"],
     "trade_time": ["成交时间", "成交时刻", "时间"],
     "symbol": ["证券代码", "股票代码", "代码", "证券代号"],
     "stock_name": ["证券名称", "股票名称", "名称", "证券简称"],
@@ -108,12 +108,14 @@ HEADER_ALIASES = {
     "quantity": ["成交数量", "数量", "成交股数", "发生数量", "成交份额"],
     "price": ["成交价格", "成交均价", "均价", "价格"],
     "amount": ["成交金额", "发生金额", "清算金额", "金额", "发生发生金额"],
-    "commission": ["佣金", "手续费", "交易佣金"],
+    "commission": ["佣金", "净佣金", "手续费", "交易佣金"],
     "stamp_tax": ["印花税"],
     "transfer_fee": ["过户费"],
-    "other_fee": ["其他费用", "规费", "杂费"],
-    "net_amount": ["净发生金额", "净收付", "清算净额", "发生净额"],
+    "other_fee": ["其他费用", "风险金", "规费", "杂费"],
+    "net_amount": ["净发生金额", "清算金额", "净收付", "清算净额", "发生净额"],
     "account_masked": ["股东代码", "股东账户", "资金账户", "账户"],
+    "business_flag": ["业务标志", "业务类型"],
+    "security_type": ["证券类别"],
 }
 
 BUY_TOKENS = ("买", "买入", "证券买入", "担保品买入", "buy")
@@ -289,6 +291,11 @@ def _parse_date(value: Any) -> date:
         return value.date()
     if isinstance(value, date):
         return value
+    if isinstance(value, float) and value.is_integer():
+        value = int(value)
+    if isinstance(value, int):
+        if 19000101 <= value <= 29991231:
+            return datetime.strptime(str(value), "%Y%m%d").date()
     raw = str(value or "").strip()
     if not raw:
         raise ValueError("missing trade date")
@@ -303,6 +310,11 @@ def _parse_date(value: Any) -> date:
 def _parse_time(value: Any) -> Optional[str]:
     if value in (None, "", "--"):
         return None
+    if isinstance(value, float) and value.is_integer():
+        value = int(value)
+    if isinstance(value, int):
+        raw_digits = str(value).zfill(6)[-6:]
+        return f"{raw_digits[0:2]}:{raw_digits[2:4]}:{raw_digits[4:6]}"
     raw = str(value).strip()
     if len(raw) >= 8 and ":" in raw:
         return raw[:8]
@@ -388,13 +400,49 @@ def _read_excel_rows(content: bytes) -> list[dict[str, Any]]:
     return data_rows
 
 
+def _read_legacy_excel_rows(content: bytes) -> list[dict[str, Any]]:
+    try:
+        import xlrd
+    except ImportError as exc:
+        raise HTTPException(status_code=500, detail="当前环境未安装 xlrd，暂时无法解析 XLS。") from exc
+
+    workbook = xlrd.open_workbook(file_contents=content)
+    worksheet = workbook.sheet_by_index(0)
+    if worksheet.nrows == 0:
+        return []
+
+    header_index = 0
+    for index in range(worksheet.nrows):
+        row = worksheet.row_values(index)
+        if row and sum(1 for value in row if value not in (None, "")) >= 3:
+            header_index = index
+            break
+
+    headers = [str(cell).strip() if cell is not None else "" for cell in worksheet.row_values(header_index)]
+    data_rows: list[dict[str, Any]] = []
+    for row_idx in range(header_index + 1, worksheet.nrows):
+        row = worksheet.row_values(row_idx)
+        if not row or all(cell in (None, "") for cell in row):
+            continue
+        data_rows.append(
+            {
+                headers[idx]: row[idx] if idx < len(row) else None
+                for idx in range(len(headers))
+                if headers[idx]
+            }
+        )
+    return data_rows
+
+
 def _load_tabular_rows(filename: str, content: bytes) -> tuple[str, list[dict[str, Any]]]:
     suffix = Path(filename).suffix.lower()
     if suffix in {".csv", ".txt"}:
         return "csv", _read_csv_rows(content)
     if suffix in {".xlsx"}:
         return "excel", _read_excel_rows(content)
-    raise HTTPException(status_code=400, detail="当前仅支持 CSV 与 XLSX 文件导入。")
+    if suffix in {".xls"}:
+        return "excel", _read_legacy_excel_rows(content)
+    raise HTTPException(status_code=400, detail="当前仅支持 CSV、XLSX 与 XLS 文件导入。")
 
 
 def _standardize_rows(
@@ -417,9 +465,17 @@ def _standardize_rows(
     ignored_rows = []
     for index, row in enumerate(rows, start=1):
         try:
+            business_flag = str(row.get(mapping.get("business_flag"), "") or "").strip()
+            security_type = str(row.get(mapping.get("security_type"), "") or "").strip()
+            if business_flag and not any(token in business_flag.lower() for token in BUY_TOKENS + SELL_TOKENS):
+                ignored_rows.append(f"row-{index}")
+                continue
+            if "指定交易" in security_type:
+                ignored_rows.append(f"row-{index}")
+                continue
             trade_date = _parse_date(row.get(mapping["trade_date"]))
             symbol = _parse_symbol(row.get(mapping["symbol"]))
-            quantity = _parse_int(row.get(mapping["quantity"]))
+            quantity = abs(_parse_int(row.get(mapping["quantity"])))
             price = _parse_float(row.get(mapping["price"]))
             side = _parse_side(row.get(mapping["side"]))
             stock_name = str(row.get(mapping.get("stock_name"), "") or "").strip()
@@ -437,6 +493,9 @@ def _standardize_rows(
                 signed_amount = amount if side == "sell" else -amount
                 signed_fee = -fee_total
                 net_amount = round(signed_amount + signed_fee, 2)
+            if quantity <= 0 or price <= 0 or (amount <= 0 and abs(net_amount) < 1e-8):
+                ignored_rows.append(f"row-{index}")
+                continue
             standardized.append(
                 StandardizedTrade(
                     trade_date=trade_date,

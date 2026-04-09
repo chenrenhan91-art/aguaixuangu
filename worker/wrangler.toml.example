@@ -1,0 +1,14 @@
+name = "aguaixuangu-proxy"
+main = "index.js"
+compatibility_date = "2026-04-09"
+
+[vars]
+# 可选：限制前端来源
+APP_ORIGIN = "https://chenrenhan91-art.github.io"
+SUPABASE_URL = "https://your-project.supabase.co"
+SUPABASE_ANON_KEY = "your-anon-key"
+GEMINI_MODEL = "gemini-3-pro-preview"
+
+# 通过 wrangler secret put 配置以下 secrets
+# GEMINI_API_KEY
+# SUPABASE_SERVICE_ROLE_KEY

@@ -77,21 +77,42 @@ make pipeline-candidates
   - `GET /api/trade-diagnostics/schema`
 - 设计说明：`docs/trade_diagnostics_module.md`
 
-## 部署
+## GitHub Pages + Worker 部署
 
-仓库根目录已提供：
+当前推荐的 ToC 部署方式是：
 
-- `Procfile`
-- `render.yaml`
+- `GitHub Pages` 承载静态前端
+- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 自动刷新选股页
+- `Cloudflare Worker` 作为轻量后端，直连 `Gemini`
+- `Supabase Auth` 负责登录与诊断历史
 
-如果部署到 Render：
+仓库已提供：
 
-1. 连接 GitHub 仓库
-2. 让 Render 读取仓库根目录的 `render.yaml`
-3. 在平台环境变量里填写 `A_SHARE_GEMINI_API_KEY`
-4. 部署完成后访问生成的 Web URL
+- [.github/workflows/refresh_snapshot.yml](/Users/apple/Desktop/A股AI选股工具开发/.github/workflows/refresh_snapshot.yml)
+- [worker/index.js](/Users/apple/Desktop/A股AI选股工具开发/worker/index.js)
+- [worker/wrangler.toml.example](/Users/apple/Desktop/A股AI选股工具开发/worker/wrangler.toml.example)
+- [supabase/schema.sql](/Users/apple/Desktop/A股AI选股工具开发/supabase/schema.sql)
+- [docs/github_pages_worker_runbook.md](/Users/apple/Desktop/A股AI选股工具开发/docs/github_pages_worker_runbook.md)
 
-当前部署策略会直接读取仓库中的 `data/processed/daily_candidates_latest.json` 作为初始快照，因此即使云端不执行 AKShare 抓取，也能先正常打开页面。
+部署前你需要配置：
+
+1. GitHub 仓库 Secret：
+   - `A_SHARE_GEMINI_API_KEY`
+2. Cloudflare Worker：
+   - `SUPABASE_URL`
+   - `SUPABASE_ANON_KEY`
+   - Secret: `GEMINI_API_KEY`
+   - Secret: `SUPABASE_SERVICE_ROLE_KEY`
+3. `index.html` 中的运行时配置：
+   - `APP_RUNTIME.aiProxyBaseUrl`
+   - `APP_RUNTIME.supabaseUrl`
+   - `APP_RUNTIME.supabaseAnonKey`
+
+未完成这些配置前，页面仍会保留本地回退模式：
+
+- 选股页读取仓库里的最新静态快照
+- 交割单仍可在浏览器内本地解析
+- AI 诊断会回退为本地结构化分析
 
 ## 建议的下一步
 
