@@ -4,7 +4,7 @@
 
 - `GitHub Pages` 承载唯一页面 [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html)
 - `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 触发刷新，并在运行前自动校验是否为 A 股交易日
-- `Cloudflare Worker` 直连 `Gemini`
+- `Cloudflare Worker` 直连 `Gemini`，并可选转发到 `Make` 完成历史交易诊断 AI 复盘
 - `Supabase Auth` 负责登录
 - `Supabase` 保存每个用户自己的交易诊断历史
 
@@ -33,7 +33,7 @@
 2. 用户上传 `xls / xlsx / csv`
 3. 浏览器本地解析成交记录
 4. 前端把本地结构化诊断结果发给 Worker
-5. Worker 调 Gemini
+5. Worker 调 Gemini，或在配置后转发到 Make
 6. Worker 把结果写入 Supabase
 7. 用户再次访问时，前端自动读取自己的最近诊断历史
 
@@ -61,6 +61,7 @@
 - `APP_ORIGIN`
 - `SUPABASE_URL`
 - `SUPABASE_ANON_KEY`
+- `MAKE_TRADE_DIAGNOSTICS_WEBHOOK`（可选；配置后历史交易诊断优先走 Make）
 - Secret: `GEMINI_API_KEY`
 - Secret: `SUPABASE_SERVICE_ROLE_KEY`
 
@@ -95,6 +96,7 @@
   "status": "ok",
   "provider": "cloudflare-worker",
   "geminiConfigured": true,
+  "makeTradeDiagnosticsConfigured": false,
   "supabaseConfigured": true,
   "model": "gemini-3-pro-preview"
 }
@@ -135,6 +137,8 @@
   }
 }
 ```
+
+当 `MAKE_TRADE_DIAGNOSTICS_WEBHOOK` 已配置时，这个接口会优先把结构化诊断结果转发给 Make，再把 Make 返回的 `ai_analysis` 合并回前端结果；若 Make 失败，则自动回退到 Worker 直连 Gemini。
 
 ### `POST /api/trade-diagnostics/history`
 

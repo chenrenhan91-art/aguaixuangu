@@ -8,6 +8,7 @@ APP_ORIGIN = "https://chenrenhan91-art.github.io"
 SUPABASE_URL = "https://your-project.supabase.co"
 SUPABASE_ANON_KEY = "your-anon-key"
 GEMINI_MODEL = "gemini-3-pro-preview"
+MAKE_TRADE_DIAGNOSTICS_WEBHOOK = "https://hook.us2.make.com/your-webhook-id"
 
 # 通过 wrangler secret put 配置以下 secrets
 # GEMINI_API_KEY

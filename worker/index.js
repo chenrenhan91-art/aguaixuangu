@@ -45,6 +45,27 @@ function extractJson(text) {
   }
 }
 
+async function callMakeJson(env, payload) {
+  if (!env.MAKE_TRADE_DIAGNOSTICS_WEBHOOK) {
+    throw new Error("MAKE_TRADE_DIAGNOSTICS_WEBHOOK is not configured.");
+  }
+
+  const response = await fetch(env.MAKE_TRADE_DIAGNOSTICS_WEBHOOK, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(payload),
+  });
+
+  const raw = await response.text();
+  if (!response.ok) {
+    throw new Error(`Make HTTP ${response.status}: ${raw}`);
+  }
+
+  return raw ? JSON.parse(raw) : {};
+}
+
 async function callGeminiJson(env, systemInstruction, userPrompt, temperature = 0.2) {
   if (!env.GEMINI_API_KEY) {
     throw new Error("GEMINI_API_KEY is not configured.");
@@ -239,10 +260,29 @@ function mergeTradeDiagnostics(localDiagnostics, aiAnalysis) {
       behavior_tags: Array.isArray(aiAnalysis.behavior_tags) ? aiAnalysis.behavior_tags : [],
       adjustments: Array.isArray(aiAnalysis.adjustments) ? aiAnalysis.adjustments : [],
       next_cycle_plan: Array.isArray(aiAnalysis.next_cycle_plan) ? aiAnalysis.next_cycle_plan : [],
-      source: "worker-gemini",
+      source: aiAnalysis.source || "worker-gemini",
       generated_at: new Date().toISOString(),
     },
   };
+}
+
+function normalizeMakeTradeDiagnosticsResult(localDiagnostics, payload) {
+  const aiAnalysis =
+    payload?.ai_analysis ||
+    payload?.analysis ||
+    payload?.result ||
+    payload?.data?.ai_analysis ||
+    null;
+
+  if (!aiAnalysis || typeof aiAnalysis !== "object") {
+    throw new Error("Make returned an invalid ai_analysis payload.");
+  }
+
+  return mergeTradeDiagnostics(localDiagnostics, {
+    ...aiAnalysis,
+    model: aiAnalysis.model || "gemini-3.1-pro",
+    source: "make-gemini",
+  });
 }
 
 function buildTradeHistoryResponse(rows) {
@@ -285,28 +325,67 @@ async function saveTradeHistory(env, user, payload) {
 
 async function handleTradeDiagnosticsAnalyze(request, env, user) {
   const body = await request.json();
-  const localDiagnostics = body?.local_diagnostics || null;
+  const localDiagnostics = body?.local_diagnostics || body?.localDiagnostics || null;
   if (!localDiagnostics) {
     return jsonResponse({ error: "MissingDiagnostics", message: "缺少 local_diagnostics。" }, 400, request, env);
   }
 
   let diagnostics = localDiagnostics;
   try {
-    const { parsed, model } = await callGeminiJson(
-      env,
-      buildTradeDiagnosticsSystemInstruction(),
-      buildTradeDiagnosticsUserPrompt(localDiagnostics),
-      0.2,
-    );
-    diagnostics = mergeTradeDiagnostics(localDiagnostics, {
-      ...parsed,
-      model,
-    });
+    if (env.MAKE_TRADE_DIAGNOSTICS_WEBHOOK) {
+      const makePayload = await callMakeJson(env, {
+        request_id: crypto.randomUUID(),
+        requested_model: "gemini-3.1-pro",
+        prompt_version: "make-trade-diagnostics-v1",
+        generated_at: new Date().toISOString(),
+        user: user
+          ? {
+              id: user.id,
+              email: user.email || body?.email || null,
+            }
+          : {
+              id: body?.user_id || body?.userId || null,
+              email: body?.email || null,
+            },
+        import_meta: {
+          profile_id: body?.profile_id || body?.profileId || null,
+          broker: body?.broker || null,
+          filename: body?.filename || null,
+          detected_format: body?.detected_format || body?.detectedFormat || null,
+        },
+        local_diagnostics: localDiagnostics,
+      });
+      diagnostics = normalizeMakeTradeDiagnosticsResult(localDiagnostics, makePayload);
+    } else {
+      const { parsed, model } = await callGeminiJson(
+        env,
+        buildTradeDiagnosticsSystemInstruction(),
+        buildTradeDiagnosticsUserPrompt(localDiagnostics),
+        0.2,
+      );
+      diagnostics = mergeTradeDiagnostics(localDiagnostics, {
+        ...parsed,
+        model,
+      });
+    }
   } catch (_error) {
-    diagnostics = {
-      ...localDiagnostics,
-      ai_analysis: localDiagnostics.ai_analysis || null,
-    };
+    try {
+      const { parsed, model } = await callGeminiJson(
+        env,
+        buildTradeDiagnosticsSystemInstruction(),
+        buildTradeDiagnosticsUserPrompt(localDiagnostics),
+        0.2,
+      );
+      diagnostics = mergeTradeDiagnostics(localDiagnostics, {
+        ...parsed,
+        model,
+      });
+    } catch (_nestedError) {
+      diagnostics = {
+        ...localDiagnostics,
+        ai_analysis: localDiagnostics.ai_analysis || null,
+      };
+    }
   }
 
   await saveTradeHistory(env, user, diagnostics);
@@ -344,7 +423,7 @@ async function handleExecutionAnalysis(request, env) {
       env,
       buildExecutionSystemInstruction(),
       buildExecutionUserPrompt({
-        mode_id: body?.mode_id,
+        mode_id: body?.mode_id || body?.modeId,
         trade_date: body?.trade_date,
         signal,
         detail,
@@ -400,6 +479,7 @@ async function routeRequest(request, env) {
         status: "ok",
         provider: "cloudflare-worker",
         geminiConfigured: Boolean(env.GEMINI_API_KEY),
+        makeTradeDiagnosticsConfigured: Boolean(env.MAKE_TRADE_DIAGNOSTICS_WEBHOOK),
         supabaseConfigured: Boolean(env.SUPABASE_URL && env.SUPABASE_SERVICE_ROLE_KEY && env.SUPABASE_ANON_KEY),
         model: env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL,
       },
