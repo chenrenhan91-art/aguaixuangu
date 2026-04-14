@@ -39,9 +39,10 @@ def load_trade_preview_payload() -> tuple[dict, dict]:
                         "broker": "其他券商",
                         "supported_extensions": [".csv", ".xlsx", ".xls"],
                         "recommended_format": "CSV 优先",
-                        "description": "支持本地 Excel / CSV 导入，登录后可同步到个人历史。",
+                        "description": "支持本地 Excel / CSV 导入，近 1 个月以上记录即可生成更有效诊断，登录后可同步到个人历史。",
                         "export_steps": [
                             "从券商客户端导出历史成交或交割单明细。",
+                            "建议至少覆盖近 1 个月交易记录。",
                             "保留日期、代码、方向、数量、价格等核心字段。",
                             "建议优先直接上传原始导出表格，不要二次改列名。",
                         ],
@@ -83,7 +84,7 @@ def load_trade_preview_payload() -> tuple[dict, dict]:
             {
                 "status": "demo",
                 "account_label": "登录后查看你的诊断历史",
-                "coverage_text": "当前展示的是演示诊断。登录后导入交割单，可自动生成个人 AI 复盘并保存历史。",
+                "coverage_text": "当前展示的是演示诊断。登录后导入近 1 个月以上交割单，可自动生成个人 AI 复盘并保存历史。",
                 "latest_batch": None,
                 "summary_metrics": [
                     {"label": "闭环交易数", "value": "36", "detail": "示例数据中的已完成买卖配对。"},
@@ -1056,7 +1057,7 @@ __EMBEDDED_CSS__
               <div id="trade-sidebar-summary" class="trade-sidebar-summary"></div>
               <article id="auth-panel-note" class="upload-note-card auth-panel-note">
                 <strong>登录后可同步历史</strong>
-                <p>本页在未接入账号体系前仍可本地解析；配置登录与 Worker 后，诊断历史会按用户隔离保存。</p>
+                <p>导入近 1 个月以上交割单即可生成有效诊断；配置登录与 Worker 后，诊断历史会按用户隔离保存。</p>
               </article>
               <form id="trade-import-form" class="import-form">
                 <label class="field-group">
@@ -1068,7 +1069,7 @@ __EMBEDDED_CSS__
                   <input id="trade-file-input" name="file" type="file" accept=".csv,.txt,.xlsx,.xls" />
                 </label>
                 <button id="trade-import-button" type="submit" class="primary-button">导入</button>
-                <p id="trade-import-status" class="secondary-copy">CSV / XLSX</p>
+                <p id="trade-import-status" class="secondary-copy">支持 CSV / XLSX / XLS，建议近 1 个月以上</p>
               </form>
 
               <div class="detail-block compact-block">
@@ -2466,7 +2467,7 @@ __EMBEDDED_CSS__
             display_name: "待分类",
             confidence: 0.35,
             summary: "当前导入数据还不足以形成完整买卖闭环，建议补充更完整的历史成交。",
-            traits: ["建议至少覆盖 3 个月以上交易记录"],
+            traits: ["建议至少覆盖 1 个月以上交易记录"],
           };
         }
         const averageHolding = roundTrips.reduce((sum, item) => sum + item.holding_days, 0) / roundTrips.length;

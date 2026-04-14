@@ -208,3 +208,68 @@ def test_trade_diagnostics_ai_analysis_endpoint(monkeypatch) -> None:
     assert payload["status"] == "ai_live"
     assert payload["model"] == "gemini-3-pro-preview"
     assert payload["trader_profile"]
+
+
+def test_trade_diagnostics_analyze_worker_compatible_endpoint(monkeypatch) -> None:
+    monkeypatch.setattr(
+        "app.api.routes.trade_diagnostics.call_gemini_trade_diagnostics_analysis",
+        lambda context: {
+            "model": "gemini-3-pro-preview",
+            "confidence": 0.79,
+            "summary": "保持顺势，减少追高。",
+            "trader_profile": "短波段交易型",
+            "strengths": ["主线共振时执行更稳。"],
+            "weaknesses": ["高位追价后回撤。"],
+            "behavior_tags": ["顺势波段"],
+            "adjustments": ["仅做确认后的第一回踩。"],
+            "next_cycle_plan": ["先筛主线，再等确认。"],
+        },
+    )
+
+    response = client.post(
+        "/api/trade-diagnostics/analyze",
+        json={
+            "profile_id": "generic_csv",
+            "local_diagnostics": {
+                "summary_metrics": [],
+                "style_profile": {"summary": "短波段"},
+            },
+        },
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["diagnostics"]["ai_analysis"]["status"] == "ai_live"
+    assert payload["diagnostics"]["ai_analysis"]["model"] == "gemini-3-pro-preview"
+
+
+def test_stocks_execution_analysis_worker_compatible_endpoint(monkeypatch) -> None:
+    monkeypatch.setattr(
+        "app.api.routes.stocks.regenerate_ai_risk_analysis",
+        lambda symbol, mode: {
+            "status": "ai_live",
+            "model": "gemini-3-pro-preview",
+            "confidence": 0.77,
+            "summary": f"{symbol} 以跟踪为主。",
+            "stance": "跟踪",
+            "setup_quality": "B",
+            "highlights": ["主线仍在。"],
+            "execution_plan": ["先看承接，再看放量。"],
+            "next_step": "观察关键支撑。",
+            "source": "gemini",
+            "generated_at": "2026-04-09T10:00:00+00:00",
+        },
+    )
+
+    response = client.post(
+        "/api/stocks/execution-analysis",
+        json={
+            "symbol": "002213",
+            "mode_id": "balanced",
+            "detail": {"symbol": "002213"},
+            "signal": {},
+        },
+    )
+    assert response.status_code == 200
+    payload = response.json()
+    assert payload["analysis"]["status"] == "ai_live"
+    assert payload["analysis"]["model"] == "gemini-3-pro-preview"

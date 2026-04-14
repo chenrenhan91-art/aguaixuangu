@@ -35,10 +35,11 @@ SUPPORTED_IMPORT_PROFILES = [
         broker="东方财富证券",
         supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
-        description="优先支持券商客户端导出的交割单或历史成交表格。",
+        description="优先支持券商客户端导出的交割单或历史成交表格，近 1 个月以上记录即可生成更有效诊断。",
         export_steps=[
             "在东方财富证券交易端打开历史成交或交割单查询。",
             "选择完整时间范围后导出 Excel 或 CSV。",
+            "建议至少导出近 1 个月记录。",
             "直接上传导出的文件，无需截图。",
         ],
     ),
@@ -48,10 +49,11 @@ SUPPORTED_IMPORT_PROFILES = [
         broker="同花顺系交易端",
         supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
-        description="适配常见的同花顺交易端与券商联营客户端导出文件。",
+        description="适配常见的同花顺交易端与券商联营客户端导出文件，近 1 个月以上记录即可生成更有效诊断。",
         export_steps=[
             "在交易端进入历史成交、资金流水或交割单页面。",
             "导出为 Excel 或 CSV，保留原始列名。",
+            "建议至少导出近 1 个月记录。",
             "上传文件后系统会自动识别代码、买卖方向和费用字段。",
         ],
     ),
@@ -61,10 +63,11 @@ SUPPORTED_IMPORT_PROFILES = [
         broker="华泰证券",
         supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="Excel / CSV",
-        description="适配以交割流水和历史成交为主的常见表头。",
+        description="适配以交割流水和历史成交为主的常见表头，近 1 个月以上记录即可生成更有效诊断。",
         export_steps=[
             "从华泰证券客户端导出历史成交或交割流水。",
             "建议选择包含费用和净发生金额的明细表。",
+            "建议至少导出近 1 个月记录。",
             "上传后优先按最新批次生成交易诊断。",
         ],
     ),
@@ -74,9 +77,10 @@ SUPPORTED_IMPORT_PROFILES = [
         broker="其他券商",
         supported_extensions=[".xlsx", ".xls", ".csv"],
         recommended_format="CSV 优先",
-        description="适合其他券商或已自行整理过列名的交易流水文件。",
+        description="适合其他券商或已自行整理过列名的交易流水文件，近 1 个月以上记录即可生成更有效诊断。",
         export_steps=[
             "保留每笔成交记录，不要只保留汇总行。",
+            "建议至少覆盖近 1 个月交易记录。",
             "确保至少包含日期、代码、方向、数量、价格。",
             "费用字段若缺失也可先导入，系统会按零值处理。",
         ],
@@ -811,7 +815,7 @@ def _infer_style(round_trips: list[dict[str, Any]], trades: list[dict[str, Any]]
             display_name="待分类",
             confidence=0.35,
             summary="当前数据暂时无法形成完整买卖闭环，先继续导入更完整的交割单。",
-            traits=["建议至少覆盖 3 个月以上交易记录"],
+            traits=["建议至少覆盖 1 个月以上交易记录"],
         )
 
     average_holding = sum(item["holding_days"] for item in round_trips) / closed_count
@@ -911,7 +915,7 @@ def _build_insights(metrics: dict[str, float], trades: list[dict[str, Any]]) -> 
         return (
             [DiagnosticInsight(title="闭环交易不足", detail="目前还无法形成可靠画像，建议导入更完整的历史流水。", severity="medium")],
             [],
-            ["先覆盖至少 3 个月交易记录，再做风格与纪律分析。"],
+            ["先覆盖至少 1 个月交易记录，再做风格与纪律分析。"],
         )
 
     buy_count = sum(1 for item in trades if item["side"] == "buy")
