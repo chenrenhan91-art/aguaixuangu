@@ -3,7 +3,7 @@
 ## 目标
 
 - `GitHub Pages` 承载唯一页面 [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html)
-- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 自动刷新选股快照
+- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 触发刷新，并在运行前自动校验是否为 A 股交易日
 - `Cloudflare Worker` 直连 `Gemini`
 - `Supabase Auth` 负责登录
 - `Supabase` 保存每个用户自己的交易诊断历史
@@ -199,6 +199,7 @@
 
 - 北京时间 `12:05`
 - 北京时间 `15:05`
+- 非交易日会自动跳过，不覆盖现有页面与快照
 
 ## 最小验收顺序
 

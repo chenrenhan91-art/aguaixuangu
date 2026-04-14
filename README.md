@@ -82,7 +82,7 @@ make pipeline-candidates
 当前推荐的 ToC 部署方式是：
 
 - `GitHub Pages` 承载静态前端
-- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 自动刷新选股页
+- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 尝试刷新选股页，并在运行前自动校验是否为 A 股交易日
 - `Cloudflare Worker` 作为轻量后端，直连 `Gemini`
 - `Supabase Auth` 负责登录与诊断历史
 
@@ -105,6 +105,7 @@ make pipeline-candidates
    - Secret: `SUPABASE_SERVICE_ROLE_KEY`
 3. `index.html` 中的运行时配置：
    - `APP_RUNTIME.aiProxyBaseUrl`
+   - `APP_RUNTIME.backendApiBaseUrl`（本地联调可填 `http://localhost:8000/api`）
    - `APP_RUNTIME.supabaseUrl`
    - `APP_RUNTIME.supabaseAnonKey`
 

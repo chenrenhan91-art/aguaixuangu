@@ -2,6 +2,12 @@ name: Refresh A-Share Snapshot
 
 on:
   workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: Force refresh even when the current day is not an A-share trading day
+        required: false
+        default: false
+        type: boolean
   schedule:
     # Beijing 12:05
     - cron: "5 4 * * 1-5"
@@ -14,10 +20,15 @@ permissions:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: refresh-a-share-snapshot
+      cancel-in-progress: false
     env:
       TZ: Asia/Shanghai
       A_SHARE_GEMINI_API_KEY: ${{ secrets.A_SHARE_GEMINI_API_KEY }}
       A_SHARE_GEMINI_MODEL: gemini-3-pro-preview
+      A_SHARE_FORCE_REFRESH: ${{ github.event.inputs.force_refresh == 'true' && '1' || '0' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,18 +39,36 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e ./backend[dev]
 
+      - name: Check A-share trading calendar
+        id: calendar
+        run: python -m data_pipeline.jobs.check_trade_day --github-output "$GITHUB_OUTPUT"
+
+      - name: Print refresh gate
+        run: |
+          echo "Trade date: ${{ steps.calendar.outputs.trade_date }}"
+          echo "Trade day: ${{ steps.calendar.outputs.is_trade_day }}"
+          echo "Source: ${{ steps.calendar.outputs.calendar_source }}"
+          echo "Reason: ${{ steps.calendar.outputs.calendar_reason }}"
+
       - name: Generate latest selector snapshot
+        if: steps.calendar.outputs.is_trade_day == 'true'
         run: python -m data_pipeline.jobs.generate_daily_candidates
 
+      - name: Skip refresh when market is closed
+        if: steps.calendar.outputs.is_trade_day != 'true'
+        run: echo "Skip refresh because the market is closed."
+
       - name: Commit changes if needed
+        if: steps.calendar.outputs.is_trade_day == 'true'
         run: |
-          if git diff --quiet; then
+          if git diff --quiet -- index.html data/processed/; then
             echo "No snapshot changes."
             exit 0
           fi
