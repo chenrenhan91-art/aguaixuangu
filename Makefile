@@ -4,7 +4,7 @@ PIP ?= $(PYTHON) -m pip
 .PHONY: backend-install backend-dev backend-test pipeline-refresh pipeline-candidates
 
 backend-install:
-	$(PIP) install -e ./backend[dev]
+	$(PIP) install -e ./backend[dev,pipeline]
 
 backend-dev:
 	cd backend && uvicorn app.main:app --reload
