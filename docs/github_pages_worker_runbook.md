@@ -1,12 +1,18 @@
-# GitHub Pages + Worker 上线方案
+# GitHub Pages + Supabase + Make 上线方案
+
+当前项目已经不再把 `Cloudflare Worker` 作为正式主流程依赖。
+
+新的线上链路是：
+
+`GitHub Pages 静态前端 -> Supabase 登录与历史 -> Make webhook -> Gemini`
 
 ## 目标
 
-- `GitHub Pages` 承载唯一页面 [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html)
-- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 触发刷新，并在运行前自动校验是否为 A 股交易日
-- `Cloudflare Worker` 直连 `Gemini`，并可选转发到 `Make` 完成历史交易诊断 AI 复盘
-- `Supabase Auth` 负责登录
-- `Supabase` 保存每个用户自己的交易诊断历史
+- `GitHub Pages` 承载唯一页面 `index.html`
+- `GitHub Actions` 在北京时间 `12:05` 和 `15:05` 刷新选股快照
+- `Supabase Auth` 负责注册登录
+- `Supabase` 负责保存用户自己的个股分析与交易诊断历史
+- `Make.com` 负责调用 `Gemini`
 
 ## 最终链路
 
@@ -14,213 +20,66 @@
 
 1. GitHub Actions 定时触发
 2. 执行 Python 数据流水线
-3. 更新：
-   - [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html)
-   - [data/processed/daily_candidates_latest.json](/Users/apple/Desktop/A股AI选股工具开发/data/processed/daily_candidates_latest.json)
-4. GitHub Pages 自动提供最新页面
+3. 更新 `data/processed/daily_candidates_latest.json`
+4. GitHub Pages 页面自动读取最新 JSON
 
 ### B. 个股 AI 执行分析
 
-1. 用户点击页面中的 `AI 交易执行分析`
-2. 前端把当前个股 detail 发给 Worker
-3. Worker 调 Gemini
-4. Worker 返回结构化分析 JSON
-5. 前端弹窗展示
+1. 用户点击候选股，或手动输入股票代码
+2. 前端把股票上下文发给 `Make webhook`
+3. Make 调 `Gemini`
+4. Make 返回结构化分析 JSON
+5. 前端展示分析结果
+6. 若用户已登录，则结果保存到 `analysis_history`
 
 ### C. 历史交易诊断
 
 1. 用户登录
 2. 用户上传 `xls / xlsx / csv`
-3. 浏览器本地解析成交记录
-4. 前端把本地结构化诊断结果发给 Worker
-5. Worker 调 Gemini，或在配置后转发到 Make
-6. Worker 把结果写入 Supabase
-7. 用户再次访问时，前端自动读取自己的最近诊断历史
+3. 浏览器本地解析交割单并生成结构化诊断
+4. 前端把结构化诊断发给 `Make webhook`
+5. Make 调 `Gemini`
+6. 前端把完整结果写入 `trade_diagnostics_history`
 
-## 你需要配置的 4 个地方
+## 你需要配置的内容
 
-### 1. GitHub Secrets
-
-在仓库 Secrets 里新增：
-
-- `A_SHARE_GEMINI_API_KEY`
-
-作用：
-
-- 供 [refresh_snapshot.yml](/Users/apple/Desktop/A股AI选股工具开发/.github/workflows/refresh_snapshot.yml) 在定时更新时使用
-
-### 2. Cloudflare Worker
-
-仓库里已有：
-
-- [worker/index.js](/Users/apple/Desktop/A股AI选股工具开发/worker/index.js)
-- [worker/wrangler.toml.example](/Users/apple/Desktop/A股AI选股工具开发/worker/wrangler.toml.example)
-
-你需要配置：
-
-- `APP_ORIGIN`
-- `SUPABASE_URL`
-- `SUPABASE_ANON_KEY`
-- `MAKE_TRADE_DIAGNOSTICS_WEBHOOK`（可选；配置后历史交易诊断优先走 Make）
-- Secret: `GEMINI_API_KEY`
-- Secret: `SUPABASE_SERVICE_ROLE_KEY`
-
-### 3. Supabase
-
-需要执行：
-
-- [supabase/schema.sql](/Users/apple/Desktop/A股AI选股工具开发/supabase/schema.sql)
-
-作用：
-
-- 创建 `trade_diagnostics_history`
-- 建立索引
-- 启用 RLS
-
-### 4. 前端运行时配置
-
-在 [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html) 里的 `APP_RUNTIME` 填：
-
-- `aiProxyBaseUrl`
-- `supabaseUrl`
-- `supabaseAnonKey`
-
-## Worker 提供的接口
-
-### `GET /api/health`
-
-返回：
-
-```json
-{
-  "status": "ok",
-  "provider": "cloudflare-worker",
-  "geminiConfigured": true,
-  "makeTradeDiagnosticsConfigured": false,
-  "supabaseConfigured": true,
-  "model": "gemini-3-pro-preview"
-}
-```
-
-### `POST /api/trade-diagnostics/analyze`
-
-前端发送：
-
-```json
-{
-  "profileId": "generic_csv",
-  "broker": "其他券商",
-  "filename": "history.xls",
-  "detectedFormat": "xlsx",
-  "trades": [],
-  "localDiagnostics": {}
-}
-```
-
-返回：
-
-```json
-{
-  "diagnostics": {
-    "...": "完整诊断",
-    "ai_analysis": {
-      "status": "ai_live",
-      "model": "gemini-3-pro-preview",
-      "summary": "",
-      "trader_profile": "",
-      "strengths": [],
-      "weaknesses": [],
-      "behavior_tags": [],
-      "adjustments": [],
-      "next_cycle_plan": []
-    }
-  }
-}
-```
-
-当 `MAKE_TRADE_DIAGNOSTICS_WEBHOOK` 已配置时，这个接口会优先把结构化诊断结果转发给 Make，再把 Make 返回的 `ai_analysis` 合并回前端结果；若 Make 失败，则自动回退到 Worker 直连 Gemini。
-
-### `POST /api/trade-diagnostics/history`
-
-说明：
-
-- 需要登录后自动带 `Authorization Bearer`
-- Worker 会验证当前 Supabase session
-
-返回：
-
-```json
-{
-  "diagnostics": {
-    "...": "最近一次诊断",
-    "recent_batches": []
-  }
-}
-```
-
-### `POST /api/stocks/execution-analysis`
-
-前端发送：
-
-```json
-{
-  "symbol": "301396",
-  "mode_id": "balanced",
-  "signal": {},
-  "detail": {},
-  "trade_date": "2026-04-09"
-}
-```
-
-返回：
-
-```json
-{
-  "analysis": {
-    "status": "ai_live",
-    "model": "gemini-3-pro-preview",
-    "summary": "",
-    "stance": "跟踪",
-    "setup_quality": "B",
-    "key_signal": "",
-    "highlights": [],
-    "trigger_points": [],
-    "invalidation_points": [],
-    "execution_plan": [],
-    "next_step": "",
-    "source": "worker-gemini"
-  }
-}
-```
-
-## GitHub Actions 定时任务
+### 1. GitHub Actions
 
 仓库已提供：
 
-- [.github/workflows/refresh_snapshot.yml](/Users/apple/Desktop/A股AI选股工具开发/.github/workflows/refresh_snapshot.yml)
+- `.github/workflows/refresh_snapshot.yml`
 
 当前调度：
 
 - 北京时间 `12:05`
 - 北京时间 `15:05`
-- 非交易日会自动跳过，不覆盖现有页面与快照
+- 非交易日自动跳过
 
-## 最小验收顺序
+### 2. Supabase
 
-1. 执行 Supabase SQL
-2. 部署 Worker
-3. 打开：
+需要执行：
 
-`https://你的-worker域名/api/health`
+- `supabase/schema.sql`
 
-4. 在 [index.html](/Users/apple/Desktop/A股AI选股工具开发/index.html) 中填：
-   - `aiProxyBaseUrl`
-   - `supabaseUrl`
-   - `supabaseAnonKey`
-5. 部署 GitHub Pages
-6. 注册一个测试账号
-7. 导入一份 `xls/xlsx/csv`
-8. 确认：
-   - 自动弹出 `AI 交易复盘`
-   - 刷新页面后仍能看到最近历史
-   - 个股 `AI 交易执行分析` 弹窗显示 `gemini-3-pro-preview`
+作用：
+
+- 创建 `trade_diagnostics_history`
+- 创建 `analysis_history`
+- 启用行级权限
+- 允许登录用户只读写自己的历史数据
+
+### 3. 前端运行时配置
+
+在 `index.html` 里填写：
+
+- `makeExecutionAnalysisWebhook`
+- `makeTradeDiagnosticsWebhook`
+- `supabaseUrl`
+- `supabaseAnonKey`
+- `geminiModel`
+
+## 说明
+
+- 这个方案不需要你部署自己的后端服务器
+- 如果浏览器直连 Make webhook 遇到 CORS 限制，再考虑补一层极轻量代理
+- 在当前阶段，`backend/` 和 `worker/` 目录都不是正式主流程

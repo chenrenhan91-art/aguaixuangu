@@ -26,8 +26,6 @@ jobs:
       cancel-in-progress: false
     env:
       TZ: Asia/Shanghai
-      A_SHARE_GEMINI_API_KEY: ${{ secrets.A_SHARE_GEMINI_API_KEY }}
-      A_SHARE_GEMINI_MODEL: gemini-3-pro-preview
       A_SHARE_FORCE_REFRESH: ${{ github.event.inputs.force_refresh == 'true' && '1' || '0' }}
     steps:
       - name: Checkout
@@ -60,6 +58,52 @@ jobs:
       - name: Generate latest selector snapshot
         if: steps.calendar.outputs.is_trade_day == 'true'
         run: python -m data_pipeline.jobs.generate_daily_candidates
+
+      - name: Validate latest selector snapshot
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/processed/daily_candidates_latest.json")
+          if not path.exists():
+              raise SystemExit("latest snapshot file is missing")
+
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          candidate_pool = payload.get("candidate_pool")
+          strategy_modes = payload.get("strategy_modes")
+          default_mode = payload.get("default_mode")
+
+          if not isinstance(candidate_pool, list) or not candidate_pool:
+              raise SystemExit("candidate_pool is empty")
+          if not isinstance(strategy_modes, dict) or not strategy_modes:
+              raise SystemExit("strategy_modes is empty")
+          if default_mode not in strategy_modes:
+              raise SystemExit("default_mode is missing from strategy_modes")
+
+          print("Snapshot validation passed.")
+          PY
+
+      - name: Print snapshot summary
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/processed/daily_candidates_latest.json")
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          scan_summary = payload.get("selection_meta", {}).get("scan_summary", [])
+
+          print("Trade date:", payload.get("trade_date"))
+          print("Generated at:", payload.get("generated_at"))
+          print("Default mode:", payload.get("default_mode"))
+          print("Candidate count:", len(payload.get("candidate_pool", [])))
+          print("Top symbols:", [item.get("symbol") for item in payload.get("candidate_pool", [])])
+          print("Industry source:", payload.get("selection_meta", {}).get("industry_source"))
+          print("Constituent sources:", sorted({item.get("data_source", "unknown") for item in scan_summary}))
+          PY
 
       - name: Skip refresh when market is closed
         if: steps.calendar.outputs.is_trade_day != 'true'
