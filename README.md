@@ -1,6 +1,6 @@
 # A股 AI 选股与历史交易诊断
 
-这个项目现在按“**无自建后端服务器**”的思路收口，核心只保留两个页面：
+这个项目已经收口成一套“**纯静态前端 + GitHub Actions 日更 + Supabase 登录历史 + Make 调 Gemini**”的最小主流程，核心只保留两个页面：
 
 - `AI选股`
 - `历史交易诊断`
@@ -12,7 +12,7 @@
 也就是说：
 
 - 每日两次更新仍由 GitHub Actions 负责
-- 页面本身是静态页，不依赖你自己部署 FastAPI
+- 页面本身是静态页，不依赖你自己部署服务器
 - 用户注册登录与个人历史交给 Supabase
 - 个股 AI 分析和交易诊断 AI 结论交给 Make.com webhook，再由 Make 调用 Gemini
 
@@ -47,7 +47,17 @@
 - `data_pipeline/`: 数据抓取、筛选、快照生成
 - `data/processed/`: 每日快照 JSON
 - `supabase/schema.sql`: 用户历史表与 RLS 策略
-- `backend/`: 目前更多保留为本地调试与历史逻辑参考，不是正式线上主流程
+- `.github/workflows/refresh_snapshot.yml`: 每日两次自动刷新快照
+- `requirements-pipeline.txt`: 选股流水线所需的最小 Python 依赖
+- `docs/github_pages_supabase_make_runbook.md`: 当前正式部署说明
+
+## 本地最少命令
+
+```bash
+make install
+make check-trade-day
+make snapshot
+```
 
 ## 你真正需要配置的只有 3 个地方
 
@@ -94,17 +104,8 @@ window.APP_RUNTIME = {
 
 ## 当前说明
 
-- 页面已经按“无服务器版”改写
-- Supabase 负责注册登录和个人历史
-- Make webhook 负责调用 Gemini
-- GitHub Actions 只负责更新快照 JSON
-
-## 还保留但不再是主流程的内容
-
-仓库里目前仍然保留：
-
-- `backend/`
-- `worker/`
-- 一些旧的 Worker / FastAPI / Make 文档
-
-这些内容现在不是正式线上主流程，只是暂时没有做物理删除，避免误删你还在参考的旧实现。下一轮如果你确认，可以继续彻底清理。
+- GitHub Actions 只负责更新 `daily_candidates_latest.json`
+- GitHub Pages 只负责展示静态页
+- Supabase 只负责注册登录和用户历史
+- Make webhook 只负责调用 Gemini 并返回结构化结果
+- 仓库已经移除了旧的 `backend / worker / demo render` 主链依赖，避免后续维护时再被旧实现干扰

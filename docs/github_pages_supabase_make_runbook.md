@@ -1,10 +1,8 @@
 # GitHub Pages + Supabase + Make 上线方案
 
-当前项目已经不再把 `Cloudflare Worker` 作为正式主流程依赖。
+当前项目的正式线上链路是：
 
-新的线上链路是：
-
-`GitHub Pages 静态前端 -> Supabase 登录与历史 -> Make webhook -> Gemini`
+`GitHub Actions 定时更新快照 -> GitHub Pages 静态页面 -> Supabase 登录与历史 -> Make webhook -> Gemini`
 
 ## 目标
 
@@ -19,9 +17,10 @@
 ### A. 选股更新
 
 1. GitHub Actions 定时触发
-2. 执行 Python 数据流水线
-3. 更新 `data/processed/daily_candidates_latest.json`
-4. GitHub Pages 页面自动读取最新 JSON
+2. 检查是否为 A 股交易日
+3. 执行 Python 数据流水线
+4. 更新 `data/processed/daily_candidates_latest.json`
+5. GitHub Pages 页面自动读取最新 JSON
 
 ### B. 个股 AI 执行分析
 
@@ -70,7 +69,7 @@
 
 ### 3. 前端运行时配置
 
-在 `index.html` 里填写：
+在 `index.html` 顶部的 `window.APP_RUNTIME` 中填写：
 
 - `makeExecutionAnalysisWebhook`
 - `makeTradeDiagnosticsWebhook`
@@ -82,4 +81,4 @@
 
 - 这个方案不需要你部署自己的后端服务器
 - 如果浏览器直连 Make webhook 遇到 CORS 限制，再考虑补一层极轻量代理
-- 在当前阶段，`backend/` 和 `worker/` 目录都不是正式主流程
+- 如果你想保留按日期归档的历史快照，可以在运行 snapshot 时设置 `A_SHARE_WRITE_DATED_SNAPSHOT=1`

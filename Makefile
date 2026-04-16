@@ -1,19 +1,14 @@
 PYTHON ?= python3
 PIP ?= $(PYTHON) -m pip
 
-.PHONY: backend-install backend-dev backend-test pipeline-refresh pipeline-candidates
+.PHONY: install check-trade-day snapshot
 
-backend-install:
-	$(PIP) install -e ./backend[dev,pipeline]
+install:
+	$(PIP) install --upgrade pip
+	$(PIP) install -r requirements-pipeline.txt
 
-backend-dev:
-	cd backend && uvicorn app.main:app --reload
+check-trade-day:
+	$(PYTHON) -m data_pipeline.jobs.check_trade_day
 
-backend-test:
-	cd backend && pytest
-
-pipeline-refresh:
-	$(PYTHON) -m data_pipeline.jobs.daily_refresh
-
-pipeline-candidates:
+snapshot:
 	$(PYTHON) -m data_pipeline.jobs.generate_daily_candidates
