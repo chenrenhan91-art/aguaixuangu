@@ -7426,23 +7426,48 @@ a:hover {
           return;
         }
         try {
-          const response = await fetch(`${APP_RUNTIME.snapshotUrl}?t=${Date.now()}`, { cache: "no-store" });
-          if (!response.ok) {
-            throw new Error(`snapshot ${response.status}`);
+          // 优先尝试读 AI 增强版本，回退到基础版本
+          const paths = [
+            "data/processed/daily_candidates_ai_enriched.json",
+            APP_RUNTIME.snapshotUrl
+          ];
+          let remoteSnapshot = null;
+          let loadedFrom = null;
+
+          for (const path of paths) {
+            try {
+              const response = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
+              if (response.ok) {
+                remoteSnapshot = await response.json();
+                loadedFrom = path;
+                break;
+              }
+            } catch (e) {
+              // 继续尝试下一个路径
+            }
           }
-          const remoteSnapshot = await response.json();
+
           if (!remoteSnapshot?.strategy_modes) {
             return;
           }
+
           const nextMarketPayload = remoteSnapshot.ui_market_payload || marketPayload;
           const nextSignature = buildSnapshotSignature(remoteSnapshot, nextMarketPayload);
           if (state.snapshotSignature && state.snapshotSignature === nextSignature) {
             return;
           }
+
           snapshot = remoteSnapshot;
           marketPayload = nextMarketPayload;
           state.selectedMode = snapshot.default_mode || state.selectedMode || "balanced";
           state.snapshotSignature = nextSignature;
+          state.snapshotSource = loadedFrom; // 记录快照来源
+
+          // 若加载了 AI 版本，记录到日志
+          if (loadedFrom?.includes("ai_enriched")) {
+            console.log("✓ AI 增强快照已加载");
+          }
+
           bootstrapSelector();
         } catch (_error) {
           // Keep the embedded snapshot as a safe fallback on GitHub Pages.
