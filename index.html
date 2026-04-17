@@ -7426,48 +7426,23 @@ a:hover {
           return;
         }
         try {
-          // 优先尝试读 AI 增强版本，回退到基础版本
-          const paths = [
-            "data/processed/daily_candidates_ai_enriched.json",
-            APP_RUNTIME.snapshotUrl
-          ];
-          let remoteSnapshot = null;
-          let loadedFrom = null;
-
-          for (const path of paths) {
-            try {
-              const response = await fetch(`${path}?t=${Date.now()}`, { cache: "no-store" });
-              if (response.ok) {
-                remoteSnapshot = await response.json();
-                loadedFrom = path;
-                break;
-              }
-            } catch (e) {
-              // 继续尝试下一个路径
-            }
+          const response = await fetch(`${APP_RUNTIME.snapshotUrl}?t=${Date.now()}`, { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`snapshot ${response.status}`);
           }
-
+          const remoteSnapshot = await response.json();
           if (!remoteSnapshot?.strategy_modes) {
             return;
           }
-
           const nextMarketPayload = remoteSnapshot.ui_market_payload || marketPayload;
           const nextSignature = buildSnapshotSignature(remoteSnapshot, nextMarketPayload);
           if (state.snapshotSignature && state.snapshotSignature === nextSignature) {
             return;
           }
-
           snapshot = remoteSnapshot;
           marketPayload = nextMarketPayload;
           state.selectedMode = snapshot.default_mode || state.selectedMode || "balanced";
           state.snapshotSignature = nextSignature;
-          state.snapshotSource = loadedFrom; // 记录快照来源
-
-          // 若加载了 AI 版本，记录到日志
-          if (loadedFrom?.includes("ai_enriched")) {
-            console.log("✓ AI 增强快照已加载");
-          }
-
           bootstrapSelector();
         } catch (_error) {
           // Keep the embedded snapshot as a safe fallback on GitHub Pages.
@@ -7507,6 +7482,61 @@ a:hover {
         if (!detail) {
           return null;
         }
+
+        // 优先尝试 Make.com webhook（从 APP_RUNTIME 中配置）
+        const makeComWebhookUrl = APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
+        if (makeComWebhookUrl && !makeComWebhookUrl.includes("YOUR_WEBHOOK_ID")) {
+          try {
+            const payload = {
+              symbol: detail.symbol,
+              stock_name: detail.name,
+              current_price: detail.feature_map?.latest_close || 0,
+              stop_loss_price: detail.risk_plan?.stop_loss_price || 0,
+              take_profit_1: detail.risk_plan?.take_profit_price_1 || 0,
+              take_profit_2: detail.risk_plan?.take_profit_price_2 || 0,
+              risk_reward_ratio: detail.risk_plan?.risk_reward_ratio || 0,
+              volatility_10: detail.feature_map?.volatility_10 || 0,
+              industry: detail.industry,
+              event_text: detail.events?.[0]?.title || "无特定事件催化",
+              mode_id: state.selectedMode,
+              user_id: state.user?.id || null,
+              trade_date: snapshot.trade_date,
+            };
+
+            const response = await fetch(makeComWebhookUrl, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+              const result = await response.json();
+              if (result?.data) {
+                return {
+                  status: "ai_generated",
+                  model: result.data.model || "gpt-4",
+                  confidence: result.data.confidence || 0.82,
+                  summary: result.data.summary || "",
+                  highlights: result.data.highlights || [],
+                  key_signal: result.data.key_signal || "",
+                  trigger_points: result.data.trigger_points || [],
+                  invalidation_points: result.data.invalidation_points || [],
+                  execution_plan: result.data.execution_plan || [],
+                  stance: result.data.stance || "中性",
+                  setup_quality: result.data.setup_quality || "--",
+                  source: "make_com_ai",
+                  generated_at: result.data.generated_at || new Date().toISOString(),
+                };
+              }
+            }
+          } catch (error) {
+            console.warn("Make.com webhook 请求失败，降级到本地规则或代理接口:", error);
+          }
+        }
+
+        // 降级到代理接口或本地规则
         if (!hasProxyRuntime()) {
           return detail.ai_risk_analysis || null;
         }
