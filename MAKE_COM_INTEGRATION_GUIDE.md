@@ -39,14 +39,16 @@
 |--------|--------|
 | `symbol` | `{{1.symbol}}` |
 | `stock_name` | `{{1.stock_name}}` |
+| `response_schema_version` | `{{1.response_schema_version}}` |
 | `current_price` | `{{1.current_price}}` |
 | `stop_loss_price` | `{{1.stop_loss_price}}` |
-| `take_profit_1` | `{{1.take_profit_1}}` |
-| `take_profit_2` | `{{1.take_profit_2}}` |
+| `take_profit_price_1` | `{{1.take_profit_price_1}}` |
+| `take_profit_price_2` | `{{1.take_profit_price_2}}` |
 | `risk_reward_ratio` | `{{1.risk_reward_ratio}}` |
-| `volatility_10` | `{{1.volatility_10}}` |
 | `industry` | `{{1.industry}}` |
-| `event_text` | `{{1.event_text}}` |
+| `trade_date` | `{{1.trade_date}}` |
+| `analysis_context_json` | `{{1.analysis_context_json}}` |
+| `analysis_prompt` | `{{1.analysis_prompt}}` |
 
 ### 第 3 步：调用 AI 模型
 
@@ -58,7 +60,7 @@
    - **Model**：`gpt-4` 或 `gpt-3.5-turbo`
    - **System message**：
      ```
-     你是一个专业的股票交易策略分析师。基于用户提供的数据，生成具体的交易执行建议。
+     你是 A 股交易执行分析助手。基于用户提供的数据，输出精简、直接的执行分析。
      请务必返回有效的 JSON 格式。
      ```
    - **User message**：
@@ -71,8 +73,8 @@
 
      风险指标：
      - 止损价：{{stop_loss_price}}
-     - 第一止盈位：{{take_profit_1}}
-     - 第二止盈位：{{take_profit_2}}
+     - 第一止盈位：{{take_profit_price_1}}
+     - 第二止盈位：{{take_profit_price_2}}
      - 风险收益比：{{risk_reward_ratio}}
      - 波动率：{{volatility_10}}
 
@@ -80,14 +82,16 @@
 
      请按以下 JSON 格式生成分析结果（不要包含任何额外文本，只返回纯 JSON）：
      {
-       "summary": "核心交易建议总结（一句话）",
-       "highlights": ["要点1", "要点2", "要点3"],
-       "key_signal": "关键信号解读",
-       "trigger_points": ["触发条件1", "触发条件2"],
+       "summary": "不超过两句的结论",
+       "technical_judgment": "当前技术面判断",
+       "stop_loss_price": 0,
+       "take_profit_price_1": 0,
+       "take_profit_price_2": 0,
        "invalidation_points": ["失效条件1", "失效条件2"],
-       "execution_plan": ["执行步骤1", "执行步骤2"],
-       "stance": "头寸态度（看多/看空/中性）",
-       "setup_quality": "结构质量评分（1-10）"
+       "action_note": "一句执行提醒，不要写明确仓位比例",
+       "confidence": 0.8,
+       "model": "gpt-4",
+       "generated_at": "2026-04-17T15:30:00+08:00"
      }
      ```
 
@@ -119,13 +123,12 @@
      "status": "success",
      "data": {
        "summary": "{{4.summary}}",
-       "highlights": "{{4.highlights}}",
-       "key_signal": "{{4.key_signal}}",
-       "trigger_points": "{{4.trigger_points}}",
+       "technical_judgment": "{{4.technical_judgment}}",
+       "stop_loss_price": {{4.stop_loss_price}},
+       "take_profit_price_1": {{4.take_profit_price_1}},
+       "take_profit_price_2": {{4.take_profit_price_2}},
        "invalidation_points": "{{4.invalidation_points}}",
-       "execution_plan": "{{4.execution_plan}}",
-       "stance": "{{4.stance}}",
-       "setup_quality": "{{4.setup_quality}}",
+       "action_note": "{{4.action_note}}",
        "model": "gpt-4",
        "confidence": 0.82,
        "generated_at": "{{now()}}"
@@ -168,17 +171,17 @@ async function requestExecutionAnalysis(detail, signal) {
     const payload = {
       symbol: detail.symbol,
       stock_name: detail.name,
+      response_schema_version: "execution-analysis-v2",
       current_price: detail.feature_map?.latest_close || 0,
       stop_loss_price: detail.risk_plan?.stop_loss_price || 0,
-      take_profit_1: detail.risk_plan?.take_profit_price_1 || 0,
-      take_profit_2: detail.risk_plan?.take_profit_price_2 || 0,
+      take_profit_price_1: detail.risk_plan?.take_profit_price_1 || 0,
+      take_profit_price_2: detail.risk_plan?.take_profit_price_2 || 0,
       risk_reward_ratio: detail.risk_plan?.risk_reward_ratio || 0,
-      volatility_10: detail.feature_map?.volatility_10 || 0,
       industry: detail.industry,
       event_text: detail.events?.[0]?.title || "无特定事件催化",
       mode_id: state.selectedMode,
       user_id: state.user?.id || null,
-      trade_date: snapshot.trade_date,
+      trade_date: snapshot.trade_date
     };
 
     // 调用 Make.com webhook
@@ -204,13 +207,12 @@ async function requestExecutionAnalysis(detail, signal) {
         model: result.data.model || "gpt-4",
         confidence: result.data.confidence || 0.82,
         summary: result.data.summary || "",
-        highlights: result.data.highlights || [],
-        key_signal: result.data.key_signal || "",
-        trigger_points: result.data.trigger_points || [],
+        technical_judgment: result.data.technical_judgment || "",
+        stop_loss_price: result.data.stop_loss_price || 0,
+        take_profit_price_1: result.data.take_profit_price_1 || 0,
+        take_profit_price_2: result.data.take_profit_price_2 || 0,
         invalidation_points: result.data.invalidation_points || [],
-        execution_plan: result.data.execution_plan || [],
-        stance: result.data.stance || "中性",
-        setup_quality: result.data.setup_quality || "--",
+        action_note: result.data.action_note || "",
         source: "make_com",
         generated_at: result.data.generated_at || new Date().toISOString(),
       };
@@ -238,14 +240,14 @@ async function requestExecutionAnalysis(detail, signal) {
      -d '{
        "symbol": "603629",
        "stock_name": "利通电子",
+       "response_schema_version": "execution-analysis-v2",
        "current_price": 79.95,
        "stop_loss_price": 73.71,
-       "take_profit_1": 91.18,
-       "take_profit_2": 98.67,
+       "take_profit_price_1": 91.18,
+       "take_profit_price_2": 98.67,
        "risk_reward_ratio": 1.8,
-       "volatility_10": 5.15,
        "industry": "电子元器件",
-       "event_text": "北京市天元律师事务所关于利通电子激励计划法律意见"
+       "trade_date": "2026-04-17"
      }'
    ```
 
@@ -292,23 +294,22 @@ AI 交易执行分析
 
 [看多] [结构优秀] [事件驱动]
 
-核心交易建议：当前处于底部布局机会，建议轻仓试错。
+核心交易建议：技术结构仍偏强，但当前位置不宜追高。若回踩不破关键位，可继续跟踪。
 
-关键观察
-当前模式更看重 行业强度、资金共识、龙头扩散...
+技术面判断
+价格仍运行在关键均线上方，但短线已有一定乖离，追价性价比一般。
 
-触发条件
-• 量价确认突破 20 日线
-• 成交额同步放大 20% 以上
+关键价位
+• 止损位：1620.00 元
+• 第一止盈：1750.00 元
+• 第二止盈：1810.00 元
 
 失效条件
-• 收盘跌破 10 日线
-• 成交量委缩至平均水平以下
+• 收盘跌破 1620 元
+• 放量转弱且次日无法收回关键位
 
-执行步骤
-1. 轻仓试错，初始仓位不超过 1%
-2. 突破确认后加仓到 2-3%
-3. 收盘若跌破支撑，立即止损
+执行提醒
+若无法放量站稳前高，宁可继续观察，也不要追价。
 ```
 
 ---

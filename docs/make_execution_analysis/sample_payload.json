@@ -1,0 +1,67 @@
+{
+  "symbol": "600519",
+  "stock_name": "贵州茅台",
+  "response_schema_version": "execution-analysis-v2",
+  "trade_date": "2026-04-17",
+  "mode_id": "balanced",
+  "industry": "白酒",
+  "rank": 1,
+  "holding_window": "3-5D",
+  "thesis": "白酒龙头在消费修复与权重回流背景下维持趋势结构，但当前位置更适合等确认，不适合情绪化追高。",
+  "market_context": "当前市场偏向权重与消费修复轮动，适合确认后跟随，不适合板块外发散追涨。",
+  "current_price": 1688,
+  "action_bias": "谨慎追高",
+  "action_note": "若无法放量站稳前高，宁可继续观察，也不要追价。",
+  "stop_loss_price": 1620,
+  "take_profit_price_1": 1750,
+  "take_profit_price_2": 1810,
+  "trailing_stop_price": 1650,
+  "risk_reward_ratio": 1.8,
+  "technical_features": [
+    {
+      "name": "行业强度",
+      "value": 78.2,
+      "description": "白酒板块在消费修复背景下出现回流。"
+    },
+    {
+      "name": "技术结构",
+      "value": 81.3,
+      "description": "价格运行在关键均线上方，趋势完整。"
+    },
+    {
+      "name": "事件强度",
+      "value": 68.2,
+      "description": "资金关注度回升，但催化持续性仍需观察。"
+    }
+  ],
+  "reasons": [
+    {
+      "label": "行业轮动",
+      "detail": "白酒权重回流，板块承接改善。"
+    },
+    {
+      "label": "技术结构",
+      "detail": "价格维持在关键均线上方，趋势未破坏。"
+    },
+    {
+      "label": "风险收益",
+      "detail": "止损与两档止盈位置清晰。"
+    }
+  ],
+  "recent_events": [
+    {
+      "title": "北向资金再度增持白酒龙头",
+      "publish_time": "2026-04-17T09:32:00+08:00",
+      "summary": "市场资金偏向高确定性消费权重，白酒龙头出现承接改善。",
+      "source": "市场资讯"
+    },
+    {
+      "title": "消费板块午后回暖",
+      "publish_time": "2026-04-17T13:18:00+08:00",
+      "summary": "板块内权重股表现稳定，低位资金回补迹象增强。",
+      "source": "行业快讯"
+    }
+  ],
+  "analysis_context_json": "{\n  \"symbol\": \"600519\",\n  \"stock_name\": \"贵州茅台\",\n  \"response_schema_version\": \"execution-analysis-v2\",\n  \"trade_date\": \"2026-04-17\",\n  \"mode_id\": \"balanced\",\n  \"industry\": \"白酒\",\n  \"current_price\": 1688,\n  \"action_bias\": \"谨慎追高\",\n  \"action_note\": \"若无法放量站稳前高，宁可继续观察，也不要追价。\",\n  \"stop_loss_price\": 1620,\n  \"take_profit_price_1\": 1750,\n  \"take_profit_price_2\": 1810,\n  \"trailing_stop_price\": 1650,\n  \"risk_reward_ratio\": 1.8\n}",
+  "analysis_prompt": "你是 A 股交易执行分析助手。\n任务：基于给定上下文，输出简洁、直接、便于执行的 JSON。\n核心只回答 4 件事：1. 当前技术面判断 2. 止损位 3. 两档止盈位 4. 失效条件。\n严格要求：\n1. 不要输出 Markdown、不要输出代码块、不要输出 JSON 之外的内容。\n2. 不要给出明确仓位比例，不要出现百分比仓位、几成仓、轻仓 20% 之类表述。\n3. 语言必须精简易懂，避免空话和套话。\n4. 技术面判断要明确指出是偏强、震荡、转弱还是不适合追价，并说明一句原因。\n5. 止损位、止盈位直接使用上下文中的数字，若上下文已有明确价格，不要随意改写。\n6. 如果当前位置不适合追价，要明确写出“不宜追高”或同义表达。\n7. `summary` 控制在 2 句以内。\nJSON 字段必须严格为：summary, technical_judgment, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, confidence, model, generated_at。\n股票上下文：\n{\n  \"symbol\": \"600519\",\n  \"stock_name\": \"贵州茅台\",\n  \"trade_date\": \"2026-04-17\",\n  \"mode_id\": \"balanced\",\n  \"industry\": \"白酒\",\n  \"current_price\": 1688,\n  \"action_bias\": \"谨慎追高\",\n  \"action_note\": \"若无法放量站稳前高，宁可继续观察，也不要追价。\",\n  \"stop_loss_price\": 1620,\n  \"take_profit_price_1\": 1750,\n  \"take_profit_price_2\": 1810,\n  \"trailing_stop_price\": 1650,\n  \"risk_reward_ratio\": 1.8\n}"
+}

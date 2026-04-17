@@ -7479,6 +7479,111 @@ a:hover {
         return remote?.diagnostics || payload.localDiagnostics;
       }
 
+      function buildExecutionAnalysisContext(detail, signal) {
+        const featureScores = Array.isArray(detail?.feature_scores)
+          ? detail.feature_scores.slice(0, 4).map((item) => ({
+              name: item?.name || "",
+              value: Number(item?.value || 0),
+              description: item?.description || "",
+            }))
+          : [];
+        const recentEvents = Array.isArray(detail?.recent_events)
+          ? detail.recent_events.slice(0, 3).map((item) => ({
+              title: item?.title || "",
+              publish_time: item?.publish_time || "",
+              summary: item?.summary || "",
+              source: item?.source || item?.source_category || "",
+            }))
+          : [];
+        return {
+          symbol: detail?.symbol || "",
+          stock_name: detail?.name || "",
+          trade_date: snapshot.trade_date,
+          mode_id: state.selectedMode,
+          industry: detail?.industry || "",
+          rank: signal?.rank || null,
+          holding_window: signal?.holding_window || "",
+          thesis: detail?.thesis || "",
+          market_context: detail?.market_context || "",
+          current_price: detail?.feature_map?.latest_close || detail?.risk_plan?.reference_price || 0,
+          action_bias: detail?.risk_plan?.action_bias || "",
+          action_note: detail?.risk_plan?.action_note || "",
+          stop_loss_price: detail?.risk_plan?.stop_loss_price || 0,
+          take_profit_price_1: detail?.risk_plan?.take_profit_price_1 || 0,
+          take_profit_price_2: detail?.risk_plan?.take_profit_price_2 || 0,
+          trailing_stop_price: detail?.risk_plan?.trailing_stop_price || 0,
+          risk_reward_ratio: detail?.risk_plan?.risk_reward_ratio || 0,
+          technical_features: featureScores,
+          reasons: Array.isArray(signal?.reasons) ? signal.reasons.slice(0, 3) : [],
+          recent_events: recentEvents,
+        };
+      }
+
+      function buildExecutionAnalysisPrompt(context) {
+        return [
+          "你是 A 股交易执行分析助手。",
+          "任务：基于给定上下文，输出简洁、直接、便于执行的 JSON。",
+          "核心只回答 4 件事：1. 当前技术面判断 2. 止损位 3. 两档止盈位 4. 失效条件。",
+          "严格要求：",
+          "1. 不要输出 Markdown、不要输出代码块、不要输出 JSON 之外的内容。",
+          "2. 不要给出明确仓位比例，不要出现百分比仓位、几成仓、轻仓 20% 之类表述。",
+          "3. 语言必须精简易懂，避免空话和套话。",
+          "4. 技术面判断要明确指出是偏强、震荡、转弱还是不适合追价，并说明一句原因。",
+          "5. 止损位、止盈位直接使用上下文中的数字，若上下文已有明确价格，不要随意改写。",
+          "6. 如果当前位置不适合追价，要明确写出“不宜追高”或同义表达。",
+          "7. `summary` 控制在 2 句以内。",
+          "JSON 字段必须严格为：summary, technical_judgment, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, confidence, model, generated_at。",
+          "其中：",
+          "- `technical_judgment` 是 1 到 2 句。",
+          "- `invalidation_points` 给 2 到 3 条，优先写跌破、放量转弱、承接不足等失效信号。",
+          "- `action_note` 只写一句执行提醒，禁止写仓位比例。",
+          "股票上下文：",
+          JSON.stringify(context, null, 2),
+        ].join("\n");
+      }
+
+      function normalizeExecutionAnalysisResult(aiResult, detail) {
+        if (!aiResult && !detail?.risk_plan) {
+          return null;
+        }
+        const riskPlan = detail?.risk_plan || {};
+        const highlights = Array.isArray(aiResult?.highlights) ? aiResult.highlights : [];
+        const invalidationPoints =
+          Array.isArray(aiResult?.invalidation_points) && aiResult.invalidation_points.length
+            ? aiResult.invalidation_points
+            : Array.isArray(aiResult?.trigger_points) && aiResult.trigger_points.length
+              ? aiResult.trigger_points
+              : Array.isArray(riskPlan?.execution_notes)
+                ? riskPlan.execution_notes.slice(0, 3)
+                : [];
+
+        return {
+          status: aiResult?.status || "ai_generated",
+          summary: aiResult?.summary || detail?.ai_risk_analysis?.summary || "当前分析结果暂不可用。",
+          technical_judgment:
+            aiResult?.technical_judgment ||
+            aiResult?.key_signal ||
+            highlights[0] ||
+            detail?.thesis ||
+            detail?.market_context ||
+            "--",
+          stop_loss_price: Number(aiResult?.stop_loss_price ?? riskPlan?.stop_loss_price ?? 0),
+          take_profit_price_1: Number(aiResult?.take_profit_price_1 ?? aiResult?.take_profit_1 ?? riskPlan?.take_profit_price_1 ?? 0),
+          take_profit_price_2: Number(aiResult?.take_profit_price_2 ?? aiResult?.take_profit_2 ?? riskPlan?.take_profit_price_2 ?? 0),
+          invalidation_points: invalidationPoints,
+          action_note:
+            aiResult?.action_note ||
+            aiResult?.next_step ||
+            riskPlan?.action_note ||
+            detail?.ai_risk_analysis?.next_step ||
+            "--",
+          confidence: aiResult?.confidence || detail?.ai_risk_analysis?.confidence || 0.68,
+          model: aiResult?.model || detail?.ai_risk_analysis?.model || "make_com_ai",
+          source: aiResult?.source || detail?.ai_risk_analysis?.source || "make_com_ai",
+          generated_at: aiResult?.generated_at || detail?.ai_risk_analysis?.generated_at || new Date().toISOString(),
+        };
+      }
+
       async function requestExecutionAnalysis(detail, signal) {
         if (!detail) {
           return null;
@@ -7488,23 +7593,13 @@ a:hover {
         const makeComWebhookUrl = APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
         if (makeComWebhookUrl && !makeComWebhookUrl.includes("YOUR_WEBHOOK_ID")) {
           try {
-            const volatilityFeature = (detail.feature_scores || []).find((item) =>
-              String(item?.name || "").includes("波动") || String(item?.name || "").toLowerCase().includes("volatility"),
-            );
+            const context = buildExecutionAnalysisContext(detail, signal);
             const payload = {
-              symbol: detail.symbol,
-              stock_name: detail.name,
-              current_price: detail.feature_map?.latest_close || detail.risk_plan?.reference_price || 0,
-              stop_loss_price: detail.risk_plan?.stop_loss_price || 0,
-              take_profit_1: detail.risk_plan?.take_profit_price_1 || 0,
-              take_profit_2: detail.risk_plan?.take_profit_price_2 || 0,
-              risk_reward_ratio: detail.risk_plan?.risk_reward_ratio || 0,
-              volatility_10: detail.feature_map?.volatility_10 || volatilityFeature?.value || 0,
-              industry: detail.industry,
-              event_text: detail.events?.[0]?.title || detail.recent_events?.[0]?.title || "无特定事件催化",
-              mode_id: state.selectedMode,
+              ...context,
               user_id: state.user?.id || null,
-              trade_date: snapshot.trade_date,
+              response_schema_version: "execution-analysis-v2",
+              analysis_context_json: JSON.stringify(context, null, 2),
+              analysis_prompt: buildExecutionAnalysisPrompt(context),
             };
 
             const response = await fetch(makeComWebhookUrl, {
@@ -7527,42 +7622,30 @@ a:hover {
               if (!result && rawText) {
                 const normalized = String(rawText).trim();
                 if (/^accepted/i.test(normalized)) {
-                  return {
+                  return normalizeExecutionAnalysisResult({
                     status: "queued",
                     model: "gemini-3.1-pro",
                     confidence: 0.55,
                     summary: "请求已提交到 Make，正在等待场景返回 AI 分析结果。请稍后点击“AI 交易执行分析”重试。",
-                    highlights: ["Make webhook 已接收请求（Accepted）。"],
-                    key_signal: "排队处理中",
-                    trigger_points: [],
-                    invalidation_points: [],
-                    execution_plan: [],
-                    stance: "中性",
-                    setup_quality: "处理中",
+                    technical_judgment: "排队处理中",
+                    invalidation_points: ["等待 Make 场景回传结果后再查看具体失效条件。"],
+                    action_note: "请稍后重试。",
                     source: "make_com_ai",
                     generated_at: new Date().toISOString(),
-                  };
+                  }, detail);
                 }
                 result = { summary: normalized };
               }
 
-              const aiResult = result?.data || result?.analysis || result;
-              if (aiResult && (aiResult.summary || aiResult.highlights || aiResult.execution_plan)) {
-                return {
-                  status: "ai_generated",
-                  model: aiResult.model || "gemini-3.1-pro",
-                  confidence: aiResult.confidence || 0.82,
-                  summary: aiResult.summary || "",
-                  highlights: aiResult.highlights || [],
-                  key_signal: aiResult.key_signal || "",
-                  trigger_points: aiResult.trigger_points || [],
-                  invalidation_points: aiResult.invalidation_points || [],
-                  execution_plan: aiResult.execution_plan || [],
-                  stance: aiResult.stance || "中性",
-                  setup_quality: aiResult.setup_quality || "--",
-                  source: "make_com_ai",
-                  generated_at: aiResult.generated_at || new Date().toISOString(),
-                };
+              const aiResult = result?.data || result?.analysis || result?.output || result;
+              if (aiResult && (aiResult.summary || aiResult.technical_judgment || aiResult.highlights)) {
+                return normalizeExecutionAnalysisResult(
+                  {
+                    ...aiResult,
+                    source: "make_com_ai",
+                  },
+                  detail,
+                );
               }
             }
           } catch (error) {
@@ -7572,7 +7655,7 @@ a:hover {
 
         // 降级到代理接口或本地规则
         if (!hasProxyRuntime()) {
-          return detail.ai_risk_analysis || null;
+          return normalizeExecutionAnalysisResult(detail.ai_risk_analysis, detail);
         }
         const token = await getAccessToken();
         const response = await fetch(getProxyUrl("/api/stocks/execution-analysis"), {
@@ -7595,7 +7678,7 @@ a:hover {
           throw new Error("AI 执行分析服务暂不可用。");
         }
         const remote = await response.json();
-        return remote?.analysis || detail.ai_risk_analysis || null;
+        return normalizeExecutionAnalysisResult(remote?.analysis || detail.ai_risk_analysis, detail);
       }
 
       function buildAiAnalysisMarkup(aiRiskAnalysis) {
@@ -7662,6 +7745,11 @@ a:hover {
           aiRiskAnalysis.model || "待接入模型",
           `置信度 ${Math.round(Number(aiRiskAnalysis.confidence || 0.68) * 100)} / 100`,
         ].filter(Boolean);
+        const priceCards = [
+          { label: "止损位", value: aiRiskAnalysis.stop_loss_price },
+          { label: "第一止盈", value: aiRiskAnalysis.take_profit_price_1 },
+          { label: "第二止盈", value: aiRiskAnalysis.take_profit_price_2 },
+        ];
 
         return `
           <section class="ai-modal-window">
@@ -7671,36 +7759,27 @@ a:hover {
                 ${meta.map((item) => `<span class="ai-meta-chip">${item}</span>`).join("")}
               </div>
             </div>
-            <div class="tag-row">
-              ${aiRiskAnalysis.stance ? `<span>${aiRiskAnalysis.stance}</span>` : ""}
-              ${aiRiskAnalysis.setup_quality ? `<span>结构 ${aiRiskAnalysis.setup_quality}</span>` : ""}
-              ${aiRiskAnalysis.source ? `<span>${aiRiskAnalysis.source}</span>` : ""}
-            </div>
             <p class="ai-modal-summary">${aiRiskAnalysis.summary}</p>
             <div class="ai-insight-grid">
               <article class="ai-insight-card full-span">
-                <strong>关键观察</strong>
-                <p class="ai-key-line">${aiRiskAnalysis.key_signal || aiRiskAnalysis.next_step || "--"}</p>
+                <strong>技术面判断</strong>
+                <p class="ai-key-line">${aiRiskAnalysis.technical_judgment || "--"}</p>
               </article>
-              <article class="ai-insight-card">
-                <strong>触发条件</strong>
-                <ul class="ai-list">${(aiRiskAnalysis.trigger_points || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+              <article class="ai-insight-card full-span">
+                <strong>关键价位</strong>
+                <ul class="ai-list">
+                  ${priceCards
+                    .map((item) => `<li>${item.label}：${Number.isFinite(Number(item.value)) && Number(item.value) > 0 ? `${Number(item.value).toFixed(2)} 元` : "--"}</li>`)
+                    .join("")}
+                </ul>
               </article>
-              <article class="ai-insight-card">
+              <article class="ai-insight-card full-span">
                 <strong>失效条件</strong>
                 <ul class="ai-list">${(aiRiskAnalysis.invalidation_points || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
               </article>
               <article class="ai-insight-card full-span">
-                <strong>执行步骤</strong>
-                <ul class="ai-list">${(aiRiskAnalysis.execution_plan || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
-              </article>
-              <article class="ai-insight-card">
-                <strong>补充判断</strong>
-                <ul class="ai-list">${(aiRiskAnalysis.highlights || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
-              </article>
-              <article class="ai-insight-card">
-                <strong>下一步</strong>
-                <p class="ai-next-step">${aiRiskAnalysis.next_step || "--"}</p>
+                <strong>执行提醒</strong>
+                <p class="ai-next-step">${aiRiskAnalysis.action_note || "--"}</p>
               </article>
             </div>
           </section>
