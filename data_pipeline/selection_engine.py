@@ -503,15 +503,24 @@ def build_market_regime(top_sectors: list[dict[str, Any]], market_news: list[dic
         1,
     )
 
+    # 保留风险分区（risk_on / neutral / risk_off），同时把仓位建议改为连续映射，减少临界值跳档。
+    def map_confidence_to_exposure(conf: float) -> float:
+        if conf <= 0.4:
+            # 低置信区：在 25% 基线下继续小幅下调，最低收敛到 18%。
+            return clip(0.25 - (0.4 - conf) * 0.35, 0.18, 0.25)
+        if conf >= 0.66:
+            # 高置信区：在 72% 基线上温和上调，最高收敛到 82%。
+            return clip(0.72 + (conf - 0.66) * 0.22, 0.72, 0.82)
+        # 中性区：0.4~0.66 线性平滑过渡到 25%~72%。
+        return 0.25 + ((conf - 0.4) / 0.26) * (0.72 - 0.25)
+
     if confidence >= 0.66:
         regime = "risk_on"
-        exposure = 0.72
     elif confidence <= 0.4:
         regime = "risk_off"
-        exposure = 0.25
     else:
         regime = "neutral"
-        exposure = 0.48
+    exposure = round(map_confidence_to_exposure(confidence), 4)
 
     return {
         "regime": regime,
@@ -736,6 +745,16 @@ def build_risk_plan(mode_id: str, record: dict[str, Any], market_regime: str) ->
     atr_value = max(feature_map.get("atr14", 0.0), reference_price * 0.015)
     support_price = max(feature_map.get("support_10", 0.0), 0.0)
     resistance_price = max(feature_map.get("resistance_20", 0.0), reference_price)
+    signal_quality = clip(
+        (
+            record["industry_score"] * 0.28
+            + record["technical_score"] * 0.34
+            + record["event_score"] * 0.16
+            + record["sentiment_score"] * 0.22
+        ),
+        0,
+        100,
+    )
     stop_bounds = {
         "balanced": (0.04, 0.078, 1.55, 1.8, 3.0),
         "sector_rotation": (0.045, 0.082, 1.65, 1.9, 3.1),
@@ -764,18 +783,42 @@ def build_risk_plan(mode_id: str, record: dict[str, Any], market_regime: str) ->
     trailing_stop_price = round(max(feature_map["ma10"] * 0.992, reference_price - atr_value * 1.15), 2)
 
     mode_position_cap = {
-        "balanced": 0.12,
-        "sector_rotation": 0.14,
-        "event_driven": 0.1,
-        "trend_breakout": 0.13,
-        "short_term_relay": 0.09,
+        "balanced": 0.10,
+        "sector_rotation": 0.12,
+        "event_driven": 0.085,
+        "trend_breakout": 0.11,
+        "short_term_relay": 0.075,
     }[mode_id]
-    regime_factor = {"risk_on": 1.0, "neutral": 0.82, "risk_off": 0.58}.get(market_regime, 0.8)
-    volatility_factor = 0.72 if feature_map["volatility_10"] >= 6 else 0.85 if feature_map["volatility_10"] >= 4.5 else 1.0
-    chase_factor = 0.72 if record["spot_pct"] >= 8 else 0.84 if record["spot_pct"] >= 5 else 1.0
-    position_max = clip(mode_position_cap * regime_factor * volatility_factor * chase_factor, 0.04, 0.18)
-    position_min = clip(position_max * 0.6, 0.02, position_max)
-    max_portfolio_risk = position_max * stop_pct
+    base_risk_budget = {
+        "balanced": 0.0060,
+        "sector_rotation": 0.0066,
+        "event_driven": 0.0052,
+        "trend_breakout": 0.0068,
+        "short_term_relay": 0.0048,
+    }[mode_id]
+    regime_factor = {"risk_on": 1.0, "neutral": 0.82, "risk_off": 0.6}.get(market_regime, 0.8)
+    quality_factor = clip(0.72 + signal_quality / 200.0, 0.72, 1.12)
+    volatility_factor = clip(1.05 - max(feature_map["volatility_10"] - 3.5, 0.0) * 0.08, 0.62, 1.02)
+    stretch_factor = clip(1.0 - max(record["spot_pct"] - 4.0, 0.0) * 0.035, 0.68, 1.0)
+    trend_alignment_factor = 1.0
+    if feature_map["latest_close"] > feature_map["ma20"]:
+        trend_alignment_factor += 0.05
+    if feature_map["ma10"] > feature_map["ma20"]:
+        trend_alignment_factor += 0.05
+    if feature_map["ma20"] > feature_map["ma60"]:
+        trend_alignment_factor += 0.04
+    if record["event_score"] >= 65:
+        trend_alignment_factor += 0.03
+    if record["sentiment_score"] < 55:
+        trend_alignment_factor -= 0.04
+    trend_alignment_factor = clip(trend_alignment_factor, 0.86, 1.14)
+
+    # 先按风险预算反推单票最大仓位，再用模式与环境因子收敛到更合理的建议区间。
+    risk_budget = base_risk_budget * regime_factor * quality_factor * volatility_factor * stretch_factor * trend_alignment_factor
+    position_from_risk = risk_budget / max(stop_pct, 0.01)
+    position_max = clip(min(mode_position_cap, position_from_risk), 0.02, 0.16)
+    position_min = clip(position_max * (0.48 + min(signal_quality, 100) / 330.0), 0.015, position_max)
+    max_portfolio_risk = min(risk_budget, position_max * stop_pct)
     risk_reward_ratio = max((take_profit_price_1 - reference_price) / max(reference_price - stop_loss_price, 0.01), 0.5)
 
     if record["spot_pct"] >= 8:
@@ -799,11 +842,23 @@ def build_risk_plan(mode_id: str, record: dict[str, Any], market_regime: str) ->
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
     ]
 
+    if signal_quality >= 80:
+        execution_notes.append("信号质量较高，可在纪律范围内使用区间上沿仓位。")
+    elif signal_quality <= 60:
+        execution_notes.append("信号质量一般，建议以区间下沿为主，避免一次性打满。")
+
+    if feature_map["volatility_10"] >= 6:
+        execution_notes.append("近期波动偏高，仓位应更偏防守，优先保留机动资金。")
+
+    if record["spot_pct"] >= 6:
+        execution_notes.append("价格已处于加速区，建议只用试仓级别仓位。")
+
     return {
         "price_basis": price_basis,
         "reference_price": round(reference_price, 2),
         "stop_loss_price": stop_loss_price,
         "stop_loss_pct": round(stop_pct, 4),
+        "signal_quality_score": round(signal_quality, 2),
         "take_profit_price_1": take_profit_price_1,
         "take_profit_pct_1": round(take_profit_pct_1, 4),
         "take_profit_price_2": take_profit_price_2,

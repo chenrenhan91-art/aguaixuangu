@@ -292,6 +292,71 @@ a:hover {
     linear-gradient(180deg, rgba(12, 23, 35, 0.98), rgba(8, 16, 24, 0.98));
 }
 
+      .market-exposure-tile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .market-exposure-tile .tile-value {
+        margin-top: 4px;
+      }
+
+      .exposure-note-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+      }
+
+      .exposure-note,
+      .exposure-mode {
+        color: var(--text-dim);
+        font-size: 0.76rem;
+        line-height: 1.35;
+        min-width: 0;
+      }
+
+      .exposure-note {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .exposure-mode {
+        flex: none;
+        padding: 3px 8px;
+        border-radius: 999px;
+        border: 1px solid rgba(124, 150, 176, 0.16);
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .exposure-meter {
+        width: 100%;
+        height: 8px;
+        border-radius: 999px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .exposure-meter-fill {
+        height: 100%;
+        width: 0%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, var(--sentiment-accent), rgba(255, 255, 255, 0.92));
+        box-shadow: 0 0 16px var(--sentiment-accent-soft);
+        transition: width 220ms ease, background 220ms ease;
+      }
+
+      .exposure-legend {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        align-items: center;
+        color: var(--text-soft);
+        font-size: 0.72rem;
+      }
+
 .market-sentiment-tile {
   border-color: var(--sentiment-accent-border);
   box-shadow:
@@ -791,11 +856,11 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 7px;
+  gap: 8px;
   min-height: 0;
   height: 100%;
-  padding: 10px 11px;
-  border-radius: 10px;
+  padding: 12px 12px 11px;
+  border-radius: 12px;
   color: inherit;
   text-align: left;
   cursor: pointer;
@@ -861,6 +926,55 @@ a:hover {
 
 .signal-score-group {
   text-align: right;
+}
+
+.signal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.signal-info-chip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  min-height: 38px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(124, 150, 176, 0.14);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.signal-info-chip span {
+  color: var(--text-soft);
+  font-size: 0.68rem;
+  line-height: 1;
+}
+
+.signal-info-chip strong {
+  color: #f7fbff;
+  font-size: 0.82rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.signal-footer-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 24px;
+  padding-top: 2px;
+}
+
+.signal-footer-note {
+  min-width: 0;
+  color: var(--text-dim);
+  font-size: 0.76rem;
+  line-height: 1.35;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .signal-score-value {
@@ -1064,7 +1178,7 @@ a:hover {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(var(--candidate-count, 1), minmax(118px, 1fr));
+  grid-template-rows: repeat(var(--candidate-count, 1), minmax(138px, 1fr));
   gap: 8px;
   align-content: stretch;
   max-height: none;
@@ -6641,10 +6755,20 @@ a:hover {
           <strong id="sentiment-value" class="tile-value">--</strong>
           <small id="sentiment-summary">--</small>
         </article>
-        <article class="market-tile">
+        <article class="market-tile market-exposure-tile">
           <span class="tile-label">建议仓位比例</span>
           <strong id="exposure-value" class="tile-value">--</strong>
-          <small>过滤器</small>
+          <div class="exposure-note-row">
+            <span id="exposure-note" class="exposure-note">--</span>
+            <span id="exposure-mode" class="exposure-mode">--</span>
+          </div>
+          <div class="exposure-meter">
+            <div id="exposure-fill" class="exposure-meter-fill"></div>
+          </div>
+          <div class="exposure-legend">
+            <span id="exposure-confidence">置信度 --</span>
+            <span id="exposure-regime">--</span>
+          </div>
         </article>
         <article class="market-tile">
           <span class="tile-label">强势行业数</span>
@@ -7554,6 +7678,48 @@ a:hover {
         return "aggressive";
       }
 
+      function getExposureModeText(exposure, regime) {
+        if (!Number.isFinite(exposure)) {
+          return "--";
+        }
+        if (regime === "risk_off" || exposure <= 0.3) {
+          return "防守仓";
+        }
+        if (regime === "risk_on" && exposure >= 0.65) {
+          return "进攻仓";
+        }
+        if (exposure >= 0.5) {
+          return "均衡仓";
+        }
+        return "观察仓";
+      }
+
+      function buildExposureNote(marketPayloadValue, sentiment) {
+        const regimeText = {
+          risk_on: "偏强",
+          neutral: "中性",
+          risk_off: "偏弱",
+        }[marketPayloadValue?.regime] || "未知";
+        const sentimentText = sentiment?.sentiment_label || "市场情绪";
+        const actionText = sentiment?.action_bias || "仓位控制";
+        return `${regimeText}市场 · ${sentimentText} · ${actionText}`;
+      }
+
+      function normalizeStrategyPhrase(text, label) {
+        if (!text) {
+          return "--";
+        }
+        let normalized = String(text).trim();
+        normalized = normalized.replace(/[；;。\s]+$/g, "");
+        if (label === "优先") {
+          normalized = normalized.replace(/^优先[：:\s]*/u, "").trim();
+        }
+        if (label === "回避") {
+          normalized = normalized.replace(/^回避[：:\s]*/u, "").trim();
+        }
+        return normalized || "--";
+      }
+
       function getCurrentModePayload() {
         const strategyModes = snapshot.strategy_modes || {};
         return strategyModes[state.selectedMode] || strategyModes[snapshot.default_mode];
@@ -7565,6 +7731,9 @@ a:hover {
         const sentimentScore = resolveSentimentScore(sentiment);
         const toneBucket = applyMarketToneByScore(sentimentScore);
         applySentimentTheme(sentiment.tone_key);
+        const exposure = Number(marketPayload.suggested_exposure);
+        const exposurePercent = Number.isFinite(exposure) ? Math.max(0, Math.min(exposure * 100, 100)) : null;
+        const exposureMode = getExposureModeText(exposure, marketPayload.regime);
         setText("trade-date", `交易日：${snapshot.trade_date}`);
         setText("snapshot-session", `数据时段：${snapshotSessionLabel}`);
         updateSnapshotSessionPill(snapshotSessionLabel);
@@ -7582,9 +7751,28 @@ a:hover {
         setText(
           "sentiment-action-note",
           sentiment.action_bias
-            ? `${sentiment.action_bias}；优先 ${sentiment.preferred_setup || "强势主线前排"}；回避 ${sentiment.avoid_action || "无承接追价"}`
+            ? `${normalizeStrategyPhrase(sentiment.action_bias)}；优先 ${normalizeStrategyPhrase(sentiment.preferred_setup || "强势主线前排", "优先")}；回避 ${normalizeStrategyPhrase(sentiment.avoid_action || "无承接追价", "回避")}`
             : "--",
         );
+        setText("exposure-value", exposurePercent !== null ? `${exposurePercent.toFixed(0)}%` : "--");
+        setText("exposure-note", buildExposureNote(marketPayload, sentiment));
+        setText("exposure-mode", exposureMode);
+        setText(
+          "exposure-confidence",
+          typeof marketPayload.confidence === "number" ? `置信度 ${(marketPayload.confidence * 100).toFixed(0)}%` : "置信度 --",
+        );
+        setText(
+          "exposure-regime",
+          marketPayload.regime === "risk_on"
+            ? "风险偏好提升"
+            : marketPayload.regime === "risk_off"
+              ? "风险偏好下降"
+              : "平衡观察",
+        );
+        const exposureFill = document.getElementById("exposure-fill");
+        if (exposureFill) {
+          exposureFill.style.width = `${exposurePercent !== null ? Math.max(8, exposurePercent) : 8}%`;
+        }
         const temperatureFill = document.getElementById("sentiment-temperature-fill");
         if (temperatureFill) {
           const width = Math.max(6, Math.min(Number(sentiment.temperature_value || 0), 100));
@@ -7747,12 +7935,18 @@ a:hover {
         container.innerHTML = "";
         visibleItems.forEach((item) => {
           const tags = (item.event_tags || []).slice(0, 3);
+          const topEventTag = tags[0] || "无显著事件";
+          const eventCountText = tags.length ? `事件 ${tags.length} 条` : "事件 0 条";
+          const baseScoreText = item.base_score.toFixed(1);
+          const eventScoreText = item.event_score.toFixed(1);
+          const holdingWindowText = item.holding_window || "--";
+          const rankText = `#${item.rank}`;
           const button = document.createElement("button");
           button.type = "button";
           button.className = `signal-item${item.symbol === state.currentSymbol ? " active" : ""}`;
           button.innerHTML = `
             <div class="signal-main-row">
-              <span class="signal-rank-badge">#${item.rank}</span>
+              <span class="signal-rank-badge">${rankText}</span>
               <div class="signal-title-group">
                 <strong>${item.name}</strong>
                 <small>${item.symbol}</small>
@@ -7762,17 +7956,26 @@ a:hover {
                 <small>模式分</small>
               </div>
             </div>
-            <div class="signal-meta-row">
-              <span class="signal-meta-chip primary">${item.holding_window}</span>
-              <span class="signal-meta-chip">基础分 ${item.base_score.toFixed(1)}</span>
-              <span class="signal-meta-chip">事件分 ${item.event_score.toFixed(1)}</span>
+            <div class="signal-info-grid">
+              <div class="signal-info-chip">
+                <span>持有窗</span>
+                <strong>${holdingWindowText}</strong>
+              </div>
+              <div class="signal-info-chip">
+                <span>行业</span>
+                <strong>${item.industry}</strong>
+              </div>
+              <div class="signal-info-chip">
+                <span>基础分</span>
+                <strong>${baseScoreText}</strong>
+              </div>
+              <div class="signal-info-chip">
+                <span>事件分</span>
+                <strong>${eventScoreText}</strong>
+              </div>
             </div>
-            <div class="signal-tag-row">
-              ${
-                tags.length
-                  ? tags.map((tag) => `<span class="signal-tag-pill">${tag}</span>`).join("")
-                  : '<span class="signal-tag-pill">无新增事件标签</span>'
-              }
+            <div class="signal-footer-row">
+              <span class="signal-footer-note">${topEventTag} · ${eventCountText}</span>
             </div>
           `;
           button.addEventListener("click", () => {
