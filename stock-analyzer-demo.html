@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 股票交易分析 - Gemini AI + Make.com</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .button-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    button {
+      flex: 1;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+    }
+
+    .btn-primary:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .btn-secondary {
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    .btn-secondary:hover {
+      background: #e0e0e0;
+    }
+
+    .alert {
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    .alert.show {
+      display: block;
+    }
+
+    .alert-success {
+      background: #d4edda;
+      border: 1px solid #c3e6cb;
+      color: #155724;
+    }
+
+    .alert-error {
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      color: #721c24;
+    }
+
+    .alert-info {
+      background: #d1ecf1;
+      border: 1px solid #bee5eb;
+      color: #0c5460;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      color: #667eea;
+    }
+
+    .spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(102, 126, 234, 0.3);
+      border-radius: 50%;
+      border-top-color: #667eea;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .result-section {
+      display: none;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 2px solid #e0e0e0;
+    }
+
+    .result-section.show {
+      display: block;
+    }
+
+    .result-json {
+      background: #f5f5f5;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 20px;
+      overflow-x: auto;
+      font-family: 'Monaco', 'Courier New', monospace;
+      font-size: 13px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .badge-success {
+      background: #d4edda;
+      color: #155724;
+    }
+
+    .badge-error {
+      background: #f8d7da;
+      color: #721c24;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .stat-item {
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .stat-value {
+      font-size: 20px;
+      font-weight: 700;
+      color: #667eea;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 标题 -->
+    <div class="card">
+      <div class="header">
+        <h1>🚀 AI 股票交易分析平台</h1>
+        <p>使用 Google Gemini AI 进行智能交易决策分析 | Make.com 工作流集成</p>
+      </div>
+    </div>
+
+    <!-- 表单卡片 -->
+    <div class="card">
+      <div class="content">
+        <div id="successAlert" class="alert alert-success">
+          ✓ 分析请求已成功提交至 Gemini AI
+        </div>
+        <div id="errorAlert" class="alert alert-error"></div>
+        <div id="infoAlert" class="alert alert-info"></div>
+
+        <form id="analysisForm">
+          <!-- 基础信息 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="symbol">股票代码 *</label>
+              <input type="text" id="symbol" name="symbol" required placeholder="e.g., 603629" value="603629">
+            </div>
+            <div class="form-group">
+              <label for="stock_name">股票名称 *</label>
+              <input type="text" id="stock_name" name="stock_name" required placeholder="e.g., 利通电子" value="利通电子">
+            </div>
+          </div>
+
+          <!-- 价格信息 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="current_price">当前价格 (¥) *</label>
+              <input type="number" id="current_price" name="current_price" step="0.01" required value="79.95">
+            </div>
+            <div class="form-group">
+              <label for="stop_loss_price">止损价 (¥) *</label>
+              <input type="number" id="stop_loss_price" name="stop_loss_price" step="0.01" required value="73.71">
+            </div>
+          </div>
+
+          <!-- 获利目标 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="take_profit_1">第一获利目标 (¥) *</label>
+              <input type="number" id="take_profit_1" name="take_profit_1" step="0.01" required value="91.18">
+            </div>
+            <div class="form-group">
+              <label for="take_profit_2">第二获利目标 (¥) *</label>
+              <input type="number" id="take_profit_2" name="take_profit_2" step="0.01" required value="98.67">
+            </div>
+          </div>
+
+          <!-- 风险分析 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="risk_reward_ratio">风险收益比 *</label>
+              <input type="number" id="risk_reward_ratio" name="risk_reward_ratio" step="0.01" required value="1.8">
+            </div>
+            <div class="form-group">
+              <label for="volatility_10">10日波动率 (%) *</label>
+              <input type="number" id="volatility_10" name="volatility_10" step="0.01" required value="5.15">
+            </div>
+          </div>
+
+          <!-- 行业和事件 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="industry">行业 *</label>
+              <input type="text" id="industry" name="industry" required placeholder="e.g., 电子元器件" value="电子元器件">
+            </div>
+            <div class="form-group">
+              <label for="mode_id">交易模式 *</label>
+              <select id="mode_id" name="mode_id" required>
+                <option value="conservative">保守 (Conservative)</option>
+                <option value="neutral" selected>中立 (Neutral)</option>
+                <option value="aggressive">激进 (Aggressive)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- 事件信息 -->
+          <div class="form-group">
+            <label for="event_text">相关事件信息</label>
+            <textarea id="event_text" name="event_text" placeholder="输入相关新闻、公告或事件信息..." value="北京市天元律师事务所关于利通电子激励计划法律意见">北京市天元律师事务所关于利通电子激励计划法律意见</textarea>
+          </div>
+
+          <!-- 按钮 -->
+          <div class="button-group">
+            <button type="submit" class="btn-primary" id="submitBtn">
+              📊 提交分析
+            </button>
+            <button type="reset" class="btn-secondary">
+              🔄 重置表单
+            </button>
+          </div>
+
+          <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p style="margin-top: 10px;">分析中...</p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- 结果卡片 -->
+    <div class="card">
+      <div class="content" id="resultSection" class="result-section">
+        <h2>📈 分析结果</h2>
+        <div id="resultContent"></div>
+      </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+      <p>
+        由 Google Gemini AI 3.1 Pro 和 Make.com 提供支持 | 
+        <a href="https://github.com" style="color: white; text-decoration: none;">查看项目</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="./stock-ai-analyzer.js"></script>
+  <script>
+    // 初始化分析器
+    const analyzer = new StockAIAnalyzer();
+
+    // DOM 元素
+    const form = document.getElementById('analysisForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const loading = document.getElementById('loading');
+    const resultSection = document.getElementById('resultSection');
+    const resultContent = document.getElementById('resultContent');
+    const successAlert = document.getElementById('successAlert');
+    const errorAlert = document.getElementById('errorAlert');
+    const infoAlert = document.getElementById('infoAlert');
+
+    // 表单提交处理
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      // 隐藏所有提示
+      successAlert.classList.remove('show');
+      errorAlert.classList.remove('show');
+      infoAlert.classList.remove('show');
+      resultSection.classList.remove('show');
+
+      // 显示加载状态
+      loading.style.display = 'block';
+      submitBtn.disabled = true;
+
+      try {
+        // 获取表单数据
+        const formData = StockAIAnalyzer.formToData(form);
+
+        // 提交分析
+        const result = await analyzer.analyze(formData);
+
+        // 显示结果
+        if (result.success) {
+          successAlert.classList.add('show');
+          
+          // 显示统计信息
+          const statsHtml = `
+            <div class="stats">
+              <div class="stat-item">
+                <div class="stat-label">股票代码</div>
+                <div class="stat-value">${formData.symbol}</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">当前价格</div>
+                <div class="stat-value">¥${formData.current_price}</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">风险收益</div>
+                <div class="stat-value">${formData.risk_reward_ratio}</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-label">波动率</div>
+                <div class="stat-value">${formData.volatility_10}%</div>
+              </div>
+            </div>
+            <div class="status-badge badge-success">✓ 分析已提交</div>
+            <div class="result-json">${JSON.stringify(result, null, 2)}</div>
+          `;
+          
+          resultContent.innerHTML = statsHtml;
+          resultSection.classList.add('show');
+        } else {
+          errorAlert.textContent = '❌ ' + result.error;
+          errorAlert.classList.add('show');
+        }
+      } catch (error) {
+        errorAlert.textContent = '❌ 错误: ' + error.message;
+        errorAlert.classList.add('show');
+      } finally {
+        loading.style.display = 'none';
+        submitBtn.disabled = false;
+      }
+    });
+
+    // 页面加载完成提示
+    window.addEventListener('load', () => {
+      infoAlert.textContent = '✓ 平台已就绪，请填写数据并提交分析';
+      infoAlert.classList.add('show');
+
+      setTimeout(() => {
+        infoAlert.classList.remove('show');
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
