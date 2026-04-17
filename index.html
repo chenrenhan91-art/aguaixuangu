@@ -7066,8 +7066,8 @@ a:hover {
       const APP_RUNTIME = {
         siteChannel: "github_pages",
         snapshotUrl: "./data/processed/daily_candidates_latest.json",
-        MAKE_COM_AI_WEBHOOK_URL: "https://hook.us2.make.com/gav22ypjvftehn5uvqt4hduwzlmvs8fj",
         aiProxyBaseUrl: "",
+        MAKE_COM_AI_WEBHOOK_URL: "https://hook.us2.make.com/gav22ypjvftehn5uvqt4hduwzlmvs8fj",
         authProvider: "supabase",
         supabaseUrl: "https://jbmxcpetbiukpxzifpjr.supabase.co",
         supabaseAnonKey: "sb_publishable_Kb_7LK3OquEu8bE9pF0mZw_oc7XXGV8",
@@ -7488,17 +7488,20 @@ a:hover {
         const makeComWebhookUrl = APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
         if (makeComWebhookUrl && !makeComWebhookUrl.includes("YOUR_WEBHOOK_ID")) {
           try {
+            const volatilityFeature = (detail.feature_scores || []).find((item) =>
+              String(item?.name || "").includes("波动") || String(item?.name || "").toLowerCase().includes("volatility"),
+            );
             const payload = {
               symbol: detail.symbol,
               stock_name: detail.name,
-              current_price: detail.feature_map?.latest_close || 0,
+              current_price: detail.feature_map?.latest_close || detail.risk_plan?.reference_price || 0,
               stop_loss_price: detail.risk_plan?.stop_loss_price || 0,
               take_profit_1: detail.risk_plan?.take_profit_price_1 || 0,
               take_profit_2: detail.risk_plan?.take_profit_price_2 || 0,
               risk_reward_ratio: detail.risk_plan?.risk_reward_ratio || 0,
-              volatility_10: detail.feature_map?.volatility_10 || 0,
+              volatility_10: detail.feature_map?.volatility_10 || volatilityFeature?.value || 0,
               industry: detail.industry,
-              event_text: detail.events?.[0]?.title || "无特定事件催化",
+              event_text: detail.events?.[0]?.title || detail.recent_events?.[0]?.title || "无特定事件催化",
               mode_id: state.selectedMode,
               user_id: state.user?.id || null,
               trade_date: snapshot.trade_date,
@@ -7513,22 +7516,52 @@ a:hover {
             });
 
             if (response.ok) {
-              const result = await response.json();
-              if (result?.data) {
+              const rawText = await response.text();
+              let result = null;
+              try {
+                result = rawText ? JSON.parse(rawText) : null;
+              } catch (_) {
+                result = null;
+              }
+
+              if (!result && rawText) {
+                const normalized = String(rawText).trim();
+                if (/^accepted/i.test(normalized)) {
+                  return {
+                    status: "queued",
+                    model: "gemini-3.1-pro",
+                    confidence: 0.55,
+                    summary: "请求已提交到 Make，正在等待场景返回 AI 分析结果。请稍后点击“AI 交易执行分析”重试。",
+                    highlights: ["Make webhook 已接收请求（Accepted）。"],
+                    key_signal: "排队处理中",
+                    trigger_points: [],
+                    invalidation_points: [],
+                    execution_plan: [],
+                    stance: "中性",
+                    setup_quality: "处理中",
+                    source: "make_com_ai",
+                    generated_at: new Date().toISOString(),
+                  };
+                }
+                result = { summary: normalized };
+              }
+
+              const aiResult = result?.data || result?.analysis || result;
+              if (aiResult && (aiResult.summary || aiResult.highlights || aiResult.execution_plan)) {
                 return {
                   status: "ai_generated",
-                  model: result.data.model || "gpt-4",
-                  confidence: result.data.confidence || 0.82,
-                  summary: result.data.summary || "",
-                  highlights: result.data.highlights || [],
-                  key_signal: result.data.key_signal || "",
-                  trigger_points: result.data.trigger_points || [],
-                  invalidation_points: result.data.invalidation_points || [],
-                  execution_plan: result.data.execution_plan || [],
-                  stance: result.data.stance || "中性",
-                  setup_quality: result.data.setup_quality || "--",
+                  model: aiResult.model || "gemini-3.1-pro",
+                  confidence: aiResult.confidence || 0.82,
+                  summary: aiResult.summary || "",
+                  highlights: aiResult.highlights || [],
+                  key_signal: aiResult.key_signal || "",
+                  trigger_points: aiResult.trigger_points || [],
+                  invalidation_points: aiResult.invalidation_points || [],
+                  execution_plan: aiResult.execution_plan || [],
+                  stance: aiResult.stance || "中性",
+                  setup_quality: aiResult.setup_quality || "--",
                   source: "make_com_ai",
-                  generated_at: result.data.generated_at || new Date().toISOString(),
+                  generated_at: aiResult.generated_at || new Date().toISOString(),
                 };
               }
             }
