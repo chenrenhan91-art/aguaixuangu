@@ -1,62 +1,66 @@
-# Make + Gemini 个股执行分析接入说明
+# Make + Gemini 个股交易分析接入说明
 
-这套说明对应页面里的“AI 交易执行分析”按钮。
+这套说明对应页面里的“AI 交易执行分析”功能。
 
-当前仓库已经做好的部分：
+当前实现已经改成：
 
-- 前端会优先读取 `makeExecutionAnalysisWebhook`，同时兼容旧字段 `MAKE_COM_AI_WEBHOOK_URL`
-- 前端会把 `analysis_prompt`、`analysis_context_json` 和结构化股票上下文一起 POST 到 Make webhook
-- 前端既能解析 Make 直接返回的结构化 JSON，也能解析“原样转发的 Gemini REST 响应”
-- 仓库内置了 webhook 自检脚本：`scripts/verify_make_execution_webhook.sh`
+- 用户在前端输入股票代码
+- 前端按输入代码构造分析请求
+- 不再依赖“当前选中的候选股”作为唯一分析对象
+- 若输入代码命中本地快照，会把该股票的快照数据一并传给 Make
+- 若未命中本地快照，仍会把股票代码、市场环境和模式偏好发给 Make
 
-## 当前已确认的问题
+## 新的前端入参逻辑
 
-仓库原先硬编码的 Make webhook 已失效，返回：
+前端现在发送的是“股票代码驱动”的 payload，核心字段包括：
 
-`410 There is no scenario listening for this webhook.`
+- `analysis_type`
+- `requested_symbol`
+- `stock_code`
+- `selected_mode_id`
+- `matched_snapshot`
+- `market_snapshot`
+- `analysis_context_json`
+- `analysis_prompt`
 
-这通常意味着 webhook 已经不再连接任何活动场景，或者对应场景已被停用太久。
+样例见：
 
-## 目标场景结构
+- [sample_payload.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/sample_payload.json)
 
-推荐用最小可运行链路：
+## 推荐场景结构
+
+推荐最小同步链路：
 
 1. `Webhooks > Custom webhook`
 2. `HTTP > Make a request`
 3. `Webhooks > Webhook response`
 
-这样前端点击按钮后，可以同步拿到 Gemini 结果，不需要轮询。
+如果你希望“任意股票代码”都尽量有更完整的数据，可以在第 2 步前额外插入一个数据抓取步骤：
 
-## 第 1 步：创建 Custom webhook
+1. `Webhooks > Custom webhook`
+2. `HTTP / 数据模块 > 拉取个股行情 / 新闻 / 技术指标`
+3. `HTTP > Make a request`
+4. `Webhooks > Webhook response`
 
-1. 登录 Make.com。
-2. 新建一个 Scenario。
-3. 添加模块 `Webhooks > Custom webhook`。
-4. 名称建议填：`AI Trading Execution Analysis`。
-5. 复制生成的 webhook URL。
-6. 先不要急着开场景，先点击 `Run once`，让它等待样例请求。
+前端本身不要求这一步，但如果输入代码没有命中本地快照，是否能给出更细的价格级分析，就取决于你是否在 Make 里补了外部数据。
 
-## 第 2 步：让 webhook 识别输入结构
+## 第 1 步：创建 webhook
 
-在本仓库根目录运行：
+1. 在 Make 新建 Scenario。
+2. 添加 `Webhooks > Custom webhook`。
+3. 复制 webhook URL。
+4. 点击 `Run once`，让它等待样例请求。
+
+然后在仓库根目录运行：
 
 ```bash
 ./scripts/verify_make_execution_webhook.sh "你的 Make webhook URL" \
   "./docs/make_execution_analysis/sample_payload.json"
 ```
 
-第一次运行时，如果你的 Scenario 还停在 `Run once` 状态，Make 会收到样例并识别 webhook 数据结构。
+## 第 2 步：HTTP 模块调用 Gemini
 
-如果你不想立即验证，也可以用任意 `curl` 或 Postman 把 `sample_payload.json` POST 到 webhook。
-
-## 第 3 步：HTTP 模块调用 Gemini
-
-在 Scenario 中添加 `HTTP > Make a request` 模块。
-
-推荐模型：
-
-- 低延迟优先：`gemini-3-flash-preview`
-- 更强推理：`gemini-3.1-pro-preview`
+在 Scenario 中添加 `HTTP > Make a request`。
 
 推荐配置：
 
@@ -77,7 +81,7 @@ Content-Type: application/json
 - Body type: `Raw`
 - Content type: `JSON (application/json)`
 
-Body 可以直接使用下面这个模板：
+Body 示例：
 
 ```json
 {
@@ -123,7 +127,7 @@ Body 可以直接使用下面这个模板：
   "systemInstruction": {
     "parts": [
       {
-        "text": "你是 A 股交易执行分析助手。请只返回 JSON，不要返回 Markdown 或代码块。核心输出技术面判断、止损位、两档止盈位和失效条件，不要给明确仓位比例。"
+        "text": "你是 A 股个股交易分析助手。请只返回 JSON，不要返回 Markdown 或代码块。如果缺少可靠价格或技术数据，不要编造，把价格字段返回 0，并在 summary 和 technical_judgment 里明确说明当前只能给方向性判断。"
       }
     ]
   }
@@ -132,89 +136,91 @@ Body 可以直接使用下面这个模板：
 
 说明：
 
-- `{{1.analysis_prompt}}` 是前端已经拼好的 prompt，已经约束“输出精简、不要明确仓位比例”，直接映射即可
-- 如果你愿意单独维护系统提示词，可以参考同目录下的 `system_prompt.md`
-- `response_schema.json` 的内容可以直接复制到 `responseJsonSchema`
+- `{{1.analysis_prompt}}` 由前端按输入股票代码动态生成
+- 当前 prompt 已经约束“不要给仓位比例”“缺数据时不要编造价格”
+- 如果输入代码命中前端快照，prompt 会带上该股票已有的结构化上下文
+- 如果没命中，只会带股票代码和市场环境摘要
 
-## 第 4 步：Webhook response 模块
+## 第 3 步：Webhook response 模块
 
-最后添加 `Webhooks > Webhook response` 模块。
+最后添加 `Webhooks > Webhook response`。
 
-推荐设置：
+推荐配置：
 
-- Status: `200`
-- Body: 直接返回 HTTP 模块的响应体原文
-- Content-Type: `application/json`
+- `Status`: `200`
+- `Body`: 返回 HTTP 模块的响应体原文
+- `Content-Type`: `application/json`
 
-最简单的做法是把 HTTP 模块的 `Body` 字段原样传回去，不需要再在 Make 里手动拆 JSON。前端现在已经支持解析 Gemini REST 的原始响应格式。
+如果你临时排障，可以直接把 `Body` 改成固定 JSON，先验证“前端 <-> Make 通路”：
 
-## 第 5 步：把新 webhook URL 配到前端
+```json
+{
+  "summary": "Make fixed response ok",
+  "technical_judgment": "测试返回，当前只验证前端是否能正常接收并展示 JSON。",
+  "stop_loss_price": 0,
+  "take_profit_price_1": 0,
+  "take_profit_price_2": 0,
+  "invalidation_points": ["test"],
+  "action_note": "这是固定测试响应。",
+  "confidence": 0.9,
+  "model": "make-test",
+  "generated_at": "2026-04-18T22:02:00+08:00"
+}
+```
 
-在 [index.html](/Users/apple/Desktop/aguaixuangu-main/index.html:7067) 的 `APP_RUNTIME` 中填写：
+## 第 4 步：前端配置 webhook
+
+在 [index.html](/Users/apple/Desktop/aguaixuangu-main/index.html) 的 `APP_RUNTIME` 中填写：
 
 ```js
-makeExecutionAnalysisWebhook: "你的新 Make webhook URL",
-geminiModel: "gemini-3-flash-preview",
+makeExecutionAnalysisWebhook: "你的 Make webhook URL",
 ```
 
 兼容旧字段：
 
 ```js
-MAKE_COM_AI_WEBHOOK_URL: "你的新 Make webhook URL",
+MAKE_COM_AI_WEBHOOK_URL: "你的 Make webhook URL",
 ```
 
-但更推荐使用 `makeExecutionAnalysisWebhook`。
+## 第 5 步：验证
 
-## 第 6 步：验证是否真的能给前端返回结果
-
-先运行自检脚本：
+先运行：
 
 ```bash
 ./scripts/verify_make_execution_webhook.sh "你的 Make webhook URL"
 ```
 
-脚本通过时，至少说明：
+然后打开页面，在“个股总览”右上角：
 
-- webhook 可访问
-- Make 场景在监听
-- Gemini 有返回
-- 返回结果能被前端当前逻辑解析
+1. 输入 6 位股票代码
+2. 点击“AI 交易执行分析”
 
-然后再打开页面，点击“AI 交易执行分析”按钮做前端验证。
+前端现在会：
 
-## 排障要点
+- 只按输入股票代码发起请求
+- 在弹窗里显示本次分析的目标股票代码
+- 如果 Make 返回异常，会在“调用诊断”里显示 HTTP 状态、返回片段和等待时长
 
-### 1. 返回 `410`
+## 当前设计的关键差异
 
-说明 webhook 没有连接到活动场景，或场景已失效太久。
+旧逻辑：
 
-处理：
+- 基于 `state.currentSymbol`
+- 直接取当前候选股的 `detail/signal`
+- 只适合分析候选池里当前选中的股票
 
-- 确认 Scenario 已保存并开启
-- 确认当前 webhook 属于这个 Scenario
-- 不要继续使用旧 URL，直接重新复制最新 webhook URL
+新逻辑：
 
-### 2. 返回 `Accepted`
-
-说明场景只是收到了请求，但没有通过 `Webhook response` 同步把结果回传。
-
-处理：
-
-- 确认最后一个模块是 `Webhook response`
-- 确认它返回的是 HTTP 模块的响应体
-- 不要把场景做成异步队列式返回
-
-### 3. 返回 401 / 403
-
-说明 Gemini API Key、权限或额度有问题。
-
-### 4. 页面仍显示规则分析
-
-说明 Make / Gemini 没有返回可解析的结构化结果。此时前端会自动回退到本地规则分析，并在弹窗里附上排障提示。
+- 基于用户输入的 `stock_code`
+- 先按输入代码尝试命中本地快照
+- 命中则附带本地结构化上下文
+- 未命中也照样把股票代码和市场环境发给 Make
+- 前端分析对象不再依赖当前候选池选中项
 
 ## 文件清单
 
+- [README.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/README.md)
 - [response_schema.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/response_schema.json)
-- [system_prompt.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/system_prompt.md)
 - [sample_payload.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/sample_payload.json)
+- [system_prompt.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/system_prompt.md)
 - [verify_make_execution_webhook.sh](/Users/apple/Desktop/aguaixuangu-main/scripts/verify_make_execution_webhook.sh)

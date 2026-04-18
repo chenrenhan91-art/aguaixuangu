@@ -11,15 +11,15 @@
     },
     "stop_loss_price": {
       "type": "number",
-      "description": "止损位。"
+      "description": "止损位；若缺少可靠个股价格数据，可返回 0。"
     },
     "take_profit_price_1": {
       "type": "number",
-      "description": "第一止盈位。"
+      "description": "第一止盈位；若缺少可靠个股价格数据，可返回 0。"
     },
     "take_profit_price_2": {
       "type": "number",
-      "description": "第二止盈位。"
+      "description": "第二止盈位；若缺少可靠个股价格数据，可返回 0。"
     },
     "invalidation_points": {
       "type": "array",

@@ -1360,6 +1360,24 @@ a:hover {
   flex-shrink: 0;
 }
 
+.ai-action-column {
+  display: grid;
+  gap: 6px;
+}
+
+.ai-symbol-field {
+  min-width: 220px;
+}
+
+.ai-symbol-field input[type="text"] {
+  width: 100%;
+  padding: 9px 11px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: rgba(10, 18, 28, 0.98);
+  color: #f4f8fc;
+}
+
 .ai-action-button {
   min-height: 38px;
   border: 1px solid rgba(86, 203, 255, 0.3);
@@ -1570,6 +1588,7 @@ a:hover {
 }
 
 .field-group select,
+.field-group input[type="text"],
 .field-group input[type="file"] {
   width: 100%;
   padding: 10px 11px;
@@ -6873,9 +6892,23 @@ a:hover {
                   <p id="detail-subtitle">--</p>
                 </div>
                 <div class="ai-action-row header-action-row">
-                  <button id="refresh-ai-risk-button" type="button" class="ai-action-button">
-                    AI 交易执行分析
-                  </button>
+                  <label class="field-group ai-symbol-field">
+                    <span>股票代码</span>
+                    <input
+                      id="ai-stock-symbol-input"
+                      type="text"
+                      inputmode="numeric"
+                      maxlength="6"
+                      placeholder="输入 6 位代码，如 600519"
+                      autocomplete="off"
+                    />
+                  </label>
+                  <div class="ai-action-column">
+                    <button id="refresh-ai-risk-button" type="button" class="ai-action-button">
+                      AI 交易执行分析
+                    </button>
+                    <p id="ai-symbol-status" class="secondary-copy">输入股票代码后发起 AI 分析，不再依赖当前候选池选中项。</p>
+                  </div>
                 </div>
               </div>
 
@@ -7067,7 +7100,8 @@ a:hover {
         siteChannel: "github_pages",
         snapshotUrl: "./data/processed/daily_candidates_latest.json",
         aiProxyBaseUrl: "",
-        MAKE_COM_AI_WEBHOOK_URL: "https://hook.us2.make.com/gav22ypjvftehn5uvqt4hduwzlmvs8fj",
+        makeExecutionAnalysisWebhook: "https://hook.us2.make.com/22kg77b8miodr0cqok23o3uicl5d343k",
+        MAKE_COM_AI_WEBHOOK_URL: "https://hook.us2.make.com/22kg77b8miodr0cqok23o3uicl5d343k",
         authProvider: "supabase",
         supabaseUrl: "https://jbmxcpetbiukpxzifpjr.supabase.co",
         supabaseAnonKey: "sb_publishable_Kb_7LK3OquEu8bE9pF0mZw_oc7XXGV8",
@@ -7084,6 +7118,7 @@ a:hover {
         currentView: "selector",
         selectedMode: snapshot.default_mode || "balanced",
         currentSymbol: null,
+        aiAnalysisSymbol: "",
         currentEventTab: "official",
         currentEventTone: "all",
         tradeDiagnostics: initialDiagnostics,
@@ -7190,6 +7225,70 @@ a:hover {
         const element = document.getElementById(id);
         if (element) {
           element.textContent = value;
+        }
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#39;");
+      }
+
+      function truncateText(value, maxLength = 220) {
+        const text = String(value ?? "").trim();
+        if (!text) {
+          return "";
+        }
+        return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
+      }
+
+      function normalizeStockCode(value) {
+        const digits = String(value || "").replace(/\D/g, "").slice(-6);
+        return digits.length === 6 ? digits : "";
+      }
+
+      function getCurrentModeMeta() {
+        return (snapshot.mode_summaries || []).find((item) => item.mode_id === state.selectedMode) || null;
+      }
+
+      function findStockContextBySymbol(symbol) {
+        const normalizedSymbol = normalizeStockCode(symbol);
+        if (!normalizedSymbol) {
+          return null;
+        }
+        const strategyModes = snapshot.strategy_modes || {};
+        const modeEntries = Object.entries(strategyModes);
+        for (const [modeId, payload] of modeEntries) {
+          const detail = payload?.stock_details?.[normalizedSymbol];
+          if (!detail) {
+            continue;
+          }
+          const signal = (payload?.items || []).find((item) => item.symbol === normalizedSymbol) || null;
+          const modeMeta = (snapshot.mode_summaries || []).find((item) => item.mode_id === modeId) || null;
+          return {
+            symbol: normalizedSymbol,
+            mode_id: modeId,
+            mode_meta: modeMeta,
+            detail,
+            signal,
+          };
+        }
+        return null;
+      }
+
+      function updateAiSymbolStatus(message) {
+        setText("ai-symbol-status", message || "输入股票代码后发起 AI 分析，不再依赖当前候选池选中项。");
+      }
+
+      function syncAiSymbolInput(value) {
+        const input = document.getElementById("ai-stock-symbol-input");
+        const normalized = normalizeStockCode(value);
+        state.aiAnalysisSymbol = normalized || String(value || "").trim();
+        if (input && input.value !== state.aiAnalysisSymbol) {
+          input.value = state.aiAnalysisSymbol;
         }
       }
 
@@ -7479,65 +7578,103 @@ a:hover {
         return remote?.diagnostics || payload.localDiagnostics;
       }
 
-      function buildExecutionAnalysisContext(detail, signal) {
-        const featureScores = Array.isArray(detail?.feature_scores)
-          ? detail.feature_scores.slice(0, 4).map((item) => ({
+      function buildExecutionAnalysisContext(symbol) {
+        const normalizedSymbol = normalizeStockCode(symbol);
+        const matchedContext = findStockContextBySymbol(normalizedSymbol);
+        const matchedDetail = matchedContext?.detail || null;
+        const matchedSignal = matchedContext?.signal || null;
+        const matchedModeMeta = matchedContext?.mode_meta || null;
+        const featureScores = Array.isArray(matchedDetail?.feature_scores)
+          ? matchedDetail.feature_scores.slice(0, 4).map((item) => ({
               name: item?.name || "",
               value: Number(item?.value || 0),
               description: item?.description || "",
             }))
           : [];
-        const recentEvents = Array.isArray(detail?.recent_events)
-          ? detail.recent_events.slice(0, 3).map((item) => ({
+        const recentEvents = Array.isArray(matchedDetail?.recent_events)
+          ? matchedDetail.recent_events.slice(0, 3).map((item) => ({
               title: item?.title || "",
               publish_time: item?.publish_time || "",
               summary: item?.summary || "",
               source: item?.source || item?.source_category || "",
             }))
           : [];
+        const topSectors = (snapshot.top_sectors || []).slice(0, 3).map((item) => ({
+          sector_name: item?.sector_name || "",
+          strength_score: Number(item?.strength_score || 0),
+          momentum_score: Number(item?.momentum_score || 0),
+        }));
+        const marketNews = (snapshot.market_news || []).slice(0, 3).map((item) => ({
+          title: item?.title || "",
+          publish_time: item?.publish_time || "",
+          summary: item?.summary || "",
+          source: "市场资讯",
+        }));
+        const sentiment = marketPayload?.ai_sentiment || {};
+        const currentModeMeta = getCurrentModeMeta();
+
         return {
-          symbol: detail?.symbol || "",
-          stock_name: detail?.name || "",
+          analysis_type: "single_stock_by_symbol",
+          requested_symbol: normalizedSymbol,
+          stock_code: normalizedSymbol,
+          stock_name: matchedDetail?.name || "",
           trade_date: snapshot.trade_date,
-          mode_id: state.selectedMode,
-          industry: detail?.industry || "",
-          rank: signal?.rank || null,
-          holding_window: signal?.holding_window || "",
-          thesis: detail?.thesis || "",
-          market_context: detail?.market_context || "",
-          current_price: detail?.feature_map?.latest_close || detail?.risk_plan?.reference_price || 0,
-          action_bias: detail?.risk_plan?.action_bias || "",
-          action_note: detail?.risk_plan?.action_note || "",
-          stop_loss_price: detail?.risk_plan?.stop_loss_price || 0,
-          take_profit_price_1: detail?.risk_plan?.take_profit_price_1 || 0,
-          take_profit_price_2: detail?.risk_plan?.take_profit_price_2 || 0,
-          trailing_stop_price: detail?.risk_plan?.trailing_stop_price || 0,
-          risk_reward_ratio: detail?.risk_plan?.risk_reward_ratio || 0,
+          selected_mode_id: state.selectedMode,
+          selected_mode_name: currentModeMeta?.display_name || state.selectedMode,
+          matched_snapshot: Boolean(matchedDetail),
+          matched_snapshot_mode_id: matchedContext?.mode_id || null,
+          matched_snapshot_mode_name: matchedModeMeta?.display_name || "",
+          industry: matchedDetail?.industry || "",
+          rank: matchedSignal?.rank || null,
+          holding_window: matchedSignal?.holding_window || "",
+          thesis: matchedDetail?.thesis || "",
+          market_context: matchedDetail?.market_context || sentiment.summary || "",
+          action_bias: matchedDetail?.risk_plan?.action_bias || sentiment.action_bias || "",
+          action_note: matchedDetail?.risk_plan?.action_note || "",
+          current_price: matchedDetail?.feature_map?.latest_close || matchedDetail?.risk_plan?.reference_price || 0,
+          stop_loss_price: matchedDetail?.risk_plan?.stop_loss_price || 0,
+          take_profit_price_1: matchedDetail?.risk_plan?.take_profit_price_1 || 0,
+          take_profit_price_2: matchedDetail?.risk_plan?.take_profit_price_2 || 0,
+          trailing_stop_price: matchedDetail?.risk_plan?.trailing_stop_price || 0,
+          risk_reward_ratio: matchedDetail?.risk_plan?.risk_reward_ratio || 0,
           technical_features: featureScores,
-          reasons: Array.isArray(signal?.reasons) ? signal.reasons.slice(0, 3) : [],
+          reasons: Array.isArray(matchedSignal?.reasons) ? matchedSignal.reasons.slice(0, 3) : [],
           recent_events: recentEvents,
+          market_snapshot: {
+            regime: marketPayload?.regime || "",
+            confidence: Number(marketPayload?.confidence || 0),
+            suggested_exposure: Number(marketPayload?.suggested_exposure || 0),
+            breadth_score: Number(marketPayload?.breadth_score || 0),
+            momentum_score: Number(marketPayload?.momentum_score || 0),
+            northbound_score: Number(marketPayload?.northbound_score || 0),
+            sentiment_label: sentiment.sentiment_label || "",
+            sentiment_summary: sentiment.summary || "",
+            action_bias: sentiment.action_bias || "",
+            preferred_setup: sentiment.preferred_setup || "",
+            avoid_action: sentiment.avoid_action || "",
+            top_sectors: topSectors,
+            latest_market_news: marketNews,
+          },
         };
       }
 
       function buildExecutionAnalysisPrompt(context) {
         return [
-          "你是 A 股交易执行分析助手。",
-          "任务：基于给定上下文，输出简洁、直接、便于执行的 JSON。",
-          "核心只回答 4 件事：1. 当前技术面判断 2. 止损位 3. 两档止盈位 4. 失效条件。",
+          "你是 A 股个股交易分析助手。",
+          "任务：基于用户输入的股票代码和市场上下文，输出简洁、直接、便于执行的 JSON。",
+          "这次分析的唯一目标股票代码是：",
+          context.stock_code || "",
           "严格要求：",
           "1. 不要输出 Markdown、不要输出代码块、不要输出 JSON 之外的内容。",
           "2. 不要给出明确仓位比例，不要出现百分比仓位、几成仓、轻仓 20% 之类表述。",
-          "3. 语言必须精简易懂，避免空话和套话。",
-          "4. 技术面判断要明确指出是偏强、震荡、转弱还是不适合追价，并说明一句原因。",
-          "5. 止损位、止盈位直接使用上下文中的数字，若上下文已有明确价格，不要随意改写。",
-          "6. 如果当前位置不适合追价，要明确写出“不宜追高”或同义表达。",
-          "7. `summary` 控制在 2 句以内。",
+          "3. 若上下文里已经给了止损位和止盈位，优先沿用；不要随意改写。",
+          "4. 若没有可靠价格、均线、事件或止盈止损数据，不要编造；请把价格字段填 0，并在 summary 与 technical_judgment 里明确说明“当前缺少该股实时数据，仅能给出方向性判断”。",
+          "5. technical_judgment 必须明确指出偏强、震荡、转弱或不宜追高中的一种，并说明一句原因。",
+          "6. invalidation_points 给 2 到 3 条，优先写跌破、放量转弱、承接不足、板块退潮等失效信号。",
+          "7. action_note 只写一句执行提醒，禁止写仓位比例。",
+          "8. summary 控制在 2 句以内。",
           "JSON 字段必须严格为：summary, technical_judgment, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, confidence, model, generated_at。",
-          "其中：",
-          "- `technical_judgment` 是 1 到 2 句。",
-          "- `invalidation_points` 给 2 到 3 条，优先写跌破、放量转弱、承接不足等失效信号。",
-          "- `action_note` 只写一句执行提醒，禁止写仓位比例。",
-          "股票上下文：",
+          "输入上下文：",
           JSON.stringify(context, null, 2),
         ].join("\n");
       }
@@ -7581,19 +7718,60 @@ a:hover {
           model: aiResult?.model || detail?.ai_risk_analysis?.model || "make_com_ai",
           source: aiResult?.source || detail?.ai_risk_analysis?.source || "make_com_ai",
           generated_at: aiResult?.generated_at || detail?.ai_risk_analysis?.generated_at || new Date().toISOString(),
+          requested_symbol: aiResult?.requested_symbol || detail?.symbol || "",
+          stock_name: aiResult?.stock_name || detail?.name || "",
+          diagnostics: aiResult?.diagnostics || null,
         };
       }
 
-      async function requestExecutionAnalysis(detail, signal) {
-        if (!detail) {
-          return null;
+      function buildExecutionAnalysisFallback(detail, overrides = {}) {
+        const base = normalizeExecutionAnalysisResult(detail?.ai_risk_analysis, detail) || {};
+        return {
+          ...base,
+          status: overrides.status || base.status || "fallback_rules",
+          summary: overrides.summary || base.summary || "当前分析结果暂不可用。",
+          technical_judgment: overrides.technical_judgment || base.technical_judgment || "--",
+          action_note: overrides.action_note || base.action_note || "--",
+          source: overrides.source || base.source || "local_rules",
+          model: overrides.model || base.model || "rule_fallback",
+          generated_at: new Date().toISOString(),
+          requested_symbol: overrides.requested_symbol || base.requested_symbol || detail?.symbol || "",
+          stock_name: overrides.stock_name || base.stock_name || detail?.name || "",
+          diagnostics: overrides.diagnostics || null,
+        };
+      }
+
+      async function requestExecutionAnalysis(symbol) {
+        const normalizedSymbol = normalizeStockCode(symbol);
+        if (!normalizedSymbol) {
+          return buildExecutionAnalysisFallback(null, {
+            status: "invalid_symbol",
+            source: "manual_symbol_input",
+            summary: "请输入正确的 6 位股票代码后再发起 AI 分析。",
+            technical_judgment: "股票代码格式不正确，当前无法发起个股 AI 分析。",
+            action_note: "请检查输入后重试。",
+            requested_symbol: String(symbol || "").trim(),
+            diagnostics: {
+              provider: "Frontend validation",
+              title: "股票代码格式无效",
+              message: "请输入 6 位 A 股股票代码，例如 600519、000001、688041。",
+              fallback: "none",
+            },
+          });
         }
 
+        const matchedContext = findStockContextBySymbol(normalizedSymbol);
+        const matchedDetail = matchedContext?.detail || null;
+        let upstreamFailureResult = null;
+        const requestStartedAt = Date.now();
+
         // 优先尝试 Make.com webhook（从 APP_RUNTIME 中配置）
-        const makeComWebhookUrl = APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
+        const makeComWebhookUrl = APP_RUNTIME?.makeExecutionAnalysisWebhook || APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
         if (makeComWebhookUrl && !makeComWebhookUrl.includes("YOUR_WEBHOOK_ID")) {
+          let timeoutId = null;
+          let didTimeout = false;
           try {
-            const context = buildExecutionAnalysisContext(detail, signal);
+            const context = buildExecutionAnalysisContext(normalizedSymbol);
             const payload = {
               ...context,
               user_id: state.user?.id || null,
@@ -7601,6 +7779,11 @@ a:hover {
               analysis_context_json: JSON.stringify(context, null, 2),
               analysis_prompt: buildExecutionAnalysisPrompt(context),
             };
+            const controller = new AbortController();
+            timeoutId = window.setTimeout(() => {
+              didTimeout = true;
+              controller.abort();
+            }, 20000);
 
             const response = await fetch(makeComWebhookUrl, {
               method: "POST",
@@ -7608,10 +7791,31 @@ a:hover {
                 "Content-Type": "application/json",
               },
               body: JSON.stringify(payload),
+              signal: controller.signal,
             });
+            window.clearTimeout(timeoutId);
+            const rawText = await response.text();
+            const preview = truncateText(rawText);
 
-            if (response.ok) {
-              const rawText = await response.text();
+            if (!response.ok) {
+              upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
+                status: "make_http_error",
+                source: "make_com_ai",
+                requested_symbol: normalizedSymbol,
+                stock_name: matchedDetail?.name || "",
+                diagnostics: {
+                  provider: "Make webhook",
+                  title: `Make 返回 HTTP ${response.status}`,
+                  message: "前端已经发起了 AI 请求，但当前 webhook 没有返回可用分析结果，所以页面回退到了本地规则分析。",
+                  elapsed_ms: Date.now() - requestStartedAt,
+                  http_status: response.status,
+                  http_status_text: response.statusText || "",
+                  webhook_url: makeComWebhookUrl,
+                  response_preview: preview || "<empty>",
+                  fallback: "local_rules",
+                },
+              });
+            } else {
               let result = null;
               try {
                 result = rawText ? JSON.parse(rawText) : null;
@@ -7632,53 +7836,180 @@ a:hover {
                     action_note: "请稍后重试。",
                     source: "make_com_ai",
                     generated_at: new Date().toISOString(),
+                    requested_symbol: normalizedSymbol,
+                    stock_name: matchedDetail?.name || "",
+                    diagnostics: {
+                      provider: "Make webhook",
+                      title: "Make 已接收请求，正在处理",
+                      message: "Webhook 已被触发，但当前场景返回的是 accepted，而不是最终结构化分析结果。",
+                      elapsed_ms: Date.now() - requestStartedAt,
+                      http_status: response.status,
+                      webhook_url: makeComWebhookUrl,
+                      response_preview: truncateText(normalized),
+                    },
                   }, detail);
                 }
-                result = { summary: normalized };
+                if (/^(ok|success)$/i.test(normalized)) {
+                  upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
+                    status: "make_invalid_payload",
+                    source: "make_com_ai",
+                    requested_symbol: normalizedSymbol,
+                    stock_name: matchedDetail?.name || "",
+                    diagnostics: {
+                      provider: "Make webhook",
+                      title: "Make 返回了 2xx，但响应体不可用",
+                      message: "当前 webhook 只返回了简短确认文本，前端拿不到可展示的 AI 分析字段。",
+                      elapsed_ms: Date.now() - requestStartedAt,
+                      http_status: response.status,
+                      webhook_url: makeComWebhookUrl,
+                      response_preview: truncateText(normalized),
+                      fallback: "local_rules",
+                    },
+                  });
+                } else {
+                  result = { summary: normalized };
+                }
               }
 
-              const aiResult = result?.data || result?.analysis || result?.output || result;
-              if (aiResult && (aiResult.summary || aiResult.technical_judgment || aiResult.highlights)) {
-                return normalizeExecutionAnalysisResult(
-                  {
-                    ...aiResult,
-                    source: "make_com_ai",
+              if (!upstreamFailureResult) {
+                const aiResult = result?.data || result?.analysis || result?.output || result;
+                if (aiResult && (aiResult.summary || aiResult.technical_judgment || aiResult.highlights)) {
+                  return normalizeExecutionAnalysisResult(
+                    {
+                      ...aiResult,
+                      source: "make_com_ai",
+                      requested_symbol: aiResult?.requested_symbol || normalizedSymbol,
+                      stock_name: aiResult?.stock_name || matchedDetail?.name || "",
+                    },
+                    matchedDetail,
+                  );
+                }
+                upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
+                  status: "make_empty_payload",
+                  source: "make_com_ai",
+                  requested_symbol: normalizedSymbol,
+                  stock_name: matchedDetail?.name || "",
+                  diagnostics: {
+                    provider: "Make webhook",
+                    title: "Make 返回成功，但没有命中前端可识别字段",
+                    message: "请检查最后一个 Webhook response 是否返回了 JSON，并至少包含 summary 等分析字段。",
+                    elapsed_ms: Date.now() - requestStartedAt,
+                    http_status: response.status,
+                    webhook_url: makeComWebhookUrl,
+                    response_preview: preview || "<empty>",
+                    fallback: "local_rules",
                   },
-                  detail,
-                );
+                });
               }
             }
           } catch (error) {
+            if (timeoutId) {
+              window.clearTimeout(timeoutId);
+            }
             console.warn("Make.com webhook 请求失败，降级到本地规则或代理接口:", error);
+            upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
+              status: didTimeout ? "make_timeout" : "make_request_error",
+              source: "make_com_ai",
+              requested_symbol: normalizedSymbol,
+              stock_name: matchedDetail?.name || "",
+              diagnostics: {
+                provider: "Make webhook",
+                title: didTimeout ? "Make 请求超时" : "Make 请求异常",
+                message:
+                  didTimeout
+                    ? "前端已成功发起请求，但 20 秒内没有等到 Make 返回结果。"
+                    : "请求 Make 时发生异常，前端已回退到本地规则分析。",
+                elapsed_ms: Date.now() - requestStartedAt,
+                webhook_url: makeComWebhookUrl,
+                response_preview: truncateText(error instanceof Error ? error.message : String(error)),
+                fallback: "local_rules",
+              },
+            });
           }
         }
 
         // 降级到代理接口或本地规则
         if (!hasProxyRuntime()) {
-          return normalizeExecutionAnalysisResult(detail.ai_risk_analysis, detail);
+          if (upstreamFailureResult) {
+            return upstreamFailureResult;
+          }
+          if (matchedDetail?.ai_risk_analysis) {
+            return normalizeExecutionAnalysisResult(
+              {
+                ...matchedDetail.ai_risk_analysis,
+                requested_symbol: normalizedSymbol,
+                stock_name: matchedDetail?.name || "",
+                source: matchedDetail.ai_risk_analysis?.source || "local_snapshot_rules",
+              },
+              matchedDetail,
+            );
+          }
+          return buildExecutionAnalysisFallback(matchedDetail, {
+            status: "no_remote_runtime",
+            source: "manual_symbol_input",
+            requested_symbol: normalizedSymbol,
+            stock_name: matchedDetail?.name || "",
+            summary: "当前没有可用的远端 AI 运行时，且本地快照里也没有该股票的结构化分析结果。",
+            technical_judgment: "仅凭股票代码无法在前端本地生成可靠的个股交易分析。",
+            action_note: "请配置 Make 场景或输入候选池内股票代码后重试。",
+            diagnostics: {
+              provider: "Frontend fallback",
+              title: "未命中远端 AI 运行时",
+              message: "当前页面只在 Make webhook 可用时支持任意股票代码分析；若该代码未命中本地快照，则无法继续补全更多个股数据。",
+              webhook_url: makeComWebhookUrl || "",
+              fallback: "none",
+            },
+          });
         }
-        const token = await getAccessToken();
-        const response = await fetch(getProxyUrl("/api/stocks/execution-analysis"), {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            ...(token ? { Authorization: `Bearer ${token}` } : {}),
-          },
-          body: JSON.stringify({
-            user_id: state.user?.id || null,
-            email: state.user?.email || null,
-            symbol: detail.symbol,
-            mode_id: state.selectedMode,
-            signal,
-            detail,
-            trade_date: snapshot.trade_date,
-          }),
-        });
-        if (!response.ok) {
-          throw new Error("AI 执行分析服务暂不可用。");
+
+        try {
+          const token = await getAccessToken();
+          const response = await fetch(getProxyUrl("/api/stocks/execution-analysis"), {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              ...(token ? { Authorization: `Bearer ${token}` } : {}),
+            },
+            body: JSON.stringify({
+              user_id: state.user?.id || null,
+              email: state.user?.email || null,
+              symbol: normalizedSymbol,
+              mode_id: state.selectedMode,
+              detail: matchedDetail,
+              trade_date: snapshot.trade_date,
+            }),
+          });
+          if (!response.ok) {
+            throw new Error(`proxy_http_${response.status}`);
+          }
+          const remote = await response.json();
+          return normalizeExecutionAnalysisResult(
+            {
+              ...(remote?.analysis || matchedDetail?.ai_risk_analysis || {}),
+              requested_symbol: normalizedSymbol,
+              stock_name: matchedDetail?.name || "",
+            },
+            matchedDetail,
+          );
+        } catch (error) {
+          if (upstreamFailureResult) {
+            return upstreamFailureResult;
+          }
+          return buildExecutionAnalysisFallback(matchedDetail, {
+            status: "proxy_request_error",
+            source: "proxy_fallback",
+            requested_symbol: normalizedSymbol,
+            stock_name: matchedDetail?.name || "",
+            diagnostics: {
+              provider: "Proxy API",
+              title: "代理接口不可用",
+              message: "Make 和代理接口都没有返回可用分析结果，当前展示的是本地规则分析。",
+              elapsed_ms: Date.now() - requestStartedAt,
+              response_preview: truncateText(error instanceof Error ? error.message : String(error)),
+              fallback: "local_rules",
+            },
+          });
         }
-        const remote = await response.json();
-        return normalizeExecutionAnalysisResult(remote?.analysis || detail.ai_risk_analysis, detail);
       }
 
       function buildAiAnalysisMarkup(aiRiskAnalysis) {
@@ -7706,7 +8037,7 @@ a:hover {
               <div class="ai-window-head">
                 <h3 class="ai-modal-title">AI 交易复盘</h3>
                 <div class="ai-window-meta">
-                  ${meta.map((item) => `<span class="ai-meta-chip">${item}</span>`).join("")}
+                  ${meta.map((item) => `<span class="ai-meta-chip">${escapeHtml(item)}</span>`).join("")}
                 </div>
               </div>
               <p class="ai-modal-summary">${aiRiskAnalysis.summary || "--"}</p>
@@ -7741,22 +8072,27 @@ a:hover {
         }
 
         const meta = [
+          aiRiskAnalysis.requested_symbol
+            ? `${aiRiskAnalysis.requested_symbol}${aiRiskAnalysis.stock_name ? ` · ${aiRiskAnalysis.stock_name}` : ""}`
+            : null,
           aiRiskAnalysis.generated_at ? `生成 ${formatDateTime(aiRiskAnalysis.generated_at)}` : null,
           aiRiskAnalysis.model || "待接入模型",
           `置信度 ${Math.round(Number(aiRiskAnalysis.confidence || 0.68) * 100)} / 100`,
+          aiRiskAnalysis.status && aiRiskAnalysis.status !== "ai_generated" ? `状态 ${aiRiskAnalysis.status}` : null,
         ].filter(Boolean);
         const priceCards = [
           { label: "止损位", value: aiRiskAnalysis.stop_loss_price },
           { label: "第一止盈", value: aiRiskAnalysis.take_profit_price_1 },
           { label: "第二止盈", value: aiRiskAnalysis.take_profit_price_2 },
         ];
+        const diagnostics = aiRiskAnalysis.diagnostics || null;
 
         return `
           <section class="ai-modal-window">
             <div class="ai-window-head">
               <h3 class="ai-modal-title">AI 交易执行分析</h3>
               <div class="ai-window-meta">
-                ${meta.map((item) => `<span class="ai-meta-chip">${item}</span>`).join("")}
+                ${meta.map((item) => `<span class="ai-meta-chip">${escapeHtml(item)}</span>`).join("")}
               </div>
             </div>
             <p class="ai-modal-summary">${aiRiskAnalysis.summary}</p>
@@ -7781,6 +8117,25 @@ a:hover {
                 <strong>执行提醒</strong>
                 <p class="ai-next-step">${aiRiskAnalysis.action_note || "--"}</p>
               </article>
+              ${
+                diagnostics
+                  ? `
+              <article class="ai-insight-card full-span">
+                <strong>调用诊断</strong>
+                <p class="ai-key-line">${escapeHtml(diagnostics.title || "上游调用异常")}</p>
+                <ul class="ai-list">
+                  <li>${escapeHtml(diagnostics.message || "未获取到上游成功响应。")}</li>
+                  ${diagnostics.provider ? `<li>来源：${escapeHtml(diagnostics.provider)}</li>` : ""}
+                  ${Number.isFinite(Number(diagnostics.elapsed_ms)) ? `<li>等待时长：${escapeHtml(`${Math.round(Number(diagnostics.elapsed_ms))} ms`)}</li>` : ""}
+                  ${diagnostics.http_status ? `<li>HTTP 状态：${escapeHtml(diagnostics.http_status)}${diagnostics.http_status_text ? ` ${escapeHtml(diagnostics.http_status_text)}` : ""}</li>` : ""}
+                  ${diagnostics.webhook_url ? `<li>Webhook：${escapeHtml(diagnostics.webhook_url)}</li>` : ""}
+                  ${diagnostics.response_preview ? `<li>返回片段：<code>${escapeHtml(diagnostics.response_preview)}</code></li>` : ""}
+                  ${diagnostics.fallback ? `<li>当前展示：${escapeHtml(diagnostics.fallback)}</li>` : ""}
+                </ul>
+              </article>
+              `
+                  : ""
+              }
             </div>
           </section>
         `;
@@ -9106,6 +9461,7 @@ a:hover {
 
       function setupAiModal() {
         const button = document.getElementById("refresh-ai-risk-button");
+        const symbolInput = document.getElementById("ai-stock-symbol-input");
         const tradeButton = document.getElementById("trade-ai-review-button");
         const closeButton = document.getElementById("ai-analysis-close");
         const backdrop = document.getElementById("ai-analysis-backdrop");
@@ -9120,20 +9476,69 @@ a:hover {
         if (button) {
           button.disabled = false;
           button.addEventListener("click", async () => {
-            const payload = getCurrentModePayload();
-            const detail = payload?.stock_details?.[state.currentSymbol];
-            const signal = (payload?.items || []).find((item) => item.symbol === state.currentSymbol) || null;
+            const rawSymbol = symbolInput?.value || state.aiAnalysisSymbol || "";
+            const normalizedSymbol = normalizeStockCode(rawSymbol);
+            if (!normalizedSymbol) {
+              updateAiSymbolStatus("请输入正确的 6 位股票代码，例如 600519、000001、688041。");
+              if (symbolInput) {
+                symbolInput.focus();
+              }
+              return;
+            }
+            syncAiSymbolInput(normalizedSymbol);
+            const matchedContext = findStockContextBySymbol(normalizedSymbol);
             const originalText = button.textContent;
             button.disabled = true;
             button.textContent = "分析中...";
+            updateAiSymbolStatus(
+              matchedContext?.detail
+                ? `正在分析 ${normalizedSymbol}（${matchedContext.detail.name}），本次以输入股票代码为准。`
+                : `正在分析 ${normalizedSymbol}，本次仅依赖输入股票代码与市场环境上下文。`,
+            );
             try {
-              const analysis = await requestExecutionAnalysis(detail, signal);
+              const analysis = await requestExecutionAnalysis(normalizedSymbol);
               openAiAnalysisModal(analysis || null);
+              updateAiSymbolStatus(
+                analysis?.stock_name
+                  ? `最近一次 AI 分析：${analysis.requested_symbol || normalizedSymbol}（${analysis.stock_name}）。`
+                  : `最近一次 AI 分析：${analysis?.requested_symbol || normalizedSymbol}。`,
+              );
             } catch (error) {
-              openAiAnalysisModal(detail?.ai_risk_analysis || { summary: error instanceof Error ? error.message : "AI 执行分析暂时不可用。" });
+              openAiAnalysisModal({
+                requested_symbol: normalizedSymbol,
+                summary: error instanceof Error ? error.message : "AI 执行分析暂时不可用。",
+                technical_judgment: "调用失败，未生成个股 AI 分析。",
+                invalidation_points: [],
+                action_note: "请稍后重试。",
+                diagnostics: {
+                  provider: "Frontend request",
+                  title: "个股 AI 分析调用失败",
+                  message: error instanceof Error ? error.message : "未知错误",
+                  fallback: "none",
+                },
+              });
+              updateAiSymbolStatus(`分析 ${normalizedSymbol} 失败，请查看弹窗中的调用诊断。`);
             } finally {
               button.disabled = false;
               button.textContent = originalText;
+            }
+          });
+        }
+        if (symbolInput) {
+          symbolInput.addEventListener("input", () => {
+            const digits = String(symbolInput.value || "").replace(/\D/g, "").slice(0, 6);
+            symbolInput.value = digits;
+            state.aiAnalysisSymbol = digits;
+            updateAiSymbolStatus(
+              digits.length === 6
+                ? `将按股票代码 ${digits} 发起 AI 分析。`
+                : "输入股票代码后发起 AI 分析，不再依赖当前候选池选中项。",
+            );
+          });
+          symbolInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+              event.preventDefault();
+              button?.click();
             }
           });
         }
