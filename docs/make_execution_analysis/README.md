@@ -2,17 +2,17 @@
 
 这套说明对应页面里的“AI 交易执行分析”功能。
 
-当前实现已经改成：
+当前版本已经升级为：
 
-- 用户在前端输入股票代码
-- 前端按输入代码构造分析请求
-- 不再依赖“当前选中的候选股”作为唯一分析对象
-- 若输入代码命中本地快照，会把该股票的快照数据一并传给 Make
-- 若未命中本地快照，仍会把股票代码、市场环境和模式偏好发给 Make
+- 用户通过前端输入股票代码发起分析
+- 前端按输入代码构造请求，不再依赖当前选中的候选股
+- 在一个 Make Scenario 内完成多 agent 风格分析
+- 不需要拆多个 Make 环境
+- AI 返回结果中必须包含多 agent 的有效输出，前端会自动展开显示
 
-## 新的前端入参逻辑
+## 当前前端协议
 
-前端现在发送的是“股票代码驱动”的 payload，核心字段包括：
+前端现在发送的 payload 核心字段包括：
 
 - `analysis_type`
 - `requested_symbol`
@@ -22,34 +22,70 @@
 - `market_snapshot`
 - `analysis_context_json`
 - `analysis_prompt`
+- `response_schema_version`
 
-样例见：
+当前 schema 版本：
 
+- `execution-analysis-v3`
+
+相关文件：
+
+- [README.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/README.md)
+- [response_schema.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/response_schema.json)
 - [sample_payload.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/sample_payload.json)
+- [system_prompt.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/system_prompt.md)
+- [verify_make_execution_webhook.sh](/Users/apple/Desktop/aguaixuangu-main/scripts/verify_make_execution_webhook.sh)
 
-## 推荐场景结构
+## 推荐 Make 结构
 
-推荐最小同步链路：
+推荐只保留 3 个模块：
 
 1. `Webhooks > Custom webhook`
 2. `HTTP > Make a request`
 3. `Webhooks > Webhook response`
 
-如果你希望“任意股票代码”都尽量有更完整的数据，可以在第 2 步前额外插入一个数据抓取步骤：
+如果你当前场景里还有 `JSON > Parse JSON`，建议先删掉。前端已经兼容：
+
+- Make 直接返回最终 JSON
+- Make 直接返回 Gemini 原始 `candidates -> parts -> text`
+- 双层 JSON 字符串
+
+所以这条链路现在不需要额外的 JSON 解析模块。
+
+## 重新设置 Make 环境的详细步骤
+
+## 第 1 步：新建或清理 Scenario
+
+如果你当前场景已经比较乱，最稳妥的方式是直接新建一个干净 Scenario。
+
+目标结构只保留：
 
 1. `Webhooks > Custom webhook`
-2. `HTTP / 数据模块 > 拉取个股行情 / 新闻 / 技术指标`
-3. `HTTP > Make a request`
-4. `Webhooks > Webhook response`
+2. `HTTP > Make a request`
+3. `Webhooks > Webhook response`
 
-前端本身不要求这一步，但如果输入代码没有命中本地快照，是否能给出更细的价格级分析，就取决于你是否在 Make 里补了外部数据。
+如果你想继续沿用旧场景：
 
-## 第 1 步：创建 webhook
+1. 打开旧场景
+2. 删除旧的 `JSON > Parse JSON`
+3. 删除任何只返回 `ok`、`success`、`accepted` 的中间调试模块
+4. 确保最后一个模块一定是 `Webhook response`
+5. 打开右上角 `Active`
 
-1. 在 Make 新建 Scenario。
-2. 添加 `Webhooks > Custom webhook`。
-3. 复制 webhook URL。
-4. 点击 `Run once`，让它等待样例请求。
+## 第 2 步：配置 Custom webhook
+
+1. 点击左侧第一个模块 `Webhooks`
+2. 选择 `Custom webhook`
+3. 新建一个 webhook，名字建议填：
+
+```text
+ai_execution_analysis
+```
+
+4. 保存后复制生成的 webhook URL
+5. 点击底部 `Run once`
+
+这一步的目标是让 Make 开始监听，并接收一次真实样本。
 
 然后在仓库根目录运行：
 
@@ -58,17 +94,25 @@
   "./docs/make_execution_analysis/sample_payload.json"
 ```
 
-## 第 2 步：HTTP 模块调用 Gemini
+Make 收到样本后，请确认 webhook 中已经能看到这些字段：
 
-在 Scenario 中添加 `HTTP > Make a request`。
+- `stock_code`
+- `requested_symbol`
+- `analysis_context_json`
+- `analysis_prompt`
+- `response_schema_version`
 
-推荐配置：
+## 第 3 步：配置 HTTP > Make a request
+
+点击第二个模块 `HTTP`，按下面填写。
+
+### 基础配置
 
 - Method: `POST`
 - URL:
 
 ```text
-https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent
+https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
 ```
 
 - Headers:
@@ -81,10 +125,34 @@ Content-Type: application/json
 - Body type: `Raw`
 - Content type: `JSON (application/json)`
 
-Body 示例：
+### 推荐高级设置
+
+- Parse response: `No`
+- Timeout: `18` 到 `20` 秒
+
+说明：
+
+- 关闭 `Parse response` 后，Webhook response 可以直接把 Gemini 原始响应体回给前端，最稳。
+- 前端当前会在大约 20 秒内等待同步返回，所以不要把场景做得过长。
+
+### HTTP Body 填写方式
+
+把下面整段粘贴到 Body。
+
+其中：
+
+- `{{1.analysis_prompt}}` 来自第 1 个 webhook 模块
+- `responseJsonSchema` 请直接复制 [response_schema.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/response_schema.json) 的完整内容进去
 
 ```json
 {
+  "system_instruction": {
+    "parts": [
+      {
+        "text": "你是 A 股个股交易分析助手，需要在单次输出中模拟 TradingAgents-CN 风格的多 agent 研判流程，但最终只能返回一个 JSON 对象。请只返回 JSON，不要返回 Markdown，不要返回代码块，不要编造缺失数据。如果证据不足，要明确写“证据不足”。"
+      }
+    ]
+  },
   "contents": [
     {
       "parts": [
@@ -97,92 +165,63 @@ Body 示例：
   "generationConfig": {
     "responseMimeType": "application/json",
     "responseJsonSchema": {
-      "type": "object",
-      "properties": {
-        "summary": { "type": "string" },
-        "technical_judgment": { "type": "string" },
-        "stop_loss_price": { "type": "number" },
-        "take_profit_price_1": { "type": "number" },
-        "take_profit_price_2": { "type": "number" },
-        "invalidation_points": { "type": "array", "items": { "type": "string" } },
-        "action_note": { "type": "string" },
-        "confidence": { "type": "number" },
-        "model": { "type": "string" },
-        "generated_at": { "type": "string" }
-      },
-      "required": [
-        "summary",
-        "technical_judgment",
-        "stop_loss_price",
-        "take_profit_price_1",
-        "take_profit_price_2",
-        "invalidation_points",
-        "action_note",
-        "confidence",
-        "model",
-        "generated_at"
-      ]
+      "type": "object"
     }
-  },
-  "systemInstruction": {
-    "parts": [
-      {
-        "text": "你是 A 股个股交易分析助手。请只返回 JSON，不要返回 Markdown 或代码块。如果缺少可靠价格或技术数据，不要编造，把价格字段返回 0，并在 summary 和 technical_judgment 里明确说明当前只能给方向性判断。"
-      }
-    ]
   }
 }
 ```
 
-说明：
+注意：
 
-- `{{1.analysis_prompt}}` 由前端按输入股票代码动态生成
-- 当前 prompt 已经约束“不要给仓位比例”“缺数据时不要编造价格”
-- 如果输入代码命中前端快照，prompt 会带上该股票已有的结构化上下文
-- 如果没命中，只会带股票代码和市场环境摘要
+1. 上面示例里的 `responseJsonSchema` 只是占位写法，实际必须替换成 [response_schema.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/response_schema.json) 的完整 JSON。
+2. 不要再在 Make 里自己手拼股票说明文字，直接把前端传进来的 `{{1.analysis_prompt}}` 喂给 Gemini。
+3. 这一步本质上是“单次 LLM 调用模拟多 agent 角色”，不是在 Make 里真的建 8 个模块。
 
-## 第 3 步：Webhook response 模块
+## 第 4 步：配置 Webhook response
 
-最后添加 `Webhooks > Webhook response`。
+点击最后一个模块 `Webhooks > Webhook response`。
 
 推荐配置：
 
-- `Status`: `200`
-- `Body`: 返回 HTTP 模块的响应体原文
-- `Content-Type`: `application/json`
+- Status: `200`
+- Content type: `application/json`
+- Body: 直接映射 HTTP 模块的原始响应体
 
-如果你临时排障，可以直接把 `Body` 改成固定 JSON，先验证“前端 <-> Make 通路”：
+如果你在 HTTP 模块里把 `Parse response` 设成了 `No`，这里优先选择 HTTP 模块输出里的：
 
-```json
-{
-  "summary": "Make fixed response ok",
-  "technical_judgment": "测试返回，当前只验证前端是否能正常接收并展示 JSON。",
-  "stop_loss_price": 0,
-  "take_profit_price_1": 0,
-  "take_profit_price_2": 0,
-  "invalidation_points": ["test"],
-  "action_note": "这是固定测试响应。",
-  "confidence": 0.9,
-  "model": "make-test",
-  "generated_at": "2026-04-18T22:02:00+08:00"
-}
-```
+- `Body`
+- 或 `Data`
+- 或“原始响应文本”
 
-## 第 4 步：前端配置 webhook
+不同 Make 界面文案可能略有差异，但原则只有一个：
+
+- **不要只返回 `ok`**
+- **不要只返回 `success`**
+- **不要只返回 `accepted`**
+- **要把 Gemini 的完整响应体原样回给前端**
+
+前端现在已经能自动识别：
+
+- 直接 JSON
+- Gemini 的 `candidates`
+- `parts[].text` 中包着的 JSON 字符串
+
+## 第 5 步：更新前端 Function 地址
 
 在 [index.html](/Users/apple/Desktop/aguaixuangu-main/index.html) 的 `APP_RUNTIME` 中填写：
 
 ```js
-makeExecutionAnalysisWebhook: "你的 Make webhook URL",
+executionAnalysisProxyUrl: "https://<project-ref>.supabase.co/functions/v1/stocks-execution-analysis",
+authEmailRedirectTo: "https://你的站点地址/",
 ```
 
-兼容旧字段：
+同时在 Supabase Function 环境变量中填写：
 
-```js
-MAKE_COM_AI_WEBHOOK_URL: "你的 Make webhook URL",
+```text
+MAKE_EXECUTION_ANALYSIS_WEBHOOK_URL=你的 Make webhook URL
 ```
 
-## 第 5 步：验证
+## 第 6 步：联调验证
 
 先运行：
 
@@ -190,37 +229,110 @@ MAKE_COM_AI_WEBHOOK_URL: "你的 Make webhook URL",
 ./scripts/verify_make_execution_webhook.sh "你的 Make webhook URL"
 ```
 
-然后打开页面，在“个股总览”右上角：
+然后打开页面：
 
-1. 输入 6 位股票代码
+1. 在“个股总览”右上角输入 6 位股票代码
 2. 点击“AI 交易执行分析”
 
-前端现在会：
+你应该看到：
 
-- 只按输入股票代码发起请求
-- 在弹窗里显示本次分析的目标股票代码
-- 如果 Make 返回异常，会在“调用诊断”里显示 HTTP 状态、返回片段和等待时长
+- 弹窗标题为 `AI 交易执行分析`
+- 顶部显示股票代码和模型信息
+- 正文包含 `技术面判断`
+- 正文包含 `关键信号`
+- 正文包含 `关键价位`
+- 正文包含 `失效条件`
+- 正文包含 `执行提醒`
+- 如果上游返回了多 agent 字段，还会显示 `多 Agent 有效输出`
 
-## 当前设计的关键差异
+## 当前前端已经兼容的上游返回结构
 
-旧逻辑：
+为了避免“Make 已返回，但前端不显示”，前端现在已兼容这些格式：
 
-- 基于 `state.currentSymbol`
-- 直接取当前候选股的 `detail/signal`
-- 只适合分析候选池里当前选中的股票
+1. 直接返回最终结构化 JSON
+2. 返回：
 
-新逻辑：
+```json
+{
+  "data": { ... }
+}
+```
 
-- 基于用户输入的 `stock_code`
-- 先按输入代码尝试命中本地快照
-- 命中则附带本地结构化上下文
-- 未命中也照样把股票代码和市场环境发给 Make
-- 前端分析对象不再依赖当前候选池选中项
+3. 返回：
 
-## 文件清单
+```json
+{
+  "analysis": { ... }
+}
+```
 
-- [README.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/README.md)
-- [response_schema.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/response_schema.json)
-- [sample_payload.json](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/sample_payload.json)
-- [system_prompt.md](/Users/apple/Desktop/aguaixuangu-main/docs/make_execution_analysis/system_prompt.md)
-- [verify_make_execution_webhook.sh](/Users/apple/Desktop/aguaixuangu-main/scripts/verify_make_execution_webhook.sh)
+4. 直接返回 Gemini 原始 envelope：
+
+```json
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "{...json...}"
+          }
+        ]
+      }
+    }
+  ]
+}
+```
+
+## 最常见的错误
+
+### 错误 1：Webhook response 只返回 `ok`
+
+结果：
+
+- Make 显示成功
+- 前端没有 AI 结果
+- 弹窗只显示本地规则回退
+
+修复：
+
+- 把最后一个 `Webhook response` 改成返回 HTTP 模块的原始 body
+
+### 错误 2：场景总耗时超过前端等待时间
+
+结果：
+
+- 页面显示超时
+- Make 历史里稍后才成功
+
+修复：
+
+- 保持 Scenario 只用 3 个模块
+- HTTP 模块 timeout 控制在 18 到 20 秒
+- 不要在这条同步链路里额外插慢速抓数模块
+
+### 错误 3：多 agent 结果字段名不一致
+
+推荐固定使用下面这些 key：
+
+- `market_agent`
+- `news_agent`
+- `fundamentals_agent`
+- `social_sentiment_agent`
+- `bull_case_agent`
+- `bear_case_agent`
+- `risk_committee`
+- `trader_decision`
+
+这样前端才能自动按角色展示。
+
+## 建议的最终结论
+
+你现在最稳的配置不是“多个 Make 环境分别跑不同 agent”，而是：
+
+1. 一个 webhook 接收前端请求
+2. 一个 HTTP 模块调用 Gemini
+3. 一次生成里模拟多 agent 角色
+4. 一个 webhook response 原样返回结果
+
+这样配置成本最低，延迟最短，也最容易和当前前端保持一致。

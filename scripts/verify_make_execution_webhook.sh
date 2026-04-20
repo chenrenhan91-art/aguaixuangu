@@ -98,8 +98,18 @@ def extract_structured_result(raw_value):
     return None
 
 
+def is_placeholder_text(value: str) -> bool:
+    normalized = normalize_json_text(value).strip().lower()
+    return normalized in {"accepted", "ok", "success"}
+
+
 if status >= 400:
     print(f"Webhook check failed with HTTP {status}")
+    print(body.strip() or "<empty body>")
+    sys.exit(1)
+
+if is_placeholder_text(body):
+    print("Webhook returned only a placeholder confirmation, not the final AI analysis payload.")
     print(body.strip() or "<empty body>")
     sys.exit(1)
 
@@ -113,6 +123,11 @@ if not structured:
 summary = str(structured.get("summary", "")).strip()
 if not summary:
     print("Webhook returned a parseable payload, but 'summary' is empty.")
+    print(json.dumps(structured, ensure_ascii=False, indent=2))
+    sys.exit(1)
+
+if is_placeholder_text(summary) and len(structured.keys()) <= 2:
+    print("Webhook returned only a placeholder confirmation, not a structured AI analysis result.")
     print(json.dumps(structured, ensure_ascii=False, indent=2))
     sys.exit(1)
 

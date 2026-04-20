@@ -7074,22 +7074,23 @@ a:hover {
         <div class="auth-modal-head">
           <div>
             <p class="eyebrow">Account</p>
-            <h3 id="auth-modal-title">登录后查看你的诊断历史</h3>
+            <h3 id="auth-modal-title">登录后使用受保护 AI 分析</h3>
           </div>
           <button id="auth-close-button" type="button" class="auth-close">关闭</button>
         </div>
         <div class="auth-grid">
           <input id="auth-email-input" type="email" placeholder="邮箱" autocomplete="email" />
           <input id="auth-password-input" type="password" placeholder="密码" autocomplete="current-password" />
+          <input id="auth-invite-code-input" type="text" placeholder="邀请码（仅注册时必填）" autocomplete="off" />
           <div class="auth-actions">
             <button id="auth-signin-button" type="button" class="primary-button">登录</button>
             <button id="auth-signup-button" type="button" class="ghost-button secondary">注册</button>
           </div>
         </div>
-        <p id="auth-modal-status" class="auth-status-text">配置 Supabase 后可启用登录与个人诊断历史。</p>
+        <p id="auth-modal-status" class="auth-status-text">配置 Supabase 后可启用邀请码注册、邮箱验证和受保护 AI 分析。</p>
         <ul class="auth-helper-list">
-          <li>前端只保留公开的匿名登录密钥，AI 与历史写入都走 Worker 代理。</li>
-          <li>交割单会先在浏览器本地解析，再发送结构化结果到 Worker。</li>
+          <li>注册时需要邮箱、密码和一次性邀请码；登录时只需要邮箱和密码。</li>
+          <li>完成邮箱验证后，才可以调用受保护的 AI 交易执行分析接口。</li>
         </ul>
       </section>
     </div>
@@ -7100,8 +7101,10 @@ a:hover {
         siteChannel: "github_pages",
         snapshotUrl: "./data/processed/daily_candidates_latest.json",
         aiProxyBaseUrl: "",
-        makeExecutionAnalysisWebhook: "https://hook.us2.make.com/22kg77b8miodr0cqok23o3uicl5d343k",
-        MAKE_COM_AI_WEBHOOK_URL: "https://hook.us2.make.com/22kg77b8miodr0cqok23o3uicl5d343k",
+        executionAnalysisProxyUrl: "",
+        authEmailRedirectTo: "",
+        makeExecutionAnalysisWebhook: "",
+        MAKE_COM_AI_WEBHOOK_URL: "",
         authProvider: "supabase",
         supabaseUrl: "https://jbmxcpetbiukpxzifpjr.supabase.co",
         supabaseAnonKey: "sb_publishable_Kb_7LK3OquEu8bE9pF0mZw_oc7XXGV8",
@@ -7245,9 +7248,340 @@ a:hover {
         return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
       }
 
+      function isPlainObject(value) {
+        return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+      }
+
+      function firstNonEmptyText(values) {
+        for (const value of values) {
+          if (value === null || value === undefined) {
+            continue;
+          }
+          const text = String(value).trim();
+          if (text) {
+            return text;
+          }
+        }
+        return "";
+      }
+
+      function flattenToArray(value) {
+        if (Array.isArray(value)) {
+          return value.flatMap((item) => flattenToArray(item));
+        }
+        return value === null || value === undefined ? [] : [value];
+      }
+
+      function extractReadableText(value) {
+        if (value === null || value === undefined) {
+          return "";
+        }
+        if (typeof value === "string" || typeof value === "number" || typeof value === "boolean") {
+          return String(value).trim();
+        }
+        if (Array.isArray(value)) {
+          return firstNonEmptyText(value.map((item) => extractReadableText(item)));
+        }
+        if (!isPlainObject(value)) {
+          return "";
+        }
+        const label = firstNonEmptyText([value.title, value.label, value.name]);
+        const detail = firstNonEmptyText([
+          value.detail,
+          value.summary,
+          value.description,
+          value.reason,
+          value.text,
+          value.message,
+          value.note,
+          value.verdict,
+          value.action,
+          value.recommendation,
+          value.value,
+        ]);
+        if (label && detail) {
+          return `${label}：${detail}`;
+        }
+        return label || detail;
+      }
+
+      function normalizeTextList(value, limit = 0) {
+        const seen = new Set();
+        const items = [];
+        for (const entry of flattenToArray(value)) {
+          const text = extractReadableText(entry);
+          if (!text || seen.has(text)) {
+            continue;
+          }
+          seen.add(text);
+          items.push(text);
+          if (limit > 0 && items.length >= limit) {
+            break;
+          }
+        }
+        return items;
+      }
+
+      function stripCodeFence(value) {
+        const text = String(value ?? "").trim();
+        if (!text) {
+          return "";
+        }
+        if (!text.startsWith("```")) {
+          return text;
+        }
+        return text.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "").trim();
+      }
+
+      function tryParseJsonString(value) {
+        const text = stripCodeFence(value);
+        if (!text) {
+          return null;
+        }
+        try {
+          return JSON.parse(text);
+        } catch (_error) {
+          return text;
+        }
+      }
+
+      function extractGeminiTextPayload(payload) {
+        const texts = [];
+        const collectParts = (parts) => {
+          if (!Array.isArray(parts)) {
+            return;
+          }
+          for (const part of parts) {
+            if (typeof part?.text === "string" && part.text.trim()) {
+              texts.push(part.text.trim());
+            }
+          }
+        };
+        collectParts(payload?.content?.parts);
+        collectParts(payload?.parts);
+        if (Array.isArray(payload?.candidates)) {
+          payload.candidates.forEach((candidate) => collectParts(candidate?.content?.parts));
+        }
+        return firstNonEmptyText(texts);
+      }
+
+      function looksLikeExecutionAnalysis(value) {
+        if (!isPlainObject(value)) {
+          return false;
+        }
+        const knownKeys = [
+          "summary",
+          "technical_judgment",
+          "highlights",
+          "invalidation_points",
+          "trigger_points",
+          "action_note",
+          "key_signal",
+          "stop_loss_price",
+          "take_profit_price_1",
+          "take_profit_price_2",
+          "multi_agent_analysis",
+          "agent_outputs",
+          "market_agent",
+          "market_analyst",
+          "news_agent",
+          "news_analyst",
+          "fundamentals_agent",
+          "fundamentals_analyst",
+          "social_sentiment_agent",
+          "social_media_analyst",
+          "bull_case_agent",
+          "bull_researcher",
+          "bear_case_agent",
+          "bear_researcher",
+          "risk_committee",
+          "risk_manager",
+          "trader_decision",
+          "trader",
+        ];
+        return knownKeys.some((key) => Object.prototype.hasOwnProperty.call(value, key));
+      }
+
+      function resolveExecutionAnalysisPayload(value, depth = 0) {
+        if (depth > 6 || value === null || value === undefined) {
+          return null;
+        }
+        if (typeof value === "string") {
+          const parsed = tryParseJsonString(value);
+          if (parsed && parsed !== value) {
+            return resolveExecutionAnalysisPayload(parsed, depth + 1) || parsed;
+          }
+          return typeof parsed === "string" ? parsed.trim() : parsed;
+        }
+        if (Array.isArray(value)) {
+          for (const item of value) {
+            const resolved = resolveExecutionAnalysisPayload(item, depth + 1);
+            if (resolved !== null && resolved !== undefined && resolved !== "") {
+              return resolved;
+            }
+          }
+          return null;
+        }
+        if (!isPlainObject(value)) {
+          return null;
+        }
+        if (looksLikeExecutionAnalysis(value)) {
+          return value;
+        }
+        const geminiText = extractGeminiTextPayload(value);
+        if (geminiText) {
+          return resolveExecutionAnalysisPayload(geminiText, depth + 1) || geminiText;
+        }
+        const nestedKeys = ["data", "analysis", "output", "result", "payload", "body", "response", "message", "content", "text"];
+        for (const key of nestedKeys) {
+          if (!Object.prototype.hasOwnProperty.call(value, key)) {
+            continue;
+          }
+          const resolved = resolveExecutionAnalysisPayload(value[key], depth + 1);
+          if (resolved !== null && resolved !== undefined && resolved !== "") {
+            return resolved;
+          }
+        }
+        return value;
+      }
+
+      function buildAgentSection(label, value) {
+        if (value === null || value === undefined) {
+          return null;
+        }
+        if (typeof value === "string") {
+          const summary = value.trim();
+          return summary ? { label, summary, bullets: [] } : null;
+        }
+        if (Array.isArray(value)) {
+          const bullets = normalizeTextList(value, 4);
+          return bullets.length ? { label, summary: bullets[0], bullets: bullets.slice(1) } : null;
+        }
+        if (!isPlainObject(value)) {
+          return null;
+        }
+        const bullets = normalizeTextList(
+          [
+            value.highlights,
+            value.key_points,
+            value.points,
+            value.evidence,
+            value.signals,
+            value.catalysts,
+            value.risks,
+            value.watchouts,
+            value.action_items,
+            value.invalidation_points,
+          ],
+          4,
+        );
+        const summary =
+          firstNonEmptyText([
+            value.summary,
+            value.thesis,
+            value.view,
+            value.conclusion,
+            value.judgment,
+            value.verdict,
+            value.stance,
+            value.recommendation,
+            value.action,
+            value.note,
+            value.message,
+            value.reasoning,
+          ]) || bullets[0] || "";
+        if (!summary && !bullets.length) {
+          return null;
+        }
+        return {
+          label,
+          summary,
+          bullets: bullets.filter((item) => item !== summary),
+        };
+      }
+
+      function collectExecutionAgentSections(aiResult) {
+        if (!isPlainObject(aiResult)) {
+          return [];
+        }
+        const sectionLabels = {
+          market_agent: "市场分析 Agent",
+          market_analyst: "市场分析 Agent",
+          news_agent: "新闻催化 Agent",
+          news_analyst: "新闻催化 Agent",
+          fundamentals_agent: "基本面 Agent",
+          fundamentals_analyst: "基本面 Agent",
+          social_sentiment_agent: "情绪热度 Agent",
+          social_media_analyst: "情绪热度 Agent",
+          bull_case_agent: "多头研究员",
+          bull_researcher: "多头研究员",
+          bear_case_agent: "空头研究员",
+          bear_researcher: "空头研究员",
+          risk_committee: "风险委员会",
+          risk_manager: "风险委员会",
+          trader_decision: "交易决策 Agent",
+          trader: "交易决策 Agent",
+        };
+        const containers = [aiResult];
+        if (isPlainObject(aiResult.multi_agent_analysis)) {
+          containers.unshift(aiResult.multi_agent_analysis);
+        }
+        if (isPlainObject(aiResult.agent_outputs)) {
+          containers.unshift(aiResult.agent_outputs);
+        }
+        const seen = new Set();
+        const sections = [];
+        for (const container of containers) {
+          for (const [key, label] of Object.entries(sectionLabels)) {
+            if (seen.has(label) || !Object.prototype.hasOwnProperty.call(container, key)) {
+              continue;
+            }
+            const section = buildAgentSection(label, container[key]);
+            if (!section) {
+              continue;
+            }
+            seen.add(label);
+            sections.push(section);
+          }
+        }
+        return sections;
+      }
+
+      function renderAiList(items) {
+        const normalizedItems = normalizeTextList(items);
+        if (!normalizedItems.length) {
+          return "<li>--</li>";
+        }
+        return normalizedItems.map((item) => `<li>${escapeHtml(item)}</li>`).join("");
+      }
+
+      function renderAiTags(items) {
+        const normalizedItems = normalizeTextList(items, 8);
+        if (!normalizedItems.length) {
+          return "<span>--</span>";
+        }
+        return normalizedItems.map((item) => `<span>${escapeHtml(item)}</span>`).join("");
+      }
+
+      function formatPriceLabel(value) {
+        const price = Number(value);
+        return Number.isFinite(price) && price > 0 ? `${price.toFixed(2)} 元` : "--";
+      }
+
       function normalizeStockCode(value) {
         const digits = String(value || "").replace(/\D/g, "").slice(-6);
         return digits.length === 6 ? digits : "";
+      }
+
+      function normalizeInviteCode(value) {
+        return String(value || "")
+          .trim()
+          .toUpperCase()
+          .replace(/[\s-]+/g, "");
+      }
+
+      function getAuthEmailRedirectUrl() {
+        return APP_RUNTIME.authEmailRedirectTo || window.location.href.split("#")[0];
       }
 
       function getCurrentModeMeta() {
@@ -7296,6 +7630,10 @@ a:hover {
         return Boolean(APP_RUNTIME.aiProxyBaseUrl);
       }
 
+      function hasExecutionAnalysisProxyRuntime() {
+        return Boolean(APP_RUNTIME.executionAnalysisProxyUrl);
+      }
+
       function hasSupabaseRuntime() {
         return Boolean(APP_RUNTIME.supabaseUrl && APP_RUNTIME.supabaseAnonKey);
       }
@@ -7305,6 +7643,14 @@ a:hover {
           return "";
         }
         return `${APP_RUNTIME.aiProxyBaseUrl.replace(/\/$/, "")}${path}`;
+      }
+
+      function getExecutionAnalysisProxyUrl() {
+        return APP_RUNTIME.executionAnalysisProxyUrl || "";
+      }
+
+      function isUserEmailConfirmed() {
+        return Boolean(state.user?.email_confirmed_at);
       }
 
       function buildHistoryCacheKey() {
@@ -7332,11 +7678,11 @@ a:hover {
       function updateRuntimeChrome() {
         const runtimePill = document.getElementById("runtime-mode-pill");
         if (runtimePill) {
-          const modeText = hasProxyRuntime()
-            ? `GitHub Pages · Worker 代理 · ${APP_RUNTIME.schedules.join(" / ")}`
+          const modeText = hasExecutionAnalysisProxyRuntime() || hasProxyRuntime()
+            ? `GitHub Pages · Supabase Functions · ${APP_RUNTIME.schedules.join(" / ")}`
             : `GitHub Pages · 本地回退 · ${APP_RUNTIME.schedules.join(" / ")}`;
           runtimePill.textContent = modeText;
-          runtimePill.classList.toggle("warning", !hasProxyRuntime());
+          runtimePill.classList.toggle("warning", !(hasExecutionAnalysisProxyRuntime() || hasProxyRuntime()));
         }
         const authNote = document.getElementById("auth-panel-note");
         if (authNote) {
@@ -7350,7 +7696,9 @@ a:hover {
         const logoutButton = document.getElementById("auth-logout-button");
         if (authPill) {
           if (state.user) {
-            authPill.textContent = state.user.email || state.user.id || "已登录";
+            authPill.textContent = isUserEmailConfirmed()
+              ? state.user.email || state.user.id || "已登录"
+              : `待验证：${state.user.email || state.user.id || "当前账号"}`;
             authPill.classList.add("user-history-chip");
           } else if (hasSupabaseRuntime()) {
             authPill.textContent = "未登录";
@@ -7368,13 +7716,19 @@ a:hover {
         }
       }
 
-      function openAuthModal() {
+      function openAuthModal(message = "") {
         const modal = document.getElementById("auth-modal");
         if (!modal) {
           return;
         }
         modal.classList.remove("is-hidden");
         modal.setAttribute("aria-hidden", "false");
+        if (message) {
+          const status = document.getElementById("auth-modal-status");
+          if (status) {
+            status.textContent = message;
+          }
+        }
       }
 
       function closeAuthModal() {
@@ -7451,10 +7805,19 @@ a:hover {
         }
         const email = document.getElementById("auth-email-input")?.value?.trim();
         const password = document.getElementById("auth-password-input")?.value || "";
+        const inviteCodeInput = document.getElementById("auth-invite-code-input");
+        const normalizedInviteCode = normalizeInviteCode(inviteCodeInput?.value || "");
         if (!email || !password) {
           if (status) {
             status.textContent = "请输入邮箱和密码。";
           }
+          return;
+        }
+        if (mode === "signup" && !normalizedInviteCode) {
+          if (status) {
+            status.textContent = "注册时必须填写邀请码。";
+          }
+          inviteCodeInput?.focus();
           return;
         }
         const client = await ensureSupabaseClient();
@@ -7463,22 +7826,38 @@ a:hover {
             status.textContent = mode === "signup" ? "注册中..." : "登录中...";
           }
           if (mode === "signup") {
-            const { error } = await client.auth.signUp({ email, password });
+            const { error } = await client.auth.signUp({
+              email,
+              password,
+              options: {
+                data: {
+                  invite_code: normalizedInviteCode,
+                },
+                emailRedirectTo: getAuthEmailRedirectUrl(),
+              },
+            });
             if (error) {
               throw error;
             }
             if (status) {
-              status.textContent = "注册请求已提交，请检查邮箱确认链接。";
+              status.textContent = "注册请求已提交，请检查邮箱确认链接；完成验证后才能使用 AI 分析。";
             }
           } else {
-            const { error } = await client.auth.signInWithPassword({ email, password });
+            const {
+              data: { session },
+              error,
+            } = await client.auth.signInWithPassword({ email, password });
             if (error) {
               throw error;
             }
             if (status) {
-              status.textContent = "登录成功，正在同步历史记录...";
+              status.textContent = session?.user?.email_confirmed_at
+                ? "登录成功，正在同步历史记录..."
+                : "登录成功，但当前邮箱尚未验证；完成邮箱验证后才能使用 AI 分析。";
             }
-            closeAuthModal();
+            if (session?.user?.email_confirmed_at) {
+              closeAuthModal();
+            }
           }
         } catch (error) {
           if (status) {
@@ -7660,20 +8039,25 @@ a:hover {
 
       function buildExecutionAnalysisPrompt(context) {
         return [
-          "你是 A 股个股交易分析助手。",
-          "任务：基于用户输入的股票代码和市场上下文，输出简洁、直接、便于执行的 JSON。",
+          "你是 A 股个股交易分析助手，现在要在一次输出中模拟 TradingAgents-CN 风格的多 agent 研判流程，但只能返回一个最终 JSON。",
+          "任务：基于用户输入的股票代码和市场上下文，在单次分析中依次完成市场分析、新闻催化分析、基本面分析、情绪热度分析、多头论证、空头论证、风险委员会裁决和交易决策，并输出便于前端直接展示的 JSON。",
           "这次分析的唯一目标股票代码是：",
           context.stock_code || "",
           "严格要求：",
           "1. 不要输出 Markdown、不要输出代码块、不要输出 JSON 之外的内容。",
           "2. 不要给出明确仓位比例，不要出现百分比仓位、几成仓、轻仓 20% 之类表述。",
           "3. 若上下文里已经给了止损位和止盈位，优先沿用；不要随意改写。",
-          "4. 若没有可靠价格、均线、事件或止盈止损数据，不要编造；请把价格字段填 0，并在 summary 与 technical_judgment 里明确说明“当前缺少该股实时数据，仅能给出方向性判断”。",
+          "4. 若没有可靠价格、均线、事件、情绪、基本面或止盈止损数据，不要编造；请把价格字段填 0，并在 summary 与 technical_judgment 里明确说明“当前缺少该股实时数据，仅能给出方向性判断”。",
           "5. technical_judgment 必须明确指出偏强、震荡、转弱或不宜追高中的一种，并说明一句原因。",
-          "6. invalidation_points 给 2 到 3 条，优先写跌破、放量转弱、承接不足、板块退潮等失效信号。",
-          "7. action_note 只写一句执行提醒，禁止写仓位比例。",
-          "8. summary 控制在 2 句以内。",
-          "JSON 字段必须严格为：summary, technical_judgment, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, confidence, model, generated_at。",
+          "6. highlights 给 2 到 4 条，写最关键的执行信号、催化或风险点。",
+          "7. invalidation_points 给 2 到 3 条，优先写跌破、放量转弱、承接不足、板块退潮等失效信号。",
+          "8. action_note 只写一句执行提醒，禁止写仓位比例。",
+          "9. summary 控制在 2 句以内。",
+          "10. multi_agent_analysis 必须包含以下 8 个角色：market_agent, news_agent, fundamentals_agent, social_sentiment_agent, bull_case_agent, bear_case_agent, risk_committee, trader_decision。",
+          "11. 每个 agent 节点都必须返回 summary 和 highlights；若证据不足，要明确写“证据不足”，而不是编造结论。",
+          "12. trader_decision 必须和 risk_committee 保持一致，不允许前后矛盾。",
+          "JSON 字段必须严格为：summary, technical_judgment, highlights, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, multi_agent_analysis, confidence, model, generated_at。",
+          "multi_agent_analysis 的每个子节点结构必须为：{\"summary\":\"...\",\"highlights\":[\"...\",\"...\"]}。",
           "输入上下文：",
           JSON.stringify(context, null, 2),
         ].join("\n");
@@ -7683,44 +8067,81 @@ a:hover {
         if (!aiResult && !detail?.risk_plan) {
           return null;
         }
+        const resolvedResult = resolveExecutionAnalysisPayload(aiResult);
+        const normalizedResult = isPlainObject(resolvedResult)
+          ? resolvedResult
+          : typeof resolvedResult === "string" && resolvedResult
+            ? { summary: resolvedResult }
+            : isPlainObject(aiResult)
+              ? aiResult
+              : {};
         const riskPlan = detail?.risk_plan || {};
-        const highlights = Array.isArray(aiResult?.highlights) ? aiResult.highlights : [];
+        const agentSections = collectExecutionAgentSections(normalizedResult);
+        const highlights = normalizeTextList(
+          [
+            normalizedResult?.highlights,
+            normalizedResult?.key_points,
+            normalizedResult?.bullet_points,
+            normalizedResult?.focus_points,
+          ],
+          4,
+        );
         const invalidationPoints =
-          Array.isArray(aiResult?.invalidation_points) && aiResult.invalidation_points.length
-            ? aiResult.invalidation_points
-            : Array.isArray(aiResult?.trigger_points) && aiResult.trigger_points.length
-              ? aiResult.trigger_points
+          normalizeTextList(normalizedResult?.invalidation_points, 4).length
+            ? normalizeTextList(normalizedResult?.invalidation_points, 4)
+            : normalizeTextList(normalizedResult?.trigger_points, 4).length
+              ? normalizeTextList(normalizedResult?.trigger_points, 4)
               : Array.isArray(riskPlan?.execution_notes)
                 ? riskPlan.execution_notes.slice(0, 3)
                 : [];
+        const traderDecision = agentSections.find((section) => section.label === "交易决策 Agent") || null;
+        const riskDecision = agentSections.find((section) => section.label === "风险委员会") || null;
+        const derivedSummary =
+          firstNonEmptyText([
+            normalizedResult?.summary,
+            traderDecision?.summary,
+            riskDecision?.summary,
+            detail?.ai_risk_analysis?.summary,
+          ]) || "当前分析结果暂不可用。";
+        const derivedTechnicalJudgment =
+          firstNonEmptyText([
+            normalizedResult?.technical_judgment,
+            normalizedResult?.key_signal,
+            highlights[0],
+            traderDecision?.summary,
+            riskDecision?.summary,
+            detail?.thesis,
+            detail?.market_context,
+          ]) || "--";
+        const derivedActionNote =
+          firstNonEmptyText([
+            normalizedResult?.action_note,
+            normalizedResult?.next_step,
+            normalizedResult?.recommendation,
+            traderDecision?.bullets?.[0],
+            traderDecision?.summary,
+            riskPlan?.action_note,
+            detail?.ai_risk_analysis?.next_step,
+          ]) || "--";
 
         return {
-          status: aiResult?.status || "ai_generated",
-          summary: aiResult?.summary || detail?.ai_risk_analysis?.summary || "当前分析结果暂不可用。",
-          technical_judgment:
-            aiResult?.technical_judgment ||
-            aiResult?.key_signal ||
-            highlights[0] ||
-            detail?.thesis ||
-            detail?.market_context ||
-            "--",
-          stop_loss_price: Number(aiResult?.stop_loss_price ?? riskPlan?.stop_loss_price ?? 0),
-          take_profit_price_1: Number(aiResult?.take_profit_price_1 ?? aiResult?.take_profit_1 ?? riskPlan?.take_profit_price_1 ?? 0),
-          take_profit_price_2: Number(aiResult?.take_profit_price_2 ?? aiResult?.take_profit_2 ?? riskPlan?.take_profit_price_2 ?? 0),
+          status: normalizedResult?.status || "ai_generated",
+          summary: derivedSummary,
+          technical_judgment: derivedTechnicalJudgment,
+          stop_loss_price: Number(normalizedResult?.stop_loss_price ?? riskPlan?.stop_loss_price ?? 0),
+          take_profit_price_1: Number(normalizedResult?.take_profit_price_1 ?? normalizedResult?.take_profit_1 ?? riskPlan?.take_profit_price_1 ?? 0),
+          take_profit_price_2: Number(normalizedResult?.take_profit_price_2 ?? normalizedResult?.take_profit_2 ?? riskPlan?.take_profit_price_2 ?? 0),
           invalidation_points: invalidationPoints,
-          action_note:
-            aiResult?.action_note ||
-            aiResult?.next_step ||
-            riskPlan?.action_note ||
-            detail?.ai_risk_analysis?.next_step ||
-            "--",
-          confidence: aiResult?.confidence || detail?.ai_risk_analysis?.confidence || 0.68,
-          model: aiResult?.model || detail?.ai_risk_analysis?.model || "make_com_ai",
-          source: aiResult?.source || detail?.ai_risk_analysis?.source || "make_com_ai",
-          generated_at: aiResult?.generated_at || detail?.ai_risk_analysis?.generated_at || new Date().toISOString(),
-          requested_symbol: aiResult?.requested_symbol || detail?.symbol || "",
-          stock_name: aiResult?.stock_name || detail?.name || "",
-          diagnostics: aiResult?.diagnostics || null,
+          action_note: derivedActionNote,
+          highlights,
+          agent_sections: agentSections,
+          confidence: Number(normalizedResult?.confidence ?? detail?.ai_risk_analysis?.confidence ?? 0.68),
+          model: normalizedResult?.model || detail?.ai_risk_analysis?.model || "make_com_ai",
+          source: normalizedResult?.source || detail?.ai_risk_analysis?.source || "make_com_ai",
+          generated_at: normalizedResult?.generated_at || detail?.ai_risk_analysis?.generated_at || new Date().toISOString(),
+          requested_symbol: normalizedResult?.requested_symbol || detail?.symbol || "",
+          stock_name: normalizedResult?.stock_name || detail?.name || "",
+          diagnostics: normalizedResult?.diagnostics || null,
         };
       }
 
@@ -7743,6 +8164,8 @@ a:hover {
 
       async function requestExecutionAnalysis(symbol) {
         const normalizedSymbol = normalizeStockCode(symbol);
+        const matchedContext = findStockContextBySymbol(normalizedSymbol);
+        const matchedDetail = matchedContext?.detail || null;
         if (!normalizedSymbol) {
           return buildExecutionAnalysisFallback(null, {
             status: "invalid_symbol",
@@ -7760,179 +8183,46 @@ a:hover {
           });
         }
 
-        const matchedContext = findStockContextBySymbol(normalizedSymbol);
-        const matchedDetail = matchedContext?.detail || null;
-        let upstreamFailureResult = null;
-        const requestStartedAt = Date.now();
-
-        // 优先尝试 Make.com webhook（从 APP_RUNTIME 中配置）
-        const makeComWebhookUrl = APP_RUNTIME?.makeExecutionAnalysisWebhook || APP_RUNTIME?.MAKE_COM_AI_WEBHOOK_URL;
-        if (makeComWebhookUrl && !makeComWebhookUrl.includes("YOUR_WEBHOOK_ID")) {
-          let timeoutId = null;
-          let didTimeout = false;
-          try {
-            const context = buildExecutionAnalysisContext(normalizedSymbol);
-            const payload = {
-              ...context,
-              user_id: state.user?.id || null,
-              response_schema_version: "execution-analysis-v2",
-              analysis_context_json: JSON.stringify(context, null, 2),
-              analysis_prompt: buildExecutionAnalysisPrompt(context),
-            };
-            const controller = new AbortController();
-            timeoutId = window.setTimeout(() => {
-              didTimeout = true;
-              controller.abort();
-            }, 20000);
-
-            const response = await fetch(makeComWebhookUrl, {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(payload),
-              signal: controller.signal,
-            });
-            window.clearTimeout(timeoutId);
-            const rawText = await response.text();
-            const preview = truncateText(rawText);
-
-            if (!response.ok) {
-              upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
-                status: "make_http_error",
-                source: "make_com_ai",
-                requested_symbol: normalizedSymbol,
-                stock_name: matchedDetail?.name || "",
-                diagnostics: {
-                  provider: "Make webhook",
-                  title: `Make 返回 HTTP ${response.status}`,
-                  message: "前端已经发起了 AI 请求，但当前 webhook 没有返回可用分析结果，所以页面回退到了本地规则分析。",
-                  elapsed_ms: Date.now() - requestStartedAt,
-                  http_status: response.status,
-                  http_status_text: response.statusText || "",
-                  webhook_url: makeComWebhookUrl,
-                  response_preview: preview || "<empty>",
-                  fallback: "local_rules",
-                },
-              });
-            } else {
-              let result = null;
-              try {
-                result = rawText ? JSON.parse(rawText) : null;
-              } catch (_) {
-                result = null;
-              }
-
-              if (!result && rawText) {
-                const normalized = String(rawText).trim();
-                if (/^accepted/i.test(normalized)) {
-                  return normalizeExecutionAnalysisResult({
-                    status: "queued",
-                    model: "gemini-3.1-pro",
-                    confidence: 0.55,
-                    summary: "请求已提交到 Make，正在等待场景返回 AI 分析结果。请稍后点击“AI 交易执行分析”重试。",
-                    technical_judgment: "排队处理中",
-                    invalidation_points: ["等待 Make 场景回传结果后再查看具体失效条件。"],
-                    action_note: "请稍后重试。",
-                    source: "make_com_ai",
-                    generated_at: new Date().toISOString(),
-                    requested_symbol: normalizedSymbol,
-                    stock_name: matchedDetail?.name || "",
-                    diagnostics: {
-                      provider: "Make webhook",
-                      title: "Make 已接收请求，正在处理",
-                      message: "Webhook 已被触发，但当前场景返回的是 accepted，而不是最终结构化分析结果。",
-                      elapsed_ms: Date.now() - requestStartedAt,
-                      http_status: response.status,
-                      webhook_url: makeComWebhookUrl,
-                      response_preview: truncateText(normalized),
-                    },
-                  }, detail);
-                }
-                if (/^(ok|success)$/i.test(normalized)) {
-                  upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
-                    status: "make_invalid_payload",
-                    source: "make_com_ai",
-                    requested_symbol: normalizedSymbol,
-                    stock_name: matchedDetail?.name || "",
-                    diagnostics: {
-                      provider: "Make webhook",
-                      title: "Make 返回了 2xx，但响应体不可用",
-                      message: "当前 webhook 只返回了简短确认文本，前端拿不到可展示的 AI 分析字段。",
-                      elapsed_ms: Date.now() - requestStartedAt,
-                      http_status: response.status,
-                      webhook_url: makeComWebhookUrl,
-                      response_preview: truncateText(normalized),
-                      fallback: "local_rules",
-                    },
-                  });
-                } else {
-                  result = { summary: normalized };
-                }
-              }
-
-              if (!upstreamFailureResult) {
-                const aiResult = result?.data || result?.analysis || result?.output || result;
-                if (aiResult && (aiResult.summary || aiResult.technical_judgment || aiResult.highlights)) {
-                  return normalizeExecutionAnalysisResult(
-                    {
-                      ...aiResult,
-                      source: "make_com_ai",
-                      requested_symbol: aiResult?.requested_symbol || normalizedSymbol,
-                      stock_name: aiResult?.stock_name || matchedDetail?.name || "",
-                    },
-                    matchedDetail,
-                  );
-                }
-                upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
-                  status: "make_empty_payload",
-                  source: "make_com_ai",
-                  requested_symbol: normalizedSymbol,
-                  stock_name: matchedDetail?.name || "",
-                  diagnostics: {
-                    provider: "Make webhook",
-                    title: "Make 返回成功，但没有命中前端可识别字段",
-                    message: "请检查最后一个 Webhook response 是否返回了 JSON，并至少包含 summary 等分析字段。",
-                    elapsed_ms: Date.now() - requestStartedAt,
-                    http_status: response.status,
-                    webhook_url: makeComWebhookUrl,
-                    response_preview: preview || "<empty>",
-                    fallback: "local_rules",
-                  },
-                });
-              }
-            }
-          } catch (error) {
-            if (timeoutId) {
-              window.clearTimeout(timeoutId);
-            }
-            console.warn("Make.com webhook 请求失败，降级到本地规则或代理接口:", error);
-            upstreamFailureResult = buildExecutionAnalysisFallback(matchedDetail, {
-              status: didTimeout ? "make_timeout" : "make_request_error",
-              source: "make_com_ai",
-              requested_symbol: normalizedSymbol,
-              stock_name: matchedDetail?.name || "",
-              diagnostics: {
-                provider: "Make webhook",
-                title: didTimeout ? "Make 请求超时" : "Make 请求异常",
-                message:
-                  didTimeout
-                    ? "前端已成功发起请求，但 20 秒内没有等到 Make 返回结果。"
-                    : "请求 Make 时发生异常，前端已回退到本地规则分析。",
-                elapsed_ms: Date.now() - requestStartedAt,
-                webhook_url: makeComWebhookUrl,
-                response_preview: truncateText(error instanceof Error ? error.message : String(error)),
-                fallback: "local_rules",
-              },
-            });
-          }
+        if (!state.user) {
+          return buildExecutionAnalysisFallback(matchedDetail, {
+            status: "auth_required",
+            source: "protected_runtime",
+            requested_symbol: normalizedSymbol,
+            stock_name: matchedDetail?.name || "",
+            summary: "当前 AI 交易执行分析需要先登录后使用。",
+            technical_judgment: "当前未登录，无法调用受保护的 AI 分析接口。",
+            action_note: "请先登录后重试。",
+            diagnostics: {
+              provider: "Frontend auth gate",
+              title: "需要登录",
+              message: "当前页面已改为通过受保护的 Supabase Function 调用 AI 分析，未登录用户无法继续。",
+              fallback: "none",
+            },
+          });
         }
 
-        // 降级到代理接口或本地规则
-        if (!hasProxyRuntime()) {
-          if (upstreamFailureResult) {
-            return upstreamFailureResult;
-          }
+        if (!isUserEmailConfirmed()) {
+          return buildExecutionAnalysisFallback(matchedDetail, {
+            status: "email_confirmation_required",
+            source: "protected_runtime",
+            requested_symbol: normalizedSymbol,
+            stock_name: matchedDetail?.name || "",
+            summary: "当前账号尚未完成邮箱验证，暂时不能调用 AI 分析。",
+            technical_judgment: "邮箱验证未完成，受保护接口不会放行。",
+            action_note: "请先完成邮箱验证后再重试。",
+            diagnostics: {
+              provider: "Frontend auth gate",
+              title: "邮箱尚未验证",
+              message: "注册成功后需要先点击邮箱中的确认链接，然后再回来登录并发起 AI 分析。",
+              fallback: "none",
+            },
+          });
+        }
+
+        const requestStartedAt = Date.now();
+        const executionAnalysisUrl = getExecutionAnalysisProxyUrl();
+
+        if (!executionAnalysisUrl) {
           if (matchedDetail?.ai_risk_analysis) {
             return normalizeExecutionAnalysisResult(
               {
@@ -7945,65 +8235,116 @@ a:hover {
             );
           }
           return buildExecutionAnalysisFallback(matchedDetail, {
-            status: "no_remote_runtime",
-            source: "manual_symbol_input",
+            status: "execution_analysis_runtime_missing",
+            source: "protected_runtime",
             requested_symbol: normalizedSymbol,
             stock_name: matchedDetail?.name || "",
-            summary: "当前没有可用的远端 AI 运行时，且本地快照里也没有该股票的结构化分析结果。",
-            technical_judgment: "仅凭股票代码无法在前端本地生成可靠的个股交易分析。",
-            action_note: "请配置 Make 场景或输入候选池内股票代码后重试。",
+            summary: "当前尚未配置受保护的 AI 分析入口，因此只能展示本地规则兜底结果。",
+            technical_judgment: "受保护的执行分析 Function 未配置，当前无法发起远端 AI 分析。",
+            action_note: "请先在 APP_RUNTIME 中配置 executionAnalysisProxyUrl。",
             diagnostics: {
               provider: "Frontend fallback",
-              title: "未命中远端 AI 运行时",
-              message: "当前页面只在 Make webhook 可用时支持任意股票代码分析；若该代码未命中本地快照，则无法继续补全更多个股数据。",
-              webhook_url: makeComWebhookUrl || "",
-              fallback: "none",
+              title: "受保护 AI Function 未配置",
+              message: "当前页面不再直接调用公开 Make webhook，需要先配置 executionAnalysisProxyUrl。",
+              fallback: "local_rules",
             },
           });
         }
 
         try {
+          const context = buildExecutionAnalysisContext(normalizedSymbol);
           const token = await getAccessToken();
-          const response = await fetch(getProxyUrl("/api/stocks/execution-analysis"), {
+          const response = await fetch(executionAnalysisUrl, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
               ...(token ? { Authorization: `Bearer ${token}` } : {}),
             },
             body: JSON.stringify({
-              user_id: state.user?.id || null,
-              email: state.user?.email || null,
-              symbol: normalizedSymbol,
-              mode_id: state.selectedMode,
-              detail: matchedDetail,
-              trade_date: snapshot.trade_date,
+              ...context,
+              response_schema_version: "execution-analysis-v3",
+              analysis_context_json: JSON.stringify(context, null, 2),
+              analysis_prompt: buildExecutionAnalysisPrompt(context),
             }),
           });
+          const rawText = await response.text();
+          const parsedPayload = tryParseJsonString(rawText);
+          const proxyPayload = isPlainObject(parsedPayload) ? parsedPayload : {};
           if (!response.ok) {
-            throw new Error(`proxy_http_${response.status}`);
-          }
-          const remote = await response.json();
-          return normalizeExecutionAnalysisResult(
-            {
-              ...(remote?.analysis || matchedDetail?.ai_risk_analysis || {}),
+            return buildExecutionAnalysisFallback(matchedDetail, {
+              status:
+                response.status === 401
+                  ? "proxy_auth_required"
+                  : response.status === 403
+                    ? "proxy_forbidden"
+                    : "proxy_http_error",
+              source: "supabase_function_make_proxy",
               requested_symbol: normalizedSymbol,
               stock_name: matchedDetail?.name || "",
-            },
+              summary:
+                response.status === 401
+                  ? "当前登录状态已失效，请重新登录后再发起 AI 分析。"
+                  : response.status === 403
+                    ? "当前账号暂时无权使用 AI 交易执行分析。"
+                    : "受保护的 AI 执行分析接口暂时不可用，当前展示的是本地规则兜底结果。",
+              technical_judgment:
+                response.status === 401
+                  ? "登录凭证失效，当前无法调用受保护接口。"
+                  : response.status === 403
+                    ? "账号未通过邮箱验证或邀请码授权检查，受保护接口拒绝放行。"
+                    : "代理接口返回了异常状态码，当前无法拿到远端 AI 结果。",
+              action_note:
+                response.status === 401
+                  ? "请重新登录后重试。"
+                  : response.status === 403
+                    ? "请检查邮箱验证状态与邀请码授权状态。"
+                    : "请稍后重试或检查 Function 与 Make 的部署状态。",
+              diagnostics: {
+                provider: "Supabase Function",
+                title:
+                  response.status === 401
+                    ? "登录状态失效"
+                    : response.status === 403
+                      ? "当前账号无权使用 AI 分析"
+                      : `代理接口返回 HTTP ${response.status}`,
+                message:
+                  firstNonEmptyText([
+                    proxyPayload?.message,
+                    proxyPayload?.error,
+                    truncateText(rawText),
+                  ]) || "受保护的执行分析接口暂时不可用。",
+                elapsed_ms: Date.now() - requestStartedAt,
+                http_status: response.status,
+                response_preview: truncateText(rawText),
+                fallback: "local_rules",
+              },
+            });
+          }
+          const remoteAnalysis =
+            isPlainObject(proxyPayload) && Object.prototype.hasOwnProperty.call(proxyPayload, "analysis")
+              ? proxyPayload.analysis
+              : parsedPayload;
+          return normalizeExecutionAnalysisResult(
+            isPlainObject(remoteAnalysis)
+              ? {
+                  ...remoteAnalysis,
+                  source: remoteAnalysis?.source || "supabase_function_make_proxy",
+                  requested_symbol: remoteAnalysis?.requested_symbol || normalizedSymbol,
+                  stock_name: remoteAnalysis?.stock_name || matchedDetail?.name || "",
+                }
+              : remoteAnalysis,
             matchedDetail,
           );
         } catch (error) {
-          if (upstreamFailureResult) {
-            return upstreamFailureResult;
-          }
           return buildExecutionAnalysisFallback(matchedDetail, {
             status: "proxy_request_error",
-            source: "proxy_fallback",
+            source: "supabase_function_make_proxy",
             requested_symbol: normalizedSymbol,
             stock_name: matchedDetail?.name || "",
             diagnostics: {
-              provider: "Proxy API",
-              title: "代理接口不可用",
-              message: "Make 和代理接口都没有返回可用分析结果，当前展示的是本地规则分析。",
+              provider: "Supabase Function",
+              title: "受保护 AI 接口不可用",
+              message: "当前展示的是本地规则兜底结果，请稍后重试或检查 Function 部署。",
               elapsed_ms: Date.now() - requestStartedAt,
               response_preview: truncateText(error instanceof Error ? error.message : String(error)),
               fallback: "local_rules",
@@ -8040,31 +8381,31 @@ a:hover {
                   ${meta.map((item) => `<span class="ai-meta-chip">${escapeHtml(item)}</span>`).join("")}
                 </div>
               </div>
-              <p class="ai-modal-summary">${aiRiskAnalysis.summary || "--"}</p>
+              <p class="ai-modal-summary">${escapeHtml(aiRiskAnalysis.summary || "--")}</p>
               <div class="ai-insight-grid">
                 <article class="ai-insight-card full-span">
                   <strong>交易者画像</strong>
-                  <p class="ai-key-line">${aiRiskAnalysis.trader_profile || "--"}</p>
+                  <p class="ai-key-line">${escapeHtml(aiRiskAnalysis.trader_profile || "--")}</p>
                 </article>
                 <article class="ai-insight-card">
                   <strong>优势延续</strong>
-                  <ul class="ai-list">${(aiRiskAnalysis.strengths || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                  <ul class="ai-list">${renderAiList(aiRiskAnalysis.strengths || [])}</ul>
                 </article>
                 <article class="ai-insight-card">
                   <strong>风险修正</strong>
-                  <ul class="ai-list">${(aiRiskAnalysis.weaknesses || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                  <ul class="ai-list">${renderAiList(aiRiskAnalysis.weaknesses || [])}</ul>
                 </article>
                 <article class="ai-insight-card">
                   <strong>行为标签</strong>
-                  <div class="tag-row">${(aiRiskAnalysis.behavior_tags || []).map((item) => `<span>${item}</span>`).join("") || "<span>--</span>"}</div>
+                  <div class="tag-row">${renderAiTags(aiRiskAnalysis.behavior_tags || [])}</div>
                 </article>
                 <article class="ai-insight-card">
                   <strong>优化动作</strong>
-                  <ul class="ai-list">${(aiRiskAnalysis.adjustments || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                  <ul class="ai-list">${renderAiList(aiRiskAnalysis.adjustments || [])}</ul>
                 </article>
                 <article class="ai-insight-card full-span">
                   <strong>下一阶段计划</strong>
-                  <ul class="ai-list">${(aiRiskAnalysis.next_cycle_plan || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                  <ul class="ai-list">${renderAiList(aiRiskAnalysis.next_cycle_plan || [])}</ul>
                 </article>
               </div>
             </section>
@@ -8086,6 +8427,19 @@ a:hover {
           { label: "第二止盈", value: aiRiskAnalysis.take_profit_price_2 },
         ];
         const diagnostics = aiRiskAnalysis.diagnostics || null;
+        const highlights = normalizeTextList(aiRiskAnalysis.highlights, 4);
+        const agentSections = Array.isArray(aiRiskAnalysis.agent_sections) ? aiRiskAnalysis.agent_sections : [];
+        const agentSectionsMarkup = agentSections
+          .map(
+            (section) => `
+              <article class="ai-insight-card">
+                <strong>${escapeHtml(section.label || "Agent 输出")}</strong>
+                <p class="ai-key-line">${escapeHtml(section.summary || "--")}</p>
+                ${section.bullets?.length ? `<ul class="ai-list">${renderAiList(section.bullets)}</ul>` : ""}
+              </article>
+            `,
+          )
+          .join("");
 
         return `
           <section class="ai-modal-window">
@@ -8095,28 +8449,49 @@ a:hover {
                 ${meta.map((item) => `<span class="ai-meta-chip">${escapeHtml(item)}</span>`).join("")}
               </div>
             </div>
-            <p class="ai-modal-summary">${aiRiskAnalysis.summary}</p>
+            <p class="ai-modal-summary">${escapeHtml(aiRiskAnalysis.summary || "--")}</p>
             <div class="ai-insight-grid">
               <article class="ai-insight-card full-span">
                 <strong>技术面判断</strong>
-                <p class="ai-key-line">${aiRiskAnalysis.technical_judgment || "--"}</p>
+                <p class="ai-key-line">${escapeHtml(aiRiskAnalysis.technical_judgment || "--")}</p>
               </article>
+              ${
+                highlights.length
+                  ? `
+              <article class="ai-insight-card full-span">
+                <strong>关键信号</strong>
+                <ul class="ai-list">${renderAiList(highlights)}</ul>
+              </article>
+              `
+                  : ""
+              }
               <article class="ai-insight-card full-span">
                 <strong>关键价位</strong>
                 <ul class="ai-list">
                   ${priceCards
-                    .map((item) => `<li>${item.label}：${Number.isFinite(Number(item.value)) && Number(item.value) > 0 ? `${Number(item.value).toFixed(2)} 元` : "--"}</li>`)
+                    .map((item) => `<li>${escapeHtml(item.label)}：${escapeHtml(formatPriceLabel(item.value))}</li>`)
                     .join("")}
                 </ul>
               </article>
               <article class="ai-insight-card full-span">
                 <strong>失效条件</strong>
-                <ul class="ai-list">${(aiRiskAnalysis.invalidation_points || []).map((item) => `<li>${item}</li>`).join("") || "<li>--</li>"}</ul>
+                <ul class="ai-list">${renderAiList(aiRiskAnalysis.invalidation_points || [])}</ul>
               </article>
               <article class="ai-insight-card full-span">
                 <strong>执行提醒</strong>
-                <p class="ai-next-step">${aiRiskAnalysis.action_note || "--"}</p>
+                <p class="ai-next-step">${escapeHtml(aiRiskAnalysis.action_note || "--")}</p>
               </article>
+              ${
+                agentSectionsMarkup
+                  ? `
+              <article class="ai-insight-card full-span">
+                <strong>多 Agent 有效输出</strong>
+                <p class="ai-key-line">前端已兼容单次 Make 调用中的多视角结构化结果，以下内容会按角色自动展开。</p>
+              </article>
+              ${agentSectionsMarkup}
+              `
+                  : ""
+              }
               ${
                 diagnostics
                   ? `
@@ -9476,6 +9851,16 @@ a:hover {
         if (button) {
           button.disabled = false;
           button.addEventListener("click", async () => {
+            if (!state.user) {
+              openAuthModal("登录并完成邮箱验证后，才可以使用受保护的 AI 交易执行分析。");
+              updateAiSymbolStatus("当前功能需要先登录。");
+              return;
+            }
+            if (!isUserEmailConfirmed()) {
+              openAuthModal("当前账号尚未完成邮箱验证；请先点击邮箱确认链接，然后再回来发起 AI 分析。");
+              updateAiSymbolStatus("当前账号尚未完成邮箱验证。");
+              return;
+            }
             const rawSymbol = symbolInput?.value || state.aiAnalysisSymbol || "";
             const normalizedSymbol = normalizeStockCode(rawSymbol);
             if (!normalizedSymbol) {
@@ -9559,7 +9944,9 @@ a:hover {
           }
         });
         if (authOpenButton) {
-          authOpenButton.addEventListener("click", openAuthModal);
+          authOpenButton.addEventListener("click", () => {
+            openAuthModal();
+          });
         }
         if (authCloseButton) {
           authCloseButton.addEventListener("click", closeAuthModal);

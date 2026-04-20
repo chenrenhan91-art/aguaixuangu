@@ -50,6 +50,7 @@
 - `.github/workflows/refresh_snapshot.yml`: 每日两次自动刷新快照
 - `requirements-pipeline.txt`: 选股流水线所需的最小 Python 依赖
 - `docs/github_pages_supabase_make_runbook.md`: 当前正式部署说明
+- `docs/make_execution_analysis/README.md`: Make + Gemini 个股执行分析接入说明
 
 ## 本地最少命令
 
@@ -82,9 +83,11 @@ make snapshot
 作用：
 
 - 建表 `trade_diagnostics_history`
-- 建表 `analysis_history`
+- 建表 `invite_codes`
+- 建表 `invite_claims`
 - 启用 RLS
-- 允许用户只读写自己的历史记录
+- 提供 `reserve_invite_code_for_new_user(jsonb)` 注册前 Hook
+- 提供 `release_stale_invite_claim(uuid)` 管理员释放函数
 
 ### 3. 前端运行时配置
 
@@ -93,11 +96,10 @@ make snapshot
 ```js
 window.APP_RUNTIME = {
   snapshotUrl: "./data/processed/daily_candidates_latest.json",
-  makeExecutionAnalysisWebhook: "你的 Make 个股分析 webhook",
-  makeTradeDiagnosticsWebhook: "你的 Make 交易诊断 webhook",
+  executionAnalysisProxyUrl: "https://<project-ref>.supabase.co/functions/v1/stocks-execution-analysis",
   supabaseUrl: "你的 Supabase URL",
   supabaseAnonKey: "你的 Supabase anon key",
-  geminiModel: "gemini-3-pro-preview",
+  authEmailRedirectTo: "https://你的站点地址/",
   schedules: ["11:35", "15:05"],
 };
 ```
@@ -106,6 +108,8 @@ window.APP_RUNTIME = {
 
 - GitHub Actions 只负责更新 `daily_candidates_latest.json`
 - GitHub Pages 只负责展示静态页
-- Supabase 只负责注册登录和用户历史
-- Make webhook 只负责调用 Gemini 并返回结构化结果
+- Supabase 负责注册登录、邀请码校验和受保护的 AI 分析入口
+- Make webhook 只存在于 Supabase Function 环境变量中，不再暴露给前端
+- 个股执行分析的自检脚本是 `scripts/verify_make_execution_webhook.sh`
+- 邀请码生成脚本是 `scripts/generate_invite_codes.py`
 - 仓库已经移除了旧的 `backend / worker / demo render` 主链依赖，避免后续维护时再被旧实现干扰

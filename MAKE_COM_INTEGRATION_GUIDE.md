@@ -1,5 +1,7 @@
 # Make.com AI 交易执行分析集成指南
 
+> 当前正式生产链路已升级为 `前端 -> Supabase Edge Function -> Make -> Gemini`。本文件中的 Make 场景配置仍可复用，但前端不再直接暴露或调用 Make webhook URL。
+
 ## 🎯 目标
 使用 Make.com 集成 AI 模型（OpenAI/Gemini/Claude），为当前选中的股票生成交易执行建议。
 

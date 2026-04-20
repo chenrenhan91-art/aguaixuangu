@@ -9,6 +9,13 @@
       "type": "string",
       "description": "1 到 2 句技术面判断，说明当前偏强、震荡、转弱或不宜追高。"
     },
+    "highlights": {
+      "type": "array",
+      "description": "2 到 4 条关键执行信号、催化或风险点。",
+      "items": {
+        "type": "string"
+      }
+    },
     "stop_loss_price": {
       "type": "number",
       "description": "止损位；若缺少可靠个股价格数据，可返回 0。"
@@ -32,6 +39,110 @@
       "type": "string",
       "description": "一句执行提醒，禁止包含明确仓位比例。"
     },
+    "multi_agent_analysis": {
+      "type": "object",
+      "description": "单次 Make 调用内模拟的多 agent 输出。",
+      "properties": {
+        "market_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "news_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "fundamentals_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "social_sentiment_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "bull_case_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "bear_case_agent": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "risk_committee": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        },
+        "trader_decision": {
+          "type": "object",
+          "properties": {
+            "summary": { "type": "string" },
+            "highlights": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "required": ["summary", "highlights"]
+        }
+      },
+      "required": [
+        "market_agent",
+        "news_agent",
+        "fundamentals_agent",
+        "social_sentiment_agent",
+        "bull_case_agent",
+        "bear_case_agent",
+        "risk_committee",
+        "trader_decision"
+      ]
+    },
     "confidence": {
       "type": "number",
       "description": "0 到 1 之间的置信度。"
@@ -48,11 +159,13 @@
   "required": [
     "summary",
     "technical_judgment",
+    "highlights",
     "stop_loss_price",
     "take_profit_price_1",
     "take_profit_price_2",
     "invalidation_points",
     "action_note",
+    "multi_agent_analysis",
     "confidence",
     "model",
     "generated_at"

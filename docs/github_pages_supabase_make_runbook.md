@@ -71,14 +71,16 @@
 
 在 `index.html` 顶部的 `window.APP_RUNTIME` 中填写：
 
-- `makeExecutionAnalysisWebhook`
-- `makeTradeDiagnosticsWebhook`
+- `executionAnalysisProxyUrl`
 - `supabaseUrl`
 - `supabaseAnonKey`
-- `geminiModel`
+- `authEmailRedirectTo`
 
 ## 说明
 
 - 这个方案不需要你部署自己的后端服务器
-- 如果浏览器直连 Make webhook 遇到 CORS 限制，再考虑补一层极轻量代理
+- 个股 AI 分析现在通过 Supabase Edge Function 转发到 Make，不再由浏览器直连 Make webhook
+- Make webhook URL 只放在 Supabase Function 环境变量 `MAKE_EXECUTION_ANALYSIS_WEBHOOK_URL`
+- 注册前邀请码校验由 Supabase Auth Hook `reserve_invite_code_for_new_user(jsonb)` 负责
 - 如果你想保留按日期归档的历史快照，可以在运行 snapshot 时设置 `A_SHARE_WRITE_DATED_SNAPSHOT=1`
+- 个股执行分析的详细接入步骤见 `docs/make_execution_analysis/README.md`
