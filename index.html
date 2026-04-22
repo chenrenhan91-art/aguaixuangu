@@ -7639,61 +7639,13 @@ a:hover {
         position: relative;
       }
 
-      /* Legacy full-panel blur lock — disabled. We now preview ranks 4-5 to
-         every visitor and only mask ranks 1-3 inside the signal list, plus
-         disable the AI analysis button until unlock. */
       .preview-shell.is-content-locked .candidates-panel,
       .preview-shell.is-content-locked .detail-overview-panel,
       .preview-shell.is-content-locked .event-panel {
-        filter: none;
-        pointer-events: auto;
-        -webkit-user-select: auto;
-        user-select: auto;
-      }
-
-      /* Per-item lock state used inside the candidate list */
-      .signal-item.is-locked-item {
-        position: relative;
-        cursor: pointer;
-      }
-      .signal-item.is-locked-item .signal-title-group strong,
-      .signal-item.is-locked-item .signal-title-group small,
-      .signal-item.is-locked-item .signal-score-value,
-      .signal-item.is-locked-item .signal-info-chip strong,
-      .signal-item.is-locked-item .signal-footer-note {
-        filter: blur(5px);
+        filter: blur(7px);
+        pointer-events: none;
         -webkit-user-select: none;
         user-select: none;
-        color: inherit;
-      }
-      .signal-item.is-locked-item::after {
-        content: "🔒 登录并核销邀请码后查看";
-        position: absolute;
-        inset: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.82rem;
-        color: #f2c66b;
-        background: rgba(8, 15, 24, 0.55);
-        -webkit-backdrop-filter: blur(1px);
-        backdrop-filter: blur(1px);
-        border-radius: inherit;
-        letter-spacing: 0.02em;
-        pointer-events: none;
-      }
-      .signal-item.is-locked-item:hover {
-        border-color: rgba(242, 198, 107, 0.55);
-      }
-
-      /* Locked-state "upgrade" CTA beside the AI analysis button */
-      .ai-action-button.is-locked-disabled {
-        opacity: 0.55;
-        cursor: not-allowed;
-        position: relative;
-      }
-      .ai-action-button.is-locked-disabled::before {
-        content: "🔒 ";
       }
 
       .content-lock-overlay {
@@ -7720,28 +7672,6 @@ a:hover {
         backdrop-filter: blur(10px);
         box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3);
         padding: 18px 18px 16px;
-        position: relative;
-      }
-
-      .content-lock-close {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        border: 1px solid var(--line);
-        background: rgba(255, 255, 255, 0.04);
-        color: var(--fg);
-        font-size: 18px;
-        line-height: 1;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .content-lock-close:hover {
-        background: rgba(255, 255, 255, 0.12);
       }
 
       .content-lock-card h3 {
@@ -7905,6 +7835,31 @@ a:hover {
         display: none;
       }
 
+      /* 免费试用横幅：用户已登录但未填写邀请码时显示剩余试用天数 */
+      .trial-access-banner {
+        margin: 8px 0 14px;
+        padding: 10px 14px;
+        border-radius: 10px;
+        background: linear-gradient(90deg, rgba(96, 165, 250, 0.16), rgba(96, 165, 250, 0.06));
+        border: 1px solid rgba(96, 165, 250, 0.35);
+        color: #93c5fd;
+        font-size: 0.85rem;
+        line-height: 1.45;
+      }
+      .trial-access-banner.is-hidden {
+        display: none;
+      }
+      .trial-access-banner .trial-banner-cta {
+        margin-left: 8px;
+        color: #dbeafe;
+        text-decoration: underline;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        font-size: inherit;
+      }
+
       /* 近5日历史选股面板 —— 登录 + 邀请码解锁后可见 */
       .snapshot-history-panel {
         margin: 4px 0 16px;
@@ -8028,6 +7983,7 @@ a:hover {
       </header>
 
       <div id="snapshot-freshness-banner" class="snapshot-freshness-banner is-hidden" role="status" aria-live="polite"></div>
+      <div id="trial-access-banner" class="trial-access-banner is-hidden" role="status" aria-live="polite"></div>
 
       <section id="snapshot-history-panel" class="snapshot-history-panel is-hidden" aria-label="近期选股历史">
         <div class="snapshot-history-head">
@@ -8040,15 +7996,14 @@ a:hover {
 
       <div id="content-lock-overlay" class="content-lock-overlay is-hidden">
         <article class="content-lock-card">
-          <button id="content-lock-close-button" type="button" class="content-lock-close" aria-label="关闭">×</button>
           <div id="lock-state-auth">
             <h3>登录后可使用邀请码解锁内容</h3>
             <p>请先注册或登录账号，登录后可输入付费邀请码解锁完整内容。</p>
             <button id="content-lock-login-button" type="button" class="primary-button">注册 / 登录</button>
           </div>
           <div id="lock-state-unlock">
-            <h3>输入邀请码解锁内容</h3>
-            <p>你已登录。请输入购买后获取的邀请码（每个邮箱在注册时自动生成一个专属码，后台管理员可见）。</p>
+            <h3 id="lock-unlock-title">输入邀请码解锁内容</h3>
+            <p id="lock-unlock-desc">你已登录。请输入购买后获取的邀请码（每个邮箱在注册时自动生成一个专属码，后台管理员可见）。</p>
             <input id="lock-invite-code-input" type="text" placeholder="邀请码" autocomplete="off" />
             <button id="lock-unlock-button" type="button" class="primary-button">解锁</button>
             <p id="lock-unlock-status"></p>
@@ -8409,6 +8364,13 @@ a:hover {
         authConfigured: false,
         user: null,
         hasPaidAccess: false,
+        // accessMode:
+        //   'paid'  -> user redeemed an invite code
+        //   'trial' -> within the 3-trading-day free trial window
+        //   'none'  -> not logged in, trial expired, or no access
+        accessMode: "none",
+        trialDaysLeft: 0,
+        trialEndsOn: null,
         supabaseClient: null,
         snapshotSignature: "",
         // Snapshot history browser (gated by hasPaidAccess):
@@ -8664,37 +8626,38 @@ a:hover {
         if (shell) {
           shell.classList.toggle("is-content-locked", isLocked);
         }
-        // The full-page unlock overlay no longer auto-opens when locked —
-        // locked users can now preview ranks 4-5 freely. The overlay is
-        // opened on demand (clicking a locked rank 1-3 card, the disabled
-        // AI analysis button, or the inline unlock CTA).
         if (overlay) {
-          overlay.classList.add("is-hidden");
+          overlay.classList.toggle("is-hidden", !isLocked);
         }
-        // Re-render the signal list so locked-item masks appear/disappear
-        // immediately when unlock state changes, and re-apply AI button lock.
-        try {
-          const payload = typeof getCurrentModePayload === "function" ? getCurrentModePayload() : null;
-          if (payload && Array.isArray(payload.items)) {
-            renderSignalList(payload.items);
-          }
-        } catch (_err) {
-          // Safe to ignore before bootstrap finishes.
-        }
-        applyAiAnalysisButtonLock();
-
         // Snapshot history panel visibility follows unlock state.
         if (!isLocked) {
+          // Render immediately with whatever we already have (fallback = single
+          // chip from the in-memory snapshot) so the button is visible without
+          // waiting on the index fetch, then kick off (or re-kick) the async
+          // load to replace with the real 5-day history.
           renderSnapshotHistory();
           loadSnapshotHistoryIndex();
         } else {
+          // Leaving unlocked state: reset historical view and hide panel.
           state.viewingTradeDate = null;
           renderSnapshotHistory();
         }
-        if (stateAuth && stateUnlock) {
+        if (isLocked && stateAuth && stateUnlock) {
           const loggedIn = Boolean(state.user);
           stateAuth.style.display = loggedIn ? "none" : "block";
           stateUnlock.style.display = loggedIn ? "block" : "none";
+          // Customize copy when the free trial has expired vs. fresh user.
+          const unlockTitle = document.getElementById("lock-unlock-title");
+          const unlockDesc = document.getElementById("lock-unlock-desc");
+          if (unlockTitle && unlockDesc) {
+            if (loggedIn && state.accessMode === "none" && state.trialDaysLeft === 0) {
+              unlockTitle.textContent = "3 天免费试用已结束";
+              unlockDesc.textContent = "请输入购买后获取的邀请码继续查看完整选股内容（每个邮箱注册时会自动生成一个专属码，后台管理员可见）。";
+            } else {
+              unlockTitle.textContent = "输入邀请码解锁内容";
+              unlockDesc.textContent = "你已登录。请输入购买后获取的邀请码（每个邮箱在注册时自动生成一个专属码，后台管理员可见）。";
+            }
+          }
           // Reset unlock controls so a previously successful session doesn't
           // leave the input/button disabled for a different logged-in user.
           const inviteInput = document.getElementById("lock-invite-code-input");
@@ -8710,49 +8673,30 @@ a:hover {
           const unlockStatus = document.getElementById("lock-unlock-status");
           if (unlockStatus) unlockStatus.textContent = "";
         }
+        renderTrialBanner();
       }
 
-      // Open the unlock overlay on demand (e.g., when a locked item is clicked).
-      function openUnlockOverlay() {
-        const overlay = document.getElementById("content-lock-overlay");
-        if (!overlay) return;
-        overlay.classList.remove("is-hidden");
-        // Wire up the close button once.
-        const closeBtn = document.getElementById("content-lock-close-button");
-        if (closeBtn && !closeBtn.dataset.wired) {
-          closeBtn.dataset.wired = "1";
-          closeBtn.addEventListener("click", () => {
-            overlay.classList.add("is-hidden");
-          });
+      // Render the "试用剩余 X 天" banner above the freshness banner. Only
+      // shown when the user is actively on a trial (not paid, not expired).
+      function renderTrialBanner() {
+        const banner = document.getElementById("trial-access-banner");
+        if (!banner) return;
+        if (!state.user || state.accessMode !== "trial" || state.trialDaysLeft <= 0) {
+          banner.classList.add("is-hidden");
+          banner.innerHTML = "";
+          return;
         }
-        // Scroll into view on mobile where the overlay may sit below fold.
-        try { overlay.scrollIntoView({ behavior: "smooth", block: "center" }); } catch (_) {}
-      }
-
-      function applyAiAnalysisButtonLock() {
-        const btn = document.getElementById("refresh-ai-risk-button");
-        if (!btn) return;
-        const unlocked = Boolean(state.user && state.hasPaidAccess);
-        if (unlocked) {
-          btn.classList.remove("is-locked-disabled");
-          btn.disabled = false;
-          btn.title = "";
-          // Restore label if it was forced to the locked variant.
-          if (btn.dataset.lockedLabel && btn.textContent === btn.dataset.lockedLabel) {
-            btn.textContent = btn.dataset.originalLabel || "AI 交易执行分析";
-          }
-        } else {
-          if (!btn.dataset.originalLabel) {
-            btn.dataset.originalLabel = (btn.textContent || "AI 交易执行分析").trim();
-          }
-          btn.dataset.lockedLabel = "AI 交易执行分析（解锁后可用）";
-          btn.classList.add("is-locked-disabled");
-          // Keep it clickable so we can show the unlock prompt; the class
-          // gives the visual disabled treatment.
-          btn.disabled = false;
-          btn.title = "登录并核销邀请码后可启用 AI 交易执行分析";
-          btn.textContent = btn.dataset.lockedLabel;
+        const daysLeft = state.trialDaysLeft;
+        let endText = "";
+        if (state.trialEndsOn) {
+          const m = String(state.trialEndsOn).match(/^(\d{4})-(\d{2})-(\d{2})/);
+          if (m) endText = `${parseInt(m[2], 10)}月${parseInt(m[3], 10)}日`;
         }
+        banner.innerHTML =
+          `免费试用中，剩余 <strong>${daysLeft}</strong> 个交易日` +
+          (endText ? `（至 ${endText}）` : "") +
+          `。试用结束后需输入邀请码继续查看完整内容。`;
+        banner.classList.remove("is-hidden");
       }
 
       // Aggressively normalize invite code input: strip whitespace (incl. NBSP,
@@ -9270,28 +9214,49 @@ a:hover {
 
       async function checkPaidAccess() {
         if (!state.supabaseClient || !state.user) {
+          state.accessMode = "none";
+          state.trialDaysLeft = 0;
+          state.trialEndsOn = null;
           return false;
         }
         try {
-          // Self-heal: ensure an invite code row exists for this auth user.
-          // Server reads the email from auth.uid(); p_email arg is ignored.
-          try {
-            await state.supabaseClient.rpc("ensure_invite_code_for_email", {
+          // Prefer the new unified RPC that returns detailed trial info.
+          // Falls back to legacy boolean RPC if the new one isn't deployed yet
+          // (so a stale Supabase database doesn't break the app).
+          const { data, error } = await state.supabaseClient.rpc("get_user_access_state");
+          if (error) {
+            console.warn("[auth] get_user_access_state failed, falling back:", error.message || error);
+            const fb = await state.supabaseClient.rpc("user_has_email_invite_access", {
               p_email: state.user.email || null,
             });
-          } catch (healErr) {
-            console.warn("[auth] ensure_invite_code_for_email failed:", healErr);
+            if (fb.error) {
+              console.warn("[auth] user_has_email_invite_access RPC error:", fb.error.message || fb.error);
+              state.accessMode = "none";
+              state.trialDaysLeft = 0;
+              state.trialEndsOn = null;
+              return false;
+            }
+            const boolAccess = Boolean(fb.data);
+            state.accessMode = boolAccess ? "paid" : "none";
+            state.trialDaysLeft = 0;
+            state.trialEndsOn = null;
+            return boolAccess;
           }
-          const { data, error } = await state.supabaseClient.rpc("user_has_email_invite_access", {
-            p_email: state.user.email || null,
-          });
-          if (error) {
-            console.warn("[auth] checkPaidAccess RPC error:", error.message || error);
+          if (!data || !data.ok) {
+            state.accessMode = "none";
+            state.trialDaysLeft = 0;
+            state.trialEndsOn = null;
             return false;
           }
-          return Boolean(data);
+          state.accessMode = data.mode || "none";
+          state.trialDaysLeft = Number.isFinite(data.trial_days_left) ? data.trial_days_left : 0;
+          state.trialEndsOn = data.trial_ends_on || null;
+          return Boolean(data.access);
         } catch (error) {
           console.warn("[auth] checkPaidAccess threw:", error);
+          state.accessMode = "none";
+          state.trialDaysLeft = 0;
+          state.trialEndsOn = null;
           return false;
         }
       }
@@ -10665,14 +10630,9 @@ a:hover {
           container.innerHTML = '<p class="empty-state">--</p>';
           return;
         }
-        const unlocked = Boolean(state.user && state.hasPaidAccess);
         container.style.setProperty("--candidate-count", String(Math.max(visibleItems.length, 1)));
         container.innerHTML = "";
         visibleItems.forEach((item) => {
-          // Locked users see ranks 1-3 as masked preview cards; ranks 4-5
-          // remain fully visible and clickable so everyone can evaluate
-          // at least a portion of the candidate pool.
-          const isLockedItem = !unlocked && Number(item.rank) <= 3;
           const tags = (item.event_tags || []).slice(0, 3);
           const topEventTag = tags[0] || "无显著事件";
           const eventCountText = tags.length ? `事件 ${tags.length} 条` : "事件 0 条";
@@ -10682,11 +10642,7 @@ a:hover {
           const rankText = `#${item.rank}`;
           const button = document.createElement("button");
           button.type = "button";
-          button.className = `signal-item${item.symbol === state.currentSymbol ? " active" : ""}` +
-            (isLockedItem ? " is-locked-item" : "");
-          if (isLockedItem) {
-            button.setAttribute("aria-label", `第 ${item.rank} 名候选股（解锁后查看）`);
-          }
+          button.className = `signal-item${item.symbol === state.currentSymbol ? " active" : ""}`;
           button.innerHTML = `
             <div class="signal-main-row">
               <span class="signal-rank-badge">${rankText}</span>
@@ -10722,10 +10678,6 @@ a:hover {
             </div>
           `;
           button.addEventListener("click", () => {
-            if (isLockedItem) {
-              openUnlockOverlay();
-              return;
-            }
             state.currentSymbol = item.symbol;
             renderSignalList(items);
             renderDetail();
@@ -10969,11 +10921,7 @@ a:hover {
       function renderModeSignals() {
         const payload = getCurrentModePayload();
         const items = payload?.items || [];
-        // Locked users see ranks 4-5 as their entry point so the detail
-        // panel shows an unlocked stock by default instead of a blurred one.
-        const unlocked = Boolean(state.user && state.hasPaidAccess);
-        const defaultItem = unlocked ? items[0] : (items[3] || items[0]);
-        state.currentSymbol = defaultItem?.symbol || null;
+        state.currentSymbol = items[0]?.symbol || null;
         const modeMeta = (snapshot.mode_summaries || []).find((item) => item.mode_id === state.selectedMode);
         setText(
           "signal-subtitle",
@@ -11703,13 +11651,7 @@ a:hover {
 
         if (button) {
           button.disabled = false;
-          applyAiAnalysisButtonLock();
           button.addEventListener("click", async () => {
-            // Gate: only unlocked users may invoke AI execution analysis.
-            if (!(state.user && state.hasPaidAccess)) {
-              openUnlockOverlay();
-              return;
-            }
             const startedAt = Date.now();
             const waitForModalPaint = async () => {
               await new Promise((resolve) => requestAnimationFrame(resolve));

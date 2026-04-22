@@ -69,6 +69,11 @@ alter table public.email_invite_codes add column if not exists status text not n
 alter table public.email_invite_codes add column if not exists created_at timestamptz not null default now();
 alter table public.email_invite_codes add column if not exists used_at timestamptz;
 alter table public.email_invite_codes add column if not exists used_by uuid references auth.users(id) on delete set null;
+-- Free-trial support: every registered email automatically gets a 3-trading-day
+-- trial window starting from trial_started_at. During the trial the user can
+-- view paid content without redeeming an invite code; after the trial expires
+-- the content lock returns until they enter a valid invite code.
+alter table public.email_invite_codes add column if not exists trial_started_at timestamptz;
 
 do $$
 begin
@@ -191,9 +196,12 @@ begin
     if v_email = '' then
       return new;
     end if;
-    insert into public.email_invite_codes (email, code)
-    values (v_email, public.generate_email_invite_code())
-    on conflict (email) do nothing;
+    -- New signup: create invite-code row AND start 3-trading-day trial.
+    -- on conflict keeps trial_started_at from a previous row (idempotent).
+    insert into public.email_invite_codes (email, code, trial_started_at)
+    values (v_email, public.generate_email_invite_code(), now())
+    on conflict (email) do update
+      set trial_started_at = coalesce(public.email_invite_codes.trial_started_at, excluded.trial_started_at);
   exception when others then
     -- Never block auth.users insert; log and continue.
     raise warning 'ensure_invite_code_for_confirmed_email failed for %: %', new.email, sqlerrm;
@@ -208,13 +216,28 @@ after insert or update of email on auth.users
 for each row execute function public.ensure_invite_code_for_confirmed_email();
 
 -- Backfill: every existing auth user (confirmed or not) gets a code.
-insert into public.email_invite_codes (email, code)
-select lower(u.email), public.generate_email_invite_code()
+-- trial_started_at is seeded from auth.users.created_at so pre-existing
+-- accounts don't retroactively gain a fresh 3-day trial — their trial is
+-- measured from when they actually registered.
+insert into public.email_invite_codes (email, code, trial_started_at)
+select lower(u.email), public.generate_email_invite_code(), coalesce(u.created_at, now())
 from auth.users u
 where u.email is not null
   and not exists (
     select 1 from public.email_invite_codes c where c.email = lower(u.email)
   );
+
+-- Backfill trial_started_at for rows that were inserted before this column
+-- existed. Use auth.users.created_at when available, otherwise email_invite_codes.created_at.
+update public.email_invite_codes c
+   set trial_started_at = coalesce(u.created_at, c.created_at, now())
+  from auth.users u
+ where c.trial_started_at is null
+   and lower(u.email) = lower(c.email);
+
+update public.email_invite_codes
+   set trial_started_at = coalesce(created_at, now())
+ where trial_started_at is null;
 
 -- Self-heal RPC: callable by the signed-in user to (re)ensure their own
 -- invite code exists. Use this if the trigger was ever skipped for them.
@@ -242,10 +265,16 @@ begin
   end if;
   select code into v_code from public.email_invite_codes where email = v_email;
   if v_code is null then
-    insert into public.email_invite_codes (email, code)
-    values (v_email, public.generate_email_invite_code())
-    on conflict (email) do nothing;
+    insert into public.email_invite_codes (email, code, trial_started_at)
+    values (v_email, public.generate_email_invite_code(), now())
+    on conflict (email) do update
+      set trial_started_at = coalesce(public.email_invite_codes.trial_started_at, excluded.trial_started_at);
     select code into v_code from public.email_invite_codes where email = v_email;
+  else
+    -- Ensure trial_started_at is populated for pre-existing rows (defensive).
+    update public.email_invite_codes
+       set trial_started_at = coalesce(trial_started_at, now())
+     where email = v_email and trial_started_at is null;
   end if;
   return jsonb_build_object('ok', true, 'code', v_code);
 end;
@@ -344,7 +373,172 @@ $$;
 
 grant execute on function public.redeem_email_invite_code(text, text) to authenticated;
 
--- RPC: does the caller's email already have a redeemed (used) code?
+-- ============================================================
+-- Free-trial helpers (3 trading days from registration).
+-- Trading days = Mon–Fri in Asia/Shanghai timezone. Weekends are not
+-- counted so a user registering on Saturday still gets 3 full weekdays.
+-- This is a deliberate simplification; public holidays are treated as
+-- trading days for trial-length accounting (business choice to keep math
+-- simple and predictable).
+-- ============================================================
+create or replace function public.next_business_day(d date)
+returns date
+language plpgsql
+immutable
+as $$
+declare
+  out_d date := d;
+begin
+  while extract(dow from out_d) in (0, 6) loop
+    out_d := out_d + 1;
+  end loop;
+  return out_d;
+end;
+$$;
+
+create or replace function public.add_business_days(start_dt date, n int)
+returns date
+language plpgsql
+immutable
+as $$
+declare
+  d date := start_dt;
+  added int := 0;
+begin
+  if n <= 0 then
+    return d;
+  end if;
+  while added < n loop
+    d := d + 1;
+    if extract(dow from d) not in (0, 6) then
+      added := added + 1;
+    end if;
+  end loop;
+  return d;
+end;
+$$;
+
+-- How many business days remain in the user's free trial.
+-- Trial window: [effective_start, effective_start + 2 business days]
+-- where effective_start = next_business_day(trial_started_at_date).
+-- Returns 0 when expired or trial_started_at is null.
+create or replace function public.trial_business_days_left(p_trial_started_at timestamptz)
+returns int
+language plpgsql
+immutable
+as $$
+declare
+  v_start date;
+  v_end date;
+  v_today date;
+  v_left int;
+begin
+  if p_trial_started_at is null then
+    return 0;
+  end if;
+  v_start := public.next_business_day((p_trial_started_at at time zone 'Asia/Shanghai')::date);
+  v_end := public.add_business_days(v_start, 2);
+  v_today := (now() at time zone 'Asia/Shanghai')::date;
+  if v_today > v_end then
+    return 0;
+  end if;
+  -- Count remaining business days in (v_today, v_end].
+  v_left := 0;
+  while v_today < v_end loop
+    v_today := v_today + 1;
+    if extract(dow from v_today) not in (0, 6) then
+      v_left := v_left + 1;
+    end if;
+  end loop;
+  -- If today itself is a business day and <= v_end, count it too.
+  if extract(dow from (now() at time zone 'Asia/Shanghai')::date) not in (0, 6)
+     and (now() at time zone 'Asia/Shanghai')::date <= v_end then
+    v_left := v_left + 1;
+  end if;
+  return v_left;
+end;
+$$;
+
+-- Unified access-state RPC for the frontend. Returns:
+--   { ok: bool,
+--     access: bool,               -- true => user may view paid content
+--     mode: 'paid'|'trial'|'none',
+--     trial_started_at: timestamptz,
+--     trial_ends_on: date,        -- last trading day included in trial
+--     trial_days_left: int,       -- business days (including today) remaining
+--     redeemed: bool              -- true when an invite code has been used
+--   }
+drop function if exists public.get_user_access_state();
+create or replace function public.get_user_access_state()
+returns jsonb
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_uid uuid := auth.uid();
+  v_email text;
+  v_row public.email_invite_codes%rowtype;
+  v_start date;
+  v_end date;
+  v_days_left int;
+  v_redeemed boolean;
+  v_access boolean;
+  v_mode text;
+begin
+  if v_uid is null then
+    return jsonb_build_object('ok', false, 'access', false, 'mode', 'none', 'reason', 'not_authenticated');
+  end if;
+  select lower(email) into v_email from auth.users where id = v_uid;
+  if v_email is null or v_email = '' then
+    return jsonb_build_object('ok', false, 'access', false, 'mode', 'none', 'reason', 'missing_email');
+  end if;
+
+  -- Ensure a row exists (self-heal) before reading.
+  insert into public.email_invite_codes (email, code, trial_started_at)
+  values (v_email, public.generate_email_invite_code(), now())
+  on conflict (email) do update
+    set trial_started_at = coalesce(public.email_invite_codes.trial_started_at, excluded.trial_started_at);
+
+  select * into v_row from public.email_invite_codes where email = v_email;
+
+  v_redeemed := v_row.status = 'used';
+  v_days_left := public.trial_business_days_left(v_row.trial_started_at);
+
+  if v_redeemed then
+    v_access := true;
+    v_mode := 'paid';
+  elsif v_days_left > 0 then
+    v_access := true;
+    v_mode := 'trial';
+  else
+    v_access := false;
+    v_mode := 'none';
+  end if;
+
+  if v_row.trial_started_at is not null then
+    v_start := public.next_business_day((v_row.trial_started_at at time zone 'Asia/Shanghai')::date);
+    v_end := public.add_business_days(v_start, 2);
+  end if;
+
+  return jsonb_build_object(
+    'ok', true,
+    'access', v_access,
+    'mode', v_mode,
+    'trial_started_at', v_row.trial_started_at,
+    'trial_ends_on', v_end,
+    'trial_days_left', v_days_left,
+    'redeemed', v_redeemed
+  );
+end;
+$$;
+
+grant execute on function public.get_user_access_state() to authenticated;
+
+-- ============================================================
+-- Legacy boolean RPC — returns true when user has EITHER a redeemed
+-- invite code OR an active free trial. Prefer get_user_access_state
+-- from new client code for the detailed trial metadata.
 -- SECURITY: email is read from auth.users via auth.uid(); p_email is
 -- accepted for backward compatibility but ignored for authorization.
 drop function if exists public.user_has_email_invite_access(text);
@@ -357,6 +551,7 @@ as $$
 declare
   v_uid uuid := auth.uid();
   v_email text;
+  v_row public.email_invite_codes%rowtype;
 begin
   if v_uid is null then
     return false;
@@ -365,11 +560,14 @@ begin
   if v_email is null or v_email = '' then
     return false;
   end if;
-  return exists (
-    select 1 from public.email_invite_codes
-    where status = 'used'
-      and (used_by = v_uid or lower(email) = v_email)
-  );
+  select * into v_row from public.email_invite_codes where email = v_email;
+  if not found then
+    return false;
+  end if;
+  if v_row.status = 'used' then
+    return true;
+  end if;
+  return public.trial_business_days_left(v_row.trial_started_at) > 0;
 end;
 $$;
 
@@ -396,6 +594,8 @@ select
   c.created_at,
   c.used_at,
   c.used_by,
+  c.trial_started_at,
+  public.trial_business_days_left(c.trial_started_at) as trial_days_left,
   u.id as auth_user_id,
   u.email_confirmed_at
 from public.email_invite_codes c
