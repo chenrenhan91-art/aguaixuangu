@@ -1,0 +1,107 @@
+{
+  "analysis_type": "single_stock_by_symbol",
+  "requested_symbol": "600519",
+  "stock_code": "600519",
+  "stock_name": "贵州茅台",
+  "response_schema_version": "execution-analysis-v2",
+  "trade_date": "2026-04-18",
+  "selected_mode_id": "balanced",
+  "selected_mode_name": "综合研判",
+  "matched_snapshot": true,
+  "matched_snapshot_mode_id": "balanced",
+  "matched_snapshot_mode_name": "综合研判",
+  "industry": "白酒",
+  "rank": 1,
+  "holding_window": "3-5D",
+  "thesis": "白酒权重在消费修复与资金回流背景下仍有承接，但当前位置更适合确认后跟随，不宜情绪化追高。",
+  "market_context": "当前市场更偏向主线轮动与核心资产承接，追高后排与脱离主线的个股胜率偏低。",
+  "action_bias": "谨慎追高",
+  "action_note": "若无法站稳关键位置，宁可等待下一次确认，不要临时追价。",
+  "current_price": 1688,
+  "stop_loss_price": 1620,
+  "take_profit_price_1": 1750,
+  "take_profit_price_2": 1810,
+  "trailing_stop_price": 1650,
+  "risk_reward_ratio": 1.8,
+  "technical_features": [
+    {
+      "name": "行业强度",
+      "value": 78.2,
+      "description": "白酒板块在消费修复背景下承接改善。"
+    },
+    {
+      "name": "技术结构",
+      "value": 81.3,
+      "description": "价格运行在关键均线上方，趋势结构仍然完整。"
+    },
+    {
+      "name": "事件强度",
+      "value": 68.2,
+      "description": "资金关注度回升，但催化持续性仍需观察。"
+    }
+  ],
+  "reasons": [
+    {
+      "label": "行业轮动",
+      "detail": "消费权重回流，板块承接改善。"
+    },
+    {
+      "label": "技术结构",
+      "detail": "价格维持在关键均线上方，趋势未明显破坏。"
+    }
+  ],
+  "recent_events": [
+    {
+      "title": "北向资金再度增持白酒龙头",
+      "publish_time": "2026-04-18T09:32:00+08:00",
+      "summary": "市场资金偏向高确定性消费权重，白酒龙头出现承接改善。",
+      "source": "市场资讯"
+    },
+    {
+      "title": "消费板块午后回暖",
+      "publish_time": "2026-04-18T13:18:00+08:00",
+      "summary": "板块内权重股表现稳定，低位资金回补迹象增强。",
+      "source": "行业快讯"
+    }
+  ],
+  "market_snapshot": {
+    "regime": "risk_on",
+    "confidence": 0.74,
+    "suggested_exposure": 0.72,
+    "breadth_score": 75.35,
+    "momentum_score": 77.73,
+    "northbound_score": 50,
+    "sentiment_label": "轮动博弈",
+    "sentiment_summary": "资金更像在板块间快速轮动，盘前只适合做主线精选，不宜同时铺太多方向。",
+    "action_bias": "精选轮动",
+    "preferred_setup": "优先盯最强主线前排。",
+    "avoid_action": "不要追后排与无承接脉冲。",
+    "top_sectors": [
+      {
+        "sector_name": "半导体",
+        "strength_score": 90.39,
+        "momentum_score": 73.04
+      },
+      {
+        "sector_name": "消费电子",
+        "strength_score": 84.34,
+        "momentum_score": 78.32
+      },
+      {
+        "sector_name": "元件",
+        "strength_score": 82.12,
+        "momentum_score": 77.06
+      }
+    ],
+    "latest_market_news": [
+      {
+        "title": "消费权重午后走强",
+        "publish_time": "2026-04-18T13:20:00+08:00",
+        "summary": "权重板块承接改善，市场风格偏向核心资产。",
+        "source": "市场资讯"
+      }
+    ]
+  },
+  "analysis_context_json": "{\n  \"analysis_type\": \"single_stock_by_symbol\",\n  \"stock_code\": \"600519\",\n  \"trade_date\": \"2026-04-18\",\n  \"selected_mode_id\": \"balanced\",\n  \"matched_snapshot\": true,\n  \"industry\": \"白酒\",\n  \"current_price\": 1688,\n  \"stop_loss_price\": 1620,\n  \"take_profit_price_1\": 1750,\n  \"take_profit_price_2\": 1810,\n  \"market_snapshot\": {\n    \"regime\": \"risk_on\",\n    \"sentiment_label\": \"轮动博弈\"\n  }\n}",
+  "analysis_prompt": "你是 A 股个股交易分析助手。\n任务：基于用户输入的股票代码和市场上下文，输出简洁、直接、便于执行的 JSON。\n这次分析的唯一目标股票代码是：\n600519\n严格要求：\n1. 不要输出 Markdown、不要输出代码块、不要输出 JSON 之外的内容。\n2. 不要给出明确仓位比例，不要出现百分比仓位、几成仓、轻仓 20% 之类表述。\n3. 若上下文里已经给了止损位和止盈位，优先沿用；不要随意改写。\n4. 若没有可靠价格、均线、事件或止盈止损数据，不要编造；请把价格字段填 0，并在 summary 与 technical_judgment 里明确说明“当前缺少该股实时数据，仅能给出方向性判断”。\n5. technical_judgment 必须明确指出偏强、震荡、转弱或不宜追高中的一种，并说明一句原因。\n6. invalidation_points 给 2 到 3 条，优先写跌破、放量转弱、承接不足、板块退潮等失效信号。\n7. action_note 只写一句执行提醒，禁止写仓位比例。\n8. summary 控制在 2 句以内。\nJSON 字段必须严格为：summary, technical_judgment, stop_loss_price, take_profit_price_1, take_profit_price_2, invalidation_points, action_note, confidence, model, generated_at。\n输入上下文：\n{\n  \"analysis_type\": \"single_stock_by_symbol\",\n  \"stock_code\": \"600519\",\n  \"trade_date\": \"2026-04-18\",\n  \"selected_mode_id\": \"balanced\",\n  \"matched_snapshot\": true,\n  \"industry\": \"白酒\",\n  \"current_price\": 1688,\n  \"stop_loss_price\": 1620,\n  \"take_profit_price_1\": 1750,\n  \"take_profit_price_2\": 1810,\n  \"market_snapshot\": {\n    \"regime\": \"risk_on\",\n    \"sentiment_label\": \"轮动博弈\"\n  }\n}"
+}

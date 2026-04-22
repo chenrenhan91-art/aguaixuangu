@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "properties": {
+    "summary": {
+      "type": "string",
+      "description": "用不超过 2 句中文概括当前执行结论。"
+    },
+    "technical_judgment": {
+      "type": "string",
+      "description": "1 到 2 句技术面判断，说明当前偏强、震荡、转弱或不宜追高。"
+    },
+    "stop_loss_price": {
+      "type": "number",
+      "description": "止损位；若缺少可靠个股价格数据，可返回 0。"
+    },
+    "take_profit_price_1": {
+      "type": "number",
+      "description": "第一止盈位；若缺少可靠个股价格数据，可返回 0。"
+    },
+    "take_profit_price_2": {
+      "type": "number",
+      "description": "第二止盈位；若缺少可靠个股价格数据，可返回 0。"
+    },
+    "invalidation_points": {
+      "type": "array",
+      "description": "失效条件或退出信号，建议 2 到 3 条。",
+      "items": {
+        "type": "string"
+      }
+    },
+    "action_note": {
+      "type": "string",
+      "description": "一句执行提醒，禁止包含明确仓位比例。"
+    },
+    "confidence": {
+      "type": "number",
+      "description": "0 到 1 之间的置信度。"
+    },
+    "model": {
+      "type": "string",
+      "description": "返回实际使用的模型名。"
+    },
+    "generated_at": {
+      "type": "string",
+      "description": "ISO 8601 时间戳。"
+    }
+  },
+  "required": [
+    "summary",
+    "technical_judgment",
+    "stop_loss_price",
+    "take_profit_price_1",
+    "take_profit_price_2",
+    "invalidation_points",
+    "action_note",
+    "confidence",
+    "model",
+    "generated_at"
+  ]
+}

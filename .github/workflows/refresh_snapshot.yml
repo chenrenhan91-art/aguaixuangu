@@ -1,0 +1,200 @@
+name: Refresh A-Share Snapshot
+
+on:
+  workflow_dispatch:
+    inputs:
+      force_refresh:
+        description: Force refresh even when the current day is not an A-share trading day
+        required: false
+        default: false
+        type: boolean
+  schedule:
+    # GitHub Actions scheduled workflows are best-effort and routinely delayed
+    # 10-30 minutes (or skipped entirely) during peak hours. A single midday
+    # slot is NOT reliable — we schedule several retries so at least one lands
+    # inside the lunch break window (11:30-13:00 Beijing) and another inside
+    # the post-close window (15:00-16:00 Beijing). The generator is idempotent
+    # per-day, so overwriting a fresh snapshot with an even fresher one is fine.
+    # Beijing 11:35 (primary midday)
+    - cron: "35 3 * * 1-5"
+    # Beijing 11:50 (midday retry #1)
+    - cron: "50 3 * * 1-5"
+    # Beijing 12:10 (midday retry #2 – catches delayed runners)
+    - cron: "10 4 * * 1-5"
+    # Beijing 12:40 (midday retry #3 – last chance before afternoon session)
+    - cron: "40 4 * * 1-5"
+    # Beijing 15:05 (primary close)
+    - cron: "5 7 * * 1-5"
+    # Beijing 15:20 (close retry #1)
+    - cron: "20 7 * * 1-5"
+    # Beijing 15:45 (close retry #2)
+    - cron: "45 7 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    concurrency:
+      group: refresh-a-share-snapshot
+      cancel-in-progress: false
+    env:
+      TZ: Asia/Shanghai
+      A_SHARE_FORCE_REFRESH: ${{ github.event.inputs.force_refresh == 'true' && '1' || '0' }}
+      # Keep per-trade-date snapshots so the frontend can show recent history.
+      A_SHARE_WRITE_DATED_SNAPSHOT: "1"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: requirements-pipeline.txt
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements-pipeline.txt
+
+      - name: Check A-share trading calendar
+        id: calendar
+        run: python -m data_pipeline.jobs.check_trade_day --github-output "$GITHUB_OUTPUT"
+
+      - name: Print refresh gate
+        run: |
+          echo "Trade date: ${{ steps.calendar.outputs.trade_date }}"
+          echo "Trade day: ${{ steps.calendar.outputs.is_trade_day }}"
+          echo "Source: ${{ steps.calendar.outputs.calendar_source }}"
+          echo "Reason: ${{ steps.calendar.outputs.calendar_reason }}"
+
+      - name: Generate latest selector snapshot
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: python -m data_pipeline.jobs.generate_daily_candidates
+
+      - name: Validate latest selector snapshot
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/processed/daily_candidates_latest.json")
+          if not path.exists():
+              raise SystemExit("latest snapshot file is missing")
+
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          candidate_pool = payload.get("candidate_pool")
+          strategy_modes = payload.get("strategy_modes")
+          default_mode = payload.get("default_mode")
+
+          if not isinstance(candidate_pool, list) or not candidate_pool:
+              raise SystemExit("candidate_pool is empty")
+          if not isinstance(strategy_modes, dict) or not strategy_modes:
+              raise SystemExit("strategy_modes is empty")
+          if default_mode not in strategy_modes:
+              raise SystemExit("default_mode is missing from strategy_modes")
+
+          print("Snapshot validation passed.")
+          PY
+
+      - name: Print snapshot summary
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("data/processed/daily_candidates_latest.json")
+          payload = json.loads(path.read_text(encoding="utf-8"))
+          scan_summary = payload.get("selection_meta", {}).get("scan_summary", [])
+
+          print("Trade date:", payload.get("trade_date"))
+          print("Generated at:", payload.get("generated_at"))
+          print("Default mode:", payload.get("default_mode"))
+          print("Candidate count:", len(payload.get("candidate_pool", [])))
+          print("Top symbols:", [item.get("symbol") for item in payload.get("candidate_pool", [])])
+          print("Industry source:", payload.get("selection_meta", {}).get("industry_source"))
+          print("Constituent sources:", sorted({item.get("data_source", "unknown") for item in scan_summary}))
+          PY
+
+      - name: Skip refresh when market is closed
+        if: steps.calendar.outputs.is_trade_day != 'true'
+        run: echo "Skip refresh because the market is closed."
+
+      # Keep a rolling history index of the most recent N trade-dated snapshots
+      # so the frontend can offer a date picker for logged-in + unlocked users.
+      # Prunes on-disk files beyond the retention window to avoid repo bloat.
+      - name: Rebuild history index & prune old dated snapshots
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        env:
+          HISTORY_RETENTION: "10"
+        run: |
+          python - <<'PY'
+          import json, os, re
+          from pathlib import Path
+
+          retention = int(os.environ.get("HISTORY_RETENTION", "10"))
+          base = Path("data/processed")
+          pat = re.compile(r"^daily_candidates_(\d{4}-\d{2}-\d{2})\.json$")
+
+          dated = []
+          for p in base.glob("daily_candidates_*.json"):
+              m = pat.match(p.name)
+              if not m:
+                  continue
+              date = m.group(1)
+              try:
+                  payload = json.loads(p.read_text(encoding="utf-8"))
+              except Exception:
+                  continue
+              dated.append({
+                  "trade_date": date,
+                  "path": p.name,
+                  "generated_at": payload.get("generated_at"),
+                  "default_mode": payload.get("default_mode"),
+                  "snapshot_session": payload.get("snapshot_session"),
+                  "candidate_count": len(payload.get("candidate_pool", []) or []),
+              })
+
+          dated.sort(key=lambda r: r["trade_date"], reverse=True)
+
+          # Prune on-disk files older than retention window.
+          keep = {row["trade_date"] for row in dated[:retention]}
+          for row in dated[retention:]:
+              victim = base / row["path"]
+              try:
+                  victim.unlink()
+                  print(f"Pruned old snapshot: {victim.name}")
+              except Exception as err:
+                  print(f"Failed to prune {victim}: {err}")
+          dated = [row for row in dated if row["trade_date"] in keep]
+
+          index_path = base / "daily_candidates_history.json"
+          index_path.write_text(
+              json.dumps({"retention": retention, "entries": dated}, ensure_ascii=False, indent=2),
+              encoding="utf-8",
+          )
+          print(f"Wrote {index_path} with {len(dated)} entries.")
+          PY
+
+      - name: Commit changes if needed
+        if: steps.calendar.outputs.is_trade_day == 'true'
+        run: |
+          git add data/processed/daily_candidates_latest.json \
+                  data/processed/daily_candidates_*.json \
+                  data/processed/daily_candidates_history.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "No snapshot changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh selector snapshot"
+          git push
