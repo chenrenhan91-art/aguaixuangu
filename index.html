@@ -9294,8 +9294,8 @@ a:hover {
 
         let message = "";
         if (!sameDay && isWeekday && minuteOfDay >= 9 * 60 + 30) {
-          const dateStr = `${beijingGen.getMonth() + 1}月${beijingGen.getDate()}日`;
-          message = `数据仍为 ${dateStr} 的快照，今日盘中数据尚未推送（GitHub Actions 可能延迟），稍后将自动重试。`;
+          // Previously showed a "数据仍为 X月X日 的快照..." warning here;
+          // removed per product feedback — stale-day state is now silent.
         } else if (expectMidday) {
           // Same day but generated before 11:35 BJ – midday still missing.
           const genMin = beijingGen.getHours() * 60 + beijingGen.getMinutes();
