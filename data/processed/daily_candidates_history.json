@@ -2,6 +2,19 @@
   "retention": 10,
   "entries": [
     {
+      "trade_date": "2026-04-22",
+      "path": "daily_candidates_2026-04-22.json",
+      "generated_at": "2026-04-22T05:44:03.972775+00:00",
+      "default_mode": "balanced",
+      "snapshot_session": {
+        "session_id": "close",
+        "label": "收盘信息",
+        "generated_time": "13:44",
+        "generated_at": "2026-04-22T13:44:03.972775+08:00"
+      },
+      "candidate_count": 5
+    },
+    {
       "trade_date": "2026-04-21",
       "path": "daily_candidates_2026-04-21.json",
       "generated_at": "2026-04-21T09:03:56.393374+00:00",
