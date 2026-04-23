@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-23T05:56:02.043602+00:00",
+  "generated_at": "2026-04-23T06:00:31.511143+00:00",
   "trade_date": "2026-04-23",
   "snapshot_session": {
     "session_id": "close",
     "label": "收盘信息",
-    "generated_time": "13:56",
-    "generated_at": "2026-04-23T13:56:02.043602+08:00"
+    "generated_time": "14:00",
+    "generated_at": "2026-04-23T14:00:31.511143+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -43,61 +43,91 @@
   ],
   "market_regime": {
     "regime": "risk_on",
-    "confidence": 0.73,
-    "suggested_exposure": 0.7354,
-    "breadth_score": 87.35,
-    "northbound_score": 63.67,
-    "momentum_score": 67.89,
-    "updated_at": "2026-04-23T05:56:02.042334+00:00"
+    "confidence": 0.7329,
+    "suggested_exposure": 0.736,
+    "breadth_score": 87.1,
+    "northbound_score": 64.4,
+    "momentum_score": 67.73,
+    "updated_at": "2026-04-23T06:00:31.509926+00:00"
   },
   "top_sectors": [
     {
       "sector_code": "881145",
       "sector_name": "电力",
-      "strength_score": 90.08,
-      "momentum_score": 68.83,
-      "capital_consensus_score": 77.92,
-      "heat_score": 66.23,
-      "breadth_ratio": 0.7692
+      "strength_score": 88.03,
+      "momentum_score": 67.32,
+      "capital_consensus_score": 77.55,
+      "heat_score": 65.53,
+      "breadth_ratio": 0.7358
     },
     {
       "sector_code": "881107",
       "sector_name": "油气开采及服务",
-      "strength_score": 91.91,
-      "momentum_score": 66.38,
-      "capital_consensus_score": 73.26,
-      "heat_score": 50.69,
+      "strength_score": 91.78,
+      "momentum_score": 66.92,
+      "capital_consensus_score": 73.06,
+      "heat_score": 50.7,
       "breadth_ratio": 0.95
     },
     {
       "sector_code": "881105",
       "sector_name": "煤炭开采加工",
-      "strength_score": 83.99,
-      "momentum_score": 71.9,
-      "capital_consensus_score": 64.25,
+      "strength_score": 84.1,
+      "momentum_score": 71.62,
+      "capital_consensus_score": 64.69,
       "heat_score": 53.99,
       "breadth_ratio": 0.8485
     },
     {
       "sector_code": "881273",
       "sector_name": "白酒",
-      "strength_score": 81.94,
-      "momentum_score": 72.57,
-      "capital_consensus_score": 58.59,
+      "strength_score": 81.87,
+      "momentum_score": 72.48,
+      "capital_consensus_score": 58.61,
       "heat_score": 51.29,
       "breadth_ratio": 1.0
     },
     {
       "sector_code": "881155",
       "sector_name": "银行",
-      "strength_score": 71.72,
-      "momentum_score": 59.75,
-      "capital_consensus_score": 57.66,
-      "heat_score": 55.43,
-      "breadth_ratio": 0.8
+      "strength_score": 73.0,
+      "momentum_score": 60.31,
+      "capital_consensus_score": 58.6,
+      "heat_score": 55.61,
+      "breadth_ratio": 0.8205
     }
   ],
   "market_news": [
+    {
+      "title": "宁德时代在古田成立新能源科技公司 注册资本20亿",
+      "summary": "【宁德时代在古田成立新能源科技公司 注册资本20亿】天眼查App显示，近日，古田时代新能源科技有限公司成立，法定代表人为曲涛，注册资本20亿人民币，经营范围为电池制造，电池销售，电子专用材料制造，电子专用材料销售，新材料技术推广服务，技术服务、技术开发、技术咨询、技术交流、技术转让、技术推广，货物进出口。股东信息显示，该公司由宁德时代（300750）全资持股。",
+      "publish_time": "2026-04-23T13:57:23",
+      "link": "https://finance.eastmoney.com/a/202604233715856272.html"
+    },
+    {
+      "title": "Anthropic二级市场估值升至万亿美元 超越OpenAI",
+      "summary": "【Anthropic二级市场估值升至万亿美元 超越OpenAI】Anthropic在ForgeGlobal等未上市企业股权交易平台上的估值已升至1万亿美元左右，超过OpenAI的8800亿美元。据悉，由于买家正在竞相抢购Anthropic日益减少的二级市场股票，使得这家人工智能初创公司的估值迅速攀升。",
+      "publish_time": "2026-04-23T13:57:15",
+      "link": "https://finance.eastmoney.com/a/202604233715856063.html"
+    },
+    {
+      "title": "福建：支持厦门建设金砖产业合作暨出海综合服务港",
+      "summary": "【福建：支持厦门建设金砖产业合作暨出海综合服务港】福建省人民政府发布关于支持金砖国家新工业革命伙伴关系创新基地高质量发展的意见。意见指出，支持厦门建设金砖产业合作暨出海综合服务港。鼓励企业在金砖国家布局建设供应链后备基地和资源保障渠道。推动金砖创新基地联动企业在海外建设工业园区、联络点，提升海外中资园区的承载能力和服务功能。",
+      "publish_time": "2026-04-23T13:55:30",
+      "link": "https://finance.eastmoney.com/a/202604233715855455.html"
+    },
+    {
+      "title": "雷诺集团一季度营收125.3亿欧元 同比增长7.3%",
+      "summary": "【雷诺集团一季度营收125.3亿欧元 同比增长7.3%】雷诺集团宣布，2026年第一季度集团营收达125.3亿欧元，较2025年第一季度增长7.3%，按固定汇率计算，增长8.8%；其中汽车业务营收108.07亿欧元，较2025年第一季度增长6.5%，按固定汇率计算，增长8.0%。雷诺集团确认2026年财务目标：集团营业利润率5.5%，受季节性规律影响，下半年利润率将高于于上半年；汽车业务自由现金流预计约为10亿欧元。",
+      "publish_time": "2026-04-23T13:55:19",
+      "link": "https://finance.eastmoney.com/a/202604233715855277.html"
+    },
+    {
+      "title": "地缘政治因素扰动，石油ETF平安涨超2%",
+      "summary": "【地缘政治因素扰动，石油ETF平安涨超2%】截至2026年4月23日13:46，国证石油天然气指数(399439)强势上涨1.75%，石油ETF平安(159199)上涨2.17%，最新价报0.99元。",
+      "publish_time": "2026-04-23T13:53:06",
+      "link": "https://finance.eastmoney.com/a/202604233715853672.html"
+    },
     {
       "title": "工业气体概念震荡回升 和远气体涨停",
       "summary": "工业气体概念震荡回升，和远气体涨停，华特气体一度涨超8%，续创历史新高，金宏气体、蜀道装备、中船特气、杭氧股份跟涨。",
@@ -115,36 +145,6 @@
       "summary": "【辽宁省委书记许昆林、省长王新伟会见交通银行董事长任德奇】据辽宁日报，4月23日，辽宁省委书记许昆林、省长王新伟在沈阳会见交通银行董事长任德奇一行。",
       "publish_time": "2026-04-23T13:43:00",
       "link": "https://finance.eastmoney.com/a/202604233715848018.html"
-    },
-    {
-      "title": "多晶硅主力合约日内由涨转跌",
-      "summary": "【多晶硅主力合约日内由涨转跌】4月23日，多晶硅主力合约日内由涨转跌，现跌幅扩大至2.30%，报43680元/吨，此前一度涨近4%。",
-      "publish_time": "2026-04-23T13:42:57",
-      "link": "https://finance.eastmoney.com/a/202604233715848190.html"
-    },
-    {
-      "title": "巴基斯坦内政部长会见美使馆官员 讨论美伊谈判议题",
-      "summary": "【巴基斯坦内政部长会见美使馆官员 讨论美伊谈判议题】当地时间4月23日，巴基斯坦内政部长穆赫辛·纳克维会见了美国驻巴基斯坦使馆的官员。会晤期间，双方就地区最新局势进行了详细交流。双方还就举办第二轮美伊谈判的外交努力进行了讨论。会议强调，为持久解决冲突，必须保持外交渠道的畅通。",
-      "publish_time": "2026-04-23T13:41:43",
-      "link": "https://finance.eastmoney.com/a/202604233715839642.html"
-    },
-    {
-      "title": "雀巢确认将蓝瓶咖啡出售给大钲资本",
-      "summary": "【雀巢确认将蓝瓶咖啡出售给大钲资本】4月23日，雀巢集团在财报中披露，雀巢已同意将蓝瓶咖啡出售给大钲资本（CenturiumCapital）。该交易尚需满足惯常前提条件，预计将于2026年上半年完成。",
-      "publish_time": "2026-04-23T13:38:55",
-      "link": "https://finance.eastmoney.com/a/202604233715837689.html"
-    },
-    {
-      "title": "紫金矿业成交额达100亿元",
-      "summary": "【紫金矿业成交额达100亿元】4月23日，紫金矿业成交额达100亿元，现跌3.66%。",
-      "publish_time": "2026-04-23T13:38:07",
-      "link": "https://finance.eastmoney.com/a/202604233715838379.html"
-    },
-    {
-      "title": "印度：不考虑提高汽柴油价格",
-      "summary": "【印度：不考虑提高汽柴油价格】据报道，印度表示不考虑提高汽油和柴油价格。",
-      "publish_time": "2026-04-23T13:37:57",
-      "link": "https://finance.eastmoney.com/a/202604233715838061.html"
     }
   ],
   "strategy_modes": {
@@ -159,9 +159,9 @@
           "name": "晶科科技",
           "industry": "电力",
           "rank": 1,
-          "base_score": 91.45,
+          "base_score": 91.0,
           "event_score": 57.62,
-          "risk_adjusted_score": 89.47,
+          "risk_adjusted_score": 89.09,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -188,9 +188,9 @@
           "name": "潜能恒信",
           "industry": "油气开采及服务",
           "rank": 2,
-          "base_score": 83.31,
+          "base_score": 83.33,
           "event_score": 57.96,
-          "risk_adjusted_score": 82.71,
+          "risk_adjusted_score": 82.73,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -217,9 +217,9 @@
           "name": "华电辽能",
           "industry": "电力",
           "rank": 3,
-          "base_score": 79.58,
+          "base_score": 79.13,
           "event_score": 57.11,
-          "risk_adjusted_score": 79.37,
+          "risk_adjusted_score": 79.0,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -246,9 +246,9 @@
           "name": "粤电力A",
           "industry": "电力",
           "rank": 4,
-          "base_score": 80.01,
+          "base_score": 79.56,
           "event_score": 54.58,
-          "risk_adjusted_score": 74.23,
+          "risk_adjusted_score": 73.86,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -271,31 +271,31 @@
           ]
         },
         {
-          "symbol": "000537",
-          "name": "绿发电力",
-          "industry": "电力",
+          "symbol": "002948",
+          "name": "青岛银行",
+          "industry": "银行",
           "rank": 5,
-          "base_score": 76.6,
-          "event_score": 54.46,
-          "risk_adjusted_score": 71.33,
+          "base_score": 71.08,
+          "event_score": 55.54,
+          "risk_adjusted_score": 73.2,
           "holding_window": "3-5D",
           "reasons": [
             {
               "label": "行业轮动",
-              "detail": "电力 当前仍在强势行业监控池内，优先级高于普通板块。"
+              "detail": "银行 当前仍在强势行业监控池内，优先级高于普通板块。"
             },
             {
               "label": "技术结构",
-              "detail": "绿发电力 近 20 日收益 -11.4%，技术分 58.9。"
+              "detail": "青岛银行 近 20 日收益 9.6%，技术分 81.7。"
             },
             {
               "label": "事件辅助",
-              "detail": "2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足"
+              "detail": "2025年三季报点评：净利润保持高增长，资产质量延续改善"
             }
           ],
           "event_tags": [
             "券商研报",
-            "官方公告",
+            "券商研报",
             "资金交易"
           ]
         }
@@ -305,12 +305,12 @@
           "symbol": "601778",
           "name": "晶科科技",
           "industry": "电力",
-          "thesis": "晶科科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.5，适合作为默认候选股跟踪。",
+          "thesis": "晶科科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.1，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -326,7 +326,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -372,7 +372,7 @@
             "reference_price": 7.19,
             "stop_loss_price": 6.63,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 86.12,
+            "signal_quality_score": 85.75,
             "take_profit_price_1": 8.2,
             "take_profit_pct_1": 0.1405,
             "take_profit_price_2": 8.87,
@@ -406,7 +406,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042428+00:00"
+            "generated_at": "2026-04-23T06:00:31.510017+00:00"
           },
           "risk_controls": [
             "止损线参考 6.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -429,7 +429,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.16,
+              "value": 73.23,
               "description": "当前模式重点关注该维度。油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -445,7 +445,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -488,26 +488,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 43.52,
-            "stop_loss_price": 40.13,
+            "reference_price": 43.31,
+            "stop_loss_price": 39.93,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 78.99,
-            "take_profit_price_1": 49.62,
-            "take_profit_pct_1": 0.1402,
-            "take_profit_price_2": 53.69,
-            "take_profit_pct_2": 0.2337,
-            "trailing_stop_price": 40.18,
-            "suggested_position_min": 0.0643,
-            "suggested_position_max": 0.0893,
-            "max_portfolio_risk": 0.007,
+            "signal_quality_score": 79.01,
+            "take_profit_price_1": 49.39,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 53.45,
+            "take_profit_pct_2": 0.2341,
+            "trailing_stop_price": 39.97,
+            "suggested_position_min": 0.0656,
+            "suggested_position_max": 0.0911,
+            "max_portfolio_risk": 0.0071,
             "risk_reward_ratio": 1.8,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 40.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 49.62 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 53.69 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+              "止损线参考 39.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 49.39 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 53.45 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -516,7 +516,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 40.13 元作为防守位，并在 49.62 / 53.69 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 39.93 元作为防守位，并在 49.39 / 53.45 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -524,12 +524,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042484+00:00"
+            "generated_at": "2026-04-23T06:00:31.510074+00:00"
           },
           "risk_controls": [
-            "止损线参考 40.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 49.62 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 53.69 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+            "止损线参考 39.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 49.39 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 53.45 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -540,12 +540,12 @@
           "symbol": "600396",
           "name": "华电辽能",
           "industry": "电力",
-          "thesis": "华电辽能 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 79.4，适合作为默认候选股跟踪。",
+          "thesis": "华电辽能 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 79.0，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -561,7 +561,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 26.8%，量比 2.00。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -607,14 +607,14 @@
             "reference_price": 9.83,
             "stop_loss_price": 9.06,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 75.42,
+            "signal_quality_score": 75.05,
             "take_profit_price_1": 11.22,
             "take_profit_pct_1": 0.1414,
             "take_profit_price_2": 12.14,
             "take_profit_pct_2": 0.235,
             "trailing_stop_price": 8.97,
-            "suggested_position_min": 0.0375,
-            "suggested_position_max": 0.0529,
+            "suggested_position_min": 0.0373,
+            "suggested_position_max": 0.0528,
             "max_portfolio_risk": 0.0041,
             "risk_reward_ratio": 1.81,
             "action_bias": "谨慎追高",
@@ -641,7 +641,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042533+00:00"
+            "generated_at": "2026-04-23T06:00:31.510121+00:00"
           },
           "risk_controls": [
             "止损线参考 9.06 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -660,12 +660,12 @@
           "symbol": "000539",
           "name": "粤电力A",
           "industry": "电力",
-          "thesis": "粤电力A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 74.2，适合作为默认候选股跟踪。",
+          "thesis": "粤电力A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 73.9，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -681,7 +681,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.2%，量比 2.86。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -727,14 +727,14 @@
             "reference_price": 7.21,
             "stop_loss_price": 6.79,
             "stop_loss_pct": 0.058,
-            "signal_quality_score": 75.4,
+            "signal_quality_score": 75.03,
             "take_profit_price_1": 8.22,
             "take_profit_pct_1": 0.1401,
             "take_profit_price_2": 8.47,
             "take_profit_pct_2": 0.1748,
             "trailing_stop_price": 6.9,
-            "suggested_position_min": 0.0703,
-            "suggested_position_max": 0.0992,
+            "suggested_position_min": 0.0701,
+            "suggested_position_max": 0.0991,
             "max_portfolio_risk": 0.0058,
             "risk_reward_ratio": 2.4,
             "action_bias": "谨慎追高",
@@ -760,7 +760,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042579+00:00"
+            "generated_at": "2026-04-23T06:00:31.510166+00:00"
           },
           "risk_controls": [
             "止损线参考 6.79 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -773,121 +773,118 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "000537": {
-          "symbol": "000537",
-          "name": "绿发电力",
-          "industry": "电力",
-          "thesis": "绿发电力 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 71.3，适合作为默认候选股跟踪。",
+        "002948": {
+          "symbol": "002948",
+          "name": "青岛银行",
+          "industry": "银行",
+          "thesis": "青岛银行 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 73.2，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
-              "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+              "value": 63.38,
+              "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 58.86,
-              "description": "20 日收益 -11.4%，量能倍率 1.55，MA10 / MA20 / MA60 为 10.09 / 10.34 / 9.77。"
+              "value": 81.71,
+              "description": "20 日收益 9.6%，量能倍率 1.29，MA10 / MA20 / MA60 为 5.28 / 5.24 / 5.19。"
             },
             {
               "name": "事件强度",
-              "value": 54.46,
+              "value": 55.54,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 6.7%，量比 3.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 65.99,
+              "description": "日内涨幅 2.9%，换手 1.4%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "6303c26f6df1",
-              "title": "2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足",
-              "publish_time": "2025-04-30T00:00:00",
+              "event_id": "6541802bfc52",
+              "title": "2025年三季报点评：净利润保持高增长，资产质量延续改善",
+              "publish_time": "2025-10-31T00:00:00",
               "source": "东方财富研报",
               "source_category": "券商研报",
               "event_type": "券商研报",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：民生证券；评级：增持；行业：电力",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202504301665196315_1.pdf"
+              "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510311772335692_1.pdf"
             },
             {
-              "event_id": "a4089d94de5a",
-              "title": "关于2026年第一季度发电量完成情况的自愿性信息披露公告",
-              "publish_time": "2026-04-21T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "4e6543c6c6bb",
+              "title": "2025年业绩快报点评：不良双降、拨备提升，盈利大幅改善",
+              "publish_time": "2026-01-29T00:00:00",
+              "source": "东方财富研报",
+              "source_category": "券商研报",
+              "event_type": "券商研报",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "关于2026年第一季度发电量完成情况的自愿性信息披露公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000537&announcementId=1225125261&orgId=gssz0000537&announcementTime=2026-04-21"
+              "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202601291818545145_1.pdf"
             },
             {
-              "event_id": "a5a5e332534a",
-              "title": "7.36亿元主力资金今日抢筹公用事业板块",
-              "publish_time": "2026-04-20T16:43:00",
+              "event_id": "dd5220914df1",
+              "title": "15.53亿元主力资金今日撤离银行板块",
+              "publish_time": "2026-04-22T17:19:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
-              "sentiment": "neutral",
+              "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "3.18 -3693.71 000593 德龙汇能 -2.24 6.83 -3001.96 600509 天富能源 -0.63 1.82 -2367.00 002039 黔源电力 0.43 3.66 -2306.88 000875 电投绿能 0.45 1.41 -2191.99 000537",
-              "link": "http://finance.eastmoney.com/a/202604203710652273.html"
+              "summary": "0.08 -7292.57 601665 齐鲁银行 0.80 1.04 -6704.14 601128 常熟银行 0.55 1.29 -6539.99 600000 浦发银行 -1.13 0.21 -4049.75 601009 南京银行 -0.17 0.28 -2865.87 002948",
+              "link": "http://finance.eastmoney.com/a/202604223714153834.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 11.65,
-            "stop_loss_price": 11.12,
-            "stop_loss_pct": 0.0454,
-            "signal_quality_score": 72.33,
-            "take_profit_price_1": 12.89,
-            "take_profit_pct_1": 0.1064,
-            "take_profit_price_2": 13.24,
-            "take_profit_pct_2": 0.1365,
-            "trailing_stop_price": 11.26,
-            "suggested_position_min": 0.0699,
+            "reference_price": 5.73,
+            "stop_loss_price": 5.5,
+            "stop_loss_pct": 0.04,
+            "signal_quality_score": 68.93,
+            "take_profit_price_1": 6.14,
+            "take_profit_pct_1": 0.0716,
+            "take_profit_price_2": 6.42,
+            "take_profit_pct_2": 0.1204,
+            "trailing_stop_price": 5.57,
+            "suggested_position_min": 0.0689,
             "suggested_position_max": 0.1,
-            "max_portfolio_risk": 0.0045,
-            "risk_reward_ratio": 2.34,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "max_portfolio_risk": 0.004,
+            "risk_reward_ratio": 1.78,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 11.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 12.89 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 13.24 元，若继续上行则把跟踪止损上移到 11.26 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
+              "止损线参考 5.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 6.14 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 6.42 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 11.12 元作为防守位，并在 12.89 / 13.24 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 5.50 元作为防守位，并在 6.14 / 6.42 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 1.42，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足"
+              "近 10 日波动率为 1.76，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2025年三季报点评：净利润保持高增长，资产质量延续改善"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042622+00:00"
+            "generated_at": "2026-04-23T06:00:31.510210+00:00"
           },
           "risk_controls": [
-            "止损线参考 11.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 12.89 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 13.24 元，若继续上行则把跟踪止损上移到 11.26 元附近。",
+            "止损线参考 5.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 6.14 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 6.42 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
           ]
         }
       },
@@ -912,9 +909,9 @@
           "name": "晶科科技",
           "industry": "电力",
           "rank": 1,
-          "base_score": 91.45,
+          "base_score": 91.0,
           "event_score": 57.62,
-          "risk_adjusted_score": 92.74,
+          "risk_adjusted_score": 92.18,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -923,7 +920,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 77.2，个股当日涨幅 9.9%，具备主线扩散跟涨条件。"
+              "detail": "板块分 75.8，个股当日涨幅 9.9%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -941,9 +938,9 @@
           "name": "潜能恒信",
           "industry": "油气开采及服务",
           "rank": 2,
-          "base_score": 83.31,
+          "base_score": 83.33,
           "event_score": 57.96,
-          "risk_adjusted_score": 86.11,
+          "risk_adjusted_score": 86.14,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -952,7 +949,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 73.2，个股当日涨幅 7.0%，具备主线扩散跟涨条件。"
+              "detail": "板块分 73.2，个股当日涨幅 6.5%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -970,9 +967,9 @@
           "name": "粤电力A",
           "industry": "电力",
           "rank": 3,
-          "base_score": 80.01,
+          "base_score": 79.56,
           "event_score": 54.58,
-          "risk_adjusted_score": 83.95,
+          "risk_adjusted_score": 83.39,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -981,7 +978,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 77.2，个股当日涨幅 10.1%，具备主线扩散跟涨条件。"
+              "detail": "板块分 75.8，个股当日涨幅 10.1%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -999,9 +996,9 @@
           "name": "华电辽能",
           "industry": "电力",
           "rank": 4,
-          "base_score": 79.58,
+          "base_score": 79.13,
           "event_score": 57.11,
-          "risk_adjusted_score": 83.94,
+          "risk_adjusted_score": 83.38,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1010,7 +1007,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 77.2，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
+              "detail": "板块分 75.8，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -1028,9 +1025,9 @@
           "name": "绿发电力",
           "industry": "电力",
           "rank": 5,
-          "base_score": 76.6,
+          "base_score": 76.15,
           "event_score": 54.46,
-          "risk_adjusted_score": 81.43,
+          "risk_adjusted_score": 80.87,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1039,7 +1036,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 77.2，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
+              "detail": "板块分 75.8，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -1063,7 +1060,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1079,7 +1076,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1125,13 +1122,13 @@
             "reference_price": 7.19,
             "stop_loss_price": 6.6,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 86.12,
+            "signal_quality_score": 85.75,
             "take_profit_price_1": 8.31,
             "take_profit_pct_1": 0.1558,
             "take_profit_price_2": 9.02,
             "take_profit_pct_2": 0.2545,
             "trailing_stop_price": 6.73,
-            "suggested_position_min": 0.0553,
+            "suggested_position_min": 0.0552,
             "suggested_position_max": 0.0746,
             "max_portfolio_risk": 0.0061,
             "risk_reward_ratio": 1.9,
@@ -1159,7 +1156,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042683+00:00"
+            "generated_at": "2026-04-23T06:00:31.510270+00:00"
           },
           "risk_controls": [
             "止损线参考 6.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1183,7 +1180,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.16,
+              "value": 73.23,
               "description": "当前模式重点关注该维度。油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1199,7 +1196,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1242,26 +1239,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 43.52,
-            "stop_loss_price": 39.95,
+            "reference_price": 43.31,
+            "stop_loss_price": 39.76,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 78.99,
-            "take_profit_price_1": 50.3,
-            "take_profit_pct_1": 0.1558,
-            "take_profit_price_2": 54.59,
-            "take_profit_pct_2": 0.2544,
-            "trailing_stop_price": 40.18,
-            "suggested_position_min": 0.0672,
-            "suggested_position_max": 0.0935,
-            "max_portfolio_risk": 0.0077,
+            "signal_quality_score": 79.01,
+            "take_profit_price_1": 50.06,
+            "take_profit_pct_1": 0.1559,
+            "take_profit_price_2": 54.32,
+            "take_profit_pct_2": 0.2542,
+            "trailing_stop_price": 39.97,
+            "suggested_position_min": 0.0686,
+            "suggested_position_max": 0.0954,
+            "max_portfolio_risk": 0.0078,
             "risk_reward_ratio": 1.9,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 39.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 50.30 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 54.59 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+              "止损线参考 39.76 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 50.06 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 54.32 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -1270,7 +1267,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 39.95 元作为防守位，并在 50.30 / 54.59 元分批兑现。",
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 39.76 元作为防守位，并在 50.06 / 54.32 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1278,12 +1275,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042729+00:00"
+            "generated_at": "2026-04-23T06:00:31.510316+00:00"
           },
           "risk_controls": [
-            "止损线参考 39.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 50.30 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 54.59 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+            "止损线参考 39.76 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 50.06 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 54.32 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -1300,7 +1297,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1316,7 +1313,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.2%，量比 2.86。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1362,14 +1359,14 @@
             "reference_price": 7.21,
             "stop_loss_price": 6.76,
             "stop_loss_pct": 0.0618,
-            "signal_quality_score": 75.4,
+            "signal_quality_score": 75.03,
             "take_profit_price_1": 8.22,
             "take_profit_pct_1": 0.1401,
             "take_profit_price_2": 8.61,
             "take_profit_pct_2": 0.1942,
             "trailing_stop_price": 6.9,
-            "suggested_position_min": 0.0727,
-            "suggested_position_max": 0.1026,
+            "suggested_position_min": 0.0724,
+            "suggested_position_max": 0.1024,
             "max_portfolio_risk": 0.0063,
             "risk_reward_ratio": 2.24,
             "action_bias": "谨慎追高",
@@ -1395,7 +1392,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042787+00:00"
+            "generated_at": "2026-04-23T06:00:31.510374+00:00"
           },
           "risk_controls": [
             "止损线参考 6.76 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1418,7 +1415,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1434,7 +1431,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 26.8%，量比 2.00。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1480,14 +1477,14 @@
             "reference_price": 9.83,
             "stop_loss_price": 9.02,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 75.42,
+            "signal_quality_score": 75.05,
             "take_profit_price_1": 11.37,
             "take_profit_pct_1": 0.1567,
             "take_profit_price_2": 12.34,
             "take_profit_pct_2": 0.2553,
             "trailing_stop_price": 8.97,
-            "suggested_position_min": 0.0392,
-            "suggested_position_max": 0.0553,
+            "suggested_position_min": 0.0391,
+            "suggested_position_max": 0.0552,
             "max_portfolio_risk": 0.0045,
             "risk_reward_ratio": 1.9,
             "action_bias": "谨慎追高",
@@ -1514,7 +1511,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042835+00:00"
+            "generated_at": "2026-04-23T06:00:31.510420+00:00"
           },
           "risk_controls": [
             "止损线参考 9.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1539,7 +1536,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1555,7 +1552,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 6.7%，量比 3.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 6.7%，量比 3.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1601,13 +1598,13 @@
             "reference_price": 11.65,
             "stop_loss_price": 11.09,
             "stop_loss_pct": 0.0484,
-            "signal_quality_score": 72.33,
+            "signal_quality_score": 71.96,
             "take_profit_price_1": 12.89,
             "take_profit_pct_1": 0.1064,
             "take_profit_price_2": 13.39,
             "take_profit_pct_2": 0.1494,
             "trailing_stop_price": 11.26,
-            "suggested_position_min": 0.0839,
+            "suggested_position_min": 0.0838,
             "suggested_position_max": 0.12,
             "max_portfolio_risk": 0.0058,
             "risk_reward_ratio": 2.21,
@@ -1634,7 +1631,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042878+00:00"
+            "generated_at": "2026-04-23T06:00:31.510483+00:00"
           },
           "risk_controls": [
             "止损线参考 11.09 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1669,9 +1666,9 @@
           "name": "晶科科技",
           "industry": "电力",
           "rank": 1,
-          "base_score": 91.45,
+          "base_score": 91.0,
           "event_score": 57.62,
-          "risk_adjusted_score": 81.41,
+          "risk_adjusted_score": 81.15,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1698,9 +1695,9 @@
           "name": "潜能恒信",
           "industry": "油气开采及服务",
           "rank": 2,
-          "base_score": 83.31,
+          "base_score": 83.33,
           "event_score": 57.96,
-          "risk_adjusted_score": 77.55,
+          "risk_adjusted_score": 77.56,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1727,9 +1724,9 @@
           "name": "华电辽能",
           "industry": "电力",
           "rank": 3,
-          "base_score": 79.58,
+          "base_score": 79.13,
           "event_score": 57.11,
-          "risk_adjusted_score": 75.57,
+          "risk_adjusted_score": 75.3,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1756,9 +1753,9 @@
           "name": "粤电力A",
           "industry": "电力",
           "rank": 4,
-          "base_score": 80.01,
+          "base_score": 79.56,
           "event_score": 54.58,
-          "risk_adjusted_score": 74.66,
+          "risk_adjusted_score": 74.39,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1785,9 +1782,9 @@
           "name": "东望时代",
           "industry": "电力",
           "rank": 5,
-          "base_score": 74.66,
+          "base_score": 74.21,
           "event_score": 57.75,
-          "risk_adjusted_score": 73.52,
+          "risk_adjusted_score": 73.25,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1820,7 +1817,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1836,7 +1833,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1882,13 +1879,13 @@
             "reference_price": 7.19,
             "stop_loss_price": 6.67,
             "stop_loss_pct": 0.072,
-            "signal_quality_score": 86.12,
+            "signal_quality_score": 85.75,
             "take_profit_price_1": 8.07,
             "take_profit_pct_1": 0.1224,
             "take_profit_price_2": 8.65,
             "take_profit_pct_2": 0.2031,
             "trailing_stop_price": 6.73,
-            "suggested_position_min": 0.0496,
+            "suggested_position_min": 0.0495,
             "suggested_position_max": 0.067,
             "max_portfolio_risk": 0.0048,
             "risk_reward_ratio": 1.69,
@@ -1916,7 +1913,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042940+00:00"
+            "generated_at": "2026-04-23T06:00:31.510547+00:00"
           },
           "risk_controls": [
             "止损线参考 6.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1940,7 +1937,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.16,
+              "value": 73.23,
               "description": "油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1956,7 +1953,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1999,26 +1996,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 43.52,
-            "stop_loss_price": 40.39,
+            "reference_price": 43.31,
+            "stop_loss_price": 40.19,
             "stop_loss_pct": 0.072,
-            "signal_quality_score": 78.99,
-            "take_profit_price_1": 48.84,
-            "take_profit_pct_1": 0.1222,
-            "take_profit_price_2": 52.28,
-            "take_profit_pct_2": 0.2013,
-            "trailing_stop_price": 40.18,
-            "suggested_position_min": 0.0603,
-            "suggested_position_max": 0.0839,
-            "max_portfolio_risk": 0.006,
+            "signal_quality_score": 79.01,
+            "take_profit_price_1": 48.61,
+            "take_profit_pct_1": 0.1224,
+            "take_profit_price_2": 52.05,
+            "take_profit_pct_2": 0.2018,
+            "trailing_stop_price": 39.97,
+            "suggested_position_min": 0.0612,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0061,
             "risk_reward_ratio": 1.7,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 40.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 48.84 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 52.28 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+              "止损线参考 40.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 48.61 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 52.05 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -2027,7 +2024,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 40.39 元作为防守位，并在 48.84 / 52.28 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 40.19 元作为防守位，并在 48.61 / 52.05 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2035,12 +2032,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.042981+00:00"
+            "generated_at": "2026-04-23T06:00:31.510588+00:00"
           },
           "risk_controls": [
-            "止损线参考 40.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 48.84 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 52.28 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+            "止损线参考 40.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 48.61 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 52.05 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -2057,7 +2054,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2073,7 +2070,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 26.8%，量比 2.00。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2119,13 +2116,13 @@
             "reference_price": 9.83,
             "stop_loss_price": 9.12,
             "stop_loss_pct": 0.072,
-            "signal_quality_score": 75.42,
+            "signal_quality_score": 75.05,
             "take_profit_price_1": 11.04,
             "take_profit_pct_1": 0.1231,
             "take_profit_price_2": 11.82,
             "take_profit_pct_2": 0.2024,
             "trailing_stop_price": 8.97,
-            "suggested_position_min": 0.0352,
+            "suggested_position_min": 0.0351,
             "suggested_position_max": 0.0496,
             "max_portfolio_risk": 0.0036,
             "risk_reward_ratio": 1.7,
@@ -2153,7 +2150,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043049+00:00"
+            "generated_at": "2026-04-23T06:00:31.510626+00:00"
           },
           "risk_controls": [
             "止损线参考 9.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2178,7 +2175,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2194,7 +2191,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.2%，量比 2.86。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2240,13 +2237,13 @@
             "reference_price": 7.21,
             "stop_loss_price": 6.83,
             "stop_loss_pct": 0.0524,
-            "signal_quality_score": 75.4,
+            "signal_quality_score": 75.03,
             "take_profit_price_1": 8.22,
             "take_profit_pct_1": 0.1401,
             "take_profit_price_2": 8.27,
             "take_profit_pct_2": 0.147,
             "trailing_stop_price": 6.9,
-            "suggested_position_min": 0.0602,
+            "suggested_position_min": 0.0601,
             "suggested_position_max": 0.085,
             "max_portfolio_risk": 0.0045,
             "risk_reward_ratio": 2.66,
@@ -2273,7 +2270,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043093+00:00"
+            "generated_at": "2026-04-23T06:00:31.510664+00:00"
           },
           "risk_controls": [
             "止损线参考 6.83 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2296,7 +2293,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2312,7 +2309,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 11.5%，量比 7.92。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 11.5%，量比 7.76。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2358,13 +2355,13 @@
             "reference_price": 4.58,
             "stop_loss_price": 4.38,
             "stop_loss_pct": 0.0445,
-            "signal_quality_score": 71.12,
+            "signal_quality_score": 70.75,
             "take_profit_price_1": 4.92,
             "take_profit_pct_1": 0.0742,
             "take_profit_price_2": 5.14,
             "take_profit_pct_2": 0.1223,
             "trailing_stop_price": 4.41,
-            "suggested_position_min": 0.0591,
+            "suggested_position_min": 0.059,
             "suggested_position_max": 0.085,
             "max_portfolio_risk": 0.0038,
             "risk_reward_ratio": 1.7,
@@ -2391,7 +2388,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043135+00:00"
+            "generated_at": "2026-04-23T06:00:31.510703+00:00"
           },
           "risk_controls": [
             "止损线参考 4.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2426,9 +2423,9 @@
           "name": "晶科科技",
           "industry": "电力",
           "rank": 1,
-          "base_score": 91.45,
+          "base_score": 91.0,
           "event_score": 57.62,
-          "risk_adjusted_score": 98.16,
+          "risk_adjusted_score": 97.89,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2455,9 +2452,9 @@
           "name": "潜能恒信",
           "industry": "油气开采及服务",
           "rank": 2,
-          "base_score": 83.31,
+          "base_score": 83.33,
           "event_score": 57.96,
-          "risk_adjusted_score": 88.47,
+          "risk_adjusted_score": 88.49,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2480,13 +2477,42 @@
           ]
         },
         {
+          "symbol": "002948",
+          "name": "青岛银行",
+          "industry": "银行",
+          "rank": 3,
+          "base_score": 71.08,
+          "event_score": 55.54,
+          "risk_adjusted_score": 80.28,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 5.28 / MA20 5.24 / MA60 5.19，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.29，20 日收益 9.6%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "券商研报",
+            "券商研报",
+            "资金交易"
+          ]
+        },
+        {
           "symbol": "600546",
           "name": "山煤国际",
           "industry": "煤炭开采加工",
-          "rank": 3,
-          "base_score": 73.89,
+          "rank": 4,
+          "base_score": 73.85,
           "event_score": 54.86,
-          "risk_adjusted_score": 78.79,
+          "risk_adjusted_score": 78.76,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2509,51 +2535,22 @@
           ]
         },
         {
-          "symbol": "000539",
-          "name": "粤电力A",
-          "industry": "电力",
-          "rank": 4,
-          "base_score": 80.01,
-          "event_score": 54.58,
-          "risk_adjusted_score": 74.81,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 5.75 / MA20 5.97 / MA60 5.41，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.77，20 日收益 -3.4%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "券商研报",
-            "资金交易"
-          ]
-        },
-        {
-          "symbol": "600396",
-          "name": "华电辽能",
-          "industry": "电力",
+          "symbol": "600928",
+          "name": "西安银行",
+          "industry": "银行",
           "rank": 5,
-          "base_score": 79.58,
-          "event_score": 57.11,
-          "risk_adjusted_score": 74.5,
+          "base_score": 63.81,
+          "event_score": 59.83,
+          "risk_adjusted_score": 67.26,
           "holding_window": "5-10D",
           "reasons": [
             {
               "label": "均线结构",
-              "detail": "MA10 7.60 / MA20 7.79 / MA60 5.07，趋势结构保持偏强。"
+              "detail": "MA10 3.64 / MA20 3.62 / MA60 3.69，趋势结构保持偏强。"
             },
             {
               "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.00，20 日收益 17.9%。"
+              "detail": "近 5 日成交额倍率 0.98，20 日收益 4.8%。"
             },
             {
               "label": "持有节奏",
@@ -2562,8 +2559,8 @@
           ],
           "event_tags": [
             "官方公告",
-            "产品技术",
-            "产品技术"
+            "官方公告",
+            "官方公告"
           ]
         }
       ],
@@ -2577,7 +2574,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2593,7 +2590,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2639,13 +2636,13 @@
             "reference_price": 7.19,
             "stop_loss_price": 6.54,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 86.12,
+            "signal_quality_score": 85.75,
             "take_profit_price_1": 8.49,
             "take_profit_pct_1": 0.1808,
             "take_profit_price_2": 9.34,
             "take_profit_pct_2": 0.299,
             "trailing_stop_price": 6.73,
-            "suggested_position_min": 0.0519,
+            "suggested_position_min": 0.0518,
             "suggested_position_max": 0.0701,
             "max_portfolio_risk": 0.0063,
             "risk_reward_ratio": 2.0,
@@ -2673,7 +2670,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043202+00:00"
+            "generated_at": "2026-04-23T06:00:31.510757+00:00"
           },
           "risk_controls": [
             "止损线参考 6.54 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2697,7 +2694,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.16,
+              "value": 73.23,
               "description": "油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2713,7 +2710,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2756,26 +2753,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 43.52,
-            "stop_loss_price": 39.6,
+            "reference_price": 43.31,
+            "stop_loss_price": 39.41,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 78.99,
-            "take_profit_price_1": 51.36,
+            "signal_quality_score": 79.01,
+            "take_profit_price_1": 51.11,
             "take_profit_pct_1": 0.1801,
-            "take_profit_price_2": 56.46,
-            "take_profit_pct_2": 0.2973,
-            "trailing_stop_price": 40.18,
-            "suggested_position_min": 0.0631,
-            "suggested_position_max": 0.0877,
-            "max_portfolio_risk": 0.0079,
+            "take_profit_price_2": 56.18,
+            "take_profit_pct_2": 0.2972,
+            "trailing_stop_price": 39.97,
+            "suggested_position_min": 0.0644,
+            "suggested_position_max": 0.0895,
+            "max_portfolio_risk": 0.0081,
             "risk_reward_ratio": 2.0,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 39.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 51.36 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 56.46 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+              "止损线参考 39.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 51.11 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 56.18 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -2784,7 +2781,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 39.60 元作为防守位，并在 51.36 / 56.46 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 39.41 元作为防守位，并在 51.11 / 56.18 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2792,14 +2789,129 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043241+00:00"
+            "generated_at": "2026-04-23T06:00:31.510797+00:00"
           },
           "risk_controls": [
-            "止损线参考 39.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 51.36 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 56.46 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+            "止损线参考 39.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 51.11 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 56.18 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "002948": {
+          "symbol": "002948",
+          "name": "青岛银行",
+          "industry": "银行",
+          "thesis": "青岛银行 具备较完整的均线多头与放量突破结构，技术分 81.7，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.38,
+              "description": "银行 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 81.71,
+              "description": "当前模式重点关注该维度。20 日收益 9.6%，量能倍率 1.29，MA10 / MA20 / MA60 为 5.28 / 5.24 / 5.19。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.54,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 65.99,
+              "description": "日内涨幅 2.9%，换手 1.4%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "6541802bfc52",
+              "title": "2025年三季报点评：净利润保持高增长，资产质量延续改善",
+              "publish_time": "2025-10-31T00:00:00",
+              "source": "东方财富研报",
+              "source_category": "券商研报",
+              "event_type": "券商研报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510311772335692_1.pdf"
+            },
+            {
+              "event_id": "4e6543c6c6bb",
+              "title": "2025年业绩快报点评：不良双降、拨备提升，盈利大幅改善",
+              "publish_time": "2026-01-29T00:00:00",
+              "source": "东方财富研报",
+              "source_category": "券商研报",
+              "event_type": "券商研报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202601291818545145_1.pdf"
+            },
+            {
+              "event_id": "dd5220914df1",
+              "title": "15.53亿元主力资金今日撤离银行板块",
+              "publish_time": "2026-04-22T17:19:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "0.08 -7292.57 601665 齐鲁银行 0.80 1.04 -6704.14 601128 常熟银行 0.55 1.29 -6539.99 600000 浦发银行 -1.13 0.21 -4049.75 601009 南京银行 -0.17 0.28 -2865.87 002948",
+              "link": "http://finance.eastmoney.com/a/202604223714153834.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 5.73,
+            "stop_loss_price": 5.47,
+            "stop_loss_pct": 0.045,
+            "signal_quality_score": 68.93,
+            "take_profit_price_1": 6.25,
+            "take_profit_pct_1": 0.0908,
+            "take_profit_price_2": 6.59,
+            "take_profit_pct_2": 0.1501,
+            "trailing_stop_price": 5.57,
+            "suggested_position_min": 0.0758,
+            "suggested_position_max": 0.11,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 5.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 6.25 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 6.59 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 5.47 元作为防守位，并在 6.25 / 6.59 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 1.76，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2025年三季报点评：净利润保持高增长，资产质量延续改善"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-23T06:00:31.510835+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 5.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 6.25 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 6.59 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
@@ -2814,7 +2926,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 71.05,
+              "value": 71.09,
               "description": "煤炭开采加工 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2829,8 +2941,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 85.13,
-              "description": "日内涨幅 5.3%，换手 1.9%，量比 1.85。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 84.95,
+              "description": "日内涨幅 5.3%，换手 1.9%，量比 1.83。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2876,7 +2988,7 @@
             "reference_price": 12.75,
             "stop_loss_price": 12.09,
             "stop_loss_pct": 0.0517,
-            "signal_quality_score": 70.57,
+            "signal_quality_score": 70.54,
             "take_profit_price_1": 14.07,
             "take_profit_pct_1": 0.1035,
             "take_profit_price_2": 14.93,
@@ -2908,7 +3020,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043282+00:00"
+            "generated_at": "2026-04-23T06:00:31.510875+00:00"
           },
           "risk_controls": [
             "止损线参考 12.09 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2920,243 +3032,119 @@
             "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
           ]
         },
-        "000539": {
-          "symbol": "000539",
-          "name": "粤电力A",
-          "industry": "电力",
-          "thesis": "粤电力A 具备较完整的均线多头与放量突破结构，技术分 67.8，适合趋势跟踪。",
+        "600928": {
+          "symbol": "600928",
+          "name": "西安银行",
+          "industry": "银行",
+          "thesis": "西安银行 具备较完整的均线多头与放量突破结构，技术分 58.7，适合趋势跟踪。",
           "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
-              "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+              "value": 63.38,
+              "description": "银行 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 67.83,
-              "description": "当前模式重点关注该维度。20 日收益 -3.4%，量能倍率 1.77，MA10 / MA20 / MA60 为 5.75 / 5.97 / 5.41。"
+              "value": 58.68,
+              "description": "当前模式重点关注该维度。20 日收益 4.8%，量能倍率 0.98，MA10 / MA20 / MA60 为 3.64 / 3.62 / 3.69。"
             },
             {
               "name": "事件强度",
-              "value": 54.58,
+              "value": 59.83,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 71.29,
+              "description": "日内涨幅 3.5%，换手 1.4%，量比 5.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "6471f38c0d63",
-              "title": "电价下行业绩承压，静待度电盈利改善",
-              "publish_time": "2025-04-01T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：信达证券；评级：增持；行业：电力",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202504011649908080_1.pdf"
-            },
-            {
-              "event_id": "d67199ff0f4a",
-              "title": "燃料成本下降对冲电价下行，“火+绿”双成长持续",
-              "publish_time": "2024-08-31T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：信达证券；评级：增持；行业：电力",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202408311639677273_1.pdf"
-            },
-            {
-              "event_id": "30957e168560",
-              "title": "2.94亿元资金今日流出公用事业股",
-              "publish_time": "2026-04-21T16:46:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "资金交易",
-              "sentiment": "neutral",
-              "impact_level": "medium",
-              "summary": "（数据宝） 公用事业行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 600396 华电辽能 10.01 20.61 44584.79 600900 长江电力 1.08 0.37 23803.25 000539 粤电力A 9.98 4.58",
-              "link": "http://finance.eastmoney.com/a/202604213712346264.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.21,
-            "stop_loss_price": 6.72,
-            "stop_loss_pct": 0.0674,
-            "signal_quality_score": 75.4,
-            "take_profit_price_1": 8.22,
-            "take_profit_pct_1": 0.1401,
-            "take_profit_price_2": 8.83,
-            "take_profit_pct_2": 0.2247,
-            "trailing_stop_price": 6.9,
-            "suggested_position_min": 0.0686,
-            "suggested_position_max": 0.0969,
-            "max_portfolio_risk": 0.0065,
-            "risk_reward_ratio": 2.06,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 6.72 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 8.22 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 8.83 元，若继续上行则把跟踪止损上移到 6.90 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 6.72 元作为防守位，并在 8.22 / 8.83 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 3.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：电价下行业绩承压，静待度电盈利改善"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043321+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 6.72 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 8.22 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 8.83 元，若继续上行则把跟踪止损上移到 6.90 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "600396": {
-          "symbol": "600396",
-          "name": "华电辽能",
-          "industry": "电力",
-          "thesis": "华电辽能 具备较完整的均线多头与放量突破结构，技术分 66.7，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 77.17,
-              "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 66.7,
-              "description": "当前模式重点关注该维度。20 日收益 17.9%，量能倍率 1.00，MA10 / MA20 / MA60 为 7.60 / 7.79 / 5.07。"
-            },
-            {
-              "name": "事件强度",
-              "value": 57.11,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "9573dd51b39c",
-              "title": "股票交易异常波动公告",
+              "event_id": "1a6cd112ba49",
+              "title": "西安银行股份有限公司关于2026年日常关联交易预计额度的公告",
               "publish_time": "2026-04-23T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "股票交易异常波动公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600396&announcementId=1225149506&orgId=gssh0600396&announcementTime=2026-04-23"
+              "impact_level": "high",
+              "summary": "西安银行股份有限公司关于2026年日常关联交易预计额度的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600928&announcementId=1225151841&orgId=9900027168&announcementTime=2026-04-23"
             },
             {
-              "event_id": "d17892498a53",
-              "title": "600396 7连板",
-              "publish_time": "2026-03-24T12:48:00",
-              "source": "上海证券报",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
+              "event_id": "598198f20962",
+              "title": "西安银行股份有限公司2025年年度报告摘要",
+              "publish_time": "2026-04-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
               "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "航运板块表现较佳，招商南油涨停；算力芯片概念反弹；绿电概念持续走强，华电辽能（600396）收获7连板。下跌方面，存储芯片概念震荡回落。 航运板块盘中拉升 绿电概念持续走强 3月24日，航运板块盘中震荡走强。",
-              "link": "http://finance.eastmoney.com/a/202603243682254714.html"
+              "impact_level": "high",
+              "summary": "西安银行股份有限公司2025年年度报告摘要",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600928&announcementId=1225151825&orgId=9900027168&announcementTime=2026-04-23"
             },
             {
-              "event_id": "69542ddf21ff",
-              "title": "华电辽能600396龙虎榜数据04-21)",
-              "publish_time": "2026-04-21T16:57:32",
-              "source": "东方财富Choice数据",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
+              "event_id": "c5a7f2ef8dbb",
+              "title": "西安银行股份有限公司2025年年度报告",
+              "publish_time": "2026-04-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
               "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "交易所2026年4月21日公布的交易公开信息显示，华电辽能因成为有价格涨跌幅限制的日价格振幅达到15%的前五只证券上榜。华电辽能当日收报8.13元，涨跌幅10.01%，偏离值16.98%，换手率20.61%，成交额23.00亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议",
-              "link": "http://finance.eastmoney.com/a/202604213712352338.html"
+              "impact_level": "high",
+              "summary": "西安银行股份有限公司2025年年度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600928&announcementId=1225151740&orgId=9900027168&announcementTime=2026-04-23"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.83,
-            "stop_loss_price": 8.95,
-            "stop_loss_pct": 0.09,
-            "signal_quality_score": 75.42,
-            "take_profit_price_1": 11.59,
-            "take_profit_pct_1": 0.179,
-            "take_profit_price_2": 12.73,
-            "take_profit_pct_2": 0.295,
-            "trailing_stop_price": 8.97,
-            "suggested_position_min": 0.0368,
-            "suggested_position_max": 0.0519,
-            "max_portfolio_risk": 0.0047,
-            "risk_reward_ratio": 2.0,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "reference_price": 3.85,
+            "stop_loss_price": 3.68,
+            "stop_loss_pct": 0.045,
+            "signal_quality_score": 62.95,
+            "take_profit_price_1": 4.2,
+            "take_profit_pct_1": 0.0909,
+            "take_profit_price_2": 4.42,
+            "take_profit_pct_2": 0.1481,
+            "trailing_stop_price": 3.78,
+            "suggested_position_min": 0.0738,
+            "suggested_position_max": 0.11,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 2.06,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 8.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.59 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 12.73 元，若继续上行则把跟踪止损上移到 8.97 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
+              "止损线参考 3.68 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 4.20 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 4.42 元，若继续上行则把跟踪止损上移到 3.78 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.64,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 8.95 元作为防守位，并在 11.59 / 12.73 元分批兑现。",
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 3.68 元作为防守位，并在 4.20 / 4.42 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 7.55，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：股票交易异常波动公告"
+              "近 10 日波动率为 0.87，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：西安银行股份有限公司关于2026年日常关联交易预计额度的公告"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043359+00:00"
+            "generated_at": "2026-04-23T06:00:31.510915+00:00"
           },
           "risk_controls": [
-            "止损线参考 8.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.59 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 12.73 元，若继续上行则把跟踪止损上移到 8.97 元附近。",
+            "止损线参考 3.68 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 4.20 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 4.42 元，若继续上行则把跟踪止损上移到 3.78 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
-            "当日已接近涨停，避免尾盘情绪化追高。",
-            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
           ]
         }
       },
@@ -3180,14 +3168,14 @@
           "name": "晶科科技",
           "industry": "电力",
           "rank": 1,
-          "base_score": 91.45,
+          "base_score": 91.0,
           "event_score": 57.62,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 9.9%，换手 22.7%，量比 1.39。"
+              "detail": "当日涨幅 9.9%，换手 22.7%，量比 1.36。"
             },
             {
               "label": "接力质量",
@@ -3209,14 +3197,14 @@
           "name": "潜能恒信",
           "industry": "油气开采及服务",
           "rank": 2,
-          "base_score": 83.31,
+          "base_score": 83.33,
           "event_score": 57.96,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 7.0%，换手 9.0%，量比 2.10。"
+              "detail": "当日涨幅 6.5%，换手 9.2%，量比 2.08。"
             },
             {
               "label": "接力质量",
@@ -3238,14 +3226,14 @@
           "name": "粤电力A",
           "industry": "电力",
           "rank": 3,
-          "base_score": 80.01,
+          "base_score": 79.56,
           "event_score": 54.58,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 10.1%，换手 10.1%，量比 2.91。"
+              "detail": "当日涨幅 10.1%，换手 10.2%，量比 2.86。"
             },
             {
               "label": "接力质量",
@@ -3267,14 +3255,14 @@
           "name": "华电辽能",
           "industry": "电力",
           "rank": 4,
-          "base_score": 79.58,
+          "base_score": 79.13,
           "event_score": 57.11,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 10.0%，换手 26.7%，量比 2.04。"
+              "detail": "当日涨幅 10.0%，换手 26.8%，量比 2.00。"
             },
             {
               "label": "接力质量",
@@ -3296,14 +3284,14 @@
           "name": "绿发电力",
           "industry": "电力",
           "rank": 5,
-          "base_score": 76.6,
+          "base_score": 76.15,
           "event_score": 54.46,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 10.0%，换手 6.7%，量比 3.57。"
+              "detail": "当日涨幅 10.0%，换手 6.7%，量比 3.50。"
             },
             {
               "label": "接力质量",
@@ -3331,7 +3319,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3347,7 +3335,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3393,7 +3381,7 @@
             "reference_price": 7.19,
             "stop_loss_price": 6.72,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 86.12,
+            "signal_quality_score": 85.75,
             "take_profit_price_1": 7.94,
             "take_profit_pct_1": 0.1043,
             "take_profit_price_2": 8.37,
@@ -3427,7 +3415,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043427+00:00"
+            "generated_at": "2026-04-23T06:00:31.510982+00:00"
           },
           "risk_controls": [
             "止损线参考 6.72 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3451,7 +3439,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.16,
+              "value": 73.23,
               "description": "油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3467,7 +3455,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3510,15 +3498,15 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 43.52,
-            "stop_loss_price": 40.69,
+            "reference_price": 43.31,
+            "stop_loss_price": 40.49,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 78.99,
-            "take_profit_price_1": 48.05,
+            "signal_quality_score": 79.01,
+            "take_profit_price_1": 47.82,
             "take_profit_pct_1": 0.1041,
-            "take_profit_price_2": 50.6,
-            "take_profit_pct_2": 0.1627,
-            "trailing_stop_price": 40.18,
+            "take_profit_price_2": 50.36,
+            "take_profit_pct_2": 0.1628,
+            "trailing_stop_price": 39.97,
             "suggested_position_min": 0.054,
             "suggested_position_max": 0.075,
             "max_portfolio_risk": 0.0049,
@@ -3527,9 +3515,9 @@
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 40.69 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 48.05 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 50.60 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+              "止损线参考 40.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 47.82 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 50.36 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -3538,7 +3526,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 40.69 元作为防守位，并在 48.05 / 50.60 元分批兑现。",
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 40.49 元作为防守位，并在 47.82 / 50.36 元分批兑现。",
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3546,12 +3534,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043473+00:00"
+            "generated_at": "2026-04-23T06:00:31.511020+00:00"
           },
           "risk_controls": [
-            "止损线参考 40.69 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 48.05 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 50.60 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+            "止损线参考 40.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 47.82 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 50.36 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -3568,7 +3556,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3584,7 +3572,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 10.1%，换手 10.2%，量比 2.86。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3630,7 +3618,7 @@
             "reference_price": 7.21,
             "stop_loss_price": 6.87,
             "stop_loss_pct": 0.0468,
-            "signal_quality_score": 75.4,
+            "signal_quality_score": 75.03,
             "take_profit_price_1": 8.22,
             "take_profit_pct_1": 0.1401,
             "take_profit_price_2": 8.06,
@@ -3663,7 +3651,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043510+00:00"
+            "generated_at": "2026-04-23T06:00:31.511056+00:00"
           },
           "risk_controls": [
             "止损线参考 6.87 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3686,7 +3674,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3702,7 +3690,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 10.0%，换手 26.8%，量比 2.00。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3748,14 +3736,14 @@
             "reference_price": 9.83,
             "stop_loss_price": 9.19,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 75.42,
+            "signal_quality_score": 75.05,
             "take_profit_price_1": 10.85,
             "take_profit_pct_1": 0.1038,
             "take_profit_price_2": 11.43,
             "take_profit_pct_2": 0.1628,
             "trailing_stop_price": 8.97,
-            "suggested_position_min": 0.036,
-            "suggested_position_max": 0.0508,
+            "suggested_position_min": 0.0358,
+            "suggested_position_max": 0.0507,
             "max_portfolio_risk": 0.0033,
             "risk_reward_ratio": 1.59,
             "action_bias": "谨慎追高",
@@ -3782,7 +3770,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043548+00:00"
+            "generated_at": "2026-04-23T06:00:31.511092+00:00"
           },
           "risk_controls": [
             "止损线参考 9.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3807,7 +3795,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 77.17,
+              "value": 75.84,
               "description": "电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3823,7 +3811,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 10.0%，换手 6.7%，量比 3.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 10.0%，换手 6.7%，量比 3.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3869,7 +3857,7 @@
             "reference_price": 11.65,
             "stop_loss_price": 11.22,
             "stop_loss_pct": 0.0366,
-            "signal_quality_score": 72.33,
+            "signal_quality_score": 71.96,
             "take_profit_price_1": 12.89,
             "take_profit_pct_1": 0.1064,
             "take_profit_price_2": 12.72,
@@ -3902,7 +3890,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-23T05:56:02.043586+00:00"
+            "generated_at": "2026-04-23T06:00:31.511129+00:00"
           },
           "risk_controls": [
             "止损线参考 11.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3933,9 +3921,9 @@
       "name": "晶科科技",
       "industry": "电力",
       "rank": 1,
-      "base_score": 91.45,
+      "base_score": 91.0,
       "event_score": 57.62,
-      "risk_adjusted_score": 89.47,
+      "risk_adjusted_score": 89.09,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3962,9 +3950,9 @@
       "name": "潜能恒信",
       "industry": "油气开采及服务",
       "rank": 2,
-      "base_score": 83.31,
+      "base_score": 83.33,
       "event_score": 57.96,
-      "risk_adjusted_score": 82.71,
+      "risk_adjusted_score": 82.73,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3991,9 +3979,9 @@
       "name": "华电辽能",
       "industry": "电力",
       "rank": 3,
-      "base_score": 79.58,
+      "base_score": 79.13,
       "event_score": 57.11,
-      "risk_adjusted_score": 79.37,
+      "risk_adjusted_score": 79.0,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4020,9 +4008,9 @@
       "name": "粤电力A",
       "industry": "电力",
       "rank": 4,
-      "base_score": 80.01,
+      "base_score": 79.56,
       "event_score": 54.58,
-      "risk_adjusted_score": 74.23,
+      "risk_adjusted_score": 73.86,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4045,31 +4033,31 @@
       ]
     },
     {
-      "symbol": "000537",
-      "name": "绿发电力",
-      "industry": "电力",
+      "symbol": "002948",
+      "name": "青岛银行",
+      "industry": "银行",
       "rank": 5,
-      "base_score": 76.6,
-      "event_score": 54.46,
-      "risk_adjusted_score": 71.33,
+      "base_score": 71.08,
+      "event_score": 55.54,
+      "risk_adjusted_score": 73.2,
       "holding_window": "3-5D",
       "reasons": [
         {
           "label": "行业轮动",
-          "detail": "电力 当前仍在强势行业监控池内，优先级高于普通板块。"
+          "detail": "银行 当前仍在强势行业监控池内，优先级高于普通板块。"
         },
         {
           "label": "技术结构",
-          "detail": "绿发电力 近 20 日收益 -11.4%，技术分 58.9。"
+          "detail": "青岛银行 近 20 日收益 9.6%，技术分 81.7。"
         },
         {
           "label": "事件辅助",
-          "detail": "2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足"
+          "detail": "2025年三季报点评：净利润保持高增长，资产质量延续改善"
         }
       ],
       "event_tags": [
         "券商研报",
-        "官方公告",
+        "券商研报",
         "资金交易"
       ]
     }
@@ -4079,12 +4067,12 @@
       "symbol": "601778",
       "name": "晶科科技",
       "industry": "电力",
-      "thesis": "晶科科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.5，适合作为默认候选股跟踪。",
+      "thesis": "晶科科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.1，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 77.17,
+          "value": 75.84,
           "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4100,7 +4088,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 9.9%，换手 22.7%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 9.9%，换手 22.7%，量比 1.36。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4146,7 +4134,7 @@
         "reference_price": 7.19,
         "stop_loss_price": 6.63,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 86.12,
+        "signal_quality_score": 85.75,
         "take_profit_price_1": 8.2,
         "take_profit_pct_1": 0.1405,
         "take_profit_price_2": 8.87,
@@ -4180,7 +4168,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-23T05:56:02.042428+00:00"
+        "generated_at": "2026-04-23T06:00:31.510017+00:00"
       },
       "risk_controls": [
         "止损线参考 6.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4203,7 +4191,7 @@
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 73.16,
+          "value": 73.23,
           "description": "当前模式重点关注该维度。油气开采及服务 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4219,7 +4207,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 7.0%，换手 9.0%，量比 2.10。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 6.5%，换手 9.2%，量比 2.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4262,26 +4250,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 43.52,
-        "stop_loss_price": 40.13,
+        "reference_price": 43.31,
+        "stop_loss_price": 39.93,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 78.99,
-        "take_profit_price_1": 49.62,
-        "take_profit_pct_1": 0.1402,
-        "take_profit_price_2": 53.69,
-        "take_profit_pct_2": 0.2337,
-        "trailing_stop_price": 40.18,
-        "suggested_position_min": 0.0643,
-        "suggested_position_max": 0.0893,
-        "max_portfolio_risk": 0.007,
+        "signal_quality_score": 79.01,
+        "take_profit_price_1": 49.39,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 53.45,
+        "take_profit_pct_2": 0.2341,
+        "trailing_stop_price": 39.97,
+        "suggested_position_min": 0.0656,
+        "suggested_position_max": 0.0911,
+        "max_portfolio_risk": 0.0071,
         "risk_reward_ratio": 1.8,
         "action_bias": "分批试仓",
         "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 40.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 49.62 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 53.69 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+          "止损线参考 39.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 49.39 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 53.45 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "价格已处于加速区，建议只用试仓级别仓位。"
         ]
@@ -4290,7 +4278,7 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.72,
-        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 40.13 元作为防守位，并在 49.62 / 53.69 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 39.93 元作为防守位，并在 49.39 / 53.45 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 3.50，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4298,12 +4286,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-23T05:56:02.042484+00:00"
+        "generated_at": "2026-04-23T06:00:31.510074+00:00"
       },
       "risk_controls": [
-        "止损线参考 40.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 49.62 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 53.69 元，若继续上行则把跟踪止损上移到 40.18 元附近。",
+        "止损线参考 39.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 49.39 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 53.45 元，若继续上行则把跟踪止损上移到 39.97 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "价格已处于加速区，建议只用试仓级别仓位。",
         "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -4314,12 +4302,12 @@
       "symbol": "600396",
       "name": "华电辽能",
       "industry": "电力",
-      "thesis": "华电辽能 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 79.4，适合作为默认候选股跟踪。",
+      "thesis": "华电辽能 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 79.0，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 77.17,
+          "value": 75.84,
           "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4335,7 +4323,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 10.0%，换手 26.7%，量比 2.04。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 10.0%，换手 26.8%，量比 2.00。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4381,14 +4369,14 @@
         "reference_price": 9.83,
         "stop_loss_price": 9.06,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 75.42,
+        "signal_quality_score": 75.05,
         "take_profit_price_1": 11.22,
         "take_profit_pct_1": 0.1414,
         "take_profit_price_2": 12.14,
         "take_profit_pct_2": 0.235,
         "trailing_stop_price": 8.97,
-        "suggested_position_min": 0.0375,
-        "suggested_position_max": 0.0529,
+        "suggested_position_min": 0.0373,
+        "suggested_position_max": 0.0528,
         "max_portfolio_risk": 0.0041,
         "risk_reward_ratio": 1.81,
         "action_bias": "谨慎追高",
@@ -4415,7 +4403,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-23T05:56:02.042533+00:00"
+        "generated_at": "2026-04-23T06:00:31.510121+00:00"
       },
       "risk_controls": [
         "止损线参考 9.06 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4434,12 +4422,12 @@
       "symbol": "000539",
       "name": "粤电力A",
       "industry": "电力",
-      "thesis": "粤电力A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 74.2，适合作为默认候选股跟踪。",
+      "thesis": "粤电力A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 73.9，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 77.17,
+          "value": 75.84,
           "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4455,7 +4443,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 10.1%，换手 10.1%，量比 2.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 10.1%，换手 10.2%，量比 2.86。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4501,14 +4489,14 @@
         "reference_price": 7.21,
         "stop_loss_price": 6.79,
         "stop_loss_pct": 0.058,
-        "signal_quality_score": 75.4,
+        "signal_quality_score": 75.03,
         "take_profit_price_1": 8.22,
         "take_profit_pct_1": 0.1401,
         "take_profit_price_2": 8.47,
         "take_profit_pct_2": 0.1748,
         "trailing_stop_price": 6.9,
-        "suggested_position_min": 0.0703,
-        "suggested_position_max": 0.0992,
+        "suggested_position_min": 0.0701,
+        "suggested_position_max": 0.0991,
         "max_portfolio_risk": 0.0058,
         "risk_reward_ratio": 2.4,
         "action_bias": "谨慎追高",
@@ -4534,7 +4522,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-23T05:56:02.042579+00:00"
+        "generated_at": "2026-04-23T06:00:31.510166+00:00"
       },
       "risk_controls": [
         "止损线参考 6.79 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4547,121 +4535,118 @@
         "当日已接近涨停，避免尾盘情绪化追高。"
       ]
     },
-    "000537": {
-      "symbol": "000537",
-      "name": "绿发电力",
-      "industry": "电力",
-      "thesis": "绿发电力 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 71.3，适合作为默认候选股跟踪。",
+    "002948": {
+      "symbol": "002948",
+      "name": "青岛银行",
+      "industry": "银行",
+      "thesis": "青岛银行 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 73.2，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 电力, 油气开采及服务, 煤炭开采加工, 白酒, 银行 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 77.17,
-          "description": "当前模式重点关注该维度。电力 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+          "value": 63.38,
+          "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
           "name": "技术结构",
-          "value": 58.86,
-          "description": "20 日收益 -11.4%，量能倍率 1.55，MA10 / MA20 / MA60 为 10.09 / 10.34 / 9.77。"
+          "value": 81.71,
+          "description": "20 日收益 9.6%，量能倍率 1.29，MA10 / MA20 / MA60 为 5.28 / 5.24 / 5.19。"
         },
         {
           "name": "事件强度",
-          "value": 54.46,
+          "value": 55.54,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
           "name": "情绪热度",
-          "value": 100,
-          "description": "日内涨幅 10.0%，换手 6.7%，量比 3.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "value": 65.99,
+          "description": "日内涨幅 2.9%，换手 1.4%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
         {
-          "event_id": "6303c26f6df1",
-          "title": "2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足",
-          "publish_time": "2025-04-30T00:00:00",
+          "event_id": "6541802bfc52",
+          "title": "2025年三季报点评：净利润保持高增长，资产质量延续改善",
+          "publish_time": "2025-10-31T00:00:00",
           "source": "东方财富研报",
           "source_category": "券商研报",
           "event_type": "券商研报",
           "sentiment": "positive",
           "impact_level": "medium",
-          "summary": "机构：民生证券；评级：增持；行业：电力",
-          "link": "https://pdf.dfcfw.com/pdf/H3_AP202504301665196315_1.pdf"
+          "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+          "link": "https://pdf.dfcfw.com/pdf/H3_AP202510311772335692_1.pdf"
         },
         {
-          "event_id": "a4089d94de5a",
-          "title": "关于2026年第一季度发电量完成情况的自愿性信息披露公告",
-          "publish_time": "2026-04-21T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
+          "event_id": "4e6543c6c6bb",
+          "title": "2025年业绩快报点评：不良双降、拨备提升，盈利大幅改善",
+          "publish_time": "2026-01-29T00:00:00",
+          "source": "东方财富研报",
+          "source_category": "券商研报",
+          "event_type": "券商研报",
           "sentiment": "positive",
           "impact_level": "medium",
-          "summary": "关于2026年第一季度发电量完成情况的自愿性信息披露公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000537&announcementId=1225125261&orgId=gssz0000537&announcementTime=2026-04-21"
+          "summary": "机构：东兴证券；评级：增持；行业：银行Ⅱ",
+          "link": "https://pdf.dfcfw.com/pdf/H3_AP202601291818545145_1.pdf"
         },
         {
-          "event_id": "a5a5e332534a",
-          "title": "7.36亿元主力资金今日抢筹公用事业板块",
-          "publish_time": "2026-04-20T16:43:00",
+          "event_id": "dd5220914df1",
+          "title": "15.53亿元主力资金今日撤离银行板块",
+          "publish_time": "2026-04-22T17:19:00",
           "source": "证券时报网",
           "source_category": "个股资讯",
           "event_type": "资金交易",
-          "sentiment": "neutral",
+          "sentiment": "positive",
           "impact_level": "medium",
-          "summary": "3.18 -3693.71 000593 德龙汇能 -2.24 6.83 -3001.96 600509 天富能源 -0.63 1.82 -2367.00 002039 黔源电力 0.43 3.66 -2306.88 000875 电投绿能 0.45 1.41 -2191.99 000537",
-          "link": "http://finance.eastmoney.com/a/202604203710652273.html"
+          "summary": "0.08 -7292.57 601665 齐鲁银行 0.80 1.04 -6704.14 601128 常熟银行 0.55 1.29 -6539.99 600000 浦发银行 -1.13 0.21 -4049.75 601009 南京银行 -0.17 0.28 -2865.87 002948",
+          "link": "http://finance.eastmoney.com/a/202604223714153834.html"
         }
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 11.65,
-        "stop_loss_price": 11.12,
-        "stop_loss_pct": 0.0454,
-        "signal_quality_score": 72.33,
-        "take_profit_price_1": 12.89,
-        "take_profit_pct_1": 0.1064,
-        "take_profit_price_2": 13.24,
-        "take_profit_pct_2": 0.1365,
-        "trailing_stop_price": 11.26,
-        "suggested_position_min": 0.0699,
+        "reference_price": 5.73,
+        "stop_loss_price": 5.5,
+        "stop_loss_pct": 0.04,
+        "signal_quality_score": 68.93,
+        "take_profit_price_1": 6.14,
+        "take_profit_pct_1": 0.0716,
+        "take_profit_price_2": 6.42,
+        "take_profit_pct_2": 0.1204,
+        "trailing_stop_price": 5.57,
+        "suggested_position_min": 0.0689,
         "suggested_position_max": 0.1,
-        "max_portfolio_risk": 0.0045,
-        "risk_reward_ratio": 2.34,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "max_portfolio_risk": 0.004,
+        "risk_reward_ratio": 1.78,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 11.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 12.89 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 13.24 元，若继续上行则把跟踪止损上移到 11.26 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
+          "止损线参考 5.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 6.14 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 6.42 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。"
         ]
       },
       "ai_risk_analysis": {
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.72,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 11.12 元作为防守位，并在 12.89 / 13.24 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 5.50 元作为防守位，并在 6.14 / 6.42 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 1.42，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：2024年年报及2025年一季报点评：24年业绩稳健增长，在建规模充足"
+          "近 10 日波动率为 1.76，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：2025年三季报点评：净利润保持高增长，资产质量延续改善"
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-23T05:56:02.042622+00:00"
+        "generated_at": "2026-04-23T06:00:31.510210+00:00"
       },
       "risk_controls": [
-        "止损线参考 11.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 12.89 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 13.24 元，若继续上行则把跟踪止损上移到 11.26 元附近。",
+        "止损线参考 5.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 6.14 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 6.42 元，若继续上行则把跟踪止损上移到 5.57 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
         "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "当日已接近涨停，避免尾盘情绪化追高。"
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
       ]
     }
   },
@@ -4669,7 +4654,7 @@
     "industry_source": "ths_industry_summary",
     "constituent_scan_mode": "行业前 6 成分股全扫",
     "total_universe_size": 24,
-    "news_watchlist_size": 13,
+    "news_watchlist_size": 14,
     "scan_summary": [
       {
         "sector_name": "电力",
