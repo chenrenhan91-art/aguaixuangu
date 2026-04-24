@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-24T09:36:53.357147+00:00",
+  "generated_at": "2026-04-24T10:04:51.616054+00:00",
   "trade_date": "2026-04-24",
   "snapshot_session": {
     "session_id": "close",
     "label": "收盘信息",
-    "generated_time": "17:36",
-    "generated_at": "2026-04-24T17:36:53.357147+08:00"
+    "generated_time": "18:04",
+    "generated_at": "2026-04-24T18:04:51.616054+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -43,108 +43,108 @@
   ],
   "market_regime": {
     "regime": "risk_on",
-    "confidence": 0.7327,
-    "suggested_exposure": 0.736,
+    "confidence": 0.7107,
+    "suggested_exposure": 0.7311,
     "breadth_score": 73.49,
-    "northbound_score": 72.63,
-    "momentum_score": 76.83,
-    "updated_at": "2026-04-24T09:36:53.355367+00:00"
+    "northbound_score": 69.19,
+    "momentum_score": 72.83,
+    "updated_at": "2026-04-24T10:04:51.613954+00:00"
   },
   "top_sectors": [
     {
       "sector_code": "881267",
       "sector_name": "能源金属",
       "strength_score": 100.0,
-      "momentum_score": 88.93,
-      "capital_consensus_score": 78.87,
-      "heat_score": 47.57,
+      "momentum_score": 84.93,
+      "capital_consensus_score": 74.87,
+      "heat_score": 43.57,
       "breadth_ratio": 0.9167
     },
     {
       "sector_code": "881121",
       "sector_name": "半导体",
-      "strength_score": 84.01,
-      "momentum_score": 78.97,
-      "capital_consensus_score": 81.17,
-      "heat_score": 64.15,
+      "strength_score": 80.01,
+      "momentum_score": 74.97,
+      "capital_consensus_score": 77.17,
+      "heat_score": 60.15,
       "breadth_ratio": 0.6404
     },
     {
       "sector_code": "881263",
       "sector_name": "农化制品",
-      "strength_score": 92.46,
-      "momentum_score": 69.47,
-      "capital_consensus_score": 77.9,
-      "heat_score": 63.98,
+      "strength_score": 88.46,
+      "momentum_score": 65.47,
+      "capital_consensus_score": 73.9,
+      "heat_score": 59.98,
       "breadth_ratio": 0.85
     },
     {
       "sector_code": "881281",
       "sector_name": "电池",
-      "strength_score": 86.63,
-      "momentum_score": 71.04,
-      "capital_consensus_score": 78.62,
-      "heat_score": 66.5,
+      "strength_score": 82.63,
+      "momentum_score": 67.04,
+      "capital_consensus_score": 74.62,
+      "heat_score": 62.5,
       "breadth_ratio": 0.7212
     },
     {
       "sector_code": "881109",
       "sector_name": "化学制品",
-      "strength_score": 79.13,
-      "momentum_score": 75.73,
-      "capital_consensus_score": 74.86,
-      "heat_score": 59.4,
+      "strength_score": 75.13,
+      "momentum_score": 71.73,
+      "capital_consensus_score": 70.86,
+      "heat_score": 55.4,
       "breadth_ratio": 0.546
     }
   ],
   "market_news": [
     {
-      "title": "英特尔美股盘前大涨26%",
-      "summary": "英特尔美股盘前大涨26%，Q1财报超出市场预期。",
-      "publish_time": "2026-04-24T17:35:04",
-      "link": "https://finance.eastmoney.com/a/202604243718105242.html"
+      "title": "央行：4月27日将开展4000亿元MLF操作",
+      "summary": "【中国人民银行：4月27日将开展4000亿元MLF操作】为保持银行体系流动性充裕，2026年4月27日，中国人民银行将以固定数量、利率招标、多重价位中标方式开展4000亿元MLF操作，期限为1年期。",
+      "publish_time": "2026-04-24T18:01:20",
+      "link": "https://finance.eastmoney.com/a/202604243718137482.html"
     },
     {
-      "title": "中国人民银行等八部门发布《金融产品网络营销管理办法》",
-      "summary": "中国人民银行等八部门发布《金融产品网络营销管理办法》，自2026年9月30日起实施。",
-      "publish_time": "2026-04-24T17:32:24",
-      "link": "https://finance.eastmoney.com/a/202604243718096941.html"
+      "title": "国家能源局：一季度全国核发绿色电力证书6.98亿个",
+      "summary": "【国家能源局：一季度全国核发绿色电力证书6.98亿个】国家能源局今天公布数据显示，一季度，全国核发绿色电力证书6.98亿个，交易规模创历史新高，交易绿证达到2.40亿个，同比增长21.19%。制造业、数据中心等是绿色电力证书消费主力。",
+      "publish_time": "2026-04-24T17:57:37",
+      "link": "https://finance.eastmoney.com/a/202604243718134728.html"
     },
     {
-      "title": "锋龙股份：优必选要约收购结果出炉 4月27日复牌",
-      "summary": "【锋龙股份：优必选要约收购结果出炉 4月27日复牌】锋龙股份(002931.SZ)公告称，截至2026年4月20日，深圳市优必选科技股份有限公司对锋龙股份的要约收购期限届满。经向深交所申请，公司股票自2026年4月27日开市起复牌。",
-      "publish_time": "2026-04-24T17:30:17",
-      "link": "https://finance.eastmoney.com/a/202604243718101632.html"
+      "title": "渝开发：一季度净利润3228.5万元 同比下降82.03%",
+      "summary": "【渝开发：一季度净利润3228.5万元 同比下降82.03%】渝开发披露一季报，公司2026年一季度实现营业收入1.65亿元，同比增长113.90%；归母净利润3228.50万元，同比下降82.03%，主要系上年同期转让朗福公司1%股权确认相关投资收益、本期房地产销售结转规模增加、本期公允价值变动收益增加。",
+      "publish_time": "2026-04-24T17:56:25",
+      "link": "https://finance.eastmoney.com/a/202604243718134919.html"
     },
     {
-      "title": "无锡振华：拟现金收购德维嘉控股权",
-      "summary": "【无锡振华：拟现金收购德维嘉控股权】无锡振华(605319.SH)公告称，公司拟与德维嘉汽车电子系统(无锡)有限公司股东签署意向性协议，以自有或自筹资金现金方式收购德维嘉控股权。标的公司专注于Fakra、HFM等四类高频高速线束的研发与制造，广泛应用于智能驾驶及智能座舱等领域。",
-      "publish_time": "2026-04-24T17:29:19",
-      "link": "https://finance.eastmoney.com/a/202604243718104193.html"
+      "title": "中兴通讯：一季度净利润同比下降46.58%",
+      "summary": "【中兴通讯：一季度净利润同比下降46.58%】中兴通讯(000063.SZ)公告称，2026年第一季度实现营业收入349.88亿元，同比增长6.13%；归属于上市公司股东的净利润为13.10亿元，同比下降46.58%。公司Q1净利润13.1亿，2025年Q4净利润2.96亿，据此计算，Q1净利润环比增长343%。",
+      "publish_time": "2026-04-24T17:51:42",
+      "link": "https://finance.eastmoney.com/a/202604243718134482.html"
     },
     {
-      "title": "中国建筑：2026年1-3月新签合同额12613亿元",
-      "summary": "【中国建筑：2026年1-3月新签合同额12613亿元】中国建筑(601668.SH)公告称，公司发布2026年1-3月经营情况简报。一季度，公司新签合同总额12613亿元，同比下降0.7%。",
-      "publish_time": "2026-04-24T17:28:49",
-      "link": "https://finance.eastmoney.com/a/202604243718093516.html"
+      "title": "中科曙光：第一季度净利润同比增长22.19%",
+      "summary": "【中科曙光：第一季度净利润同比增长22.19%】中科曙光(603019.SH)公告称，2026年第一季度实现营业收入31.99亿元，同比增长23.71%；归属于上市公司股东的净利润为2.28亿元，同比增长22.19%。公司Q1净利润2.28亿，2025年Q4净利润12.1亿，据此计算，Q1净利润环比下降81%。",
+      "publish_time": "2026-04-24T17:50:48",
+      "link": "https://finance.eastmoney.com/a/202604243718134039.html"
     },
     {
-      "title": "中天科技：2025年度净利润29.02亿元 同比增长2.25%",
-      "summary": "【中天科技：2025年度净利润29.02亿元 同比增长2.25%】中天科技(600522.SH)公告称，公司发布2025年年度报告摘要，实现营业收入525.00亿元，同比增长9.24%；归属于上市公司股东的净利润为29.02亿元，同比增长2.25%。公司拟向全体股东每10股派发现金红利2.60元(含税)。",
-      "publish_time": "2026-04-24T17:27:03",
-      "link": "https://finance.eastmoney.com/a/202604243718094873.html"
+      "title": "怡达股份：电子级丙二醇甲醚和电子级丙二醇甲醚醋酸酯产品收入占比较小",
+      "summary": "【怡达股份：电子级丙二醇甲醚和电子级丙二醇甲醚醋酸酯产品收入占比较小】怡达股份(300721)公告称，公司近期关注到市场对公司电子级丙二醇甲醚和电子级丙二醇甲醚醋酸酯产品的关注。截至目前，上述产品正常生产经营，2025年销售收入占公司营业收入比例为3.87%，占比较小。",
+      "publish_time": "2026-04-24T17:50:15",
+      "link": "https://finance.eastmoney.com/a/202604243718130021.html"
     },
     {
-      "title": "中信证券：一季度归母净利润102.16亿元 同比增加54.60%",
-      "summary": "【中信证券：一季度归母净利润102.16亿元 同比增加54.60%】中信证券4月24日公告，2026年第一季度实现营业收入231.55亿元，同比增长40.91%；归属于上市公司股东的净利润102.16亿元，同比增长54.60%；基本每股收益0.67元。",
-      "publish_time": "2026-04-24T17:26:44",
-      "link": "https://finance.eastmoney.com/a/202604243718091526.html"
+      "title": "英特尔美股盘前大涨超30% Q1财报超出市场预期",
+      "summary": "英特尔美股盘前大涨超30%，Q1财报超出市场预期。",
+      "publish_time": "2026-04-24T17:49:44",
+      "link": "https://finance.eastmoney.com/a/202604243718125026.html"
     },
     {
-      "title": "骄成超声：第一季度净利润同比增长112.85%",
-      "summary": "【骄成超声：第一季度净利润同比增长112.85%】骄成超声(688392.SH)公告称，2026年第一季度实现营业收入1.98亿元，同比增长34.29%；归属于上市公司股东的净利润为5030.44万元，同比增长112.85%。",
-      "publish_time": "2026-04-24T17:21:49",
-      "link": "https://finance.eastmoney.com/a/202604243718083713.html"
+      "title": "中科西光航天发布“定量高光谱智算星座”",
+      "summary": "【中科西光航天发布“定量高光谱智算星座”】西安中科西光航天科技集团有限公司发布“定量高光谱智算星座”，将高光谱遥感与星上智能计算深度融合，实现从“天感地算”到“天数天算”的跨越。",
+      "publish_time": "2026-04-24T17:48:46",
+      "link": "https://finance.eastmoney.com/a/202604243718127221.html"
     }
   ],
   "strategy_modes": {
@@ -159,9 +159,9 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 93.62,
-          "event_score": 61.65,
-          "risk_adjusted_score": 92.07,
+          "base_score": 92.72,
+          "event_score": 66.47,
+          "risk_adjusted_score": 92.29,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -184,13 +184,13 @@
           ]
         },
         {
-          "symbol": "688141",
-          "name": "杰华特",
+          "symbol": "688041",
+          "name": "海光信息",
           "industry": "半导体",
           "rank": 2,
-          "base_score": 88.67,
-          "event_score": 57.0,
-          "risk_adjusted_score": 87.0,
+          "base_score": 85.82,
+          "event_score": 75.14,
+          "risk_adjusted_score": 88.25,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -199,56 +199,27 @@
             },
             {
               "label": "技术结构",
-              "detail": "杰华特 近 20 日收益 71.9%，技术分 89.8。"
+              "detail": "海光信息 近 20 日收益 30.3%，技术分 85.8。"
             },
             {
               "label": "事件辅助",
-              "detail": "2025年收入增长58%，高研发投入拖累利润"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "产品技术",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "rank": 3,
-          "base_score": 87.96,
-          "event_score": 58.04,
-          "risk_adjusted_score": 86.62,
-          "holding_window": "3-5D",
-          "reasons": [
-            {
-              "label": "行业轮动",
-              "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
-            },
-            {
-              "label": "技术结构",
-              "detail": "恩捷股份 近 20 日收益 10.0%，技术分 89.1。"
-            },
-            {
-              "label": "事件辅助",
-              "detail": "恩捷股份002812龙虎榜数据04-24)"
+              "detail": "OpenAI再添一把火，算力芯片股午后起飞"
             }
           ],
           "event_tags": [
             "产品技术",
-            "官方公告",
-            "官方公告"
+            "资金交易",
+            "资金交易"
           ]
         },
         {
           "symbol": "002407",
           "name": "多氟多",
           "industry": "化学制品",
-          "rank": 4,
-          "base_score": 88.25,
-          "event_score": 56.25,
-          "risk_adjusted_score": 86.52,
+          "rank": 3,
+          "base_score": 86.89,
+          "event_score": 66.8,
+          "risk_adjusted_score": 87.51,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -261,12 +232,41 @@
             },
             {
               "label": "事件辅助",
-              "detail": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
+              "detail": "多氟多002407龙虎榜数据04-24"
             }
           ],
           "event_tags": [
-            "业绩财报",
             "产品技术",
+            "业绩财报",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "rank": 4,
+          "base_score": 87.31,
+          "event_score": 64.98,
+          "risk_adjusted_score": 87.48,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "半导体 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "杰华特 近 20 日收益 71.9%，技术分 89.8。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "杰华特688141龙虎榜数据(04-24"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "资金交易",
             "官方公告"
           ]
         },
@@ -275,9 +275,9 @@
           "name": "中伟新材",
           "industry": "电池",
           "rank": 5,
-          "base_score": 88.15,
-          "event_score": 56.77,
-          "risk_adjusted_score": 86.52,
+          "base_score": 86.79,
+          "event_score": 63.12,
+          "risk_adjusted_score": 86.67,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -290,13 +290,13 @@
             },
             {
               "label": "事件辅助",
-              "detail": "2026年一季度业绩预告"
+              "detail": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
             }
           ],
           "event_tags": [
-            "官方公告",
-            "券商研报",
-            "券商研报"
+            "资金交易",
+            "资金交易",
+            "资金交易"
           ]
         }
       ],
@@ -305,12 +305,12 @@
           "symbol": "002466",
           "name": "天齐锂业",
           "industry": "能源金属",
-          "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 92.1，适合作为默认候选股跟踪。",
+          "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 92.3，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 82.61,
+              "value": 79.97,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -320,7 +320,7 @@
             },
             {
               "name": "事件强度",
-              "value": 61.65,
+              "value": 66.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -338,7 +338,7 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203710822774.html"
             },
@@ -350,21 +350,21 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203711123180.html"
             },
             {
-              "event_id": "bb56ff1c5345",
-              "title": "净利预增超15倍！千亿巨头，逼近涨停",
-              "publish_time": "2026-04-21T10:18:27",
-              "source": "大河财立方",
+              "event_id": "4fe8a0d53b7c",
+              "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+              "publish_time": "2026-04-20T18:25:34",
+              "source": "财联社",
               "source_category": "个股资讯",
               "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-              "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+              "link": "http://finance.eastmoney.com/a/202604203710807757.html"
             }
           ],
           "risk_plan": {
@@ -372,7 +372,7 @@
             "reference_price": 73.7,
             "stop_loss_price": 68.29,
             "stop_loss_pct": 0.0734,
-            "signal_quality_score": 88.58,
+            "signal_quality_score": 88.61,
             "take_profit_price_1": 83.44,
             "take_profit_pct_1": 0.1322,
             "take_profit_price_2": 89.93,
@@ -406,7 +406,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355554+00:00"
+            "generated_at": "2026-04-24T10:04:51.614121+00:00"
           },
           "risk_controls": [
             "止损线参考 68.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -419,16 +419,253 @@
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
           ]
         },
-        "688141": {
-          "symbol": "688141",
-          "name": "杰华特",
+        "688041": {
+          "symbol": "688041",
+          "name": "海光信息",
           "industry": "半导体",
-          "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.0，适合作为默认候选股跟踪。",
+          "thesis": "海光信息 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 88.2，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
+              "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.84,
+              "description": "20 日收益 30.3%，量能倍率 1.06，MA10 / MA20 / MA60 为 258.10 / 238.99 / 243.68。"
+            },
+            {
+              "name": "事件强度",
+              "value": 75.14,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.2%，换手 2.3%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "f8ed12e80f3b",
+              "title": "OpenAI再添一把火，算力芯片股午后起飞",
+              "publish_time": "2026-04-24T13:37:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "产品技术",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "午后，算力芯片概念持续走高，海光信息（688041）一度涨超11%，寒武纪、摩尔线程等跟涨。",
+              "link": "http://finance.eastmoney.com/a/202604243717838791.html"
+            },
+            {
+              "event_id": "124990593546",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 主力资金净流入排名 代码 简称 主力资金净流入（万元） 主力资金流入率（%） 涨跌幅（%） 换手率（%） 688808 C联讯 272653.27 23.89 875.82 78.66 688041 海光信息 123717.54 8.11 8.20 2.33 688981",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
+              "event_id": "849aa9509004",
+              "title": "64.50亿元资金今日流出电子股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 电子行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 688041 海光信息 8.20 2.33 123717.54 688981 中芯国际 4.70 4.55 100810.51 000062 深圳华强 9.99 10.73 84085.46",
+              "link": "http://finance.eastmoney.com/a/202604243718082526.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 285.0,
+            "stop_loss_price": 263.86,
+            "stop_loss_pct": 0.0742,
+            "signal_quality_score": 83.96,
+            "take_profit_price_1": 323.05,
+            "take_profit_pct_1": 0.1335,
+            "take_profit_price_2": 348.42,
+            "take_profit_pct_2": 0.2225,
+            "trailing_stop_price": 269.31,
+            "suggested_position_min": 0.0654,
+            "suggested_position_max": 0.0891,
+            "max_portfolio_risk": 0.0066,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 263.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 323.05 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 348.42 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 263.86 元作为防守位，并在 323.05 / 348.42 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.99，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：OpenAI再添一把火，算力芯片股午后起飞"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T10:04:51.614212+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 263.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 323.05 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 348.42 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "002407": {
+          "symbol": "002407",
+          "name": "多氟多",
+          "industry": "化学制品",
+          "thesis": "多氟多 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.5，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 69.47,
+              "description": "当前模式重点关注该维度。化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.82,
+              "description": "20 日收益 19.6%，量能倍率 1.42，MA10 / MA20 / MA60 为 30.68 / 29.31 / 29.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 66.8,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 18.5%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b16bcb5a5178",
+              "title": "多氟多002407龙虎榜数据04-24",
+              "publish_time": "2026-04-24T16:27:57",
+              "source": "东方财富Choice数据",
+              "source_category": "个股资讯",
+              "event_type": "产品技术",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
+              "link": "http://finance.eastmoney.com/a/202604243717978837.html"
+            },
+            {
+              "event_id": "6588f83a7e56",
+              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
+              "publish_time": "2026-04-23T17:14:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
+              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
+            },
+            {
+              "event_id": "5a271ba0ec75",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-24T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002407&announcementId=1225159579&orgId=9900012449&announcementTime=2026-04-24"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 33.04,
+            "stop_loss_price": 30.67,
+            "stop_loss_pct": 0.0719,
+            "signal_quality_score": 83.7,
+            "take_profit_price_1": 37.31,
+            "take_profit_pct_1": 0.1292,
+            "take_profit_price_2": 40.15,
+            "take_profit_pct_2": 0.2152,
+            "trailing_stop_price": 31.28,
+            "suggested_position_min": 0.0594,
+            "suggested_position_max": 0.081,
+            "max_portfolio_risk": 0.0058,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 30.67 元作为防守位，并在 37.31 / 40.15 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：多氟多002407龙虎榜数据04-24"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T10:04:51.614291+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688141": {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.5，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.11,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -438,7 +675,7 @@
             },
             {
               "name": "事件强度",
-              "value": 57.0,
+              "value": 64.98,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -448,18 +685,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
             {
               "event_id": "49b6522c2df4",
               "title": "杰华特688141龙虎榜数据(04-24",
@@ -473,13 +698,25 @@
               "link": "http://finance.eastmoney.com/a/202604243718033955.html"
             },
             {
+              "event_id": "9f8ce9b20542",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "寒武纪 40082.28 2.39 2.23 2.94 688347 华虹公司 35140.75 5.89 12.31 10.96 688008 澜起科技 34840.77 3.40 2.38 5.42 688702 盛科通信-U 28994.40 8.83 7.09 6.18 688141",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
               "event_id": "aff1263687ed",
               "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "publish_time": "2026-04-23T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
-              "sentiment": "positive",
+              "sentiment": "neutral",
               "impact_level": "medium",
               "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
@@ -490,7 +727,7 @@
             "reference_price": 83.1,
             "stop_loss_price": 76.62,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 83.52,
+            "signal_quality_score": 83.67,
             "take_profit_price_1": 94.76,
             "take_profit_pct_1": 0.1403,
             "take_profit_price_2": 102.54,
@@ -520,11 +757,11 @@
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "最近的重要事件提要：杰华特688141龙虎榜数据(04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355637+00:00"
+            "generated_at": "2026-04-24T10:04:51.614364+00:00"
           },
           "risk_controls": [
             "止损线参考 76.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -538,254 +775,16 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "002812": {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "thesis": "恩捷股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.6，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 76.8,
-              "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 89.08,
-              "description": "20 日收益 10.0%，量能倍率 1.41，MA10 / MA20 / MA60 为 72.15 / 70.30 / 64.11。"
-            },
-            {
-              "name": "事件强度",
-              "value": 58.04,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 8.0%，量比 1.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "92e828525b91",
-              "title": "恩捷股份002812龙虎榜数据04-24)",
-              "publish_time": "2026-04-24T16:27:57",
-              "source": "东方财富Choice数据",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "交易所2026年4月24日公布的交易公开信息显示，恩捷股份因成为日涨幅偏离值达到7%的前5只证券上榜。恩捷股份当日收报77.18元，涨跌幅10.01%，偏离值10.60%，换手率8.02%，成交额49.46亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
-              "link": "http://finance.eastmoney.com/a/202604243717978639.html"
-            },
-            {
-              "event_id": "058322d6f4bd",
-              "title": "关于股东部分股份质押变动的公告",
-              "publish_time": "2026-04-24T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于股东部分股份质押变动的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165557&orgId=9900026450&announcementTime=2026-04-24"
-            },
-            {
-              "event_id": "1a78e021820a",
-              "title": "关于公司合并报表范围内提供担保的进展公告",
-              "publish_time": "2026-04-24T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于公司合并报表范围内提供担保的进展公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165556&orgId=9900026450&announcementTime=2026-04-24"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 77.18,
-            "stop_loss_price": 71.34,
-            "stop_loss_pct": 0.0756,
-            "signal_quality_score": 83.08,
-            "take_profit_price_1": 87.69,
-            "take_profit_pct_1": 0.1362,
-            "take_profit_price_2": 94.7,
-            "take_profit_pct_2": 0.227,
-            "trailing_stop_price": 72.85,
-            "suggested_position_min": 0.0582,
-            "suggested_position_max": 0.0795,
-            "max_portfolio_risk": 0.006,
-            "risk_reward_ratio": 1.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 71.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 87.69 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 94.70 元，若继续上行则把跟踪止损上移到 72.85 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 71.34 元作为防守位，并在 87.69 / 94.70 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 4.20，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：恩捷股份002812龙虎榜数据04-24)"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355720+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 71.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 87.69 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 94.70 元，若继续上行则把跟踪止损上移到 72.85 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "002407": {
-          "symbol": "002407",
-          "name": "多氟多",
-          "industry": "化学制品",
-          "thesis": "多氟多 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.5，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 73.47,
-              "description": "当前模式重点关注该维度。化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 92.82,
-              "description": "20 日收益 19.6%，量能倍率 1.42，MA10 / MA20 / MA60 为 30.68 / 29.31 / 29.21。"
-            },
-            {
-              "name": "事件强度",
-              "value": 56.25,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 18.5%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "6588f83a7e56",
-              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
-              "publish_time": "2026-04-23T17:14:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
-              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
-            },
-            {
-              "event_id": "b16bcb5a5178",
-              "title": "多氟多002407龙虎榜数据04-24",
-              "publish_time": "2026-04-24T16:27:57",
-              "source": "东方财富Choice数据",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
-              "link": "http://finance.eastmoney.com/a/202604243717978837.html"
-            },
-            {
-              "event_id": "5a271ba0ec75",
-              "title": "2026年一季度报告",
-              "publish_time": "2026-04-24T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "2026年一季度报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002407&announcementId=1225159579&orgId=9900012449&announcementTime=2026-04-24"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 33.04,
-            "stop_loss_price": 30.67,
-            "stop_loss_pct": 0.0719,
-            "signal_quality_score": 83.13,
-            "take_profit_price_1": 37.31,
-            "take_profit_pct_1": 0.1292,
-            "take_profit_price_2": 40.15,
-            "take_profit_pct_2": 0.2152,
-            "trailing_stop_price": 31.28,
-            "suggested_position_min": 0.0593,
-            "suggested_position_max": 0.081,
-            "max_portfolio_risk": 0.0058,
-            "risk_reward_ratio": 1.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 30.67 元作为防守位，并在 37.31 / 40.15 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355781+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
         "300919": {
           "symbol": "300919",
           "name": "中伟新材",
           "industry": "电池",
-          "thesis": "中伟新材 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.5，适合作为默认候选股跟踪。",
+          "thesis": "中伟新材 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.7，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 76.8,
+              "value": 72.8,
               "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -795,7 +794,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.77,
+              "value": 63.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -806,40 +805,40 @@
           ],
           "recent_events": [
             {
-              "event_id": "515ff9528429",
-              "title": "2026年一季度业绩预告",
-              "publish_time": "2026-04-08T19:26:29",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年一季度业绩预告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300919&announcementId=1225085744&orgId=nssc1000144&announcementTime=2026-04-08 19:26:29"
-            },
-            {
-              "event_id": "1b086b6f3a7b",
-              "title": "26Q1业绩预告点评：镍贡献利润弹性+三元抢出口，Q1业绩超预期",
-              "publish_time": "2026-04-10T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "2fa9ec26e757",
+              "title": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：东吴证券；评级：买入；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604101821111631_1.pdf"
+              "summary": "605376 博迁新材 2.44 4.00 9404.36 7.67 300618 寒锐钴业 4.26 6.12 5572.13 7.22 301500 飞南资源 -0.12 12.74 4729.04 10.13 601168 西部矿业 0.62 1.75 3627.24 3.03 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718075375.html"
             },
             {
-              "event_id": "be13b066ff88",
-              "title": "三元前驱体出货显著回暖，钴系磷系材料稳健发展",
-              "publish_time": "2025-10-30T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "4d17e1e573f2",
+              "title": "盐湖提锂概念涨2.49%，主力资金净流入这些股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510301771859076_1.pdf"
+              "summary": "000408 藏格矿业 3.39 0.97 10081.99 7.43 600499 科达制造 9.99 3.28 7401.80 6.06 601168 西部矿业 0.62 1.75 3627.24 3.03 600773 西藏城投 5.20 4.11 2692.97 2.85 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718077646.html"
+            },
+            {
+              "event_id": "6154022be77a",
+              "title": "磷化工概念上涨1.82%，8股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "603906 龙蟠科技 6.93 16.13 3598.09 1.26 600470 六国化工 3.36 12.46 3431.28 7.48 688275 万润新能 1.44 4.17 2985.88 3.94 002556 辉隆股份 6.84 4.32 2803.49 10.45 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718076058.html"
             }
           ],
           "risk_plan": {
@@ -847,13 +846,13 @@
             "reference_price": 61.38,
             "stop_loss_price": 57.62,
             "stop_loss_pct": 0.0613,
-            "signal_quality_score": 83.04,
+            "signal_quality_score": 82.94,
             "take_profit_price_1": 68.15,
             "take_profit_pct_1": 0.1103,
             "take_profit_price_2": 72.66,
             "take_profit_pct_2": 0.1838,
             "trailing_stop_price": 58.59,
-            "suggested_position_min": 0.0732,
+            "suggested_position_min": 0.0731,
             "suggested_position_max": 0.1,
             "max_portfolio_risk": 0.0061,
             "risk_reward_ratio": 1.8,
@@ -877,11 +876,11 @@
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2026年一季度业绩预告"
+              "最近的重要事件提要：金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355842+00:00"
+            "generated_at": "2026-04-24T10:04:51.614437+00:00"
           },
           "risk_controls": [
             "止损线参考 57.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -916,8 +915,8 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 93.62,
-          "event_score": 61.65,
+          "base_score": 92.72,
+          "event_score": 66.47,
           "risk_adjusted_score": 100,
           "holding_window": "2-4D",
           "reasons": [
@@ -927,7 +926,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 82.6，个股当日涨幅 8.4%，具备主线扩散跟涨条件。"
+              "detail": "板块分 80.0，个股当日涨幅 8.4%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -941,100 +940,13 @@
           ]
         },
         {
-          "symbol": "688141",
-          "name": "杰华特",
-          "industry": "半导体",
-          "rank": 2,
-          "base_score": 88.67,
-          "event_score": 57.0,
-          "risk_adjusted_score": 95.78,
-          "holding_window": "2-4D",
-          "reasons": [
-            {
-              "label": "行业强度",
-              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
-            },
-            {
-              "label": "扩散确认",
-              "detail": "板块分 78.1，个股当日涨幅 16.0%，具备主线扩散跟涨条件。"
-            },
-            {
-              "label": "交易关注",
-              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "产品技术",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "688347",
-          "name": "华虹公司",
-          "industry": "半导体",
-          "rank": 3,
-          "base_score": 88.24,
-          "event_score": 54.54,
-          "risk_adjusted_score": 95.17,
-          "holding_window": "2-4D",
-          "reasons": [
-            {
-              "label": "行业强度",
-              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
-            },
-            {
-              "label": "扩散确认",
-              "detail": "板块分 78.1，个股当日涨幅 12.3%，具备主线扩散跟涨条件。"
-            },
-            {
-              "label": "交易关注",
-              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
-            }
-          ],
-          "event_tags": [
-            "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "688041",
-          "name": "海光信息",
-          "industry": "半导体",
-          "rank": 4,
-          "base_score": 87.18,
-          "event_score": 58.17,
-          "risk_adjusted_score": 94.82,
-          "holding_window": "2-4D",
-          "reasons": [
-            {
-              "label": "行业强度",
-              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
-            },
-            {
-              "label": "扩散确认",
-              "detail": "板块分 78.1，个股当日涨幅 8.2%，具备主线扩散跟涨条件。"
-            },
-            {
-              "label": "交易关注",
-              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
-            }
-          ],
-          "event_tags": [
-            "产品技术",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
           "symbol": "002460",
           "name": "赣锋锂业",
           "industry": "能源金属",
-          "rank": 5,
-          "base_score": 85.19,
-          "event_score": 58.79,
-          "risk_adjusted_score": 94.2,
+          "rank": 2,
+          "base_score": 78.71,
+          "event_score": 65.69,
+          "risk_adjusted_score": 90.33,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1043,7 +955,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 82.6，个股当日涨幅 6.4%，具备主线扩散跟涨条件。"
+              "detail": "板块分 80.0，个股当日涨幅 6.4%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -1052,8 +964,95 @@
           ],
           "event_tags": [
             "业绩财报",
-            "官方公告",
-            "产品技术"
+            "资金交易",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "688041",
+          "name": "海光信息",
+          "industry": "半导体",
+          "rank": 3,
+          "base_score": 85.82,
+          "event_score": 75.14,
+          "risk_adjusted_score": 90.18,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 74.1，个股当日涨幅 8.2%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "资金交易",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "rank": 4,
+          "base_score": 87.31,
+          "event_score": 64.98,
+          "risk_adjusted_score": 90.06,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 74.1，个股当日涨幅 16.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "资金交易",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688347",
+          "name": "华虹公司",
+          "industry": "半导体",
+          "rank": 5,
+          "base_score": 86.88,
+          "event_score": 60.47,
+          "risk_adjusted_score": 89.2,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "半导体 位于当前强势行业前列，属于 能源金属, 半导体, 农化制品 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 74.1，个股当日涨幅 12.3%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "资金交易",
+            "官方公告"
           ]
         }
       ],
@@ -1067,7 +1066,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 82.61,
+              "value": 79.97,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1077,7 +1076,7 @@
             },
             {
               "name": "事件强度",
-              "value": 61.65,
+              "value": 66.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1095,7 +1094,7 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203710822774.html"
             },
@@ -1107,21 +1106,21 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203711123180.html"
             },
             {
-              "event_id": "bb56ff1c5345",
-              "title": "净利预增超15倍！千亿巨头，逼近涨停",
-              "publish_time": "2026-04-21T10:18:27",
-              "source": "大河财立方",
+              "event_id": "4fe8a0d53b7c",
+              "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+              "publish_time": "2026-04-20T18:25:34",
+              "source": "财联社",
               "source_category": "个股资讯",
               "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-              "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+              "link": "http://finance.eastmoney.com/a/202604203710807757.html"
             }
           ],
           "risk_plan": {
@@ -1129,7 +1128,7 @@
             "reference_price": 73.7,
             "stop_loss_price": 67.94,
             "stop_loss_pct": 0.0781,
-            "signal_quality_score": 88.58,
+            "signal_quality_score": 88.61,
             "take_profit_price_1": 84.64,
             "take_profit_pct_1": 0.1484,
             "take_profit_price_2": 91.56,
@@ -1163,12 +1162,248 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355928+00:00"
+            "generated_at": "2026-04-24T10:04:51.614555+00:00"
           },
           "risk_controls": [
             "止损线参考 67.94 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
             "第一止盈位参考 84.64 元，可考虑先兑现部分利润。",
             "第二止盈位参考 91.56 元，若继续上行则把跟踪止损上移到 69.69 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "002460": {
+          "symbol": "002460",
+          "name": "赣锋锂业",
+          "industry": "能源金属",
+          "thesis": "赣锋锂业 属于 能源金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.97,
+              "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 76.59,
+              "description": "20 日收益 17.3%，量能倍率 0.74，MA10 / MA20 / MA60 为 83.77 / 81.94 / 73.23。"
+            },
+            {
+              "name": "事件强度",
+              "value": 65.69,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 80.06,
+              "description": "日内涨幅 6.4%，换手 8.0%，量比 1.34。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "645b5c57840a",
+              "title": "赣锋锂业002460.SZ)：预计一季度扭亏为盈，净利润最高预增690%达21亿元",
+              "publish_time": "2026-04-16T20:17:33",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "2026年4月16日，江西赣锋锂业集团股份有限公司（002460.SZ）发布2026年第一季度业绩预告。公司预计报告期内实现归属于上市公司股东的净利润为16亿元至21亿元，上年同期亏损3.56亿元，同比增长549.65%–690.17%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707701352.html"
+            },
+            {
+              "event_id": "85342e25f574",
+              "title": "盐湖提锂概念涨2.49%，主力资金净流入这些股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 盐湖提锂概念资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 主力资金净流入比率（%） 002466 天齐锂业 8.43 9.16 113502.11 11.74 002460 赣锋锂业 6.40 8.01 106884.26 13.24",
+              "link": "http://finance.eastmoney.com/a/202604243718077646.html"
+            },
+            {
+              "event_id": "138a59e2fdb4",
+              "title": "有色金属行业4月24日资金流向日报",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 有色金属行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 002466 天齐锂业 8.43 9.16 113502.11 002460 赣锋锂业 6.40 8.01 106884.26 603799 华友钴业 4.11 4.59",
+              "link": "http://finance.eastmoney.com/a/202604243718082645.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 84.99,
+            "stop_loss_price": 80.96,
+            "stop_loss_pct": 0.0475,
+            "signal_quality_score": 76.56,
+            "take_profit_price_1": 92.65,
+            "take_profit_pct_1": 0.0901,
+            "take_profit_price_2": 97.48,
+            "take_profit_pct_2": 0.147,
+            "trailing_stop_price": 83.09,
+            "suggested_position_min": 0.0854,
+            "suggested_position_max": 0.12,
+            "max_portfolio_risk": 0.0057,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "跟踪持有",
+            "action_note": "当前价格仍处在趋势保护带上方，更适合按纪律跟踪，而不是频繁换股。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 80.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 92.65 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 97.48 元，若继续上行则把跟踪止损上移到 83.09 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 跟踪持有。规则建议以 80.96 元作为防守位，并在 92.65 / 97.48 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：赣锋锂业002460.SZ)：预计一季度扭亏为盈，净利润最高预增690%达21亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T10:04:51.614628+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 80.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 92.65 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 97.48 元，若继续上行则把跟踪止损上移到 83.09 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "688041": {
+          "symbol": "688041",
+          "name": "海光信息",
+          "industry": "半导体",
+          "thesis": "海光信息 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.11,
+              "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.84,
+              "description": "20 日收益 30.3%，量能倍率 1.06，MA10 / MA20 / MA60 为 258.10 / 238.99 / 243.68。"
+            },
+            {
+              "name": "事件强度",
+              "value": 75.14,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.2%，换手 2.3%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "f8ed12e80f3b",
+              "title": "OpenAI再添一把火，算力芯片股午后起飞",
+              "publish_time": "2026-04-24T13:37:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "产品技术",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "午后，算力芯片概念持续走高，海光信息（688041）一度涨超11%，寒武纪、摩尔线程等跟涨。",
+              "link": "http://finance.eastmoney.com/a/202604243717838791.html"
+            },
+            {
+              "event_id": "124990593546",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 主力资金净流入排名 代码 简称 主力资金净流入（万元） 主力资金流入率（%） 涨跌幅（%） 换手率（%） 688808 C联讯 272653.27 23.89 875.82 78.66 688041 海光信息 123717.54 8.11 8.20 2.33 688981",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
+              "event_id": "849aa9509004",
+              "title": "64.50亿元资金今日流出电子股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（数据宝） 电子行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 688041 海光信息 8.20 2.33 123717.54 688981 中芯国际 4.70 4.55 100810.51 000062 深圳华强 9.99 10.73 84085.46",
+              "link": "http://finance.eastmoney.com/a/202604243718082526.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 285.0,
+            "stop_loss_price": 262.49,
+            "stop_loss_pct": 0.079,
+            "signal_quality_score": 83.96,
+            "take_profit_price_1": 327.77,
+            "take_profit_pct_1": 0.1501,
+            "take_profit_price_2": 354.78,
+            "take_profit_pct_2": 0.2448,
+            "trailing_stop_price": 269.31,
+            "suggested_position_min": 0.0676,
+            "suggested_position_max": 0.092,
+            "max_portfolio_risk": 0.0073,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 262.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 327.77 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 354.78 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 262.49 元作为防守位，并在 327.77 / 354.78 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.99，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：OpenAI再添一把火，算力芯片股午后起飞"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T10:04:51.614698+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 262.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 327.77 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 354.78 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -1186,7 +1421,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1196,7 +1431,7 @@
             },
             {
               "name": "事件强度",
-              "value": 57.0,
+              "value": 64.98,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1206,18 +1441,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
             {
               "event_id": "49b6522c2df4",
               "title": "杰华特688141龙虎榜数据(04-24",
@@ -1231,13 +1454,25 @@
               "link": "http://finance.eastmoney.com/a/202604243718033955.html"
             },
             {
+              "event_id": "9f8ce9b20542",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "寒武纪 40082.28 2.39 2.23 2.94 688347 华虹公司 35140.75 5.89 12.31 10.96 688008 澜起科技 34840.77 3.40 2.38 5.42 688702 盛科通信-U 28994.40 8.83 7.09 6.18 688141",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
               "event_id": "aff1263687ed",
               "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "publish_time": "2026-04-23T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
-              "sentiment": "positive",
+              "sentiment": "neutral",
               "impact_level": "medium",
               "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
@@ -1248,7 +1483,7 @@
             "reference_price": 83.1,
             "stop_loss_price": 76.29,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 83.52,
+            "signal_quality_score": 83.67,
             "take_profit_price_1": 96.04,
             "take_profit_pct_1": 0.1557,
             "take_profit_price_2": 104.21,
@@ -1278,11 +1513,11 @@
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "最近的重要事件提要：杰华特688141龙虎榜数据(04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.355985+00:00"
+            "generated_at": "2026-04-24T10:04:51.614773+00:00"
           },
           "risk_controls": [
             "止损线参考 76.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1306,7 +1541,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1316,7 +1551,7 @@
             },
             {
               "name": "事件强度",
-              "value": 54.54,
+              "value": 60.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1358,7 +1593,7 @@
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "neutral",
-              "impact_level": "medium",
+              "impact_level": "low",
               "summary": "港股公告：2025年度报告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688347&announcementId=1225089351&orgId=9900029531&announcementTime=2026-04-10"
             }
@@ -1368,7 +1603,7 @@
             "reference_price": 138.8,
             "stop_loss_price": 127.42,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 82.73,
+            "signal_quality_score": 82.56,
             "take_profit_price_1": 160.42,
             "take_profit_pct_1": 0.1558,
             "take_profit_price_2": 174.08,
@@ -1402,7 +1637,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356044+00:00"
+            "generated_at": "2026-04-24T10:04:51.614842+00:00"
           },
           "risk_controls": [
             "止损线参考 127.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1416,18 +1651,181 @@
             "若所属行业跌出强势行业前五，优先降低该模式暴露。",
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业强度",
+          "资金共识",
+          "龙头扩散"
+        ]
+      }
+    },
+    "event_driven": {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D",
+      "items": [
+        {
+          "symbol": "688041",
+          "name": "海光信息",
+          "industry": "半导体",
+          "rank": 1,
+          "base_score": 85.82,
+          "event_score": 75.14,
+          "risk_adjusted_score": 94.33,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "OpenAI再添一把火，算力芯片股午后起飞"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 75.1，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "资金交易",
+            "资金交易"
+          ]
         },
+        {
+          "symbol": "002466",
+          "name": "天齐锂业",
+          "industry": "能源金属",
+          "rank": 2,
+          "base_score": 92.72,
+          "event_score": 66.47,
+          "risk_adjusted_score": 94.02,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "天齐锂业：一季度净利润同比预增1530.31%—1818.01%"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 66.5，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "业绩财报",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
+          "symbol": "002407",
+          "name": "多氟多",
+          "industry": "化学制品",
+          "rank": 3,
+          "base_score": 86.89,
+          "event_score": 66.8,
+          "risk_adjusted_score": 90.99,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "多氟多002407龙虎榜数据04-24"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 66.8，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "业绩财报",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002812",
+          "name": "恩捷股份",
+          "industry": "电池",
+          "rank": 4,
+          "base_score": 85.59,
+          "event_score": 67.54,
+          "risk_adjusted_score": 90.66,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "恩捷股份002812龙虎榜数据04-24)"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 67.5，情绪分 96.4，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "300613",
+          "name": "富瀚微",
+          "industry": "半导体",
+          "rank": 5,
+          "base_score": 80.66,
+          "event_score": 68.12,
+          "risk_adjusted_score": 88.8,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "富瀚微300613龙虎榜数据04-24)"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 68.1，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "业绩财报",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
         "688041": {
           "symbol": "688041",
           "name": "海光信息",
           "industry": "半导体",
-          "thesis": "海光信息 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "thesis": "海光信息 的新闻事件打分为 75.1，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
-              "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+              "value": 74.11,
+              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
@@ -1436,8 +1834,8 @@
             },
             {
               "name": "事件强度",
-              "value": 58.17,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+              "value": 75.14,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
@@ -1459,52 +1857,52 @@
               "link": "http://finance.eastmoney.com/a/202604243717838791.html"
             },
             {
-              "event_id": "015cb6af0444",
-              "title": "海光信息技术股份有限公司关于参与十五五·科技自立自强——科创板集成电路核心技术攻关之2025年度数字芯片设计行业集体业绩说明会的公告",
-              "publish_time": "2026-04-21T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "124990593546",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "海光信息技术股份有限公司关于参与十五五·科技自立自强——科创板集成电路核心技术攻关之2025年度数字芯片设计行业集体业绩说明会的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688041&announcementId=1225125807&orgId=9900048365&announcementTime=2026-04-21"
+              "summary": "（数据宝） 主力资金净流入排名 代码 简称 主力资金净流入（万元） 主力资金流入率（%） 涨跌幅（%） 换手率（%） 688808 C联讯 272653.27 23.89 875.82 78.66 688041 海光信息 123717.54 8.11 8.20 2.33 688981",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
             },
             {
-              "event_id": "c7410f57c517",
-              "title": "中信证券股份有限公司关于海光信息技术股份有限公司持续督导保荐总结报告书",
-              "publish_time": "2026-04-22T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "849aa9509004",
+              "title": "64.50亿元资金今日流出电子股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于海光信息技术股份有限公司持续督导保荐总结报告书",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688041&announcementId=1225137011&orgId=9900048365&announcementTime=2026-04-22"
+              "summary": "（数据宝） 电子行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 688041 海光信息 8.20 2.33 123717.54 688981 中芯国际 4.70 4.55 100810.51 000062 深圳华强 9.99 10.73 84085.46",
+              "link": "http://finance.eastmoney.com/a/202604243718082526.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
             "reference_price": 285.0,
-            "stop_loss_price": 262.49,
-            "stop_loss_pct": 0.079,
-            "signal_quality_score": 82.36,
-            "take_profit_price_1": 327.77,
-            "take_profit_pct_1": 0.1501,
-            "take_profit_price_2": 354.78,
-            "take_profit_pct_2": 0.2448,
+            "stop_loss_price": 265.9,
+            "stop_loss_pct": 0.067,
+            "signal_quality_score": 83.96,
+            "take_profit_price_1": 317.47,
+            "take_profit_pct_1": 0.1139,
+            "take_profit_price_2": 338.48,
+            "take_profit_pct_2": 0.1876,
             "trailing_stop_price": 269.31,
-            "suggested_position_min": 0.0654,
-            "suggested_position_max": 0.0896,
-            "max_portfolio_risk": 0.0071,
-            "risk_reward_ratio": 1.9,
+            "suggested_position_min": 0.0624,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0057,
+            "risk_reward_ratio": 1.7,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 262.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 327.77 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 354.78 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+              "止损线参考 265.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 317.47 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 338.48 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -1514,320 +1912,38 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 262.49 元作为防守位，并在 327.77 / 354.78 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 265.90 元作为防守位，并在 317.47 / 338.48 元分批兑现。",
             "highlights": [
-              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.99，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
               "最近的重要事件提要：OpenAI再添一把火，算力芯片股午后起飞"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356108+00:00"
+            "generated_at": "2026-04-24T10:04:51.614946+00:00"
           },
           "risk_controls": [
-            "止损线参考 262.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 327.77 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 354.78 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+            "止损线参考 265.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 317.47 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 338.48 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
           ]
         },
-        "002460": {
-          "symbol": "002460",
-          "name": "赣锋锂业",
-          "industry": "能源金属",
-          "thesis": "赣锋锂业 属于 能源金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 82.61,
-              "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 76.59,
-              "description": "20 日收益 17.3%，量能倍率 0.74，MA10 / MA20 / MA60 为 83.77 / 81.94 / 73.23。"
-            },
-            {
-              "name": "事件强度",
-              "value": 58.79,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 6.4%，换手 8.0%，量比 1.34。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "645b5c57840a",
-              "title": "赣锋锂业002460.SZ)：预计一季度扭亏为盈，净利润最高预增690%达21亿元",
-              "publish_time": "2026-04-16T20:17:33",
-              "source": "界面新闻",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年4月16日，江西赣锋锂业集团股份有限公司（002460.SZ）发布2026年第一季度业绩预告。公司预计报告期内实现归属于上市公司股东的净利润为16亿元至21亿元，上年同期亏损3.56亿元，同比增长549.65%–690.17%，实现扭亏为盈。",
-              "link": "http://finance.eastmoney.com/a/202604163707701352.html"
-            },
-            {
-              "event_id": "052661f78cf7",
-              "title": "2026年第一季度业绩预告",
-              "publish_time": "2026-04-17T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年第一季度业绩预告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002460&announcementId=1225111388&orgId=9900013787&announcementTime=2026-04-17"
-            },
-            {
-              "event_id": "b4909551d7fc",
-              "title": "赣锋锂业间接参股公司358万元项目环评获同意",
-              "publish_time": "2026-04-22T11:03:45",
-              "source": "每日经济新闻",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "每经AI快讯，“A股绿色报告”项目监控到的数据显示，赣锋锂业（SZ002460）间接参股公司通合联创（乐业）新能源有限公司百色市乐业县同乐300MW／600MWh新型储能电站项目220kV送出线路工程环评审批获同意。该项目总投资额达358万元。",
-              "link": "http://finance.eastmoney.com/a/202604223713772433.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 84.99,
-            "stop_loss_price": 80.96,
-            "stop_loss_pct": 0.0475,
-            "signal_quality_score": 80.58,
-            "take_profit_price_1": 92.65,
-            "take_profit_pct_1": 0.0901,
-            "take_profit_price_2": 97.48,
-            "take_profit_pct_2": 0.147,
-            "trailing_stop_price": 83.09,
-            "suggested_position_min": 0.0869,
-            "suggested_position_max": 0.12,
-            "max_portfolio_risk": 0.0057,
-            "risk_reward_ratio": 1.9,
-            "action_bias": "跟踪持有",
-            "action_note": "当前价格仍处在趋势保护带上方，更适合按纪律跟踪，而不是频繁换股。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 80.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 92.65 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 97.48 元，若继续上行则把跟踪止损上移到 83.09 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 行业轮动优先 模式，当前更适合 跟踪持有。规则建议以 80.96 元作为防守位，并在 92.65 / 97.48 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 3.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：赣锋锂业002460.SZ)：预计一季度扭亏为盈，净利润最高预增690%达21亿元"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356165+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 80.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 92.65 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 97.48 元，若继续上行则把跟踪止损上移到 83.09 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
-          ]
-        }
-      },
-      "selection_meta": {
-        "candidate_count": 5,
-        "preferred_features": [
-          "行业强度",
-          "资金共识",
-          "龙头扩散"
-        ]
-      }
-    },
-    "event_driven": {
-      "mode_id": "event_driven",
-      "display_name": "消息事件驱动",
-      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
-      "holding_window": "1-3D",
-      "items": [
-        {
-          "symbol": "002466",
-          "name": "天齐锂业",
-          "industry": "能源金属",
-          "rank": 1,
-          "base_score": 93.62,
-          "event_score": 61.65,
-          "risk_adjusted_score": 84.43,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "天齐锂业：一季度净利润同比预增1530.31%—1818.01%"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 61.6，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "业绩财报",
-            "业绩财报",
-            "业绩财报"
-          ]
-        },
-        {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "rank": 2,
-          "base_score": 87.96,
-          "event_score": 58.04,
-          "risk_adjusted_score": 79.93,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "恩捷股份002812龙虎榜数据04-24)"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 58.0，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "产品技术",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "688141",
-          "name": "杰华特",
-          "industry": "半导体",
-          "rank": 3,
-          "base_score": 88.67,
-          "event_score": 57.0,
-          "risk_adjusted_score": 79.86,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "2025年收入增长58%，高研发投入拖累利润"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 57.0，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "产品技术",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "688041",
-          "name": "海光信息",
-          "industry": "半导体",
-          "rank": 4,
-          "base_score": 87.18,
-          "event_score": 58.17,
-          "risk_adjusted_score": 79.67,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "OpenAI再添一把火，算力芯片股午后起飞"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 58.2，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "产品技术",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "300919",
-          "name": "中伟新材",
-          "industry": "电池",
-          "rank": 5,
-          "base_score": 88.15,
-          "event_score": 56.77,
-          "risk_adjusted_score": 79.46,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "2026年一季度业绩预告"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 56.8，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "券商研报",
-            "券商研报"
-          ]
-        }
-      ],
-      "stock_details": {
         "002466": {
           "symbol": "002466",
           "name": "天齐锂业",
           "industry": "能源金属",
-          "thesis": "天齐锂业 的新闻事件打分为 61.6，适合做盘前消息驱动的重点观察。",
+          "thesis": "天齐锂业 的新闻事件打分为 66.5，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 82.61,
+              "value": 79.97,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1837,7 +1953,7 @@
             },
             {
               "name": "事件强度",
-              "value": 61.65,
+              "value": 66.47,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1855,7 +1971,7 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203710822774.html"
             },
@@ -1867,21 +1983,21 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203711123180.html"
             },
             {
-              "event_id": "bb56ff1c5345",
-              "title": "净利预增超15倍！千亿巨头，逼近涨停",
-              "publish_time": "2026-04-21T10:18:27",
-              "source": "大河财立方",
+              "event_id": "4fe8a0d53b7c",
+              "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+              "publish_time": "2026-04-20T18:25:34",
+              "source": "财联社",
               "source_category": "个股资讯",
               "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-              "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+              "link": "http://finance.eastmoney.com/a/202604203710807757.html"
             }
           ],
           "risk_plan": {
@@ -1889,7 +2005,7 @@
             "reference_price": 73.7,
             "stop_loss_price": 68.81,
             "stop_loss_pct": 0.0663,
-            "signal_quality_score": 88.58,
+            "signal_quality_score": 88.61,
             "take_profit_price_1": 82.01,
             "take_profit_pct_1": 0.1128,
             "take_profit_price_2": 87.39,
@@ -1923,7 +2039,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356255+00:00"
+            "generated_at": "2026-04-24T10:04:51.615013+00:00"
           },
           "risk_controls": [
             "止损线参考 68.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1937,16 +2053,136 @@
             "若 48 小时内没有新增催化，优先从消息面模式里移除。"
           ]
         },
-        "002812": {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "thesis": "恩捷股份 的新闻事件打分为 58.0，适合做盘前消息驱动的重点观察。",
+        "002407": {
+          "symbol": "002407",
+          "name": "多氟多",
+          "industry": "化学制品",
+          "thesis": "多氟多 的新闻事件打分为 66.8，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 76.8,
+              "value": 69.47,
+              "description": "化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.82,
+              "description": "20 日收益 19.6%，量能倍率 1.42，MA10 / MA20 / MA60 为 30.68 / 29.31 / 29.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 66.8,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 18.5%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b16bcb5a5178",
+              "title": "多氟多002407龙虎榜数据04-24",
+              "publish_time": "2026-04-24T16:27:57",
+              "source": "东方财富Choice数据",
+              "source_category": "个股资讯",
+              "event_type": "产品技术",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
+              "link": "http://finance.eastmoney.com/a/202604243717978837.html"
+            },
+            {
+              "event_id": "6588f83a7e56",
+              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
+              "publish_time": "2026-04-23T17:14:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
+              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
+            },
+            {
+              "event_id": "5a271ba0ec75",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-24T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002407&announcementId=1225159579&orgId=9900012449&announcementTime=2026-04-24"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 33.04,
+            "stop_loss_price": 30.89,
+            "stop_loss_pct": 0.0649,
+            "signal_quality_score": 83.7,
+            "take_profit_price_1": 36.69,
+            "take_profit_pct_1": 0.1105,
+            "take_profit_price_2": 39.06,
+            "take_profit_pct_2": 0.1822,
+            "trailing_stop_price": 31.28,
+            "suggested_position_min": 0.057,
+            "suggested_position_max": 0.0777,
+            "max_portfolio_risk": 0.005,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.89 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 36.69 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 39.06 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 30.89 元作为防守位，并在 36.69 / 39.06 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：多氟多002407龙虎榜数据04-24"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T10:04:51.615080+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.89 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 36.69 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 39.06 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002812": {
+          "symbol": "002812",
+          "name": "恩捷股份",
+          "industry": "电池",
+          "thesis": "恩捷股份 的新闻事件打分为 67.5，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.8,
               "description": "电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1956,12 +2192,12 @@
             },
             {
               "name": "事件强度",
-              "value": 58.04,
+              "value": 67.54,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 100,
+              "value": 96.37,
               "description": "日内涨幅 10.0%，换手 8.0%，量比 1.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
@@ -2008,13 +2244,13 @@
             "reference_price": 77.18,
             "stop_loss_price": 71.91,
             "stop_loss_pct": 0.0683,
-            "signal_quality_score": 83.08,
+            "signal_quality_score": 82.68,
             "take_profit_price_1": 86.14,
             "take_profit_pct_1": 0.1161,
             "take_profit_price_2": 91.94,
             "take_profit_pct_2": 0.1912,
             "trailing_stop_price": 72.85,
-            "suggested_position_min": 0.0558,
+            "suggested_position_min": 0.0557,
             "suggested_position_max": 0.0763,
             "max_portfolio_risk": 0.0052,
             "risk_reward_ratio": 1.7,
@@ -2042,7 +2278,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356311+00:00"
+            "generated_at": "2026-04-24T10:04:51.615150+00:00"
           },
           "risk_controls": [
             "止损线参考 71.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2057,362 +2293,125 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "688141": {
-          "symbol": "688141",
-          "name": "杰华特",
+        "300613": {
+          "symbol": "300613",
+          "name": "富瀚微",
           "industry": "半导体",
-          "thesis": "杰华特 的新闻事件打分为 57.0，适合做盘前消息驱动的重点观察。",
+          "thesis": "富瀚微 的新闻事件打分为 68.1，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 89.78,
-              "description": "20 日收益 71.9%，量能倍率 1.35，MA10 / MA20 / MA60 为 68.46 / 62.12 / 54.96。"
+              "value": 72.26,
+              "description": "20 日收益 37.7%，量能倍率 2.61，MA10 / MA20 / MA60 为 45.83 / 43.51 / 44.72。"
             },
             {
               "name": "事件强度",
-              "value": 57.0,
+              "value": 68.12,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.0%，换手 8.2%，量比 2.83。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 12.0%，量比 5.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
-            {
-              "event_id": "49b6522c2df4",
-              "title": "杰华特688141龙虎榜数据(04-24",
-              "publish_time": "2026-04-24T16:58:00",
+              "event_id": "f4034772bcc9",
+              "title": "富瀚微300613龙虎榜数据04-24)",
+              "publish_time": "2026-04-24T16:29:29",
               "source": "东方财富Choice数据",
               "source_category": "个股资讯",
               "event_type": "产品技术",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "交易所2026年4月24日公布的交易公开信息显示，杰华特因成为有价格涨跌幅限制的日收盘价格涨幅达到15%的前五只证券上榜。杰华特当日收报83.1元，涨跌幅16.01%，偏离值16.01%，换手率8.21%，成交额28.73亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议",
-              "link": "http://finance.eastmoney.com/a/202604243718033955.html"
+              "summary": "交易所2026年4月24日公布的交易公开信息显示，富瀚微因成为日涨幅达到15%的前5只证券上榜。富瀚微当日收报56.08元，涨跌幅20.01%，偏离值20.00%，换手率11.98%，成交额14.72亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担。",
+              "link": "http://finance.eastmoney.com/a/202604243717982984.html"
             },
             {
-              "event_id": "aff1263687ed",
-              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "publish_time": "2026-04-23T00:00:00",
+              "event_id": "cfce47979051",
+              "title": "富瀚微：第一季度净利润同比增长481.14%",
+              "publish_time": "2026-04-23T16:08:29",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "富瀚微300613.SZ)公告称，2026年第一季度实现营业收入5.59亿元，同比增长75.53%；归属于上市公司股东的净利润为8507.64万元，同比增长481.14%。 业绩变动主要系市场需求同比增加，以及公司积极进行市场拓展和布局所致。",
+              "link": "http://finance.eastmoney.com/a/202604233715978161.html"
+            },
+            {
+              "event_id": "652d675f71bd",
+              "title": "关于聘任副总经理的公告",
+              "publish_time": "2026-04-24T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
+              "summary": "关于聘任副总经理的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300613&announcementId=1225157993&orgId=9900030832&announcementTime=2026-04-24 00:00:00"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 83.1,
-            "stop_loss_price": 77.12,
-            "stop_loss_pct": 0.072,
-            "signal_quality_score": 83.52,
-            "take_profit_price_1": 93.27,
-            "take_profit_pct_1": 0.1224,
-            "take_profit_price_2": 99.84,
-            "take_profit_pct_2": 0.2014,
-            "trailing_stop_price": 77.27,
-            "suggested_position_min": 0.0416,
-            "suggested_position_max": 0.0568,
-            "max_portfolio_risk": 0.0041,
+            "reference_price": 56.08,
+            "stop_loss_price": 53.48,
+            "stop_loss_pct": 0.0463,
+            "signal_quality_score": 78.22,
+            "take_profit_price_1": 60.5,
+            "take_profit_pct_1": 0.0788,
+            "take_profit_price_2": 63.36,
+            "take_profit_pct_2": 0.1298,
+            "trailing_stop_price": 53.95,
+            "suggested_position_min": 0.0579,
+            "suggested_position_max": 0.0808,
+            "max_portfolio_risk": 0.0037,
             "risk_reward_ratio": 1.7,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 77.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 93.27 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 99.84 元，若继续上行则把跟踪止损上移到 77.27 元附近。",
+              "止损线参考 53.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 60.50 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 63.36 元，若继续上行则把跟踪止损上移到 53.95 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
           },
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 77.12 元作为防守位，并在 93.27 / 99.84 元分批兑现。",
+            "confidence": 0.58,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 53.48 元作为防守位，并在 60.50 / 63.36 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "近 10 日波动率为 6.09，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：富瀚微300613龙虎榜数据04-24)"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356364+00:00"
+            "generated_at": "2026-04-24T10:04:51.615218+00:00"
           },
           "risk_controls": [
-            "止损线参考 77.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 93.27 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 99.84 元，若继续上行则把跟踪止损上移到 77.27 元附近。",
+            "止损线参考 53.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 60.50 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 63.36 元，若继续上行则把跟踪止损上移到 53.95 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "若 48 小时内没有新增催化，优先从消息面模式里移除。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "688041": {
-          "symbol": "688041",
-          "name": "海光信息",
-          "industry": "半导体",
-          "thesis": "海光信息 的新闻事件打分为 58.2，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 78.11,
-              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 85.84,
-              "description": "20 日收益 30.3%，量能倍率 1.06，MA10 / MA20 / MA60 为 258.10 / 238.99 / 243.68。"
-            },
-            {
-              "name": "事件强度",
-              "value": 58.17,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 8.2%，换手 2.3%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "f8ed12e80f3b",
-              "title": "OpenAI再添一把火，算力芯片股午后起飞",
-              "publish_time": "2026-04-24T13:37:00",
-              "source": "上海证券报",
-              "source_category": "个股资讯",
-              "event_type": "产品技术",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "午后，算力芯片概念持续走高，海光信息（688041）一度涨超11%，寒武纪、摩尔线程等跟涨。",
-              "link": "http://finance.eastmoney.com/a/202604243717838791.html"
-            },
-            {
-              "event_id": "015cb6af0444",
-              "title": "海光信息技术股份有限公司关于参与十五五·科技自立自强——科创板集成电路核心技术攻关之2025年度数字芯片设计行业集体业绩说明会的公告",
-              "publish_time": "2026-04-21T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "海光信息技术股份有限公司关于参与十五五·科技自立自强——科创板集成电路核心技术攻关之2025年度数字芯片设计行业集体业绩说明会的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688041&announcementId=1225125807&orgId=9900048365&announcementTime=2026-04-21"
-            },
-            {
-              "event_id": "c7410f57c517",
-              "title": "中信证券股份有限公司关于海光信息技术股份有限公司持续督导保荐总结报告书",
-              "publish_time": "2026-04-22T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于海光信息技术股份有限公司持续督导保荐总结报告书",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688041&announcementId=1225137011&orgId=9900048365&announcementTime=2026-04-22"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 285.0,
-            "stop_loss_price": 265.9,
-            "stop_loss_pct": 0.067,
-            "signal_quality_score": 82.36,
-            "take_profit_price_1": 317.47,
-            "take_profit_pct_1": 0.1139,
-            "take_profit_price_2": 338.48,
-            "take_profit_pct_2": 0.1876,
-            "trailing_stop_price": 269.31,
-            "suggested_position_min": 0.0607,
-            "suggested_position_max": 0.0832,
-            "max_portfolio_risk": 0.0056,
-            "risk_reward_ratio": 1.7,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 265.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 317.47 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 338.48 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 265.90 元作为防守位，并在 317.47 / 338.48 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.99，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：OpenAI再添一把火，算力芯片股午后起飞"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356420+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 265.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 317.47 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 338.48 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
-          ]
-        },
-        "300919": {
-          "symbol": "300919",
-          "name": "中伟新材",
-          "industry": "电池",
-          "thesis": "中伟新材 的新闻事件打分为 56.8，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 76.8,
-              "description": "电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 89.58,
-              "description": "20 日收益 28.5%，量能倍率 1.07，MA10 / MA20 / MA60 为 57.23 / 53.56 / 53.16。"
-            },
-            {
-              "name": "事件强度",
-              "value": 56.77,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 7.5%，换手 4.0%，量比 1.82。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "515ff9528429",
-              "title": "2026年一季度业绩预告",
-              "publish_time": "2026-04-08T19:26:29",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年一季度业绩预告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300919&announcementId=1225085744&orgId=nssc1000144&announcementTime=2026-04-08 19:26:29"
-            },
-            {
-              "event_id": "1b086b6f3a7b",
-              "title": "26Q1业绩预告点评：镍贡献利润弹性+三元抢出口，Q1业绩超预期",
-              "publish_time": "2026-04-10T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：东吴证券；评级：买入；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604101821111631_1.pdf"
-            },
-            {
-              "event_id": "be13b066ff88",
-              "title": "三元前驱体出货显著回暖，钴系磷系材料稳健发展",
-              "publish_time": "2025-10-30T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510301771859076_1.pdf"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 61.38,
-            "stop_loss_price": 57.98,
-            "stop_loss_pct": 0.0554,
-            "signal_quality_score": 83.04,
-            "take_profit_price_1": 67.16,
-            "take_profit_pct_1": 0.0942,
-            "take_profit_price_2": 70.9,
-            "take_profit_pct_2": 0.1551,
-            "trailing_stop_price": 58.59,
-            "suggested_position_min": 0.0622,
-            "suggested_position_max": 0.085,
-            "max_portfolio_risk": 0.0047,
-            "risk_reward_ratio": 1.7,
-            "action_bias": "分批试仓",
-            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 57.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 67.16 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 70.90 元，若继续上行则把跟踪止损上移到 58.59 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 57.98 元作为防守位，并在 67.16 / 70.90 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2026年一季度业绩预告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356473+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 57.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 67.16 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 70.90 元，若继续上行则把跟踪止损上移到 58.59 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         }
       },
@@ -2436,8 +2435,8 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 93.62,
-          "event_score": 61.65,
+          "base_score": 92.72,
+          "event_score": 66.47,
           "risk_adjusted_score": 100,
           "holding_window": "5-10D",
           "reasons": [
@@ -2465,9 +2464,9 @@
           "name": "多氟多",
           "industry": "化学制品",
           "rank": 2,
-          "base_score": 88.25,
-          "event_score": 56.25,
-          "risk_adjusted_score": 99.73,
+          "base_score": 86.89,
+          "event_score": 66.8,
+          "risk_adjusted_score": 99.98,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2484,8 +2483,8 @@
             }
           ],
           "event_tags": [
-            "业绩财报",
             "产品技术",
+            "业绩财报",
             "官方公告"
           ]
         },
@@ -2494,8 +2493,8 @@
           "name": "杰华特",
           "industry": "半导体",
           "rank": 3,
-          "base_score": 88.67,
-          "event_score": 57.0,
+          "base_score": 87.31,
+          "event_score": 64.98,
           "risk_adjusted_score": 99.21,
           "holding_window": "5-10D",
           "reasons": [
@@ -2513,8 +2512,8 @@
             }
           ],
           "event_tags": [
-            "券商研报",
             "产品技术",
+            "资金交易",
             "官方公告"
           ]
         },
@@ -2523,9 +2522,9 @@
           "name": "中伟新材",
           "industry": "电池",
           "rank": 4,
-          "base_score": 88.15,
-          "event_score": 56.77,
-          "risk_adjusted_score": 98.83,
+          "base_score": 86.79,
+          "event_score": 63.12,
+          "risk_adjusted_score": 98.66,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2542,9 +2541,9 @@
             }
           ],
           "event_tags": [
-            "官方公告",
-            "券商研报",
-            "券商研报"
+            "资金交易",
+            "资金交易",
+            "资金交易"
           ]
         },
         {
@@ -2552,9 +2551,9 @@
           "name": "恩捷股份",
           "industry": "电池",
           "rank": 5,
-          "base_score": 87.96,
-          "event_score": 58.04,
-          "risk_adjusted_score": 98.7,
+          "base_score": 85.59,
+          "event_score": 67.54,
+          "risk_adjusted_score": 98.13,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2587,7 +2586,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 82.61,
+              "value": 79.97,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2597,7 +2596,7 @@
             },
             {
               "name": "事件强度",
-              "value": 61.65,
+              "value": 66.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2615,7 +2614,7 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203710822774.html"
             },
@@ -2627,21 +2626,21 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203711123180.html"
             },
             {
-              "event_id": "bb56ff1c5345",
-              "title": "净利预增超15倍！千亿巨头，逼近涨停",
-              "publish_time": "2026-04-21T10:18:27",
-              "source": "大河财立方",
+              "event_id": "4fe8a0d53b7c",
+              "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+              "publish_time": "2026-04-20T18:25:34",
+              "source": "财联社",
               "source_category": "个股资讯",
               "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-              "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+              "link": "http://finance.eastmoney.com/a/202604203710807757.html"
             }
           ],
           "risk_plan": {
@@ -2649,7 +2648,7 @@
             "reference_price": 73.7,
             "stop_loss_price": 67.42,
             "stop_loss_pct": 0.0852,
-            "signal_quality_score": 88.58,
+            "signal_quality_score": 88.61,
             "take_profit_price_1": 86.26,
             "take_profit_pct_1": 0.1704,
             "take_profit_price_2": 94.42,
@@ -2683,7 +2682,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356575+00:00"
+            "generated_at": "2026-04-24T10:04:51.615339+00:00"
           },
           "risk_controls": [
             "止损线参考 67.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2706,7 +2705,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.47,
+              "value": 69.47,
               "description": "化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2716,7 +2715,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.25,
+              "value": 66.8,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2726,18 +2725,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "6588f83a7e56",
-              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
-              "publish_time": "2026-04-23T17:14:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
-              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
-            },
             {
               "event_id": "b16bcb5a5178",
               "title": "多氟多002407龙虎榜数据04-24",
@@ -2749,6 +2736,18 @@
               "impact_level": "medium",
               "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
               "link": "http://finance.eastmoney.com/a/202604243717978837.html"
+            },
+            {
+              "event_id": "6588f83a7e56",
+              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
+              "publish_time": "2026-04-23T17:14:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
+              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
             },
             {
               "event_id": "5a271ba0ec75",
@@ -2768,13 +2767,13 @@
             "reference_price": 33.04,
             "stop_loss_price": 30.28,
             "stop_loss_pct": 0.0835,
-            "signal_quality_score": 83.13,
+            "signal_quality_score": 83.7,
             "take_profit_price_1": 38.56,
             "take_profit_pct_1": 0.1671,
             "take_profit_price_2": 42.15,
             "take_profit_pct_2": 0.2757,
             "trailing_stop_price": 31.28,
-            "suggested_position_min": 0.0579,
+            "suggested_position_min": 0.058,
             "suggested_position_max": 0.0791,
             "max_portfolio_risk": 0.0066,
             "risk_reward_ratio": 2.0,
@@ -2798,11 +2797,11 @@
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
+              "最近的重要事件提要：多氟多002407龙虎榜数据04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356630+00:00"
+            "generated_at": "2026-04-24T10:04:51.615405+00:00"
           },
           "risk_controls": [
             "止损线参考 30.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2826,7 +2825,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2836,7 +2835,7 @@
             },
             {
               "name": "事件强度",
-              "value": 57.0,
+              "value": 64.98,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2846,18 +2845,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
             {
               "event_id": "49b6522c2df4",
               "title": "杰华特688141龙虎榜数据(04-24",
@@ -2871,13 +2858,25 @@
               "link": "http://finance.eastmoney.com/a/202604243718033955.html"
             },
             {
+              "event_id": "9f8ce9b20542",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "寒武纪 40082.28 2.39 2.23 2.94 688347 华虹公司 35140.75 5.89 12.31 10.96 688008 澜起科技 34840.77 3.40 2.38 5.42 688702 盛科通信-U 28994.40 8.83 7.09 6.18 688141",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
               "event_id": "aff1263687ed",
               "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "publish_time": "2026-04-23T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
-              "sentiment": "positive",
+              "sentiment": "neutral",
               "impact_level": "medium",
               "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
@@ -2888,7 +2887,7 @@
             "reference_price": 83.1,
             "stop_loss_price": 75.62,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 83.52,
+            "signal_quality_score": 83.67,
             "take_profit_price_1": 98.06,
             "take_profit_pct_1": 0.18,
             "take_profit_price_2": 107.78,
@@ -2918,11 +2917,11 @@
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "最近的重要事件提要：杰华特688141龙虎榜数据(04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356686+00:00"
+            "generated_at": "2026-04-24T10:04:51.615471+00:00"
           },
           "risk_controls": [
             "止损线参考 75.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2946,7 +2945,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 76.8,
+              "value": 72.8,
               "description": "电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2956,7 +2955,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.77,
+              "value": 63.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2967,40 +2966,40 @@
           ],
           "recent_events": [
             {
-              "event_id": "515ff9528429",
-              "title": "2026年一季度业绩预告",
-              "publish_time": "2026-04-08T19:26:29",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年一季度业绩预告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300919&announcementId=1225085744&orgId=nssc1000144&announcementTime=2026-04-08 19:26:29"
-            },
-            {
-              "event_id": "1b086b6f3a7b",
-              "title": "26Q1业绩预告点评：镍贡献利润弹性+三元抢出口，Q1业绩超预期",
-              "publish_time": "2026-04-10T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "2fa9ec26e757",
+              "title": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：东吴证券；评级：买入；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604101821111631_1.pdf"
+              "summary": "605376 博迁新材 2.44 4.00 9404.36 7.67 300618 寒锐钴业 4.26 6.12 5572.13 7.22 301500 飞南资源 -0.12 12.74 4729.04 10.13 601168 西部矿业 0.62 1.75 3627.24 3.03 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718075375.html"
             },
             {
-              "event_id": "be13b066ff88",
-              "title": "三元前驱体出货显著回暖，钴系磷系材料稳健发展",
-              "publish_time": "2025-10-30T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "4d17e1e573f2",
+              "title": "盐湖提锂概念涨2.49%，主力资金净流入这些股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510301771859076_1.pdf"
+              "summary": "000408 藏格矿业 3.39 0.97 10081.99 7.43 600499 科达制造 9.99 3.28 7401.80 6.06 601168 西部矿业 0.62 1.75 3627.24 3.03 600773 西藏城投 5.20 4.11 2692.97 2.85 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718077646.html"
+            },
+            {
+              "event_id": "6154022be77a",
+              "title": "磷化工概念上涨1.82%，8股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "603906 龙蟠科技 6.93 16.13 3598.09 1.26 600470 六国化工 3.36 12.46 3431.28 7.48 688275 万润新能 1.44 4.17 2985.88 3.94 002556 辉隆股份 6.84 4.32 2803.49 10.45 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718076058.html"
             }
           ],
           "risk_plan": {
@@ -3008,13 +3007,13 @@
             "reference_price": 61.38,
             "stop_loss_price": 57.01,
             "stop_loss_pct": 0.0712,
-            "signal_quality_score": 83.04,
+            "signal_quality_score": 82.94,
             "take_profit_price_1": 70.12,
             "take_profit_pct_1": 0.1424,
             "take_profit_price_2": 75.8,
             "take_profit_pct_2": 0.2349,
             "trailing_stop_price": 58.59,
-            "suggested_position_min": 0.0799,
+            "suggested_position_min": 0.0798,
             "suggested_position_max": 0.1092,
             "max_portfolio_risk": 0.0078,
             "risk_reward_ratio": 2.0,
@@ -3038,11 +3037,11 @@
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2026年一季度业绩预告"
+              "最近的重要事件提要：金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356740+00:00"
+            "generated_at": "2026-04-24T10:04:51.615538+00:00"
           },
           "risk_controls": [
             "止损线参考 57.01 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3065,7 +3064,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 76.8,
+              "value": 72.8,
               "description": "电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3075,12 +3074,12 @@
             },
             {
               "name": "事件强度",
-              "value": 58.04,
+              "value": 67.54,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 100,
+              "value": 96.37,
               "description": "日内涨幅 10.0%，换手 8.0%，量比 1.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
@@ -3127,13 +3126,13 @@
             "reference_price": 77.18,
             "stop_loss_price": 70.4,
             "stop_loss_pct": 0.0878,
-            "signal_quality_score": 83.08,
+            "signal_quality_score": 82.68,
             "take_profit_price_1": 90.74,
             "take_profit_pct_1": 0.1757,
             "take_profit_price_2": 99.55,
             "take_profit_pct_2": 0.2898,
             "trailing_stop_price": 72.85,
-            "suggested_position_min": 0.0568,
+            "suggested_position_min": 0.0567,
             "suggested_position_max": 0.0776,
             "max_portfolio_risk": 0.0068,
             "risk_reward_ratio": 2.0,
@@ -3161,7 +3160,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356796+00:00"
+            "generated_at": "2026-04-24T10:04:51.615622+00:00"
           },
           "risk_controls": [
             "止损线参考 70.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3197,8 +3196,8 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 93.62,
-          "event_score": 61.65,
+          "base_score": 92.72,
+          "event_score": 66.47,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3226,8 +3225,8 @@
           "name": "杰华特",
           "industry": "半导体",
           "rank": 2,
-          "base_score": 88.67,
-          "event_score": 57.0,
+          "base_score": 87.31,
+          "event_score": 64.98,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3245,8 +3244,8 @@
             }
           ],
           "event_tags": [
-            "券商研报",
             "产品技术",
+            "资金交易",
             "官方公告"
           ]
         },
@@ -3255,8 +3254,8 @@
           "name": "多氟多",
           "industry": "化学制品",
           "rank": 3,
-          "base_score": 88.25,
-          "event_score": 56.25,
+          "base_score": 86.89,
+          "event_score": 66.8,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3274,8 +3273,8 @@
             }
           ],
           "event_tags": [
-            "业绩财报",
             "产品技术",
+            "业绩财报",
             "官方公告"
           ]
         },
@@ -3284,8 +3283,8 @@
           "name": "华虹公司",
           "industry": "半导体",
           "rank": 4,
-          "base_score": 88.24,
-          "event_score": 54.54,
+          "base_score": 86.88,
+          "event_score": 60.47,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3313,8 +3312,8 @@
           "name": "中伟新材",
           "industry": "电池",
           "rank": 5,
-          "base_score": 88.15,
-          "event_score": 56.77,
+          "base_score": 86.79,
+          "event_score": 63.12,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3332,9 +3331,9 @@
             }
           ],
           "event_tags": [
-            "官方公告",
-            "券商研报",
-            "券商研报"
+            "资金交易",
+            "资金交易",
+            "资金交易"
           ]
         }
       ],
@@ -3348,7 +3347,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 82.61,
+              "value": 79.97,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3358,7 +3357,7 @@
             },
             {
               "name": "事件强度",
-              "value": 61.65,
+              "value": 66.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3376,7 +3375,7 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203710822774.html"
             },
@@ -3388,21 +3387,21 @@
               "source_category": "个股资讯",
               "event_type": "业绩财报",
               "sentiment": "positive",
-              "impact_level": "high",
+              "impact_level": "medium",
               "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
               "link": "http://finance.eastmoney.com/a/202604203711123180.html"
             },
             {
-              "event_id": "bb56ff1c5345",
-              "title": "净利预增超15倍！千亿巨头，逼近涨停",
-              "publish_time": "2026-04-21T10:18:27",
-              "source": "大河财立方",
+              "event_id": "4fe8a0d53b7c",
+              "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+              "publish_time": "2026-04-20T18:25:34",
+              "source": "财联社",
               "source_category": "个股资讯",
               "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-              "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+              "link": "http://finance.eastmoney.com/a/202604203710807757.html"
             }
           ],
           "risk_plan": {
@@ -3410,7 +3409,7 @@
             "reference_price": 73.7,
             "stop_loss_price": 69.34,
             "stop_loss_pct": 0.0592,
-            "signal_quality_score": 88.58,
+            "signal_quality_score": 88.61,
             "take_profit_price_1": 80.68,
             "take_profit_pct_1": 0.0947,
             "take_profit_price_2": 84.6,
@@ -3444,7 +3443,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356903+00:00"
+            "generated_at": "2026-04-24T10:04:51.615760+00:00"
           },
           "risk_controls": [
             "止损线参考 69.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3467,7 +3466,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3477,7 +3476,7 @@
             },
             {
               "name": "事件强度",
-              "value": 57.0,
+              "value": 64.98,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3487,18 +3486,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
             {
               "event_id": "49b6522c2df4",
               "title": "杰华特688141龙虎榜数据(04-24",
@@ -3512,13 +3499,25 @@
               "link": "http://finance.eastmoney.com/a/202604243718033955.html"
             },
             {
+              "event_id": "9f8ce9b20542",
+              "title": "21只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "寒武纪 40082.28 2.39 2.23 2.94 688347 华虹公司 35140.75 5.89 12.31 10.96 688008 澜起科技 34840.77 3.40 2.38 5.42 688702 盛科通信-U 28994.40 8.83 7.09 6.18 688141",
+              "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+            },
+            {
               "event_id": "aff1263687ed",
               "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "publish_time": "2026-04-23T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
-              "sentiment": "positive",
+              "sentiment": "neutral",
               "impact_level": "medium",
               "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
@@ -3529,7 +3528,7 @@
             "reference_price": 83.1,
             "stop_loss_price": 77.7,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 83.52,
+            "signal_quality_score": 83.67,
             "take_profit_price_1": 91.74,
             "take_profit_pct_1": 0.104,
             "take_profit_price_2": 96.6,
@@ -3559,11 +3558,11 @@
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "最近的重要事件提要：杰华特688141龙虎榜数据(04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.356958+00:00"
+            "generated_at": "2026-04-24T10:04:51.615828+00:00"
           },
           "risk_controls": [
             "止损线参考 77.70 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3587,7 +3586,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 73.47,
+              "value": 69.47,
               "description": "化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3597,7 +3596,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.25,
+              "value": 66.8,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3607,18 +3606,6 @@
             }
           ],
           "recent_events": [
-            {
-              "event_id": "6588f83a7e56",
-              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
-              "publish_time": "2026-04-23T17:14:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
-              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
-            },
             {
               "event_id": "b16bcb5a5178",
               "title": "多氟多002407龙虎榜数据04-24",
@@ -3630,6 +3617,18 @@
               "impact_level": "medium",
               "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
               "link": "http://finance.eastmoney.com/a/202604243717978837.html"
+            },
+            {
+              "event_id": "6588f83a7e56",
+              "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
+              "publish_time": "2026-04-23T17:14:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
+              "link": "http://finance.eastmoney.com/a/202604233716124295.html"
             },
             {
               "event_id": "5a271ba0ec75",
@@ -3649,13 +3648,13 @@
             "reference_price": 33.04,
             "stop_loss_price": 31.12,
             "stop_loss_pct": 0.058,
-            "signal_quality_score": 83.13,
+            "signal_quality_score": 83.7,
             "take_profit_price_1": 36.11,
             "take_profit_pct_1": 0.0929,
             "take_profit_price_2": 37.84,
             "take_profit_pct_2": 0.1453,
             "trailing_stop_price": 31.28,
-            "suggested_position_min": 0.0549,
+            "suggested_position_min": 0.055,
             "suggested_position_max": 0.075,
             "max_portfolio_risk": 0.0043,
             "risk_reward_ratio": 1.6,
@@ -3679,11 +3678,11 @@
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
+              "最近的重要事件提要：多氟多002407龙虎榜数据04-24"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.357012+00:00"
+            "generated_at": "2026-04-24T10:04:51.615893+00:00"
           },
           "risk_controls": [
             "止损线参考 31.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3707,7 +3706,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 78.11,
+              "value": 74.11,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3717,7 +3716,7 @@
             },
             {
               "name": "事件强度",
-              "value": 54.54,
+              "value": 60.47,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3759,7 +3758,7 @@
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "neutral",
-              "impact_level": "medium",
+              "impact_level": "low",
               "summary": "港股公告：2025年度报告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688347&announcementId=1225089351&orgId=9900029531&announcementTime=2026-04-10"
             }
@@ -3769,13 +3768,13 @@
             "reference_price": 138.8,
             "stop_loss_price": 129.95,
             "stop_loss_pct": 0.0637,
-            "signal_quality_score": 82.73,
+            "signal_quality_score": 82.56,
             "take_profit_price_1": 152.96,
             "take_profit_pct_1": 0.102,
             "take_profit_price_2": 160.93,
             "take_profit_pct_2": 0.1594,
             "trailing_stop_price": 130.66,
-            "suggested_position_min": 0.047,
+            "suggested_position_min": 0.0469,
             "suggested_position_max": 0.0643,
             "max_portfolio_risk": 0.0041,
             "risk_reward_ratio": 1.6,
@@ -3803,7 +3802,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.357069+00:00"
+            "generated_at": "2026-04-24T10:04:51.615960+00:00"
           },
           "risk_controls": [
             "止损线参考 129.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3827,7 +3826,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 76.8,
+              "value": 72.8,
               "description": "电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3837,7 +3836,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.77,
+              "value": 63.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3848,40 +3847,40 @@
           ],
           "recent_events": [
             {
-              "event_id": "515ff9528429",
-              "title": "2026年一季度业绩预告",
-              "publish_time": "2026-04-08T19:26:29",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "high",
-              "summary": "2026年一季度业绩预告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300919&announcementId=1225085744&orgId=nssc1000144&announcementTime=2026-04-08 19:26:29"
-            },
-            {
-              "event_id": "1b086b6f3a7b",
-              "title": "26Q1业绩预告点评：镍贡献利润弹性+三元抢出口，Q1业绩超预期",
-              "publish_time": "2026-04-10T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "2fa9ec26e757",
+              "title": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：东吴证券；评级：买入；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604101821111631_1.pdf"
+              "summary": "605376 博迁新材 2.44 4.00 9404.36 7.67 300618 寒锐钴业 4.26 6.12 5572.13 7.22 301500 飞南资源 -0.12 12.74 4729.04 10.13 601168 西部矿业 0.62 1.75 3627.24 3.03 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718075375.html"
             },
             {
-              "event_id": "be13b066ff88",
-              "title": "三元前驱体出货显著回暖，钴系磷系材料稳健发展",
-              "publish_time": "2025-10-30T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
+              "event_id": "4d17e1e573f2",
+              "title": "盐湖提锂概念涨2.49%，主力资金净流入这些股",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：电池",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202510301771859076_1.pdf"
+              "summary": "000408 藏格矿业 3.39 0.97 10081.99 7.43 600499 科达制造 9.99 3.28 7401.80 6.06 601168 西部矿业 0.62 1.75 3627.24 3.03 600773 西藏城投 5.20 4.11 2692.97 2.85 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718077646.html"
+            },
+            {
+              "event_id": "6154022be77a",
+              "title": "磷化工概念上涨1.82%，8股主力资金净流入超亿元",
+              "publish_time": "2026-04-24T17:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "603906 龙蟠科技 6.93 16.13 3598.09 1.26 600470 六国化工 3.36 12.46 3431.28 7.48 688275 万润新能 1.44 4.17 2985.88 3.94 002556 辉隆股份 6.84 4.32 2803.49 10.45 300919",
+              "link": "http://finance.eastmoney.com/a/202604243718076058.html"
             }
           ],
           "risk_plan": {
@@ -3889,7 +3888,7 @@
             "reference_price": 61.38,
             "stop_loss_price": 58.35,
             "stop_loss_pct": 0.0494,
-            "signal_quality_score": 83.04,
+            "signal_quality_score": 82.94,
             "take_profit_price_1": 66.23,
             "take_profit_pct_1": 0.079,
             "take_profit_price_2": 68.96,
@@ -3919,11 +3918,11 @@
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2026年一季度业绩预告"
+              "最近的重要事件提要：金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T09:36:53.357124+00:00"
+            "generated_at": "2026-04-24T10:04:51.616026+00:00"
           },
           "risk_controls": [
             "止损线参考 58.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3954,9 +3953,9 @@
       "name": "天齐锂业",
       "industry": "能源金属",
       "rank": 1,
-      "base_score": 93.62,
-      "event_score": 61.65,
-      "risk_adjusted_score": 92.07,
+      "base_score": 92.72,
+      "event_score": 66.47,
+      "risk_adjusted_score": 92.29,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3979,13 +3978,13 @@
       ]
     },
     {
-      "symbol": "688141",
-      "name": "杰华特",
+      "symbol": "688041",
+      "name": "海光信息",
       "industry": "半导体",
       "rank": 2,
-      "base_score": 88.67,
-      "event_score": 57.0,
-      "risk_adjusted_score": 87.0,
+      "base_score": 85.82,
+      "event_score": 75.14,
+      "risk_adjusted_score": 88.25,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3994,56 +3993,27 @@
         },
         {
           "label": "技术结构",
-          "detail": "杰华特 近 20 日收益 71.9%，技术分 89.8。"
+          "detail": "海光信息 近 20 日收益 30.3%，技术分 85.8。"
         },
         {
           "label": "事件辅助",
-          "detail": "2025年收入增长58%，高研发投入拖累利润"
-        }
-      ],
-      "event_tags": [
-        "券商研报",
-        "产品技术",
-        "官方公告"
-      ]
-    },
-    {
-      "symbol": "002812",
-      "name": "恩捷股份",
-      "industry": "电池",
-      "rank": 3,
-      "base_score": 87.96,
-      "event_score": 58.04,
-      "risk_adjusted_score": 86.62,
-      "holding_window": "3-5D",
-      "reasons": [
-        {
-          "label": "行业轮动",
-          "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
-        },
-        {
-          "label": "技术结构",
-          "detail": "恩捷股份 近 20 日收益 10.0%，技术分 89.1。"
-        },
-        {
-          "label": "事件辅助",
-          "detail": "恩捷股份002812龙虎榜数据04-24)"
+          "detail": "OpenAI再添一把火，算力芯片股午后起飞"
         }
       ],
       "event_tags": [
         "产品技术",
-        "官方公告",
-        "官方公告"
+        "资金交易",
+        "资金交易"
       ]
     },
     {
       "symbol": "002407",
       "name": "多氟多",
       "industry": "化学制品",
-      "rank": 4,
-      "base_score": 88.25,
-      "event_score": 56.25,
-      "risk_adjusted_score": 86.52,
+      "rank": 3,
+      "base_score": 86.89,
+      "event_score": 66.8,
+      "risk_adjusted_score": 87.51,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4056,12 +4026,41 @@
         },
         {
           "label": "事件辅助",
-          "detail": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
+          "detail": "多氟多002407龙虎榜数据04-24"
         }
       ],
       "event_tags": [
-        "业绩财报",
         "产品技术",
+        "业绩财报",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "688141",
+      "name": "杰华特",
+      "industry": "半导体",
+      "rank": 4,
+      "base_score": 87.31,
+      "event_score": 64.98,
+      "risk_adjusted_score": 87.48,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "半导体 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "杰华特 近 20 日收益 71.9%，技术分 89.8。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "杰华特688141龙虎榜数据(04-24"
+        }
+      ],
+      "event_tags": [
+        "产品技术",
+        "资金交易",
         "官方公告"
       ]
     },
@@ -4070,9 +4069,9 @@
       "name": "中伟新材",
       "industry": "电池",
       "rank": 5,
-      "base_score": 88.15,
-      "event_score": 56.77,
-      "risk_adjusted_score": 86.52,
+      "base_score": 86.79,
+      "event_score": 63.12,
+      "risk_adjusted_score": 86.67,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4085,13 +4084,13 @@
         },
         {
           "label": "事件辅助",
-          "detail": "2026年一季度业绩预告"
+          "detail": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
         }
       ],
       "event_tags": [
-        "官方公告",
-        "券商研报",
-        "券商研报"
+        "资金交易",
+        "资金交易",
+        "资金交易"
       ]
     }
   ],
@@ -4100,12 +4099,12 @@
       "symbol": "002466",
       "name": "天齐锂业",
       "industry": "能源金属",
-      "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 92.1，适合作为默认候选股跟踪。",
+      "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 92.3，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 82.61,
+          "value": 79.97,
           "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4115,7 +4114,7 @@
         },
         {
           "name": "事件强度",
-          "value": 61.65,
+          "value": 66.47,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4133,7 +4132,7 @@
           "source_category": "个股资讯",
           "event_type": "业绩财报",
           "sentiment": "positive",
-          "impact_level": "high",
+          "impact_level": "medium",
           "summary": "人民财讯4月20日电，天齐锂业0024664月20日披露业绩预告，预计2026年一季度归母净利润为17亿元—20亿元，同比增长1530.31%—1818.01%。",
           "link": "http://finance.eastmoney.com/a/202604203710822774.html"
         },
@@ -4145,21 +4144,21 @@
           "source_category": "个股资讯",
           "event_type": "业绩财报",
           "sentiment": "positive",
-          "impact_level": "high",
+          "impact_level": "medium",
           "summary": "4月20日，天齐锂业（002466.SZ）发布业绩预告，预计2026年第一季度净利润将达到17亿元至20亿元，与上年同期相比，增幅区间为1530.31%至1818.01%。",
           "link": "http://finance.eastmoney.com/a/202604203711123180.html"
         },
         {
-          "event_id": "bb56ff1c5345",
-          "title": "净利预增超15倍！千亿巨头，逼近涨停",
-          "publish_time": "2026-04-21T10:18:27",
-          "source": "大河财立方",
+          "event_id": "4fe8a0d53b7c",
+          "title": "天齐锂业：2026年一季度净利同比预增1530%-1818%",
+          "publish_time": "2026-04-20T18:25:34",
+          "source": "财联社",
           "source_category": "个股资讯",
           "event_type": "业绩财报",
-          "sentiment": "positive",
-          "impact_level": "high",
-          "summary": "4月20日晚间，天齐锂业（002466.SZ）发布公告，预计2026年第一季度归属于上市公司股东的净利润为17亿元—20亿元，比上年同期增长1530.31%—1818.01%；预计扣非净利润为16.00亿元—19.60亿元，同比增长3501.54%—4311.88%。",
-          "link": "http://finance.eastmoney.com/a/202604213712033969.html"
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "天齐锂业002466.SZ)公告称，预计2026年第一季度归属于上市公司股东的净利润为17亿元-20亿元，比上年同期增长1530.31%-1818.01%。",
+          "link": "http://finance.eastmoney.com/a/202604203710807757.html"
         }
       ],
       "risk_plan": {
@@ -4167,7 +4166,7 @@
         "reference_price": 73.7,
         "stop_loss_price": 68.29,
         "stop_loss_pct": 0.0734,
-        "signal_quality_score": 88.58,
+        "signal_quality_score": 88.61,
         "take_profit_price_1": 83.44,
         "take_profit_pct_1": 0.1322,
         "take_profit_price_2": 89.93,
@@ -4201,7 +4200,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T09:36:53.355554+00:00"
+        "generated_at": "2026-04-24T10:04:51.614121+00:00"
       },
       "risk_controls": [
         "止损线参考 68.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4214,16 +4213,253 @@
         "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
       ]
     },
-    "688141": {
-      "symbol": "688141",
-      "name": "杰华特",
+    "688041": {
+      "symbol": "688041",
+      "name": "海光信息",
       "industry": "半导体",
-      "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.0，适合作为默认候选股跟踪。",
+      "thesis": "海光信息 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 88.2，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 78.11,
+          "value": 74.11,
+          "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 85.84,
+          "description": "20 日收益 30.3%，量能倍率 1.06，MA10 / MA20 / MA60 为 258.10 / 238.99 / 243.68。"
+        },
+        {
+          "name": "事件强度",
+          "value": 75.14,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 8.2%，换手 2.3%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "f8ed12e80f3b",
+          "title": "OpenAI再添一把火，算力芯片股午后起飞",
+          "publish_time": "2026-04-24T13:37:00",
+          "source": "上海证券报",
+          "source_category": "个股资讯",
+          "event_type": "产品技术",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "午后，算力芯片概念持续走高，海光信息（688041）一度涨超11%，寒武纪、摩尔线程等跟涨。",
+          "link": "http://finance.eastmoney.com/a/202604243717838791.html"
+        },
+        {
+          "event_id": "124990593546",
+          "title": "21只科创板个股主力资金净流入超亿元",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "（数据宝） 主力资金净流入排名 代码 简称 主力资金净流入（万元） 主力资金流入率（%） 涨跌幅（%） 换手率（%） 688808 C联讯 272653.27 23.89 875.82 78.66 688041 海光信息 123717.54 8.11 8.20 2.33 688981",
+          "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+        },
+        {
+          "event_id": "849aa9509004",
+          "title": "64.50亿元资金今日流出电子股",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "（数据宝） 电子行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 688041 海光信息 8.20 2.33 123717.54 688981 中芯国际 4.70 4.55 100810.51 000062 深圳华强 9.99 10.73 84085.46",
+          "link": "http://finance.eastmoney.com/a/202604243718082526.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 285.0,
+        "stop_loss_price": 263.86,
+        "stop_loss_pct": 0.0742,
+        "signal_quality_score": 83.96,
+        "take_profit_price_1": 323.05,
+        "take_profit_pct_1": 0.1335,
+        "take_profit_price_2": 348.42,
+        "take_profit_pct_2": 0.2225,
+        "trailing_stop_price": 269.31,
+        "suggested_position_min": 0.0654,
+        "suggested_position_max": 0.0891,
+        "max_portfolio_risk": 0.0066,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 263.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 323.05 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 348.42 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 263.86 元作为防守位，并在 323.05 / 348.42 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 2.99，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：OpenAI再添一把火，算力芯片股午后起飞"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-04-24T10:04:51.614212+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 263.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 323.05 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 348.42 元，若继续上行则把跟踪止损上移到 269.31 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "002407": {
+      "symbol": "002407",
+      "name": "多氟多",
+      "industry": "化学制品",
+      "thesis": "多氟多 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.5，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 69.47,
+          "description": "当前模式重点关注该维度。化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 92.82,
+          "description": "20 日收益 19.6%，量能倍率 1.42，MA10 / MA20 / MA60 为 30.68 / 29.31 / 29.21。"
+        },
+        {
+          "name": "事件强度",
+          "value": 66.8,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 10.0%，换手 18.5%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "b16bcb5a5178",
+          "title": "多氟多002407龙虎榜数据04-24",
+          "publish_time": "2026-04-24T16:27:57",
+          "source": "东方财富Choice数据",
+          "source_category": "个股资讯",
+          "event_type": "产品技术",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
+          "link": "http://finance.eastmoney.com/a/202604243717978837.html"
+        },
+        {
+          "event_id": "6588f83a7e56",
+          "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
+          "publish_time": "2026-04-23T17:14:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "业绩财报",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
+          "link": "http://finance.eastmoney.com/a/202604233716124295.html"
+        },
+        {
+          "event_id": "5a271ba0ec75",
+          "title": "2026年一季度报告",
+          "publish_time": "2026-04-24T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "2026年一季度报告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002407&announcementId=1225159579&orgId=9900012449&announcementTime=2026-04-24"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 33.04,
+        "stop_loss_price": 30.67,
+        "stop_loss_pct": 0.0719,
+        "signal_quality_score": 83.7,
+        "take_profit_price_1": 37.31,
+        "take_profit_pct_1": 0.1292,
+        "take_profit_price_2": 40.15,
+        "take_profit_pct_2": 0.2152,
+        "trailing_stop_price": 31.28,
+        "suggested_position_min": 0.0594,
+        "suggested_position_max": 0.081,
+        "max_portfolio_risk": 0.0058,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 30.67 元作为防守位，并在 37.31 / 40.15 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：多氟多002407龙虎榜数据04-24"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-04-24T10:04:51.614291+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    },
+    "688141": {
+      "symbol": "688141",
+      "name": "杰华特",
+      "industry": "半导体",
+      "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 87.5，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 74.11,
           "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4233,7 +4469,7 @@
         },
         {
           "name": "事件强度",
-          "value": 57.0,
+          "value": 64.98,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4243,18 +4479,6 @@
         }
       ],
       "recent_events": [
-        {
-          "event_id": "b39fe95d5c8c",
-          "title": "2025年收入增长58%，高研发投入拖累利润",
-          "publish_time": "2026-04-03T00:00:00",
-          "source": "东方财富研报",
-          "source_category": "券商研报",
-          "event_type": "券商研报",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "机构：国信证券；评级：增持；行业：半导体",
-          "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-        },
         {
           "event_id": "49b6522c2df4",
           "title": "杰华特688141龙虎榜数据(04-24",
@@ -4268,13 +4492,25 @@
           "link": "http://finance.eastmoney.com/a/202604243718033955.html"
         },
         {
+          "event_id": "9f8ce9b20542",
+          "title": "21只科创板个股主力资金净流入超亿元",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "寒武纪 40082.28 2.39 2.23 2.94 688347 华虹公司 35140.75 5.89 12.31 10.96 688008 澜起科技 34840.77 3.40 2.38 5.42 688702 盛科通信-U 28994.40 8.83 7.09 6.18 688141",
+          "link": "http://finance.eastmoney.com/a/202604243718081243.html"
+        },
+        {
           "event_id": "aff1263687ed",
           "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
           "publish_time": "2026-04-23T00:00:00",
           "source": "巨潮资讯",
           "source_category": "官方公告",
           "event_type": "官方公告",
-          "sentiment": "positive",
+          "sentiment": "neutral",
           "impact_level": "medium",
           "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
           "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
@@ -4285,7 +4521,7 @@
         "reference_price": 83.1,
         "stop_loss_price": 76.62,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 83.52,
+        "signal_quality_score": 83.67,
         "take_profit_price_1": 94.76,
         "take_profit_pct_1": 0.1403,
         "take_profit_price_2": 102.54,
@@ -4315,11 +4551,11 @@
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 5.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+          "最近的重要事件提要：杰华特688141龙虎榜数据(04-24"
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T09:36:53.355637+00:00"
+        "generated_at": "2026-04-24T10:04:51.614364+00:00"
       },
       "risk_controls": [
         "止损线参考 76.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4333,254 +4569,16 @@
         "当日已接近涨停，避免尾盘情绪化追高。"
       ]
     },
-    "002812": {
-      "symbol": "002812",
-      "name": "恩捷股份",
-      "industry": "电池",
-      "thesis": "恩捷股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.6，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-      "feature_scores": [
-        {
-          "name": "行业强度",
-          "value": 76.8,
-          "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-        },
-        {
-          "name": "技术结构",
-          "value": 89.08,
-          "description": "20 日收益 10.0%，量能倍率 1.41，MA10 / MA20 / MA60 为 72.15 / 70.30 / 64.11。"
-        },
-        {
-          "name": "事件强度",
-          "value": 58.04,
-          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-        },
-        {
-          "name": "情绪热度",
-          "value": 100,
-          "description": "日内涨幅 10.0%，换手 8.0%，量比 1.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-        }
-      ],
-      "recent_events": [
-        {
-          "event_id": "92e828525b91",
-          "title": "恩捷股份002812龙虎榜数据04-24)",
-          "publish_time": "2026-04-24T16:27:57",
-          "source": "东方财富Choice数据",
-          "source_category": "个股资讯",
-          "event_type": "产品技术",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "交易所2026年4月24日公布的交易公开信息显示，恩捷股份因成为日涨幅偏离值达到7%的前5只证券上榜。恩捷股份当日收报77.18元，涨跌幅10.01%，偏离值10.60%，换手率8.02%，成交额49.46亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
-          "link": "http://finance.eastmoney.com/a/202604243717978639.html"
-        },
-        {
-          "event_id": "058322d6f4bd",
-          "title": "关于股东部分股份质押变动的公告",
-          "publish_time": "2026-04-24T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "关于股东部分股份质押变动的公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165557&orgId=9900026450&announcementTime=2026-04-24"
-        },
-        {
-          "event_id": "1a78e021820a",
-          "title": "关于公司合并报表范围内提供担保的进展公告",
-          "publish_time": "2026-04-24T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "关于公司合并报表范围内提供担保的进展公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165556&orgId=9900026450&announcementTime=2026-04-24"
-        }
-      ],
-      "risk_plan": {
-        "price_basis": "当前最新价",
-        "reference_price": 77.18,
-        "stop_loss_price": 71.34,
-        "stop_loss_pct": 0.0756,
-        "signal_quality_score": 83.08,
-        "take_profit_price_1": 87.69,
-        "take_profit_pct_1": 0.1362,
-        "take_profit_price_2": 94.7,
-        "take_profit_pct_2": 0.227,
-        "trailing_stop_price": 72.85,
-        "suggested_position_min": 0.0582,
-        "suggested_position_max": 0.0795,
-        "max_portfolio_risk": 0.006,
-        "risk_reward_ratio": 1.8,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-        "analysis_method": "rule_based_v1",
-        "execution_notes": [
-          "止损线参考 71.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 87.69 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 94.70 元，若继续上行则把跟踪止损上移到 72.85 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
-        ]
-      },
-      "ai_risk_analysis": {
-        "status": "rule_stub_ready",
-        "model": null,
-        "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 71.34 元作为防守位，并在 87.69 / 94.70 元分批兑现。",
-        "highlights": [
-          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 4.20，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：恩捷股份002812龙虎榜数据04-24)"
-        ],
-        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-        "source": "rules",
-        "generated_at": "2026-04-24T09:36:53.355720+00:00"
-      },
-      "risk_controls": [
-        "止损线参考 71.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 87.69 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 94.70 元，若继续上行则把跟踪止损上移到 72.85 元附近。",
-        "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
-        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "当日已接近涨停，避免尾盘情绪化追高。"
-      ]
-    },
-    "002407": {
-      "symbol": "002407",
-      "name": "多氟多",
-      "industry": "化学制品",
-      "thesis": "多氟多 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.5，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-      "feature_scores": [
-        {
-          "name": "行业强度",
-          "value": 73.47,
-          "description": "当前模式重点关注该维度。化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-        },
-        {
-          "name": "技术结构",
-          "value": 92.82,
-          "description": "20 日收益 19.6%，量能倍率 1.42，MA10 / MA20 / MA60 为 30.68 / 29.31 / 29.21。"
-        },
-        {
-          "name": "事件强度",
-          "value": 56.25,
-          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-        },
-        {
-          "name": "情绪热度",
-          "value": 100,
-          "description": "日内涨幅 10.0%，换手 18.5%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-        }
-      ],
-      "recent_events": [
-        {
-          "event_id": "6588f83a7e56",
-          "title": "多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%",
-          "publish_time": "2026-04-23T17:14:00",
-          "source": "证券时报网",
-          "source_category": "个股资讯",
-          "event_type": "业绩财报",
-          "sentiment": "positive",
-          "impact_level": "high",
-          "summary": "人民财讯4月23日电，多氟多0024074月23日披露一季报，公司2026年一季度实现营业收入32.16亿元，同比增长53.26%；归母净利润3.76亿元，同比增长480.14%，报告期新能源材料及电池板块收入增长。",
-          "link": "http://finance.eastmoney.com/a/202604233716124295.html"
-        },
-        {
-          "event_id": "b16bcb5a5178",
-          "title": "多氟多002407龙虎榜数据04-24",
-          "publish_time": "2026-04-24T16:27:57",
-          "source": "东方财富Choice数据",
-          "source_category": "个股资讯",
-          "event_type": "产品技术",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "交易所2026年4月24日公布的交易公开信息显示，多氟多因成为日涨幅偏离值达到7%的前5只证券上榜。多氟多当日收报33.04元，涨跌幅9.99%，偏离值10.60%，换手率18.47%，成交额63.42亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担",
-          "link": "http://finance.eastmoney.com/a/202604243717978837.html"
-        },
-        {
-          "event_id": "5a271ba0ec75",
-          "title": "2026年一季度报告",
-          "publish_time": "2026-04-24T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "2026年一季度报告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002407&announcementId=1225159579&orgId=9900012449&announcementTime=2026-04-24"
-        }
-      ],
-      "risk_plan": {
-        "price_basis": "当前最新价",
-        "reference_price": 33.04,
-        "stop_loss_price": 30.67,
-        "stop_loss_pct": 0.0719,
-        "signal_quality_score": 83.13,
-        "take_profit_price_1": 37.31,
-        "take_profit_pct_1": 0.1292,
-        "take_profit_price_2": 40.15,
-        "take_profit_pct_2": 0.2152,
-        "trailing_stop_price": 31.28,
-        "suggested_position_min": 0.0593,
-        "suggested_position_max": 0.081,
-        "max_portfolio_risk": 0.0058,
-        "risk_reward_ratio": 1.8,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-        "analysis_method": "rule_based_v1",
-        "execution_notes": [
-          "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
-        ]
-      },
-      "ai_risk_analysis": {
-        "status": "rule_stub_ready",
-        "model": null,
-        "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 30.67 元作为防守位，并在 37.31 / 40.15 元分批兑现。",
-        "highlights": [
-          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 4.60，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：多氟多：新能源材料及电池板块收入增长 一季度净利润同比增480.14%"
-        ],
-        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-        "source": "rules",
-        "generated_at": "2026-04-24T09:36:53.355781+00:00"
-      },
-      "risk_controls": [
-        "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 37.31 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 40.15 元，若继续上行则把跟踪止损上移到 31.28 元附近。",
-        "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
-        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "当日已接近涨停，避免尾盘情绪化追高。"
-      ]
-    },
     "300919": {
       "symbol": "300919",
       "name": "中伟新材",
       "industry": "电池",
-      "thesis": "中伟新材 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.5，适合作为默认候选股跟踪。",
+      "thesis": "中伟新材 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.7，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 农化制品, 电池, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 76.8,
+          "value": 72.8,
           "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4590,7 +4588,7 @@
         },
         {
           "name": "事件强度",
-          "value": 56.77,
+          "value": 63.12,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4601,40 +4599,40 @@
       ],
       "recent_events": [
         {
-          "event_id": "515ff9528429",
-          "title": "2026年一季度业绩预告",
-          "publish_time": "2026-04-08T19:26:29",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "high",
-          "summary": "2026年一季度业绩预告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300919&announcementId=1225085744&orgId=nssc1000144&announcementTime=2026-04-08 19:26:29"
-        },
-        {
-          "event_id": "1b086b6f3a7b",
-          "title": "26Q1业绩预告点评：镍贡献利润弹性+三元抢出口，Q1业绩超预期",
-          "publish_time": "2026-04-10T00:00:00",
-          "source": "东方财富研报",
-          "source_category": "券商研报",
-          "event_type": "券商研报",
+          "event_id": "2fa9ec26e757",
+          "title": "金属镍概念上涨0.82%，6股主力资金净流入超5000万元",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
           "sentiment": "positive",
           "impact_level": "medium",
-          "summary": "机构：东吴证券；评级：买入；行业：电池",
-          "link": "https://pdf.dfcfw.com/pdf/H3_AP202604101821111631_1.pdf"
+          "summary": "605376 博迁新材 2.44 4.00 9404.36 7.67 300618 寒锐钴业 4.26 6.12 5572.13 7.22 301500 飞南资源 -0.12 12.74 4729.04 10.13 601168 西部矿业 0.62 1.75 3627.24 3.03 300919",
+          "link": "http://finance.eastmoney.com/a/202604243718075375.html"
         },
         {
-          "event_id": "be13b066ff88",
-          "title": "三元前驱体出货显著回暖，钴系磷系材料稳健发展",
-          "publish_time": "2025-10-30T00:00:00",
-          "source": "东方财富研报",
-          "source_category": "券商研报",
-          "event_type": "券商研报",
+          "event_id": "4d17e1e573f2",
+          "title": "盐湖提锂概念涨2.49%，主力资金净流入这些股",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
           "sentiment": "positive",
           "impact_level": "medium",
-          "summary": "机构：国信证券；评级：增持；行业：电池",
-          "link": "https://pdf.dfcfw.com/pdf/H3_AP202510301771859076_1.pdf"
+          "summary": "000408 藏格矿业 3.39 0.97 10081.99 7.43 600499 科达制造 9.99 3.28 7401.80 6.06 601168 西部矿业 0.62 1.75 3627.24 3.03 600773 西藏城投 5.20 4.11 2692.97 2.85 300919",
+          "link": "http://finance.eastmoney.com/a/202604243718077646.html"
+        },
+        {
+          "event_id": "6154022be77a",
+          "title": "磷化工概念上涨1.82%，8股主力资金净流入超亿元",
+          "publish_time": "2026-04-24T17:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "603906 龙蟠科技 6.93 16.13 3598.09 1.26 600470 六国化工 3.36 12.46 3431.28 7.48 688275 万润新能 1.44 4.17 2985.88 3.94 002556 辉隆股份 6.84 4.32 2803.49 10.45 300919",
+          "link": "http://finance.eastmoney.com/a/202604243718076058.html"
         }
       ],
       "risk_plan": {
@@ -4642,13 +4640,13 @@
         "reference_price": 61.38,
         "stop_loss_price": 57.62,
         "stop_loss_pct": 0.0613,
-        "signal_quality_score": 83.04,
+        "signal_quality_score": 82.94,
         "take_profit_price_1": 68.15,
         "take_profit_pct_1": 0.1103,
         "take_profit_price_2": 72.66,
         "take_profit_pct_2": 0.1838,
         "trailing_stop_price": 58.59,
-        "suggested_position_min": 0.0732,
+        "suggested_position_min": 0.0731,
         "suggested_position_max": 0.1,
         "max_portfolio_risk": 0.0061,
         "risk_reward_ratio": 1.8,
@@ -4672,11 +4670,11 @@
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 2.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：2026年一季度业绩预告"
+          "最近的重要事件提要：金属镍概念上涨0.82%，6股主力资金净流入超5000万元"
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T09:36:53.355842+00:00"
+        "generated_at": "2026-04-24T10:04:51.614437+00:00"
       },
       "risk_controls": [
         "止损线参考 57.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4694,7 +4692,7 @@
     "industry_source": "ths_industry_summary",
     "constituent_scan_mode": "行业前 6 成分股全扫",
     "total_universe_size": 28,
-    "news_watchlist_size": 10,
+    "news_watchlist_size": 14,
     "scan_summary": [
       {
         "sector_name": "能源金属",

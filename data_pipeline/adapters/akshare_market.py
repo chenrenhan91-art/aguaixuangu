@@ -874,6 +874,44 @@ class AKShareMarketDataAdapter:
         df["发布时间"] = pd.to_datetime(df["发布时间"], errors="coerce")
         return df.dropna(subset=["发布时间"]).head(limit).reset_index(drop=True)
 
+    def fetch_northbound_net_flow_today(self) -> Optional[float]:
+        """返回当日北向资金净流入（亿元）。失败返回 None。"""
+        today = date.today()
+        # 尝试多个 AKShare 接口，逐一回退
+        candidates = [
+            ("stock_em_hsgt_fund_flow_total", {"indicator": "北上"}),
+            ("stock_em_hsgt_fund_flow_total", {"indicator": "沪股通"}),
+            ("stock_hsgt_north_net_flow_in_em", {}),
+        ]
+        for func_name, kwargs in candidates:
+            try:
+                func = getattr(ak, func_name, None)
+                if func is None:
+                    continue
+                df = run_without_proxy(func, retries=2, retry_delay=0.8, **kwargs)
+                if df is None or df.empty:
+                    continue
+                # 找日期列
+                date_col = next(
+                    (c for c in df.columns if "日期" in c or "date" in c.lower()), None
+                )
+                if date_col:
+                    df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+                    df.sort_values(date_col, ascending=False, inplace=True)
+                # 找净流入列
+                flow_col = next(
+                    (c for c in df.columns if any(k in c for k in ["净流入", "净买入", "北向资金", "北上资金"])),
+                    None,
+                )
+                if flow_col is None:
+                    continue
+                raw_val = float(pd.to_numeric(df.iloc[0][flow_col], errors="coerce") or 0.0)
+                # 如果是元为单位，转换为亿元
+                return raw_val / 1e8 if abs(raw_val) > 1e7 else raw_val
+            except Exception:
+                continue
+        return None
+
     def fetch_code_name_map(self) -> pd.DataFrame:
         df = run_without_proxy(ak.stock_info_a_code_name, retries=4, retry_delay=1.0)
         df = df.copy()

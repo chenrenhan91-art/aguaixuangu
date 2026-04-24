@@ -234,24 +234,24 @@ def score_industries(df: pd.DataFrame) -> pd.DataFrame:
     capital_proxy = scored["净流入"] if "净流入" in scored.columns else scored["换手率"] * 2.0
 
     scored["strength_score"] = (
-        44
+        40
         + scored["涨跌幅"].clip(-5, 10) * 4
         + scored["breadth_ratio"] * 22
         + capital_proxy.clip(-12, 18) * 1.2
     ).clip(0, 100)
     scored["momentum_score"] = (
-        46
+        42
         + scored["涨跌幅"].clip(-5, 10) * 4.6
         + scored["领涨股票-涨跌幅"].clip(-10, 20) * 1.4
     ).clip(0, 100)
     scored["heat_score"] = (
-        42
+        38
         + scored["上涨家数"].clip(0, 60) * 0.45
         - scored["下跌家数"].clip(0, 60) * 0.18
         + amount_proxy.clip(0, 200) * 0.22
     ).clip(0, 100)
     scored["capital_consensus_score"] = (
-        40
+        36
         + amount_proxy.clip(0, 200) * 0.24
         + capital_proxy.clip(-12, 18) * 1.5
         + scored["breadth_ratio"] * 12
@@ -355,23 +355,59 @@ def compute_sentiment_score(
     spot_pct: float,
     spot_volume_ratio: float,
 ) -> float:
-    score = 38.0
-    score += clip(spot_pct * 3.4, -12, 26)
-    score += clip(spot_turnover * 2.4, 0, 18)
-    score += clip((spot_amount / 100_000_000) * 0.75, 0, 18)
-    score += clip((spot_volume_ratio - 1.0) * 12, -8, 14)
-    score += clip(feature_map["amount_ratio_5"] * 8 - 8, -6, 10)
-    score += clip(feature_map["ret5"] * 120, -8, 10)
-    if 4.5 <= spot_pct <= 10.5:
-        score += 8
-    if feature_map["volatility_10"] >= 6.5:
-        score -= 8
+    # --- ATR 归一化涨幅：消除高波动股虚高情绪 ---
+    atr14 = max(feature_map.get("atr14", 0.01), 0.01)
+    latest_close = max(feature_map.get("latest_close", 1.0), 0.01)
+    atr_pct = atr14 / latest_close * 100          # ATR 占价格百分比（%）
+    norm_move = spot_pct / max(atr_pct, 0.4)      # 今日涨幅是历史 ATR 的几倍
+
+    # --- 相对成交额：今日 vs 近 5 日均值，避免大小盘绝对额偏差 ---
+    amount_5d = feature_map.get("amount_5", 0.0)
+    amount_rel = (spot_amount / max(amount_5d, 1.0)) if amount_5d > 1_000_000 else 1.0
+
+    score = 34.0
+    score += clip(norm_move * 10, -15, 25)           # ATR 归一化涨幅（-15~+25）
+    score += clip(spot_turnover * 2.0, 0, 16)        # 换手率活跃度
+    score += clip((amount_rel - 1.0) * 9, -6, 13)   # 相对成交额倍率
+    score += clip((spot_volume_ratio - 1.0) * 10, -8, 13)  # 量比
+
+    # --- 量价配合度 ---
+    if spot_volume_ratio >= 1.8 and spot_pct >= 2.0:
+        score += 6   # 放量上涨：强势信号
+    elif spot_volume_ratio < 0.6 and spot_pct > 1.5:
+        score -= 5   # 缩量上涨：可疑，持续性弱
+
+    # --- 近 5 日动量与方向一致性 ---
+    ret5 = feature_map.get("ret5", 0.0)
+    score += clip(ret5 * 100, -8, 10)
+    if ret5 > 0.02 and spot_pct > 0:
+        score += 4   # 趋势延续：近 5 日和今日同向上涨
+    elif ret5 < -0.02 and spot_pct < -1:
+        score -= 3   # 下跌惯性：轻微惩罚
+
+    # --- 价格甜蜜区（强势但非过热） ---
+    if 3.5 <= spot_pct <= 9.5:
+        score += 7   # 涨幅区间理想
+    elif spot_pct >= 9.5:
+        score += 2   # 接近涨停，过热不宜盲追
+
+    # --- 均线上方顺势加分 ---
+    if feature_map.get("latest_close", 0) > feature_map.get("ma10", 0) and spot_pct > 0:
+        score += 3
+
+    # --- 高波动惩罚（近 10 日波动率） ---
+    vol = feature_map.get("volatility_10", 0.0)
+    if vol >= 6.5:
+        score -= 10
+    elif vol >= 5.0:
+        score -= 4
+
     return clip(score, 0, 100)
 
 
 def extract_event_articles(symbol: str, stock_name: str, news_df: pd.DataFrame) -> tuple[float, list[dict[str, Any]]]:
     if news_df is None or news_df.empty:
-        return 50.0, []
+        return 48.0, []
 
     now = datetime.now(timezone.utc)
     articles: list[dict[str, Any]] = []
@@ -429,12 +465,8 @@ def extract_event_articles(symbol: str, stock_name: str, news_df: pd.DataFrame) 
             (now - published_at.to_pydatetime().replace(tzinfo=timezone.utc)).total_seconds() / 3600,
             0,
         )
-        if age_hours <= 24:
-            decay = 1.0
-        elif age_hours <= 72:
-            decay = 0.75
-        else:
-            decay = 0.5
+        # 指数衰减：半衰期 40 小时，最低保留 25%（比阶梯衰减更细粒度）
+        decay = max(0.25, 0.5 ** (age_hours / 40.0))
         score = raw_score * decay
 
         if score >= 8:
@@ -466,15 +498,26 @@ def extract_event_articles(symbol: str, stock_name: str, news_df: pd.DataFrame) 
         )
 
     articles.sort(key=lambda item: item["_score"], reverse=True)
+    # 指数折扣加权聚合：相关性最高的文章权重最大，避免多篇一般文章稀释单篇强信号
+    if articles:
+        sorted_scores = [item["_score"] for item in articles]
+        weights = [0.65 ** i for i in range(len(sorted_scores))]
+        effective_aggregate = sum(s * w for s, w in zip(sorted_scores, weights))
+        effective_count = sum(weights)
+        event_score = clip(50 + (effective_aggregate / effective_count) * 1.8, 0, 100)
+    else:
+        event_score = 48.0  # 无新闻时略低于中性，反映信息不确定性
     selected = articles[:3]
     for item in selected:
         item.pop("_score", None)
-
-    event_score = clip(50 + aggregate_score / max(len(articles), 1), 0, 100)
     return event_score, selected
 
 
-def build_market_regime(top_sectors: list[dict[str, Any]], market_news: list[dict[str, Any]]) -> dict[str, Any]:
+def build_market_regime(
+    top_sectors: list[dict[str, Any]],
+    market_news: list[dict[str, Any]],
+    northbound_flow_yi: Optional[float] = None,
+) -> dict[str, Any]:
     if not top_sectors:
         return {
             "regime": "neutral",
@@ -522,12 +565,20 @@ def build_market_regime(top_sectors: list[dict[str, Any]], market_news: list[dic
         regime = "neutral"
     exposure = round(map_confidence_to_exposure(confidence), 4)
 
+    # 北向资金得分：优先使用实际净流入数据，无数据时用板块资金共识作代理
+    if northbound_flow_yi is not None:
+        # 实际北向净流入（亿元）：±100 亿内线性映射到 0-100
+        northbound_score = clip(50 + northbound_flow_yi * 0.35, 0, 100)
+    else:
+        # 无北向数据：用市场宽度和盘面消息作为代理（比原 capital_score 独立性更强）
+        northbound_score = clip(capital_score * 0.5 + breadth_score * 0.3 + clip(50 + news_bias * 5, 0, 100) * 0.2, 0, 100)
+
     return {
         "regime": regime,
         "confidence": round(confidence, 4),
         "suggested_exposure": exposure,
         "breadth_score": round(breadth_score, 2),
-        "northbound_score": round(clip(capital_score * 0.8 + clip(50 + news_bias * 3, 0, 100) * 0.2, 0, 100), 2),
+        "northbound_score": round(northbound_score, 2),
         "momentum_score": round(momentum_score, 2),
         "updated_at": datetime.now(timezone.utc).isoformat(),
     }
@@ -1295,7 +1346,10 @@ def generate_daily_candidates(config: Optional[SelectionConfig] = None) -> dict[
         for _, row in market_news_df.iterrows()
     ]
 
-    market_regime = build_market_regime(top_sectors=top_sectors, market_news=market_news)
+    northbound_flow = adapter.fetch_northbound_net_flow_today()
+    market_regime = build_market_regime(
+        top_sectors=top_sectors, market_news=market_news, northbound_flow_yi=northbound_flow
+    )
     sector_names = [sector["sector_name"] for sector in top_sectors]
 
     strategy_modes = {
