@@ -7997,8 +7997,8 @@ a:hover {
       <div id="content-lock-overlay" class="content-lock-overlay is-hidden">
         <article class="content-lock-card">
           <div id="lock-state-auth">
-            <h3>登录后可使用邀请码解锁内容</h3>
-            <p>请先注册或登录账号，登录后可输入付费邀请码解锁完整内容。</p>
+            <h3>登录后可查看完整 AI 选股</h3>
+            <p>新用户首次登录后自动开启 3 个 A 股交易日免费试用；试用结束后可输入邀请码继续查看。</p>
             <button id="content-lock-login-button" type="button" class="primary-button">注册 / 登录</button>
           </div>
           <div id="lock-state-unlock">
@@ -8369,8 +8369,11 @@ a:hover {
         //   'trial' -> within the 3-trading-day free trial window
         //   'none'  -> not logged in, trial expired, or no access
         accessMode: "none",
+        accessReason: "",
         trialDaysLeft: 0,
         trialEndsOn: null,
+        trialEligible: false,
+        trialCalendarReady: true,
         supabaseClient: null,
         snapshotSignature: "",
         // Snapshot history browser (gated by hasPaidAccess):
@@ -8387,6 +8390,7 @@ a:hover {
         authStateSubscription: null,
         cachedAccessToken: "",
         inPasswordRecovery: false,
+        accessRefreshTimer: null,
       };
 
       function buildSnapshotSignature(snapshotPayload, marketPayloadValue) {
@@ -8589,13 +8593,45 @@ a:hover {
         }
       }
 
+      function resetAccessState() {
+        if (state.accessRefreshTimer) {
+          clearTimeout(state.accessRefreshTimer);
+          state.accessRefreshTimer = null;
+        }
+        state.hasPaidAccess = false;
+        state.accessMode = "none";
+        state.accessReason = "";
+        state.trialDaysLeft = 0;
+        state.trialEndsOn = null;
+        state.trialEligible = false;
+        state.trialCalendarReady = true;
+      }
+
+      function scheduleTrialAccessRefresh() {
+        if (state.accessRefreshTimer) {
+          clearTimeout(state.accessRefreshTimer);
+          state.accessRefreshTimer = null;
+        }
+        if (!state.user || state.accessMode !== "trial") {
+          return;
+        }
+        state.accessRefreshTimer = setTimeout(async () => {
+          state.hasPaidAccess = await checkPaidAccess();
+          updateAuthChrome();
+          updateRuntimeChrome();
+        }, 30 * 60 * 1000);
+      }
+
       function updateAuthChrome() {
         const authPill = document.getElementById("auth-status-pill");
         const openButton = document.getElementById("auth-open-button");
         const logoutButton = document.getElementById("auth-logout-button");
         if (authPill) {
-          if (state.user && state.hasPaidAccess) {
+          if (state.user && state.accessMode === "paid") {
             authPill.textContent = state.user.email || state.user.id || "已激活";
+            authPill.classList.add("user-history-chip");
+          } else if (state.user && state.accessMode === "trial") {
+            authPill.textContent = `免费试用中（${state.trialDaysLeft} 个交易日）`;
             authPill.classList.add("user-history-chip");
           } else if (state.user) {
             authPill.textContent = "已登录（待激活邀请码）";
@@ -8615,6 +8651,7 @@ a:hover {
           logoutButton.classList.toggle("is-hidden", !state.user);
         }
         updateContentAccessLock();
+        scheduleTrialAccessRefresh();
       }
 
       function updateContentAccessLock() {
@@ -8650,12 +8687,17 @@ a:hover {
           const unlockTitle = document.getElementById("lock-unlock-title");
           const unlockDesc = document.getElementById("lock-unlock-desc");
           if (unlockTitle && unlockDesc) {
-            if (loggedIn && state.accessMode === "none" && state.trialDaysLeft === 0) {
-              unlockTitle.textContent = "3 天免费试用已结束";
+            if (loggedIn && state.accessReason === "trade_calendar_missing") {
+              unlockTitle.textContent = "A 股交易日历待配置";
+              unlockDesc.textContent = "免费试用需要按真实 A 股交易日计算。请管理员导入交易日历，或直接输入购买后获取的邀请码解锁。";
+            } else if (loggedIn && state.accessReason === "trial_expired") {
+              unlockTitle.textContent = "3 个交易日免费试用已结束";
               unlockDesc.textContent = "请输入购买后获取的邀请码继续查看完整选股内容（每个邮箱注册时会自动生成一个专属码，后台管理员可见）。";
             } else {
               unlockTitle.textContent = "输入邀请码解锁内容";
-              unlockDesc.textContent = "你已登录。请输入购买后获取的邀请码（每个邮箱在注册时自动生成一个专属码，后台管理员可见）。";
+              unlockDesc.textContent = state.trialEligible
+                ? "你已登录。新用户免费试用结束后，可输入购买后获取的邀请码继续查看完整内容。"
+                : "你已登录。请输入购买后获取的邀请码（每个邮箱在注册时自动生成一个专属码，后台管理员可见）。";
             }
           }
           // Reset unlock controls so a previously successful session doesn't
@@ -8676,8 +8718,8 @@ a:hover {
         renderTrialBanner();
       }
 
-      // Render the "试用剩余 X 天" banner above the freshness banner. Only
-      // shown when the user is actively on a trial (not paid, not expired).
+      // Render the trial banner above the freshness banner. Only shown when
+      // the user is actively inside the real A-share trading-day trial window.
       function renderTrialBanner() {
         const banner = document.getElementById("trial-access-banner");
         if (!banner) return;
@@ -8771,6 +8813,10 @@ a:hover {
             return;
           }
           state.hasPaidAccess = true;
+          state.accessMode = "paid";
+          state.accessReason = "";
+          state.trialDaysLeft = 0;
+          state.trialEndsOn = null;
           updateContentAccessLock();
           updateAuthChrome();
           if (unlockStatus) unlockStatus.textContent = "解锁成功。";
@@ -9048,9 +9094,11 @@ a:hover {
         } = await client.auth.getSession();
         state.user = session?.user || null;
         state.cachedAccessToken = session?.access_token || "";
-        state.hasPaidAccess = false;
         if (state.user) {
+          state.hasPaidAccess = false;
           state.hasPaidAccess = await checkPaidAccess();
+        } else {
+          resetAccessState();
         }
         state.authReady = true;
         updateAuthChrome();
@@ -9078,7 +9126,7 @@ a:hover {
               clearUserLocalCache(prevIdentity);
             }
             state.user = null;
-            state.hasPaidAccess = false;
+            resetAccessState();
             updateAuthChrome();
             updateRuntimeChrome();
             renderTradeDiagnostics(initialDiagnostics);
@@ -9087,9 +9135,8 @@ a:hover {
 
           const userChanged = !state.user || state.user.id !== nextUser.id;
           state.user = nextUser;
-          // Skip redundant checkPaidAccess on TOKEN_REFRESHED / USER_UPDATED when user unchanged
-          // and access was previously granted.
-          if (userChanged || !state.hasPaidAccess) {
+          // Trial access is date-based, so re-check it on auth refreshes too.
+          if (userChanged || !state.hasPaidAccess || state.accessMode === "trial") {
             state.hasPaidAccess = await checkPaidAccess();
           }
           updateAuthChrome();
@@ -9141,8 +9188,8 @@ a:hover {
             }
             if (status) {
               status.textContent = hasSession
-                ? "注册并登录成功，正在加载权限...该邮箱已生成专属邀请码，向管理员获取后可解锁内容。"
-                : "注册成功。账号已自动生成一个专属邀请码，请在购买后通过管理员获取并登录后输入以解锁。";
+                ? "注册并登录成功，正在开启 3 个 A 股交易日免费试用..."
+                : "注册成功。首次登录后会自动开启 3 个 A 股交易日免费试用，试用结束后可输入邀请码继续查看。";
             }
             if (hasSession) {
               setTimeout(closeAuthModal, 1500);
@@ -9214,9 +9261,7 @@ a:hover {
 
       async function checkPaidAccess() {
         if (!state.supabaseClient || !state.user) {
-          state.accessMode = "none";
-          state.trialDaysLeft = 0;
-          state.trialEndsOn = null;
+          resetAccessState();
           return false;
         }
         try {
@@ -9231,32 +9276,34 @@ a:hover {
             });
             if (fb.error) {
               console.warn("[auth] user_has_email_invite_access RPC error:", fb.error.message || fb.error);
-              state.accessMode = "none";
-              state.trialDaysLeft = 0;
-              state.trialEndsOn = null;
+              resetAccessState();
               return false;
             }
             const boolAccess = Boolean(fb.data);
             state.accessMode = boolAccess ? "paid" : "none";
+            state.accessReason = "";
             state.trialDaysLeft = 0;
             state.trialEndsOn = null;
+            state.trialEligible = false;
+            state.trialCalendarReady = true;
             return boolAccess;
           }
           if (!data || !data.ok) {
-            state.accessMode = "none";
-            state.trialDaysLeft = 0;
-            state.trialEndsOn = null;
+            resetAccessState();
+            state.accessReason = data?.reason || "";
             return false;
           }
           state.accessMode = data.mode || "none";
-          state.trialDaysLeft = Number.isFinite(data.trial_days_left) ? data.trial_days_left : 0;
+          state.accessReason = data.reason || "";
+          const parsedDaysLeft = Number(data.trial_days_left);
+          state.trialDaysLeft = Number.isFinite(parsedDaysLeft) ? parsedDaysLeft : 0;
           state.trialEndsOn = data.trial_ends_on || null;
+          state.trialEligible = Boolean(data.trial_eligible);
+          state.trialCalendarReady = data.trial_calendar_ready !== false;
           return Boolean(data.access);
         } catch (error) {
           console.warn("[auth] checkPaidAccess threw:", error);
-          state.accessMode = "none";
-          state.trialDaysLeft = 0;
-          state.trialEndsOn = null;
+          resetAccessState();
           return false;
         }
       }
@@ -11775,7 +11822,7 @@ a:hover {
             }
             if (!state.supabaseClient) {
               state.user = null;
-              state.hasPaidAccess = false;
+              resetAccessState();
               updateAuthChrome();
               authLogoutButton.disabled = false;
               authLogoutButton.textContent = originalLogoutText;
@@ -11788,7 +11835,7 @@ a:hover {
               }
               // Immediate local fallback so UI updates even if auth callback is delayed.
               state.user = null;
-              state.hasPaidAccess = false;
+              resetAccessState();
               renderTradeDiagnostics(initialDiagnostics);
               if (unlockStatus) {
                 unlockStatus.textContent = "已退出登录。";
