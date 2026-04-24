@@ -56,6 +56,7 @@
 ```bash
 make install
 make check-trade-day
+make trade-calendar-sql
 make snapshot
 ```
 
@@ -82,9 +83,21 @@ make snapshot
 作用：
 
 - 建表 `trade_diagnostics_history`
+- 建表 `a_share_trade_calendar`
+- 建表 / 更新 `email_invite_codes`
 - 建表 `analysis_history`
 - 启用 RLS
 - 允许用户只读写自己的历史记录
+- 支持新用户首次登录后自动获得 3 个真实 A 股交易日免费试用；已核销邀请码的老客户不受影响
+
+试用天数按真实 A 股交易日计算，因此执行完 `supabase/schema.sql` 后，还需要生成并导入交易日历：
+
+```bash
+make trade-calendar-sql
+```
+
+然后把 `supabase/a_share_trade_calendar_seed.sql` 粘贴到 Supabase SQL Editor 执行。建议每年或每次跨年部署前重新生成一次。
+这个命令需要联网访问 AKShare/Sina 交易日历。
 
 ### 3. 前端运行时配置
 

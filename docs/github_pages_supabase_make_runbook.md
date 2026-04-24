@@ -63,9 +63,21 @@
 作用：
 
 - 创建 `trade_diagnostics_history`
+- 创建 `a_share_trade_calendar`
+- 创建 / 更新 `email_invite_codes`
 - 创建 `analysis_history`
 - 启用行级权限
 - 允许登录用户只读写自己的历史数据
+- 新用户首次登录后自动获得 3 个真实 A 股交易日免费试用；已核销邀请码的老客户保持解锁
+
+免费试用依赖真实 A 股交易日历。执行 `supabase/schema.sql` 后，运行：
+
+```bash
+make trade-calendar-sql
+```
+
+再把生成的 `supabase/a_share_trade_calendar_seed.sql` 粘贴到 Supabase SQL Editor 执行。
+这个命令需要联网访问 AKShare/Sina 交易日历。
 
 ### 3. 前端运行时配置
 
