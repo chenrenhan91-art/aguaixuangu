@@ -167,6 +167,28 @@ def safe_mean(values: list[float]) -> float:
     return float(mean(values)) if values else 0.0
 
 
+def compute_rsi14(pct_values: list[float]) -> float:
+    """Wilder RSI-14：取最近 14 个交易日的涨跌幅列表，返回 0-100 RSI 值。"""
+    data = pct_values[-14:] if len(pct_values) >= 14 else pct_values
+    gains = [max(p, 0.0) for p in data]
+    losses = [abs(min(p, 0.0)) for p in data]
+    avg_gain = mean(gains) if gains else 0.0
+    avg_loss = mean(losses) if losses else 0.001
+    rs = avg_gain / max(avg_loss, 0.001)
+    return 100.0 - 100.0 / (1.0 + rs)
+
+
+def compute_ema(values: list[float], period: int) -> list[float]:
+    """EMA 序列：与 values 等长，从 index 0 开始滚动计算。"""
+    if not values:
+        return []
+    k = 2.0 / (period + 1)
+    result = [values[0]]
+    for v in values[1:]:
+        result.append(v * k + result[-1] * (1.0 - k))
+    return result
+
+
 def pct_change(new_value: float, old_value: float) -> float:
     if old_value == 0:
         return 0.0
@@ -300,6 +322,37 @@ def compute_stock_features(hist_df: pd.DataFrame) -> Optional[dict[str, float]]:
     support_10 = min(lows[-10:]) if len(lows) >= 10 else min(lows)
     resistance_20 = max(highs[-20:]) if len(highs) >= 20 else max(highs)
 
+    # ── 新增技术指标 ──────────────────────────────────────────────────
+    # RSI-14：动量超买/超卖强度
+    rsi14 = compute_rsi14(pct_values)
+
+    # CRPOS：今日收盘在日内振幅中的位置（0=近日低，1=近日高）
+    day_range = highs[-1] - lows[-1]
+    crpos = (latest_close - lows[-1]) / day_range if day_range > 0.001 else 0.5
+
+    # MACD (EMA12 - EMA26，Signal=EMA9)：趋势方向与金叉/死叉
+    macd_cross_up = False
+    macd_val = 0.0
+    macd_above_signal = False
+    if len(closes) >= 26:
+        ema12_series = compute_ema(closes, 12)
+        ema26_series = compute_ema(closes, 26)
+        macd_series = [a - b for a, b in zip(ema12_series, ema26_series)]
+        signal_series = compute_ema(macd_series, 9)
+        macd_val = macd_series[-1]
+        signal_val = signal_series[-1]
+        macd_above_signal = macd_val > signal_val
+        # 金叉：今天 MACD 在 Signal 上方，昨天在下方
+        macd_cross_up = macd_val > signal_val and macd_series[-2] <= signal_series[-2]
+
+    # 连续上涨天数（排除今日）
+    up_streak = 0
+    for _p in reversed(pct_values[-6:-1]):
+        if _p > 0.3:
+            up_streak += 1
+        else:
+            break
+
     trend_score = 30.0
     if latest_close > ma20:
         trend_score += 18
@@ -311,6 +364,37 @@ def compute_stock_features(hist_df: pd.DataFrame) -> Optional[dict[str, float]]:
     trend_score += clip(ret10 * 180, -8, 12)
     trend_score += clip(ret5 * 150, -6, 10)
     trend_score += clip(breakout_gap * 160, -6, 10)
+
+    # ── RSI 贡献 ──
+    if 48 <= rsi14 <= 72:
+        trend_score += 8      # 健康动量区间
+    elif 72 < rsi14 <= 80:
+        trend_score += 3      # 偏热但仍可追
+    elif rsi14 > 80:
+        trend_score -= 6      # 超买，回调风险上升
+    elif rsi14 < 32:
+        trend_score -= 2      # 超卖，谨慎
+
+    # ── MACD 贡献 ──
+    if macd_cross_up:
+        trend_score += 9      # 金叉：趋势反转/加速信号
+    elif macd_above_signal and macd_val > 0:
+        trend_score += 4      # 多头 MACD，强势持续
+    elif macd_val > 0:
+        trend_score += 1      # 零轴上方但弱化
+    elif not macd_above_signal and macd_val < 0:
+        trend_score -= 3      # 空头区域
+
+    # ── CRPOS：收盘位置质量 ──
+    trend_score += clip((crpos - 0.5) * 14, -5, 7)  # 靠近日高 +7，靠近日低 -5
+
+    # ── 连续上涨动量 ──
+    if up_streak >= 3:
+        trend_score += min(up_streak * 1.5, 6)       # 连涨 3+ 天加分
+    elif up_streak == 0:
+        recent_reds = sum(1 for _px in pct_values[-3:-1] if _px < -0.5)
+        if recent_reds >= 2:
+            trend_score -= 4  # 近 2 日连跌，惯性惩罚
 
     liquidity_score = 25.0
     liquidity_score += clip((amount_ratio_5 - 1.0) * 25, -8, 18)
@@ -344,6 +428,11 @@ def compute_stock_features(hist_df: pd.DataFrame) -> Optional[dict[str, float]]:
         "atr14": atr14,
         "support_10": support_10,
         "resistance_20": resistance_20,
+        "rsi14": round(rsi14, 2),
+        "crpos": round(crpos, 4),
+        "macd_val": round(macd_val, 4),
+        "macd_cross_up": macd_cross_up,
+        "up_streak": up_streak,
         "technical_score": technical_score,
     }
 
@@ -401,6 +490,10 @@ def compute_sentiment_score(
         score -= 10
     elif vol >= 5.0:
         score -= 4
+
+    # --- 收盘位置质量（CRPOS）：收盘靠近日高说明尾盘买盘强 ---
+    crpos_val = feature_map.get("crpos", 0.5)
+    score += clip((crpos_val - 0.5) * 10, -4, 5)
 
     return clip(score, 0, 100)
 
@@ -610,6 +703,9 @@ def build_mode_score(mode_id: str, record: dict[str, Any]) -> float:
             score += 5
         if any(event["sentiment"] == "negative" and event["impact_level"] == "high" for event in record["events"]):
             score -= 14
+        # RSI 超买惩罚：新闻追涨叠加超买，回调风险显著上升
+        if feature_map.get("rsi14", 50.0) > 80:
+            score -= 5
     elif mode_id == "trend_breakout":
         if feature_map["ma10"] > feature_map["ma20"] > feature_map["ma60"]:
             score += 8
@@ -617,6 +713,9 @@ def build_mode_score(mode_id: str, record: dict[str, Any]) -> float:
             score += 5
         if record["spot_pct"] < -2:
             score -= 8
+        # MACD 金叉：趋势突破的硬指标确认
+        if feature_map.get("macd_cross_up", False):
+            score += 7
     elif mode_id == "short_term_relay":
         if record["spot_pct"] >= 6:
             score += 10
@@ -626,6 +725,9 @@ def build_mode_score(mode_id: str, record: dict[str, Any]) -> float:
             score += 5
         if feature_map["latest_pct"] < 0:
             score -= 10
+        # CRPOS 收盘质量：收盘靠近日高，次日跳空开高概率更大
+        if feature_map.get("crpos", 0.5) >= 0.75:
+            score += 4
 
     return round(clip(score, 0, 100), 2)
 
@@ -1176,6 +1278,16 @@ def generate_daily_candidates(config: Optional[SelectionConfig] = None) -> dict[
     industries_df = score_industries(adapter.fetch_industry_rankings())
     top_industries_df = industries_df.head(selection_config.top_industry_count)
 
+    # 自适应基线权重：根据当前市场强弱状态调整行业/技术/情绪三维权重
+    # 强势市场（板块均分≥63）：动量更重要；弱势市场（≤48）：行业稳定性更重要
+    _top5_sector_mean = float(industries_df.head(5)["sector_score"].mean()) if not industries_df.empty else 55.0
+    if _top5_sector_mean >= 63:
+        _BW_I, _BW_T, _BW_S = 0.30, 0.40, 0.30   # 强势市场：技术/情绪动量优先
+    elif _top5_sector_mean <= 48:
+        _BW_I, _BW_T, _BW_S = 0.40, 0.36, 0.24   # 弱势市场：行业稳定性优先
+    else:
+        _BW_I, _BW_T, _BW_S = 0.34, 0.38, 0.28   # 中性市场：默认权重
+
     top_sectors: list[dict[str, Any]] = []
     record_map: dict[str, dict[str, Any]] = {}
     scan_summary: list[dict[str, Any]] = []
@@ -1280,7 +1392,7 @@ def generate_daily_candidates(config: Optional[SelectionConfig] = None) -> dict[
                 2,
             )
             baseline_score = round(
-                0.34 * industry_score + 0.38 * technical_score + 0.28 * sentiment_score,
+                _BW_I * industry_score + _BW_T * technical_score + _BW_S * sentiment_score,
                 2,
             )
 
