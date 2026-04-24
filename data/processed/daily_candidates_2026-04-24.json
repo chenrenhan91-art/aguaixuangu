@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-24T06:22:00.893630+00:00",
+  "generated_at": "2026-04-24T06:32:53.627657+00:00",
   "trade_date": "2026-04-24",
   "snapshot_session": {
     "session_id": "close",
     "label": "收盘信息",
-    "generated_time": "14:22",
-    "generated_at": "2026-04-24T14:22:00.893630+08:00"
+    "generated_time": "14:32",
+    "generated_at": "2026-04-24T14:32:53.627657+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -43,108 +43,108 @@
   ],
   "market_regime": {
     "regime": "risk_on",
-    "confidence": 0.7657,
-    "suggested_exposure": 0.7433,
-    "breadth_score": 80.55,
-    "northbound_score": 72.85,
-    "momentum_score": 79.04,
-    "updated_at": "2026-04-24T06:22:00.892460+00:00"
+    "confidence": 0.7739,
+    "suggested_exposure": 0.7451,
+    "breadth_score": 82.39,
+    "northbound_score": 73.26,
+    "momentum_score": 79.24,
+    "updated_at": "2026-04-24T06:32:53.626481+00:00"
   },
   "top_sectors": [
     {
       "sector_code": "881267",
       "sector_name": "能源金属",
       "strength_score": 100.0,
-      "momentum_score": 92.43,
-      "capital_consensus_score": 79.73,
-      "heat_score": 48.07,
+      "momentum_score": 91.6,
+      "capital_consensus_score": 79.75,
+      "heat_score": 48.09,
       "breadth_ratio": 1.0
     },
     {
       "sector_code": "881121",
       "sector_name": "半导体",
-      "strength_score": 89.46,
-      "momentum_score": 81.68,
-      "capital_consensus_score": 82.12,
-      "heat_score": 67.25,
+      "strength_score": 89.78,
+      "momentum_score": 82.05,
+      "capital_consensus_score": 82.26,
+      "heat_score": 67.38,
       "breadth_ratio": 0.7809
     },
     {
       "sector_code": "881281",
       "sector_name": "电池",
-      "strength_score": 90.29,
-      "momentum_score": 74.65,
-      "capital_consensus_score": 79.18,
-      "heat_score": 67.68,
-      "breadth_ratio": 0.8077
+      "strength_score": 91.62,
+      "momentum_score": 74.54,
+      "capital_consensus_score": 79.72,
+      "heat_score": 68.47,
+      "breadth_ratio": 0.8462
     },
     {
       "sector_code": "881263",
       "sector_name": "农化制品",
-      "strength_score": 91.85,
-      "momentum_score": 69.75,
-      "capital_consensus_score": 76.76,
-      "heat_score": 64.49,
-      "breadth_ratio": 0.8667
+      "strength_score": 93.67,
+      "momentum_score": 70.52,
+      "capital_consensus_score": 78.2,
+      "heat_score": 65.14,
+      "breadth_ratio": 0.8833
     },
     {
       "sector_code": "881109",
       "sector_name": "化学制品",
-      "strength_score": 80.55,
-      "momentum_score": 76.7,
-      "capital_consensus_score": 75.0,
-      "heat_score": 59.23,
-      "breadth_ratio": 0.5723
+      "strength_score": 82.04,
+      "momentum_score": 77.48,
+      "capital_consensus_score": 75.47,
+      "heat_score": 59.27,
+      "breadth_ratio": 0.6092
     }
   ],
   "market_news": [
     {
-      "title": "广期所多晶硅主力合约触及跌停",
-      "summary": "广期所多晶硅主力合约触及跌停，报40655元/吨，现跌幅为9.0%。",
-      "publish_time": "2026-04-24T14:19:21",
-      "link": "https://finance.eastmoney.com/a/202604243717875976.html"
+      "title": "世界气象组织：预计2026年年中将开始出现厄尔尼诺现象",
+      "summary": "【世界气象组织：预计2026年年中将开始出现厄尔尼诺现象】世界气象组织当地时间4月24日表示，预计从2026年年中开始将出现厄尔尼诺现象，这将影响全球气温和降雨模式。世界气象组织最新发布的月度全球季节性气候更新报告显示，赤道太平洋地区气候发生明显变化：海面温度迅速上升，预示着厄尔尼诺现象最早可能在2026年5月至7月再次出现。",
+      "publish_time": "2026-04-24T14:29:15",
+      "link": "https://finance.eastmoney.com/a/202604243717882833.html"
     },
     {
-      "title": "美格智能发布新一代中央计算架构5G舱联AI模组",
-      "summary": "【美格智能发布新一代中央计算架构5G舱联AI模组】据美格智能消息，4月24日，美格智能携手高通公司于北京车展美格智能展台举办了QCM6650/QCM8538/QCM8838三大智慧舱联平台模组联合发布仪式，并全新推出了基于高通QCM6650平台的5G舱联AI模组——SRM949。",
-      "publish_time": "2026-04-24T14:15:57",
-      "link": "https://finance.eastmoney.com/a/202604243717873256.html"
+      "title": "不满北约盟友拒绝在伊朗战事中提供支持 美被曝酝酿惩罚措施",
+      "summary": "【不满北约盟友拒绝在伊朗战事中提供支持 美被曝酝酿惩罚措施】当地时间24日获悉，一名美国官员透露称，一份五角大楼内部邮件概述了美国惩罚北约盟友的选项，理由是这些国家被认为“未支持美国对伊朗的战争”。惩罚措施包括：暂停西班牙在北约的成员资格，以及重新审查美国在阿根廷马尔维纳斯群岛（英称福克兰群岛）主权主张上对英国的支持立场。",
+      "publish_time": "2026-04-24T14:27:19",
+      "link": "https://finance.eastmoney.com/a/202604243717882075.html"
     },
     {
-      "title": "火山引擎发布新一代汽车AI解决方案",
-      "summary": "【火山引擎发布新一代汽车AI解决方案】据火山引擎消息，4月24日，北京车展开幕首日，火山引擎发布基于AgenticAI架构的新一代汽车AI解决方案，包含AI座舱套件方案、豆包座舱助手方案两大解决方案，其中豆包座舱助手方案将在今年年内量产上车。火山引擎总裁谭待表示，目前搭载豆包大模型的智能汽车已超过700万辆，覆盖超50个汽车品牌、145个车型。",
-      "publish_time": "2026-04-24T14:15:28",
-      "link": "https://finance.eastmoney.com/a/202604243717874068.html"
+      "title": "北京车展再谈“新车效应死亡谷”现象 蔚来CEO李斌：汽车品牌开始进入收敛期",
+      "summary": "【北京车展再谈“新车效应死亡谷”现象 蔚来CEO李斌：汽车品牌开始进入收敛期】在4月24日的北京车展上，蔚来汽车CEO李斌在接受界面新闻等媒体采访时表示，本届车展众多汽车品牌正开始进入“收敛期”。他认为，随着产品同质化程度加深，市场竞争正从单一的产品或技术维度，转向体系能力的全面对抗。而体系能力涵盖产品品质、销售服务、质量控制、成本管理，以及企业应对AI变革的组织适应能力等多个层面。",
+      "publish_time": "2026-04-24T14:26:18",
+      "link": "https://finance.eastmoney.com/a/202604243717881438.html"
     },
     {
-      "title": "曹操出行：完全定制的自动驾驶出租车车队规模到2030年将扩大至10万辆",
-      "summary": "曹操出行CEO表示，完全定制的自动驾驶出租车车队规模到2030年将扩大至10万辆。",
-      "publish_time": "2026-04-24T14:15:15",
-      "link": "https://finance.eastmoney.com/a/202604243717875088.html"
+      "title": "中际旭创成交额达300亿元",
+      "summary": "【中际旭创成交额达300亿元】4月24日下午，中际旭创成交额达300亿元，现跌0.62%。",
+      "publish_time": "2026-04-24T14:26:18",
+      "link": "https://finance.eastmoney.com/a/202604243717880665.html"
     },
     {
-      "title": "小鹏集团董事长：正与海外企业洽谈合作 并计划在境外新建工厂",
-      "summary": "【小鹏集团董事长：正与海外企业洽谈合作 并计划在境外新建工厂】小鹏集团董事长透露，该公司正与海外汽车制造商洽谈潜在的合作事宜。小鹏希望在全球范围内将其驾驶辅助技术商业化，并扩大中国以外的生产规模。小鹏董事长何小鹏周四在北京接受媒体采访时表示，他计划周五与大众汽车首席执行官OliverBlume会面，这两家汽车制造商过去三年的合作“进展顺利”。",
-      "publish_time": "2026-04-24T14:12:15",
-      "link": "https://finance.eastmoney.com/a/202604243717871437.html"
+      "title": "福岛核电站反应堆内测出极强辐射",
+      "summary": "【福岛核电站反应堆内测出极强辐射】日本东京电力公司4月23日公布福岛第一核电站2号机组反应堆内部调查结果。数据显示，相关区域辐射剂量极强，同时确认堆内仍留存核残渣。这是2011年福岛核电站事故以来，东电公司首次在堆芯熔毁的反应堆内部测量核辐射。",
+      "publish_time": "2026-04-24T14:24:26",
+      "link": "https://finance.eastmoney.com/a/202604243717879811.html"
     },
     {
-      "title": "伊朗最高领袖顾问：伊朗的团结是特朗普的“噩梦”",
-      "summary": "【伊朗最高领袖顾问：伊朗的团结是特朗普的“噩梦”】当地时间24日，伊朗最高领袖顾问穆赫贝尔在社交媒体上说，伊朗官员团结一致，伊朗人民充满自豪和爱国情怀，伊朗武装部队的战士为国捐躯，这是“失败者的噩梦”。穆赫贝尔写道：“面对9000万伊朗革命者，特朗普别无选择，只能煽动分裂。”美国总统特朗普23日早些时候在社交媒体发文，称伊朗“强硬派”同“温和派”正在“内斗”。",
-      "publish_time": "2026-04-24T14:07:27",
-      "link": "https://finance.eastmoney.com/a/202604243717869086.html"
+      "title": "小马智行：2027版Robotaxi成本低于23万 首发L4级无人轻卡",
+      "summary": "【小马智行：2027版Robotaxi成本低于23万 首发L4级无人轻卡】4月24日消息，小马智行在北京车展宣布2027版全无人Robotaxi整车总成本下探至23万元以内，并正式发布全球首款全车规、全冗余L4级无人驾驶轻卡。同时依托世界模型2.0技术基座，小马智行将以标杆级L4级产品方案打通城市出行、配送与干线物流的全场景。这款L4级无人驾驶轻卡基于宁德时代坤势商用车底盘打造。",
+      "publish_time": "2026-04-24T14:24:26",
+      "link": "https://finance.eastmoney.com/a/202604243717879545.html"
     },
     {
-      "title": "日经225指数涨幅扩大至1%",
-      "summary": "日经225指数涨幅扩大至1%，现报59720.6点。",
-      "publish_time": "2026-04-24T14:06:34",
-      "link": "https://finance.eastmoney.com/a/202604243717868544.html"
+      "title": "西班牙首相桑切斯要求欧盟委员会在能源方面提出更高要求",
+      "summary": "西班牙首相桑切斯表示，要求欧盟委员会在能源方面提出更高要求；寻求对能源公司征收暴利税。",
+      "publish_time": "2026-04-24T14:23:28",
+      "link": "https://finance.eastmoney.com/a/202604243717879166.html"
     },
     {
-      "title": "江苏首个！苏州：路边停车也能充电了",
-      "summary": "【江苏首个！苏州：路边停车也能充电了】路边临时停个车的工夫，也能给车充电了！目前，江苏首个路侧临停车位“统建统服”充电设施已正式投运。",
-      "publish_time": "2026-04-24T14:05:37",
-      "link": "https://finance.eastmoney.com/a/202604243717869998.html"
+      "title": "古巴要求美国尊重内政 “做好准备”反击侵略",
+      "summary": "【古巴要求美国尊重内政 “做好准备”反击侵略】古巴常驻联合国代表埃内斯托·索韦龙·古斯曼23日表示，古巴不会接受美国把释放所谓“政治犯”作为新一轮谈判条件的任何“最后通牒”。他同时说，针对美国总统特朗普的军事威胁，古巴已“为所有可能情况做好准备”。",
+      "publish_time": "2026-04-24T14:23:23",
+      "link": "https://finance.eastmoney.com/a/202604243717878567.html"
     }
   ],
   "strategy_modes": {
@@ -155,13 +155,42 @@
       "holding_window": "3-5D",
       "items": [
         {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "rank": 1,
+          "base_score": 93.22,
+          "event_score": 58.77,
+          "risk_adjusted_score": 91.17,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "龙蟠科技 近 20 日收益 49.1%，技术分 100.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
           "symbol": "002466",
           "name": "天齐锂业",
           "industry": "能源金属",
-          "rank": 1,
-          "base_score": 90.91,
+          "rank": 2,
+          "base_score": 90.84,
           "event_score": 62.23,
-          "risk_adjusted_score": 89.9,
+          "risk_adjusted_score": 89.83,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -187,10 +216,10 @@
           "symbol": "002709",
           "name": "天赐材料",
           "industry": "电池",
-          "rank": 2,
-          "base_score": 87.65,
+          "rank": 3,
+          "base_score": 87.88,
           "event_score": 55.73,
-          "risk_adjusted_score": 85.88,
+          "risk_adjusted_score": 86.07,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -216,10 +245,10 @@
           "symbol": "688141",
           "name": "杰华特",
           "industry": "半导体",
-          "rank": 3,
-          "base_score": 87.45,
+          "rank": 4,
+          "base_score": 87.54,
           "event_score": 55.67,
-          "risk_adjusted_score": 85.69,
+          "risk_adjusted_score": 85.76,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -245,10 +274,10 @@
           "symbol": "688807",
           "name": "优迅股份",
           "industry": "半导体",
-          "rank": 4,
-          "base_score": 86.33,
+          "rank": 5,
+          "base_score": 86.44,
           "event_score": 55.88,
-          "risk_adjusted_score": 84.8,
+          "risk_adjusted_score": 84.88,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -269,48 +298,137 @@
             "官方公告",
             "官方公告"
           ]
-        },
-        {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "rank": 5,
-          "base_score": 84.86,
-          "event_score": 58.62,
-          "risk_adjusted_score": 84.11,
-          "holding_window": "3-5D",
-          "reasons": [
-            {
-              "label": "行业轮动",
-              "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
-            },
-            {
-              "label": "技术结构",
-              "detail": "恩捷股份 近 20 日收益 4.7%，技术分 78.6。"
-            },
-            {
-              "label": "事件辅助",
-              "detail": "关于股东部分股份质押变动的公告"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "业绩财报"
-          ]
         }
       ],
       "stock_details": {
-        "002466": {
-          "symbol": "002466",
-          "name": "天齐锂业",
-          "industry": "能源金属",
-          "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.9，适合作为默认候选股跟踪。",
+        "603906": {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "thesis": "龙蟠科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.2，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 80.07,
+              "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 49.1%，量能倍率 2.66，MA10 / MA20 / MA60 为 25.44 / 23.70 / 20.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.77,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 7.7%，换手 14.7%，量比 0.97。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b1791af0a6fa",
+              "title": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "publish_time": "2026-04-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603906&announcementId=1225106983&orgId=9900030660&announcementTime=2026-04-16"
+            },
+            {
+              "event_id": "09f26ee8c17a",
+              "title": "603906，1分钟涨停",
+              "publish_time": "2026-04-16T10:47:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）开盘仅用不到1分钟时间涨停，丰元股份、安达科技、湖南裕能、容百科技等多股跟涨。 龙蟠科技主营磷酸铁锂，预计2026年第一季度实现归属于上市公司股东的净利润2.00亿元至2.50亿元，比上年同期增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707145897.html"
+            },
+            {
+              "event_id": "f438d17def1b",
+              "title": "603906、600768，强势涨停！",
+              "publish_time": "2026-04-16T10:26:00",
+              "source": "数据宝",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）、宁波富邦（600768）等预计一季度净利润大幅增长的公司早盘强势涨停。 龙蟠科技预计一季度净利润2亿元至2.50亿元，同比增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707114446.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 32.8,
+            "stop_loss_price": 30.24,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 87.82,
+            "take_profit_price_1": 37.41,
+            "take_profit_pct_1": 0.1405,
+            "take_profit_price_2": 40.48,
+            "take_profit_pct_2": 0.2341,
+            "trailing_stop_price": 30.68,
+            "suggested_position_min": 0.06,
+            "suggested_position_max": 0.0804,
+            "max_portfolio_risk": 0.0063,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 37.41 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 40.48 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 30.24 元作为防守位，并在 37.41 / 40.48 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.626589+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 37.41 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 40.48 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "002466": {
+          "symbol": "002466",
+          "name": "天齐锂业",
+          "industry": "能源金属",
+          "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.8，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 83.62,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -326,7 +444,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 8.9%，换手 7.0%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.1%，换手 7.3%，量比 1.37。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -369,26 +487,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 74.05,
-            "stop_loss_price": 69.23,
-            "stop_loss_pct": 0.0651,
-            "signal_quality_score": 86.22,
-            "take_profit_price_1": 82.73,
-            "take_profit_pct_1": 0.1172,
-            "take_profit_price_2": 88.51,
-            "take_profit_pct_2": 0.1953,
-            "trailing_stop_price": 70.47,
-            "suggested_position_min": 0.0735,
-            "suggested_position_max": 0.0992,
-            "max_portfolio_risk": 0.0065,
+            "reference_price": 74.18,
+            "stop_loss_price": 69.36,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 86.15,
+            "take_profit_price_1": 82.86,
+            "take_profit_pct_1": 0.117,
+            "take_profit_price_2": 88.64,
+            "take_profit_pct_2": 0.1949,
+            "trailing_stop_price": 70.6,
+            "suggested_position_min": 0.073,
+            "suggested_position_max": 0.0986,
+            "max_portfolio_risk": 0.0064,
             "risk_reward_ratio": 1.8,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 69.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 82.73 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 88.51 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+              "止损线参考 69.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 82.86 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 88.64 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -398,7 +516,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 69.23 元作为防守位，并在 82.73 / 88.51 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 69.36 元作为防守位，并在 82.86 / 88.64 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.44，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -406,12 +524,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892570+00:00"
+            "generated_at": "2026-04-24T06:32:53.626646+00:00"
           },
           "risk_controls": [
-            "止损线参考 69.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 82.73 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 88.51 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+            "止损线参考 69.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 82.86 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 88.64 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -423,12 +541,12 @@
           "symbol": "002709",
           "name": "天赐材料",
           "industry": "电池",
-          "thesis": "天赐材料 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.9，适合作为默认候选股跟踪。",
+          "thesis": "天赐材料 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.1，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 79.39,
+              "value": 80.07,
               "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -444,7 +562,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.5%，换手 8.2%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 8.3%，换手 8.6%，量比 1.20。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -487,26 +605,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 53.13,
-            "stop_loss_price": 49.11,
-            "stop_loss_pct": 0.0756,
-            "signal_quality_score": 82.37,
-            "take_profit_price_1": 60.37,
-            "take_profit_pct_1": 0.1363,
-            "take_profit_price_2": 65.19,
-            "take_profit_pct_2": 0.227,
-            "trailing_stop_price": 50.15,
-            "suggested_position_min": 0.0661,
-            "suggested_position_max": 0.0906,
-            "max_portfolio_risk": 0.0068,
+            "reference_price": 53.5,
+            "stop_loss_price": 49.48,
+            "stop_loss_pct": 0.0751,
+            "signal_quality_score": 82.56,
+            "take_profit_price_1": 60.74,
+            "take_profit_pct_1": 0.1353,
+            "take_profit_price_2": 65.56,
+            "take_profit_pct_2": 0.2254,
+            "trailing_stop_price": 50.52,
+            "suggested_position_min": 0.0646,
+            "suggested_position_max": 0.0885,
+            "max_portfolio_risk": 0.0066,
             "risk_reward_ratio": 1.8,
-            "action_bias": "分批试仓",
-            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 49.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 60.37 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 65.19 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+              "止损线参考 49.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 60.74 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 65.56 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -515,8 +633,8 @@
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.72,
-            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 49.11 元作为防守位，并在 60.37 / 65.19 元分批兑现。",
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 49.48 元作为防守位，并在 60.74 / 65.56 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -524,12 +642,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892628+00:00"
+            "generated_at": "2026-04-24T06:32:53.626690+00:00"
           },
           "risk_controls": [
-            "止损线参考 49.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 60.37 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 65.19 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+            "止损线参考 49.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 60.74 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 65.56 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -541,12 +659,12 @@
           "symbol": "688141",
           "name": "杰华特",
           "industry": "半导体",
-          "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.7，适合作为默认候选股跟踪。",
+          "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.8，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -562,7 +680,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -605,26 +723,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 83.47,
-            "stop_loss_price": 76.97,
-            "stop_loss_pct": 0.0779,
-            "signal_quality_score": 82.13,
-            "take_profit_price_1": 95.17,
-            "take_profit_pct_1": 0.1402,
-            "take_profit_price_2": 102.97,
-            "take_profit_pct_2": 0.2336,
-            "trailing_stop_price": 78.65,
-            "suggested_position_min": 0.0497,
-            "suggested_position_max": 0.0682,
+            "reference_price": 83.85,
+            "stop_loss_price": 77.35,
+            "stop_loss_pct": 0.0775,
+            "signal_quality_score": 82.2,
+            "take_profit_price_1": 95.55,
+            "take_profit_pct_1": 0.1395,
+            "take_profit_price_2": 103.35,
+            "take_profit_pct_2": 0.2326,
+            "trailing_stop_price": 79.03,
+            "suggested_position_min": 0.05,
+            "suggested_position_max": 0.0685,
             "max_portfolio_risk": 0.0053,
             "risk_reward_ratio": 1.8,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 95.17 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 102.97 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+              "止损线参考 77.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 95.55 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 103.35 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -634,7 +752,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 76.97 元作为防守位，并在 95.17 / 102.97 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 77.35 元作为防守位，并在 95.55 / 103.35 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -642,12 +760,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892671+00:00"
+            "generated_at": "2026-04-24T06:32:53.626729+00:00"
           },
           "risk_controls": [
-            "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 95.17 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 102.97 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+            "止损线参考 77.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 95.55 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 103.35 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -660,12 +778,12 @@
           "symbol": "688807",
           "name": "优迅股份",
           "industry": "半导体",
-          "thesis": "优迅股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.8，适合作为默认候选股跟踪。",
+          "thesis": "优迅股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.9，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -680,8 +798,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 99.57,
-              "description": "日内涨幅 13.0%，换手 21.7%，量比 1.25。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 99.63,
+              "description": "日内涨幅 14.7%，换手 22.4%，量比 1.23。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -724,26 +842,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 382.0,
-            "stop_loss_price": 352.2,
+            "reference_price": 387.66,
+            "stop_loss_price": 357.42,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 81.17,
-            "take_profit_price_1": 435.64,
+            "signal_quality_score": 81.26,
+            "take_profit_price_1": 442.09,
             "take_profit_pct_1": 0.1404,
-            "take_profit_price_2": 471.4,
+            "take_profit_price_2": 478.38,
             "take_profit_pct_2": 0.234,
-            "trailing_stop_price": 353.64,
-            "suggested_position_min": 0.0345,
-            "suggested_position_max": 0.0475,
+            "trailing_stop_price": 359.3,
+            "suggested_position_min": 0.0343,
+            "suggested_position_max": 0.0472,
             "max_portfolio_risk": 0.0037,
             "risk_reward_ratio": 1.8,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 352.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 435.64 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 471.40 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
+              "止损线参考 357.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 442.09 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 478.38 元，若继续上行则把跟踪止损上移到 359.30 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
@@ -754,7 +872,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.58,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 352.20 元作为防守位，并在 435.64 / 471.40 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 357.42 元作为防守位，并在 442.09 / 478.38 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 7.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -762,12 +880,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892714+00:00"
+            "generated_at": "2026-04-24T06:32:53.626770+00:00"
           },
           "risk_controls": [
-            "止损线参考 352.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 435.64 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 471.40 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
+            "止损线参考 357.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 442.09 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 478.38 元，若继续上行则把跟踪止损上移到 359.30 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
@@ -776,125 +894,6 @@
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "当日已接近涨停，避免尾盘情绪化追高。",
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
-          ]
-        },
-        "002812": {
-          "symbol": "002812",
-          "name": "恩捷股份",
-          "industry": "电池",
-          "thesis": "恩捷股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.1，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 79.39,
-              "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 78.61,
-              "description": "20 日收益 4.7%，量能倍率 1.20，MA10 / MA20 / MA60 为 71.11 / 69.95 / 63.68。"
-            },
-            {
-              "name": "事件强度",
-              "value": 58.62,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 7.9%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "058322d6f4bd",
-              "title": "关于股东部分股份质押变动的公告",
-              "publish_time": "2026-04-24T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于股东部分股份质押变动的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165557&orgId=9900026450&announcementTime=2026-04-24"
-            },
-            {
-              "event_id": "1a78e021820a",
-              "title": "关于公司合并报表范围内提供担保的进展公告",
-              "publish_time": "2026-04-24T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于公司合并报表范围内提供担保的进展公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165556&orgId=9900026450&announcementTime=2026-04-24"
-            },
-            {
-              "event_id": "fc975ed1c540",
-              "title": "恩捷股份：一季度净利润2.6亿元 同比增长901.7%",
-              "publish_time": "2026-04-22T19:01:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "人民财讯4月22日电，恩捷股份0028124月22日披露一季报，公司2026年一季度实现营业收入39.08亿元，同比增长43.21%；归母净利润2.6亿元，同比增长901.70%，主要系营业收入、毛利率增加。",
-              "link": "http://finance.eastmoney.com/a/202604223714306660.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 77.18,
-            "stop_loss_price": 71.82,
-            "stop_loss_pct": 0.0695,
-            "signal_quality_score": 80.34,
-            "take_profit_price_1": 86.83,
-            "take_profit_pct_1": 0.125,
-            "take_profit_price_2": 93.26,
-            "take_profit_pct_2": 0.2083,
-            "trailing_stop_price": 73.2,
-            "suggested_position_min": 0.0643,
-            "suggested_position_max": 0.0888,
-            "max_portfolio_risk": 0.0062,
-            "risk_reward_ratio": 1.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 71.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 86.83 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 93.26 元，若继续上行则把跟踪止损上移到 73.20 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 71.82 元作为防守位，并在 86.83 / 93.26 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 3.12，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：关于股东部分股份质押变动的公告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892754+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 71.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 86.83 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 93.26 元，若继续上行则把跟踪止损上移到 73.20 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         }
       },
@@ -919,9 +918,9 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 90.91,
+          "base_score": 90.84,
           "event_score": 62.23,
-          "risk_adjusted_score": 99.04,
+          "risk_adjusted_score": 98.94,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -930,7 +929,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 83.8，个股当日涨幅 8.9%，具备主线扩散跟涨条件。"
+              "detail": "板块分 83.6，个股当日涨幅 9.1%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -948,9 +947,9 @@
           "name": "永杉锂业",
           "industry": "能源金属",
           "rank": 2,
-          "base_score": 88.73,
+          "base_score": 88.65,
           "event_score": 50.92,
-          "risk_adjusted_score": 96.07,
+          "risk_adjusted_score": 95.97,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -959,7 +958,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 83.8，个股当日涨幅 7.9%，具备主线扩散跟涨条件。"
+              "detail": "板块分 83.6，个股当日涨幅 7.4%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -973,42 +972,13 @@
           ]
         },
         {
-          "symbol": "002192",
-          "name": "融捷股份",
-          "industry": "能源金属",
-          "rank": 3,
-          "base_score": 87.41,
-          "event_score": 53.3,
-          "risk_adjusted_score": 95.38,
-          "holding_window": "2-4D",
-          "reasons": [
-            {
-              "label": "行业强度",
-              "detail": "能源金属 位于当前强势行业前列，属于 能源金属, 半导体, 电池 主线之一。"
-            },
-            {
-              "label": "扩散确认",
-              "detail": "板块分 83.8，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
-            },
-            {
-              "label": "交易关注",
-              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
-            }
-          ],
-          "event_tags": [
-            "其他",
-            "券商研报",
-            "券商研报"
-          ]
-        },
-        {
           "symbol": "688141",
           "name": "杰华特",
           "industry": "半导体",
-          "rank": 4,
-          "base_score": 87.45,
+          "rank": 3,
+          "base_score": 87.54,
           "event_score": 55.67,
-          "risk_adjusted_score": 95.3,
+          "risk_adjusted_score": 95.41,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1017,7 +987,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 81.5，个股当日涨幅 16.5%，具备主线扩散跟涨条件。"
+              "detail": "板块分 81.8，个股当日涨幅 17.1%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -1031,13 +1001,42 @@
           ]
         },
         {
-          "symbol": "688381",
-          "name": "帝奥微",
+          "symbol": "002192",
+          "name": "融捷股份",
+          "industry": "能源金属",
+          "rank": 4,
+          "base_score": 87.33,
+          "event_score": 53.3,
+          "risk_adjusted_score": 95.29,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "能源金属 位于当前强势行业前列，属于 能源金属, 半导体, 电池 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 83.6，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "券商研报",
+            "券商研报"
+          ]
+        },
+        {
+          "symbol": "688530",
+          "name": "欧莱新材",
           "industry": "半导体",
           "rank": 5,
-          "base_score": 87.71,
-          "event_score": 51.5,
-          "risk_adjusted_score": 94.99,
+          "base_score": 86.73,
+          "event_score": 54.5,
+          "risk_adjusted_score": 94.67,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1046,7 +1045,7 @@
             },
             {
               "label": "扩散确认",
-              "detail": "板块分 81.5，个股当日涨幅 8.7%，具备主线扩散跟涨条件。"
+              "detail": "板块分 81.8，个股当日涨幅 8.3%，具备主线扩散跟涨条件。"
             },
             {
               "label": "交易关注",
@@ -1070,7 +1069,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1086,7 +1085,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 8.9%，换手 7.0%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.1%，换手 7.3%，量比 1.37。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1129,26 +1128,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 74.05,
-            "stop_loss_price": 68.92,
-            "stop_loss_pct": 0.0693,
-            "signal_quality_score": 86.22,
-            "take_profit_price_1": 83.8,
-            "take_profit_pct_1": 0.1317,
-            "take_profit_price_2": 89.95,
-            "take_profit_pct_2": 0.2147,
-            "trailing_stop_price": 70.47,
-            "suggested_position_min": 0.076,
-            "suggested_position_max": 0.1025,
-            "max_portfolio_risk": 0.0071,
+            "reference_price": 74.18,
+            "stop_loss_price": 69.05,
+            "stop_loss_pct": 0.0692,
+            "signal_quality_score": 86.15,
+            "take_profit_price_1": 83.93,
+            "take_profit_pct_1": 0.1314,
+            "take_profit_price_2": 90.08,
+            "take_profit_pct_2": 0.2143,
+            "trailing_stop_price": 70.6,
+            "suggested_position_min": 0.0755,
+            "suggested_position_max": 0.1019,
+            "max_portfolio_risk": 0.007,
             "risk_reward_ratio": 1.9,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 68.92 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 83.80 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 89.95 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+              "止损线参考 69.05 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 83.93 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 90.08 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -1158,7 +1157,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 68.92 元作为防守位，并在 83.80 / 89.95 元分批兑现。",
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 69.05 元作为防守位，并在 83.93 / 90.08 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.44，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1166,12 +1165,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892809+00:00"
+            "generated_at": "2026-04-24T06:32:53.626827+00:00"
           },
           "risk_controls": [
-            "止损线参考 68.92 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 83.80 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 89.95 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+            "止损线参考 69.05 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 83.93 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 90.08 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -1189,7 +1188,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1205,7 +1204,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.9%，换手 12.0%，量比 1.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.4%，换手 12.3%，量比 1.15。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1248,26 +1247,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 14.59,
-            "stop_loss_price": 13.39,
+            "reference_price": 14.52,
+            "stop_loss_price": 13.33,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 82.46,
-            "take_profit_price_1": 16.87,
-            "take_profit_pct_1": 0.1563,
-            "take_profit_price_2": 18.31,
-            "take_profit_pct_2": 0.255,
-            "trailing_stop_price": 13.64,
-            "suggested_position_min": 0.0655,
-            "suggested_position_max": 0.0898,
-            "max_portfolio_risk": 0.0074,
+            "signal_quality_score": 82.39,
+            "take_profit_price_1": 16.78,
+            "take_profit_pct_1": 0.1556,
+            "take_profit_price_2": 18.21,
+            "take_profit_pct_2": 0.2541,
+            "trailing_stop_price": 13.57,
+            "suggested_position_min": 0.0668,
+            "suggested_position_max": 0.0916,
+            "max_portfolio_risk": 0.0075,
             "risk_reward_ratio": 1.9,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 13.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 16.87 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 18.31 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
+              "止损线参考 13.33 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 16.78 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.21 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -1277,7 +1276,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 13.39 元作为防守位，并在 16.87 / 18.31 元分批兑现。",
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 13.33 元作为防守位，并在 16.78 / 18.21 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.98，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1285,18 +1284,138 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892851+00:00"
+            "generated_at": "2026-04-24T06:32:53.626870+00:00"
           },
           "risk_controls": [
-            "止损线参考 13.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 16.87 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 18.31 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
+            "止损线参考 13.33 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 16.78 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.21 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "688141": {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "thesis": "杰华特 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 81.78,
+              "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 83.52,
+              "description": "20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.67,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b39fe95d5c8c",
+              "title": "2025年收入增长58%，高研发投入拖累利润",
+              "publish_time": "2026-04-03T00:00:00",
+              "source": "东方财富研报",
+              "source_category": "券商研报",
+              "event_type": "券商研报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "机构：国信证券；评级：增持；行业：半导体",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
+            },
+            {
+              "event_id": "aff1263687ed",
+              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "publish_time": "2026-04-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
+            },
+            {
+              "event_id": "7e1483e5b318",
+              "title": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
+              "publish_time": "2026-04-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225129318&orgId=9900052528&announcementTime=2026-04-21"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 83.85,
+            "stop_loss_price": 76.97,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 82.2,
+            "take_profit_price_1": 96.92,
+            "take_profit_pct_1": 0.1559,
+            "take_profit_price_2": 105.18,
+            "take_profit_pct_2": 0.2544,
+            "trailing_stop_price": 79.03,
+            "suggested_position_min": 0.052,
+            "suggested_position_max": 0.0713,
+            "max_portfolio_risk": 0.0058,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 96.92 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 105.18 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 76.97 元作为防守位，并在 96.92 / 105.18 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.626927+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 96.92 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 105.18 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
         "002192": {
@@ -1308,7 +1427,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1324,7 +1443,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 11.3%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 11.4%，量比 1.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1370,7 +1489,7 @@
             "reference_price": 86.28,
             "stop_loss_price": 79.21,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 81.65,
+            "signal_quality_score": 81.59,
             "take_profit_price_1": 99.71,
             "take_profit_pct_1": 0.1557,
             "take_profit_price_2": 108.2,
@@ -1404,7 +1523,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892908+00:00"
+            "generated_at": "2026-04-24T06:32:53.626973+00:00"
           },
           "risk_controls": [
             "止损线参考 79.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1419,243 +1538,126 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "688141": {
-          "symbol": "688141",
-          "name": "杰华特",
+        "688530": {
+          "symbol": "688530",
+          "name": "欧莱新材",
           "industry": "半导体",
-          "thesis": "杰华特 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "thesis": "欧莱新材 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
           "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 83.52,
-              "description": "20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
+              "value": 81.37,
+              "description": "20 日收益 18.8%，量能倍率 2.13，MA10 / MA20 / MA60 为 33.99 / 31.95 / 30.04。"
             },
             {
               "name": "事件强度",
-              "value": 55.67,
+              "value": 54.5,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 8.3%，换手 20.1%，量比 0.87。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
-            {
-              "event_id": "aff1263687ed",
-              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "publish_time": "2026-04-23T00:00:00",
+              "event_id": "a3e63cb9ae95",
+              "title": "欧莱新材关于聘任公司2026年度审计机构的公告",
+              "publish_time": "2026-04-18T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "positive",
               "impact_level": "medium",
-              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
+              "summary": "欧莱新材关于聘任公司2026年度审计机构的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688530&announcementId=1225123430&orgId=9900048076&announcementTime=2026-04-18"
             },
             {
-              "event_id": "7e1483e5b318",
-              "title": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
-              "publish_time": "2026-04-21T00:00:00",
+              "event_id": "7a0ccf9735ff",
+              "title": "容诚会计师事务所（特殊普通合伙）关于广东欧莱高新材料股份有限公司2025年度审计报告",
+              "publish_time": "2026-04-18T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
-              "sentiment": "positive",
+              "sentiment": "neutral",
               "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225129318&orgId=9900052528&announcementTime=2026-04-21"
+              "summary": "容诚会计师事务所（特殊普通合伙）关于广东欧莱高新材料股份有限公司2025年度审计报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688530&announcementId=1225123443&orgId=9900048076&announcementTime=2026-04-18"
+            },
+            {
+              "event_id": "7893a7a130e9",
+              "title": "中国国际金融股份有限公司关于广东欧莱高新材料股份有限公司2025年度募集资金存放、管理与实际使用情况的专项核查报告",
+              "publish_time": "2026-04-18T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中国国际金融股份有限公司关于广东欧莱高新材料股份有限公司2025年度募集资金存放、管理与实际使用情况的专项核查报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688530&announcementId=1225123442&orgId=9900048076&announcementTime=2026-04-18"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 83.47,
-            "stop_loss_price": 76.63,
+            "reference_price": 39.7,
+            "stop_loss_price": 36.44,
             "stop_loss_pct": 0.082,
-            "signal_quality_score": 82.13,
-            "take_profit_price_1": 96.47,
-            "take_profit_pct_1": 0.1557,
-            "take_profit_price_2": 104.67,
-            "take_profit_pct_2": 0.254,
-            "trailing_stop_price": 78.65,
-            "suggested_position_min": 0.052,
-            "suggested_position_max": 0.0713,
-            "max_portfolio_risk": 0.0058,
+            "signal_quality_score": 81.28,
+            "take_profit_price_1": 45.89,
+            "take_profit_pct_1": 0.1559,
+            "take_profit_price_2": 49.81,
+            "take_profit_pct_2": 0.2547,
+            "trailing_stop_price": 36.04,
+            "suggested_position_min": 0.0493,
+            "suggested_position_max": 0.0679,
+            "max_portfolio_risk": 0.0056,
             "risk_reward_ratio": 1.9,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 76.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 96.47 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 104.67 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+              "止损线参考 36.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 45.89 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 49.81 元，若继续上行则把跟踪止损上移到 36.04 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
           },
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.66,
-            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 76.63 元作为防守位，并在 96.47 / 104.67 元分批兑现。",
+            "confidence": 0.58,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 36.44 元作为防守位，并在 45.89 / 49.81 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "近 10 日波动率为 6.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：欧莱新材关于聘任公司2026年度审计机构的公告"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892954+00:00"
+            "generated_at": "2026-04-24T06:32:53.627037+00:00"
           },
           "risk_controls": [
-            "止损线参考 76.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 96.47 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 104.67 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+            "止损线参考 36.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 45.89 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 49.81 元，若继续上行则把跟踪止损上移到 36.04 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "若所属行业跌出强势行业前五，优先降低该模式暴露。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "688381": {
-          "symbol": "688381",
-          "name": "帝奥微",
-          "industry": "半导体",
-          "thesis": "帝奥微 属于 半导体 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 81.52,
-              "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 84.2,
-              "description": "20 日收益 27.1%，量能倍率 1.92，MA10 / MA20 / MA60 为 24.82 / 23.09 / 23.66。"
-            },
-            {
-              "name": "事件强度",
-              "value": 51.5,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 8.7%，换手 8.0%，量比 2.34。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "5e416b8a2b23",
-              "title": "立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154103&orgId=9900051388&announcementTime=2026-04-23"
-            },
-            {
-              "event_id": "1d03b79e693b",
-              "title": "中信建投证券股份有限公司关于江苏帝奥微电子股份有限公司使用暂时闲置募集资金进行现金管理的专项核查意见",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信建投证券股份有限公司关于江苏帝奥微电子股份有限公司使用暂时闲置募集资金进行现金管理的专项核查意见",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154089&orgId=9900051388&announcementTime=2026-04-23"
-            },
-            {
-              "event_id": "c85e785d8476",
-              "title": "关于续聘会计师事务所的公告",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于续聘会计师事务所的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154104&orgId=9900051388&announcementTime=2026-04-23"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 29.78,
-            "stop_loss_price": 27.74,
-            "stop_loss_pct": 0.0684,
-            "signal_quality_score": 81.69,
-            "take_profit_price_1": 33.66,
-            "take_profit_pct_1": 0.1303,
-            "take_profit_price_2": 36.1,
-            "take_profit_pct_2": 0.2122,
-            "trailing_stop_price": 28.36,
-            "suggested_position_min": 0.0738,
-            "suggested_position_max": 0.1014,
-            "max_portfolio_risk": 0.0069,
-            "risk_reward_ratio": 1.9,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 27.74 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 33.66 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 36.10 元，若继续上行则把跟踪止损上移到 28.36 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 27.74 元作为防守位，并在 33.66 / 36.10 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.59，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.892997+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 27.74 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 33.66 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 36.10 元，若继续上行则把跟踪止损上移到 28.36 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         }
       },
@@ -1679,9 +1681,9 @@
           "name": "天齐锂业",
           "industry": "能源金属",
           "rank": 1,
-          "base_score": 90.91,
+          "base_score": 90.84,
           "event_score": 62.23,
-          "risk_adjusted_score": 83.45,
+          "risk_adjusted_score": 83.4,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1704,13 +1706,42 @@
           ]
         },
         {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "rank": 2,
+          "base_score": 93.22,
+          "event_score": 58.77,
+          "risk_adjusted_score": 82.87,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 58.8，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
           "symbol": "002709",
           "name": "天赐材料",
           "industry": "电池",
-          "rank": 2,
-          "base_score": 87.65,
+          "rank": 3,
+          "base_score": 87.88,
           "event_score": 55.73,
-          "risk_adjusted_score": 78.87,
+          "risk_adjusted_score": 79.01,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1733,42 +1764,13 @@
           ]
         },
         {
-          "symbol": "688141",
-          "name": "杰华特",
-          "industry": "半导体",
-          "rank": 3,
-          "base_score": 87.45,
-          "event_score": 55.67,
-          "risk_adjusted_score": 78.83,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "2025年收入增长58%，高研发投入拖累利润"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 55.7，情绪分 100.0，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
           "symbol": "002812",
           "name": "恩捷股份",
           "industry": "电池",
           "rank": 4,
-          "base_score": 84.86,
+          "base_score": 85.1,
           "event_score": 58.62,
-          "risk_adjusted_score": 78.82,
+          "risk_adjusted_score": 78.96,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1791,22 +1793,22 @@
           ]
         },
         {
-          "symbol": "688807",
-          "name": "优迅股份",
+          "symbol": "688141",
+          "name": "杰华特",
           "industry": "半导体",
           "rank": 5,
-          "base_score": 86.33,
-          "event_score": 55.88,
-          "risk_adjusted_score": 78.37,
+          "base_score": 87.54,
+          "event_score": 55.67,
+          "risk_adjusted_score": 78.88,
           "holding_window": "1-3D",
           "reasons": [
             {
               "label": "事件催化",
-              "detail": "中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导工作现场检查报告"
+              "detail": "2025年收入增长58%，高研发投入拖累利润"
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 55.9，情绪分 99.6，说明新闻并非纯静态公告。"
+              "detail": "事件分 55.7，情绪分 100.0，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1814,7 +1816,7 @@
             }
           ],
           "event_tags": [
-            "官方公告",
+            "券商研报",
             "官方公告",
             "官方公告"
           ]
@@ -1830,7 +1832,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1846,7 +1848,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 8.9%，换手 7.0%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.1%，换手 7.3%，量比 1.37。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1889,15 +1891,15 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 74.05,
-            "stop_loss_price": 69.69,
-            "stop_loss_pct": 0.0588,
-            "signal_quality_score": 86.22,
-            "take_profit_price_1": 81.46,
-            "take_profit_pct_1": 0.1001,
-            "take_profit_price_2": 86.26,
-            "take_profit_pct_2": 0.1649,
-            "trailing_stop_price": 70.47,
+            "reference_price": 74.18,
+            "stop_loss_price": 69.82,
+            "stop_loss_pct": 0.0587,
+            "signal_quality_score": 86.15,
+            "take_profit_price_1": 81.59,
+            "take_profit_pct_1": 0.0999,
+            "take_profit_price_2": 86.39,
+            "take_profit_pct_2": 0.1646,
+            "trailing_stop_price": 70.6,
             "suggested_position_min": 0.063,
             "suggested_position_max": 0.085,
             "max_portfolio_risk": 0.005,
@@ -1906,9 +1908,9 @@
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 69.69 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 81.46 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 86.26 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+              "止损线参考 69.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 81.59 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 86.39 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -1918,7 +1920,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 69.69 元作为防守位，并在 81.46 / 86.26 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 69.82 元作为防守位，并在 81.59 / 86.39 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.44，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1926,12 +1928,131 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893070+00:00"
+            "generated_at": "2026-04-24T06:32:53.627098+00:00"
           },
           "risk_controls": [
-            "止损线参考 69.69 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 81.46 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 86.26 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+            "止损线参考 69.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 81.59 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 86.39 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "603906": {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "thesis": "龙蟠科技 的新闻事件打分为 58.8，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 80.07,
+              "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 49.1%，量能倍率 2.66，MA10 / MA20 / MA60 为 25.44 / 23.70 / 20.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.77,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 7.7%，换手 14.7%，量比 0.97。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b1791af0a6fa",
+              "title": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "publish_time": "2026-04-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603906&announcementId=1225106983&orgId=9900030660&announcementTime=2026-04-16"
+            },
+            {
+              "event_id": "09f26ee8c17a",
+              "title": "603906，1分钟涨停",
+              "publish_time": "2026-04-16T10:47:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）开盘仅用不到1分钟时间涨停，丰元股份、安达科技、湖南裕能、容百科技等多股跟涨。 龙蟠科技主营磷酸铁锂，预计2026年第一季度实现归属于上市公司股东的净利润2.00亿元至2.50亿元，比上年同期增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707145897.html"
+            },
+            {
+              "event_id": "f438d17def1b",
+              "title": "603906、600768，强势涨停！",
+              "publish_time": "2026-04-16T10:26:00",
+              "source": "数据宝",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）、宁波富邦（600768）等预计一季度净利润大幅增长的公司早盘强势涨停。 龙蟠科技预计一季度净利润2亿元至2.50亿元，同比增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707114446.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 32.8,
+            "stop_loss_price": 30.44,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 87.82,
+            "take_profit_price_1": 36.81,
+            "take_profit_pct_1": 0.1223,
+            "take_profit_price_2": 39.41,
+            "take_profit_pct_2": 0.2015,
+            "trailing_stop_price": 30.68,
+            "suggested_position_min": 0.0563,
+            "suggested_position_max": 0.0755,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 36.81 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 39.41 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 30.44 元作为防守位，并在 36.81 / 39.41 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.627138+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 36.81 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 39.41 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -1949,7 +2070,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 79.39,
+              "value": 80.07,
               "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1965,7 +2086,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.5%，换手 8.2%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 8.3%，换手 8.6%，量比 1.20。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2008,145 +2129,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 53.13,
-            "stop_loss_price": 49.5,
-            "stop_loss_pct": 0.0683,
-            "signal_quality_score": 82.37,
-            "take_profit_price_1": 59.3,
-            "take_profit_pct_1": 0.1161,
-            "take_profit_price_2": 63.29,
-            "take_profit_pct_2": 0.1912,
-            "trailing_stop_price": 50.15,
+            "reference_price": 53.5,
+            "stop_loss_price": 49.87,
+            "stop_loss_pct": 0.0678,
+            "signal_quality_score": 82.56,
+            "take_profit_price_1": 59.67,
+            "take_profit_pct_1": 0.1153,
+            "take_profit_price_2": 63.66,
+            "take_profit_pct_2": 0.1899,
+            "trailing_stop_price": 50.52,
             "suggested_position_min": 0.062,
-            "suggested_position_max": 0.085,
+            "suggested_position_max": 0.0849,
             "max_portfolio_risk": 0.0058,
-            "risk_reward_ratio": 1.7,
-            "action_bias": "分批试仓",
-            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 49.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 59.30 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 63.29 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 49.50 元作为防守位，并在 59.30 / 63.29 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：宁德时代钠电池第四季度将大规模量产，产业迈入商业化元年，这些公司透露最新业务进展"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893108+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 49.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 59.30 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 63.29 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
-          ]
-        },
-        "688141": {
-          "symbol": "688141",
-          "name": "杰华特",
-          "industry": "半导体",
-          "thesis": "杰华特 的新闻事件打分为 55.7，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 81.52,
-              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 83.52,
-              "description": "20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
-            },
-            {
-              "name": "事件强度",
-              "value": 55.67,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "b39fe95d5c8c",
-              "title": "2025年收入增长58%，高研发投入拖累利润",
-              "publish_time": "2026-04-03T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "机构：国信证券；评级：增持；行业：半导体",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
-            },
-            {
-              "event_id": "aff1263687ed",
-              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
-            },
-            {
-              "event_id": "7e1483e5b318",
-              "title": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
-              "publish_time": "2026-04-21T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225129318&orgId=9900052528&announcementTime=2026-04-21"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 83.47,
-            "stop_loss_price": 77.6,
-            "stop_loss_pct": 0.0704,
-            "signal_quality_score": 82.13,
-            "take_profit_price_1": 93.45,
-            "take_profit_pct_1": 0.1196,
-            "take_profit_price_2": 99.91,
-            "take_profit_pct_2": 0.197,
-            "trailing_stop_price": 78.65,
-            "suggested_position_min": 0.0477,
-            "suggested_position_max": 0.0654,
-            "max_portfolio_risk": 0.0046,
             "risk_reward_ratio": 1.7,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 77.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 93.45 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 99.91 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+              "止损线参考 49.87 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 59.67 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 63.66 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2156,27 +2158,26 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 77.60 元作为防守位，并在 93.45 / 99.91 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 49.87 元作为防守位，并在 59.67 / 63.66 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+              "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：宁德时代钠电池第四季度将大规模量产，产业迈入商业化元年，这些公司透露最新业务进展"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893144+00:00"
+            "generated_at": "2026-04-24T06:32:53.627173+00:00"
           },
           "risk_controls": [
-            "止损线参考 77.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 93.45 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 99.91 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+            "止损线参考 49.87 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 59.67 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 63.66 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
           ]
         },
         "002812": {
@@ -2188,7 +2189,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 79.39,
+              "value": 80.07,
               "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2204,7 +2205,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 7.9%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 8.0%，量比 1.79。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2250,7 +2251,7 @@
             "reference_price": 77.18,
             "stop_loss_price": 72.34,
             "stop_loss_pct": 0.0627,
-            "signal_quality_score": 80.34,
+            "signal_quality_score": 80.53,
             "take_profit_price_1": 85.41,
             "take_profit_pct_1": 0.1066,
             "take_profit_price_2": 90.73,
@@ -2284,7 +2285,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893177+00:00"
+            "generated_at": "2026-04-24T06:32:53.627208+00:00"
           },
           "risk_controls": [
             "止损线参考 72.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2299,318 +2300,32 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "688807": {
-          "symbol": "688807",
-          "name": "优迅股份",
-          "industry": "半导体",
-          "thesis": "优迅股份 的新闻事件打分为 55.9，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 81.52,
-              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 80.88,
-              "description": "20 日收益 54.3%，量能倍率 1.45，MA10 / MA20 / MA60 为 319.07 / 272.39 / 234.88。"
-            },
-            {
-              "name": "事件强度",
-              "value": 55.88,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 99.57,
-              "description": "日内涨幅 13.0%，换手 21.7%，量比 1.25。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "1579b1005e7b",
-              "title": "中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导工作现场检查报告",
-              "publish_time": "2026-04-17T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导工作现场检查报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688807&announcementId=1225111260&orgId=9900063196&announcementTime=2026-04-17"
-            },
-            {
-              "event_id": "998098730275",
-              "title": "中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导跟踪报告",
-              "publish_time": "2026-04-17T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导跟踪报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688807&announcementId=1225111114&orgId=9900063196&announcementTime=2026-04-17"
-            },
-            {
-              "event_id": "1b4e647d40de",
-              "title": "《厦门优迅芯片股份有限公司董事、高级管理人员薪酬管理制度》",
-              "publish_time": "2026-04-10T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "《厦门优迅芯片股份有限公司董事、高级管理人员薪酬管理制度》",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688807&announcementId=1225088702&orgId=9900063196&announcementTime=2026-04-10"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 382.0,
-            "stop_loss_price": 354.5,
-            "stop_loss_pct": 0.072,
-            "signal_quality_score": 81.17,
-            "take_profit_price_1": 428.75,
-            "take_profit_pct_1": 0.1224,
-            "take_profit_price_2": 459.0,
-            "take_profit_pct_2": 0.2016,
-            "trailing_stop_price": 353.64,
-            "suggested_position_min": 0.0324,
-            "suggested_position_max": 0.0446,
-            "max_portfolio_risk": 0.0032,
-            "risk_reward_ratio": 1.7,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 354.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 428.75 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 459.00 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.58,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 354.50 元作为防守位，并在 428.75 / 459.00 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 7.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：中信证券股份有限公司关于厦门优迅芯片股份有限公司2025年度持续督导工作现场检查报告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893211+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 354.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 428.75 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 459.00 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
-            "当日已接近涨停，避免尾盘情绪化追高。",
-            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
-          ]
-        }
-      },
-      "selection_meta": {
-        "candidate_count": 5,
-        "preferred_features": [
-          "事件催化",
-          "政策新闻",
-          "公告情绪"
-        ]
-      }
-    },
-    "trend_breakout": {
-      "mode_id": "trend_breakout",
-      "display_name": "技术趋势突破",
-      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
-      "holding_window": "5-10D",
-      "items": [
-        {
-          "symbol": "688141",
-          "name": "杰华特",
-          "industry": "半导体",
-          "rank": 1,
-          "base_score": 87.45,
-          "event_score": 55.67,
-          "risk_adjusted_score": 96.63,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 66.59 / MA20 60.39 / MA60 54.46，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 0.86，20 日收益 43.7%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "券商研报",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "002466",
-          "name": "天齐锂业",
-          "industry": "能源金属",
-          "rank": 2,
-          "base_score": 90.91,
-          "event_score": 62.23,
-          "risk_adjusted_score": 96.26,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 65.63 / MA20 61.04 / MA60 56.30，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.27，20 日收益 27.1%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "业绩财报",
-            "业绩财报",
-            "业绩财报"
-          ]
-        },
-        {
-          "symbol": "002709",
-          "name": "天赐材料",
-          "industry": "电池",
-          "rank": 3,
-          "base_score": 87.65,
-          "event_score": 55.73,
-          "risk_adjusted_score": 92.43,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 49.27 / MA20 47.20 / MA60 44.35，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.06，20 日收益 14.2%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "订单合作",
-            "官方公告",
-            "券商研报"
-          ]
-        },
-        {
-          "symbol": "603399",
-          "name": "永杉锂业",
-          "industry": "能源金属",
-          "rank": 4,
-          "base_score": 88.73,
-          "event_score": 50.92,
-          "risk_adjusted_score": 92.26,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 12.74 / MA20 12.04 / MA60 11.38，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.14，20 日收益 28.0%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "资金交易",
-            "其他",
-            "资金交易"
-          ]
-        },
-        {
-          "symbol": "002192",
-          "name": "融捷股份",
-          "industry": "能源金属",
-          "rank": 5,
-          "base_score": 87.41,
-          "event_score": 53.3,
-          "risk_adjusted_score": 90.76,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 79.38 / MA20 76.56 / MA60 62.75，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 0.82，20 日收益 21.7%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "其他",
-            "券商研报",
-            "券商研报"
-          ]
-        }
-      ],
-      "stock_details": {
         "688141": {
           "symbol": "688141",
           "name": "杰华特",
           "industry": "半导体",
-          "thesis": "杰华特 具备较完整的均线多头与放量突破结构，技术分 83.5，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "thesis": "杰华特 的新闻事件打分为 55.7，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
               "value": 83.52,
-              "description": "当前模式重点关注该维度。20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
+              "description": "20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
             },
             {
               "name": "事件强度",
               "value": 55.67,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2653,15 +2368,417 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 83.47,
-            "stop_loss_price": 75.96,
+            "reference_price": 83.85,
+            "stop_loss_price": 77.98,
+            "stop_loss_pct": 0.07,
+            "signal_quality_score": 82.2,
+            "take_profit_price_1": 93.83,
+            "take_profit_pct_1": 0.119,
+            "take_profit_price_2": 100.29,
+            "take_profit_pct_2": 0.1961,
+            "trailing_stop_price": 79.03,
+            "suggested_position_min": 0.0479,
+            "suggested_position_max": 0.0657,
+            "max_portfolio_risk": 0.0046,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 77.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 93.83 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 100.29 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 77.98 元作为防守位，并在 93.83 / 100.29 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2025年收入增长58%，高研发投入拖累利润"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.627243+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 77.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 93.83 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 100.29 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "事件催化",
+          "政策新闻",
+          "公告情绪"
+        ]
+      }
+    },
+    "trend_breakout": {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D",
+      "items": [
+        {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "rank": 1,
+          "base_score": 93.22,
+          "event_score": 58.77,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 25.44 / MA20 23.70 / MA60 20.16，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 2.66，20 日收益 49.1%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "rank": 2,
+          "base_score": 87.54,
+          "event_score": 55.67,
+          "risk_adjusted_score": 96.68,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 66.59 / MA20 60.39 / MA60 54.46，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 0.86，20 日收益 43.7%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "券商研报",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002466",
+          "name": "天齐锂业",
+          "industry": "能源金属",
+          "rank": 3,
+          "base_score": 90.84,
+          "event_score": 62.23,
+          "risk_adjusted_score": 96.22,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 65.63 / MA20 61.04 / MA60 56.30，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.27，20 日收益 27.1%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "业绩财报",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
+          "symbol": "002709",
+          "name": "天赐材料",
+          "industry": "电池",
+          "rank": 4,
+          "base_score": 87.88,
+          "event_score": 55.73,
+          "risk_adjusted_score": 92.56,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 49.27 / MA20 47.20 / MA60 44.35，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.06，20 日收益 14.2%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "订单合作",
+            "官方公告",
+            "券商研报"
+          ]
+        },
+        {
+          "symbol": "603399",
+          "name": "永杉锂业",
+          "industry": "能源金属",
+          "rank": 5,
+          "base_score": 88.65,
+          "event_score": 50.92,
+          "risk_adjusted_score": 92.22,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 12.74 / MA20 12.04 / MA60 11.38，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.14，20 日收益 28.0%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "其他",
+            "资金交易"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603906": {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "thesis": "龙蟠科技 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 80.07,
+              "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 49.1%，量能倍率 2.66，MA10 / MA20 / MA60 为 25.44 / 23.70 / 20.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.77,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 7.7%，换手 14.7%，量比 0.97。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b1791af0a6fa",
+              "title": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "publish_time": "2026-04-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603906&announcementId=1225106983&orgId=9900030660&announcementTime=2026-04-16"
+            },
+            {
+              "event_id": "09f26ee8c17a",
+              "title": "603906，1分钟涨停",
+              "publish_time": "2026-04-16T10:47:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）开盘仅用不到1分钟时间涨停，丰元股份、安达科技、湖南裕能、容百科技等多股跟涨。 龙蟠科技主营磷酸铁锂，预计2026年第一季度实现归属于上市公司股东的净利润2.00亿元至2.50亿元，比上年同期增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707145897.html"
+            },
+            {
+              "event_id": "f438d17def1b",
+              "title": "603906、600768，强势涨停！",
+              "publish_time": "2026-04-16T10:26:00",
+              "source": "数据宝",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）、宁波富邦（600768）等预计一季度净利润大幅增长的公司早盘强势涨停。 龙蟠科技预计一季度净利润2亿元至2.50亿元，同比增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707114446.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 32.8,
+            "stop_loss_price": 29.85,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 82.13,
-            "take_profit_price_1": 98.49,
+            "signal_quality_score": 87.82,
+            "take_profit_price_1": 38.7,
             "take_profit_pct_1": 0.1799,
-            "take_profit_price_2": 108.25,
-            "take_profit_pct_2": 0.2969,
-            "trailing_stop_price": 78.65,
+            "take_profit_price_2": 42.53,
+            "take_profit_pct_2": 0.2966,
+            "trailing_stop_price": 30.68,
+            "suggested_position_min": 0.0589,
+            "suggested_position_max": 0.079,
+            "max_portfolio_risk": 0.0071,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 29.85 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 38.70 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 42.53 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 29.85 元作为防守位，并在 38.70 / 42.53 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.627301+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 29.85 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 38.70 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 42.53 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "688141": {
+          "symbol": "688141",
+          "name": "杰华特",
+          "industry": "半导体",
+          "thesis": "杰华特 具备较完整的均线多头与放量突破结构，技术分 83.5，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 81.78,
+              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 83.52,
+              "description": "当前模式重点关注该维度。20 日收益 43.7%，量能倍率 0.86，MA10 / MA20 / MA60 为 66.59 / 60.39 / 54.46。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.67,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b39fe95d5c8c",
+              "title": "2025年收入增长58%，高研发投入拖累利润",
+              "publish_time": "2026-04-03T00:00:00",
+              "source": "东方财富研报",
+              "source_category": "券商研报",
+              "event_type": "券商研报",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "机构：国信证券；评级：增持；行业：半导体",
+              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604031821003942_1.pdf"
+            },
+            {
+              "event_id": "aff1263687ed",
+              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "publish_time": "2026-04-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225143456&orgId=9900052528&announcementTime=2026-04-23"
+            },
+            {
+              "event_id": "7e1483e5b318",
+              "title": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
+              "publish_time": "2026-04-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "中信证券股份有限公司关于杰华特微电子股份有限公司2025年度持续督导工作现场检查报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688141&announcementId=1225129318&orgId=9900052528&announcementTime=2026-04-21"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 83.85,
+            "stop_loss_price": 76.3,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 82.2,
+            "take_profit_price_1": 98.95,
+            "take_profit_pct_1": 0.1801,
+            "take_profit_price_2": 108.76,
+            "take_profit_pct_2": 0.2971,
+            "trailing_stop_price": 79.03,
             "suggested_position_min": 0.0488,
             "suggested_position_max": 0.0669,
             "max_portfolio_risk": 0.006,
@@ -2670,9 +2787,9 @@
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 75.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 98.49 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 108.25 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+              "止损线参考 76.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 98.95 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 108.76 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2682,7 +2799,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 75.96 元作为防守位，并在 98.49 / 108.25 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 76.30 元作为防守位，并在 98.95 / 108.76 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2690,12 +2807,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893271+00:00"
+            "generated_at": "2026-04-24T06:32:53.627338+00:00"
           },
           "risk_controls": [
-            "止损线参考 75.96 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 98.49 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 108.25 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+            "止损线参考 76.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 98.95 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 108.76 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -2714,7 +2831,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2730,7 +2847,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 8.9%，换手 7.0%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 9.1%，换手 7.3%，量比 1.37。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2773,26 +2890,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 74.05,
-            "stop_loss_price": 68.45,
-            "stop_loss_pct": 0.0756,
-            "signal_quality_score": 86.22,
-            "take_profit_price_1": 85.25,
-            "take_profit_pct_1": 0.1512,
-            "take_profit_price_2": 92.53,
-            "take_profit_pct_2": 0.2496,
-            "trailing_stop_price": 70.47,
-            "suggested_position_min": 0.0718,
-            "suggested_position_max": 0.0968,
+            "reference_price": 74.18,
+            "stop_loss_price": 68.58,
+            "stop_loss_pct": 0.0755,
+            "signal_quality_score": 86.15,
+            "take_profit_price_1": 85.38,
+            "take_profit_pct_1": 0.151,
+            "take_profit_price_2": 92.66,
+            "take_profit_pct_2": 0.2491,
+            "trailing_stop_price": 70.6,
+            "suggested_position_min": 0.0713,
+            "suggested_position_max": 0.0962,
             "max_portfolio_risk": 0.0073,
             "risk_reward_ratio": 2.0,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 68.45 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 85.25 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 92.53 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+              "止损线参考 68.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 85.38 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 92.66 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2802,7 +2919,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 68.45 元作为防守位，并在 85.25 / 92.53 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 68.58 元作为防守位，并在 85.38 / 92.66 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.44，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2810,12 +2927,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893309+00:00"
+            "generated_at": "2026-04-24T06:32:53.627372+00:00"
           },
           "risk_controls": [
-            "止损线参考 68.45 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 85.25 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 92.53 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+            "止损线参考 68.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 85.38 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 92.66 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -2833,7 +2950,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 79.39,
+              "value": 80.07,
               "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2849,7 +2966,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.5%，换手 8.2%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 8.3%，换手 8.6%，量比 1.20。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2892,26 +3009,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 53.13,
-            "stop_loss_price": 48.47,
-            "stop_loss_pct": 0.0878,
-            "signal_quality_score": 82.37,
-            "take_profit_price_1": 62.45,
-            "take_profit_pct_1": 0.1754,
-            "take_profit_price_2": 68.51,
-            "take_profit_pct_2": 0.2895,
-            "trailing_stop_price": 50.15,
-            "suggested_position_min": 0.0645,
-            "suggested_position_max": 0.0884,
-            "max_portfolio_risk": 0.0078,
+            "reference_price": 53.5,
+            "stop_loss_price": 48.84,
+            "stop_loss_pct": 0.0872,
+            "signal_quality_score": 82.56,
+            "take_profit_price_1": 62.82,
+            "take_profit_pct_1": 0.1742,
+            "take_profit_price_2": 68.88,
+            "take_profit_pct_2": 0.2875,
+            "trailing_stop_price": 50.52,
+            "suggested_position_min": 0.0631,
+            "suggested_position_max": 0.0864,
+            "max_portfolio_risk": 0.0075,
             "risk_reward_ratio": 2.0,
-            "action_bias": "分批试仓",
-            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 48.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 62.45 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 68.51 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+              "止损线参考 48.84 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 62.82 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 68.88 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2920,8 +3037,8 @@
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.78,
-            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 48.47 元作为防守位，并在 62.45 / 68.51 元分批兑现。",
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 48.84 元作为防守位，并在 62.82 / 68.88 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2929,12 +3046,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893343+00:00"
+            "generated_at": "2026-04-24T06:32:53.627406+00:00"
           },
           "risk_controls": [
-            "止损线参考 48.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 62.45 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 68.51 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+            "止损线参考 48.84 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 62.82 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 68.88 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -2952,7 +3069,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2968,7 +3085,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 7.9%，换手 12.0%，量比 1.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.4%，换手 12.3%，量比 1.15。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3011,26 +3128,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 14.59,
-            "stop_loss_price": 13.28,
+            "reference_price": 14.52,
+            "stop_loss_price": 13.21,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 82.46,
-            "take_profit_price_1": 17.21,
-            "take_profit_pct_1": 0.1796,
-            "take_profit_price_2": 18.91,
-            "take_profit_pct_2": 0.2961,
-            "trailing_stop_price": 13.64,
-            "suggested_position_min": 0.0615,
-            "suggested_position_max": 0.0843,
-            "max_portfolio_risk": 0.0076,
+            "signal_quality_score": 82.39,
+            "take_profit_price_1": 17.14,
+            "take_profit_pct_1": 0.1804,
+            "take_profit_price_2": 18.84,
+            "take_profit_pct_2": 0.2975,
+            "trailing_stop_price": 13.57,
+            "suggested_position_min": 0.0628,
+            "suggested_position_max": 0.086,
+            "max_portfolio_risk": 0.0077,
             "risk_reward_ratio": 2.0,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 13.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 17.21 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 18.91 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
+              "止损线参考 13.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 17.14 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.84 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -3040,7 +3157,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 13.28 元作为防守位，并在 17.21 / 18.91 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 13.21 元作为防守位，并在 17.14 / 18.84 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.98，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3048,138 +3165,18 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893377+00:00"
+            "generated_at": "2026-04-24T06:32:53.627440+00:00"
           },
           "risk_controls": [
-            "止损线参考 13.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 17.21 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 18.91 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
+            "止损线参考 13.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 17.14 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.84 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
-          ]
-        },
-        "002192": {
-          "symbol": "002192",
-          "name": "融捷股份",
-          "industry": "能源金属",
-          "thesis": "融捷股份 具备较完整的均线多头与放量突破结构，技术分 81.3，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 83.85,
-              "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 81.32,
-              "description": "当前模式重点关注该维度。20 日收益 21.7%，量能倍率 0.82，MA10 / MA20 / MA60 为 79.38 / 76.56 / 62.75。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.3,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 10.0%，换手 11.3%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "b5e203486b20",
-              "title": "锂矿板块大涨！002192涨停",
-              "publish_time": "2026-04-24T11:23:00",
-              "source": "上海证券报",
-              "source_category": "个股资讯",
-              "event_type": "其他",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "24日早盘，锂矿板块盘中逆势拉升，江特电机、金圆股份10%幅度涨停，天华新能涨超11%，融捷股份（002192）震荡拉升，盘中涨停，截至发稿报86.28元/股。西藏珠峰、永兴材料、盛新锂能、西藏矿业等个股跟涨。",
-              "link": "http://finance.eastmoney.com/a/202604243717731974.html"
-            },
-            {
-              "event_id": "55e85140dc1d",
-              "title": "高成长的川矿锂资源新星",
-              "publish_time": "2022-10-26T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "机构：东吴证券；评级：买入；行业：能源金属",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202210261579481352_1.pdf"
-            },
-            {
-              "event_id": "c490d5fd81a9",
-              "title": "锂业量价齐升业绩，上位环评公示选矿项目加速",
-              "publish_time": "2022-10-17T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "机构：华安证券；评级：买入；行业：能源金属",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202210171579210710_1.pdf"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 86.28,
-            "stop_loss_price": 78.51,
-            "stop_loss_pct": 0.09,
-            "signal_quality_score": 81.65,
-            "take_profit_price_1": 101.82,
-            "take_profit_pct_1": 0.1801,
-            "take_profit_price_2": 111.92,
-            "take_profit_pct_2": 0.2972,
-            "trailing_stop_price": 80.43,
-            "suggested_position_min": 0.0554,
-            "suggested_position_max": 0.0761,
-            "max_portfolio_risk": 0.0068,
-            "risk_reward_ratio": 2.0,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 78.51 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 101.82 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 111.92 元，若继续上行则把跟踪止损上移到 80.43 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 78.51 元作为防守位，并在 101.82 / 111.92 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 4.15，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：锂矿板块大涨！002192涨停"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893410+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 78.51 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 101.82 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 111.92 元，若继续上行则把跟踪止损上移到 80.43 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         }
       },
@@ -3199,18 +3196,47 @@
       "holding_window": "1-2D",
       "items": [
         {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "rank": 1,
+          "base_score": 93.22,
+          "event_score": 58.77,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 7.7%，换手 14.7%，量比 0.97。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 2.66 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "业绩财报",
+            "业绩财报"
+          ]
+        },
+        {
           "symbol": "603399",
           "name": "永杉锂业",
           "industry": "能源金属",
-          "rank": 1,
-          "base_score": 88.73,
+          "rank": 2,
+          "base_score": 88.65,
           "event_score": 50.92,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 7.9%，换手 12.0%，量比 1.17。"
+              "detail": "当日涨幅 7.4%，换手 12.3%，量比 1.15。"
             },
             {
               "label": "接力质量",
@@ -3228,47 +3254,18 @@
           ]
         },
         {
-          "symbol": "688381",
-          "name": "帝奥微",
-          "industry": "半导体",
-          "rank": 2,
-          "base_score": 87.71,
-          "event_score": 51.5,
-          "risk_adjusted_score": 100,
-          "holding_window": "1-2D",
-          "reasons": [
-            {
-              "label": "情绪强度",
-              "detail": "当日涨幅 8.7%，换手 8.0%，量比 2.34。"
-            },
-            {
-              "label": "接力质量",
-              "detail": "情绪分 100.0，近 5 日量能提升 1.92 倍。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
-          ]
-        },
-        {
           "symbol": "688141",
           "name": "杰华特",
           "industry": "半导体",
           "rank": 3,
-          "base_score": 87.45,
+          "base_score": 87.54,
           "event_score": 55.67,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 16.5%，换手 7.4%，量比 3.08。"
+              "detail": "当日涨幅 17.1%，换手 7.5%，量比 2.98。"
             },
             {
               "label": "接力质量",
@@ -3290,14 +3287,14 @@
           "name": "星华新材",
           "industry": "化学制品",
           "rank": 4,
-          "base_score": 84.45,
+          "base_score": 84.73,
           "event_score": 54.33,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 20.0%，换手 22.1%，量比 3.08。"
+              "detail": "当日涨幅 20.0%，换手 24.1%，量比 3.17。"
             },
             {
               "label": "接力质量",
@@ -3319,14 +3316,14 @@
           "name": "富瀚微",
           "industry": "半导体",
           "rank": 5,
-          "base_score": 84.36,
-          "event_score": 56.9,
+          "base_score": 84.45,
+          "event_score": 56.94,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
             {
               "label": "情绪强度",
-              "detail": "当日涨幅 20.0%，换手 11.7%，量比 6.50。"
+              "detail": "当日涨幅 20.0%，换手 11.8%，量比 6.20。"
             },
             {
               "label": "接力质量",
@@ -3345,6 +3342,125 @@
         }
       ],
       "stock_details": {
+        "603906": {
+          "symbol": "603906",
+          "name": "龙蟠科技",
+          "industry": "电池",
+          "thesis": "龙蟠科技 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 80.07,
+              "description": "电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 49.1%，量能倍率 2.66，MA10 / MA20 / MA60 为 25.44 / 23.70 / 20.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.77,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 7.7%，换手 14.7%，量比 0.97。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b1791af0a6fa",
+              "title": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "publish_time": "2026-04-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603906&announcementId=1225106983&orgId=9900030660&announcementTime=2026-04-16"
+            },
+            {
+              "event_id": "09f26ee8c17a",
+              "title": "603906，1分钟涨停",
+              "publish_time": "2026-04-16T10:47:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）开盘仅用不到1分钟时间涨停，丰元股份、安达科技、湖南裕能、容百科技等多股跟涨。 龙蟠科技主营磷酸铁锂，预计2026年第一季度实现归属于上市公司股东的净利润2.00亿元至2.50亿元，比上年同期增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707145897.html"
+            },
+            {
+              "event_id": "f438d17def1b",
+              "title": "603906、600768，强势涨停！",
+              "publish_time": "2026-04-16T10:26:00",
+              "source": "数据宝",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "龙蟠科技（603906）、宁波富邦（600768）等预计一季度净利润大幅增长的公司早盘强势涨停。 龙蟠科技预计一季度净利润2亿元至2.50亿元，同比增长870.75%至1063.44%，实现扭亏为盈。",
+              "link": "http://finance.eastmoney.com/a/202604163707114446.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 32.8,
+            "stop_loss_price": 30.67,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 87.82,
+            "take_profit_price_1": 36.21,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 38.12,
+            "take_profit_pct_2": 0.1622,
+            "trailing_stop_price": 30.68,
+            "suggested_position_min": 0.056,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 36.21 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 38.12 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 30.67 元作为防守位，并在 36.21 / 38.12 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-04-24T06:32:53.627509+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.67 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 36.21 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 38.12 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
         "603399": {
           "symbol": "603399",
           "name": "永杉锂业",
@@ -3354,7 +3470,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 83.85,
+              "value": 83.62,
               "description": "能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3370,7 +3486,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 7.9%，换手 12.0%，量比 1.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 7.4%，换手 12.3%，量比 1.15。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3413,15 +3529,15 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 14.59,
-            "stop_loss_price": 13.64,
+            "reference_price": 14.52,
+            "stop_loss_price": 13.58,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 82.46,
-            "take_profit_price_1": 16.11,
-            "take_profit_pct_1": 0.1042,
-            "take_profit_price_2": 16.96,
-            "take_profit_pct_2": 0.1624,
-            "trailing_stop_price": 13.64,
+            "signal_quality_score": 82.39,
+            "take_profit_price_1": 16.02,
+            "take_profit_pct_1": 0.1033,
+            "take_profit_price_2": 16.87,
+            "take_profit_pct_2": 0.1618,
+            "trailing_stop_price": 13.57,
             "suggested_position_min": 0.0547,
             "suggested_position_max": 0.075,
             "max_portfolio_risk": 0.0049,
@@ -3430,9 +3546,9 @@
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 13.64 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 16.11 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 16.96 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
+              "止损线参考 13.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 16.02 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 16.87 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -3442,7 +3558,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 13.64 元作为防守位，并在 16.11 / 16.96 元分批兑现。",
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 13.58 元作为防守位，并在 16.02 / 16.87 元分批兑现。",
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 3.98，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3450,131 +3566,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893480+00:00"
+            "generated_at": "2026-04-24T06:32:53.627542+00:00"
           },
           "risk_controls": [
-            "止损线参考 13.64 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 16.11 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 16.96 元，若继续上行则把跟踪止损上移到 13.64 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若次日高开后无法延续强势，优先按纪律快速减仓。"
-          ]
-        },
-        "688381": {
-          "symbol": "688381",
-          "name": "帝奥微",
-          "industry": "半导体",
-          "thesis": "帝奥微 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
-          "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 81.52,
-              "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 84.2,
-              "description": "20 日收益 27.1%，量能倍率 1.92，MA10 / MA20 / MA60 为 24.82 / 23.09 / 23.66。"
-            },
-            {
-              "name": "事件强度",
-              "value": 51.5,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 8.7%，换手 8.0%，量比 2.34。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "5e416b8a2b23",
-              "title": "立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154103&orgId=9900051388&announcementTime=2026-04-23"
-            },
-            {
-              "event_id": "1d03b79e693b",
-              "title": "中信建投证券股份有限公司关于江苏帝奥微电子股份有限公司使用暂时闲置募集资金进行现金管理的专项核查意见",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "中信建投证券股份有限公司关于江苏帝奥微电子股份有限公司使用暂时闲置募集资金进行现金管理的专项核查意见",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154089&orgId=9900051388&announcementTime=2026-04-23"
-            },
-            {
-              "event_id": "c85e785d8476",
-              "title": "关于续聘会计师事务所的公告",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "positive",
-              "impact_level": "medium",
-              "summary": "关于续聘会计师事务所的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688381&announcementId=1225154104&orgId=9900051388&announcementTime=2026-04-23"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 29.78,
-            "stop_loss_price": 28.24,
-            "stop_loss_pct": 0.0518,
-            "signal_quality_score": 81.69,
-            "take_profit_price_1": 32.24,
-            "take_profit_pct_1": 0.0826,
-            "take_profit_price_2": 33.63,
-            "take_profit_pct_2": 0.1293,
-            "trailing_stop_price": 28.36,
-            "suggested_position_min": 0.0546,
-            "suggested_position_max": 0.075,
-            "max_portfolio_risk": 0.0039,
-            "risk_reward_ratio": 1.6,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 28.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 32.24 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 33.63 元，若继续上行则把跟踪止损上移到 28.36 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 28.24 元作为防守位，并在 32.24 / 33.63 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.59，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：立信会计师事务所(特殊普通合伙)关于江苏帝奥微电子股份有限公司2025年度营业收入扣除情况表的鉴证报告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893513+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 28.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 32.24 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 33.63 元，若继续上行则把跟踪止损上移到 28.36 元附近。",
+            "止损线参考 13.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 16.02 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 16.87 元，若继续上行则把跟踪止损上移到 13.57 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -3592,7 +3589,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3608,7 +3605,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3651,26 +3648,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 83.47,
-            "stop_loss_price": 78.23,
-            "stop_loss_pct": 0.0628,
-            "signal_quality_score": 82.13,
-            "take_profit_price_1": 91.85,
-            "take_profit_pct_1": 0.1004,
-            "take_profit_price_2": 96.57,
-            "take_profit_pct_2": 0.1569,
-            "trailing_stop_price": 78.65,
-            "suggested_position_min": 0.0493,
-            "suggested_position_max": 0.0677,
+            "reference_price": 83.85,
+            "stop_loss_price": 78.61,
+            "stop_loss_pct": 0.0625,
+            "signal_quality_score": 82.2,
+            "take_profit_price_1": 92.23,
+            "take_profit_pct_1": 0.0999,
+            "take_profit_price_2": 96.95,
+            "take_profit_pct_2": 0.1562,
+            "trailing_stop_price": 79.03,
+            "suggested_position_min": 0.0496,
+            "suggested_position_max": 0.068,
             "max_portfolio_risk": 0.0043,
             "risk_reward_ratio": 1.6,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 78.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 91.85 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 96.57 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+              "止损线参考 78.61 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 92.23 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 96.95 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -3680,7 +3677,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 78.23 元作为防守位，并在 91.85 / 96.57 元分批兑现。",
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 78.61 元作为防守位，并在 92.23 / 96.95 元分批兑现。",
             "highlights": [
               "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3688,12 +3685,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893546+00:00"
+            "generated_at": "2026-04-24T06:32:53.627574+00:00"
           },
           "risk_controls": [
-            "止损线参考 78.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 91.85 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 96.57 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+            "止损线参考 78.61 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 92.23 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 96.95 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -3712,7 +3709,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 74.21,
+              "value": 75.03,
               "description": "化学制品 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3728,7 +3725,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 20.0%，换手 22.1%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 20.0%，换手 24.1%，量比 3.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3774,13 +3771,13 @@
             "reference_price": 38.59,
             "stop_loss_price": 36.77,
             "stop_loss_pct": 0.0471,
-            "signal_quality_score": 79.4,
+            "signal_quality_score": 79.63,
             "take_profit_price_1": 41.5,
             "take_profit_pct_1": 0.0754,
             "take_profit_price_2": 43.14,
             "take_profit_pct_2": 0.1179,
             "trailing_stop_price": 36.92,
-            "suggested_position_min": 0.054,
+            "suggested_position_min": 0.0541,
             "suggested_position_max": 0.075,
             "max_portfolio_risk": 0.0035,
             "risk_reward_ratio": 1.6,
@@ -3807,7 +3804,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893580+00:00"
+            "generated_at": "2026-04-24T06:32:53.627609+00:00"
           },
           "risk_controls": [
             "止损线参考 36.77 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3830,7 +3827,7 @@
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 81.52,
+              "value": 81.78,
               "description": "半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3840,13 +3837,13 @@
             },
             {
               "name": "事件强度",
-              "value": 56.9,
+              "value": 56.94,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "当前模式重点关注该维度。日内涨幅 20.0%，换手 11.7%，量比 6.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "当前模式重点关注该维度。日内涨幅 20.0%，换手 11.8%，量比 6.20。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3892,7 +3889,7 @@
             "reference_price": 56.08,
             "stop_loss_price": 54.29,
             "stop_loss_pct": 0.032,
-            "signal_quality_score": 79.56,
+            "signal_quality_score": 79.64,
             "take_profit_price_1": 58.95,
             "take_profit_pct_1": 0.0512,
             "take_profit_price_2": 60.57,
@@ -3925,7 +3922,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-24T06:22:00.893616+00:00"
+            "generated_at": "2026-04-24T06:32:53.627642+00:00"
           },
           "risk_controls": [
             "止损线参考 54.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3952,13 +3949,42 @@
   },
   "candidate_pool": [
     {
+      "symbol": "603906",
+      "name": "龙蟠科技",
+      "industry": "电池",
+      "rank": 1,
+      "base_score": 93.22,
+      "event_score": 58.77,
+      "risk_adjusted_score": 91.17,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "龙蟠科技 近 20 日收益 49.1%，技术分 100.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "业绩财报",
+        "业绩财报"
+      ]
+    },
+    {
       "symbol": "002466",
       "name": "天齐锂业",
       "industry": "能源金属",
-      "rank": 1,
-      "base_score": 90.91,
+      "rank": 2,
+      "base_score": 90.84,
       "event_score": 62.23,
-      "risk_adjusted_score": 89.9,
+      "risk_adjusted_score": 89.83,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3984,10 +4010,10 @@
       "symbol": "002709",
       "name": "天赐材料",
       "industry": "电池",
-      "rank": 2,
-      "base_score": 87.65,
+      "rank": 3,
+      "base_score": 87.88,
       "event_score": 55.73,
-      "risk_adjusted_score": 85.88,
+      "risk_adjusted_score": 86.07,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4013,10 +4039,10 @@
       "symbol": "688141",
       "name": "杰华特",
       "industry": "半导体",
-      "rank": 3,
-      "base_score": 87.45,
+      "rank": 4,
+      "base_score": 87.54,
       "event_score": 55.67,
-      "risk_adjusted_score": 85.69,
+      "risk_adjusted_score": 85.76,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4042,10 +4068,10 @@
       "symbol": "688807",
       "name": "优迅股份",
       "industry": "半导体",
-      "rank": 4,
-      "base_score": 86.33,
+      "rank": 5,
+      "base_score": 86.44,
       "event_score": 55.88,
-      "risk_adjusted_score": 84.8,
+      "risk_adjusted_score": 84.88,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4066,48 +4092,137 @@
         "官方公告",
         "官方公告"
       ]
-    },
-    {
-      "symbol": "002812",
-      "name": "恩捷股份",
-      "industry": "电池",
-      "rank": 5,
-      "base_score": 84.86,
-      "event_score": 58.62,
-      "risk_adjusted_score": 84.11,
-      "holding_window": "3-5D",
-      "reasons": [
-        {
-          "label": "行业轮动",
-          "detail": "电池 当前仍在强势行业监控池内，优先级高于普通板块。"
-        },
-        {
-          "label": "技术结构",
-          "detail": "恩捷股份 近 20 日收益 4.7%，技术分 78.6。"
-        },
-        {
-          "label": "事件辅助",
-          "detail": "关于股东部分股份质押变动的公告"
-        }
-      ],
-      "event_tags": [
-        "官方公告",
-        "官方公告",
-        "业绩财报"
-      ]
     }
   ],
   "stock_details": {
-    "002466": {
-      "symbol": "002466",
-      "name": "天齐锂业",
-      "industry": "能源金属",
-      "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.9，适合作为默认候选股跟踪。",
+    "603906": {
+      "symbol": "603906",
+      "name": "龙蟠科技",
+      "industry": "电池",
+      "thesis": "龙蟠科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.2，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 83.85,
+          "value": 80.07,
+          "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 100.0,
+          "description": "20 日收益 49.1%，量能倍率 2.66，MA10 / MA20 / MA60 为 25.44 / 23.70 / 20.16。"
+        },
+        {
+          "name": "事件强度",
+          "value": 58.77,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 7.7%，换手 14.7%，量比 0.97。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "b1791af0a6fa",
+          "title": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+          "publish_time": "2026-04-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603906&announcementId=1225106983&orgId=9900030660&announcementTime=2026-04-16"
+        },
+        {
+          "event_id": "09f26ee8c17a",
+          "title": "603906，1分钟涨停",
+          "publish_time": "2026-04-16T10:47:00",
+          "source": "上海证券报",
+          "source_category": "个股资讯",
+          "event_type": "业绩财报",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "龙蟠科技（603906）开盘仅用不到1分钟时间涨停，丰元股份、安达科技、湖南裕能、容百科技等多股跟涨。 龙蟠科技主营磷酸铁锂，预计2026年第一季度实现归属于上市公司股东的净利润2.00亿元至2.50亿元，比上年同期增长870.75%至1063.44%，实现扭亏为盈。",
+          "link": "http://finance.eastmoney.com/a/202604163707145897.html"
+        },
+        {
+          "event_id": "f438d17def1b",
+          "title": "603906、600768，强势涨停！",
+          "publish_time": "2026-04-16T10:26:00",
+          "source": "数据宝",
+          "source_category": "个股资讯",
+          "event_type": "业绩财报",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "龙蟠科技（603906）、宁波富邦（600768）等预计一季度净利润大幅增长的公司早盘强势涨停。 龙蟠科技预计一季度净利润2亿元至2.50亿元，同比增长870.75%至1063.44%，实现扭亏为盈。",
+          "link": "http://finance.eastmoney.com/a/202604163707114446.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 32.8,
+        "stop_loss_price": 30.24,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 87.82,
+        "take_profit_price_1": 37.41,
+        "take_profit_pct_1": 0.1405,
+        "take_profit_price_2": 40.48,
+        "take_profit_pct_2": 0.2341,
+        "trailing_stop_price": 30.68,
+        "suggested_position_min": 0.06,
+        "suggested_position_max": 0.0804,
+        "max_portfolio_risk": 0.0063,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 30.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 37.41 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 40.48 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 30.24 元作为防守位，并在 37.41 / 40.48 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：江苏龙蟠科技集团股份有限公司2026年第一季度业绩预增公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-04-24T06:32:53.626589+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 30.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 37.41 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 40.48 元，若继续上行则把跟踪止损上移到 30.68 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "002466": {
+      "symbol": "002466",
+      "name": "天齐锂业",
+      "industry": "能源金属",
+      "thesis": "天齐锂业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.8，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 83.62,
           "description": "当前模式重点关注该维度。能源金属 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4123,7 +4238,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 8.9%，换手 7.0%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 9.1%，换手 7.3%，量比 1.37。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4166,26 +4281,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 74.05,
-        "stop_loss_price": 69.23,
-        "stop_loss_pct": 0.0651,
-        "signal_quality_score": 86.22,
-        "take_profit_price_1": 82.73,
-        "take_profit_pct_1": 0.1172,
-        "take_profit_price_2": 88.51,
-        "take_profit_pct_2": 0.1953,
-        "trailing_stop_price": 70.47,
-        "suggested_position_min": 0.0735,
-        "suggested_position_max": 0.0992,
-        "max_portfolio_risk": 0.0065,
+        "reference_price": 74.18,
+        "stop_loss_price": 69.36,
+        "stop_loss_pct": 0.065,
+        "signal_quality_score": 86.15,
+        "take_profit_price_1": 82.86,
+        "take_profit_pct_1": 0.117,
+        "take_profit_price_2": 88.64,
+        "take_profit_pct_2": 0.1949,
+        "trailing_stop_price": 70.6,
+        "suggested_position_min": 0.073,
+        "suggested_position_max": 0.0986,
+        "max_portfolio_risk": 0.0064,
         "risk_reward_ratio": 1.8,
         "action_bias": "谨慎追高",
         "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 69.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 82.73 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 88.51 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+          "止损线参考 69.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 82.86 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 88.64 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "信号质量较高，可在纪律范围内使用区间上沿仓位。",
           "价格已处于加速区，建议只用试仓级别仓位。"
@@ -4195,7 +4310,7 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 69.23 元作为防守位，并在 82.73 / 88.51 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 69.36 元作为防守位，并在 82.86 / 88.64 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 3.44，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4203,12 +4318,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T06:22:00.892570+00:00"
+        "generated_at": "2026-04-24T06:32:53.626646+00:00"
       },
       "risk_controls": [
-        "止损线参考 69.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 82.73 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 88.51 元，若继续上行则把跟踪止损上移到 70.47 元附近。",
+        "止损线参考 69.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 82.86 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 88.64 元，若继续上行则把跟踪止损上移到 70.60 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "信号质量较高，可在纪律范围内使用区间上沿仓位。",
         "价格已处于加速区，建议只用试仓级别仓位。",
@@ -4220,12 +4335,12 @@
       "symbol": "002709",
       "name": "天赐材料",
       "industry": "电池",
-      "thesis": "天赐材料 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.9，适合作为默认候选股跟踪。",
+      "thesis": "天赐材料 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.1，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 79.39,
+          "value": 80.07,
           "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4241,7 +4356,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 7.5%，换手 8.2%，量比 1.21。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 8.3%，换手 8.6%，量比 1.20。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4284,26 +4399,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 53.13,
-        "stop_loss_price": 49.11,
-        "stop_loss_pct": 0.0756,
-        "signal_quality_score": 82.37,
-        "take_profit_price_1": 60.37,
-        "take_profit_pct_1": 0.1363,
-        "take_profit_price_2": 65.19,
-        "take_profit_pct_2": 0.227,
-        "trailing_stop_price": 50.15,
-        "suggested_position_min": 0.0661,
-        "suggested_position_max": 0.0906,
-        "max_portfolio_risk": 0.0068,
+        "reference_price": 53.5,
+        "stop_loss_price": 49.48,
+        "stop_loss_pct": 0.0751,
+        "signal_quality_score": 82.56,
+        "take_profit_price_1": 60.74,
+        "take_profit_pct_1": 0.1353,
+        "take_profit_price_2": 65.56,
+        "take_profit_pct_2": 0.2254,
+        "trailing_stop_price": 50.52,
+        "suggested_position_min": 0.0646,
+        "suggested_position_max": 0.0885,
+        "max_portfolio_risk": 0.0066,
         "risk_reward_ratio": 1.8,
-        "action_bias": "分批试仓",
-        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 49.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 60.37 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 65.19 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+          "止损线参考 49.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 60.74 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 65.56 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "信号质量较高，可在纪律范围内使用区间上沿仓位。",
           "价格已处于加速区，建议只用试仓级别仓位。"
@@ -4312,8 +4427,8 @@
       "ai_risk_analysis": {
         "status": "rule_stub_ready",
         "model": null,
-        "confidence": 0.72,
-        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 49.11 元作为防守位，并在 60.37 / 65.19 元分批兑现。",
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 49.48 元作为防守位，并在 60.74 / 65.56 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4321,12 +4436,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T06:22:00.892628+00:00"
+        "generated_at": "2026-04-24T06:32:53.626690+00:00"
       },
       "risk_controls": [
-        "止损线参考 49.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 60.37 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 65.19 元，若继续上行则把跟踪止损上移到 50.15 元附近。",
+        "止损线参考 49.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 60.74 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 65.56 元，若继续上行则把跟踪止损上移到 50.52 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "信号质量较高，可在纪律范围内使用区间上沿仓位。",
         "价格已处于加速区，建议只用试仓级别仓位。",
@@ -4338,12 +4453,12 @@
       "symbol": "688141",
       "name": "杰华特",
       "industry": "半导体",
-      "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.7，适合作为默认候选股跟踪。",
+      "thesis": "杰华特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.8，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 81.52,
+          "value": 81.78,
           "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4359,7 +4474,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 16.5%，换手 7.4%，量比 3.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 17.1%，换手 7.5%，量比 2.98。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4402,26 +4517,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 83.47,
-        "stop_loss_price": 76.97,
-        "stop_loss_pct": 0.0779,
-        "signal_quality_score": 82.13,
-        "take_profit_price_1": 95.17,
-        "take_profit_pct_1": 0.1402,
-        "take_profit_price_2": 102.97,
-        "take_profit_pct_2": 0.2336,
-        "trailing_stop_price": 78.65,
-        "suggested_position_min": 0.0497,
-        "suggested_position_max": 0.0682,
+        "reference_price": 83.85,
+        "stop_loss_price": 77.35,
+        "stop_loss_pct": 0.0775,
+        "signal_quality_score": 82.2,
+        "take_profit_price_1": 95.55,
+        "take_profit_pct_1": 0.1395,
+        "take_profit_price_2": 103.35,
+        "take_profit_pct_2": 0.2326,
+        "trailing_stop_price": 79.03,
+        "suggested_position_min": 0.05,
+        "suggested_position_max": 0.0685,
         "max_portfolio_risk": 0.0053,
         "risk_reward_ratio": 1.8,
         "action_bias": "谨慎追高",
         "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 95.17 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 102.97 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+          "止损线参考 77.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 95.55 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 103.35 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "信号质量较高，可在纪律范围内使用区间上沿仓位。",
           "价格已处于加速区，建议只用试仓级别仓位。"
@@ -4431,7 +4546,7 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 76.97 元作为防守位，并在 95.17 / 102.97 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 77.35 元作为防守位，并在 95.55 / 103.35 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 2.91，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4439,12 +4554,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T06:22:00.892671+00:00"
+        "generated_at": "2026-04-24T06:32:53.626729+00:00"
       },
       "risk_controls": [
-        "止损线参考 76.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 95.17 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 102.97 元，若继续上行则把跟踪止损上移到 78.65 元附近。",
+        "止损线参考 77.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 95.55 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 103.35 元，若继续上行则把跟踪止损上移到 79.03 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "信号质量较高，可在纪律范围内使用区间上沿仓位。",
         "价格已处于加速区，建议只用试仓级别仓位。",
@@ -4457,12 +4572,12 @@
       "symbol": "688807",
       "name": "优迅股份",
       "industry": "半导体",
-      "thesis": "优迅股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.8，适合作为默认候选股跟踪。",
+      "thesis": "优迅股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.9，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 81.52,
+          "value": 81.78,
           "description": "当前模式重点关注该维度。半导体 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4477,8 +4592,8 @@
         },
         {
           "name": "情绪热度",
-          "value": 99.57,
-          "description": "日内涨幅 13.0%，换手 21.7%，量比 1.25。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "value": 99.63,
+          "description": "日内涨幅 14.7%，换手 22.4%，量比 1.23。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4521,26 +4636,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 382.0,
-        "stop_loss_price": 352.2,
+        "reference_price": 387.66,
+        "stop_loss_price": 357.42,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 81.17,
-        "take_profit_price_1": 435.64,
+        "signal_quality_score": 81.26,
+        "take_profit_price_1": 442.09,
         "take_profit_pct_1": 0.1404,
-        "take_profit_price_2": 471.4,
+        "take_profit_price_2": 478.38,
         "take_profit_pct_2": 0.234,
-        "trailing_stop_price": 353.64,
-        "suggested_position_min": 0.0345,
-        "suggested_position_max": 0.0475,
+        "trailing_stop_price": 359.3,
+        "suggested_position_min": 0.0343,
+        "suggested_position_max": 0.0472,
         "max_portfolio_risk": 0.0037,
         "risk_reward_ratio": 1.8,
         "action_bias": "谨慎追高",
         "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 352.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 435.64 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 471.40 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
+          "止损线参考 357.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 442.09 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 478.38 元，若继续上行则把跟踪止损上移到 359.30 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "信号质量较高，可在纪律范围内使用区间上沿仓位。",
           "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
@@ -4551,7 +4666,7 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.58,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 352.20 元作为防守位，并在 435.64 / 471.40 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 357.42 元作为防守位，并在 442.09 / 478.38 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 7.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4559,12 +4674,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-24T06:22:00.892714+00:00"
+        "generated_at": "2026-04-24T06:32:53.626770+00:00"
       },
       "risk_controls": [
-        "止损线参考 352.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 435.64 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 471.40 元，若继续上行则把跟踪止损上移到 353.64 元附近。",
+        "止损线参考 357.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 442.09 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 478.38 元，若继续上行则把跟踪止损上移到 359.30 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "信号质量较高，可在纪律范围内使用区间上沿仓位。",
         "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
@@ -4574,131 +4689,12 @@
         "当日已接近涨停，避免尾盘情绪化追高。",
         "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
       ]
-    },
-    "002812": {
-      "symbol": "002812",
-      "name": "恩捷股份",
-      "industry": "电池",
-      "thesis": "恩捷股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 84.1，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 能源金属, 半导体, 电池, 农化制品, 化学制品 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-      "feature_scores": [
-        {
-          "name": "行业强度",
-          "value": 79.39,
-          "description": "当前模式重点关注该维度。电池 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-        },
-        {
-          "name": "技术结构",
-          "value": 78.61,
-          "description": "20 日收益 4.7%，量能倍率 1.20，MA10 / MA20 / MA60 为 71.11 / 69.95 / 63.68。"
-        },
-        {
-          "name": "事件强度",
-          "value": 58.62,
-          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-        },
-        {
-          "name": "情绪热度",
-          "value": 100,
-          "description": "日内涨幅 10.0%，换手 7.9%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-        }
-      ],
-      "recent_events": [
-        {
-          "event_id": "058322d6f4bd",
-          "title": "关于股东部分股份质押变动的公告",
-          "publish_time": "2026-04-24T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "关于股东部分股份质押变动的公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165557&orgId=9900026450&announcementTime=2026-04-24"
-        },
-        {
-          "event_id": "1a78e021820a",
-          "title": "关于公司合并报表范围内提供担保的进展公告",
-          "publish_time": "2026-04-24T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "关于公司合并报表范围内提供担保的进展公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002812&announcementId=1225165556&orgId=9900026450&announcementTime=2026-04-24"
-        },
-        {
-          "event_id": "fc975ed1c540",
-          "title": "恩捷股份：一季度净利润2.6亿元 同比增长901.7%",
-          "publish_time": "2026-04-22T19:01:00",
-          "source": "证券时报网",
-          "source_category": "个股资讯",
-          "event_type": "业绩财报",
-          "sentiment": "positive",
-          "impact_level": "medium",
-          "summary": "人民财讯4月22日电，恩捷股份0028124月22日披露一季报，公司2026年一季度实现营业收入39.08亿元，同比增长43.21%；归母净利润2.6亿元，同比增长901.70%，主要系营业收入、毛利率增加。",
-          "link": "http://finance.eastmoney.com/a/202604223714306660.html"
-        }
-      ],
-      "risk_plan": {
-        "price_basis": "当前最新价",
-        "reference_price": 77.18,
-        "stop_loss_price": 71.82,
-        "stop_loss_pct": 0.0695,
-        "signal_quality_score": 80.34,
-        "take_profit_price_1": 86.83,
-        "take_profit_pct_1": 0.125,
-        "take_profit_price_2": 93.26,
-        "take_profit_pct_2": 0.2083,
-        "trailing_stop_price": 73.2,
-        "suggested_position_min": 0.0643,
-        "suggested_position_max": 0.0888,
-        "max_portfolio_risk": 0.0062,
-        "risk_reward_ratio": 1.8,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-        "analysis_method": "rule_based_v1",
-        "execution_notes": [
-          "止损线参考 71.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 86.83 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 93.26 元，若继续上行则把跟踪止损上移到 73.20 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
-        ]
-      },
-      "ai_risk_analysis": {
-        "status": "rule_stub_ready",
-        "model": null,
-        "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 71.82 元作为防守位，并在 86.83 / 93.26 元分批兑现。",
-        "highlights": [
-          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 3.12，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：关于股东部分股份质押变动的公告"
-        ],
-        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-        "source": "rules",
-        "generated_at": "2026-04-24T06:22:00.892754+00:00"
-      },
-      "risk_controls": [
-        "止损线参考 71.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 86.83 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 93.26 元，若继续上行则把跟踪止损上移到 73.20 元附近。",
-        "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
-        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "当日已接近涨停，避免尾盘情绪化追高。"
-      ]
     }
   },
   "selection_meta": {
     "industry_source": "ths_industry_summary",
     "constituent_scan_mode": "行业前 6 成分股全扫",
-    "total_universe_size": 28,
+    "total_universe_size": 29,
     "news_watchlist_size": 12,
     "scan_summary": [
       {
