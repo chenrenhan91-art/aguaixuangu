@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-27T09:35:53.776054+00:00",
+  "generated_at": "2026-04-27T10:03:39.859982+00:00",
   "trade_date": "2026-04-27",
   "snapshot_session": {
     "session_id": "close",
     "label": "收盘信息",
-    "generated_time": "17:35",
-    "generated_at": "2026-04-27T17:35:53.776054+08:00"
+    "generated_time": "18:03",
+    "generated_at": "2026-04-27T18:03:39.859982+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -48,7 +48,7 @@
     "breadth_score": 80.11,
     "northbound_score": 71.62,
     "momentum_score": 75.94,
-    "updated_at": "2026-04-27T09:35:53.775101+00:00"
+    "updated_at": "2026-04-27T10:03:39.858714+00:00"
   },
   "top_sectors": [
     {
@@ -99,52 +99,52 @@
   ],
   "market_news": [
     {
-      "title": "一季度国内油气供应总体平稳有序",
-      "summary": "【一季度国内油气供应总体平稳有序】记者4月27日从国家能源局举行的例行新闻发布会获悉，一季度国内油气供应总体平稳有序，规上工业原油、天然气产量同比分别增长1.3%和3%。",
-      "publish_time": "2026-04-27T17:29:12",
-      "link": "https://finance.eastmoney.com/a/202604273720249271.html"
+      "title": "以媒：内塔尼亚胡再次推迟出席涉腐败案听证会",
+      "summary": "【以媒：内塔尼亚胡再次推迟出席涉腐败案听证会】据以色列媒体27日报道，以色列总理内塔尼亚胡再次推迟出席涉腐败案听证会，原定当天举行的听证会取消。",
+      "publish_time": "2026-04-27T18:02:12",
+      "link": "https://finance.eastmoney.com/a/202604273720291551.html"
     },
     {
-      "title": "宁德时代拟通过香港新股配售募资50亿美元",
-      "summary": "【宁德时代拟通过香港新股配售募资50亿美元】宁德时代拟通过香港新股配售募资50亿美元，发行价格介于628.20–651.80港元之间。",
-      "publish_time": "2026-04-27T17:28:35",
-      "link": "https://finance.eastmoney.com/a/202604273720255941.html"
+      "title": "淮河能源：一季度归母净利润3.24亿元 同比下降30.49%",
+      "summary": "【淮河能源：一季度归母净利润3.24亿元 同比下降30.49%】淮河能源4月27日公告，2026年第一季度实现营业收入97.47亿元，同比增长13.47%；归属于上市公司股东的净利润3.24亿元，同比下降30.49%；基本每股收益0.05元。",
+      "publish_time": "2026-04-27T18:01:10",
+      "link": "https://finance.eastmoney.com/a/202604273720291634.html"
     },
     {
-      "title": "赛轮轮胎：一季度归母净利润10.56亿元 同比增长1.72%",
-      "summary": "【赛轮轮胎：一季度归母净利润10.56亿元 同比增长1.72%】赛轮轮胎(601058)4月27日披露一季报，公司2026年一季度实现营业收入94.61亿元，同比增长12.48%；归母净利润10.56亿元，同比增长1.72%。",
-      "publish_time": "2026-04-27T17:26:25",
-      "link": "https://finance.eastmoney.com/a/202604273720249953.html"
+      "title": "东方通信：一季度净利润4314.81万元 同比增长176.89%",
+      "summary": "【东方通信：一季度净利润4314.81万元 同比增长176.89%】东方通信公告，公司2026年第一季度实现营业收入5.46亿元，同比增长21.17%；归属于上市公司股东的净利润4314.81万元，同比增长176.89%；利润总额4544.28万元，同比由亏转盈；经营活动产生的现金流量净额为-2.40亿元。",
+      "publish_time": "2026-04-27T17:57:00",
+      "link": "https://finance.eastmoney.com/a/202604273720291253.html"
     },
     {
-      "title": "云天化：第一季度净利润同比增长10.39%",
-      "summary": "【云天化：第一季度净利润同比增长10.39%】云天化(600096.SH)公告称，2026年第一季度实现营业收入119.81亿元，同比下降8.06%；归属于上市公司股东的净利润为14.25亿元，同比增长10.39%。",
-      "publish_time": "2026-04-27T17:26:12",
-      "link": "https://finance.eastmoney.com/a/202604273720249688.html"
+      "title": "纳微科技：一季度净利润6813.47万元 同比增长133.22%",
+      "summary": "【纳微科技：一季度净利润6813.47万元 同比增长133.22%】纳微科技公告，公司2026年第一季度实现营业收入25277.53万元，同比增长34.03%；利润总额7785.60万元，同比增长154.76%；归属于上市公司股东的净利润6813.47万元，同比增长133.22%；归属于上市公司股东的扣除非经常性损益的净利润6165.37万元，同比增长145.87%。",
+      "publish_time": "2026-04-27T17:57:00",
+      "link": "https://finance.eastmoney.com/a/202604273720290813.html"
     },
     {
-      "title": "贝莱德在美的集团H股的持股比例于4月21日从5.37%降至4.90%",
-      "summary": "【贝莱德在美的集团H股的持股比例于4月21日从5.37%降至4.90%】香港交易所信息显示，贝莱德在美的集团H股的持股比例于4月21日从5.37%降至4.90%。",
-      "publish_time": "2026-04-27T17:25:45",
-      "link": "https://finance.eastmoney.com/a/202604273720251714.html"
+      "title": "海创药业：治疗MASH药物HP515临床IIa期试验期中分析获积极结果",
+      "summary": "【海创药业：治疗MASH药物HP515临床IIa期试验期中分析获积极结果】海创药业(688302.SH)公告称，公司自主研发的治疗代谢相关脂肪性肝炎(MASH)药物HP515临床IIa期试验取得期中分析积极结果。",
+      "publish_time": "2026-04-27T17:55:11",
+      "link": "https://finance.eastmoney.com/a/202604273720289027.html"
     },
     {
-      "title": "中电港：第一季度净利润同比增长87.38%",
-      "summary": "【中电港：第一季度净利润同比增长87.38%】中电港(001287.SZ)公告称，2026年第一季度实现营业收入298.62亿元，同比增长144.36%；归属于上市公司股东的净利润为1.58亿元，同比增长87.38%。全球存储行业迎来阶段性爆发式增长，存储芯片价格持续上涨，带动客户需求提升，进而推动公司相关业绩增长。",
-      "publish_time": "2026-04-27T17:24:57",
-      "link": "https://finance.eastmoney.com/a/202604273720246215.html"
+      "title": "西力科技：2026年第一季度净利润同比下降11.05%",
+      "summary": "【西力科技：2026年第一季度净利润同比下降11.05%】4月27日，西力科技公告，2026年第一季度营业收入1.15亿元，同比增长13.85%；净利润1865.31万元，同比下降11.05%。",
+      "publish_time": "2026-04-27T17:55:06",
+      "link": "https://finance.eastmoney.com/a/202604273720289525.html"
     },
     {
-      "title": "第五次上海合作组织成员国信息通信技术发展部门负责人会议在比什凯克召开",
-      "summary": "【第五次上海合作组织成员国信息通信技术发展部门负责人会议在比什凯克召开】据“工信微报”公众号消息，4月27日，第五次上海合作组织成员国信息通信技术发展部门负责人会议在吉尔吉斯斯坦首都比什凯克召开，与会成员国代表围绕数字和信息通信领域发展、未来合作倡议等深入交流。工业和信息化部总工程师钟志红出席会议并作主旨发言。",
-      "publish_time": "2026-04-27T17:24:17",
-      "link": "https://finance.eastmoney.com/a/202604273720243172.html"
+      "title": "中国化学：第一季度净利润同比增长8.46%",
+      "summary": "【中国化学：第一季度净利润同比增长8.46%】中国化学(601117.SH)公告称，2026年第一季度实现营业收入459.31亿元，同比增长3.22%；归属于上市公司股东的净利润为15.67亿元，同比增长8.46%。",
+      "publish_time": "2026-04-27T17:54:31",
+      "link": "https://finance.eastmoney.com/a/202604273720289118.html"
     },
     {
-      "title": "拒绝与以色列直接谈判 黎真主党领导人提出五点要求",
-      "summary": "【拒绝与以色列直接谈判 黎真主党领导人提出五点要求】当地时间4月27日，黎巴嫩真主党领导人纳伊姆·卡西姆发表声明，称拒绝与以色列进行直接谈判。卡西姆表示，解决当下问题的切入点和方案是先实现以下五点：以色列停止陆海空侵略；以色列从被占领领土撤出；以色列释放囚犯；黎巴嫩居民返回所有村庄和城镇；黎巴嫩重建家园。",
-      "publish_time": "2026-04-27T17:23:12",
-      "link": "https://finance.eastmoney.com/a/202604273720242852.html"
+      "title": "绿色动力：与阿里云签订深化合作框架协议",
+      "summary": "【绿色动力：与阿里云签订深化合作框架协议】绿色动力(601330.SH)公告称，公司于4月27日与阿里云飞天(杭州)云计算技术有限公司签订《深化合作框架协议》及其补充协议。双方将在固废行业数字化与智能化领域建立合作伙伴关系。",
+      "publish_time": "2026-04-27T17:54:19",
+      "link": "https://finance.eastmoney.com/a/202604273720289411.html"
     }
   ],
   "strategy_modes": {
@@ -189,8 +189,8 @@
           "industry": "光学光电子",
           "rank": 2,
           "base_score": 93.0,
-          "event_score": 67.89,
-          "risk_adjusted_score": 92.05,
+          "event_score": 67.75,
+          "risk_adjusted_score": 92.02,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -218,8 +218,8 @@
           "industry": "光学光电子",
           "rank": 3,
           "base_score": 90.09,
-          "event_score": 72.6,
-          "risk_adjusted_score": 90.66,
+          "event_score": 72.43,
+          "risk_adjusted_score": 90.62,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -276,7 +276,7 @@
           "industry": "元件",
           "rank": 5,
           "base_score": 89.82,
-          "event_score": 60.88,
+          "event_score": 60.84,
           "risk_adjusted_score": 88.1,
           "holding_window": "3-5D",
           "reasons": [
@@ -406,7 +406,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775204+00:00"
+            "generated_at": "2026-04-27T10:03:39.858824+00:00"
           },
           "risk_controls": [
             "止损线参考 32.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -440,7 +440,7 @@
             },
             {
               "name": "事件强度",
-              "value": 67.89,
+              "value": 67.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -492,7 +492,7 @@
             "reference_price": 28.87,
             "stop_loss_price": 26.82,
             "stop_loss_pct": 0.0711,
-            "signal_quality_score": 88.33,
+            "signal_quality_score": 88.31,
             "take_profit_price_1": 32.56,
             "take_profit_pct_1": 0.1278,
             "take_profit_price_2": 35.02,
@@ -526,7 +526,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775252+00:00"
+            "generated_at": "2026-04-27T10:03:39.858882+00:00"
           },
           "risk_controls": [
             "止损线参考 26.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -543,7 +543,7 @@
           "symbol": "301379",
           "name": "天山电子",
           "industry": "光学光电子",
-          "thesis": "天山电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.7，适合作为默认候选股跟踪。",
+          "thesis": "天山电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.6，适合作为默认候选股跟踪。",
           "market_context": "当前市场重点围绕 半导体, 元件, 光学光电子, 自动化设备, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
@@ -558,7 +558,7 @@
             },
             {
               "name": "事件强度",
-              "value": 72.6,
+              "value": 72.43,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -610,7 +610,7 @@
             "reference_price": 27.99,
             "stop_loss_price": 25.97,
             "stop_loss_pct": 0.0722,
-            "signal_quality_score": 86.61,
+            "signal_quality_score": 86.58,
             "take_profit_price_1": 31.63,
             "take_profit_pct_1": 0.13,
             "take_profit_price_2": 34.05,
@@ -644,7 +644,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775288+00:00"
+            "generated_at": "2026-04-27T10:03:39.858929+00:00"
           },
           "risk_controls": [
             "止损线参考 25.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -762,7 +762,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775323+00:00"
+            "generated_at": "2026-04-27T10:03:39.858974+00:00"
           },
           "risk_controls": [
             "止损线参考 111.03 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -796,7 +796,7 @@
             },
             {
               "name": "事件强度",
-              "value": 60.88,
+              "value": 60.84,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -848,7 +848,7 @@
             "reference_price": 33.68,
             "stop_loss_price": 31.05,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 84.51,
+            "signal_quality_score": 84.5,
             "take_profit_price_1": 38.41,
             "take_profit_pct_1": 0.1404,
             "take_profit_price_2": 41.57,
@@ -882,7 +882,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775356+00:00"
+            "generated_at": "2026-04-27T10:03:39.859018+00:00"
           },
           "risk_controls": [
             "止损线参考 31.05 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1006,8 +1006,8 @@
           "industry": "半导体",
           "rank": 4,
           "base_score": 88.0,
-          "event_score": 56.44,
-          "risk_adjusted_score": 96.16,
+          "event_score": 59.23,
+          "risk_adjusted_score": 96.49,
           "holding_window": "2-4D",
           "reasons": [
             {
@@ -1024,9 +1024,9 @@
             }
           ],
           "event_tags": [
+            "官方公告",
             "资金交易",
-            "产品技术",
-            "业绩财报"
+            "产品技术"
           ]
         },
         {
@@ -1035,7 +1035,7 @@
           "industry": "半导体",
           "rank": 5,
           "base_score": 85.42,
-          "event_score": 64.92,
+          "event_score": 64.9,
           "risk_adjusted_score": 95.87,
           "holding_window": "2-4D",
           "reasons": [
@@ -1165,7 +1165,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775401+00:00"
+            "generated_at": "2026-04-27T10:03:39.859080+00:00"
           },
           "risk_controls": [
             "止损线参考 32.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1286,7 +1286,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775434+00:00"
+            "generated_at": "2026-04-27T10:03:39.859125+00:00"
           },
           "risk_controls": [
             "止损线参考 110.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1408,7 +1408,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775480+00:00"
+            "generated_at": "2026-04-27T10:03:39.859204+00:00"
           },
           "risk_controls": [
             "止损线参考 194.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1444,7 +1444,7 @@
             },
             {
               "name": "事件强度",
-              "value": 56.44,
+              "value": 59.23,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1454,6 +1454,18 @@
             }
           ],
           "recent_events": [
+            {
+              "event_id": "783ab0397731",
+              "title": "关于2026年限制性股票激励计划内幕信息知情人及激励对象买卖公司股票及衍生品种情况的自查报告",
+              "publish_time": "2026-04-27T17:34:30",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于2026年限制性股票激励计划内幕信息知情人及激励对象买卖公司股票及衍生品种情况的自查报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300613&announcementId=1225201648&orgId=9900030832&announcementTime=2026-04-27 17:34:30"
+            },
             {
               "event_id": "f41e600f0508",
               "title": "富瀚微300613龙虎榜数据04-27)",
@@ -1477,18 +1489,6 @@
               "impact_level": "low",
               "summary": "交易所2026年4月24日公布的交易公开信息显示，富瀚微因成为日涨幅达到15%的前5只证券上榜。富瀚微当日收报56.08元，涨跌幅20.01%，偏离值20.00%，换手率11.98%，成交额14.72亿。 免责声明：本文基于AI生产，仅供参考，不构成任何投资建议，据此操作风险自担。",
               "link": "http://finance.eastmoney.com/a/202604243717982984.html"
-            },
-            {
-              "event_id": "cfce47979051",
-              "title": "富瀚微：第一季度净利润同比增长481.14%",
-              "publish_time": "2026-04-23T16:08:29",
-              "source": "财联社",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "富瀚微300613.SZ)公告称，2026年第一季度实现营业收入5.59亿元，同比增长75.53%；归属于上市公司股东的净利润为8507.64万元，同比增长481.14%。 业绩变动主要系市场需求同比增加，以及公司积极进行市场拓展和布局所致。",
-              "link": "http://finance.eastmoney.com/a/202604233715978161.html"
             }
           ],
           "risk_plan": {
@@ -1496,13 +1496,13 @@
             "reference_price": 63.88,
             "stop_loss_price": 59.81,
             "stop_loss_pct": 0.0638,
-            "signal_quality_score": 82.45,
+            "signal_quality_score": 82.89,
             "take_profit_price_1": 71.61,
             "take_profit_pct_1": 0.121,
             "take_profit_price_2": 76.5,
             "take_profit_pct_2": 0.1976,
             "trailing_stop_price": 61.04,
-            "suggested_position_min": 0.049,
+            "suggested_position_min": 0.0491,
             "suggested_position_max": 0.0671,
             "max_portfolio_risk": 0.0043,
             "risk_reward_ratio": 1.9,
@@ -1527,11 +1527,11 @@
             "highlights": [
               "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 6.95，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：富瀚微300613龙虎榜数据04-27)"
+              "最近的重要事件提要：关于2026年限制性股票激励计划内幕信息知情人及激励对象买卖公司股票及衍生品种情况的自查报告"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775519+00:00"
+            "generated_at": "2026-04-27T10:03:39.859257+00:00"
           },
           "risk_controls": [
             "止损线参考 59.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1567,7 +1567,7 @@
             },
             {
               "name": "事件强度",
-              "value": 64.92,
+              "value": 64.9,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1654,7 +1654,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775553+00:00"
+            "generated_at": "2026-04-27T10:03:39.859302+00:00"
           },
           "risk_controls": [
             "止损线参考 42.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1693,8 +1693,8 @@
           "industry": "光学光电子",
           "rank": 1,
           "base_score": 90.09,
-          "event_score": 72.6,
-          "risk_adjusted_score": 94.97,
+          "event_score": 72.43,
+          "risk_adjusted_score": 94.89,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1703,7 +1703,7 @@
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 72.6，情绪分 100.0，说明新闻并非纯静态公告。"
+              "detail": "事件分 72.4，情绪分 100.0，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1722,8 +1722,8 @@
           "industry": "光学光电子",
           "rank": 2,
           "base_score": 93.0,
-          "event_score": 67.89,
-          "risk_adjusted_score": 94.21,
+          "event_score": 67.75,
+          "risk_adjusted_score": 94.14,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1732,7 +1732,7 @@
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 67.9，情绪分 100.0，说明新闻并非纯静态公告。"
+              "detail": "事件分 67.8，情绪分 100.0，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1780,8 +1780,8 @@
           "industry": "自动化设备",
           "rank": 4,
           "base_score": 87.46,
-          "event_score": 64.39,
-          "risk_adjusted_score": 82.09,
+          "event_score": 64.93,
+          "risk_adjusted_score": 82.33,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1790,7 +1790,7 @@
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 64.4，情绪分 98.3，说明新闻并非纯静态公告。"
+              "detail": "事件分 64.9，情绪分 98.3，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1799,8 +1799,8 @@
           ],
           "event_tags": [
             "券商研报",
-            "官方公告",
-            "券商研报"
+            "业绩财报",
+            "官方公告"
           ]
         },
         {
@@ -1809,8 +1809,8 @@
           "industry": "半导体",
           "rank": 5,
           "base_score": 85.42,
-          "event_score": 64.92,
-          "risk_adjusted_score": 81.24,
+          "event_score": 64.9,
+          "risk_adjusted_score": 81.23,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1838,7 +1838,7 @@
           "symbol": "301379",
           "name": "天山电子",
           "industry": "光学光电子",
-          "thesis": "天山电子 的新闻事件打分为 72.6，适合做盘前消息驱动的重点观察。",
+          "thesis": "天山电子 的新闻事件打分为 72.4，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 半导体, 元件, 光学光电子, 自动化设备, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
@@ -1853,7 +1853,7 @@
             },
             {
               "name": "事件强度",
-              "value": 72.6,
+              "value": 72.43,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -1905,7 +1905,7 @@
             "reference_price": 27.99,
             "stop_loss_price": 26.16,
             "stop_loss_pct": 0.0652,
-            "signal_quality_score": 86.61,
+            "signal_quality_score": 86.58,
             "take_profit_price_1": 31.1,
             "take_profit_pct_1": 0.1111,
             "take_profit_price_2": 33.11,
@@ -1939,7 +1939,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775601+00:00"
+            "generated_at": "2026-04-27T10:03:39.859366+00:00"
           },
           "risk_controls": [
             "止损线参考 26.16 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1957,7 +1957,7 @@
           "symbol": "002952",
           "name": "亚世光电",
           "industry": "光学光电子",
-          "thesis": "亚世光电 的新闻事件打分为 67.9，适合做盘前消息驱动的重点观察。",
+          "thesis": "亚世光电 的新闻事件打分为 67.8，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 半导体, 元件, 光学光电子, 自动化设备, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
@@ -1972,7 +1972,7 @@
             },
             {
               "name": "事件强度",
-              "value": 67.89,
+              "value": 67.75,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2024,13 +2024,13 @@
             "reference_price": 28.87,
             "stop_loss_price": 27.02,
             "stop_loss_pct": 0.0642,
-            "signal_quality_score": 88.33,
+            "signal_quality_score": 88.31,
             "take_profit_price_1": 32.02,
             "take_profit_pct_1": 0.1091,
             "take_profit_price_2": 34.05,
             "take_profit_pct_2": 0.1794,
             "trailing_stop_price": 27.35,
-            "suggested_position_min": 0.0636,
+            "suggested_position_min": 0.0635,
             "suggested_position_max": 0.085,
             "max_portfolio_risk": 0.0055,
             "risk_reward_ratio": 1.7,
@@ -2058,7 +2058,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775631+00:00"
+            "generated_at": "2026-04-27T10:03:39.859407+00:00"
           },
           "risk_controls": [
             "止损线参考 27.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2177,7 +2177,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775659+00:00"
+            "generated_at": "2026-04-27T10:03:39.859452+00:00"
           },
           "risk_controls": [
             "止损线参考 111.75 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2197,7 +2197,7 @@
           "symbol": "688777",
           "name": "中控技术",
           "industry": "自动化设备",
-          "thesis": "中控技术 的新闻事件打分为 64.4，适合做盘前消息驱动的重点观察。",
+          "thesis": "中控技术 的新闻事件打分为 64.9，适合做盘前消息驱动的重点观察。",
           "market_context": "当前市场重点围绕 半导体, 元件, 光学光电子, 自动化设备, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
@@ -2212,7 +2212,7 @@
             },
             {
               "name": "事件强度",
-              "value": 64.39,
+              "value": 64.93,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2235,6 +2235,18 @@
               "link": "https://pdf.dfcfw.com/pdf/H3_AP202604261821594015_1.pdf"
             },
             {
+              "event_id": "1c65bae8c658",
+              "title": "中控技术688777.SH)2026年一季报净利润为7468.28万元、较去年同期下降37.81%",
+              "publish_time": "2026-04-27T17:38:07",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "2026年4月25日，中控技术688777.SH)发布2026年一季报。 公司营业总收入为15.06亿元，较去年同报告期营业总收入减少1.01亿元，同比较去年同期下降6.29%。",
+              "link": "http://finance.eastmoney.com/a/202604273720276678.html"
+            },
+            {
               "event_id": "4c471b99286c",
               "title": "中控技术股份有限公司2026年第一季度报告",
               "publish_time": "2026-04-25T00:00:00",
@@ -2245,18 +2257,6 @@
               "impact_level": "low",
               "summary": "中控技术股份有限公司2026年第一季度报告",
               "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688777&announcementId=1225181697&orgId=9900041899&announcementTime=2026-04-25"
-            },
-            {
-              "event_id": "2c17b8df97ec",
-              "title": "工业AI应用规模化应用开启，订阅模式带来新增量",
-              "publish_time": "2026-04-23T00:00:00",
-              "source": "东方财富研报",
-              "source_category": "券商研报",
-              "event_type": "券商研报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "机构：信达证券；评级：；行业：自动化设备",
-              "link": "https://pdf.dfcfw.com/pdf/H3_AP202604231821495539_1.pdf"
             }
           ],
           "risk_plan": {
@@ -2264,7 +2264,7 @@
             "reference_price": 74.91,
             "stop_loss_price": 69.64,
             "stop_loss_pct": 0.0704,
-            "signal_quality_score": 83.11,
+            "signal_quality_score": 83.2,
             "take_profit_price_1": 83.87,
             "take_profit_pct_1": 0.1196,
             "take_profit_price_2": 89.67,
@@ -2298,7 +2298,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775689+00:00"
+            "generated_at": "2026-04-27T10:03:39.859492+00:00"
           },
           "risk_controls": [
             "止损线参考 69.64 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2332,7 +2332,7 @@
             },
             {
               "name": "事件强度",
-              "value": 64.92,
+              "value": 64.9,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2419,7 +2419,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775715+00:00"
+            "generated_at": "2026-04-27T10:03:39.859529+00:00"
           },
           "risk_controls": [
             "止损线参考 42.87 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2487,7 +2487,7 @@
           "industry": "光学光电子",
           "rank": 2,
           "base_score": 93.0,
-          "event_score": 67.89,
+          "event_score": 67.75,
           "risk_adjusted_score": 100,
           "holding_window": "5-10D",
           "reasons": [
@@ -2545,7 +2545,7 @@
           "industry": "元件",
           "rank": 4,
           "base_score": 89.82,
-          "event_score": 60.88,
+          "event_score": 60.84,
           "risk_adjusted_score": 100,
           "holding_window": "5-10D",
           "reasons": [
@@ -2704,7 +2704,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775766+00:00"
+            "generated_at": "2026-04-27T10:03:39.859596+00:00"
           },
           "risk_controls": [
             "止损线参考 32.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2739,7 +2739,7 @@
             },
             {
               "name": "事件强度",
-              "value": 67.89,
+              "value": 67.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -2791,7 +2791,7 @@
             "reference_price": 28.87,
             "stop_loss_price": 26.49,
             "stop_loss_pct": 0.0825,
-            "signal_quality_score": 88.33,
+            "signal_quality_score": 88.31,
             "take_profit_price_1": 33.63,
             "take_profit_pct_1": 0.1649,
             "take_profit_price_2": 36.72,
@@ -2825,7 +2825,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775793+00:00"
+            "generated_at": "2026-04-27T10:03:39.859636+00:00"
           },
           "risk_controls": [
             "止损线参考 26.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2944,7 +2944,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775820+00:00"
+            "generated_at": "2026-04-27T10:03:39.859672+00:00"
           },
           "risk_controls": [
             "止损线参考 109.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2979,7 +2979,7 @@
             },
             {
               "name": "事件强度",
-              "value": 60.88,
+              "value": 60.84,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3031,7 +3031,7 @@
             "reference_price": 33.68,
             "stop_loss_price": 30.65,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 84.51,
+            "signal_quality_score": 84.5,
             "take_profit_price_1": 39.74,
             "take_profit_pct_1": 0.1799,
             "take_profit_price_2": 43.68,
@@ -3065,7 +3065,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775846+00:00"
+            "generated_at": "2026-04-27T10:03:39.859709+00:00"
           },
           "risk_controls": [
             "止损线参考 30.65 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3185,7 +3185,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775875+00:00"
+            "generated_at": "2026-04-27T10:03:39.859747+00:00"
           },
           "risk_controls": [
             "止损线参考 65.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3250,7 +3250,7 @@
           "industry": "光学光电子",
           "rank": 2,
           "base_score": 93.0,
-          "event_score": 67.89,
+          "event_score": 67.75,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3308,7 +3308,7 @@
           "industry": "光学光电子",
           "rank": 4,
           "base_score": 90.09,
-          "event_score": 72.6,
+          "event_score": 72.43,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3337,7 +3337,7 @@
           "industry": "元件",
           "rank": 5,
           "base_score": 89.82,
-          "event_score": 60.88,
+          "event_score": 60.84,
           "risk_adjusted_score": 100,
           "holding_window": "1-2D",
           "reasons": [
@@ -3467,7 +3467,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775928+00:00"
+            "generated_at": "2026-04-27T10:03:39.859819+00:00"
           },
           "risk_controls": [
             "止损线参考 33.07 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3502,7 +3502,7 @@
             },
             {
               "name": "事件强度",
-              "value": 67.89,
+              "value": 67.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3554,7 +3554,7 @@
             "reference_price": 28.87,
             "stop_loss_price": 27.22,
             "stop_loss_pct": 0.0573,
-            "signal_quality_score": 88.33,
+            "signal_quality_score": 88.31,
             "take_profit_price_1": 31.51,
             "take_profit_pct_1": 0.0914,
             "take_profit_price_2": 33.0,
@@ -3588,7 +3588,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775955+00:00"
+            "generated_at": "2026-04-27T10:03:39.859858+00:00"
           },
           "risk_controls": [
             "止损线参考 27.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3707,7 +3707,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.775980+00:00"
+            "generated_at": "2026-04-27T10:03:39.859895+00:00"
           },
           "risk_controls": [
             "止损线参考 112.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3742,7 +3742,7 @@
             },
             {
               "name": "事件强度",
-              "value": 72.6,
+              "value": 72.43,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3794,7 +3794,7 @@
             "reference_price": 27.99,
             "stop_loss_price": 26.36,
             "stop_loss_pct": 0.0582,
-            "signal_quality_score": 86.61,
+            "signal_quality_score": 86.58,
             "take_profit_price_1": 30.6,
             "take_profit_pct_1": 0.0932,
             "take_profit_price_2": 32.06,
@@ -3828,7 +3828,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.776017+00:00"
+            "generated_at": "2026-04-27T10:03:39.859931+00:00"
           },
           "risk_controls": [
             "止损线参考 26.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3861,7 +3861,7 @@
             },
             {
               "name": "事件强度",
-              "value": 60.88,
+              "value": 60.84,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
@@ -3913,7 +3913,7 @@
             "reference_price": 33.68,
             "stop_loss_price": 31.49,
             "stop_loss_pct": 0.065,
-            "signal_quality_score": 84.51,
+            "signal_quality_score": 84.5,
             "take_profit_price_1": 37.18,
             "take_profit_pct_1": 0.1039,
             "take_profit_price_2": 39.16,
@@ -3947,7 +3947,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-04-27T09:35:53.776043+00:00"
+            "generated_at": "2026-04-27T10:03:39.859966+00:00"
           },
           "risk_controls": [
             "止损线参考 31.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4009,8 +4009,8 @@
       "industry": "光学光电子",
       "rank": 2,
       "base_score": 93.0,
-      "event_score": 67.89,
-      "risk_adjusted_score": 92.05,
+      "event_score": 67.75,
+      "risk_adjusted_score": 92.02,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4038,8 +4038,8 @@
       "industry": "光学光电子",
       "rank": 3,
       "base_score": 90.09,
-      "event_score": 72.6,
-      "risk_adjusted_score": 90.66,
+      "event_score": 72.43,
+      "risk_adjusted_score": 90.62,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4096,7 +4096,7 @@
       "industry": "元件",
       "rank": 5,
       "base_score": 89.82,
-      "event_score": 60.88,
+      "event_score": 60.84,
       "risk_adjusted_score": 88.1,
       "holding_window": "3-5D",
       "reasons": [
@@ -4226,7 +4226,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-27T09:35:53.775204+00:00"
+        "generated_at": "2026-04-27T10:03:39.858824+00:00"
       },
       "risk_controls": [
         "止损线参考 32.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4260,7 +4260,7 @@
         },
         {
           "name": "事件强度",
-          "value": 67.89,
+          "value": 67.75,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4312,7 +4312,7 @@
         "reference_price": 28.87,
         "stop_loss_price": 26.82,
         "stop_loss_pct": 0.0711,
-        "signal_quality_score": 88.33,
+        "signal_quality_score": 88.31,
         "take_profit_price_1": 32.56,
         "take_profit_pct_1": 0.1278,
         "take_profit_price_2": 35.02,
@@ -4346,7 +4346,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-27T09:35:53.775252+00:00"
+        "generated_at": "2026-04-27T10:03:39.858882+00:00"
       },
       "risk_controls": [
         "止损线参考 26.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4363,7 +4363,7 @@
       "symbol": "301379",
       "name": "天山电子",
       "industry": "光学光电子",
-      "thesis": "天山电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.7，适合作为默认候选股跟踪。",
+      "thesis": "天山电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.6，适合作为默认候选股跟踪。",
       "market_context": "当前市场重点围绕 半导体, 元件, 光学光电子, 自动化设备, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
@@ -4378,7 +4378,7 @@
         },
         {
           "name": "事件强度",
-          "value": 72.6,
+          "value": 72.43,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4430,7 +4430,7 @@
         "reference_price": 27.99,
         "stop_loss_price": 25.97,
         "stop_loss_pct": 0.0722,
-        "signal_quality_score": 86.61,
+        "signal_quality_score": 86.58,
         "take_profit_price_1": 31.63,
         "take_profit_pct_1": 0.13,
         "take_profit_price_2": 34.05,
@@ -4464,7 +4464,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-27T09:35:53.775288+00:00"
+        "generated_at": "2026-04-27T10:03:39.858929+00:00"
       },
       "risk_controls": [
         "止损线参考 25.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4582,7 +4582,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-27T09:35:53.775323+00:00"
+        "generated_at": "2026-04-27T10:03:39.858974+00:00"
       },
       "risk_controls": [
         "止损线参考 111.03 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4616,7 +4616,7 @@
         },
         {
           "name": "事件强度",
-          "value": 60.88,
+          "value": 60.84,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
@@ -4668,7 +4668,7 @@
         "reference_price": 33.68,
         "stop_loss_price": 31.05,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 84.51,
+        "signal_quality_score": 84.5,
         "take_profit_price_1": 38.41,
         "take_profit_pct_1": 0.1404,
         "take_profit_price_2": 41.57,
@@ -4702,7 +4702,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-04-27T09:35:53.775356+00:00"
+        "generated_at": "2026-04-27T10:03:39.859018+00:00"
       },
       "risk_controls": [
         "止损线参考 31.05 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
