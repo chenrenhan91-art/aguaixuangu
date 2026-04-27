@@ -8562,6 +8562,66 @@ a:hover {
         return `aguai:trade-history:${identity}`;
       }
 
+      function buildPaidAccessCacheKey(user = state.user) {
+        const identity = (user?.email || user?.id || "").toLowerCase();
+        return identity ? `aguai:paid-access:${identity}` : "";
+      }
+
+      function readCachedPaidAccess(user = state.user) {
+        const key = buildPaidAccessCacheKey(user);
+        if (!key) return null;
+        try {
+          const raw = window.localStorage.getItem(key);
+          const cached = raw ? JSON.parse(raw) : null;
+          if (!cached || cached.mode !== "paid" || !cached.redeemed) {
+            return null;
+          }
+          return cached;
+        } catch (_error) {
+          return null;
+        }
+      }
+
+      function saveCachedPaidAccess(user = state.user) {
+        const key = buildPaidAccessCacheKey(user);
+        if (!key) return;
+        try {
+          window.localStorage.setItem(key, JSON.stringify({
+            mode: "paid",
+            redeemed: true,
+            email: user?.email || "",
+            saved_at: new Date().toISOString(),
+          }));
+        } catch (_error) {
+          // Ignore localStorage failures; Supabase remains the source of truth.
+        }
+      }
+
+      function clearCachedPaidAccess(user = state.user) {
+        const key = buildPaidAccessCacheKey(user);
+        if (!key) return;
+        try {
+          window.localStorage.removeItem(key);
+        } catch (_error) {
+          // Ignore storage errors.
+        }
+      }
+
+      function restoreCachedPaidAccess(user = state.user) {
+        if (!readCachedPaidAccess(user)) {
+          return false;
+        }
+        state.hasPaidAccess = true;
+        state.accessMode = "paid";
+        state.accessReason = "";
+        state.trialDaysLeft = 0;
+        state.trialEndsOn = null;
+        state.trialEligible = false;
+        state.trialCalendarReady = true;
+        state.inviteRedeemed = true;
+        return true;
+      }
+
       function loadCachedTradeHistory() {
         try {
           const raw = window.localStorage.getItem(buildHistoryCacheKey());
@@ -8825,6 +8885,7 @@ a:hover {
           state.trialDaysLeft = 0;
           state.trialEndsOn = null;
           state.inviteRedeemed = true;
+          saveCachedPaidAccess(state.user);
           unlockSucceeded = true;
           updateContentAccessLock();
           updateAuthChrome();
@@ -8850,6 +8911,7 @@ a:hover {
                 state.hasPaidAccess = true;
                 state.accessMode = "paid";
                 state.inviteRedeemed = true;
+                saveCachedPaidAccess(state.user);
                 unlockSucceeded = true;
                 updateContentAccessLock();
                 updateAuthChrome();
@@ -9058,6 +9120,8 @@ a:hover {
           auth: {
             persistSession: true,
             autoRefreshToken: true,
+            storageKey: "sb-jbmxcpetbiukpxzifpjr-auth-token",
+            storage: window.localStorage,
           },
         });
         return state.supabaseClient;
@@ -9107,7 +9171,13 @@ a:hover {
         state.user = session?.user || null;
         state.cachedAccessToken = session?.access_token || "";
         if (state.user) {
-          state.hasPaidAccess = false;
+          const restoredPaid = restoreCachedPaidAccess(state.user);
+          if (restoredPaid) {
+            updateAuthChrome();
+            updateRuntimeChrome();
+          } else {
+            state.hasPaidAccess = false;
+          }
           state.hasPaidAccess = await checkPaidAccess();
         } else {
           resetAccessState();
@@ -9147,6 +9217,7 @@ a:hover {
 
           const userChanged = !state.user || state.user.id !== nextUser.id;
           state.user = nextUser;
+          restoreCachedPaidAccess(nextUser);
           // Trial access is date-based, so re-check it on auth refreshes too.
           if (userChanged || !state.hasPaidAccess || state.accessMode === "trial") {
             state.hasPaidAccess = await checkPaidAccess();
@@ -9307,9 +9378,17 @@ a:hover {
             state.trialEligible = false;
             state.trialCalendarReady = true;
             state.inviteRedeemed = boolAccess;
+            if (boolAccess) {
+              saveCachedPaidAccess(state.user);
+            } else {
+              clearCachedPaidAccess(state.user);
+            }
             return boolAccess;
           }
           if (!data || !data.ok) {
+            if (restoreCachedPaidAccess(state.user)) {
+              return true;
+            }
             resetAccessState();
             state.accessReason = data?.reason || "";
             return false;
@@ -9322,9 +9401,17 @@ a:hover {
           state.trialEligible = Boolean(data.trial_eligible);
           state.trialCalendarReady = data.trial_calendar_ready !== false;
           state.inviteRedeemed = Boolean(data.redeemed);
+          if (state.accessMode === "paid" || state.inviteRedeemed) {
+            saveCachedPaidAccess(state.user);
+          } else if (!data.access) {
+            clearCachedPaidAccess(state.user);
+          }
           return Boolean(data.access);
         } catch (error) {
           console.warn("[auth] checkPaidAccess threw:", error);
+          if (restoreCachedPaidAccess(state.user)) {
+            return true;
+          }
           resetAccessState();
           return false;
         }
