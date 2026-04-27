@@ -8374,6 +8374,7 @@ a:hover {
         trialEndsOn: null,
         trialEligible: false,
         trialCalendarReady: true,
+        inviteRedeemed: false,
         supabaseClient: null,
         snapshotSignature: "",
         // Snapshot history browser (gated by hasPaidAccess):
@@ -8605,6 +8606,21 @@ a:hover {
         state.trialEndsOn = null;
         state.trialEligible = false;
         state.trialCalendarReady = true;
+        state.inviteRedeemed = false;
+      }
+
+      function withTimeout(promise, timeoutMs, message = "__timeout__") {
+        let timeoutHandle;
+        const timeoutPromise = new Promise((_, reject) => {
+          timeoutHandle = setTimeout(() => reject(new Error(message)), timeoutMs);
+        });
+        return Promise.race([promise, timeoutPromise]).finally(() => {
+          clearTimeout(timeoutHandle);
+        });
+      }
+
+      function isTimeoutError(error, message) {
+        return error instanceof Error && error.message === message;
       }
 
       function scheduleTrialAccessRefresh() {
@@ -8772,6 +8788,7 @@ a:hover {
         const client = await ensureSupabaseClient();
         if (!client) return;
         const originalText = unlockButton?.textContent;
+        let unlockSucceeded = false;
         if (unlockButton) {
           unlockButton.disabled = true;
           unlockButton.textContent = "核销中...";
@@ -8782,29 +8799,19 @@ a:hover {
           // Warm up the session token first so the first RPC doesn't hang on
           // lazy auth refresh (main cause of "stuck on first submit, works on reload").
           try {
-            await client.auth.getSession();
+            await withTimeout(client.auth.getSession(), 4000, "__session_warmup_timeout__");
           } catch (warmupErr) {
             console.warn("[unlock] session warmup failed", warmupErr);
           }
-          // Guard against hanging RPC calls (network/JWT issues) with an 8s timeout.
-          const rpcPromise = client.rpc("redeem_email_invite_code", {
-            p_code: inviteCode,
-            p_email: state.user.email,
-          });
-          const TIMEOUT_MS = 8000;
-          let timeoutHandle;
-          const timeoutPromise = new Promise((_, reject) => {
-            timeoutHandle = setTimeout(
-              () => reject(new Error("__unlock_timeout__")),
-              TIMEOUT_MS
-            );
-          });
-          let rpcResult;
-          try {
-            rpcResult = await Promise.race([rpcPromise, timeoutPromise]);
-          } finally {
-            clearTimeout(timeoutHandle);
-          }
+          // Guard against hanging RPC calls (network/JWT issues) with a timeout.
+          const rpcResult = await withTimeout(
+            client.rpc("redeem_email_invite_code", {
+              p_code: inviteCode,
+              p_email: state.user.email,
+            }),
+            10000,
+            "__unlock_timeout__"
+          );
           const { data, error } = rpcResult;
           console.info("[unlock] rpc result", { data, error });
           if (error) throw error;
@@ -8817,6 +8824,8 @@ a:hover {
           state.accessReason = "";
           state.trialDaysLeft = 0;
           state.trialEndsOn = null;
+          state.inviteRedeemed = true;
+          unlockSucceeded = true;
           updateContentAccessLock();
           updateAuthChrome();
           if (unlockStatus) unlockStatus.textContent = "解锁成功。";
@@ -8830,15 +8839,18 @@ a:hover {
           return;
         } catch (err) {
           console.warn("[unlock] failed", err);
-          const isTimeout = err instanceof Error && err.message === "__unlock_timeout__";
+          const isTimeout = isTimeoutError(err, "__unlock_timeout__");
           // Fallback: the RPC may have actually succeeded server-side even though
           // the response was lost/slow. Verify via checkPaidAccess before giving up.
           if (isTimeout || (err instanceof Error && /network|fetch|Load failed/i.test(err.message))) {
             if (unlockStatus) unlockStatus.textContent = "网络响应超时，正在校验状态...";
             try {
               const granted = await checkPaidAccess();
-              if (granted) {
+              if (granted && (state.accessMode === "paid" || state.inviteRedeemed)) {
                 state.hasPaidAccess = true;
+                state.accessMode = "paid";
+                state.inviteRedeemed = true;
+                unlockSucceeded = true;
                 updateContentAccessLock();
                 updateAuthChrome();
                 if (unlockStatus) unlockStatus.textContent = "解锁成功。";
@@ -8863,7 +8875,7 @@ a:hover {
           if (unlockButton) {
             // Keep the button disabled after a successful unlock to prevent
             // double-submission; otherwise restore it for another attempt.
-            if (state.hasPaidAccess) {
+            if (unlockSucceeded) {
               unlockButton.disabled = true;
             } else {
               unlockButton.disabled = false;
@@ -9268,12 +9280,20 @@ a:hover {
           // Prefer the new unified RPC that returns detailed trial info.
           // Falls back to legacy boolean RPC if the new one isn't deployed yet
           // (so a stale Supabase database doesn't break the app).
-          const { data, error } = await state.supabaseClient.rpc("get_user_access_state");
+          const { data, error } = await withTimeout(
+            state.supabaseClient.rpc("get_user_access_state"),
+            10000,
+            "__access_state_timeout__"
+          );
           if (error) {
             console.warn("[auth] get_user_access_state failed, falling back:", error.message || error);
-            const fb = await state.supabaseClient.rpc("user_has_email_invite_access", {
-              p_email: state.user.email || null,
-            });
+            const fb = await withTimeout(
+              state.supabaseClient.rpc("user_has_email_invite_access", {
+                p_email: state.user.email || null,
+              }),
+              8000,
+              "__legacy_access_timeout__"
+            );
             if (fb.error) {
               console.warn("[auth] user_has_email_invite_access RPC error:", fb.error.message || fb.error);
               resetAccessState();
@@ -9286,6 +9306,7 @@ a:hover {
             state.trialEndsOn = null;
             state.trialEligible = false;
             state.trialCalendarReady = true;
+            state.inviteRedeemed = boolAccess;
             return boolAccess;
           }
           if (!data || !data.ok) {
@@ -9300,6 +9321,7 @@ a:hover {
           state.trialEndsOn = data.trial_ends_on || null;
           state.trialEligible = Boolean(data.trial_eligible);
           state.trialCalendarReady = data.trial_calendar_ready !== false;
+          state.inviteRedeemed = Boolean(data.redeemed);
           return Boolean(data.access);
         } catch (error) {
           console.warn("[auth] checkPaidAccess threw:", error);
