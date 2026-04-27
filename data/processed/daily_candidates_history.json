@@ -4,13 +4,13 @@
     {
       "trade_date": "2026-04-27",
       "path": "daily_candidates_2026-04-27.json",
-      "generated_at": "2026-04-27T06:22:39.124456+00:00",
+      "generated_at": "2026-04-27T06:42:04.729415+00:00",
       "default_mode": "balanced",
       "snapshot_session": {
         "session_id": "close",
         "label": "收盘信息",
-        "generated_time": "14:22",
-        "generated_at": "2026-04-27T14:22:39.124456+08:00"
+        "generated_time": "14:42",
+        "generated_at": "2026-04-27T14:42:04.729415+08:00"
       },
       "candidate_count": 5
     },
