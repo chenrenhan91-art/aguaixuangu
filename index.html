@@ -8365,9 +8365,10 @@ a:hover {
         user: null,
         hasPaidAccess: false,
         // accessMode:
-        //   'paid'  -> user redeemed an invite code
-        //   'trial' -> within the 3-trading-day free trial window
-        //   'none'  -> not logged in, trial expired, or no access
+        //   'paid'        -> user redeemed an invite code
+        //   'paid_cached' -> same-browser paid unlock cache, no live auth session
+        //   'trial'       -> within the 3-trading-day free trial window
+        //   'none'        -> not logged in, trial expired, or no access
         accessMode: "none",
         accessReason: "",
         trialDaysLeft: 0,
@@ -8375,6 +8376,8 @@ a:hover {
         trialEligible: false,
         trialCalendarReady: true,
         inviteRedeemed: false,
+        devicePaidAccess: false,
+        cachedPaidEmail: "",
         supabaseClient: null,
         snapshotSignature: "",
         // Snapshot history browser (gated by hasPaidAccess):
@@ -8562,8 +8565,14 @@ a:hover {
         return `aguai:trade-history:${identity}`;
       }
 
+      const PAID_ACCESS_LAST_CACHE_KEY = "aguai:paid-access:last";
+
+      function normalizePaidIdentity(identity) {
+        return String(identity || "").trim().toLowerCase();
+      }
+
       function buildPaidAccessCacheKey(user = state.user) {
-        const identity = (user?.email || user?.id || "").toLowerCase();
+        const identity = normalizePaidIdentity(user?.email || user?.id || "");
         return identity ? `aguai:paid-access:${identity}` : "";
       }
 
@@ -8576,7 +8585,10 @@ a:hover {
           if (!cached || cached.mode !== "paid" || !cached.redeemed) {
             return null;
           }
-          return cached;
+          return {
+            ...cached,
+            identity: normalizePaidIdentity(cached.identity || user?.email || user?.id || cached.email),
+          };
         } catch (_error) {
           return null;
         }
@@ -8586,12 +8598,16 @@ a:hover {
         const key = buildPaidAccessCacheKey(user);
         if (!key) return;
         try {
-          window.localStorage.setItem(key, JSON.stringify({
+          const identity = normalizePaidIdentity(user?.email || user?.id || "");
+          const payload = {
             mode: "paid",
             redeemed: true,
             email: user?.email || "",
+            identity,
             saved_at: new Date().toISOString(),
-          }));
+          };
+          window.localStorage.setItem(key, JSON.stringify(payload));
+          window.localStorage.setItem(PAID_ACCESS_LAST_CACHE_KEY, JSON.stringify(payload));
         } catch (_error) {
           // Ignore localStorage failures; Supabase remains the source of truth.
         }
@@ -8602,6 +8618,11 @@ a:hover {
         if (!key) return;
         try {
           window.localStorage.removeItem(key);
+          const last = readLastCachedPaidAccess();
+          const identity = normalizePaidIdentity(user?.email || user?.id || "");
+          if (last && last.identity === identity) {
+            window.localStorage.removeItem(PAID_ACCESS_LAST_CACHE_KEY);
+          }
         } catch (_error) {
           // Ignore storage errors.
         }
@@ -8619,7 +8640,54 @@ a:hover {
         state.trialEligible = false;
         state.trialCalendarReady = true;
         state.inviteRedeemed = true;
+        state.devicePaidAccess = false;
+        state.cachedPaidEmail = "";
         return true;
+      }
+
+      function readLastCachedPaidAccess() {
+        try {
+          const raw = window.localStorage.getItem(PAID_ACCESS_LAST_CACHE_KEY);
+          const cached = raw ? JSON.parse(raw) : null;
+          if (!cached || cached.mode !== "paid" || !cached.redeemed) {
+            return null;
+          }
+          const identity = normalizePaidIdentity(cached.identity || cached.email);
+          if (!identity) {
+            return null;
+          }
+          return {
+            ...cached,
+            identity,
+          };
+        } catch (_error) {
+          return null;
+        }
+      }
+
+      function restoreLastCachedPaidAccess() {
+        const cached = readLastCachedPaidAccess();
+        if (!cached) {
+          return false;
+        }
+        state.hasPaidAccess = true;
+        state.accessMode = "paid_cached";
+        state.accessReason = "cached_paid";
+        state.trialDaysLeft = 0;
+        state.trialEndsOn = null;
+        state.trialEligible = false;
+        state.trialCalendarReady = true;
+        state.inviteRedeemed = true;
+        state.devicePaidAccess = true;
+        state.cachedPaidEmail = cached.email || cached.identity || "";
+        return true;
+      }
+
+      function hasUnlockedContentAccess() {
+        return Boolean(
+          (state.user && state.hasPaidAccess) ||
+          (!state.user && state.hasPaidAccess && state.devicePaidAccess)
+        );
       }
 
       function loadCachedTradeHistory() {
@@ -8667,6 +8735,8 @@ a:hover {
         state.trialEligible = false;
         state.trialCalendarReady = true;
         state.inviteRedeemed = false;
+        state.devicePaidAccess = false;
+        state.cachedPaidEmail = "";
       }
 
       function withTimeout(promise, timeoutMs, message = "__timeout__") {
@@ -8706,6 +8776,11 @@ a:hover {
           if (state.user && state.accessMode === "paid") {
             authPill.textContent = state.user.email || state.user.id || "已激活";
             authPill.classList.add("user-history-chip");
+          } else if (!state.user && state.devicePaidAccess && state.accessMode === "paid_cached") {
+            authPill.textContent = state.cachedPaidEmail
+              ? `已激活（${state.cachedPaidEmail}）`
+              : "已激活（本机缓存）";
+            authPill.classList.add("user-history-chip");
           } else if (state.user && state.accessMode === "trial") {
             authPill.textContent = `免费试用中（${state.trialDaysLeft} 个交易日）`;
             authPill.classList.add("user-history-chip");
@@ -8735,7 +8810,7 @@ a:hover {
         const overlay = document.getElementById("content-lock-overlay");
         const stateAuth = document.getElementById("lock-state-auth");
         const stateUnlock = document.getElementById("lock-state-unlock");
-        const isLocked = !Boolean(state.user && state.hasPaidAccess);
+        const isLocked = !hasUnlockedContentAccess();
         if (shell) {
           shell.classList.toggle("is-content-locked", isLocked);
         }
@@ -9181,6 +9256,7 @@ a:hover {
           state.hasPaidAccess = await checkPaidAccess();
         } else {
           resetAccessState();
+          restoreLastCachedPaidAccess();
         }
         state.authReady = true;
         updateAuthChrome();
@@ -9209,6 +9285,7 @@ a:hover {
             }
             state.user = null;
             resetAccessState();
+            restoreLastCachedPaidAccess();
             updateAuthChrome();
             updateRuntimeChrome();
             renderTradeDiagnostics(initialDiagnostics);
@@ -9344,6 +9421,9 @@ a:hover {
 
       async function checkPaidAccess() {
         if (!state.supabaseClient || !state.user) {
+          if (!state.user && restoreLastCachedPaidAccess()) {
+            return true;
+          }
           resetAccessState();
           return false;
         }
@@ -9502,7 +9582,7 @@ a:hover {
           updateSnapshotFreshnessBanner(remoteSnapshot);
           // A new latest snapshot often implies a new trade-dated file was
           // committed too; refresh history index so the chip strip stays current.
-          if (state.user && state.hasPaidAccess) {
+          if (hasUnlockedContentAccess()) {
             loadSnapshotHistoryIndex();
           }
         } catch (_error) {
@@ -9671,7 +9751,7 @@ a:hover {
         const statusEl = document.getElementById("snapshot-history-status");
         if (!panel || !chips) return;
 
-        const unlocked = Boolean(state.user && state.hasPaidAccess);
+        const unlocked = hasUnlockedContentAccess();
         if (!unlocked) {
           panel.classList.add("is-hidden");
           chips.innerHTML = "";
@@ -11945,6 +12025,7 @@ a:hover {
               // Immediate local fallback so UI updates even if auth callback is delayed.
               state.user = null;
               resetAccessState();
+              restoreLastCachedPaidAccess();
               renderTradeDiagnostics(initialDiagnostics);
               if (unlockStatus) {
                 unlockStatus.textContent = "已退出登录。";
