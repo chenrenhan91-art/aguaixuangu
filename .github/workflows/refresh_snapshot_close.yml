@@ -1,0 +1,32 @@
+name: Refresh A-Share Close Snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Independent close backstop workflow.  The generator is idempotent: once a
+    # close snapshot exists, later retries only republish that exact close file.
+    # Beijing 15:06 (independent close backstop after the 15:05 primary run)
+    - cron: "6 7 * * 1-5"
+    # Beijing 15:12
+    - cron: "12 7 * * 1-5"
+    # Beijing 15:25
+    - cron: "25 7 * * 1-5"
+    # Beijing 15:50
+    - cron: "50 7 * * 1-5"
+    # Beijing 16:20
+    - cron: "20 8 * * 1-5"
+    # Beijing 17:20
+    - cron: "20 9 * * 1-5"
+    # Beijing 18:20
+    - cron: "20 10 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-close:
+    uses: ./.github/workflows/refresh_snapshot.yml
+    permissions:
+      contents: write
+    with:
+      session_target: close
