@@ -1,0 +1,4705 @@
+{
+  "generated_at": "2026-05-21T07:05:50.010469+00:00",
+  "trade_date": "2026-05-21",
+  "snapshot_session": {
+    "session_id": "close",
+    "label": "收盘信息",
+    "generated_time": "15:05",
+    "generated_at": "2026-05-21T15:05:50.010469+08:00"
+  },
+  "strategy_version": "v2-akshare-multi-mode",
+  "default_mode": "balanced",
+  "mode_summaries": [
+    {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D"
+    },
+    {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D"
+    },
+    {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D"
+    },
+    {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D"
+    },
+    {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D"
+    }
+  ],
+  "market_regime": {
+    "regime": "neutral",
+    "confidence": 0.5425,
+    "suggested_exposure": 0.5076,
+    "breadth_score": 33.33,
+    "northbound_score": 68.39,
+    "momentum_score": 52.09,
+    "updated_at": "2026-05-21T07:07:21.253119+00:00"
+  },
+  "top_sectors": [
+    {
+      "sector_code": "881126",
+      "sector_name": "汽车零部件",
+      "strength_score": 64.34,
+      "momentum_score": 52.16,
+      "capital_consensus_score": 100.0,
+      "heat_score": 98.2,
+      "breadth_ratio": 0.312,
+      "member_count": 266
+    },
+    {
+      "sector_code": "881277",
+      "sector_name": "电机",
+      "strength_score": 63.3,
+      "momentum_score": 63.28,
+      "capital_consensus_score": 96.86,
+      "heat_score": 79.12,
+      "breadth_ratio": 0.5,
+      "member_count": 26
+    },
+    {
+      "sector_code": "881155",
+      "sector_name": "银行",
+      "strength_score": 60.93,
+      "momentum_score": 47.98,
+      "capital_consensus_score": 100.0,
+      "heat_score": 87.76,
+      "breadth_ratio": 0.5263,
+      "member_count": 38
+    },
+    {
+      "sector_code": "881131",
+      "sector_name": "白色家电",
+      "strength_score": 48.07,
+      "momentum_score": 47.08,
+      "capital_consensus_score": 98.82,
+      "heat_score": 80.38,
+      "breadth_ratio": 0.2273,
+      "member_count": 44
+    },
+    {
+      "sector_code": "881125",
+      "sector_name": "汽车整车",
+      "strength_score": 44.51,
+      "momentum_score": 55.08,
+      "capital_consensus_score": 84.13,
+      "heat_score": 79.54,
+      "breadth_ratio": 0.2727,
+      "member_count": 22
+    }
+  ],
+  "market_news": [
+    {
+      "title": "欧洲主要股指开盘走低",
+      "summary": "【欧洲主要股指开盘走低】欧洲主要股指开盘走低。斯托克50指数开盘跌0.3%，德国DAX指数跌0.2%，英国富时100指数跌0.6%，法国CAC40指数跌0.1%。",
+      "publish_time": "2026-05-21T15:02:49",
+      "link": "https://finance.eastmoney.com/a/202605213745120733.html"
+    },
+    {
+      "title": "海关总署：允许符合相关要求的非洲建交国家咖啡豆进口",
+      "summary": "海关总署：允许符合相关要求的非洲建交国家咖啡豆进口。",
+      "publish_time": "2026-05-21T15:01:40",
+      "link": "https://finance.eastmoney.com/a/202605213745122682.html"
+    },
+    {
+      "title": "工信部公开征求《汽车数字钥匙系统技术规范》等5项推荐性国家标准报批意见",
+      "summary": "工信部公开征求《汽车数字钥匙系统技术规范》等5项推荐性国家标准报批意见。",
+      "publish_time": "2026-05-21T15:01:04",
+      "link": "https://finance.eastmoney.com/a/202605213745121751.html"
+    },
+    {
+      "title": "工信部公开征求《无线终端空间射频辐射功率和接收机性能测量方法 第11部分：轻量化（Redcap）无线终端》等116项通信行业标准报批意见",
+      "summary": "工信部公开征求《无线终端空间射频辐射功率和接收机性能测量方法第11部分：轻量化（Redcap）无线终端》等116项通信行业标准报批意见。",
+      "publish_time": "2026-05-21T15:00:59",
+      "link": "https://finance.eastmoney.com/a/202605213745122030.html"
+    },
+    {
+      "title": "国内商品期货收盘 主力合约多数下跌",
+      "summary": "国内商品期货收盘，主力合约多数下跌。跌幅方面，原油跌近4%，丁二烯胶、低硫燃油、LPG跌超3%，燃油、PVC、PVC月均、棕榈油跌超2%，纸浆跌近2%，焦煤、塑料月均、菜粕、塑料、红枣等跌超1%；涨幅方面，欧线集运涨超10%，生猪涨超2%，鸡蛋、沪锡涨近2%，苹果、沪铅、玻璃涨超1%。",
+      "publish_time": "2026-05-21T15:00:44",
+      "link": "https://finance.eastmoney.com/a/202605213745120411.html"
+    },
+    {
+      "title": "A股三大指数均跌超2% 成交额超3.5万亿 半导体领跌",
+      "summary": "【收盘播报】沪指跌2.04%，深证成指跌2.07%，创业板指跌2.35%。成交额超3.5万亿，半导体、电子化学品、通信设备、电源设备、房地产服务、石油石化、光伏板块跌幅居前。",
+      "publish_time": "2026-05-21T15:00:05",
+      "link": "https://finance.eastmoney.com/a/202605213745119554.html"
+    },
+    {
+      "title": "国家发改委：自5月21日24时起 国内汽、柴油（标准品）价格每吨分别上调75元、70元",
+      "summary": "【国家发改委：自5月21日24时起 国内汽、柴油（标准品）价格每吨分别上调75元、70元】5月8日国内成品油价格调整以来，国际市场原油价格震荡上行后有所回落，本次调价的前10个工作日平均价格高于上次调价前10个工作日平均价格。根据国际市场油价变化情况，自5月21日24时起，国内汽、柴油（标准品）价格每吨分别上调75元、70元。",
+      "publish_time": "2026-05-21T14:59:06",
+      "link": "https://finance.eastmoney.com/a/202605213745118971.html"
+    },
+    {
+      "title": "立讯精密等成立新材料公司",
+      "summary": "【立讯精密等成立新材料公司】企查查APP显示，近日，南京讯瑞新材料有限公司成立，法定代表人为李帅君，注册资本为1000万元，经营范围包含新材料技术研发；新型金属功能材料销售；民用航空材料销售；电子专用材料制造；电子专用材料销售等。企查查股权穿透显示，该公司由立讯精密旗下立讯热传科技（惠州）有限公司等共同持股。",
+      "publish_time": "2026-05-21T14:55:44",
+      "link": "https://finance.eastmoney.com/a/202605213745106246.html"
+    }
+  ],
+  "strategy_modes": {
+    "balanced": {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D",
+      "items": [
+        {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "rank": 1,
+          "base_score": 87.33,
+          "event_score": 78.19,
+          "risk_adjusted_score": 89.03,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "白色家电 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "长虹华意 近 20 日收益 28.5%，技术分 95.8。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "rank": 2,
+          "base_score": 89.02,
+          "event_score": 59.7,
+          "risk_adjusted_score": 86.69,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "白色家电 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "金海高科 近 20 日收益 61.6%，技术分 100.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "金海高科股票交易异常波动公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "rank": 3,
+          "base_score": 87.75,
+          "event_score": 57.72,
+          "risk_adjusted_score": 85.64,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "电机 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "奕帆传动 近 20 日收益 11.0%，技术分 90.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "rank": 4,
+          "base_score": 87.38,
+          "event_score": 55.0,
+          "risk_adjusted_score": 85.24,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "汽车零部件 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "中马传动 近 20 日收益 18.5%，技术分 94.9。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "【盘中播报】54只个股跨越牛熊分界线"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "rank": 5,
+          "base_score": 84.39,
+          "event_score": 57.75,
+          "risk_adjusted_score": 83.03,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "汽车零部件 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "豪恩汽电 近 20 日收益 4.6%，技术分 80.4。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "000404": {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "thesis": "长虹华意 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.0，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "当前模式重点关注该维度。白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 95.77,
+              "description": "20 日收益 28.5%，量能倍率 1.65，MA10 / MA20 / MA60 为 8.65 / 8.51 / 7.58。"
+            },
+            {
+              "name": "事件强度",
+              "value": 78.19,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.5%，换手 11.4%，量比 2.13。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0e634aaa7570",
+              "title": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319212&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "ee0298904b2c",
+              "title": "关于公司增持主体增持公司股份的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司增持主体增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319211&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "305b3a4aadc9",
+              "title": "关于公司高级管理人员增持公司股份的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于公司高级管理人员增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225315560&orgId=gssz0000404&announcementTime=2026-05-20"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.87,
+            "stop_loss_price": 9.3,
+            "stop_loss_pct": 0.0579,
+            "signal_quality_score": 84.82,
+            "take_profit_price_1": 10.9,
+            "take_profit_pct_1": 0.1044,
+            "take_profit_price_2": 11.58,
+            "take_profit_pct_2": 0.1733,
+            "trailing_stop_price": 9.45,
+            "suggested_position_min": 0.0689,
+            "suggested_position_max": 0.0934,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 1.81,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.90 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.58 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.30 元作为防守位，并在 10.90 / 11.58 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.45，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253248+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.90 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.58 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "603311": {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "thesis": "金海高科 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.7，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "当前模式重点关注该维度。白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 61.6%，量能倍率 3.38，MA10 / MA20 / MA60 为 22.44 / 20.71 / 17.77。"
+            },
+            {
+              "name": "事件强度",
+              "value": 59.7,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 9.1%，换手 14.1%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "ebf57d29f8ac",
+              "title": "金海高科股票交易异常波动公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "金海高科股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225317219&orgId=9900023522&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "2be39be7acdd",
+              "title": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313894&orgId=9900023522&announcementTime=2026-05-19"
+            },
+            {
+              "event_id": "92bc2779b87f",
+              "title": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313881&orgId=9900023522&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 31.2,
+            "stop_loss_price": 28.77,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 83.3,
+            "take_profit_price_1": 35.57,
+            "take_profit_pct_1": 0.1401,
+            "take_profit_price_2": 38.49,
+            "take_profit_pct_2": 0.2337,
+            "trailing_stop_price": 29.33,
+            "suggested_position_min": 0.0488,
+            "suggested_position_max": 0.0666,
+            "max_portfolio_risk": 0.0052,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 28.77 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 35.57 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 38.49 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 28.77 元作为防守位，并在 35.57 / 38.49 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.07，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金海高科股票交易异常波动公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253305+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 28.77 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 35.57 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 38.49 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "301023": {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "thesis": "奕帆传动 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.6，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "当前模式重点关注该维度。电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 90.0,
+              "description": "20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.72,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2deb95a64e37",
+              "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "a7871a3bb18e",
+              "title": "关于使用部分超募资金永久补充流动资金的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于使用部分超募资金永久补充流动资金的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "0de4ac3138b7",
+              "title": "关于对外投资购买股权的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于对外投资购买股权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 48.75,
+            "stop_loss_price": 46.4,
+            "stop_loss_pct": 0.0482,
+            "signal_quality_score": 82.14,
+            "take_profit_price_1": 52.98,
+            "take_profit_pct_1": 0.0868,
+            "take_profit_price_2": 55.8,
+            "take_profit_pct_2": 0.1446,
+            "trailing_stop_price": 47.01,
+            "suggested_position_min": 0.0729,
+            "suggested_position_max": 0.1,
+            "max_portfolio_risk": 0.0048,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 46.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 52.98 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 55.80 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 46.40 元作为防守位，并在 52.98 / 55.80 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253350+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 46.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 52.98 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 55.80 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "603767": {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "thesis": "中马传动 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.2，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 94.89,
+              "description": "20 日收益 18.5%，量能倍率 2.26，MA10 / MA20 / MA60 为 20.97 / 20.04 / 19.55。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.0,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 90.62,
+              "description": "日内涨幅 10.0%，换手 8.7%，量比 1.26。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5296af0102d0",
+              "title": "【盘中播报】54只个股跨越牛熊分界线",
+              "publish_time": "2026-05-21T14:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月21日突破年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 年线（元） 最新价（元） 乖离率（%） 603767 中马传动 9.99 7.25 22.29 24.34 9.22 001225 和泰机电 10.01 7.17 50.00 53.76 7.52",
+              "link": "http://finance.eastmoney.com/a/202605213744935319.html"
+            },
+            {
+              "event_id": "5b8e62bac25b",
+              "title": "【盘中播报】93只个股突破年线",
+              "publish_time": "2026-05-21T10:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2.66 1.89 33.56 34.35 2.36 300296 利亚德 3.32 4.51 6.68 6.84 2.32 601108 财通证券 2.93 1.14 8.24 8.42 2.24 002106 莱宝高科 3.75 1.90 11.10 11.34 2.21 603767",
+              "link": "http://finance.eastmoney.com/a/202605213744729018.html"
+            },
+            {
+              "event_id": "c419acaf272c",
+              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "publish_time": "2026-05-13T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603767&announcementId=1225300153&orgId=9900023196&announcementTime=2026-05-13"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 24.34,
+            "stop_loss_price": 22.62,
+            "stop_loss_pct": 0.0705,
+            "signal_quality_score": 81.75,
+            "take_profit_price_1": 27.44,
+            "take_profit_pct_1": 0.1274,
+            "take_profit_price_2": 29.5,
+            "take_profit_pct_2": 0.212,
+            "trailing_stop_price": 23.07,
+            "suggested_position_min": 0.0522,
+            "suggested_position_max": 0.0717,
+            "max_portfolio_risk": 0.0051,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 22.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 27.44 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 29.50 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 22.62 元作为防守位，并在 27.44 / 29.50 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.89，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：【盘中播报】54只个股跨越牛熊分界线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253396+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 22.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 27.44 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 29.50 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "301488": {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "thesis": "豪恩汽电 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.0，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 80.39,
+              "description": "20 日收益 4.6%，量能倍率 2.15，MA10 / MA20 / MA60 为 140.95 / 135.19 / 135.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.75,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.6%，换手 31.6%，量比 2.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2344ab2cfaf0",
+              "title": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%",
+              "publish_time": "2026-05-21T11:28:10",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "5月21日，A股智能驾驶概念板块大幅拉升，截至发稿，浙江世宝（002703.SZ）、联创电子（002036.SZ）、德赛西威（002920.SZ）等多股涨停，豪恩汽电（301488.SZ）涨超15%。",
+              "link": "http://finance.eastmoney.com/a/202605213744741391.html"
+            },
+            {
+              "event_id": "369758600416",
+              "title": "478只股短线走稳 站上五日均线",
+              "publish_time": "2026-05-21T14:16:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10.01 1.08 10.75 11.43 6.37 000012 南玻A 9.89 2.57 3.76 4.00 6.27 603216 梦天家居 9.22 3.30 28.44 30.20 6.20 002766 索菱股份 10.06 5.94 4.84 5.14 6.11 301488",
+              "link": "http://finance.eastmoney.com/a/202605213744945696.html"
+            },
+            {
+              "event_id": "df4bc964b9d3",
+              "title": "关于收到产品定点信的公告",
+              "publish_time": "2026-05-15T07:42:11",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于收到产品定点信的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301488&announcementId=1225308068&orgId=9900041807&announcementTime=2026-05-15 07:42:11"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 157.88,
+            "stop_loss_price": 147.48,
+            "stop_loss_pct": 0.0659,
+            "signal_quality_score": 79.33,
+            "take_profit_price_1": 176.6,
+            "take_profit_pct_1": 0.1186,
+            "take_profit_price_2": 189.08,
+            "take_profit_pct_2": 0.1976,
+            "trailing_stop_price": 150.16,
+            "suggested_position_min": 0.0517,
+            "suggested_position_max": 0.0718,
+            "max_portfolio_risk": 0.0047,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 147.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 176.60 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 189.08 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 147.48 元作为防守位，并在 176.60 / 189.08 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.71，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253439+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 147.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 176.60 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 189.08 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业轮动",
+          "技术趋势",
+          "新闻催化",
+          "情绪热度"
+        ]
+      }
+    },
+    "sector_rotation": {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D",
+      "items": [
+        {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "rank": 1,
+          "base_score": 87.38,
+          "event_score": 55.0,
+          "risk_adjusted_score": 88.61,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "汽车零部件 位于当前强势行业前列，属于 汽车零部件, 电机, 银行 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 74.1，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "rank": 2,
+          "base_score": 87.75,
+          "event_score": 57.72,
+          "risk_adjusted_score": 88.58,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "电机 位于当前强势行业前列，属于 汽车零部件, 电机, 银行 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 72.5，个股当日涨幅 6.7%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "rank": 3,
+          "base_score": 84.39,
+          "event_score": 57.75,
+          "risk_adjusted_score": 86.57,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "汽车零部件 位于当前强势行业前列，属于 汽车零部件, 电机, 银行 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 74.1，个股当日涨幅 10.6%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002196",
+          "name": "方正电机",
+          "industry": "电机",
+          "rank": 4,
+          "base_score": 81.77,
+          "event_score": 57.08,
+          "risk_adjusted_score": 85.18,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "电机 位于当前强势行业前列，属于 汽车零部件, 电机, 银行 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 72.5，个股当日涨幅 2.9%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
+          "rank": 5,
+          "base_score": 69.74,
+          "event_score": 54.24,
+          "risk_adjusted_score": 67.69,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "银行 位于当前强势行业前列，属于 汽车零部件, 电机, 银行 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 69.7，个股当日涨幅 2.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603767": {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "thesis": "中马传动 属于 汽车零部件 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 94.89,
+              "description": "20 日收益 18.5%，量能倍率 2.26，MA10 / MA20 / MA60 为 20.97 / 20.04 / 19.55。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.0,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 90.62,
+              "description": "日内涨幅 10.0%，换手 8.7%，量比 1.26。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5296af0102d0",
+              "title": "【盘中播报】54只个股跨越牛熊分界线",
+              "publish_time": "2026-05-21T14:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月21日突破年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 年线（元） 最新价（元） 乖离率（%） 603767 中马传动 9.99 7.25 22.29 24.34 9.22 001225 和泰机电 10.01 7.17 50.00 53.76 7.52",
+              "link": "http://finance.eastmoney.com/a/202605213744935319.html"
+            },
+            {
+              "event_id": "5b8e62bac25b",
+              "title": "【盘中播报】93只个股突破年线",
+              "publish_time": "2026-05-21T10:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2.66 1.89 33.56 34.35 2.36 300296 利亚德 3.32 4.51 6.68 6.84 2.32 601108 财通证券 2.93 1.14 8.24 8.42 2.24 002106 莱宝高科 3.75 1.90 11.10 11.34 2.21 603767",
+              "link": "http://finance.eastmoney.com/a/202605213744729018.html"
+            },
+            {
+              "event_id": "c419acaf272c",
+              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "publish_time": "2026-05-13T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603767&announcementId=1225300153&orgId=9900023196&announcementTime=2026-05-13"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 24.34,
+            "stop_loss_price": 22.51,
+            "stop_loss_pct": 0.0751,
+            "signal_quality_score": 81.75,
+            "take_profit_price_1": 27.82,
+            "take_profit_pct_1": 0.143,
+            "take_profit_price_2": 30.01,
+            "take_profit_pct_2": 0.2329,
+            "trailing_stop_price": 23.07,
+            "suggested_position_min": 0.0539,
+            "suggested_position_max": 0.0741,
+            "max_portfolio_risk": 0.0056,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 22.51 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 27.82 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 30.01 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 22.51 元作为防守位，并在 27.82 / 30.01 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.89，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：【盘中播报】54只个股跨越牛熊分界线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253501+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 22.51 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 27.82 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 30.01 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "301023": {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "thesis": "奕帆传动 属于 电机 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "当前模式重点关注该维度。电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 90.0,
+              "description": "20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.72,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2deb95a64e37",
+              "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "a7871a3bb18e",
+              "title": "关于使用部分超募资金永久补充流动资金的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于使用部分超募资金永久补充流动资金的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "0de4ac3138b7",
+              "title": "关于对外投资购买股权的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于对外投资购买股权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 48.75,
+            "stop_loss_price": 46.25,
+            "stop_loss_pct": 0.0513,
+            "signal_quality_score": 82.14,
+            "take_profit_price_1": 53.5,
+            "take_profit_pct_1": 0.0974,
+            "take_profit_price_2": 56.5,
+            "take_profit_pct_2": 0.159,
+            "trailing_stop_price": 47.01,
+            "suggested_position_min": 0.0875,
+            "suggested_position_max": 0.12,
+            "max_portfolio_risk": 0.0062,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 46.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 53.50 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 56.50 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 46.25 元作为防守位，并在 53.50 / 56.50 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253540+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 46.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 53.50 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 56.50 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "301488": {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "thesis": "豪恩汽电 属于 汽车零部件 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 80.39,
+              "description": "20 日收益 4.6%，量能倍率 2.15，MA10 / MA20 / MA60 为 140.95 / 135.19 / 135.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.75,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.6%，换手 31.6%，量比 2.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2344ab2cfaf0",
+              "title": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%",
+              "publish_time": "2026-05-21T11:28:10",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "5月21日，A股智能驾驶概念板块大幅拉升，截至发稿，浙江世宝（002703.SZ）、联创电子（002036.SZ）、德赛西威（002920.SZ）等多股涨停，豪恩汽电（301488.SZ）涨超15%。",
+              "link": "http://finance.eastmoney.com/a/202605213744741391.html"
+            },
+            {
+              "event_id": "369758600416",
+              "title": "478只股短线走稳 站上五日均线",
+              "publish_time": "2026-05-21T14:16:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10.01 1.08 10.75 11.43 6.37 000012 南玻A 9.89 2.57 3.76 4.00 6.27 603216 梦天家居 9.22 3.30 28.44 30.20 6.20 002766 索菱股份 10.06 5.94 4.84 5.14 6.11 301488",
+              "link": "http://finance.eastmoney.com/a/202605213744945696.html"
+            },
+            {
+              "event_id": "df4bc964b9d3",
+              "title": "关于收到产品定点信的公告",
+              "publish_time": "2026-05-15T07:42:11",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于收到产品定点信的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301488&announcementId=1225308068&orgId=9900041807&announcementTime=2026-05-15 07:42:11"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 157.88,
+            "stop_loss_price": 146.81,
+            "stop_loss_pct": 0.0701,
+            "signal_quality_score": 79.33,
+            "take_profit_price_1": 178.91,
+            "take_profit_pct_1": 0.1332,
+            "take_profit_price_2": 192.2,
+            "take_profit_pct_2": 0.2174,
+            "trailing_stop_price": 150.16,
+            "suggested_position_min": 0.0535,
+            "suggested_position_max": 0.0742,
+            "max_portfolio_risk": 0.0052,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 146.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 178.91 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 192.20 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 146.81 元作为防守位，并在 178.91 / 192.20 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.71，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253597+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 146.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 178.91 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 192.20 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002196": {
+          "symbol": "002196",
+          "name": "方正电机",
+          "industry": "电机",
+          "thesis": "方正电机 属于 电机 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "当前模式重点关注该维度。电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.72,
+              "description": "20 日收益 11.4%，量能倍率 2.75，MA10 / MA20 / MA60 为 15.19 / 14.65 / 14.69。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.08,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 71.1,
+              "description": "日内涨幅 2.9%，换手 22.5%，量比 1.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "a41a958ed65f",
+              "title": "关于股票异动的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于股票异动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002196&announcementId=1225317054&orgId=9900003913&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "0618b73b99a1",
+              "title": "方正电机：机器人关节电机尚未大规模量产",
+              "publish_time": "2026-05-19T18:48:02",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "方正电机002196公告称，公司股票于2026年5月15日、18日、19日连续3个交易日收盘价格涨幅偏离值累计超过20%，属于股票交易异常波动。经核查，公司、控股股东及其一致行动人不存在应披露而未披露的重大事项。",
+              "link": "http://finance.eastmoney.com/a/202605193742132557.html"
+            },
+            {
+              "event_id": "b5570dfe1e83",
+              "title": "方正电机：机器人关节电机产品目前尚未大规模批量量产",
+              "publish_time": "2026-05-19T18:51:52",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月19日，方正电机002196公告称，公司股票连续3个交易日收盘价格涨幅偏离值累计超过20%，属于股票交易异常波动。公司关注到近期资本市场对机器人概念关注度较高，相关板块市场表现活跃。",
+              "link": "http://finance.eastmoney.com/a/202605193742133423.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 16.46,
+            "stop_loss_price": 15.22,
+            "stop_loss_pct": 0.0753,
+            "signal_quality_score": 77.96,
+            "take_profit_price_1": 18.82,
+            "take_profit_pct_1": 0.1434,
+            "take_profit_price_2": 20.3,
+            "take_profit_pct_2": 0.2333,
+            "trailing_stop_price": 15.6,
+            "suggested_position_min": 0.0606,
+            "suggested_position_max": 0.0846,
+            "max_portfolio_risk": 0.0064,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 15.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 18.82 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 20.30 元，若继续上行则把跟踪止损上移到 15.60 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 15.22 元作为防守位，并在 18.82 / 20.30 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.57，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票异动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253662+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 15.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 18.82 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 20.30 元，若继续上行则把跟踪止损上移到 15.60 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "601939": {
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
+          "thesis": "建设银行 属于 银行 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 69.7,
+              "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 65.23,
+              "description": "20 日收益 4.7%，量能倍率 1.23，MA10 / MA20 / MA60 为 9.73 / 9.76 / 9.36。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.24,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 75.78,
+              "description": "日内涨幅 2.0%，换手 1.7%，量比 1.84。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "56a982c9626f",
+              "title": "建设银行H股公告-2026年第一季度报告",
+              "publish_time": "2026-04-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行H股公告-2026年第一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225263701&orgId=9900003682&announcementTime=2026-04-30"
+            },
+            {
+              "event_id": "a6552665e0d0",
+              "title": "建设银行2026年第一季度资本管理第三支柱信息披露报告",
+              "publish_time": "2026-04-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行2026年第一季度资本管理第三支柱信息披露报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225263173&orgId=9900003682&announcementTime=2026-04-30"
+            },
+            {
+              "event_id": "504026f3a0ca",
+              "title": "建设银行2026年第一季度报告",
+              "publish_time": "2026-04-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行2026年第一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225263161&orgId=9900003682&announcementTime=2026-04-30"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 10.05,
+            "stop_loss_price": 9.6,
+            "stop_loss_pct": 0.045,
+            "signal_quality_score": 67.04,
+            "take_profit_price_1": 10.91,
+            "take_profit_pct_1": 0.0856,
+            "take_profit_price_2": 11.45,
+            "take_profit_pct_2": 0.1393,
+            "trailing_stop_price": 9.83,
+            "suggested_position_min": 0.082,
+            "suggested_position_max": 0.12,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 1.91,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.45 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 9.60 元作为防守位，并在 10.91 / 11.45 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 0.92，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：建设银行H股公告-2026年第一季度报告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253704+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.45 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业强度",
+          "资金共识",
+          "龙头扩散"
+        ]
+      }
+    },
+    "event_driven": {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D",
+      "items": [
+        {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "rank": 1,
+          "base_score": 87.33,
+          "event_score": 78.19,
+          "risk_adjusted_score": 95.32,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 78.2，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002892",
+          "name": "科力尔",
+          "industry": "电机",
+          "rank": 2,
+          "base_score": 77.56,
+          "event_score": 63.4,
+          "risk_adjusted_score": 75.91,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于回购注销2023年限制性股票激励计划部分限制性股票减少注册资本暨通知债权人的公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 63.4，情绪分 75.5，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "rank": 3,
+          "base_score": 89.02,
+          "event_score": 59.7,
+          "risk_adjusted_score": 74.95,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "金海高科股票交易异常波动公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 59.7，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "rank": 4,
+          "base_score": 87.75,
+          "event_score": 57.72,
+          "risk_adjusted_score": 74.1,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 57.7，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "rank": 5,
+          "base_score": 84.39,
+          "event_score": 57.75,
+          "risk_adjusted_score": 72.7,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 57.8，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "000404": {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "thesis": "长虹华意 的新闻事件打分为 78.2，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 95.77,
+              "description": "20 日收益 28.5%，量能倍率 1.65，MA10 / MA20 / MA60 为 8.65 / 8.51 / 7.58。"
+            },
+            {
+              "name": "事件强度",
+              "value": 78.19,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.5%，换手 11.4%，量比 2.13。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0e634aaa7570",
+              "title": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319212&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "ee0298904b2c",
+              "title": "关于公司增持主体增持公司股份的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司增持主体增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319211&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "305b3a4aadc9",
+              "title": "关于公司高级管理人员增持公司股份的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于公司高级管理人员增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225315560&orgId=gssz0000404&announcementTime=2026-05-20"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.87,
+            "stop_loss_price": 9.35,
+            "stop_loss_pct": 0.0523,
+            "signal_quality_score": 84.82,
+            "take_profit_price_1": 10.75,
+            "take_profit_pct_1": 0.0892,
+            "take_profit_price_2": 11.33,
+            "take_profit_pct_2": 0.1479,
+            "trailing_stop_price": 9.45,
+            "suggested_position_min": 0.0626,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0044,
+            "risk_reward_ratio": 1.69,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.75 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.33 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 9.35 元作为防守位，并在 10.75 / 11.33 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.45，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253769+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.75 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.33 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "002892": {
+          "symbol": "002892",
+          "name": "科力尔",
+          "industry": "电机",
+          "thesis": "科力尔 的新闻事件打分为 63.4，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 82.9,
+              "description": "20 日收益 2.8%，量能倍率 2.78，MA10 / MA20 / MA60 为 10.98 / 10.85 / 11.29。"
+            },
+            {
+              "name": "事件强度",
+              "value": 63.4,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 75.51,
+              "description": "日内涨幅 3.2%，换手 6.8%，量比 1.28。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b5508b2c1c6c",
+              "title": "关于回购注销2023年限制性股票激励计划部分限制性股票减少注册资本暨通知债权人的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于回购注销2023年限制性股票激励计划部分限制性股票减少注册资本暨通知债权人的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002892&announcementId=1225316128&orgId=9900032990&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "daa197152995",
+              "title": "2026年员工持股计划",
+              "publish_time": "2026-05-20T11:42:10",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "2026年员工持股计划",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002892&announcementId=1225318496&orgId=9900032990&announcementTime=2026-05-20 11:42:10"
+            },
+            {
+              "event_id": "d7584fc261d2",
+              "title": "国浩律师（深圳）事务所关于科力尔电机集团股份有限公司2025年年度股东会法律意见书",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "国浩律师（深圳）事务所关于科力尔电机集团股份有限公司2025年年度股东会法律意见书",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002892&announcementId=1225317534&orgId=9900032990&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.76,
+            "stop_loss_price": 11.27,
+            "stop_loss_pct": 0.0417,
+            "signal_quality_score": 75.24,
+            "take_profit_price_1": 12.59,
+            "take_profit_pct_1": 0.0706,
+            "take_profit_price_2": 13.13,
+            "take_profit_pct_2": 0.1165,
+            "trailing_stop_price": 11.36,
+            "suggested_position_min": 0.0602,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0035,
+            "risk_reward_ratio": 1.69,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 11.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 12.59 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 13.13 元，若继续上行则把跟踪止损上移到 11.36 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 11.27 元作为防守位，并在 12.59 / 13.13 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.63，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于回购注销2023年限制性股票激励计划部分限制性股票减少注册资本暨通知债权人的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253806+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 11.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 12.59 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 13.13 元，若继续上行则把跟踪止损上移到 11.36 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "603311": {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "thesis": "金海高科 的新闻事件打分为 59.7，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 61.6%，量能倍率 3.38，MA10 / MA20 / MA60 为 22.44 / 20.71 / 17.77。"
+            },
+            {
+              "name": "事件强度",
+              "value": 59.7,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 9.1%，换手 14.1%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "ebf57d29f8ac",
+              "title": "金海高科股票交易异常波动公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "金海高科股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225317219&orgId=9900023522&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "2be39be7acdd",
+              "title": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313894&orgId=9900023522&announcementTime=2026-05-19"
+            },
+            {
+              "event_id": "92bc2779b87f",
+              "title": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313881&orgId=9900023522&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 31.2,
+            "stop_loss_price": 28.95,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 83.3,
+            "take_profit_price_1": 35.02,
+            "take_profit_pct_1": 0.1224,
+            "take_profit_price_2": 37.5,
+            "take_profit_pct_2": 0.2019,
+            "trailing_stop_price": 29.33,
+            "suggested_position_min": 0.0458,
+            "suggested_position_max": 0.0625,
+            "max_portfolio_risk": 0.0045,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 28.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 35.02 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 37.50 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 28.95 元作为防守位，并在 35.02 / 37.50 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.07，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金海高科股票交易异常波动公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253842+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 28.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 35.02 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 37.50 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "301023": {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "thesis": "奕帆传动 的新闻事件打分为 57.7，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 90.0,
+              "description": "20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.72,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2deb95a64e37",
+              "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "a7871a3bb18e",
+              "title": "关于使用部分超募资金永久补充流动资金的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于使用部分超募资金永久补充流动资金的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "0de4ac3138b7",
+              "title": "关于对外投资购买股权的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于对外投资购买股权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 48.75,
+            "stop_loss_price": 46.63,
+            "stop_loss_pct": 0.0435,
+            "signal_quality_score": 82.14,
+            "take_profit_price_1": 52.35,
+            "take_profit_pct_1": 0.0738,
+            "take_profit_price_2": 54.69,
+            "take_profit_pct_2": 0.1218,
+            "trailing_stop_price": 47.01,
+            "suggested_position_min": 0.062,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0037,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 46.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 52.35 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 54.69 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 46.63 元作为防守位，并在 52.35 / 54.69 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253876+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 46.63 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 52.35 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 54.69 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "301488": {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "thesis": "豪恩汽电 的新闻事件打分为 57.8，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 80.39,
+              "description": "20 日收益 4.6%，量能倍率 2.15，MA10 / MA20 / MA60 为 140.95 / 135.19 / 135.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.75,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.6%，换手 31.6%，量比 2.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2344ab2cfaf0",
+              "title": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%",
+              "publish_time": "2026-05-21T11:28:10",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "5月21日，A股智能驾驶概念板块大幅拉升，截至发稿，浙江世宝（002703.SZ）、联创电子（002036.SZ）、德赛西威（002920.SZ）等多股涨停，豪恩汽电（301488.SZ）涨超15%。",
+              "link": "http://finance.eastmoney.com/a/202605213744741391.html"
+            },
+            {
+              "event_id": "369758600416",
+              "title": "478只股短线走稳 站上五日均线",
+              "publish_time": "2026-05-21T14:16:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10.01 1.08 10.75 11.43 6.37 000012 南玻A 9.89 2.57 3.76 4.00 6.27 603216 梦天家居 9.22 3.30 28.44 30.20 6.20 002766 索菱股份 10.06 5.94 4.84 5.14 6.11 301488",
+              "link": "http://finance.eastmoney.com/a/202605213744945696.html"
+            },
+            {
+              "event_id": "df4bc964b9d3",
+              "title": "关于收到产品定点信的公告",
+              "publish_time": "2026-05-15T07:42:11",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于收到产品定点信的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301488&announcementId=1225308068&orgId=9900041807&announcementTime=2026-05-15 07:42:11"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 157.88,
+            "stop_loss_price": 148.49,
+            "stop_loss_pct": 0.0595,
+            "signal_quality_score": 79.33,
+            "take_profit_price_1": 173.84,
+            "take_profit_pct_1": 0.1011,
+            "take_profit_price_2": 184.17,
+            "take_profit_pct_2": 0.1665,
+            "trailing_stop_price": 150.16,
+            "suggested_position_min": 0.0497,
+            "suggested_position_max": 0.0689,
+            "max_portfolio_risk": 0.0041,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 148.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 173.84 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 184.17 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 148.49 元作为防守位，并在 173.84 / 184.17 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.71，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253911+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 148.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 173.84 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 184.17 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "事件催化",
+          "政策新闻",
+          "公告情绪"
+        ]
+      }
+    },
+    "trend_breakout": {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D",
+      "items": [
+        {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "rank": 1,
+          "base_score": 89.02,
+          "event_score": 59.7,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 22.44 / MA20 20.71 / MA60 17.77，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 3.38，20 日收益 61.6%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "rank": 2,
+          "base_score": 87.33,
+          "event_score": 78.19,
+          "risk_adjusted_score": 96.38,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 8.65 / MA20 8.51 / MA60 7.58，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.65，20 日收益 28.5%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "rank": 3,
+          "base_score": 87.38,
+          "event_score": 55.0,
+          "risk_adjusted_score": 93.89,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 20.97 / MA20 20.04 / MA60 19.55，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 2.26，20 日收益 18.5%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "rank": 4,
+          "base_score": 87.75,
+          "event_score": 57.72,
+          "risk_adjusted_score": 93.27,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 44.42 / MA20 42.70 / MA60 42.16，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.73，20 日收益 11.0%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002196",
+          "name": "方正电机",
+          "industry": "电机",
+          "rank": 5,
+          "base_score": 81.77,
+          "event_score": 57.08,
+          "risk_adjusted_score": 82.79,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 15.19 / MA20 14.65 / MA60 14.69，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 2.75，20 日收益 11.4%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603311": {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "thesis": "金海高科 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 61.6%，量能倍率 3.38，MA10 / MA20 / MA60 为 22.44 / 20.71 / 17.77。"
+            },
+            {
+              "name": "事件强度",
+              "value": 59.7,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 9.1%，换手 14.1%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "ebf57d29f8ac",
+              "title": "金海高科股票交易异常波动公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "金海高科股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225317219&orgId=9900023522&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "2be39be7acdd",
+              "title": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313894&orgId=9900023522&announcementTime=2026-05-19"
+            },
+            {
+              "event_id": "92bc2779b87f",
+              "title": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313881&orgId=9900023522&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 31.2,
+            "stop_loss_price": 28.39,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 83.3,
+            "take_profit_price_1": 36.82,
+            "take_profit_pct_1": 0.1801,
+            "take_profit_price_2": 40.47,
+            "take_profit_pct_2": 0.2971,
+            "trailing_stop_price": 29.33,
+            "suggested_position_min": 0.0479,
+            "suggested_position_max": 0.0654,
+            "max_portfolio_risk": 0.0059,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 28.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 36.82 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 40.47 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 28.39 元作为防守位，并在 36.82 / 40.47 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.07，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金海高科股票交易异常波动公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.253975+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 28.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 36.82 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 40.47 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "000404": {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "thesis": "长虹华意 具备较完整的均线多头与放量突破结构，技术分 95.8，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 95.77,
+              "description": "当前模式重点关注该维度。20 日收益 28.5%，量能倍率 1.65，MA10 / MA20 / MA60 为 8.65 / 8.51 / 7.58。"
+            },
+            {
+              "name": "事件强度",
+              "value": 78.19,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.5%，换手 11.4%，量比 2.13。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0e634aaa7570",
+              "title": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319212&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "ee0298904b2c",
+              "title": "关于公司增持主体增持公司股份的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司增持主体增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319211&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "305b3a4aadc9",
+              "title": "关于公司高级管理人员增持公司股份的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于公司高级管理人员增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225315560&orgId=gssz0000404&announcementTime=2026-05-20"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.87,
+            "stop_loss_price": 9.21,
+            "stop_loss_pct": 0.0672,
+            "signal_quality_score": 84.82,
+            "take_profit_price_1": 11.19,
+            "take_profit_pct_1": 0.1337,
+            "take_profit_price_2": 12.05,
+            "take_profit_pct_2": 0.2209,
+            "trailing_stop_price": 9.45,
+            "suggested_position_min": 0.0672,
+            "suggested_position_max": 0.0912,
+            "max_portfolio_risk": 0.0061,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.19 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.05 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 9.21 元作为防守位，并在 11.19 / 12.05 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.45，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254011+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.19 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.05 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "603767": {
+          "symbol": "603767",
+          "name": "中马传动",
+          "industry": "汽车零部件",
+          "thesis": "中马传动 具备较完整的均线多头与放量突破结构，技术分 94.9，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 94.89,
+              "description": "当前模式重点关注该维度。20 日收益 18.5%，量能倍率 2.26，MA10 / MA20 / MA60 为 20.97 / 20.04 / 19.55。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.0,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 90.62,
+              "description": "日内涨幅 10.0%，换手 8.7%，量比 1.26。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5296af0102d0",
+              "title": "【盘中播报】54只个股跨越牛熊分界线",
+              "publish_time": "2026-05-21T14:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月21日突破年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 年线（元） 最新价（元） 乖离率（%） 603767 中马传动 9.99 7.25 22.29 24.34 9.22 001225 和泰机电 10.01 7.17 50.00 53.76 7.52",
+              "link": "http://finance.eastmoney.com/a/202605213744935319.html"
+            },
+            {
+              "event_id": "5b8e62bac25b",
+              "title": "【盘中播报】93只个股突破年线",
+              "publish_time": "2026-05-21T10:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2.66 1.89 33.56 34.35 2.36 300296 利亚德 3.32 4.51 6.68 6.84 2.32 601108 财通证券 2.93 1.14 8.24 8.42 2.24 002106 莱宝高科 3.75 1.90 11.10 11.34 2.21 603767",
+              "link": "http://finance.eastmoney.com/a/202605213744729018.html"
+            },
+            {
+              "event_id": "c419acaf272c",
+              "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "publish_time": "2026-05-13T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603767&announcementId=1225300153&orgId=9900023196&announcementTime=2026-05-13"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 24.34,
+            "stop_loss_price": 22.35,
+            "stop_loss_pct": 0.0819,
+            "signal_quality_score": 81.75,
+            "take_profit_price_1": 28.32,
+            "take_profit_pct_1": 0.1635,
+            "take_profit_price_2": 30.91,
+            "take_profit_pct_2": 0.2699,
+            "trailing_stop_price": 23.07,
+            "suggested_position_min": 0.0509,
+            "suggested_position_max": 0.07,
+            "max_portfolio_risk": 0.0057,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 22.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 28.32 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 30.91 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 22.35 元作为防守位，并在 28.32 / 30.91 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.89，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：【盘中播报】54只个股跨越牛熊分界线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254044+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 22.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 28.32 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 30.91 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "301023": {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "thesis": "奕帆传动 具备较完整的均线多头与放量突破结构，技术分 90.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 90.0,
+              "description": "当前模式重点关注该维度。20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.72,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2deb95a64e37",
+              "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "a7871a3bb18e",
+              "title": "关于使用部分超募资金永久补充流动资金的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于使用部分超募资金永久补充流动资金的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "0de4ac3138b7",
+              "title": "关于对外投资购买股权的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于对外投资购买股权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 48.75,
+            "stop_loss_price": 46.02,
+            "stop_loss_pct": 0.0559,
+            "signal_quality_score": 82.14,
+            "take_profit_price_1": 54.21,
+            "take_profit_pct_1": 0.112,
+            "take_profit_price_2": 57.76,
+            "take_profit_pct_2": 0.1848,
+            "trailing_stop_price": 47.01,
+            "suggested_position_min": 0.0802,
+            "suggested_position_max": 0.11,
+            "max_portfolio_risk": 0.0062,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 46.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 54.21 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 57.76 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 46.02 元作为防守位，并在 54.21 / 57.76 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254078+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 46.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 54.21 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 57.76 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "002196": {
+          "symbol": "002196",
+          "name": "方正电机",
+          "industry": "电机",
+          "thesis": "方正电机 具备较完整的均线多头与放量突破结构，技术分 96.7，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.72,
+              "description": "当前模式重点关注该维度。20 日收益 11.4%，量能倍率 2.75，MA10 / MA20 / MA60 为 15.19 / 14.65 / 14.69。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.08,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 71.1,
+              "description": "日内涨幅 2.9%，换手 22.5%，量比 1.08。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "a41a958ed65f",
+              "title": "关于股票异动的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于股票异动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002196&announcementId=1225317054&orgId=9900003913&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "0618b73b99a1",
+              "title": "方正电机：机器人关节电机尚未大规模量产",
+              "publish_time": "2026-05-19T18:48:02",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "方正电机002196公告称，公司股票于2026年5月15日、18日、19日连续3个交易日收盘价格涨幅偏离值累计超过20%，属于股票交易异常波动。经核查，公司、控股股东及其一致行动人不存在应披露而未披露的重大事项。",
+              "link": "http://finance.eastmoney.com/a/202605193742132557.html"
+            },
+            {
+              "event_id": "b5570dfe1e83",
+              "title": "方正电机：机器人关节电机产品目前尚未大规模批量量产",
+              "publish_time": "2026-05-19T18:51:52",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月19日，方正电机002196公告称，公司股票连续3个交易日收盘价格涨幅偏离值累计超过20%，属于股票交易异常波动。公司关注到近期资本市场对机器人概念关注度较高，相关板块市场表现活跃。",
+              "link": "http://finance.eastmoney.com/a/202605193742133423.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 16.46,
+            "stop_loss_price": 15.11,
+            "stop_loss_pct": 0.0822,
+            "signal_quality_score": 77.96,
+            "take_profit_price_1": 19.16,
+            "take_profit_pct_1": 0.164,
+            "take_profit_price_2": 20.92,
+            "take_profit_pct_2": 0.271,
+            "trailing_stop_price": 15.6,
+            "suggested_position_min": 0.0572,
+            "suggested_position_max": 0.0799,
+            "max_portfolio_risk": 0.0066,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 15.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 19.16 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 20.92 元，若继续上行则把跟踪止损上移到 15.60 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 15.11 元作为防守位，并在 19.16 / 20.92 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.57，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票异动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254112+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 15.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 19.16 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 20.92 元，若继续上行则把跟踪止损上移到 15.60 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "均线多头",
+          "放量突破",
+          "趋势延续"
+        ]
+      }
+    },
+    "short_term_relay": {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D",
+      "items": [
+        {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "rank": 1,
+          "base_score": 89.02,
+          "event_score": 59.7,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 9.1%，换手 14.1%，量比 1.39。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 3.38 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "rank": 2,
+          "base_score": 87.75,
+          "event_score": 57.72,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 6.7%，换手 19.8%，量比 2.12。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 1.73 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "rank": 3,
+          "base_score": 87.33,
+          "event_score": 78.19,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 8.5%，换手 11.4%，量比 2.13。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 1.65 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "rank": 4,
+          "base_score": 84.39,
+          "event_score": 57.75,
+          "risk_adjusted_score": 99.16,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 10.6%，换手 31.6%，量比 2.17。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 2.15 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "920100",
+          "name": "三协电机",
+          "industry": "电机",
+          "rank": 5,
+          "base_score": 74.73,
+          "event_score": 60.19,
+          "risk_adjusted_score": 98.15,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 14.2%，换手 37.4%，量比 1.50。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 86.9，近 5 日量能提升 2.85 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603311": {
+          "symbol": "603311",
+          "name": "金海高科",
+          "industry": "白色家电",
+          "thesis": "金海高科 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 61.6%，量能倍率 3.38，MA10 / MA20 / MA60 为 22.44 / 20.71 / 17.77。"
+            },
+            {
+              "name": "事件强度",
+              "value": 59.7,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 9.1%，换手 14.1%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "ebf57d29f8ac",
+              "title": "金海高科股票交易异常波动公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "金海高科股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225317219&orgId=9900023522&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "2be39be7acdd",
+              "title": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313894&orgId=9900023522&announcementTime=2026-05-19"
+            },
+            {
+              "event_id": "92bc2779b87f",
+              "title": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313881&orgId=9900023522&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 31.2,
+            "stop_loss_price": 29.17,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 83.3,
+            "take_profit_price_1": 34.45,
+            "take_profit_pct_1": 0.1042,
+            "take_profit_price_2": 36.27,
+            "take_profit_pct_2": 0.1625,
+            "trailing_stop_price": 29.33,
+            "suggested_position_min": 0.0468,
+            "suggested_position_max": 0.064,
+            "max_portfolio_risk": 0.0042,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 29.17 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 34.45 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 36.27 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 29.17 元作为防守位，并在 34.45 / 36.27 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.07，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金海高科股票交易异常波动公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254199+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 29.17 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 34.45 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 36.27 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "301023": {
+          "symbol": "301023",
+          "name": "奕帆传动",
+          "industry": "电机",
+          "thesis": "奕帆传动 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 90.0,
+              "description": "20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.72,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2deb95a64e37",
+              "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "a7871a3bb18e",
+              "title": "关于使用部分超募资金永久补充流动资金的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于使用部分超募资金永久补充流动资金的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            },
+            {
+              "event_id": "0de4ac3138b7",
+              "title": "关于对外投资购买股权的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "关于对外投资购买股权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 48.75,
+            "stop_loss_price": 46.86,
+            "stop_loss_pct": 0.0388,
+            "signal_quality_score": 82.14,
+            "take_profit_price_1": 51.77,
+            "take_profit_pct_1": 0.0619,
+            "take_profit_price_2": 53.48,
+            "take_profit_pct_2": 0.097,
+            "trailing_stop_price": 47.01,
+            "suggested_position_min": 0.0547,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0029,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 46.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 51.77 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 53.48 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 46.86 元作为防守位，并在 51.77 / 53.48 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254235+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 46.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 51.77 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 53.48 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "000404": {
+          "symbol": "000404",
+          "name": "长虹华意",
+          "industry": "白色家电",
+          "thesis": "长虹华意 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 63.39,
+              "description": "白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 95.77,
+              "description": "20 日收益 28.5%，量能倍率 1.65，MA10 / MA20 / MA60 为 8.65 / 8.51 / 7.58。"
+            },
+            {
+              "name": "事件强度",
+              "value": 78.19,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 8.5%，换手 11.4%，量比 2.13。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0e634aaa7570",
+              "title": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319212&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "ee0298904b2c",
+              "title": "关于公司增持主体增持公司股份的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "关于公司增持主体增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319211&orgId=gssz0000404&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "305b3a4aadc9",
+              "title": "关于公司高级管理人员增持公司股份的公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于公司高级管理人员增持公司股份的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225315560&orgId=gssz0000404&announcementTime=2026-05-20"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.87,
+            "stop_loss_price": 9.41,
+            "stop_loss_pct": 0.0467,
+            "signal_quality_score": 84.82,
+            "take_profit_price_1": 10.61,
+            "take_profit_pct_1": 0.075,
+            "take_profit_price_2": 11.02,
+            "take_profit_pct_2": 0.1165,
+            "trailing_stop_price": 9.45,
+            "suggested_position_min": 0.0553,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0035,
+            "risk_reward_ratio": 1.61,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.61 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.02 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 9.41 元作为防守位，并在 10.61 / 11.02 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.45，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254271+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.61 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.02 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "301488": {
+          "symbol": "301488",
+          "name": "豪恩汽电",
+          "industry": "汽车零部件",
+          "thesis": "豪恩汽电 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 74.12,
+              "description": "汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 80.39,
+              "description": "20 日收益 4.6%，量能倍率 2.15，MA10 / MA20 / MA60 为 140.95 / 135.19 / 135.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.75,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 10.6%，换手 31.6%，量比 2.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2344ab2cfaf0",
+              "title": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%",
+              "publish_time": "2026-05-21T11:28:10",
+              "source": "每日经济新闻",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "5月21日，A股智能驾驶概念板块大幅拉升，截至发稿，浙江世宝（002703.SZ）、联创电子（002036.SZ）、德赛西威（002920.SZ）等多股涨停，豪恩汽电（301488.SZ）涨超15%。",
+              "link": "http://finance.eastmoney.com/a/202605213744741391.html"
+            },
+            {
+              "event_id": "369758600416",
+              "title": "478只股短线走稳 站上五日均线",
+              "publish_time": "2026-05-21T14:16:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10.01 1.08 10.75 11.43 6.37 000012 南玻A 9.89 2.57 3.76 4.00 6.27 603216 梦天家居 9.22 3.30 28.44 30.20 6.20 002766 索菱股份 10.06 5.94 4.84 5.14 6.11 301488",
+              "link": "http://finance.eastmoney.com/a/202605213744945696.html"
+            },
+            {
+              "event_id": "df4bc964b9d3",
+              "title": "关于收到产品定点信的公告",
+              "publish_time": "2026-05-15T07:42:11",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于收到产品定点信的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301488&announcementId=1225308068&orgId=9900041807&announcementTime=2026-05-15 07:42:11"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 157.88,
+            "stop_loss_price": 149.49,
+            "stop_loss_pct": 0.0531,
+            "signal_quality_score": 79.33,
+            "take_profit_price_1": 171.3,
+            "take_profit_pct_1": 0.085,
+            "take_profit_price_2": 178.85,
+            "take_profit_pct_2": 0.1328,
+            "trailing_stop_price": 150.16,
+            "suggested_position_min": 0.0513,
+            "suggested_position_max": 0.0713,
+            "max_portfolio_risk": 0.0038,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 149.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 171.30 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 178.85 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 149.49 元作为防守位，并在 171.30 / 178.85 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.71，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254304+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 149.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 171.30 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 178.85 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "920100": {
+          "symbol": "920100",
+          "name": "三协电机",
+          "industry": "电机",
+          "thesis": "三协电机 当前日内热度高、换手活跃，情绪分 86.9，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 72.5,
+              "description": "电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 67.28,
+              "description": "20 日收益 30.0%，量能倍率 2.85，MA10 / MA20 / MA60 为 60.25 / 54.70 / 54.79。"
+            },
+            {
+              "name": "事件强度",
+              "value": 60.19,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 86.91,
+              "description": "当前模式重点关注该维度。日内涨幅 14.2%，换手 37.4%，量比 1.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b3df684de779",
+              "title": "东北证券股份有限公司关于常州三协电机股份有限公司2025年年度持续督导跟踪报告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "东北证券股份有限公司关于常州三协电机股份有限公司2025年年度持续督导跟踪报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=920100&announcementId=1225319297&orgId=gfbj0873669&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "b87977e6e0e9",
+              "title": "2025年年度权益分派实施公告",
+              "publish_time": "2026-05-20T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "2025年年度权益分派实施公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=920100&announcementId=1225319296&orgId=gfbj0873669&announcementTime=2026-05-20"
+            },
+            {
+              "event_id": "6cfccaedfdef",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-21T14:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "5月21日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920100 三协电机 13.52 29.89 60.64 67.10 10.65 601636 旗滨集团 10.06 3.34 6.40 7.00",
+              "link": "http://finance.eastmoney.com/a/202605213744932415.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.49,
+            "stop_loss_price": 63.1,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 71.93,
+            "take_profit_price_1": 74.51,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 78.46,
+            "take_profit_pct_2": 0.1625,
+            "trailing_stop_price": 61.23,
+            "suggested_position_min": 0.0244,
+            "suggested_position_max": 0.035,
+            "max_portfolio_risk": 0.0023,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 63.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 74.51 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 78.46 元，若继续上行则把跟踪止损上移到 61.23 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 63.10 元作为防守位，并在 74.51 / 78.46 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 7.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：东北证券股份有限公司关于常州三协电机股份有限公司2025年年度持续督导跟踪报告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-21T07:07:21.254340+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 63.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 74.51 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 78.46 元，若继续上行则把跟踪止损上移到 61.23 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "涨幅强度",
+          "换手接力",
+          "资金活跃度"
+        ]
+      }
+    }
+  },
+  "candidate_pool": [
+    {
+      "symbol": "000404",
+      "name": "长虹华意",
+      "industry": "白色家电",
+      "rank": 1,
+      "base_score": 87.33,
+      "event_score": 78.19,
+      "risk_adjusted_score": 89.03,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "白色家电 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "长虹华意 近 20 日收益 28.5%，技术分 95.8。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "603311",
+      "name": "金海高科",
+      "industry": "白色家电",
+      "rank": 2,
+      "base_score": 89.02,
+      "event_score": 59.7,
+      "risk_adjusted_score": 86.69,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "白色家电 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "金海高科 近 20 日收益 61.6%，技术分 100.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "金海高科股票交易异常波动公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "301023",
+      "name": "奕帆传动",
+      "industry": "电机",
+      "rank": 3,
+      "base_score": 87.75,
+      "event_score": 57.72,
+      "risk_adjusted_score": 85.64,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "电机 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "奕帆传动 近 20 日收益 11.0%，技术分 90.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "603767",
+      "name": "中马传动",
+      "industry": "汽车零部件",
+      "rank": 4,
+      "base_score": 87.38,
+      "event_score": 55.0,
+      "risk_adjusted_score": 85.24,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "汽车零部件 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "中马传动 近 20 日收益 18.5%，技术分 94.9。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "【盘中播报】54只个股跨越牛熊分界线"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "其他",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "301488",
+      "name": "豪恩汽电",
+      "industry": "汽车零部件",
+      "rank": 5,
+      "base_score": 84.39,
+      "event_score": 57.75,
+      "risk_adjusted_score": 83.03,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "汽车零部件 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "豪恩汽电 近 20 日收益 4.6%，技术分 80.4。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "其他",
+        "官方公告"
+      ]
+    }
+  ],
+  "stock_details": {
+    "000404": {
+      "symbol": "000404",
+      "name": "长虹华意",
+      "industry": "白色家电",
+      "thesis": "长虹华意 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.0，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 63.39,
+          "description": "当前模式重点关注该维度。白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 95.77,
+          "description": "20 日收益 28.5%，量能倍率 1.65，MA10 / MA20 / MA60 为 8.65 / 8.51 / 7.58。"
+        },
+        {
+          "name": "事件强度",
+          "value": 78.19,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 8.5%，换手 11.4%，量比 2.13。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "0e634aaa7570",
+          "title": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+          "publish_time": "2026-05-21T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319212&orgId=gssz0000404&announcementTime=2026-05-21"
+        },
+        {
+          "event_id": "ee0298904b2c",
+          "title": "关于公司增持主体增持公司股份的公告",
+          "publish_time": "2026-05-21T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "关于公司增持主体增持公司股份的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225319211&orgId=gssz0000404&announcementTime=2026-05-21"
+        },
+        {
+          "event_id": "305b3a4aadc9",
+          "title": "关于公司高级管理人员增持公司股份的公告",
+          "publish_time": "2026-05-20T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "关于公司高级管理人员增持公司股份的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000404&announcementId=1225315560&orgId=gssz0000404&announcementTime=2026-05-20"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 9.87,
+        "stop_loss_price": 9.3,
+        "stop_loss_pct": 0.0579,
+        "signal_quality_score": 84.82,
+        "take_profit_price_1": 10.9,
+        "take_profit_pct_1": 0.1044,
+        "take_profit_price_2": 11.58,
+        "take_profit_pct_2": 0.1733,
+        "trailing_stop_price": 9.45,
+        "suggested_position_min": 0.0689,
+        "suggested_position_max": 0.0934,
+        "max_portfolio_risk": 0.0054,
+        "risk_reward_ratio": 1.81,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 9.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 10.90 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 11.58 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.30 元作为防守位，并在 10.90 / 11.58 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.45，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于公司2024年度业绩激励对象增持承诺实施完成暨增持期限届满的公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-21T07:07:21.253248+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 9.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 10.90 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 11.58 元，若继续上行则把跟踪止损上移到 9.45 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "603311": {
+      "symbol": "603311",
+      "name": "金海高科",
+      "industry": "白色家电",
+      "thesis": "金海高科 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.7，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 63.39,
+          "description": "当前模式重点关注该维度。白色家电 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 100.0,
+          "description": "20 日收益 61.6%，量能倍率 3.38，MA10 / MA20 / MA60 为 22.44 / 20.71 / 17.77。"
+        },
+        {
+          "name": "事件强度",
+          "value": 59.7,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 9.1%，换手 14.1%，量比 1.39。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "ebf57d29f8ac",
+          "title": "金海高科股票交易异常波动公告",
+          "publish_time": "2026-05-20T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "金海高科股票交易异常波动公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225317219&orgId=9900023522&announcementTime=2026-05-20"
+        },
+        {
+          "event_id": "2be39be7acdd",
+          "title": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+          "publish_time": "2026-05-19T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "中信建投证券股份有限公司关于浙江金海高科股份有限公司变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的核查意见",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313894&orgId=9900023522&announcementTime=2026-05-19"
+        },
+        {
+          "event_id": "92bc2779b87f",
+          "title": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+          "publish_time": "2026-05-19T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "金海高科关于变更部分募投项目的募集资金用途、增加实施地点及实施主体并延期的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603311&announcementId=1225313881&orgId=9900023522&announcementTime=2026-05-19"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 31.2,
+        "stop_loss_price": 28.77,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 83.3,
+        "take_profit_price_1": 35.57,
+        "take_profit_pct_1": 0.1401,
+        "take_profit_price_2": 38.49,
+        "take_profit_pct_2": 0.2337,
+        "trailing_stop_price": 29.33,
+        "suggested_position_min": 0.0488,
+        "suggested_position_max": 0.0666,
+        "max_portfolio_risk": 0.0052,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 28.77 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 35.57 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 38.49 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 28.77 元作为防守位，并在 35.57 / 38.49 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.07，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：金海高科股票交易异常波动公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-21T07:07:21.253305+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 28.77 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 35.57 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 38.49 元，若继续上行则把跟踪止损上移到 29.33 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "301023": {
+      "symbol": "301023",
+      "name": "奕帆传动",
+      "industry": "电机",
+      "thesis": "奕帆传动 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.6，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 72.5,
+          "description": "当前模式重点关注该维度。电机 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 90.0,
+          "description": "20 日收益 11.0%，量能倍率 1.73，MA10 / MA20 / MA60 为 44.42 / 42.70 / 42.16。"
+        },
+        {
+          "name": "事件强度",
+          "value": 57.72,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 6.7%，换手 19.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "2deb95a64e37",
+          "title": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+          "publish_time": "2026-05-20T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317893&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+        },
+        {
+          "event_id": "a7871a3bb18e",
+          "title": "关于使用部分超募资金永久补充流动资金的公告",
+          "publish_time": "2026-05-20T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "关于使用部分超募资金永久补充流动资金的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317892&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+        },
+        {
+          "event_id": "0de4ac3138b7",
+          "title": "关于对外投资购买股权的公告",
+          "publish_time": "2026-05-20T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "关于对外投资购买股权的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301023&announcementId=1225317888&orgId=nssc1000381&announcementTime=2026-05-20 00:00:00"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 48.75,
+        "stop_loss_price": 46.4,
+        "stop_loss_pct": 0.0482,
+        "signal_quality_score": 82.14,
+        "take_profit_price_1": 52.98,
+        "take_profit_pct_1": 0.0868,
+        "take_profit_price_2": 55.8,
+        "take_profit_pct_2": 0.1446,
+        "trailing_stop_price": 47.01,
+        "suggested_position_min": 0.0729,
+        "suggested_position_max": 0.1,
+        "max_portfolio_risk": 0.0048,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 46.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 52.98 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 55.80 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 46.40 元作为防守位，并在 52.98 / 55.80 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 2.24，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：中信建投证券股份有限公司关于无锡江南奕帆电力传动科技股份有限公司使用部分超募资金永久补充流动资金的核查意见"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-21T07:07:21.253350+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 46.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 52.98 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 55.80 元，若继续上行则把跟踪止损上移到 47.01 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "603767": {
+      "symbol": "603767",
+      "name": "中马传动",
+      "industry": "汽车零部件",
+      "thesis": "中马传动 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 85.2，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 74.12,
+          "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 94.89,
+          "description": "20 日收益 18.5%，量能倍率 2.26，MA10 / MA20 / MA60 为 20.97 / 20.04 / 19.55。"
+        },
+        {
+          "name": "事件强度",
+          "value": 55.0,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 90.62,
+          "description": "日内涨幅 10.0%，换手 8.7%，量比 1.26。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "5296af0102d0",
+          "title": "【盘中播报】54只个股跨越牛熊分界线",
+          "publish_time": "2026-05-21T14:15:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "5月21日突破年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 年线（元） 最新价（元） 乖离率（%） 603767 中马传动 9.99 7.25 22.29 24.34 9.22 001225 和泰机电 10.01 7.17 50.00 53.76 7.52",
+          "link": "http://finance.eastmoney.com/a/202605213744935319.html"
+        },
+        {
+          "event_id": "5b8e62bac25b",
+          "title": "【盘中播报】93只个股突破年线",
+          "publish_time": "2026-05-21T10:56:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "2.66 1.89 33.56 34.35 2.36 300296 利亚德 3.32 4.51 6.68 6.84 2.32 601108 财通证券 2.93 1.14 8.24 8.42 2.24 002106 莱宝高科 3.75 1.90 11.10 11.34 2.21 603767",
+          "link": "http://finance.eastmoney.com/a/202605213744729018.html"
+        },
+        {
+          "event_id": "c419acaf272c",
+          "title": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+          "publish_time": "2026-05-13T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于召开2025年年度暨2026年第一季度业绩说明会的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603767&announcementId=1225300153&orgId=9900023196&announcementTime=2026-05-13"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 24.34,
+        "stop_loss_price": 22.62,
+        "stop_loss_pct": 0.0705,
+        "signal_quality_score": 81.75,
+        "take_profit_price_1": 27.44,
+        "take_profit_pct_1": 0.1274,
+        "take_profit_price_2": 29.5,
+        "take_profit_pct_2": 0.212,
+        "trailing_stop_price": 23.07,
+        "suggested_position_min": 0.0522,
+        "suggested_position_max": 0.0717,
+        "max_portfolio_risk": 0.0051,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 22.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 27.44 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 29.50 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 22.62 元作为防守位，并在 27.44 / 29.50 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.89，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：【盘中播报】54只个股跨越牛熊分界线"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-21T07:07:21.253396+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 22.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 27.44 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 29.50 元，若继续上行则把跟踪止损上移到 23.07 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    },
+    "301488": {
+      "symbol": "301488",
+      "name": "豪恩汽电",
+      "industry": "汽车零部件",
+      "thesis": "豪恩汽电 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.0，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 汽车零部件, 电机, 银行, 白色家电, 汽车整车 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 74.12,
+          "description": "当前模式重点关注该维度。汽车零部件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 80.39,
+          "description": "20 日收益 4.6%，量能倍率 2.15，MA10 / MA20 / MA60 为 140.95 / 135.19 / 135.21。"
+        },
+        {
+          "name": "事件强度",
+          "value": 57.75,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 10.6%，换手 31.6%，量比 2.17。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "2344ab2cfaf0",
+          "title": "特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%",
+          "publish_time": "2026-05-21T11:28:10",
+          "source": "每日经济新闻",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "5月21日，A股智能驾驶概念板块大幅拉升，截至发稿，浙江世宝（002703.SZ）、联创电子（002036.SZ）、德赛西威（002920.SZ）等多股涨停，豪恩汽电（301488.SZ）涨超15%。",
+          "link": "http://finance.eastmoney.com/a/202605213744741391.html"
+        },
+        {
+          "event_id": "369758600416",
+          "title": "478只股短线走稳 站上五日均线",
+          "publish_time": "2026-05-21T14:16:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "10.01 1.08 10.75 11.43 6.37 000012 南玻A 9.89 2.57 3.76 4.00 6.27 603216 梦天家居 9.22 3.30 28.44 30.20 6.20 002766 索菱股份 10.06 5.94 4.84 5.14 6.11 301488",
+          "link": "http://finance.eastmoney.com/a/202605213744945696.html"
+        },
+        {
+          "event_id": "df4bc964b9d3",
+          "title": "关于收到产品定点信的公告",
+          "publish_time": "2026-05-15T07:42:11",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于收到产品定点信的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301488&announcementId=1225308068&orgId=9900041807&announcementTime=2026-05-15 07:42:11"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 157.88,
+        "stop_loss_price": 147.48,
+        "stop_loss_pct": 0.0659,
+        "signal_quality_score": 79.33,
+        "take_profit_price_1": 176.6,
+        "take_profit_pct_1": 0.1186,
+        "take_profit_price_2": 189.08,
+        "take_profit_pct_2": 0.1976,
+        "trailing_stop_price": 150.16,
+        "suggested_position_min": 0.0517,
+        "suggested_position_max": 0.0718,
+        "max_portfolio_risk": 0.0047,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 147.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 176.60 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 189.08 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 147.48 元作为防守位，并在 176.60 / 189.08 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.71，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：特斯拉监督版FSD入华！A股智驾概念掀涨停潮，豪恩汽电涨超15%"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-21T07:07:21.253439+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 147.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 176.60 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 189.08 元，若继续上行则把跟踪止损上移到 150.16 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    }
+  },
+  "selection_meta": {
+    "industry_source": "ths_industry_summary",
+    "constituent_scan_mode": "行业前 8 成分股全扫",
+    "total_universe_size": 31,
+    "news_watchlist_size": 16,
+    "scan_summary": [
+      {
+        "sector_name": "汽车零部件",
+        "sector_code": "881126",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "电机",
+        "sector_code": "881277",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "银行",
+        "sector_code": "881155",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "白色家电",
+        "sector_code": "881131",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "汽车整车",
+        "sector_code": "881125",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      }
+    ]
+  }
+}

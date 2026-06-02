@@ -1,0 +1,4752 @@
+{
+  "generated_at": "2026-05-18T14:00:03.157824+00:00",
+  "trade_date": "2026-05-18",
+  "snapshot_session": {
+    "session_id": "close",
+    "label": "收盘信息",
+    "generated_time": "22:00",
+    "generated_at": "2026-05-18T22:00:03.157824+08:00"
+  },
+  "strategy_version": "v2-akshare-multi-mode",
+  "default_mode": "balanced",
+  "mode_summaries": [
+    {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D"
+    },
+    {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D"
+    },
+    {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D"
+    },
+    {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D"
+    },
+    {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D"
+    }
+  ],
+  "market_regime": {
+    "regime": "risk_on",
+    "confidence": 0.7562,
+    "suggested_exposure": 0.7412,
+    "breadth_score": 68.42,
+    "northbound_score": 81.53,
+    "momentum_score": 75.08,
+    "updated_at": "2026-05-18T14:00:49.375644+00:00"
+  },
+  "top_sectors": [
+    {
+      "sector_code": "881270",
+      "sector_name": "元件",
+      "strength_score": 85.81,
+      "momentum_score": 79.88,
+      "capital_consensus_score": 100.0,
+      "heat_score": 98.56,
+      "breadth_ratio": 0.7097,
+      "member_count": 62
+    },
+    {
+      "sector_code": "881171",
+      "sector_name": "自动化设备",
+      "strength_score": 82.48,
+      "momentum_score": 77.87,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.6383,
+      "member_count": 94
+    },
+    {
+      "sector_code": "881129",
+      "sector_name": "通信设备",
+      "strength_score": 82.06,
+      "momentum_score": 76.85,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.6591,
+      "member_count": 88
+    },
+    {
+      "sector_code": "881272",
+      "sector_name": "软件开发",
+      "strength_score": 75.57,
+      "momentum_score": 76.39,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.75,
+      "member_count": 136
+    },
+    {
+      "sector_code": "881124",
+      "sector_name": "消费电子",
+      "strength_score": 80.33,
+      "momentum_score": 65.66,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.6421,
+      "member_count": 95
+    }
+  ],
+  "market_news": [
+    {
+      "title": "广西柳州市柳南区发生5.2级地震 多地有震感",
+      "summary": "【广西柳州市柳南区发生5.2级地震 多地有震感】中国地震台网正式测定：5月18日21时44分在广西柳州市柳南区（北纬24.37度，东经109.26度）发生5.2级地震，震源深度8千米。多地有震感。",
+      "publish_time": "2026-05-18T21:59:10",
+      "link": "https://finance.eastmoney.com/a/202605183740808783.html"
+    },
+    {
+      "title": "美股AI应用软件股普涨",
+      "summary": "【美股AI应用软件股普涨】美股AI应用软件股普涨，Zeta Global、Roblox涨超8%，ServiceNow涨超6%，拓展科技软件行业ETF涨近1%，本月累涨10%。",
+      "publish_time": "2026-05-18T21:59:03",
+      "link": "https://finance.eastmoney.com/a/202605183740809022.html"
+    },
+    {
+      "title": "伊朗媒体说又一艘伊朗船只突破美国封锁",
+      "summary": "【伊朗媒体说又一艘伊朗船只突破美国封锁】据伊朗媒体18日报道，两周前在印度海岸附近航行的一艘受美国制裁的伊朗船只，目前已停靠在伊朗哈尔克岛。",
+      "publish_time": "2026-05-18T21:58:41",
+      "link": "https://finance.eastmoney.com/a/202605183740808383.html"
+    },
+    {
+      "title": "现货黄金日内涨幅扩大至1%",
+      "summary": "现货黄金日内涨幅扩大至1%，报4583.66美元/盎司。",
+      "publish_time": "2026-05-18T21:55:59",
+      "link": "https://finance.eastmoney.com/a/202605183740807877.html"
+    },
+    {
+      "title": "美股三大指数再次拉升 道琼斯指数涨0.37%",
+      "summary": "【美股三大指数再次拉升 道琼斯指数涨0.37%】美股三大指数再次拉升，截至目前，道琼斯指数涨0.37%，标普500指数涨0.25%，纳斯达克综合指数跌0.23%。",
+      "publish_time": "2026-05-18T21:55:10",
+      "link": "https://finance.eastmoney.com/a/202605183740807273.html"
+    },
+    {
+      "title": "矩阵超智发布MATRIX-3全能旗舰级人形机器人",
+      "summary": "【矩阵超智发布MATRIX-3全能旗舰级人形机器人】5月18日，上海张江本土孵化的硬核科技企业矩阵超智发布MATRIX-3全能旗舰级人形机器人，售价58万元起。",
+      "publish_time": "2026-05-18T21:53:11",
+      "link": "https://finance.eastmoney.com/a/202605183740803875.html"
+    },
+    {
+      "title": "美股加密货币、光通信概念股集体走弱",
+      "summary": "【美股加密货币、光通信概念股集体走弱】美股加密货币、光通信概念股集体走弱，Strategy跌超7%，BMNR跌超5%，Coinbase、Circle跌超3%；AAOI跌超9%，Lumentum跌超7%，Coherent跌超5%。",
+      "publish_time": "2026-05-18T21:51:43",
+      "link": "https://finance.eastmoney.com/a/202605183740802462.html"
+    },
+    {
+      "title": "希捷科技跌幅扩大至5%",
+      "summary": "希捷科技跌幅扩大至5%，西部数据跌幅扩大至4%。",
+      "publish_time": "2026-05-18T21:51:36",
+      "link": "https://finance.eastmoney.com/a/202605183740801040.html"
+    }
+  ],
+  "strategy_modes": {
+    "balanced": {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D",
+      "items": [
+        {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "rank": 1,
+          "base_score": 94.25,
+          "event_score": 58.4,
+          "risk_adjusted_score": 91.84,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "通信设备 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "鼎通科技 近 20 日收益 64.2%，技术分 100.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "鼎通科技股价创新高 A股市值逼近400亿元"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "688143",
+          "name": "长盈通",
+          "industry": "通信设备",
+          "rank": 2,
+          "base_score": 92.67,
+          "event_score": 57.53,
+          "risk_adjusted_score": 90.17,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "通信设备 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "长盈通 近 20 日收益 110.3%，技术分 91.7。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业"
+            }
+          ],
+          "event_tags": [
+            "订单合作",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "300608",
+          "name": "思特奇",
+          "industry": "软件开发",
+          "rank": 3,
+          "base_score": 92.37,
+          "event_score": 58.75,
+          "risk_adjusted_score": 90.05,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "思特奇 近 20 日收益 21.8%，技术分 92.1。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于提前赎回思特转债的第七次提示性公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "rank": 4,
+          "base_score": 92.81,
+          "event_score": 55.53,
+          "risk_adjusted_score": 89.76,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "新致软件 近 20 日收益 27.8%，技术分 93.2。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "76只股中线走稳 站上半年线"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002888",
+          "name": "惠威科技",
+          "industry": "消费电子",
+          "rank": 5,
+          "base_score": 92.33,
+          "event_score": 55.47,
+          "risk_adjusted_score": 89.3,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "消费电子 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "惠威科技 近 20 日收益 30.7%，技术分 93.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "83只股上午收盘涨停(附股)"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "688668": {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "thesis": "鼎通科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.8，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "当前模式重点关注该维度。通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.4,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 93.43,
+              "description": "日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4f3f61b0fe98",
+              "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+              "publish_time": "2026-05-18T15:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+              "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+            },
+            {
+              "event_id": "d1547050913f",
+              "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+            },
+            {
+              "event_id": "a3d76699d93d",
+              "title": "强势股追踪 主力资金连续5日净流入93股",
+              "publish_time": "2026-05-14T17:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+              "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 283.6,
+            "stop_loss_price": 261.48,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 88.38,
+            "take_profit_price_1": 323.42,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 349.96,
+            "take_profit_pct_2": 0.234,
+            "trailing_stop_price": 262.15,
+            "suggested_position_min": 0.0454,
+            "suggested_position_max": 0.0607,
+            "max_portfolio_risk": 0.0047,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 261.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 323.42 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 349.96 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 261.48 元作为防守位，并在 323.42 / 349.96 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.375773+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 261.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 323.42 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 349.96 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688143": {
+          "symbol": "688143",
+          "name": "长盈通",
+          "industry": "通信设备",
+          "thesis": "长盈通 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.2，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "当前模式重点关注该维度。通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 91.7,
+              "description": "20 日收益 110.3%，量能倍率 2.76，MA10 / MA20 / MA60 为 82.56 / 75.79 / 64.42。"
+            },
+            {
+              "name": "事件强度",
+              "value": 57.53,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 99.21,
+              "description": "日内涨幅 20.0%，换手 23.6%，量比 1.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "29a9ff0b80b0",
+              "title": "上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业",
+              "publish_time": "2026-05-18T06:52:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "订单合作",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "○机构席位净买入长盈通 5月15日交易公开信息显示，机构席位净买入长盈通（688143）4.5亿元，占总成交的13.23%。",
+              "link": "http://finance.eastmoney.com/a/202605183739817461.html"
+            },
+            {
+              "event_id": "970652872948",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688143&announcementId=1225308501&orgId=9900052407&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "a5d1d96d5903",
+              "title": "广发证券股份有限公司关于武汉长盈通光电技术股份有限公司发行股份及支付现金购买资产之2025年度业绩承诺实现情况的核查意见",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "广发证券股份有限公司关于武汉长盈通光电技术股份有限公司发行股份及支付现金购买资产之2025年度业绩承诺实现情况的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688143&announcementId=1225284671&orgId=9900052407&announcementTime=2026-05-09"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 129.84,
+            "stop_loss_price": 119.71,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 86.69,
+            "take_profit_price_1": 148.07,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 160.23,
+            "take_profit_pct_2": 0.2341,
+            "trailing_stop_price": 121.32,
+            "suggested_position_min": 0.033,
+            "suggested_position_max": 0.0445,
+            "max_portfolio_risk": 0.0035,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 119.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 148.07 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 160.23 元，若继续上行则把跟踪止损上移到 121.32 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 119.71 元作为防守位，并在 148.07 / 160.23 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 8.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.375830+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 119.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 148.07 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 160.23 元，若继续上行则把跟踪止损上移到 121.32 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "300608": {
+          "symbol": "300608",
+          "name": "思特奇",
+          "industry": "软件开发",
+          "thesis": "思特奇 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.0，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.11,
+              "description": "20 日收益 21.8%，量能倍率 2.38，MA10 / MA20 / MA60 为 14.04 / 13.55 / 12.60。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.75,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.1%，换手 23.1%，量比 1.95。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4cd6ade3f824",
+              "title": "关于提前赎回思特转债的第七次提示性公告",
+              "publish_time": "2026-05-18T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于提前赎回思特转债的第七次提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309197&orgId=9900030871&announcementTime=2026-05-18 00:00:00"
+            },
+            {
+              "event_id": "b6b655db6c0b",
+              "title": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+              "publish_time": "2026-05-15T18:16:30",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309202&orgId=9900030871&announcementTime=2026-05-15 18:16:30"
+            },
+            {
+              "event_id": "1907037f1e4a",
+              "title": "关于提前赎回思特转债的第六次提示性公告",
+              "publish_time": "2026-05-15T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于提前赎回思特转债的第六次提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225307632&orgId=9900030871&announcementTime=2026-05-15 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 15.38,
+            "stop_loss_price": 14.18,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 86.54,
+            "take_profit_price_1": 17.54,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 18.98,
+            "take_profit_pct_2": 0.2341,
+            "trailing_stop_price": 14.38,
+            "suggested_position_min": 0.069,
+            "suggested_position_max": 0.0929,
+            "max_portfolio_risk": 0.0072,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 14.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 17.54 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.98 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 14.18 元作为防守位，并在 17.54 / 18.98 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.83，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于提前赎回思特转债的第七次提示性公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.375876+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 14.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 17.54 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.98 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "688590": {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "thesis": "新致软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.8，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.21,
+              "description": "20 日收益 27.8%，量能倍率 1.61，MA10 / MA20 / MA60 为 15.99 / 15.26 / 15.07。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.53,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.9%，换手 9.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2cb04d74a58c",
+              "title": "76只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "6.20 14.63 15.11 3.26 603893 瑞芯微 4.93 3.12 176.15 181.49 3.03 688682 霍莱沃 9.87 3.79 47.96 49.33 2.85 002881 美格智能 10.00 7.12 43.44 44.64 2.77 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740307856.html"
+            },
+            {
+              "event_id": "873c444b9b95",
+              "title": "64只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T12:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "4.99 3.50 17.87 18.32 2.50 688499 利元亨 5.91 4.32 56.43 57.72 2.29 603728 鸣志电器 2.31 2.36 65.05 66.49 2.21 300640 德艺文创 2.20 5.00 7.73 7.89 2.13 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740209451.html"
+            },
+            {
+              "event_id": "744c31b39ae8",
+              "title": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "publish_time": "2026-04-29T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688590&announcementId=1225232986&orgId=9900031487&announcementTime=2026-04-29"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 17.95,
+            "stop_loss_price": 16.6,
+            "stop_loss_pct": 0.0754,
+            "signal_quality_score": 86.4,
+            "take_profit_price_1": 20.38,
+            "take_profit_pct_1": 0.1354,
+            "take_profit_price_2": 22.0,
+            "take_profit_pct_2": 0.2256,
+            "trailing_stop_price": 16.95,
+            "suggested_position_min": 0.0582,
+            "suggested_position_max": 0.0785,
+            "max_portfolio_risk": 0.0059,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 16.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 20.38 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 22.00 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 16.60 元作为防守位，并在 20.38 / 22.00 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：76只股中线走稳 站上半年线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.375928+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 16.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 20.38 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 22.00 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002888": {
+          "symbol": "002888",
+          "name": "惠威科技",
+          "industry": "消费电子",
+          "thesis": "惠威科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.3，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 83.7,
+              "description": "当前模式重点关注该维度。消费电子 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.04,
+              "description": "20 日收益 30.7%，量能倍率 3.16，MA10 / MA20 / MA60 为 21.05 / 19.97 / 19.77。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.47,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 15.4%，量比 1.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "426e0acb7db3",
+              "title": "83只股上午收盘涨停(附股)",
+              "publish_time": "2026-05-18T12:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "22865.01 电力设备 600578 京能电力 7.71 3.42 2933.80 22619.59 公用事业 688507 索辰科技 129.02 11.81 171.85 22172.29 计算机 600996 贵广网络 9.10 2.89 2320.33 21115.00 传媒 002888",
+              "link": "http://finance.eastmoney.com/a/202605183740210491.html"
+            },
+            {
+              "event_id": "fb0a2e188f1e",
+              "title": "薪酬与考核委员会议事规则（2026年5月）",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "薪酬与考核委员会议事规则（2026年5月）",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002888&announcementId=1225309951&orgId=9900032420&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "532cc2c940f0",
+              "title": "提名委员会议事规则（2026年5月）",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "提名委员会议事规则（2026年5月）",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002888&announcementId=1225309949&orgId=9900032420&announcementTime=2026-05-16"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 24.64,
+            "stop_loss_price": 23.13,
+            "stop_loss_pct": 0.0613,
+            "signal_quality_score": 85.94,
+            "take_profit_price_1": 27.36,
+            "take_profit_pct_1": 0.1104,
+            "take_profit_price_2": 29.17,
+            "take_profit_pct_2": 0.1838,
+            "trailing_stop_price": 23.52,
+            "suggested_position_min": 0.074,
+            "suggested_position_max": 0.1,
+            "max_portfolio_risk": 0.0061,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 23.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 27.36 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 29.17 元，若继续上行则把跟踪止损上移到 23.52 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 23.13 元作为防守位，并在 27.36 / 29.17 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.94，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：83只股上午收盘涨停(附股)"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.375974+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 23.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 27.36 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 29.17 元，若继续上行则把跟踪止损上移到 23.52 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业轮动",
+          "技术趋势",
+          "新闻催化",
+          "情绪热度"
+        ]
+      }
+    },
+    "sector_rotation": {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D",
+      "items": [
+        {
+          "symbol": "002979",
+          "name": "雷赛智能",
+          "industry": "自动化设备",
+          "rank": 1,
+          "base_score": 96.35,
+          "event_score": 52.55,
+          "risk_adjusted_score": 100,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "自动化设备 位于当前强势行业前列，属于 元件, 自动化设备, 通信设备 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 87.8，个股当日涨幅 8.8%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002484",
+          "name": "江海股份",
+          "industry": "元件",
+          "rank": 2,
+          "base_score": 95.36,
+          "event_score": 53.92,
+          "risk_adjusted_score": 100,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "元件 位于当前强势行业前列，属于 元件, 自动化设备, 通信设备 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 89.2，个股当日涨幅 9.6%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "000636",
+          "name": "风华高科",
+          "industry": "元件",
+          "rank": 3,
+          "base_score": 92.08,
+          "event_score": 51.48,
+          "risk_adjusted_score": 99.6,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "元件 位于当前强势行业前列，属于 元件, 自动化设备, 通信设备 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 89.2，个股当日涨幅 9.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "资金交易",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "301021",
+          "name": "英诺激光",
+          "industry": "自动化设备",
+          "rank": 4,
+          "base_score": 92.04,
+          "event_score": 53.28,
+          "risk_adjusted_score": 99.49,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "自动化设备 位于当前强势行业前列，属于 元件, 自动化设备, 通信设备 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 87.8，个股当日涨幅 10.3%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "rank": 5,
+          "base_score": 94.25,
+          "event_score": 58.4,
+          "risk_adjusted_score": 93.54,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "通信设备 位于当前强势行业前列，属于 元件, 自动化设备, 通信设备 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 87.4，个股当日涨幅 15.3%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        }
+      ],
+      "stock_details": {
+        "002979": {
+          "symbol": "002979",
+          "name": "雷赛智能",
+          "industry": "自动化设备",
+          "thesis": "雷赛智能 属于 自动化设备 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.85,
+              "description": "当前模式重点关注该维度。自动化设备 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 66.0%，量能倍率 1.41，MA10 / MA20 / MA60 为 52.25 / 46.92 / 40.92。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.55,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.8%，换手 19.6%，量比 1.54。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "376f503c6587",
+              "title": "关于使用部分闲置自有资金进行现金管理的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于使用部分闲置自有资金进行现金管理的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002979&announcementId=1225282874&orgId=9900023947&announcementTime=2026-05-08"
+            },
+            {
+              "event_id": "990f27e55c6e",
+              "title": "雷赛智能：已成功研发并批量供应高密度无框力矩电机、21自由度灵巧手等核心产品",
+              "publish_time": "2026-05-14T20:04:01",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "雷赛智能002979.SZ)发布投资者关系活动记录表公告，公司机器人业务定位是核心零部件、组件和解决方案提供商，为众多整机厂家提供系列化伺服控制核心部件和模组级解决方案。",
+              "link": "http://finance.eastmoney.com/a/202605143737645335.html"
+            },
+            {
+              "event_id": "9f27e64a417b",
+              "title": "关于召开2025年年度股东会的提示性公告",
+              "publish_time": "2026-05-14T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于召开2025年年度股东会的提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002979&announcementId=1225303842&orgId=9900023947&announcementTime=2026-05-14"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 65.09,
+            "stop_loss_price": 60.49,
+            "stop_loss_pct": 0.0707,
+            "signal_quality_score": 89.01,
+            "take_profit_price_1": 73.83,
+            "take_profit_pct_1": 0.1343,
+            "take_profit_price_2": 79.35,
+            "take_profit_pct_2": 0.2191,
+            "trailing_stop_price": 61.88,
+            "suggested_position_min": 0.0726,
+            "suggested_position_max": 0.0969,
+            "max_portfolio_risk": 0.0068,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 60.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 73.83 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 79.35 元，若继续上行则把跟踪止损上移到 61.88 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 60.49 元作为防守位，并在 73.83 / 79.35 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.39，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于使用部分闲置自有资金进行现金管理的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376045+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 60.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 73.83 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 79.35 元，若继续上行则把跟踪止损上移到 61.88 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "002484": {
+          "symbol": "002484",
+          "name": "江海股份",
+          "industry": "元件",
+          "thesis": "江海股份 属于 元件 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 89.25,
+              "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 98.12,
+              "description": "20 日收益 57.0%，量能倍率 1.38，MA10 / MA20 / MA60 为 45.16 / 40.30 / 33.73。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 97.79,
+              "description": "日内涨幅 9.6%，换手 9.1%，量比 1.44。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "e734f781d1bc",
+              "title": "【数据揭秘】融资客看好个股一览",
+              "publish_time": "2026-05-18T10:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "族兴新材 1008.59 -16.29 1.52 1.98 920069 普昂医疗 479.22 -16.22 0.78 0.80 301560 众捷汽车 8965.44 -15.96 3.12 -0.44 605011 杭州热电 7364.21 -15.88 0.82 0.45 002484",
+              "link": "http://finance.eastmoney.com/a/202605183740116268.html"
+            },
+            {
+              "event_id": "6dc8326044ce",
+              "title": "中信证券股份有限公司关于南通江海电容器股份有限公司详式权益变动报告书之2026年第一季度持续督导意见暨持续督导总结报告",
+              "publish_time": "2026-05-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信证券股份有限公司关于南通江海电容器股份有限公司详式权益变动报告书之2026年第一季度持续督导意见暨持续督导总结报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002484&announcementId=1225278332&orgId=9900014777&announcementTime=2026-05-07"
+            },
+            {
+              "event_id": "71947663bbdd",
+              "title": "强势股追踪 主力资金连续5日净流入109股",
+              "publish_time": "2026-05-07T16:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 603256 宏和科技 5 15.80 11.34 35.43 603063 禾望电气 6 12.40 12.03 24.69 301511 德福科技 6 10.30 4.45 53.90 002484",
+              "link": "http://finance.eastmoney.com/a/202605073730120120.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 53.35,
+            "stop_loss_price": 48.98,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 88.49,
+            "take_profit_price_1": 61.65,
+            "take_profit_pct_1": 0.1556,
+            "take_profit_price_2": 66.9,
+            "take_profit_pct_2": 0.254,
+            "trailing_stop_price": 49.67,
+            "suggested_position_min": 0.0583,
+            "suggested_position_max": 0.0779,
+            "max_portfolio_risk": 0.0064,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 48.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 61.65 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 66.90 元，若继续上行则把跟踪止损上移到 49.67 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 48.98 元作为防守位，并在 61.65 / 66.90 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：【数据揭秘】融资客看好个股一览"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376090+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 48.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 61.65 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 66.90 元，若继续上行则把跟踪止损上移到 49.67 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "000636": {
+          "symbol": "000636",
+          "name": "风华高科",
+          "industry": "元件",
+          "thesis": "风华高科 属于 元件 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 89.25,
+              "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.7,
+              "description": "20 日收益 39.9%，量能倍率 1.36，MA10 / MA20 / MA60 为 27.30 / 25.10 / 22.84。"
+            },
+            {
+              "name": "事件强度",
+              "value": 51.48,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 92.76,
+              "description": "日内涨幅 9.0%，换手 10.4%，量比 1.35。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "90d728900788",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-29T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000636&announcementId=1225231963&orgId=gssz0000636&announcementTime=2026-04-29"
+            },
+            {
+              "event_id": "ea3d20e73b86",
+              "title": "风华高科000636.SZ)：持股5%以上股东先进制造基金二期减持1.21%股份，持股降至5.58%",
+              "publish_time": "2026-05-13T08:58:33",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年5月12日，广东风华高新科技股份有限公司（000636.SZ）发布公告称，公司持股5%以上股东先进制造产业投资基金二期（有限合伙）于2026年2月25日至5月11日期间，通过集中竞价交易方式减持公司股份14,001,400股，占公司总股本的1.21%。",
+              "link": "http://finance.eastmoney.com/a/202605133735382731.html"
+            },
+            {
+              "event_id": "3bf87b7a63ae",
+              "title": "115.30亿元主力资金今日抢筹电子板块",
+              "publish_time": "2026-05-11T17:47:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "7.00 45309.72 603936 博敏电子 10.01 18.58 40160.21 600703 三安光电 4.97 7.41 36791.89 001309 德明利 6.94 11.19 35400.01 688525 佰维存储 8.69 11.25 35299.07 000636",
+              "link": "http://finance.eastmoney.com/a/202605113733196014.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 29.43,
+            "stop_loss_price": 27.02,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 85.49,
+            "take_profit_price_1": 34.01,
+            "take_profit_pct_1": 0.1556,
+            "take_profit_price_2": 36.9,
+            "take_profit_pct_2": 0.2538,
+            "trailing_stop_price": 27.49,
+            "suggested_position_min": 0.0599,
+            "suggested_position_max": 0.0811,
+            "max_portfolio_risk": 0.0066,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 27.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 34.01 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 36.90 元，若继续上行则把跟踪止损上移到 27.49 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 27.02 元作为防守位，并在 34.01 / 36.90 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2026年一季度报告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376148+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 27.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 34.01 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 36.90 元，若继续上行则把跟踪止损上移到 27.49 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "301021": {
+          "symbol": "301021",
+          "name": "英诺激光",
+          "industry": "自动化设备",
+          "thesis": "英诺激光 属于 自动化设备 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.85,
+              "description": "当前模式重点关注该维度。自动化设备 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 94.66,
+              "description": "20 日收益 30.1%，量能倍率 2.13，MA10 / MA20 / MA60 为 66.51 / 64.52 / 58.59。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.28,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 92.74,
+              "description": "日内涨幅 10.3%，换手 8.4%，量比 1.03。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "f1410c014803",
+              "title": "关于举办2025年年度暨2026年第一季度网络业绩说明会的公告",
+              "publish_time": "2026-05-11T18:00:10",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于举办2025年年度暨2026年第一季度网络业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225291577&orgId=9900039770&announcementTime=2026-05-11 18:00:10"
+            },
+            {
+              "event_id": "f3cce0187231",
+              "title": "关于2023年限制性股票激励计划首次授予部分第二个归属期归属结果暨股份上市的公告(第二批次)",
+              "publish_time": "2026-04-27T19:04:30",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于2023年限制性股票激励计划首次授予部分第二个归属期归属结果暨股份上市的公告(第二批次)",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225208288&orgId=9900039770&announcementTime=2026-04-27 19:04:30"
+            },
+            {
+              "event_id": "31855dade2e7",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-27T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225187442&orgId=9900039770&announcementTime=2026-04-27 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 76.02,
+            "stop_loss_price": 69.79,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 85.71,
+            "take_profit_price_1": 87.86,
+            "take_profit_pct_1": 0.1557,
+            "take_profit_price_2": 95.33,
+            "take_profit_pct_2": 0.254,
+            "trailing_stop_price": 71.17,
+            "suggested_position_min": 0.0584,
+            "suggested_position_max": 0.079,
+            "max_portfolio_risk": 0.0065,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 69.79 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 87.86 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 95.33 元，若继续上行则把跟踪止损上移到 71.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 69.79 元作为防守位，并在 87.86 / 95.33 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.28，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于举办2025年年度暨2026年第一季度网络业绩说明会的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376195+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 69.79 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 87.86 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 95.33 元，若继续上行则把跟踪止损上移到 71.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688668": {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "thesis": "鼎通科技 属于 通信设备 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "当前模式重点关注该维度。通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.4,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 93.43,
+              "description": "日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4f3f61b0fe98",
+              "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+              "publish_time": "2026-05-18T15:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+              "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+            },
+            {
+              "event_id": "d1547050913f",
+              "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+            },
+            {
+              "event_id": "a3d76699d93d",
+              "title": "强势股追踪 主力资金连续5日净流入93股",
+              "publish_time": "2026-05-14T17:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+              "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 283.6,
+            "stop_loss_price": 260.34,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 88.38,
+            "take_profit_price_1": 327.79,
+            "take_profit_pct_1": 0.1558,
+            "take_profit_price_2": 355.71,
+            "take_profit_pct_2": 0.2543,
+            "trailing_stop_price": 262.15,
+            "suggested_position_min": 0.0475,
+            "suggested_position_max": 0.0636,
+            "max_portfolio_risk": 0.0052,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 260.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 327.79 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 355.71 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 260.34 元作为防守位，并在 327.79 / 355.71 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376236+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 260.34 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 327.79 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 355.71 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业强度",
+          "资金共识",
+          "龙头扩散"
+        ]
+      }
+    },
+    "event_driven": {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D",
+      "items": [
+        {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "rank": 1,
+          "base_score": 94.25,
+          "event_score": 58.4,
+          "risk_adjusted_score": 83.0,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "鼎通科技股价创新高 A股市值逼近400亿元"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 58.4，情绪分 93.4，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "300608",
+          "name": "思特奇",
+          "industry": "软件开发",
+          "rank": 2,
+          "base_score": 92.37,
+          "event_score": 58.75,
+          "risk_adjusted_score": 82.45,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于提前赎回思特转债的第七次提示性公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 58.8，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688507",
+          "name": "索辰科技",
+          "industry": "软件开发",
+          "rank": 3,
+          "base_score": 90.26,
+          "event_score": 59.33,
+          "risk_adjusted_score": 76.75,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "A股收评：创业板指震荡收跌0.36% 两市成交金额降至2.89万亿元"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 59.3，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "产品技术",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "rank": 4,
+          "base_score": 93.81,
+          "event_score": 54.84,
+          "risk_adjusted_score": 76.28,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "今日549只个股突破五日均线"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 54.8，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "业绩财报",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002881",
+          "name": "美格智能",
+          "industry": "通信设备",
+          "rank": 5,
+          "base_score": 90.47,
+          "event_score": 56.19,
+          "risk_adjusted_score": 75.62,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "美格智能：将密切关注存储芯片市场行情 调整存储芯片库存"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 56.2，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "订单合作",
+            "其他",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "688668": {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "thesis": "鼎通科技 的新闻事件打分为 58.4，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.4,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 93.43,
+              "description": "日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4f3f61b0fe98",
+              "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+              "publish_time": "2026-05-18T15:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+              "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+            },
+            {
+              "event_id": "d1547050913f",
+              "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+            },
+            {
+              "event_id": "a3d76699d93d",
+              "title": "强势股追踪 主力资金连续5日净流入93股",
+              "publish_time": "2026-05-14T17:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+              "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 283.6,
+            "stop_loss_price": 263.18,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 88.38,
+            "take_profit_price_1": 318.31,
+            "take_profit_pct_1": 0.1224,
+            "take_profit_price_2": 340.78,
+            "take_profit_pct_2": 0.2016,
+            "trailing_stop_price": 262.15,
+            "suggested_position_min": 0.0427,
+            "suggested_position_max": 0.057,
+            "max_portfolio_risk": 0.0041,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 263.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 318.31 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 340.78 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 263.18 元作为防守位，并在 318.31 / 340.78 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376305+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 263.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 318.31 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 340.78 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "300608": {
+          "symbol": "300608",
+          "name": "思特奇",
+          "industry": "软件开发",
+          "thesis": "思特奇 的新闻事件打分为 58.8，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.11,
+              "description": "20 日收益 21.8%，量能倍率 2.38，MA10 / MA20 / MA60 为 14.04 / 13.55 / 12.60。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.75,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 6.1%，换手 23.1%，量比 1.95。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4cd6ade3f824",
+              "title": "关于提前赎回思特转债的第七次提示性公告",
+              "publish_time": "2026-05-18T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于提前赎回思特转债的第七次提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309197&orgId=9900030871&announcementTime=2026-05-18 00:00:00"
+            },
+            {
+              "event_id": "b6b655db6c0b",
+              "title": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+              "publish_time": "2026-05-15T18:16:30",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309202&orgId=9900030871&announcementTime=2026-05-15 18:16:30"
+            },
+            {
+              "event_id": "1907037f1e4a",
+              "title": "关于提前赎回思特转债的第六次提示性公告",
+              "publish_time": "2026-05-15T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于提前赎回思特转债的第六次提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225307632&orgId=9900030871&announcementTime=2026-05-15 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 15.38,
+            "stop_loss_price": 14.27,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 86.54,
+            "take_profit_price_1": 17.27,
+            "take_profit_pct_1": 0.1229,
+            "take_profit_price_2": 18.49,
+            "take_profit_pct_2": 0.2022,
+            "trailing_stop_price": 14.38,
+            "suggested_position_min": 0.0631,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0061,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 14.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 17.27 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.49 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 14.27 元作为防守位，并在 17.27 / 18.49 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.83，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于提前赎回思特转债的第七次提示性公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376346+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 14.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 17.27 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.49 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "688507": {
+          "symbol": "688507",
+          "name": "索辰科技",
+          "industry": "软件开发",
+          "thesis": "索辰科技 的新闻事件打分为 59.3，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 86.85,
+              "description": "20 日收益 47.6%，量能倍率 2.71，MA10 / MA20 / MA60 为 99.96 / 96.62 / 93.28。"
+            },
+            {
+              "name": "事件强度",
+              "value": 59.33,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 20.0%，换手 12.5%，量比 1.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "fa3b023e68c6",
+              "title": "A股收评：创业板指震荡收跌0.36% 两市成交金额降至2.89万亿元",
+              "publish_time": "2026-05-18T15:56:51",
+              "source": "央广财经",
+              "source_category": "个股资讯",
+              "event_type": "产品技术",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "（600339.SH）涨停；存储芯片概念快速拉升，大普微收获20CM涨停，同有科技（300302.SZ）、诚邦股份（603316.SH）亦涨停；机器人概念持续活跃，北自科技（603082.SH）达成3连板，华培动力（603121.SH）、华达科技（603358.SH）、索辰科技（688507",
+              "link": "http://finance.eastmoney.com/a/202605183740441989.html"
+            },
+            {
+              "event_id": "29d91bd16c21",
+              "title": "国泰海通证券股份有限公司关于上海索辰信息科技股份有限公司重大资产购买之2025年度持续督导意见",
+              "publish_time": "2026-05-14T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "国泰海通证券股份有限公司关于上海索辰信息科技股份有限公司重大资产购买之2025年度持续督导意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688507&announcementId=1225305012&orgId=nssc1000827&announcementTime=2026-05-14"
+            },
+            {
+              "event_id": "f575110af3ac",
+              "title": "国泰海通证券股份有限公司关于上海索辰信息科技股份有限公司2025年度持续督导工作现场检查报告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "国泰海通证券股份有限公司关于上海索辰信息科技股份有限公司2025年度持续督导工作现场检查报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688507&announcementId=1225281270&orgId=nssc1000827&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 129.02,
+            "stop_loss_price": 120.64,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 84.84,
+            "take_profit_price_1": 143.27,
+            "take_profit_pct_1": 0.1104,
+            "take_profit_price_2": 152.48,
+            "take_profit_pct_2": 0.1818,
+            "trailing_stop_price": 122.13,
+            "suggested_position_min": 0.0383,
+            "suggested_position_max": 0.0519,
+            "max_portfolio_risk": 0.0034,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 120.64 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 143.27 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 152.48 元，若继续上行则把跟踪止损上移到 122.13 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 120.64 元作为防守位，并在 143.27 / 152.48 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 7.29，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：A股收评：创业板指震荡收跌0.36% 两市成交金额降至2.89万亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376387+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 120.64 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 143.27 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 152.48 元，若继续上行则把跟踪止损上移到 122.13 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002635": {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "thesis": "安洁科技 的新闻事件打分为 54.8，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 83.7,
+              "description": "消费电子 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.75,
+              "description": "20 日收益 17.4%，量能倍率 1.82，MA10 / MA20 / MA60 为 16.84 / 16.63 / 15.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.84,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 11.6%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "7087412f9294",
+              "title": "今日549只个股突破五日均线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "19.01 20.47 7.69 301682 宏明电子 12.12 18.96 145.20 156.07 7.48 600714 金瑞矿业 10.00 6.39 25.80 27.72 7.46 603665 康隆达 10.01 5.34 31.20 33.52 7.43 002635",
+              "link": "http://finance.eastmoney.com/a/202605183740307730.html"
+            },
+            {
+              "event_id": "08516abe0f8f",
+              "title": "安洁科技：2026年一季度净利润3489.32万元 同比增长11.80%",
+              "publish_time": "2026-05-01T16:37:59",
+              "source": "中国证券报·中证网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中证智能财讯安洁科技（002635）4月28日披露2026年第一季度报告。",
+              "link": "http://finance.eastmoney.com/a/202605013727285328.html"
+            },
+            {
+              "event_id": "8ffa72d26de5",
+              "title": "关于控股子公司增资完成工商变更登记的公告",
+              "publish_time": "2026-05-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于控股子公司增资完成工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002635&announcementId=1225279731&orgId=9900021759&announcementTime=2026-05-07"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 18.44,
+            "stop_loss_price": 17.38,
+            "stop_loss_pct": 0.0573,
+            "signal_quality_score": 87.11,
+            "take_profit_price_1": 20.24,
+            "take_profit_pct_1": 0.0976,
+            "take_profit_price_2": 21.41,
+            "take_profit_pct_2": 0.1611,
+            "trailing_stop_price": 17.57,
+            "suggested_position_min": 0.0632,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 17.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 20.24 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 21.41 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 17.38 元作为防守位，并在 20.24 / 21.41 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.15，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：今日549只个股突破五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376470+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 17.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 20.24 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 21.41 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002881": {
+          "symbol": "002881",
+          "name": "美格智能",
+          "industry": "通信设备",
+          "thesis": "美格智能 的新闻事件打分为 56.2，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.6,
+              "description": "20 日收益 15.5%，量能倍率 1.43，MA10 / MA20 / MA60 为 41.12 / 40.29 / 41.95。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.19,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 7.6%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "bb276e9c3c97",
+              "title": "美格智能：将密切关注存储芯片市场行情 调整存储芯片库存",
+              "publish_time": "2026-05-14T18:40:24",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "订单合作",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "美格智能002881.SZ)发布投资者关系活动记录表公告，公司2026年第一季度存货大幅走高，主要是因为公司经营管理团队在智能硬件行业有深耕近二十年的经验，对智能硬件的周期变化及供应链的管理经验丰富，在存储芯片涨价早期，公司根据在手订单、未来订单情况的预测及对存储芯片的市场行情的预判",
+              "link": "http://finance.eastmoney.com/a/202605143737575686.html"
+            },
+            {
+              "event_id": "e800d3782658",
+              "title": "76只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "6.79 11.79 12.18 3.31 600151 航天机电 7.32 6.20 14.63 15.11 3.26 603893 瑞芯微 4.93 3.12 176.15 181.49 3.03 688682 霍莱沃 9.87 3.79 47.96 49.33 2.85 002881",
+              "link": "http://finance.eastmoney.com/a/202605183740307856.html"
+            },
+            {
+              "event_id": "d156f85d9e7f",
+              "title": "关于举行2025年度及2026年第一季度网上业绩说明会的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于举行2025年度及2026年第一季度网上业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002881&announcementId=1225281189&orgId=9900032572&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 44.64,
+            "stop_loss_price": 42.62,
+            "stop_loss_pct": 0.0453,
+            "signal_quality_score": 84.57,
+            "take_profit_price_1": 48.07,
+            "take_profit_pct_1": 0.0768,
+            "take_profit_price_2": 50.3,
+            "take_profit_pct_2": 0.1268,
+            "trailing_stop_price": 42.98,
+            "suggested_position_min": 0.0626,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0039,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 42.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 48.07 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 50.30 元，若继续上行则把跟踪止损上移到 42.98 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 42.62 元作为防守位，并在 48.07 / 50.30 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.21，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：美格智能：将密切关注存储芯片市场行情 调整存储芯片库存"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376539+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 42.62 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 48.07 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 50.30 元，若继续上行则把跟踪止损上移到 42.98 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "事件催化",
+          "政策新闻",
+          "公告情绪"
+        ]
+      }
+    },
+    "trend_breakout": {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D",
+      "items": [
+        {
+          "symbol": "002979",
+          "name": "雷赛智能",
+          "industry": "自动化设备",
+          "rank": 1,
+          "base_score": 96.35,
+          "event_score": 52.55,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 52.25 / MA20 46.92 / MA60 40.92，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.41，20 日收益 66.0%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002484",
+          "name": "江海股份",
+          "industry": "元件",
+          "rank": 2,
+          "base_score": 95.36,
+          "event_score": 53.92,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 45.16 / MA20 40.30 / MA60 33.73，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.38，20 日收益 57.0%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "rank": 3,
+          "base_score": 94.25,
+          "event_score": 58.4,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 239.41 / MA20 231.41 / MA60 175.21，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.40，20 日收益 64.2%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "rank": 4,
+          "base_score": 93.81,
+          "event_score": 54.84,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 16.84 / MA20 16.63 / MA60 15.13，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.82，20 日收益 17.4%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "业绩财报",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "rank": 5,
+          "base_score": 92.81,
+          "event_score": 55.53,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 15.99 / MA20 15.26 / MA60 15.07，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.61，20 日收益 27.8%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "002979": {
+          "symbol": "002979",
+          "name": "雷赛智能",
+          "industry": "自动化设备",
+          "thesis": "雷赛智能 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.85,
+              "description": "自动化设备 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 66.0%，量能倍率 1.41，MA10 / MA20 / MA60 为 52.25 / 46.92 / 40.92。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.55,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.8%，换手 19.6%，量比 1.54。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "376f503c6587",
+              "title": "关于使用部分闲置自有资金进行现金管理的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于使用部分闲置自有资金进行现金管理的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002979&announcementId=1225282874&orgId=9900023947&announcementTime=2026-05-08"
+            },
+            {
+              "event_id": "990f27e55c6e",
+              "title": "雷赛智能：已成功研发并批量供应高密度无框力矩电机、21自由度灵巧手等核心产品",
+              "publish_time": "2026-05-14T20:04:01",
+              "source": "财联社",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "雷赛智能002979.SZ)发布投资者关系活动记录表公告，公司机器人业务定位是核心零部件、组件和解决方案提供商，为众多整机厂家提供系列化伺服控制核心部件和模组级解决方案。",
+              "link": "http://finance.eastmoney.com/a/202605143737645335.html"
+            },
+            {
+              "event_id": "9f27e64a417b",
+              "title": "关于召开2025年年度股东会的提示性公告",
+              "publish_time": "2026-05-14T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于召开2025年年度股东会的提示性公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002979&announcementId=1225303842&orgId=9900023947&announcementTime=2026-05-14"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 65.09,
+            "stop_loss_price": 60.07,
+            "stop_loss_pct": 0.0771,
+            "signal_quality_score": 89.01,
+            "take_profit_price_1": 75.13,
+            "take_profit_pct_1": 0.1542,
+            "take_profit_price_2": 81.66,
+            "take_profit_pct_2": 0.2546,
+            "trailing_stop_price": 61.88,
+            "suggested_position_min": 0.0686,
+            "suggested_position_max": 0.0915,
+            "max_portfolio_risk": 0.0071,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 60.07 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 75.13 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 81.66 元，若继续上行则把跟踪止损上移到 61.88 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 60.07 元作为防守位，并在 75.13 / 81.66 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.39，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于使用部分闲置自有资金进行现金管理的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376622+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 60.07 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 75.13 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 81.66 元，若继续上行则把跟踪止损上移到 61.88 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "002484": {
+          "symbol": "002484",
+          "name": "江海股份",
+          "industry": "元件",
+          "thesis": "江海股份 具备较完整的均线多头与放量突破结构，技术分 98.1，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 89.25,
+              "description": "元件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 98.12,
+              "description": "当前模式重点关注该维度。20 日收益 57.0%，量能倍率 1.38，MA10 / MA20 / MA60 为 45.16 / 40.30 / 33.73。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 97.79,
+              "description": "日内涨幅 9.6%，换手 9.1%，量比 1.44。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "e734f781d1bc",
+              "title": "【数据揭秘】融资客看好个股一览",
+              "publish_time": "2026-05-18T10:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "族兴新材 1008.59 -16.29 1.52 1.98 920069 普昂医疗 479.22 -16.22 0.78 0.80 301560 众捷汽车 8965.44 -15.96 3.12 -0.44 605011 杭州热电 7364.21 -15.88 0.82 0.45 002484",
+              "link": "http://finance.eastmoney.com/a/202605183740116268.html"
+            },
+            {
+              "event_id": "6dc8326044ce",
+              "title": "中信证券股份有限公司关于南通江海电容器股份有限公司详式权益变动报告书之2026年第一季度持续督导意见暨持续督导总结报告",
+              "publish_time": "2026-05-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中信证券股份有限公司关于南通江海电容器股份有限公司详式权益变动报告书之2026年第一季度持续督导意见暨持续督导总结报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002484&announcementId=1225278332&orgId=9900014777&announcementTime=2026-05-07"
+            },
+            {
+              "event_id": "71947663bbdd",
+              "title": "强势股追踪 主力资金连续5日净流入109股",
+              "publish_time": "2026-05-07T16:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 603256 宏和科技 5 15.80 11.34 35.43 603063 禾望电气 6 12.40 12.03 24.69 301511 德福科技 6 10.30 4.45 53.90 002484",
+              "link": "http://finance.eastmoney.com/a/202605073730120120.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 53.35,
+            "stop_loss_price": 48.55,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 88.49,
+            "take_profit_price_1": 62.95,
+            "take_profit_pct_1": 0.1799,
+            "take_profit_price_2": 69.19,
+            "take_profit_pct_2": 0.2969,
+            "trailing_stop_price": 49.67,
+            "suggested_position_min": 0.0547,
+            "suggested_position_max": 0.0731,
+            "max_portfolio_risk": 0.0066,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 48.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 62.95 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 69.19 元，若继续上行则把跟踪止损上移到 49.67 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 48.55 元作为防守位，并在 62.95 / 69.19 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：【数据揭秘】融资客看好个股一览"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376662+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 48.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 62.95 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 69.19 元，若继续上行则把跟踪止损上移到 49.67 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688668": {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "thesis": "鼎通科技 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.4,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 93.43,
+              "description": "日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4f3f61b0fe98",
+              "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+              "publish_time": "2026-05-18T15:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+              "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+            },
+            {
+              "event_id": "d1547050913f",
+              "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+            },
+            {
+              "event_id": "a3d76699d93d",
+              "title": "强势股追踪 主力资金连续5日净流入93股",
+              "publish_time": "2026-05-14T17:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+              "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 283.6,
+            "stop_loss_price": 258.08,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 88.38,
+            "take_profit_price_1": 334.64,
+            "take_profit_pct_1": 0.18,
+            "take_profit_price_2": 367.82,
+            "take_profit_pct_2": 0.297,
+            "trailing_stop_price": 262.15,
+            "suggested_position_min": 0.0446,
+            "suggested_position_max": 0.0597,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 258.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 334.64 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 367.82 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 258.08 元作为防守位，并在 334.64 / 367.82 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376701+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 258.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 334.64 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 367.82 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002635": {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "thesis": "安洁科技 具备较完整的均线多头与放量突破结构，技术分 96.8，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 83.7,
+              "description": "消费电子 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.75,
+              "description": "当前模式重点关注该维度。20 日收益 17.4%，量能倍率 1.82，MA10 / MA20 / MA60 为 16.84 / 16.63 / 15.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.84,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.0%，换手 11.6%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "7087412f9294",
+              "title": "今日549只个股突破五日均线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "19.01 20.47 7.69 301682 宏明电子 12.12 18.96 145.20 156.07 7.48 600714 金瑞矿业 10.00 6.39 25.80 27.72 7.46 603665 康隆达 10.01 5.34 31.20 33.52 7.43 002635",
+              "link": "http://finance.eastmoney.com/a/202605183740307730.html"
+            },
+            {
+              "event_id": "08516abe0f8f",
+              "title": "安洁科技：2026年一季度净利润3489.32万元 同比增长11.80%",
+              "publish_time": "2026-05-01T16:37:59",
+              "source": "中国证券报·中证网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中证智能财讯安洁科技（002635）4月28日披露2026年第一季度报告。",
+              "link": "http://finance.eastmoney.com/a/202605013727285328.html"
+            },
+            {
+              "event_id": "8ffa72d26de5",
+              "title": "关于控股子公司增资完成工商变更登记的公告",
+              "publish_time": "2026-05-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于控股子公司增资完成工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002635&announcementId=1225279731&orgId=9900021759&announcementTime=2026-05-07"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 18.44,
+            "stop_loss_price": 17.08,
+            "stop_loss_pct": 0.0737,
+            "signal_quality_score": 87.11,
+            "take_profit_price_1": 21.16,
+            "take_profit_pct_1": 0.1475,
+            "take_profit_price_2": 22.93,
+            "take_profit_pct_2": 0.2435,
+            "trailing_stop_price": 17.57,
+            "suggested_position_min": 0.0706,
+            "suggested_position_max": 0.0948,
+            "max_portfolio_risk": 0.007,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 17.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 21.16 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 22.93 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 17.08 元作为防守位，并在 21.16 / 22.93 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.15，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：今日549只个股突破五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376739+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 17.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 21.16 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 22.93 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688590": {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "thesis": "新致软件 具备较完整的均线多头与放量突破结构，技术分 93.2，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.21,
+              "description": "当前模式重点关注该维度。20 日收益 27.8%，量能倍率 1.61，MA10 / MA20 / MA60 为 15.99 / 15.26 / 15.07。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.53,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 10.9%，换手 9.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2cb04d74a58c",
+              "title": "76只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "6.20 14.63 15.11 3.26 603893 瑞芯微 4.93 3.12 176.15 181.49 3.03 688682 霍莱沃 9.87 3.79 47.96 49.33 2.85 002881 美格智能 10.00 7.12 43.44 44.64 2.77 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740307856.html"
+            },
+            {
+              "event_id": "873c444b9b95",
+              "title": "64只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T12:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "4.99 3.50 17.87 18.32 2.50 688499 利元亨 5.91 4.32 56.43 57.72 2.29 603728 鸣志电器 2.31 2.36 65.05 66.49 2.21 300640 德艺文创 2.20 5.00 7.73 7.89 2.13 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740209451.html"
+            },
+            {
+              "event_id": "744c31b39ae8",
+              "title": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "publish_time": "2026-04-29T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688590&announcementId=1225232986&orgId=9900031487&announcementTime=2026-04-29"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 17.95,
+            "stop_loss_price": 16.38,
+            "stop_loss_pct": 0.0875,
+            "signal_quality_score": 86.4,
+            "take_profit_price_1": 21.09,
+            "take_profit_pct_1": 0.1749,
+            "take_profit_price_2": 23.13,
+            "take_profit_pct_2": 0.2886,
+            "trailing_stop_price": 16.95,
+            "suggested_position_min": 0.0568,
+            "suggested_position_max": 0.0766,
+            "max_portfolio_risk": 0.0067,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 16.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 21.09 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 23.13 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 16.38 元作为防守位，并在 21.09 / 23.13 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：76只股中线走稳 站上半年线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376777+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 16.38 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 21.09 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 23.13 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "均线多头",
+          "放量突破",
+          "趋势延续"
+        ]
+      }
+    },
+    "short_term_relay": {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D",
+      "items": [
+        {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "rank": 1,
+          "base_score": 94.25,
+          "event_score": 58.4,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 15.3%，换手 6.1%，量比 1.18。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 93.4，近 5 日量能提升 1.40 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "rank": 2,
+          "base_score": 93.81,
+          "event_score": 54.84,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 10.0%，换手 11.6%，量比 1.88。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 1.82 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "业绩财报",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "rank": 3,
+          "base_score": 92.81,
+          "event_score": 55.53,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 10.9%，换手 9.9%，量比 2.11。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 1.61 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000636",
+          "name": "风华高科",
+          "industry": "元件",
+          "rank": 4,
+          "base_score": 92.08,
+          "event_score": 51.48,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 9.0%，换手 10.4%，量比 1.35。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 92.8，近 5 日量能提升 1.36 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "资金交易",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "301021",
+          "name": "英诺激光",
+          "industry": "自动化设备",
+          "rank": 5,
+          "base_score": 92.04,
+          "event_score": 53.28,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 10.3%，换手 8.4%，量比 1.03。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 92.7，近 5 日量能提升 2.13 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "688668": {
+          "symbol": "688668",
+          "name": "鼎通科技",
+          "industry": "通信设备",
+          "thesis": "鼎通科技 当前日内热度高、换手活跃，情绪分 93.4，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.42,
+              "description": "通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 58.4,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 93.43,
+              "description": "当前模式重点关注该维度。日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "4f3f61b0fe98",
+              "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+              "publish_time": "2026-05-18T15:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+              "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+            },
+            {
+              "event_id": "d1547050913f",
+              "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "publish_time": "2026-05-09T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+            },
+            {
+              "event_id": "a3d76699d93d",
+              "title": "强势股追踪 主力资金连续5日净流入93股",
+              "publish_time": "2026-05-14T17:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+              "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 283.6,
+            "stop_loss_price": 265.17,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 88.38,
+            "take_profit_price_1": 313.09,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 329.68,
+            "take_profit_pct_2": 0.1625,
+            "trailing_stop_price": 262.15,
+            "suggested_position_min": 0.0436,
+            "suggested_position_max": 0.0583,
+            "max_portfolio_risk": 0.0038,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 265.17 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 313.09 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 329.68 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 265.17 元作为防守位，并在 313.09 / 329.68 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376857+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 265.17 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 313.09 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 329.68 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "002635": {
+          "symbol": "002635",
+          "name": "安洁科技",
+          "industry": "消费电子",
+          "thesis": "安洁科技 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 83.7,
+              "description": "消费电子 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.75,
+              "description": "20 日收益 17.4%，量能倍率 1.82，MA10 / MA20 / MA60 为 16.84 / 16.63 / 15.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.84,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 10.0%，换手 11.6%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "7087412f9294",
+              "title": "今日549只个股突破五日均线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "19.01 20.47 7.69 301682 宏明电子 12.12 18.96 145.20 156.07 7.48 600714 金瑞矿业 10.00 6.39 25.80 27.72 7.46 603665 康隆达 10.01 5.34 31.20 33.52 7.43 002635",
+              "link": "http://finance.eastmoney.com/a/202605183740307730.html"
+            },
+            {
+              "event_id": "08516abe0f8f",
+              "title": "安洁科技：2026年一季度净利润3489.32万元 同比增长11.80%",
+              "publish_time": "2026-05-01T16:37:59",
+              "source": "中国证券报·中证网",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "中证智能财讯安洁科技（002635）4月28日披露2026年第一季度报告。",
+              "link": "http://finance.eastmoney.com/a/202605013727285328.html"
+            },
+            {
+              "event_id": "8ffa72d26de5",
+              "title": "关于控股子公司增资完成工商变更登记的公告",
+              "publish_time": "2026-05-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于控股子公司增资完成工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002635&announcementId=1225279731&orgId=9900021759&announcementTime=2026-05-07"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 18.44,
+            "stop_loss_price": 17.5,
+            "stop_loss_pct": 0.0512,
+            "signal_quality_score": 87.11,
+            "take_profit_price_1": 19.94,
+            "take_profit_pct_1": 0.0813,
+            "take_profit_price_2": 20.79,
+            "take_profit_pct_2": 0.1274,
+            "trailing_stop_price": 17.57,
+            "suggested_position_min": 0.0558,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0038,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 17.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 19.94 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 20.79 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 17.50 元作为防守位，并在 19.94 / 20.79 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.15，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：今日549只个股突破五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376895+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 17.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 19.94 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 20.79 元，若继续上行则把跟踪止损上移到 17.57 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "688590": {
+          "symbol": "688590",
+          "name": "新致软件",
+          "industry": "软件开发",
+          "thesis": "新致软件 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.08,
+              "description": "软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.21,
+              "description": "20 日收益 27.8%，量能倍率 1.61，MA10 / MA20 / MA60 为 15.99 / 15.26 / 15.07。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.53,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 10.9%，换手 9.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "2cb04d74a58c",
+              "title": "76只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T14:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "6.20 14.63 15.11 3.26 603893 瑞芯微 4.93 3.12 176.15 181.49 3.03 688682 霍莱沃 9.87 3.79 47.96 49.33 2.85 002881 美格智能 10.00 7.12 43.44 44.64 2.77 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740307856.html"
+            },
+            {
+              "event_id": "873c444b9b95",
+              "title": "64只股中线走稳 站上半年线",
+              "publish_time": "2026-05-18T12:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "4.99 3.50 17.87 18.32 2.50 688499 利元亨 5.91 4.32 56.43 57.72 2.29 603728 鸣志电器 2.31 2.36 65.05 66.49 2.21 300640 德艺文创 2.20 5.00 7.73 7.89 2.13 688590",
+              "link": "http://finance.eastmoney.com/a/202605183740209451.html"
+            },
+            {
+              "event_id": "744c31b39ae8",
+              "title": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "publish_time": "2026-04-29T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688590&announcementId=1225232986&orgId=9900031487&announcementTime=2026-04-29"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 17.95,
+            "stop_loss_price": 16.86,
+            "stop_loss_pct": 0.0608,
+            "signal_quality_score": 86.4,
+            "take_profit_price_1": 19.69,
+            "take_profit_pct_1": 0.0969,
+            "take_profit_price_2": 20.67,
+            "take_profit_pct_2": 0.1515,
+            "trailing_stop_price": 16.95,
+            "suggested_position_min": 0.0556,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0046,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 16.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 19.69 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 20.67 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 16.86 元作为防守位，并在 19.69 / 20.67 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：76只股中线走稳 站上半年线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376932+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 16.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 19.69 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 20.67 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "000636": {
+          "symbol": "000636",
+          "name": "风华高科",
+          "industry": "元件",
+          "thesis": "风华高科 当前日内热度高、换手活跃，情绪分 92.8，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 89.25,
+              "description": "元件 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 93.7,
+              "description": "20 日收益 39.9%，量能倍率 1.36，MA10 / MA20 / MA60 为 27.30 / 25.10 / 22.84。"
+            },
+            {
+              "name": "事件强度",
+              "value": 51.48,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 92.76,
+              "description": "当前模式重点关注该维度。日内涨幅 9.0%，换手 10.4%，量比 1.35。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "90d728900788",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-29T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000636&announcementId=1225231963&orgId=gssz0000636&announcementTime=2026-04-29"
+            },
+            {
+              "event_id": "ea3d20e73b86",
+              "title": "风华高科000636.SZ)：持股5%以上股东先进制造基金二期减持1.21%股份，持股降至5.58%",
+              "publish_time": "2026-05-13T08:58:33",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年5月12日，广东风华高新科技股份有限公司（000636.SZ）发布公告称，公司持股5%以上股东先进制造产业投资基金二期（有限合伙）于2026年2月25日至5月11日期间，通过集中竞价交易方式减持公司股份14,001,400股，占公司总股本的1.21%。",
+              "link": "http://finance.eastmoney.com/a/202605133735382731.html"
+            },
+            {
+              "event_id": "3bf87b7a63ae",
+              "title": "115.30亿元主力资金今日抢筹电子板块",
+              "publish_time": "2026-05-11T17:47:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "7.00 45309.72 603936 博敏电子 10.01 18.58 40160.21 600703 三安光电 4.97 7.41 36791.89 001309 德明利 6.94 11.19 35400.01 688525 佰维存储 8.69 11.25 35299.07 000636",
+              "link": "http://finance.eastmoney.com/a/202605113733196014.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 29.43,
+            "stop_loss_price": 27.52,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 85.49,
+            "take_profit_price_1": 32.49,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 34.2,
+            "take_profit_pct_2": 0.1621,
+            "trailing_stop_price": 27.49,
+            "suggested_position_min": 0.055,
+            "suggested_position_max": 0.0744,
+            "max_portfolio_risk": 0.0048,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 27.52 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 32.49 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 34.20 元，若继续上行则把跟踪止损上移到 27.49 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 27.52 元作为防守位，并在 32.49 / 34.20 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：2026年一季度报告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.376968+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 27.52 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 32.49 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 34.20 元，若继续上行则把跟踪止损上移到 27.49 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "301021": {
+          "symbol": "301021",
+          "name": "英诺激光",
+          "industry": "自动化设备",
+          "thesis": "英诺激光 当前日内热度高、换手活跃，情绪分 92.7，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 87.85,
+              "description": "自动化设备 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 94.66,
+              "description": "20 日收益 30.1%，量能倍率 2.13，MA10 / MA20 / MA60 为 66.51 / 64.52 / 58.59。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.28,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 92.74,
+              "description": "当前模式重点关注该维度。日内涨幅 10.3%，换手 8.4%，量比 1.03。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "f1410c014803",
+              "title": "关于举办2025年年度暨2026年第一季度网络业绩说明会的公告",
+              "publish_time": "2026-05-11T18:00:10",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于举办2025年年度暨2026年第一季度网络业绩说明会的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225291577&orgId=9900039770&announcementTime=2026-05-11 18:00:10"
+            },
+            {
+              "event_id": "f3cce0187231",
+              "title": "关于2023年限制性股票激励计划首次授予部分第二个归属期归属结果暨股份上市的公告(第二批次)",
+              "publish_time": "2026-04-27T19:04:30",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于2023年限制性股票激励计划首次授予部分第二个归属期归属结果暨股份上市的公告(第二批次)",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225208288&orgId=9900039770&announcementTime=2026-04-27 19:04:30"
+            },
+            {
+              "event_id": "31855dade2e7",
+              "title": "2026年一季度报告",
+              "publish_time": "2026-04-27T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年一季度报告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301021&announcementId=1225187442&orgId=9900039770&announcementTime=2026-04-27 00:00:00"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 76.02,
+            "stop_loss_price": 71.08,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 85.71,
+            "take_profit_price_1": 83.92,
+            "take_profit_pct_1": 0.1039,
+            "take_profit_price_2": 88.37,
+            "take_profit_pct_2": 0.1625,
+            "trailing_stop_price": 71.17,
+            "suggested_position_min": 0.0536,
+            "suggested_position_max": 0.0725,
+            "max_portfolio_risk": 0.0047,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 71.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 83.92 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 88.37 元，若继续上行则把跟踪止损上移到 71.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 71.08 元作为防守位，并在 83.92 / 88.37 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.28，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于举办2025年年度暨2026年第一季度网络业绩说明会的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-18T14:00:49.377006+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 71.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 83.92 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 88.37 元，若继续上行则把跟踪止损上移到 71.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "涨幅强度",
+          "换手接力",
+          "资金活跃度"
+        ]
+      }
+    }
+  },
+  "candidate_pool": [
+    {
+      "symbol": "688668",
+      "name": "鼎通科技",
+      "industry": "通信设备",
+      "rank": 1,
+      "base_score": 94.25,
+      "event_score": 58.4,
+      "risk_adjusted_score": 91.84,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "通信设备 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "鼎通科技 近 20 日收益 64.2%，技术分 100.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "鼎通科技股价创新高 A股市值逼近400亿元"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "官方公告",
+        "资金交易"
+      ]
+    },
+    {
+      "symbol": "688143",
+      "name": "长盈通",
+      "industry": "通信设备",
+      "rank": 2,
+      "base_score": 92.67,
+      "event_score": 57.53,
+      "risk_adjusted_score": 90.17,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "通信设备 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "长盈通 近 20 日收益 110.3%，技术分 91.7。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业"
+        }
+      ],
+      "event_tags": [
+        "订单合作",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "300608",
+      "name": "思特奇",
+      "industry": "软件开发",
+      "rank": 3,
+      "base_score": 92.37,
+      "event_score": 58.75,
+      "risk_adjusted_score": 90.05,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "思特奇 近 20 日收益 21.8%，技术分 92.1。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于提前赎回思特转债的第七次提示性公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "688590",
+      "name": "新致软件",
+      "industry": "软件开发",
+      "rank": 4,
+      "base_score": 92.81,
+      "event_score": 55.53,
+      "risk_adjusted_score": 89.76,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "新致软件 近 20 日收益 27.8%，技术分 93.2。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "76只股中线走稳 站上半年线"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "其他",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "002888",
+      "name": "惠威科技",
+      "industry": "消费电子",
+      "rank": 5,
+      "base_score": 92.33,
+      "event_score": 55.47,
+      "risk_adjusted_score": 89.3,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "消费电子 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "惠威科技 近 20 日收益 30.7%，技术分 93.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "83只股上午收盘涨停(附股)"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "官方公告",
+        "官方公告"
+      ]
+    }
+  ],
+  "stock_details": {
+    "688668": {
+      "symbol": "688668",
+      "name": "鼎通科技",
+      "industry": "通信设备",
+      "thesis": "鼎通科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.8，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 87.42,
+          "description": "当前模式重点关注该维度。通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 100.0,
+          "description": "20 日收益 64.2%，量能倍率 1.40，MA10 / MA20 / MA60 为 239.41 / 231.41 / 175.21。"
+        },
+        {
+          "name": "事件强度",
+          "value": 58.4,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 93.43,
+          "description": "日内涨幅 15.3%，换手 6.1%，量比 1.18。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "4f3f61b0fe98",
+          "title": "鼎通科技股价创新高 A股市值逼近400亿元",
+          "publish_time": "2026-05-18T15:17:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "5月18日，鼎通科技688668收盘上涨15.29%，收盘价283.6元/股，创下历史新高，年内累计上涨128.71%，最新A股市值逼近400亿元。",
+          "link": "http://finance.eastmoney.com/a/202605183740347849.html"
+        },
+        {
+          "event_id": "d1547050913f",
+          "title": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+          "publish_time": "2026-05-09T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于向不特定对象发行可转换公司债券申请获得上海证券交易所上市审核委员会审核通过的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688668&announcementId=1225286433&orgId=9900041452&announcementTime=2026-05-09"
+        },
+        {
+          "event_id": "a3d76699d93d",
+          "title": "强势股追踪 主力资金连续5日净流入93股",
+          "publish_time": "2026-05-14T17:31:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "） 连续5日或以上主力资金净流入个股排名 证券代码 证券简称 主力资金净流入天数 主力资金净流入金额（亿元） 主力资金净流入比例（%） 累计涨跌幅（%） 600703 三安光电 7 15.57 4.01 27.65 000425 徐工机械 7 10.46 9.15 3.02 688668",
+          "link": "http://finance.eastmoney.com/a/202605143737536545.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 283.6,
+        "stop_loss_price": 261.48,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 88.38,
+        "take_profit_price_1": 323.42,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 349.96,
+        "take_profit_pct_2": 0.234,
+        "trailing_stop_price": 262.15,
+        "suggested_position_min": 0.0454,
+        "suggested_position_max": 0.0607,
+        "max_portfolio_risk": 0.0047,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 261.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 323.42 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 349.96 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 261.48 元作为防守位，并在 323.42 / 349.96 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 5.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：鼎通科技股价创新高 A股市值逼近400亿元"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-18T14:00:49.375773+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 261.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 323.42 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 349.96 元，若继续上行则把跟踪止损上移到 262.15 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    },
+    "688143": {
+      "symbol": "688143",
+      "name": "长盈通",
+      "industry": "通信设备",
+      "thesis": "长盈通 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.2，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 87.42,
+          "description": "当前模式重点关注该维度。通信设备 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 91.7,
+          "description": "20 日收益 110.3%，量能倍率 2.76，MA10 / MA20 / MA60 为 82.56 / 75.79 / 64.42。"
+        },
+        {
+          "name": "事件强度",
+          "value": 57.53,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 99.21,
+          "description": "日内涨幅 20.0%，换手 23.6%，量比 1.50。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "29a9ff0b80b0",
+          "title": "上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业",
+          "publish_time": "2026-05-18T06:52:00",
+          "source": "上海证券报",
+          "source_category": "个股资讯",
+          "event_type": "订单合作",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "○机构席位净买入长盈通 5月15日交易公开信息显示，机构席位净买入长盈通（688143）4.5亿元，占总成交的13.23%。",
+          "link": "http://finance.eastmoney.com/a/202605183739817461.html"
+        },
+        {
+          "event_id": "970652872948",
+          "title": "股票交易异常波动公告",
+          "publish_time": "2026-05-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "股票交易异常波动公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688143&announcementId=1225308501&orgId=9900052407&announcementTime=2026-05-16"
+        },
+        {
+          "event_id": "a5d1d96d5903",
+          "title": "广发证券股份有限公司关于武汉长盈通光电技术股份有限公司发行股份及支付现金购买资产之2025年度业绩承诺实现情况的核查意见",
+          "publish_time": "2026-05-09T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "广发证券股份有限公司关于武汉长盈通光电技术股份有限公司发行股份及支付现金购买资产之2025年度业绩承诺实现情况的核查意见",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688143&announcementId=1225284671&orgId=9900052407&announcementTime=2026-05-09"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 129.84,
+        "stop_loss_price": 119.71,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 86.69,
+        "take_profit_price_1": 148.07,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 160.23,
+        "take_profit_pct_2": 0.2341,
+        "trailing_stop_price": 121.32,
+        "suggested_position_min": 0.033,
+        "suggested_position_max": 0.0445,
+        "max_portfolio_risk": 0.0035,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 119.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 148.07 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 160.23 元，若继续上行则把跟踪止损上移到 121.32 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.58,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 119.71 元作为防守位，并在 148.07 / 160.23 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 8.30，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：上证早知道｜688143，机构净买入4.5亿元；300660，供货多家机器人企业"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-18T14:00:49.375830+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 119.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 148.07 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 160.23 元，若继续上行则把跟踪止损上移到 121.32 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。",
+        "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+      ]
+    },
+    "300608": {
+      "symbol": "300608",
+      "name": "思特奇",
+      "industry": "软件开发",
+      "thesis": "思特奇 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.0，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 85.08,
+          "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 92.11,
+          "description": "20 日收益 21.8%，量能倍率 2.38，MA10 / MA20 / MA60 为 14.04 / 13.55 / 12.60。"
+        },
+        {
+          "name": "事件强度",
+          "value": 58.75,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 6.1%，换手 23.1%，量比 1.95。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "4cd6ade3f824",
+          "title": "关于提前赎回思特转债的第七次提示性公告",
+          "publish_time": "2026-05-18T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "关于提前赎回思特转债的第七次提示性公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309197&orgId=9900030871&announcementTime=2026-05-18 00:00:00"
+        },
+        {
+          "event_id": "b6b655db6c0b",
+          "title": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+          "publish_time": "2026-05-15T18:16:30",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于思特转债转股数额累计达到转股前公司已发行股份总额10%的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225309202&orgId=9900030871&announcementTime=2026-05-15 18:16:30"
+        },
+        {
+          "event_id": "1907037f1e4a",
+          "title": "关于提前赎回思特转债的第六次提示性公告",
+          "publish_time": "2026-05-15T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于提前赎回思特转债的第六次提示性公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300608&announcementId=1225307632&orgId=9900030871&announcementTime=2026-05-15 00:00:00"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 15.38,
+        "stop_loss_price": 14.18,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 86.54,
+        "take_profit_price_1": 17.54,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 18.98,
+        "take_profit_pct_2": 0.2341,
+        "trailing_stop_price": 14.38,
+        "suggested_position_min": 0.069,
+        "suggested_position_max": 0.0929,
+        "max_portfolio_risk": 0.0072,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 14.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 17.54 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 18.98 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 14.18 元作为防守位，并在 17.54 / 18.98 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.83，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于提前赎回思特转债的第七次提示性公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-18T14:00:49.375876+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 14.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 17.54 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 18.98 元，若继续上行则把跟踪止损上移到 14.38 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "688590": {
+      "symbol": "688590",
+      "name": "新致软件",
+      "industry": "软件开发",
+      "thesis": "新致软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.8，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 85.08,
+          "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 93.21,
+          "description": "20 日收益 27.8%，量能倍率 1.61，MA10 / MA20 / MA60 为 15.99 / 15.26 / 15.07。"
+        },
+        {
+          "name": "事件强度",
+          "value": 55.53,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 10.9%，换手 9.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "2cb04d74a58c",
+          "title": "76只股中线走稳 站上半年线",
+          "publish_time": "2026-05-18T14:17:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "6.20 14.63 15.11 3.26 603893 瑞芯微 4.93 3.12 176.15 181.49 3.03 688682 霍莱沃 9.87 3.79 47.96 49.33 2.85 002881 美格智能 10.00 7.12 43.44 44.64 2.77 688590",
+          "link": "http://finance.eastmoney.com/a/202605183740307856.html"
+        },
+        {
+          "event_id": "873c444b9b95",
+          "title": "64只股中线走稳 站上半年线",
+          "publish_time": "2026-05-18T12:52:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "4.99 3.50 17.87 18.32 2.50 688499 利元亨 5.91 4.32 56.43 57.72 2.29 603728 鸣志电器 2.31 2.36 65.05 66.49 2.21 300640 德艺文创 2.20 5.00 7.73 7.89 2.13 688590",
+          "link": "http://finance.eastmoney.com/a/202605183740209451.html"
+        },
+        {
+          "event_id": "744c31b39ae8",
+          "title": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+          "publish_time": "2026-04-29T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "长江证券承销保荐有限公司关于上海新致软件股份有限公司募投项目延期的核查意见",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688590&announcementId=1225232986&orgId=9900031487&announcementTime=2026-04-29"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 17.95,
+        "stop_loss_price": 16.6,
+        "stop_loss_pct": 0.0754,
+        "signal_quality_score": 86.4,
+        "take_profit_price_1": 20.38,
+        "take_profit_pct_1": 0.1354,
+        "take_profit_price_2": 22.0,
+        "take_profit_pct_2": 0.2256,
+        "trailing_stop_price": 16.95,
+        "suggested_position_min": 0.0582,
+        "suggested_position_max": 0.0785,
+        "max_portfolio_risk": 0.0059,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 16.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 20.38 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 22.00 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 16.60 元作为防守位，并在 20.38 / 22.00 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：76只股中线走稳 站上半年线"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-18T14:00:49.375928+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 16.60 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 20.38 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 22.00 元，若继续上行则把跟踪止损上移到 16.95 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    },
+    "002888": {
+      "symbol": "002888",
+      "name": "惠威科技",
+      "industry": "消费电子",
+      "thesis": "惠威科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 89.3，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 元件, 自动化设备, 通信设备, 软件开发, 消费电子 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 83.7,
+          "description": "当前模式重点关注该维度。消费电子 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 93.04,
+          "description": "20 日收益 30.7%，量能倍率 3.16，MA10 / MA20 / MA60 为 21.05 / 19.97 / 19.77。"
+        },
+        {
+          "name": "事件强度",
+          "value": 55.47,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 10.0%，换手 15.4%，量比 1.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "426e0acb7db3",
+          "title": "83只股上午收盘涨停(附股)",
+          "publish_time": "2026-05-18T12:52:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "22865.01 电力设备 600578 京能电力 7.71 3.42 2933.80 22619.59 公用事业 688507 索辰科技 129.02 11.81 171.85 22172.29 计算机 600996 贵广网络 9.10 2.89 2320.33 21115.00 传媒 002888",
+          "link": "http://finance.eastmoney.com/a/202605183740210491.html"
+        },
+        {
+          "event_id": "fb0a2e188f1e",
+          "title": "薪酬与考核委员会议事规则（2026年5月）",
+          "publish_time": "2026-05-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "薪酬与考核委员会议事规则（2026年5月）",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002888&announcementId=1225309951&orgId=9900032420&announcementTime=2026-05-16"
+        },
+        {
+          "event_id": "532cc2c940f0",
+          "title": "提名委员会议事规则（2026年5月）",
+          "publish_time": "2026-05-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "提名委员会议事规则（2026年5月）",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002888&announcementId=1225309949&orgId=9900032420&announcementTime=2026-05-16"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 24.64,
+        "stop_loss_price": 23.13,
+        "stop_loss_pct": 0.0613,
+        "signal_quality_score": 85.94,
+        "take_profit_price_1": 27.36,
+        "take_profit_pct_1": 0.1104,
+        "take_profit_price_2": 29.17,
+        "take_profit_pct_2": 0.1838,
+        "trailing_stop_price": 23.52,
+        "suggested_position_min": 0.074,
+        "suggested_position_max": 0.1,
+        "max_portfolio_risk": 0.0061,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 23.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 27.36 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 29.17 元，若继续上行则把跟踪止损上移到 23.52 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 23.13 元作为防守位，并在 27.36 / 29.17 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 2.94，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：83只股上午收盘涨停(附股)"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-18T14:00:49.375974+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 23.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 27.36 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 29.17 元，若继续上行则把跟踪止损上移到 23.52 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    }
+  },
+  "selection_meta": {
+    "industry_source": "ths_industry_summary",
+    "constituent_scan_mode": "行业前 8 成分股全扫",
+    "total_universe_size": 36,
+    "news_watchlist_size": 19,
+    "scan_summary": [
+      {
+        "sector_name": "元件",
+        "sector_code": "881270",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "自动化设备",
+        "sector_code": "881171",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "通信设备",
+        "sector_code": "881129",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "软件开发",
+        "sector_code": "881272",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "消费电子",
+        "sector_code": "881124",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      }
+    ]
+  }
+}

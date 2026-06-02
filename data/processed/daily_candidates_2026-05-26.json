@@ -1,0 +1,4669 @@
+{
+  "generated_at": "2026-05-26T06:59:28.486820+00:00",
+  "trade_date": "2026-05-26",
+  "snapshot_session": {
+    "session_id": "close",
+    "label": "收盘信息",
+    "generated_time": "14:59",
+    "generated_at": "2026-05-26T14:59:28.486820+08:00"
+  },
+  "strategy_version": "v2-akshare-multi-mode",
+  "default_mode": "balanced",
+  "mode_summaries": [
+    {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D"
+    },
+    {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D"
+    },
+    {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D"
+    },
+    {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D"
+    },
+    {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D"
+    }
+  ],
+  "market_regime": {
+    "regime": "risk_on",
+    "confidence": 0.7231,
+    "suggested_exposure": 0.7339,
+    "breadth_score": 69.57,
+    "northbound_score": 80.33,
+    "momentum_score": 66.22,
+    "updated_at": "2026-05-26T07:00:48.289488+00:00"
+  },
+  "top_sectors": [
+    {
+      "sector_code": "881169",
+      "sector_name": "贵金属",
+      "strength_score": 100.0,
+      "momentum_score": 75.04,
+      "capital_consensus_score": 100.0,
+      "heat_score": 87.85,
+      "breadth_ratio": 1.0,
+      "member_count": 13
+    },
+    {
+      "sector_code": "881168",
+      "sector_name": "工业金属",
+      "strength_score": 84.36,
+      "momentum_score": 64.57,
+      "capital_consensus_score": 100.0,
+      "heat_score": 96.49,
+      "breadth_ratio": 0.6964,
+      "member_count": 56
+    },
+    {
+      "sector_code": "881170",
+      "sector_name": "小金属",
+      "strength_score": 79.12,
+      "momentum_score": 62.18,
+      "capital_consensus_score": 100.0,
+      "heat_score": 88.12,
+      "breadth_ratio": 0.6207,
+      "member_count": 29
+    },
+    {
+      "sector_code": "881270",
+      "sector_name": "元件",
+      "strength_score": 60.93,
+      "momentum_score": 74.55,
+      "capital_consensus_score": 96.32,
+      "heat_score": 93.07,
+      "breadth_ratio": 0.5738,
+      "member_count": 61
+    },
+    {
+      "sector_code": "881157",
+      "sector_name": "证券",
+      "strength_score": 69.29,
+      "momentum_score": 57.61,
+      "capital_consensus_score": 100.0,
+      "heat_score": 97.93,
+      "breadth_ratio": 0.8125,
+      "member_count": 48
+    }
+  ],
+  "market_news": [
+    {
+      "title": "“怎么看王宁，他是像乔布斯一样，既是报时人又是造钟人吗”？段永平回应",
+      "summary": "【“怎么看王宁，他是像乔布斯一样，既是报时人又是造钟人吗”？段永平回应】5月25日晚，有网友在社交平台问段永平：“怎么看王宁，他是像乔布斯一样，既是报时人又是造钟人吗？”对此，段永平于5月26日给出回复：“我觉得王宁对自己产品的理解以及追求和Jobs是一个级别的，至少未来会是的。王宁对商业的理解好像比Jobs还要强一点点。”此前，段永平曾发文称，其把煤炭股中国神华全部换成了潮玩公司泡泡玛特（09992.HK）。",
+      "publish_time": "2026-05-26T14:57:56",
+      "link": "https://finance.eastmoney.com/a/202605263749581786.html"
+    },
+    {
+      "title": "几内亚“两月三提”出口控量 对矿价的实质拉动有限",
+      "summary": "【几内亚“两月三提”出口控量 对矿价的实质拉动有限】几内亚矿业与地质部长西拉明确表示，政府预计将于6月正式敲定铝土矿出口管制新政，核心诉求为“控制出口量、让价格回升至合理水平”，政策落地的直接导因在于当地铝土矿出口高增以及FOB矿价大幅下行。综合来看，当前全球铝土矿和氧化铝过剩格局仍明确，几内亚矿价FOB38美金/干吨已逼近当地矿企平均成本线，此次控量更多起到封杀矿价进一步下行空间的作用，对矿价的实质拉动有限。",
+      "publish_time": "2026-05-26T14:56:17",
+      "link": "https://finance.eastmoney.com/a/202605263749582630.html"
+    },
+    {
+      "title": "天气太热 印度“芒果之王”大幅减产",
+      "summary": "【天气太热 印度“芒果之王”大幅减产】阿方索芒果是印度知名的芒果品种，果肉丝滑、浓郁香甜。然而，由于今年四五月份天气炎热等因素，这种号称“芒果之王”的水果将大幅减产。据路透社5月26日报道，印度政府先前进行的一项调查估计，仅代沃格德一地，今年芒果将减产85%到90%。在马哈拉施特拉邦其他芒果种植区，不利气候条件同样导致减产。",
+      "publish_time": "2026-05-26T14:55:50",
+      "link": "https://finance.eastmoney.com/a/202605263749581018.html"
+    },
+    {
+      "title": "华为韬定律到底牛在哪？专家：华为韬定律意义重大",
+      "summary": "【华为韬定律到底牛在哪？专家：华为韬定律意义重大】清华大学教授吴华强在接受央视财经采访时表示：华为提出的“韬定律”，是在摩尔定律遭遇发展瓶颈的背景下产生的。该定律以“时间缩微”取代传统的“几何缩微”方式，定义了芯片未来的发展路径。我认为“韬定律”的提出具有非常重要的意义。它从多个层面探讨了如何提升芯片性能，既涵盖最底层的器件层面，也包括电路层面和芯片层面，还上升到了系统层面。过去的“几何缩微”主要聚焦于器件、电路，最终到芯片层面。而“韬定律”则将器件、电路、芯片以及数据带宽全部纳入统一考量。这不仅为芯片后续的发展提供了重要指引，对整个半导体产业界的长远发展也至关重要。",
+      "publish_time": "2026-05-26T14:55:25",
+      "link": "https://finance.eastmoney.com/a/202605263749580760.html"
+    },
+    {
+      "title": "1-4月我国企业共向境外派出各类劳务人员13.2万人",
+      "summary": "【1-4月我国企业共向境外派出各类劳务人员13.2万人】商务部消息，2026年1-4月，我国企业共向境外派出各类劳务人员13.2万人，较上年同期减少1.3万人；其中承包工程项下派出4.1万人，劳务合作项下派出9.1万人。月末在外各类劳务人员60.7万人。",
+      "publish_time": "2026-05-26T14:52:10",
+      "link": "https://finance.eastmoney.com/a/202605263749579031.html"
+    },
+    {
+      "title": "1-4月我国企业在共建“一带一路”国家非金融类直接投资855.5亿元 同比降7%",
+      "summary": "【1-4月我国企业在共建“一带一路”国家非金融类直接投资855.5亿元 同比降7%】商务部消息，2026年1-4月，我国企业在共建“一带一路”国家非金融类直接投资855.5亿元人民币，同比下降7%（以美元计为123.5亿美元，下降3.6%）。",
+      "publish_time": "2026-05-26T14:52:10",
+      "link": "https://finance.eastmoney.com/a/202605263749578912.html"
+    },
+    {
+      "title": "美团发布“跑腿Skill”",
+      "summary": "【美团发布“跑腿Skill”】5月26日消息，多家AI助手近日接入美团跑腿，美团跑腿同期发布“跑腿Skill”，将下单能力以封装Skill形式向AI助手生态开放。用户在OpenClaw、Cursor、微信、飞书等任意接入该Skill的AI助手中，通过自然语言描述需求即可完成下单。",
+      "publish_time": "2026-05-26T14:52:04",
+      "link": "https://finance.eastmoney.com/a/202605263749579594.html"
+    },
+    {
+      "title": "油价高 韩国新能源车登记量增幅显著",
+      "summary": "【油价高 韩国新能源车登记量增幅显著】受中东战事带来的能源供应短缺影响，韩国油价上涨，更多消费者将目光转向新能源车。《韩国商业电讯》5月25日报道，韩国汽车移动产业协会数据显示，截至4月底，韩国混合动力车登记量达273万辆，同比增长24.2%。混合动力车在所有登记机动车中占比达10.2%，已连续两个月保持在10%以上。纯电车同样增长强劲，登记量同比增长近40%，达到102万辆，韩国由此进入电动汽车登记量突破100万辆的时代。",
+      "publish_time": "2026-05-26T14:50:09",
+      "link": "https://finance.eastmoney.com/a/202605263749575895.html"
+    }
+  ],
+  "strategy_modes": {
+    "balanced": {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D",
+      "items": [
+        {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "rank": 1,
+          "base_score": 93.26,
+          "event_score": 60.09,
+          "risk_adjusted_score": 90.73,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "元件 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "沪电股份 近 20 日收益 19.2%，技术分 100.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于为全资子公司提供担保的进展公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "rank": 2,
+          "base_score": 89.42,
+          "event_score": 72.16,
+          "risk_adjusted_score": 90.19,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "元件 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "博敏电子 近 20 日收益 50.5%，技术分 92.7。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "rank": 3,
+          "base_score": 92.2,
+          "event_score": 53.32,
+          "risk_adjusted_score": 83.86,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "小金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "中钨高新 近 20 日收益 10.5%，技术分 100.0。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "rank": 4,
+          "base_score": 83.66,
+          "event_score": 55.35,
+          "risk_adjusted_score": 83.44,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "小金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "东方钽业 近 20 日收益 27.0%，技术分 97.4。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于回购注销部分限制性股票减资暨通知债权人的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "rank": 5,
+          "base_score": 89.68,
+          "event_score": 54.02,
+          "risk_adjusted_score": 82.47,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "工业金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "金诚信 近 20 日收益 8.3%，技术分 96.7。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "金诚信独立董事提名人和候选人声明公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "002463": {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "thesis": "沪电股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.7，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 19.2%，量能倍率 1.24，MA10 / MA20 / MA60 为 108.20 / 106.43 / 91.02。"
+            },
+            {
+              "name": "事件强度",
+              "value": 60.09,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.8%，换手 6.0%，量比 1.51。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "cbd29e5eb7ea",
+              "title": "关于为全资子公司提供担保的进展公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于为全资子公司提供担保的进展公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225328396&orgId=9900013929&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "8a35cc470980",
+              "title": "关于独立董事取得独立董事资格证书的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于独立董事取得独立董事资格证书的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225319143&orgId=9900013929&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "0848f6b6a8d4",
+              "title": "关于部分股票期权注销完成的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于部分股票期权注销完成的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225282073&orgId=9900013929&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 133.35,
+            "stop_loss_price": 123.36,
+            "stop_loss_pct": 0.0749,
+            "signal_quality_score": 87.33,
+            "take_profit_price_1": 151.33,
+            "take_profit_pct_1": 0.1348,
+            "take_profit_price_2": 163.32,
+            "take_profit_pct_2": 0.2247,
+            "trailing_stop_price": 125.94,
+            "suggested_position_min": 0.0619,
+            "suggested_position_max": 0.0831,
+            "max_portfolio_risk": 0.0062,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 123.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 151.33 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 163.32 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 123.36 元作为防守位，并在 151.33 / 163.32 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于为全资子公司提供担保的进展公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289619+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 123.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 151.33 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 163.32 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "603936": {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "thesis": "博敏电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.2，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.71,
+              "description": "20 日收益 50.5%，量能倍率 1.00，MA10 / MA20 / MA60 为 21.47 / 19.16 / 15.66。"
+            },
+            {
+              "name": "事件强度",
+              "value": 72.16,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 96.91,
+              "description": "日内涨幅 5.9%，换手 17.9%，量比 1.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "d29caa9fb877",
+              "title": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329496&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "14657094104e",
+              "title": "博敏电子股票交易异常波动公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329484&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3942b17f72ba",
+              "title": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329494&orgId=9900024943&announcementTime=2026-05-26"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 26.32,
+            "stop_loss_price": 24.27,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 86.1,
+            "take_profit_price_1": 30.01,
+            "take_profit_pct_1": 0.1402,
+            "take_profit_price_2": 32.47,
+            "take_profit_pct_2": 0.2337,
+            "trailing_stop_price": 24.49,
+            "suggested_position_min": 0.0617,
+            "suggested_position_max": 0.0832,
+            "max_portfolio_risk": 0.0065,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 24.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 30.01 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 32.47 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 24.27 元作为防守位，并在 30.01 / 32.47 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289681+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 24.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 30.01 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 32.47 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "000657": {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "thesis": "中钨高新 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.9，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.32,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 94.08,
+              "description": "日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b2927b0c304c",
+              "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "eb0dafabf66b",
+              "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "2ec2714f52cc",
+              "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.68,
+            "stop_loss_price": 62.4,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 85.61,
+            "take_profit_price_1": 77.18,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 83.52,
+            "take_profit_pct_2": 0.234,
+            "trailing_stop_price": 63.17,
+            "suggested_position_min": 0.066,
+            "suggested_position_max": 0.0893,
+            "max_portfolio_risk": 0.007,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 62.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 77.18 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 83.52 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 62.40 元作为防守位，并在 77.18 / 83.52 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289737+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 62.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 77.18 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 83.52 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "000962": {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "thesis": "东方钽业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.4，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 97.43,
+              "description": "20 日收益 27.0%，量能倍率 1.45，MA10 / MA20 / MA60 为 55.12 / 50.86 / 49.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.35,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 69.04,
+              "description": "日内涨幅 2.6%，换手 6.7%，量比 1.07。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65acfaec79e1",
+              "title": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225325963&orgId=gssz0000962&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "ecccf1a46221",
+              "title": "今年以来定增累计募资2749.49亿元",
+              "publish_time": "2026-05-26T08:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "40.00 计算机 002967 广电计量 13.00 社会服务 688368 晶丰明源 38.33 电子 600459 贵研铂业 12.91 有色金属 000878 云南铜业 38.24 有色金属 000032 深桑达A 12.00 建筑装饰 600418 江淮汽车 35.00 汽车 000962",
+              "link": "http://finance.eastmoney.com/a/202605263748888560.html"
+            },
+            {
+              "event_id": "479afd40f0c9",
+              "title": "关于董事辞职的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于董事辞职的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225312267&orgId=gssz0000962&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 66.46,
+            "stop_loss_price": 61.28,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 79.55,
+            "take_profit_price_1": 75.78,
+            "take_profit_pct_1": 0.1402,
+            "take_profit_price_2": 82.0,
+            "take_profit_pct_2": 0.2338,
+            "trailing_stop_price": 62.23,
+            "suggested_position_min": 0.0716,
+            "suggested_position_max": 0.0992,
+            "max_portfolio_risk": 0.0077,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 61.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 75.78 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 82.00 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 61.28 元作为防守位，并在 75.78 / 82.00 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.97，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于回购注销部分限制性股票减资暨通知债权人的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289782+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 61.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 75.78 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 82.00 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        },
+        "603979": {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "thesis": "金诚信 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 82.5，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 84.06,
+              "description": "当前模式重点关注该维度。工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.67,
+              "description": "20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.02,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 85.99,
+              "description": "日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "21fd581a1b31",
+              "title": "金诚信独立董事提名人和候选人声明公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信独立董事提名人和候选人声明公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "787397f847d3",
+              "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "5d6da4b1632c",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-25T11:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+              "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 75.18,
+            "stop_loss_price": 69.35,
+            "stop_loss_pct": 0.0776,
+            "signal_quality_score": 83.97,
+            "take_profit_price_1": 85.67,
+            "take_profit_pct_1": 0.1395,
+            "take_profit_price_2": 92.67,
+            "take_profit_pct_2": 0.2326,
+            "trailing_stop_price": 70.85,
+            "suggested_position_min": 0.0646,
+            "suggested_position_max": 0.0879,
+            "max_portfolio_risk": 0.0068,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 69.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 85.67 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 92.67 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 69.35 元作为防守位，并在 85.67 / 92.67 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289828+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 69.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 85.67 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 92.67 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业轮动",
+          "技术趋势",
+          "新闻催化",
+          "情绪热度"
+        ]
+      }
+    },
+    "sector_rotation": {
+      "mode_id": "sector_rotation",
+      "display_name": "行业轮动优先",
+      "description": "优先锁定强势行业中最具代表性的龙头和跟涨标的，适合主线行情。",
+      "holding_window": "2-4D",
+      "items": [
+        {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "rank": 1,
+          "base_score": 89.68,
+          "event_score": 54.02,
+          "risk_adjusted_score": 97.33,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "工业金属 位于当前强势行业前列，属于 贵金属, 工业金属, 小金属 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 84.1，个股当日涨幅 7.6%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "rank": 2,
+          "base_score": 92.2,
+          "event_score": 53.32,
+          "risk_adjusted_score": 89.9,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "小金属 位于当前强势行业前列，属于 贵金属, 工业金属, 小金属 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 79.9，个股当日涨幅 5.4%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "rank": 3,
+          "base_score": 83.66,
+          "event_score": 55.35,
+          "risk_adjusted_score": 84.92,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "小金属 位于当前强势行业前列，属于 贵金属, 工业金属, 小金属 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 79.9，个股当日涨幅 2.6%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "rank": 4,
+          "base_score": 79.07,
+          "event_score": 55.9,
+          "risk_adjusted_score": 81.19,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "小金属 位于当前强势行业前列，属于 贵金属, 工业金属, 小金属 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 79.9，个股当日涨幅 4.8%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "业绩财报"
+          ]
+        },
+        {
+          "symbol": "600301",
+          "name": "华锡有色",
+          "industry": "小金属",
+          "rank": 5,
+          "base_score": 71.44,
+          "event_score": 54.04,
+          "risk_adjusted_score": 75.63,
+          "holding_window": "2-4D",
+          "reasons": [
+            {
+              "label": "行业强度",
+              "detail": "小金属 位于当前强势行业前列，属于 贵金属, 工业金属, 小金属 主线之一。"
+            },
+            {
+              "label": "扩散确认",
+              "detail": "板块分 79.9，个股当日涨幅 10.0%，具备主线扩散跟涨条件。"
+            },
+            {
+              "label": "交易关注",
+              "detail": "优先观察主线延续和板块内二次发酵，而不是脱离板块单独追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603979": {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "thesis": "金诚信 属于 工业金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 84.06,
+              "description": "当前模式重点关注该维度。工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.67,
+              "description": "20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.02,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 85.99,
+              "description": "日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "21fd581a1b31",
+              "title": "金诚信独立董事提名人和候选人声明公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信独立董事提名人和候选人声明公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "787397f847d3",
+              "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "5d6da4b1632c",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-25T11:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+              "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 75.18,
+            "stop_loss_price": 69.02,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 83.97,
+            "take_profit_price_1": 86.88,
+            "take_profit_pct_1": 0.1556,
+            "take_profit_price_2": 94.28,
+            "take_profit_pct_2": 0.2541,
+            "trailing_stop_price": 70.85,
+            "suggested_position_min": 0.0672,
+            "suggested_position_max": 0.0915,
+            "max_portfolio_risk": 0.0075,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 69.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 86.88 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 94.28 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 69.02 元作为防守位，并在 86.88 / 94.28 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289894+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 69.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 86.88 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 94.28 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "000657": {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "thesis": "中钨高新 属于 小金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.32,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 94.08,
+              "description": "日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b2927b0c304c",
+              "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "eb0dafabf66b",
+              "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "2ec2714f52cc",
+              "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.68,
+            "stop_loss_price": 62.13,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 85.61,
+            "take_profit_price_1": 78.23,
+            "take_profit_pct_1": 0.1559,
+            "take_profit_price_2": 84.89,
+            "take_profit_pct_2": 0.2543,
+            "trailing_stop_price": 63.17,
+            "suggested_position_min": 0.0691,
+            "suggested_position_max": 0.0935,
+            "max_portfolio_risk": 0.0077,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 62.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 78.23 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 84.89 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 62.13 元作为防守位，并在 78.23 / 84.89 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289934+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 62.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 78.23 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 84.89 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "000962": {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "thesis": "东方钽业 属于 小金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 97.43,
+              "description": "20 日收益 27.0%，量能倍率 1.45，MA10 / MA20 / MA60 为 55.12 / 50.86 / 49.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.35,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 69.04,
+              "description": "日内涨幅 2.6%，换手 6.7%，量比 1.07。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65acfaec79e1",
+              "title": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225325963&orgId=gssz0000962&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "ecccf1a46221",
+              "title": "今年以来定增累计募资2749.49亿元",
+              "publish_time": "2026-05-26T08:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "40.00 计算机 002967 广电计量 13.00 社会服务 688368 晶丰明源 38.33 电子 600459 贵研铂业 12.91 有色金属 000878 云南铜业 38.24 有色金属 000032 深桑达A 12.00 建筑装饰 600418 江淮汽车 35.00 汽车 000962",
+              "link": "http://finance.eastmoney.com/a/202605263748888560.html"
+            },
+            {
+              "event_id": "479afd40f0c9",
+              "title": "关于董事辞职的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于董事辞职的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225312267&orgId=gssz0000962&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 66.46,
+            "stop_loss_price": 61.01,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 79.55,
+            "take_profit_price_1": 76.81,
+            "take_profit_pct_1": 0.1557,
+            "take_profit_price_2": 83.35,
+            "take_profit_pct_2": 0.2541,
+            "trailing_stop_price": 62.23,
+            "suggested_position_min": 0.0749,
+            "suggested_position_max": 0.1038,
+            "max_portfolio_risk": 0.0085,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 61.01 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 76.81 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 83.35 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 61.01 元作为防守位，并在 76.81 / 83.35 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.97，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于回购注销部分限制性股票减资暨通知债权人的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.289990+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 61.01 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 76.81 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 83.35 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "000960": {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "thesis": "锡业股份 属于 小金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 71.37,
+              "description": "20 日收益 -1.1%，量能倍率 0.93，MA10 / MA20 / MA60 为 38.12 / 37.98 / 36.46。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.9,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 88.49,
+              "description": "日内涨幅 4.8%，换手 6.5%，量比 1.55。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5e68623d2f0a",
+              "title": "有色金属行业5月25日资金流向日报",
+              "publish_time": "2026-05-25T17:38:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "（数据宝） 有色金属行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 603993 洛阳钼业 4.37 1.51 23832.83 000960 锡业股份 4.81 5.39 19703.54 000969 安泰科技 5.68 8.85 14434.60",
+              "link": "http://finance.eastmoney.com/a/202605253748277840.html"
+            },
+            {
+              "event_id": "ec227f048e53",
+              "title": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000960&announcementId=1225328993&orgId=gssz0000960&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3538f7fd61a7",
+              "title": "锡业股份000960.SZ)：2026年一季报净利润为8.68亿元、同比较去年同期上涨73.71%",
+              "publish_time": "2026-04-28T09:40:29",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年4月28日，锡业股份000960.SZ)发布2026年一季报。 公司营业总收入为155.52亿元，较去年同报告期营业总收入增加58.23亿元，实现2年连续上涨，同比较去年同期上涨59.86%。",
+              "link": "http://finance.eastmoney.com/a/202604283721749819.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 41.74,
+            "stop_loss_price": 38.32,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 75.06,
+            "take_profit_price_1": 48.24,
+            "take_profit_pct_1": 0.1557,
+            "take_profit_price_2": 52.34,
+            "take_profit_pct_2": 0.254,
+            "trailing_stop_price": 38.97,
+            "suggested_position_min": 0.0706,
+            "suggested_position_max": 0.0997,
+            "max_portfolio_risk": 0.0082,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 38.32 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 48.24 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 52.34 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 行业轮动优先 模式，当前更适合 分批试仓。规则建议以 38.32 元作为防守位，并在 48.24 / 52.34 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.49，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：有色金属行业5月25日资金流向日报"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290038+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 38.32 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 48.24 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 52.34 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。"
+          ]
+        },
+        "600301": {
+          "symbol": "600301",
+          "name": "华锡有色",
+          "industry": "小金属",
+          "thesis": "华锡有色 属于 小金属 强势主线中的代表标的，更适合作为行业扩散阶段的跟踪对象。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“行业轮动优先”模式，它更强调 行业强度, 资金共识, 龙头扩散。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 52.46,
+              "description": "20 日收益 -3.3%，量能倍率 0.85，MA10 / MA20 / MA60 为 56.33 / 55.56 / 55.10。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.04,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 88.25,
+              "description": "日内涨幅 10.0%，换手 8.3%，量比 1.82。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "08e3a098b947",
+              "title": "广西华锡有色金属股份有限公司关于与关联人共同投资进展暨完成股权交割的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "广西华锡有色金属股份有限公司关于与关联人共同投资进展暨完成股权交割的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600301&announcementId=1225326053&orgId=gssh0600301&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "a60a9e03e5ec",
+              "title": "广西华锡有色金属股份有限公司关于变更办公地址及投资者联系方式的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "广西华锡有色金属股份有限公司关于变更办公地址及投资者联系方式的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600301&announcementId=1225313337&orgId=gssh0600301&announcementTime=2026-05-19"
+            },
+            {
+              "event_id": "4f756c834975",
+              "title": "有色金属行业5月25日资金流向日报",
+              "publish_time": "2026-05-25T17:38:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "8.85 14434.60 300139 晓程科技 4.17 11.49 11083.30 300811 铂科新材 10.97 9.67 9122.26 002428 云南锗业 2.64 11.99 8250.66 300835 龙磁科技 20.00 11.77 5461.91 600301",
+              "link": "http://finance.eastmoney.com/a/202605253748277840.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 61.22,
+            "stop_loss_price": 56.2,
+            "stop_loss_pct": 0.082,
+            "signal_quality_score": 68.28,
+            "take_profit_price_1": 70.76,
+            "take_profit_pct_1": 0.1558,
+            "take_profit_price_2": 76.78,
+            "take_profit_pct_2": 0.2542,
+            "trailing_stop_price": 56.9,
+            "suggested_position_min": 0.0539,
+            "suggested_position_max": 0.0784,
+            "max_portfolio_risk": 0.0064,
+            "risk_reward_ratio": 1.9,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 56.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 70.76 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 76.78 元，若继续上行则把跟踪止损上移到 56.90 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 行业轮动优先 模式，当前更适合 谨慎追高。规则建议以 56.20 元作为防守位，并在 70.76 / 76.78 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业强度, 资金共识, 龙头扩散，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：广西华锡有色金属股份有限公司关于与关联人共同投资进展暨完成股权交割的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290082+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 56.20 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 70.76 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 76.78 元，若继续上行则把跟踪止损上移到 56.90 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若所属行业跌出强势行业前五，优先降低该模式暴露。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "行业强度",
+          "资金共识",
+          "龙头扩散"
+        ]
+      }
+    },
+    "event_driven": {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D",
+      "items": [
+        {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "rank": 1,
+          "base_score": 89.42,
+          "event_score": 72.16,
+          "risk_adjusted_score": 89.39,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 72.2，情绪分 96.9，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "rank": 2,
+          "base_score": 93.26,
+          "event_score": 60.09,
+          "risk_adjusted_score": 82.95,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于为全资子公司提供担保的进展公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 60.1，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "rank": 3,
+          "base_score": 92.2,
+          "event_score": 53.32,
+          "risk_adjusted_score": 74.38,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 53.3，情绪分 94.1，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "rank": 4,
+          "base_score": 89.68,
+          "event_score": 54.02,
+          "risk_adjusted_score": 73.46,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "金诚信独立董事提名人和候选人声明公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 54.0，情绪分 86.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "rank": 5,
+          "base_score": 79.07,
+          "event_score": 55.9,
+          "risk_adjusted_score": 69.36,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "有色金属行业5月25日资金流向日报"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 55.9，情绪分 88.5，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "业绩财报"
+          ]
+        }
+      ],
+      "stock_details": {
+        "603936": {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "thesis": "博敏电子 的新闻事件打分为 72.2，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.71,
+              "description": "20 日收益 50.5%，量能倍率 1.00，MA10 / MA20 / MA60 为 21.47 / 19.16 / 15.66。"
+            },
+            {
+              "name": "事件强度",
+              "value": 72.16,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 96.91,
+              "description": "日内涨幅 5.9%，换手 17.9%，量比 1.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "d29caa9fb877",
+              "title": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329496&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "14657094104e",
+              "title": "博敏电子股票交易异常波动公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329484&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3942b17f72ba",
+              "title": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329494&orgId=9900024943&announcementTime=2026-05-26"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 26.32,
+            "stop_loss_price": 24.42,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 86.1,
+            "take_profit_price_1": 29.55,
+            "take_profit_pct_1": 0.1227,
+            "take_profit_price_2": 31.64,
+            "take_profit_pct_2": 0.2021,
+            "trailing_stop_price": 24.49,
+            "suggested_position_min": 0.0579,
+            "suggested_position_max": 0.0781,
+            "max_portfolio_risk": 0.0056,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 24.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 29.55 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 31.64 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 24.42 元作为防守位，并在 29.55 / 31.64 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290149+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 24.42 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 29.55 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 31.64 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "002463": {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "thesis": "沪电股份 的新闻事件打分为 60.1，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 19.2%，量能倍率 1.24，MA10 / MA20 / MA60 为 108.20 / 106.43 / 91.02。"
+            },
+            {
+              "name": "事件强度",
+              "value": 60.09,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.8%，换手 6.0%，量比 1.51。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "cbd29e5eb7ea",
+              "title": "关于为全资子公司提供担保的进展公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于为全资子公司提供担保的进展公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225328396&orgId=9900013929&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "8a35cc470980",
+              "title": "关于独立董事取得独立董事资格证书的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于独立董事取得独立董事资格证书的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225319143&orgId=9900013929&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "0848f6b6a8d4",
+              "title": "关于部分股票期权注销完成的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于部分股票期权注销完成的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225282073&orgId=9900013929&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 133.35,
+            "stop_loss_price": 124.33,
+            "stop_loss_pct": 0.0676,
+            "signal_quality_score": 87.33,
+            "take_profit_price_1": 148.68,
+            "take_profit_pct_1": 0.115,
+            "take_profit_price_2": 158.61,
+            "take_profit_pct_2": 0.1894,
+            "trailing_stop_price": 125.94,
+            "suggested_position_min": 0.0594,
+            "suggested_position_max": 0.0797,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 124.33 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 148.68 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 158.61 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 124.33 元作为防守位，并在 148.68 / 158.61 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于为全资子公司提供担保的进展公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290189+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 124.33 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 148.68 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 158.61 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "000657": {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "thesis": "中钨高新 的新闻事件打分为 53.3，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.32,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 94.08,
+              "description": "日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b2927b0c304c",
+              "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "eb0dafabf66b",
+              "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "2ec2714f52cc",
+              "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.68,
+            "stop_loss_price": 62.81,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 85.61,
+            "take_profit_price_1": 75.96,
+            "take_profit_pct_1": 0.1223,
+            "take_profit_price_2": 81.32,
+            "take_profit_pct_2": 0.2015,
+            "trailing_stop_price": 63.17,
+            "suggested_position_min": 0.062,
+            "suggested_position_max": 0.0839,
+            "max_portfolio_risk": 0.006,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 62.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 75.96 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 81.32 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 62.81 元作为防守位，并在 75.96 / 81.32 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290225+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 62.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 75.96 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 81.32 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "603979": {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "thesis": "金诚信 的新闻事件打分为 54.0，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 84.06,
+              "description": "工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.67,
+              "description": "20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.02,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 85.99,
+              "description": "日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "21fd581a1b31",
+              "title": "金诚信独立董事提名人和候选人声明公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信独立董事提名人和候选人声明公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "787397f847d3",
+              "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "5d6da4b1632c",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-25T11:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+              "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 75.18,
+            "stop_loss_price": 69.91,
+            "stop_loss_pct": 0.0701,
+            "signal_quality_score": 83.97,
+            "take_profit_price_1": 84.14,
+            "take_profit_pct_1": 0.1192,
+            "take_profit_price_2": 89.94,
+            "take_profit_pct_2": 0.1963,
+            "trailing_stop_price": 70.85,
+            "suggested_position_min": 0.062,
+            "suggested_position_max": 0.0844,
+            "max_portfolio_risk": 0.0059,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 69.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 84.14 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 89.94 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 69.91 元作为防守位，并在 84.14 / 89.94 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290258+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 69.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 84.14 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 89.94 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        },
+        "000960": {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "thesis": "锡业股份 的新闻事件打分为 55.9，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 71.37,
+              "description": "20 日收益 -1.1%，量能倍率 0.93，MA10 / MA20 / MA60 为 38.12 / 37.98 / 36.46。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.9,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 88.49,
+              "description": "日内涨幅 4.8%，换手 6.5%，量比 1.55。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5e68623d2f0a",
+              "title": "有色金属行业5月25日资金流向日报",
+              "publish_time": "2026-05-25T17:38:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "（数据宝） 有色金属行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 603993 洛阳钼业 4.37 1.51 23832.83 000960 锡业股份 4.81 5.39 19703.54 000969 安泰科技 5.68 8.85 14434.60",
+              "link": "http://finance.eastmoney.com/a/202605253748277840.html"
+            },
+            {
+              "event_id": "ec227f048e53",
+              "title": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000960&announcementId=1225328993&orgId=gssz0000960&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3538f7fd61a7",
+              "title": "锡业股份000960.SZ)：2026年一季报净利润为8.68亿元、同比较去年同期上涨73.71%",
+              "publish_time": "2026-04-28T09:40:29",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年4月28日，锡业股份000960.SZ)发布2026年一季报。 公司营业总收入为155.52亿元，较去年同报告期营业总收入增加58.23亿元，实现2年连续上涨，同比较去年同期上涨59.86%。",
+              "link": "http://finance.eastmoney.com/a/202604283721749819.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 41.74,
+            "stop_loss_price": 38.73,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 75.06,
+            "take_profit_price_1": 46.86,
+            "take_profit_pct_1": 0.1227,
+            "take_profit_price_2": 50.17,
+            "take_profit_pct_2": 0.202,
+            "trailing_stop_price": 38.97,
+            "suggested_position_min": 0.0601,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0061,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 38.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 46.86 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 50.17 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 38.73 元作为防守位，并在 46.86 / 50.17 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.49，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：有色金属行业5月25日资金流向日报"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290291+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 38.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 46.86 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 50.17 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "事件催化",
+          "政策新闻",
+          "公告情绪"
+        ]
+      }
+    },
+    "trend_breakout": {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D",
+      "items": [
+        {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "rank": 1,
+          "base_score": 93.26,
+          "event_score": 60.09,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 108.20 / MA20 106.43 / MA60 91.02，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.24，20 日收益 19.2%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "rank": 2,
+          "base_score": 92.2,
+          "event_score": 53.32,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 58.71 / MA20 58.33 / MA60 56.06，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.22，20 日收益 10.5%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "rank": 3,
+          "base_score": 89.68,
+          "event_score": 54.02,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 65.82 / MA20 64.71 / MA60 63.70，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.02，20 日收益 8.3%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "rank": 4,
+          "base_score": 89.42,
+          "event_score": 72.16,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 21.47 / MA20 19.16 / MA60 15.66，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.00，20 日收益 50.5%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "rank": 5,
+          "base_score": 83.66,
+          "event_score": 55.35,
+          "risk_adjusted_score": 97.04,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 55.12 / MA20 50.86 / MA60 49.21，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.45，20 日收益 27.0%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "其他",
+            "官方公告"
+          ]
+        }
+      ],
+      "stock_details": {
+        "002463": {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "thesis": "沪电股份 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 19.2%，量能倍率 1.24，MA10 / MA20 / MA60 为 108.20 / 106.43 / 91.02。"
+            },
+            {
+              "name": "事件强度",
+              "value": 60.09,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 8.8%，换手 6.0%，量比 1.51。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "cbd29e5eb7ea",
+              "title": "关于为全资子公司提供担保的进展公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于为全资子公司提供担保的进展公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225328396&orgId=9900013929&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "8a35cc470980",
+              "title": "关于独立董事取得独立董事资格证书的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于独立董事取得独立董事资格证书的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225319143&orgId=9900013929&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "0848f6b6a8d4",
+              "title": "关于部分股票期权注销完成的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于部分股票期权注销完成的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225282073&orgId=9900013929&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 133.35,
+            "stop_loss_price": 121.75,
+            "stop_loss_pct": 0.087,
+            "signal_quality_score": 87.33,
+            "take_profit_price_1": 156.55,
+            "take_profit_pct_1": 0.174,
+            "take_profit_price_2": 171.63,
+            "take_profit_pct_2": 0.2871,
+            "trailing_stop_price": 125.94,
+            "suggested_position_min": 0.0604,
+            "suggested_position_max": 0.0811,
+            "max_portfolio_risk": 0.0071,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 121.75 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 156.55 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 171.63 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 121.75 元作为防守位，并在 156.55 / 171.63 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于为全资子公司提供担保的进展公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290349+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 121.75 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 156.55 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 171.63 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "000657": {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "thesis": "中钨高新 具备较完整的均线多头与放量突破结构，技术分 100.0，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.32,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 94.08,
+              "description": "日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b2927b0c304c",
+              "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "eb0dafabf66b",
+              "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "2ec2714f52cc",
+              "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.68,
+            "stop_loss_price": 61.59,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 85.61,
+            "take_profit_price_1": 79.86,
+            "take_profit_pct_1": 0.18,
+            "take_profit_price_2": 87.78,
+            "take_profit_pct_2": 0.297,
+            "trailing_stop_price": 63.17,
+            "suggested_position_min": 0.0649,
+            "suggested_position_max": 0.0877,
+            "max_portfolio_risk": 0.0079,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 61.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 79.86 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 87.78 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 61.59 元作为防守位，并在 79.86 / 87.78 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290422+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 61.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 79.86 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 87.78 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "603979": {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "thesis": "金诚信 具备较完整的均线多头与放量突破结构，技术分 96.7，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 84.06,
+              "description": "工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.67,
+              "description": "当前模式重点关注该维度。20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.02,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 85.99,
+              "description": "日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "21fd581a1b31",
+              "title": "金诚信独立董事提名人和候选人声明公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信独立董事提名人和候选人声明公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "787397f847d3",
+              "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "5d6da4b1632c",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-25T11:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+              "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 75.18,
+            "stop_loss_price": 68.41,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 83.97,
+            "take_profit_price_1": 88.72,
+            "take_profit_pct_1": 0.1801,
+            "take_profit_price_2": 97.52,
+            "take_profit_pct_2": 0.2972,
+            "trailing_stop_price": 70.85,
+            "suggested_position_min": 0.0631,
+            "suggested_position_max": 0.0859,
+            "max_portfolio_risk": 0.0077,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 68.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 88.72 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 97.52 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 68.41 元作为防守位，并在 88.72 / 97.52 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290463+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 68.41 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 88.72 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 97.52 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "603936": {
+          "symbol": "603936",
+          "name": "博敏电子",
+          "industry": "元件",
+          "thesis": "博敏电子 具备较完整的均线多头与放量突破结构，技术分 92.7，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 92.71,
+              "description": "当前模式重点关注该维度。20 日收益 50.5%，量能倍率 1.00，MA10 / MA20 / MA60 为 21.47 / 19.16 / 15.66。"
+            },
+            {
+              "name": "事件强度",
+              "value": 72.16,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 96.91,
+              "description": "日内涨幅 5.9%，换手 17.9%，量比 1.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "d29caa9fb877",
+              "title": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329496&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "14657094104e",
+              "title": "博敏电子股票交易异常波动公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "high",
+              "summary": "博敏电子股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329484&orgId=9900024943&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3942b17f72ba",
+              "title": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329494&orgId=9900024943&announcementTime=2026-05-26"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 26.32,
+            "stop_loss_price": 23.95,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 86.1,
+            "take_profit_price_1": 31.06,
+            "take_profit_pct_1": 0.1801,
+            "take_profit_price_2": 34.14,
+            "take_profit_pct_2": 0.2971,
+            "trailing_stop_price": 24.49,
+            "suggested_position_min": 0.0606,
+            "suggested_position_max": 0.0817,
+            "max_portfolio_risk": 0.0074,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 23.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 31.06 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 34.14 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 23.95 元作为防守位，并在 31.06 / 34.14 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290498+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 23.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 31.06 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 34.14 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        },
+        "000962": {
+          "symbol": "000962",
+          "name": "东方钽业",
+          "industry": "小金属",
+          "thesis": "东方钽业 具备较完整的均线多头与放量突破结构，技术分 97.4，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 97.43,
+              "description": "当前模式重点关注该维度。20 日收益 27.0%，量能倍率 1.45，MA10 / MA20 / MA60 为 55.12 / 50.86 / 49.21。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.35,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 69.04,
+              "description": "日内涨幅 2.6%，换手 6.7%，量比 1.07。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65acfaec79e1",
+              "title": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225325963&orgId=gssz0000962&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "ecccf1a46221",
+              "title": "今年以来定增累计募资2749.49亿元",
+              "publish_time": "2026-05-26T08:56:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "40.00 计算机 002967 广电计量 13.00 社会服务 688368 晶丰明源 38.33 电子 600459 贵研铂业 12.91 有色金属 000878 云南铜业 38.24 有色金属 000032 深桑达A 12.00 建筑装饰 600418 江淮汽车 35.00 汽车 000962",
+              "link": "http://finance.eastmoney.com/a/202605263748888560.html"
+            },
+            {
+              "event_id": "479afd40f0c9",
+              "title": "关于董事辞职的公告",
+              "publish_time": "2026-05-19T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于董事辞职的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225312267&orgId=gssz0000962&announcementTime=2026-05-19"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 66.46,
+            "stop_loss_price": 60.48,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 79.55,
+            "take_profit_price_1": 78.42,
+            "take_profit_pct_1": 0.18,
+            "take_profit_price_2": 86.19,
+            "take_profit_pct_2": 0.2969,
+            "trailing_stop_price": 62.23,
+            "suggested_position_min": 0.0703,
+            "suggested_position_max": 0.0975,
+            "max_portfolio_risk": 0.0088,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 60.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 78.42 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 86.19 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 60.48 元作为防守位，并在 78.42 / 86.19 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.97，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于回购注销部分限制性股票减资暨通知债权人的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290533+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 60.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 78.42 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 86.19 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "均线多头",
+          "放量突破",
+          "趋势延续"
+        ]
+      }
+    },
+    "short_term_relay": {
+      "mode_id": "short_term_relay",
+      "display_name": "短线情绪接力",
+      "description": "用日线涨速、换手和量比近似短线情绪强度，适合次日强势跟踪。",
+      "holding_window": "1-2D",
+      "items": [
+        {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "rank": 1,
+          "base_score": 93.26,
+          "event_score": 60.09,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 8.8%，换手 6.0%，量比 1.51。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 1.24 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "002134",
+          "name": "天津普林",
+          "industry": "元件",
+          "rank": 2,
+          "base_score": 81.63,
+          "event_score": 52.8,
+          "risk_adjusted_score": 100,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 7.2%，换手 11.4%，量比 2.31。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 100.0，近 5 日量能提升 0.85 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "业绩财报",
+            "资金交易",
+            "资金交易"
+          ]
+        },
+        {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "rank": 3,
+          "base_score": 92.2,
+          "event_score": 53.32,
+          "risk_adjusted_score": 95.86,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 5.4%，换手 8.8%，量比 1.43。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 94.1，近 5 日量能提升 1.22 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "官方公告"
+          ]
+        },
+        {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "rank": 4,
+          "base_score": 89.68,
+          "event_score": 54.02,
+          "risk_adjusted_score": 95.47,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 7.6%，换手 2.6%，量比 1.31。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 86.0，近 5 日量能提升 1.02 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "rank": 5,
+          "base_score": 79.07,
+          "event_score": 55.9,
+          "risk_adjusted_score": 86.75,
+          "holding_window": "1-2D",
+          "reasons": [
+            {
+              "label": "情绪强度",
+              "detail": "当日涨幅 4.8%，换手 6.5%，量比 1.55。"
+            },
+            {
+              "label": "接力质量",
+              "detail": "情绪分 88.5，近 5 日量能提升 0.93 倍。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "适合做强势股次日跟踪，不适合把它当作中线持仓池。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "业绩财报"
+          ]
+        }
+      ],
+      "stock_details": {
+        "002463": {
+          "symbol": "002463",
+          "name": "沪电股份",
+          "industry": "元件",
+          "thesis": "沪电股份 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 19.2%，量能倍率 1.24，MA10 / MA20 / MA60 为 108.20 / 106.43 / 91.02。"
+            },
+            {
+              "name": "事件强度",
+              "value": 60.09,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 8.8%，换手 6.0%，量比 1.51。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "cbd29e5eb7ea",
+              "title": "关于为全资子公司提供担保的进展公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "positive",
+              "impact_level": "medium",
+              "summary": "关于为全资子公司提供担保的进展公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225328396&orgId=9900013929&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "8a35cc470980",
+              "title": "关于独立董事取得独立董事资格证书的公告",
+              "publish_time": "2026-05-21T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于独立董事取得独立董事资格证书的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225319143&orgId=9900013929&announcementTime=2026-05-21"
+            },
+            {
+              "event_id": "0848f6b6a8d4",
+              "title": "关于部分股票期权注销完成的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于部分股票期权注销完成的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225282073&orgId=9900013929&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 133.35,
+            "stop_loss_price": 125.3,
+            "stop_loss_pct": 0.0604,
+            "signal_quality_score": 87.33,
+            "take_profit_price_1": 146.23,
+            "take_profit_pct_1": 0.0966,
+            "take_profit_price_2": 153.47,
+            "take_profit_pct_2": 0.1509,
+            "trailing_stop_price": 125.94,
+            "suggested_position_min": 0.0558,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0045,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 125.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 146.23 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 153.47 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.66,
+            "summary": "基于 短线情绪接力 模式，当前更适合 谨慎追高。规则建议以 125.30 元作为防守位，并在 146.23 / 153.47 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于为全资子公司提供担保的进展公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290613+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 125.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 146.23 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 153.47 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "002134": {
+          "symbol": "002134",
+          "name": "天津普林",
+          "industry": "元件",
+          "thesis": "天津普林 当前日内热度高、换手活跃，情绪分 100.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 77.54,
+              "description": "元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 70.91,
+              "description": "20 日收益 30.8%，量能倍率 0.85，MA10 / MA20 / MA60 为 30.09 / 28.05 / 23.81。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.8,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "当前模式重点关注该维度。日内涨幅 7.2%，换手 11.4%，量比 2.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "18954fdc3ba5",
+              "title": "4月13日晚间重要公告 | 报喜！002134 一季度净利大增2187%",
+              "publish_time": "2026-04-14T00:05:00",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日看点 聚焦一：天津普林（002134）：一季度净利润同比增长2187.33% 公司披露一季报，2026年第一季度实现营业收入4.24亿元，同比增长42.39%；实现归属于上市公司股东的净利润1159.14万元，同比增长2187.33%；基本每股收益0.05元。",
+              "link": "http://finance.eastmoney.com/a/202604143703381137.html"
+            },
+            {
+              "event_id": "e6d9a697fdb9",
+              "title": "PCB概念上涨6.33%，44股主力资金净流入超亿元",
+              "publish_time": "2026-05-22T16:31:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "惠柏新材 4.03 9.83 -1139.51 -5.88 301630 同宇新材 7.18 16.14 -1194.30 -2.84 603219 富佳股份 0.50 1.51 -1228.70 -7.94 688025 杰普特 18.28 5.19 -1285.11 -0.62 002134",
+              "link": "http://finance.eastmoney.com/a/202605223746758292.html"
+            },
+            {
+              "event_id": "d832c92be685",
+              "title": "大飞机概念涨2.18%，主力资金净流入这些股",
+              "publish_time": "2026-05-08T16:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "300845 捷安高科 6.16 13.39 1674.25 5.92 600399 抚顺特钢 2.86 3.01 1611.05 4.77 300775 三角防务 1.99 4.92 1515.35 1.87 300034 钢研高纳 2.26 3.01 1472.69 3.10 002134",
+              "link": "http://finance.eastmoney.com/a/202605083731538866.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 32.82,
+            "stop_loss_price": 30.85,
+            "stop_loss_pct": 0.0601,
+            "signal_quality_score": 76.27,
+            "take_profit_price_1": 35.97,
+            "take_profit_pct_1": 0.096,
+            "take_profit_price_2": 37.74,
+            "take_profit_pct_2": 0.1499,
+            "trailing_stop_price": 31.0,
+            "suggested_position_min": 0.0533,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0045,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 30.85 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 35.97 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 37.74 元，若继续上行则把跟踪止损上移到 31.00 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 30.85 元作为防守位，并在 35.97 / 37.74 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 2.14，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：4月13日晚间重要公告 | 报喜！002134 一季度净利大增2187%"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290650+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 30.85 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 35.97 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 37.74 元，若继续上行则把跟踪止损上移到 31.00 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "000657": {
+          "symbol": "000657",
+          "name": "中钨高新",
+          "industry": "小金属",
+          "thesis": "中钨高新 当前日内热度高、换手活跃，情绪分 94.1，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 100.0,
+              "description": "20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.32,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 94.08,
+              "description": "当前模式重点关注该维度。日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "b2927b0c304c",
+              "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "eb0dafabf66b",
+              "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "publish_time": "2026-05-16T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+            },
+            {
+              "event_id": "2ec2714f52cc",
+              "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "publish_time": "2026-05-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 67.68,
+            "stop_loss_price": 63.28,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 85.61,
+            "take_profit_price_1": 74.72,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 78.68,
+            "take_profit_pct_2": 0.1625,
+            "trailing_stop_price": 63.17,
+            "suggested_position_min": 0.0555,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 63.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 74.72 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 78.68 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 63.28 元作为防守位，并在 74.72 / 78.68 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290682+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 63.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 74.72 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 78.68 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "603979": {
+          "symbol": "603979",
+          "name": "金诚信",
+          "industry": "工业金属",
+          "thesis": "金诚信 当前日内热度高、换手活跃，情绪分 86.0，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 84.06,
+              "description": "工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 96.67,
+              "description": "20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.02,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 85.99,
+              "description": "当前模式重点关注该维度。日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "21fd581a1b31",
+              "title": "金诚信独立董事提名人和候选人声明公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信独立董事提名人和候选人声明公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "787397f847d3",
+              "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "publish_time": "2026-05-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+            },
+            {
+              "event_id": "5d6da4b1632c",
+              "title": "今日盘中突破半年线个股",
+              "publish_time": "2026-05-25T11:15:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+              "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 75.18,
+            "stop_loss_price": 70.48,
+            "stop_loss_pct": 0.0626,
+            "signal_quality_score": 83.97,
+            "take_profit_price_1": 82.7,
+            "take_profit_pct_1": 0.1,
+            "take_profit_price_2": 86.93,
+            "take_profit_pct_2": 0.1563,
+            "trailing_stop_price": 70.85,
+            "suggested_position_min": 0.0551,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0047,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 70.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 82.70 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 86.93 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 70.48 元作为防守位，并在 82.70 / 86.93 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290715+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 70.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 82.70 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 86.93 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        },
+        "000960": {
+          "symbol": "000960",
+          "name": "锡业股份",
+          "industry": "小金属",
+          "thesis": "锡业股份 当前日内热度高、换手活跃，情绪分 88.5，适合短线接力风格的次日观察。",
+          "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“短线情绪接力”模式，它更强调 涨幅强度, 换手接力, 资金活跃度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 79.93,
+              "description": "小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 71.37,
+              "description": "20 日收益 -1.1%，量能倍率 0.93，MA10 / MA20 / MA60 为 38.12 / 37.98 / 36.46。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.9,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 88.49,
+              "description": "当前模式重点关注该维度。日内涨幅 4.8%，换手 6.5%，量比 1.55。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5e68623d2f0a",
+              "title": "有色金属行业5月25日资金流向日报",
+              "publish_time": "2026-05-25T17:38:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "（数据宝） 有色金属行业资金流入榜 代码 简称 今日涨跌幅（%） 今日换手率（%） 主力资金流量（万元） 603993 洛阳钼业 4.37 1.51 23832.83 000960 锡业股份 4.81 5.39 19703.54 000969 安泰科技 5.68 8.85 14434.60",
+              "link": "http://finance.eastmoney.com/a/202605253748277840.html"
+            },
+            {
+              "event_id": "ec227f048e53",
+              "title": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "publish_time": "2026-05-26T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "云南锡业股份有限公司控股股东及其一致行动人减持股份超过1%的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000960&announcementId=1225328993&orgId=gssz0000960&announcementTime=2026-05-26"
+            },
+            {
+              "event_id": "3538f7fd61a7",
+              "title": "锡业股份000960.SZ)：2026年一季报净利润为8.68亿元、同比较去年同期上涨73.71%",
+              "publish_time": "2026-04-28T09:40:29",
+              "source": "界面新闻",
+              "source_category": "个股资讯",
+              "event_type": "业绩财报",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "2026年4月28日，锡业股份000960.SZ)发布2026年一季报。 公司营业总收入为155.52亿元，较去年同报告期营业总收入增加58.23亿元，实现2年连续上涨，同比较去年同期上涨59.86%。",
+              "link": "http://finance.eastmoney.com/a/202604283721749819.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 41.74,
+            "stop_loss_price": 39.03,
+            "stop_loss_pct": 0.065,
+            "signal_quality_score": 75.06,
+            "take_profit_price_1": 46.08,
+            "take_profit_pct_1": 0.104,
+            "take_profit_price_2": 48.52,
+            "take_profit_pct_2": 0.1624,
+            "trailing_stop_price": 38.97,
+            "suggested_position_min": 0.0531,
+            "suggested_position_max": 0.075,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 1.6,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 39.03 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 46.08 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 48.52 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 短线情绪接力 模式，当前更适合 分批试仓。规则建议以 39.03 元作为防守位，并在 46.08 / 48.52 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 涨幅强度, 换手接力, 资金活跃度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 3.49，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：有色金属行业5月25日资金流向日报"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-05-26T07:00:48.290748+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 39.03 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 46.08 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 48.52 元，若继续上行则把跟踪止损上移到 38.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若次日高开后无法延续强势，优先按纪律快速减仓。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 5,
+        "preferred_features": [
+          "涨幅强度",
+          "换手接力",
+          "资金活跃度"
+        ]
+      }
+    }
+  },
+  "candidate_pool": [
+    {
+      "symbol": "002463",
+      "name": "沪电股份",
+      "industry": "元件",
+      "rank": 1,
+      "base_score": 93.26,
+      "event_score": 60.09,
+      "risk_adjusted_score": 90.73,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "元件 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "沪电股份 近 20 日收益 19.2%，技术分 100.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于为全资子公司提供担保的进展公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "603936",
+      "name": "博敏电子",
+      "industry": "元件",
+      "rank": 2,
+      "base_score": 89.42,
+      "event_score": 72.16,
+      "risk_adjusted_score": 90.19,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "元件 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "博敏电子 近 20 日收益 50.5%，技术分 92.7。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "000657",
+      "name": "中钨高新",
+      "industry": "小金属",
+      "rank": 3,
+      "base_score": 92.2,
+      "event_score": 53.32,
+      "risk_adjusted_score": 83.86,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "小金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "中钨高新 近 20 日收益 10.5%，技术分 100.0。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "000962",
+      "name": "东方钽业",
+      "industry": "小金属",
+      "rank": 4,
+      "base_score": 83.66,
+      "event_score": 55.35,
+      "risk_adjusted_score": 83.44,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "小金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "东方钽业 近 20 日收益 27.0%，技术分 97.4。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于回购注销部分限制性股票减资暨通知债权人的公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "其他",
+        "官方公告"
+      ]
+    },
+    {
+      "symbol": "603979",
+      "name": "金诚信",
+      "industry": "工业金属",
+      "rank": 5,
+      "base_score": 89.68,
+      "event_score": 54.02,
+      "risk_adjusted_score": 82.47,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "工业金属 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "金诚信 近 20 日收益 8.3%，技术分 96.7。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "金诚信独立董事提名人和候选人声明公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "其他"
+      ]
+    }
+  ],
+  "stock_details": {
+    "002463": {
+      "symbol": "002463",
+      "name": "沪电股份",
+      "industry": "元件",
+      "thesis": "沪电股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.7，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 77.54,
+          "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 100.0,
+          "description": "20 日收益 19.2%，量能倍率 1.24，MA10 / MA20 / MA60 为 108.20 / 106.43 / 91.02。"
+        },
+        {
+          "name": "事件强度",
+          "value": 60.09,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 8.8%，换手 6.0%，量比 1.51。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "cbd29e5eb7ea",
+          "title": "关于为全资子公司提供担保的进展公告",
+          "publish_time": "2026-05-26T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "关于为全资子公司提供担保的进展公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225328396&orgId=9900013929&announcementTime=2026-05-26"
+        },
+        {
+          "event_id": "8a35cc470980",
+          "title": "关于独立董事取得独立董事资格证书的公告",
+          "publish_time": "2026-05-21T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于独立董事取得独立董事资格证书的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225319143&orgId=9900013929&announcementTime=2026-05-21"
+        },
+        {
+          "event_id": "0848f6b6a8d4",
+          "title": "关于部分股票期权注销完成的公告",
+          "publish_time": "2026-05-08T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于部分股票期权注销完成的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002463&announcementId=1225282073&orgId=9900013929&announcementTime=2026-05-08"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 133.35,
+        "stop_loss_price": 123.36,
+        "stop_loss_pct": 0.0749,
+        "signal_quality_score": 87.33,
+        "take_profit_price_1": 151.33,
+        "take_profit_pct_1": 0.1348,
+        "take_profit_price_2": 163.32,
+        "take_profit_pct_2": 0.2247,
+        "trailing_stop_price": 125.94,
+        "suggested_position_min": 0.0619,
+        "suggested_position_max": 0.0831,
+        "max_portfolio_risk": 0.0062,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 123.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 151.33 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 163.32 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.66,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 123.36 元作为防守位，并在 151.33 / 163.32 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.41，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于为全资子公司提供担保的进展公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-26T07:00:48.289619+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 123.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 151.33 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 163.32 元，若继续上行则把跟踪止损上移到 125.94 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "603936": {
+      "symbol": "603936",
+      "name": "博敏电子",
+      "industry": "元件",
+      "thesis": "博敏电子 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.2，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 77.54,
+          "description": "当前模式重点关注该维度。元件 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 92.71,
+          "description": "20 日收益 50.5%，量能倍率 1.00，MA10 / MA20 / MA60 为 21.47 / 19.16 / 15.66。"
+        },
+        {
+          "name": "事件强度",
+          "value": 72.16,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 96.91,
+          "description": "日内涨幅 5.9%，换手 17.9%，量比 1.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "d29caa9fb877",
+          "title": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+          "publish_time": "2026-05-26T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "博敏电子关于调整2025年年度利润分配现金分红总额的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329496&orgId=9900024943&announcementTime=2026-05-26"
+        },
+        {
+          "event_id": "14657094104e",
+          "title": "博敏电子股票交易异常波动公告",
+          "publish_time": "2026-05-26T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "high",
+          "summary": "博敏电子股票交易异常波动公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329484&orgId=9900024943&announcementTime=2026-05-26"
+        },
+        {
+          "event_id": "3942b17f72ba",
+          "title": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+          "publish_time": "2026-05-26T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "positive",
+          "impact_level": "medium",
+          "summary": "博敏电子关于变更注册资本、修订《公司章程》并办理工商变更登记的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603936&announcementId=1225329494&orgId=9900024943&announcementTime=2026-05-26"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 26.32,
+        "stop_loss_price": 24.27,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 86.1,
+        "take_profit_price_1": 30.01,
+        "take_profit_pct_1": 0.1402,
+        "take_profit_price_2": 32.47,
+        "take_profit_pct_2": 0.2337,
+        "trailing_stop_price": 24.49,
+        "suggested_position_min": 0.0617,
+        "suggested_position_max": 0.0832,
+        "max_portfolio_risk": 0.0065,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 24.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 30.01 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 32.47 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 24.27 元作为防守位，并在 30.01 / 32.47 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：博敏电子关于调整2025年年度利润分配现金分红总额的公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-26T07:00:48.289681+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 24.27 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 30.01 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 32.47 元，若继续上行则把跟踪止损上移到 24.49 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "000657": {
+      "symbol": "000657",
+      "name": "中钨高新",
+      "industry": "小金属",
+      "thesis": "中钨高新 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.9，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 79.93,
+          "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 100.0,
+          "description": "20 日收益 10.5%，量能倍率 1.22，MA10 / MA20 / MA60 为 58.71 / 58.33 / 56.06。"
+        },
+        {
+          "name": "事件强度",
+          "value": 53.32,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 94.08,
+          "description": "日内涨幅 5.4%，换手 8.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "b2927b0c304c",
+          "title": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+          "publish_time": "2026-05-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309102&orgId=gssz0000657&announcementTime=2026-05-16"
+        },
+        {
+          "event_id": "eb0dafabf66b",
+          "title": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+          "publish_time": "2026-05-16T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于金洲公司印制电路板用高端微型精密刀具技改扩能项目的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225309101&orgId=gssz0000657&announcementTime=2026-05-16"
+        },
+        {
+          "event_id": "2ec2714f52cc",
+          "title": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+          "publish_time": "2026-05-08T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于参加海南辖区上市公司2025年年报业绩说明会暨投资者网上集体接待日活动的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000657&announcementId=1225281612&orgId=gssz0000657&announcementTime=2026-05-08"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 67.68,
+        "stop_loss_price": 62.4,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 85.61,
+        "take_profit_price_1": 77.18,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 83.52,
+        "take_profit_pct_2": 0.234,
+        "trailing_stop_price": 63.17,
+        "suggested_position_min": 0.066,
+        "suggested_position_max": 0.0893,
+        "max_portfolio_risk": 0.007,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 62.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 77.18 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 83.52 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 62.40 元作为防守位，并在 77.18 / 83.52 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.67，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于自硬公司中粗碳化钨粉智能生产线技术改造项目的公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-26T07:00:48.289737+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 62.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 77.18 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 83.52 元，若继续上行则把跟踪止损上移到 63.17 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "000962": {
+      "symbol": "000962",
+      "name": "东方钽业",
+      "industry": "小金属",
+      "thesis": "东方钽业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 83.4，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 79.93,
+          "description": "当前模式重点关注该维度。小金属 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 97.43,
+          "description": "20 日收益 27.0%，量能倍率 1.45，MA10 / MA20 / MA60 为 55.12 / 50.86 / 49.21。"
+        },
+        {
+          "name": "事件强度",
+          "value": 55.35,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 69.04,
+          "description": "日内涨幅 2.6%，换手 6.7%，量比 1.07。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "65acfaec79e1",
+          "title": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+          "publish_time": "2026-05-23T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于回购注销部分限制性股票减资暨通知债权人的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225325963&orgId=gssz0000962&announcementTime=2026-05-23"
+        },
+        {
+          "event_id": "ecccf1a46221",
+          "title": "今年以来定增累计募资2749.49亿元",
+          "publish_time": "2026-05-26T08:56:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "40.00 计算机 002967 广电计量 13.00 社会服务 688368 晶丰明源 38.33 电子 600459 贵研铂业 12.91 有色金属 000878 云南铜业 38.24 有色金属 000032 深桑达A 12.00 建筑装饰 600418 江淮汽车 35.00 汽车 000962",
+          "link": "http://finance.eastmoney.com/a/202605263748888560.html"
+        },
+        {
+          "event_id": "479afd40f0c9",
+          "title": "关于董事辞职的公告",
+          "publish_time": "2026-05-19T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于董事辞职的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000962&announcementId=1225312267&orgId=gssz0000962&announcementTime=2026-05-19"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 66.46,
+        "stop_loss_price": 61.28,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 79.55,
+        "take_profit_price_1": 75.78,
+        "take_profit_pct_1": 0.1402,
+        "take_profit_price_2": 82.0,
+        "take_profit_pct_2": 0.2338,
+        "trailing_stop_price": 62.23,
+        "suggested_position_min": 0.0716,
+        "suggested_position_max": 0.0992,
+        "max_portfolio_risk": 0.0077,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 61.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 75.78 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 82.00 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 61.28 元作为防守位，并在 75.78 / 82.00 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.97，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于回购注销部分限制性股票减资暨通知债权人的公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-26T07:00:48.289782+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 61.28 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 75.78 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 82.00 元，若继续上行则把跟踪止损上移到 62.23 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    },
+    "603979": {
+      "symbol": "603979",
+      "name": "金诚信",
+      "industry": "工业金属",
+      "thesis": "金诚信 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 82.5，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 贵金属, 工业金属, 小金属, 元件, 证券 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 84.06,
+          "description": "当前模式重点关注该维度。工业金属 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 96.67,
+          "description": "20 日收益 8.3%，量能倍率 1.02，MA10 / MA20 / MA60 为 65.82 / 64.71 / 63.70。"
+        },
+        {
+          "name": "事件强度",
+          "value": 54.02,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 85.99,
+          "description": "日内涨幅 7.6%，换手 2.6%，量比 1.31。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "21fd581a1b31",
+          "title": "金诚信独立董事提名人和候选人声明公告",
+          "publish_time": "2026-05-23T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "金诚信独立董事提名人和候选人声明公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325593&orgId=9900024796&announcementTime=2026-05-23"
+        },
+        {
+          "event_id": "787397f847d3",
+          "title": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+          "publish_time": "2026-05-23T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "金诚信关于拟增加Alacran铜金银矿项目建设投资的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=603979&announcementId=1225325589&orgId=9900024796&announcementTime=2026-05-23"
+        },
+        {
+          "event_id": "5d6da4b1632c",
+          "title": "今日盘中突破半年线个股",
+          "publish_time": "2026-05-25T11:15:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "振华科技 6.18 5.72 50.16 52.21 4.09 601588 北辰实业 4.40 1.13 1.83 1.90 3.92 300652 雷迪克 4.00 4.16 49.34 51.25 3.87 000012 南玻A 6.59 6.93 4.52 4.69 3.77 603979",
+          "link": "http://finance.eastmoney.com/a/202605253747958826.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 75.18,
+        "stop_loss_price": 69.35,
+        "stop_loss_pct": 0.0776,
+        "signal_quality_score": 83.97,
+        "take_profit_price_1": 85.67,
+        "take_profit_pct_1": 0.1395,
+        "take_profit_price_2": 92.67,
+        "take_profit_pct_2": 0.2326,
+        "trailing_stop_price": 70.85,
+        "suggested_position_min": 0.0646,
+        "suggested_position_max": 0.0879,
+        "max_portfolio_risk": 0.0068,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 69.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 85.67 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 92.67 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 69.35 元作为防守位，并在 85.67 / 92.67 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 3.82，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：金诚信独立董事提名人和候选人声明公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-05-26T07:00:48.289828+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 69.35 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 85.67 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 92.67 元，若继续上行则把跟踪止损上移到 70.85 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    }
+  },
+  "selection_meta": {
+    "industry_source": "ths_industry_summary",
+    "constituent_scan_mode": "行业前 8 成分股全扫",
+    "total_universe_size": 38,
+    "news_watchlist_size": 18,
+    "scan_summary": [
+      {
+        "sector_name": "贵金属",
+        "sector_code": "881169",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "工业金属",
+        "sector_code": "881168",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "小金属",
+        "sector_code": "881170",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "元件",
+        "sector_code": "881270",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "证券",
+        "sector_code": "881157",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      }
+    ]
+  }
+}
