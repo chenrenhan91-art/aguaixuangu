@@ -4,6 +4,18 @@
     {
       "trade_date": "2026-06-16",
       "sessions": {
+        "close": {
+          "path": "daily_candidates_2026-06-16_close.json",
+          "generated_at": "2026-06-16T09:08:51.577703+00:00",
+          "default_mode": "balanced",
+          "snapshot_session": {
+            "session_id": "close",
+            "label": "收盘信息",
+            "generated_time": "17:08",
+            "generated_at": "2026-06-16T17:08:51.577703+08:00"
+          },
+          "candidate_count": 5
+        },
         "midday": {
           "path": "daily_candidates_2026-06-16_midday.json",
           "generated_at": "2026-06-15T16:05:37.446965+00:00",
