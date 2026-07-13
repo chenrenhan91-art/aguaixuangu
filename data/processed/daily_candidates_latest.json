@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-13T06:37:02.747675+00:00",
+  "generated_at": "2026-07-13T06:39:04.436841+00:00",
   "trade_date": "2026-07-13",
   "snapshot_session": {
-    "session_id": "midday",
-    "label": "午盘信息",
-    "generated_time": "14:37",
-    "generated_at": "2026-07-13T14:37:02.747675+08:00"
+    "session_id": "close",
+    "label": "收盘信息",
+    "generated_time": "14:39",
+    "generated_at": "2026-07-13T14:39:04.436841+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -49,29 +49,29 @@
   ],
   "market_regime": {
     "regime": "neutral",
-    "confidence": 0.6246,
-    "suggested_exposure": 0.656,
-    "breadth_score": 57.1,
-    "northbound_score": 65.99,
-    "momentum_score": 62.66,
-    "updated_at": "2026-07-13T06:38:39.484343+00:00"
+    "confidence": 0.6145,
+    "suggested_exposure": 0.6378,
+    "breadth_score": 56.12,
+    "northbound_score": 65.24,
+    "momentum_score": 61.29,
+    "updated_at": "2026-07-13T06:40:13.491265+00:00"
   },
   "top_sectors": [
     {
       "sector_code": "881141",
       "sector_name": "中药",
-      "strength_score": 79.39,
-      "momentum_score": 81.59,
+      "strength_score": 80.02,
+      "momentum_score": 81.73,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
-      "breadth_ratio": 0.8235,
-      "member_count": 68
+      "breadth_ratio": 0.8358,
+      "member_count": 67
     },
     {
       "sector_code": "881155",
       "sector_name": "银行",
-      "strength_score": 91.24,
-      "momentum_score": 60.18,
+      "strength_score": 91.12,
+      "momentum_score": 60.23,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
       "breadth_ratio": 0.9762,
@@ -80,32 +80,32 @@
     {
       "sector_code": "881140",
       "sector_name": "化学制药",
-      "strength_score": 31.23,
-      "momentum_score": 57.94,
-      "capital_consensus_score": 70.49,
-      "heat_score": 97.3,
-      "breadth_ratio": 0.3742,
-      "member_count": 155
+      "strength_score": 31.84,
+      "momentum_score": 58.4,
+      "capital_consensus_score": 70.75,
+      "heat_score": 98.2,
+      "breadth_ratio": 0.3962,
+      "member_count": 159
     },
     {
       "sector_code": "881107",
       "sector_name": "油气开采及服务",
-      "strength_score": 53.43,
-      "momentum_score": 54.67,
-      "capital_consensus_score": 61.75,
-      "heat_score": 60.56,
-      "breadth_ratio": 0.5556,
-      "member_count": 18
+      "strength_score": 52.59,
+      "momentum_score": 53.66,
+      "capital_consensus_score": 61.51,
+      "heat_score": 60.49,
+      "breadth_ratio": 0.5263,
+      "member_count": 19
     },
     {
-      "sector_code": "881148",
-      "sector_name": "港口航运",
-      "strength_score": 50.4,
-      "momentum_score": 53.63,
-      "capital_consensus_score": 65.73,
-      "heat_score": 62.7,
-      "breadth_ratio": 0.4706,
-      "member_count": 34
+      "sector_code": "881134",
+      "sector_name": "食品加工制造",
+      "strength_score": 51.01,
+      "momentum_score": 50.03,
+      "capital_consensus_score": 67.82,
+      "heat_score": 62.56,
+      "breadth_ratio": 0.4219,
+      "member_count": 64
     }
   ],
   "market_news": [
@@ -170,9 +170,9 @@
           "name": "太极集团",
           "industry": "中药",
           "rank": 1,
-          "base_score": 94.42,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 91.13,
+          "risk_adjusted_score": 91.2,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -199,9 +199,9 @@
           "name": "天目药业",
           "industry": "中药",
           "rank": 2,
-          "base_score": 87.97,
+          "base_score": 88.04,
           "event_score": 55.75,
-          "risk_adjusted_score": 86.04,
+          "risk_adjusted_score": 86.11,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -228,9 +228,9 @@
           "name": "立方制药",
           "industry": "化学制药",
           "rank": 3,
-          "base_score": 83.89,
+          "base_score": 84.05,
           "event_score": 56.52,
-          "risk_adjusted_score": 81.77,
+          "risk_adjusted_score": 81.93,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -253,13 +253,13 @@
           ]
         },
         {
-          "symbol": "600488",
-          "name": "津药药业",
+          "symbol": "600664",
+          "name": "哈药股份",
           "industry": "化学制药",
           "rank": 4,
-          "base_score": 78.99,
-          "event_score": 56.56,
-          "risk_adjusted_score": 78.6,
+          "base_score": 79.57,
+          "event_score": 56.87,
+          "risk_adjusted_score": 78.41,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -268,45 +268,45 @@
             },
             {
               "label": "技术结构",
-              "detail": "津药药业 近 20 日收益 9.8%，技术分 92.1。"
+              "detail": "哈药股份 近 20 日收益 9.1%，技术分 79.3。"
             },
             {
               "label": "事件辅助",
-              "detail": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
+              "detail": "哈药集团股份有限公司2026年半年度业绩预增公告"
             }
           ],
           "event_tags": [
             "官方公告",
             "其他",
-            "业绩财报"
+            "其他"
           ]
         },
         {
-          "symbol": "600428",
-          "name": "中远海特",
-          "industry": "港口航运",
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
           "rank": 5,
-          "base_score": 77.09,
-          "event_score": 58.04,
-          "risk_adjusted_score": 76.54,
+          "base_score": 73.38,
+          "event_score": 54.42,
+          "risk_adjusted_score": 69.89,
           "holding_window": "3-5D",
           "reasons": [
             {
               "label": "行业轮动",
-              "detail": "港口航运 当前仍在强势行业监控池内，优先级高于普通板块。"
+              "detail": "银行 当前仍在强势行业监控池内，优先级高于普通板块。"
             },
             {
               "label": "技术结构",
-              "detail": "中远海特 近 20 日收益 14.8%，技术分 75.3。"
+              "detail": "建设银行 近 20 日收益 -5.4%，技术分 60.4。"
             },
             {
               "label": "事件辅助",
-              "detail": "中远海特：上半年净利润同比预增55%—70%"
+              "detail": "建设银行2025年年度A股分红派息实施公告"
             }
           ],
           "event_tags": [
-            "业绩财报",
-            "业绩财报",
+            "官方公告",
+            "官方公告",
             "官方公告"
           ]
         }
@@ -316,12 +316,12 @@
           "symbol": "600129",
           "name": "太极集团",
           "industry": "中药",
-          "thesis": "太极集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.1，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "太极集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.2，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -337,7 +337,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -380,26 +380,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 16.29,
+            "reference_price": 17.78,
+            "stop_loss_price": 16.39,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 20.15,
-            "take_profit_pct_1": 0.1404,
-            "take_profit_price_2": 21.81,
-            "take_profit_pct_2": 0.2343,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.0511,
-            "suggested_position_max": 0.0685,
-            "max_portfolio_risk": 0.0053,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 20.28,
+            "take_profit_pct_1": 0.1406,
+            "take_profit_price_2": 21.95,
+            "take_profit_pct_2": 0.2345,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0498,
+            "suggested_position_max": 0.0667,
+            "max_portfolio_risk": 0.0052,
             "risk_reward_ratio": 1.8,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 16.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 20.15 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 21.81 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 16.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 21.95 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -409,7 +409,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 16.29 元作为防守位，并在 20.15 / 21.81 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 16.39 元作为防守位，并在 20.28 / 21.95 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -417,12 +417,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484449+00:00"
+            "generated_at": "2026-07-13T06:40:13.491372+00:00"
           },
           "risk_controls": [
-            "止损线参考 16.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 20.15 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 21.81 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 16.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 21.95 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -434,12 +434,12 @@
           "symbol": "600671",
           "name": "天目药业",
           "industry": "中药",
-          "thesis": "天目药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.0，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "天目药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.1，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -455,7 +455,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.66。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -501,7 +501,7 @@
             "reference_price": 21.13,
             "stop_loss_price": 19.48,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 82.39,
+            "signal_quality_score": 82.46,
             "take_profit_price_1": 24.1,
             "take_profit_pct_1": 0.1406,
             "take_profit_price_2": 26.08,
@@ -535,7 +535,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484507+00:00"
+            "generated_at": "2026-07-13T06:40:13.491428+00:00"
           },
           "risk_controls": [
             "止损线参考 19.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -553,12 +553,12 @@
           "symbol": "003020",
           "name": "立方制药",
           "industry": "化学制药",
-          "thesis": "立方制药 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 81.8，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "立方制药 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 81.9，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -574,7 +574,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -620,13 +620,13 @@
             "reference_price": 20.61,
             "stop_loss_price": 19.1,
             "stop_loss_pct": 0.0731,
-            "signal_quality_score": 78.32,
+            "signal_quality_score": 78.48,
             "take_profit_price_1": 23.33,
             "take_profit_pct_1": 0.132,
             "take_profit_price_2": 25.14,
             "take_profit_pct_2": 0.2198,
             "trailing_stop_price": 19.49,
-            "suggested_position_min": 0.043,
+            "suggested_position_min": 0.0431,
             "suggested_position_max": 0.06,
             "max_portfolio_risk": 0.0044,
             "risk_reward_ratio": 1.8,
@@ -653,7 +653,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484557+00:00"
+            "generated_at": "2026-07-13T06:40:13.491476+00:00"
           },
           "risk_controls": [
             "止损线参考 19.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -666,211 +666,94 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "600488": {
-          "symbol": "600488",
-          "name": "津药药业",
+        "600664": {
+          "symbol": "600664",
+          "name": "哈药股份",
           "industry": "化学制药",
-          "thesis": "津药药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.6，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "哈药股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.4，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 92.13,
-              "description": "20 日收益 9.8%，量能倍率 1.24，MA10 / MA20 / MA60 为 5.22 / 4.96 / 5.63。"
+              "value": 79.27,
+              "description": "20 日收益 9.1%，量能倍率 1.04，MA10 / MA20 / MA60 为 3.12 / 3.11 / 3.44。"
             },
             {
               "name": "事件强度",
-              "value": 56.56,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 81.46,
-              "description": "日内涨幅 8.1%，换手 14.9%，量比 1.22。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "d9d4c9572a95",
-              "title": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "publish_time": "2026-07-11T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600488&announcementId=1225418369&orgId=gssh0600488&announcementTime=2026-07-11"
-            },
-            {
-              "event_id": "9f0a8a6bb256",
-              "title": "分红季来了，24只股即将分红",
-              "publish_time": "2026-07-13T09:25:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "其他",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "（数据宝） 即将实施分红的公司一览  证券代码 证券简称 每10股派现（元） 每10股送转（股） 最新收盘价（元） 近5日涨跌幅（%） 301571 国科天成 1.140 - 67.51 11.86 301099 雅创电子 3.000 3.000 95.60 9.75 600488",
-              "link": "http://finance.eastmoney.com/a/202607133802801956.html"
-            },
-            {
-              "event_id": "f33e2b0e9d59",
-              "title": "津药药业：倍他米松原料药获巴西卫生监督局批准上市",
-              "publish_time": "2026-07-07T17:13:26",
-              "source": "财联社",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业600488.SH)公告称，公司近日收到巴西卫生监督局签发的关于倍他米松原料药的批准通知。该药品适用于多种炎症性疾病及自身免疫性疾病，公司于2023年4月提交注册申请，近日获批。此次批准将助力公司拓展巴西市场，提升业绩，但需注意市场销售及汇率波动等风险。",
-              "link": "http://finance.eastmoney.com/a/202607073796810483.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 6.03,
-            "stop_loss_price": 5.56,
-            "stop_loss_pct": 0.078,
-            "signal_quality_score": 74.81,
-            "take_profit_price_1": 6.88,
-            "take_profit_pct_1": 0.141,
-            "take_profit_price_2": 7.44,
-            "take_profit_pct_2": 0.2338,
-            "trailing_stop_price": 5.44,
-            "suggested_position_min": 0.0399,
-            "suggested_position_max": 0.0564,
-            "max_portfolio_risk": 0.0044,
-            "risk_reward_ratio": 1.81,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 5.56 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 6.88 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 7.44 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 5.56 元作为防守位，并在 6.88 / 7.44 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484628+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 5.56 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 6.88 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 7.44 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
-          ]
-        },
-        "600428": {
-          "symbol": "600428",
-          "name": "中远海特",
-          "industry": "港口航运",
-          "thesis": "中远海特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 76.5，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 56.52,
-              "description": "当前模式重点关注该维度。港口航运 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 75.34,
-              "description": "20 日收益 14.8%，量能倍率 0.64，MA10 / MA20 / MA60 为 8.37 / 8.23 / 8.25。"
-            },
-            {
-              "name": "事件强度",
-              "value": 58.04,
+              "value": 56.87,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 9.2%，换手 8.4%，量比 7.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "b55fbc01781a",
-              "title": "中远海特：上半年净利润同比预增55%—70%",
-              "publish_time": "2026-07-09T16:38:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "medium",
-              "summary": "人民财讯7月9日电，中远海特6004287月9日披露业绩预告，预计2026年上半年归母净利润为12.79亿元至14.02亿元，同比增加55%到70%。",
-              "link": "http://finance.eastmoney.com/a/202607093800068415.html"
-            },
-            {
-              "event_id": "de5cd11fb8e5",
-              "title": "中远海特发布上半年预增公告 净利润同比增长55.00%~70.00%",
-              "publish_time": "2026-07-09T21:53:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "中远海特（600428）7月9日发布上半年业绩预增公告，预计实现净利润为12.79亿元~14.02亿元，净利润同比增长55.00%~70.00%。",
-              "link": "http://finance.eastmoney.com/a/202607093800360916.html"
-            },
-            {
-              "event_id": "608912d314bb",
-              "title": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
+              "event_id": "a0ebca57e378",
+              "title": "哈药集团股份有限公司2026年半年度业绩预增公告",
               "publish_time": "2026-07-10T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600428&announcementId=1225416650&orgId=gssh0600428&announcementTime=2026-07-10"
+              "summary": "哈药集团股份有限公司2026年半年度业绩预增公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600664&announcementId=1225416436&orgId=gssh0600664&announcementTime=2026-07-10"
+            },
+            {
+              "event_id": "8a100cf699b6",
+              "title": "今日25只个股突破年线",
+              "publish_time": "2026-07-13T13:00:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "4.57 0.10 20.72 21.49 3.70 601369 陕鼓动力 4.86 2.33 9.25 9.49 2.64 603345 安井食品 2.88 1.18 81.70 83.86 2.64 601156 东航物流 2.98 1.34 16.52 16.95 2.61 600664",
+              "link": "http://finance.eastmoney.com/a/202607133803477532.html"
+            },
+            {
+              "event_id": "1ef4fcca05e4",
+              "title": "32只股中线走稳 站上半年线",
+              "publish_time": "2026-07-13T13:00:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10.02 8.01 21.79 23.83 9.35 600671 天目药业 9.99 6.08 19.35 21.13 9.17 003020 立方制药 9.98 9.28 19.03 20.61 8.32 688101 三达膜 7.31 5.97 17.22 18.36 6.64 600664",
+              "link": "http://finance.eastmoney.com/a/202607133803477313.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.82,
-            "stop_loss_price": 9.14,
-            "stop_loss_pct": 0.0692,
-            "signal_quality_score": 72.73,
-            "take_profit_price_1": 11.04,
-            "take_profit_pct_1": 0.1242,
-            "take_profit_price_2": 11.86,
-            "take_profit_pct_2": 0.2077,
-            "trailing_stop_price": 9.32,
-            "suggested_position_min": 0.048,
-            "suggested_position_max": 0.0685,
-            "max_portfolio_risk": 0.0047,
+            "reference_price": 3.71,
+            "stop_loss_price": 3.47,
+            "stop_loss_pct": 0.0648,
+            "signal_quality_score": 74.72,
+            "take_profit_price_1": 4.14,
+            "take_profit_pct_1": 0.1159,
+            "take_profit_price_2": 4.43,
+            "take_profit_pct_2": 0.1941,
+            "trailing_stop_price": 3.53,
+            "suggested_position_min": 0.0518,
+            "suggested_position_max": 0.0734,
+            "max_portfolio_risk": 0.0048,
             "risk_reward_ratio": 1.79,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 9.14 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.86 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
+              "止损线参考 3.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 4.14 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 4.43 元，若继续上行则把跟踪止损上移到 3.53 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -879,22 +762,137 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.14 元作为防守位，并在 11.04 / 11.86 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 3.47 元作为防守位，并在 4.14 / 4.43 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：中远海特：上半年净利润同比预增55%—70%"
+              "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：哈药集团股份有限公司2026年半年度业绩预增公告"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484676+00:00"
+            "generated_at": "2026-07-13T06:40:13.491520+00:00"
           },
           "risk_controls": [
-            "止损线参考 9.14 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.86 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
+            "止损线参考 3.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 4.14 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 4.43 元，若继续上行则把跟踪止损上移到 3.53 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "601939": {
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
+          "thesis": "建设银行 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 69.9，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.85,
+              "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 60.37,
+              "description": "20 日收益 -5.4%，量能倍率 1.21，MA10 / MA20 / MA60 为 9.57 / 9.73 / 9.71。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.42,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 78.24,
+              "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "5a2f23df94d0",
+              "title": "建设银行2025年年度A股分红派息实施公告",
+              "publish_time": "2026-07-07T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行2025年年度A股分红派息实施公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225411863&orgId=9900003682&announcementTime=2026-07-07"
+            },
+            {
+              "event_id": "6190408b7b1d",
+              "title": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+              "publish_time": "2026-07-01T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225399960&orgId=9900003682&announcementTime=2026-07-01"
+            },
+            {
+              "event_id": "1fe15d971225",
+              "title": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+              "publish_time": "2026-06-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225381225&orgId=9900003682&announcementTime=2026-06-23"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 10.15,
+            "stop_loss_price": 9.73,
+            "stop_loss_pct": 0.0414,
+            "signal_quality_score": 70.48,
+            "take_profit_price_1": 10.91,
+            "take_profit_pct_1": 0.0749,
+            "take_profit_price_2": 11.41,
+            "take_profit_pct_2": 0.1241,
+            "trailing_stop_price": 9.84,
+            "suggested_position_min": 0.0694,
+            "suggested_position_max": 0.1,
+            "max_portfolio_risk": 0.0041,
+            "risk_reward_ratio": 1.81,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.41 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 9.73 元作为防守位，并在 10.91 / 11.41 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：建设银行2025年年度A股分红派息实施公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-07-13T06:40:13.491588+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.41 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
           ]
@@ -921,14 +919,14 @@
           "name": "太极集团",
           "industry": "中药",
           "rank": 1,
-          "base_score": 94.42,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 88.15,
+          "risk_adjusted_score": 88.24,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "中药 属于AI产业链重点赛道，当前轮动强度 87.8。"
+              "detail": "中药 属于AI产业链重点赛道，当前轮动强度 88.1。"
             },
             {
               "label": "催化事件",
@@ -950,14 +948,14 @@
           "name": "天目药业",
           "industry": "中药",
           "rank": 2,
-          "base_score": 87.97,
+          "base_score": 88.04,
           "event_score": 55.75,
-          "risk_adjusted_score": 83.39,
+          "risk_adjusted_score": 83.48,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "中药 属于AI产业链重点赛道，当前轮动强度 87.8。"
+              "detail": "中药 属于AI产业链重点赛道，当前轮动强度 88.1。"
             },
             {
               "label": "催化事件",
@@ -979,14 +977,14 @@
           "name": "立方制药",
           "industry": "化学制药",
           "rank": 3,
-          "base_score": 83.89,
+          "base_score": 84.05,
           "event_score": 56.52,
-          "risk_adjusted_score": 76.92,
+          "risk_adjusted_score": 77.11,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "化学制药 属于AI产业链重点赛道，当前轮动强度 59.0。"
+              "detail": "化学制药 属于AI产业链重点赛道，当前轮动强度 59.5。"
             },
             {
               "label": "催化事件",
@@ -1004,32 +1002,32 @@
           ]
         },
         {
-          "symbol": "600488",
-          "name": "津药药业",
+          "symbol": "688176",
+          "name": "亚虹医药",
           "industry": "化学制药",
           "rank": 4,
-          "base_score": 78.99,
-          "event_score": 56.56,
-          "risk_adjusted_score": 75.57,
+          "base_score": 82.1,
+          "event_score": 53.28,
+          "risk_adjusted_score": 74.84,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "化学制药 属于AI产业链重点赛道，当前轮动强度 59.0。"
+              "detail": "化学制药 属于AI产业链重点赛道，当前轮动强度 59.5。"
             },
             {
               "label": "催化事件",
-              "detail": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
+              "detail": "中信证券股份有限公司关于江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通的核查意见"
             },
             {
               "label": "轮动判断",
-              "detail": "行业排名第 3 位，技术分 92.1，适合跟随AI主线节奏持有。"
+              "detail": "行业排名第 3 位，技术分 85.6，适合跟随AI主线节奏持有。"
             }
           ],
           "event_tags": [
             "官方公告",
-            "其他",
-            "业绩财报"
+            "官方公告",
+            "其他"
           ]
         },
         {
@@ -1037,14 +1035,14 @@
           "name": "建设银行",
           "industry": "银行",
           "rank": 5,
-          "base_score": 73.23,
+          "base_score": 73.38,
           "event_score": 54.42,
-          "risk_adjusted_score": 74.55,
+          "risk_adjusted_score": 74.59,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "银行 属于AI产业链重点赛道，当前轮动强度 85.9。"
+              "detail": "银行 属于AI产业链重点赛道，当前轮动强度 85.8。"
             },
             {
               "label": "催化事件",
@@ -1067,12 +1065,12 @@
           "symbol": "600129",
           "name": "太极集团",
           "industry": "中药",
-          "thesis": "太极集团 属于AI产业链 中药 赛道，当前行业轮动分 87.8，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "太极集团 属于AI产业链 中药 赛道，当前行业轮动分 88.1，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1088,7 +1086,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1131,26 +1129,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 16.26,
+            "reference_price": 17.78,
+            "stop_loss_price": 16.36,
             "stop_loss_pct": 0.08,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 20.28,
-            "take_profit_pct_1": 0.1477,
-            "take_profit_price_2": 21.9,
-            "take_profit_pct_2": 0.2394,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.0515,
-            "suggested_position_max": 0.069,
-            "max_portfolio_risk": 0.0055,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 20.41,
+            "take_profit_pct_1": 0.1479,
+            "take_profit_price_2": 22.04,
+            "take_profit_pct_2": 0.2396,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0502,
+            "suggested_position_max": 0.0672,
+            "max_portfolio_risk": 0.0054,
             "risk_reward_ratio": 1.85,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 16.26 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 21.90 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 16.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 20.41 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 22.04 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -1160,7 +1158,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 AI主线轮动 模式，当前更适合 分批试仓。规则建议以 16.26 元作为防守位，并在 20.28 / 21.90 元分批兑现。",
+            "summary": "基于 AI主线轮动 模式，当前更适合 分批试仓。规则建议以 16.36 元作为防守位，并在 20.41 / 22.04 元分批兑现。",
             "highlights": [
               "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1168,12 +1166,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484761+00:00"
+            "generated_at": "2026-07-13T06:40:13.491673+00:00"
           },
           "risk_controls": [
-            "止损线参考 16.26 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 21.90 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 16.36 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 20.41 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 22.04 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -1186,12 +1184,12 @@
           "symbol": "600671",
           "name": "天目药业",
           "industry": "中药",
-          "thesis": "天目药业 属于AI产业链 中药 赛道，当前行业轮动分 87.8，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "天目药业 属于AI产业链 中药 赛道，当前行业轮动分 88.1，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1207,7 +1205,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.66。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1253,7 +1251,7 @@
             "reference_price": 21.13,
             "stop_loss_price": 19.44,
             "stop_loss_pct": 0.08,
-            "signal_quality_score": 82.39,
+            "signal_quality_score": 82.46,
             "take_profit_price_1": 24.26,
             "take_profit_pct_1": 0.1481,
             "take_profit_price_2": 26.2,
@@ -1287,7 +1285,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484807+00:00"
+            "generated_at": "2026-07-13T06:40:13.491717+00:00"
           },
           "risk_controls": [
             "止损线参考 19.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1306,12 +1304,12 @@
           "symbol": "003020",
           "name": "立方制药",
           "industry": "化学制药",
-          "thesis": "立方制药 属于AI产业链 化学制药 赛道，当前行业轮动分 59.0，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "立方制药 属于AI产业链 化学制药 赛道，当前行业轮动分 59.5，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1327,7 +1325,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1373,7 +1371,7 @@
             "reference_price": 20.61,
             "stop_loss_price": 19.05,
             "stop_loss_pct": 0.0755,
-            "signal_quality_score": 78.32,
+            "signal_quality_score": 78.48,
             "take_profit_price_1": 23.5,
             "take_profit_pct_1": 0.1402,
             "take_profit_price_2": 25.29,
@@ -1406,7 +1404,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484865+00:00"
+            "generated_at": "2026-07-13T06:40:13.491773+00:00"
           },
           "risk_controls": [
             "止损线参考 19.05 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1420,94 +1418,94 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "600488": {
-          "symbol": "600488",
-          "name": "津药药业",
+        "688176": {
+          "symbol": "688176",
+          "name": "亚虹医药",
           "industry": "化学制药",
-          "thesis": "津药药业 属于AI产业链 化学制药 赛道，当前行业轮动分 59.0，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "亚虹医药 属于AI产业链 化学制药 赛道，当前行业轮动分 59.5，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 92.13,
-              "description": "20 日收益 9.8%，量能倍率 1.24，MA10 / MA20 / MA60 为 5.22 / 4.96 / 5.63。"
+              "value": 85.59,
+              "description": "20 日收益 29.3%，量能倍率 2.02，MA10 / MA20 / MA60 为 11.75 / 10.87 / 11.80。"
             },
             {
               "name": "事件强度",
-              "value": 56.56,
+              "value": 53.28,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 81.46,
-              "description": "日内涨幅 8.1%，换手 14.9%，量比 1.22。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 100,
+              "description": "日内涨幅 13.8%，换手 8.6%，量比 1.78。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "d9d4c9572a95",
-              "title": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "publish_time": "2026-07-11T00:00:00",
+              "event_id": "a5270ccc8c84",
+              "title": "中信证券股份有限公司关于江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通的核查意见",
+              "publish_time": "2026-06-24T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600488&announcementId=1225418369&orgId=gssh0600488&announcementTime=2026-07-11"
+              "summary": "中信证券股份有限公司关于江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通的核查意见",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688176&announcementId=1225384212&orgId=9900048081&announcementTime=2026-06-24"
             },
             {
-              "event_id": "9f0a8a6bb256",
-              "title": "分红季来了，24只股即将分红",
-              "publish_time": "2026-07-13T09:25:00",
+              "event_id": "bbb2afaf6aa7",
+              "title": "江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通公告",
+              "publish_time": "2026-06-24T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=688176&announcementId=1225384209&orgId=9900048081&announcementTime=2026-06-24"
+            },
+            {
+              "event_id": "e32bf12d8257",
+              "title": "今日92只个股突破半年线",
+              "publish_time": "2026-07-10T11:42:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "（数据宝） 即将实施分红的公司一览  证券代码 证券简称 每10股派现（元） 每10股送转（股） 最新收盘价（元） 近5日涨跌幅（%） 301571 国科天成 1.140 - 67.51 11.86 301099 雅创电子 3.000 3.000 95.60 9.75 600488",
-              "link": "http://finance.eastmoney.com/a/202607133802801956.html"
-            },
-            {
-              "event_id": "f33e2b0e9d59",
-              "title": "津药药业：倍他米松原料药获巴西卫生监督局批准上市",
-              "publish_time": "2026-07-07T17:13:26",
-              "source": "财联社",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业600488.SH)公告称，公司近日收到巴西卫生监督局签发的关于倍他米松原料药的批准通知。该药品适用于多种炎症性疾病及自身免疫性疾病，公司于2023年4月提交注册申请，近日获批。此次批准将助力公司拓展巴西市场，提升业绩，但需注意市场销售及汇率波动等风险。",
-              "link": "http://finance.eastmoney.com/a/202607073796810483.html"
+              "summary": "和辉光电 7.56 4.79 2.44 2.56 4.77 688101 三达膜 17.19 4.75 17.21 18.00 4.58 300197 节能铁汉 6.52 4.27 1.88 1.96 4.44 600719 大连热电 5.04 3.96 7.59 7.92 4.40 688176",
+              "link": "http://finance.eastmoney.com/a/202607103801519932.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 6.03,
-            "stop_loss_price": 5.55,
+            "reference_price": 14.56,
+            "stop_loss_price": 13.4,
             "stop_loss_pct": 0.08,
-            "signal_quality_score": 74.81,
-            "take_profit_price_1": 6.92,
-            "take_profit_pct_1": 0.1476,
-            "take_profit_price_2": 7.47,
-            "take_profit_pct_2": 0.2388,
-            "trailing_stop_price": 5.44,
-            "suggested_position_min": 0.0402,
-            "suggested_position_max": 0.0569,
-            "max_portfolio_risk": 0.0045,
+            "signal_quality_score": 76.3,
+            "take_profit_price_1": 16.71,
+            "take_profit_pct_1": 0.1477,
+            "take_profit_price_2": 18.04,
+            "take_profit_pct_2": 0.239,
+            "trailing_stop_price": 13.53,
+            "suggested_position_min": 0.0321,
+            "suggested_position_max": 0.0451,
+            "max_portfolio_risk": 0.0036,
             "risk_reward_ratio": 1.85,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 5.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 6.92 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 7.47 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
+              "止损线参考 13.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 16.71 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.04 元，若继续上行则把跟踪止损上移到 13.53 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -1516,25 +1514,26 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 5.55 元作为防守位，并在 6.92 / 7.47 元分批兑现。",
+            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 13.40 元作为防守位，并在 16.71 / 18.04 元分批兑现。",
             "highlights": [
               "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
+              "近 10 日波动率为 5.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：中信证券股份有限公司关于江苏亚虹医药科技股份有限公司首次公开发行部分限售股上市流通的核查意见"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484912+00:00"
+            "generated_at": "2026-07-13T06:40:13.491820+00:00"
           },
           "risk_controls": [
-            "止损线参考 5.55 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 6.92 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 7.47 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
+            "止损线参考 13.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 16.71 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.04 元，若继续上行则把跟踪止损上移到 13.53 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "AI板块波动较大，若行业轮动转向请优先收缩仓位。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
@@ -1542,12 +1541,12 @@
           "symbol": "601939",
           "name": "建设银行",
           "industry": "银行",
-          "thesis": "建设银行 属于AI产业链 银行 赛道，当前行业轮动分 85.9，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "建设银行 属于AI产业链 银行 赛道，当前行业轮动分 85.8，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 85.87,
+              "value": 85.85,
               "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1562,8 +1561,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 77.75,
-              "description": "日内涨幅 3.1%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 78.24,
+              "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1606,16 +1605,16 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 10.14,
-            "stop_loss_price": 9.71,
+            "reference_price": 10.15,
+            "stop_loss_price": 9.72,
             "stop_loss_pct": 0.0428,
-            "signal_quality_score": 70.38,
-            "take_profit_price_1": 10.94,
-            "take_profit_pct_1": 0.0789,
-            "take_profit_price_2": 11.43,
-            "take_profit_pct_2": 0.1272,
-            "trailing_stop_price": 9.83,
-            "suggested_position_min": 0.0693,
+            "signal_quality_score": 70.48,
+            "take_profit_price_1": 10.95,
+            "take_profit_pct_1": 0.0788,
+            "take_profit_price_2": 11.44,
+            "take_profit_pct_2": 0.1271,
+            "trailing_stop_price": 9.84,
+            "suggested_position_min": 0.0694,
             "suggested_position_max": 0.1,
             "max_portfolio_risk": 0.0043,
             "risk_reward_ratio": 1.86,
@@ -1623,9 +1622,9 @@
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 9.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.94 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.43 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+              "止损线参考 9.72 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.95 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.44 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
@@ -1633,7 +1632,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 AI主线轮动 模式，当前更适合 分批试仓。规则建议以 9.71 元作为防守位，并在 10.94 / 11.43 元分批兑现。",
+            "summary": "基于 AI主线轮动 模式，当前更适合 分批试仓。规则建议以 9.72 元作为防守位，并在 10.95 / 11.44 元分批兑现。",
             "highlights": [
               "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -1641,12 +1640,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.484956+00:00"
+            "generated_at": "2026-07-13T06:40:13.491862+00:00"
           },
           "risk_controls": [
-            "止损线参考 9.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.94 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.43 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+            "止损线参考 9.72 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.95 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.44 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
@@ -1674,9 +1673,9 @@
           "name": "九芝堂",
           "industry": "中药",
           "rank": 1,
-          "base_score": 80.48,
+          "base_score": 80.55,
           "event_score": 59.69,
-          "risk_adjusted_score": 77.69,
+          "risk_adjusted_score": 77.74,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1703,9 +1702,9 @@
           "name": "太极集团",
           "industry": "中药",
           "rank": 2,
-          "base_score": 94.42,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 77.09,
+          "risk_adjusted_score": 77.14,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1732,9 +1731,9 @@
           "name": "立方制药",
           "industry": "化学制药",
           "rank": 3,
-          "base_score": 83.89,
+          "base_score": 84.05,
           "event_score": 56.52,
-          "risk_adjusted_score": 70.95,
+          "risk_adjusted_score": 71.06,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1761,9 +1760,9 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "rank": 4,
-          "base_score": 79.41,
+          "base_score": 79.57,
           "event_score": 56.87,
-          "risk_adjusted_score": 69.09,
+          "risk_adjusted_score": 69.2,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1786,22 +1785,22 @@
           ]
         },
         {
-          "symbol": "600428",
-          "name": "中远海特",
-          "industry": "港口航运",
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
           "rank": 5,
-          "base_score": 77.09,
-          "event_score": 58.04,
-          "risk_adjusted_score": 68.4,
+          "base_score": 73.38,
+          "event_score": 54.42,
+          "risk_adjusted_score": 66.06,
           "holding_window": "1-3D",
           "reasons": [
             {
               "label": "事件催化",
-              "detail": "中远海特：上半年净利润同比预增55%—70%"
+              "detail": "建设银行2025年年度A股分红派息实施公告"
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 58.0，情绪分 100.0，说明新闻并非纯静态公告。"
+              "detail": "事件分 54.4，情绪分 78.2，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1809,8 +1808,8 @@
             }
           ],
           "event_tags": [
-            "业绩财报",
-            "业绩财报",
+            "官方公告",
+            "官方公告",
             "官方公告"
           ]
         }
@@ -1821,11 +1820,11 @@
           "name": "九芝堂",
           "industry": "中药",
           "thesis": "九芝堂 的新闻事件打分为 59.7，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1841,7 +1840,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.6%，量比 6.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.7%，量比 6.40。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1887,7 +1886,7 @@
             "reference_price": 8.98,
             "stop_loss_price": 8.51,
             "stop_loss_pct": 0.052,
-            "signal_quality_score": 76.65,
+            "signal_quality_score": 76.72,
             "take_profit_price_1": 9.78,
             "take_profit_pct_1": 0.0891,
             "take_profit_price_2": 10.3,
@@ -1920,7 +1919,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485021+00:00"
+            "generated_at": "2026-07-13T06:40:13.491924+00:00"
           },
           "risk_controls": [
             "止损线参考 8.51 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1939,11 +1938,11 @@
           "name": "太极集团",
           "industry": "中药",
           "thesis": "太极集团 的新闻事件打分为 55.4，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1959,7 +1958,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2002,26 +2001,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 16.4,
+            "reference_price": 17.78,
+            "stop_loss_price": 16.5,
             "stop_loss_pct": 0.072,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 19.83,
-            "take_profit_pct_1": 0.1222,
-            "take_profit_price_2": 21.23,
-            "take_profit_pct_2": 0.2015,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.048,
-            "suggested_position_max": 0.0643,
-            "max_portfolio_risk": 0.0046,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 19.96,
+            "take_profit_pct_1": 0.1226,
+            "take_profit_price_2": 21.36,
+            "take_profit_pct_2": 0.2013,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0468,
+            "suggested_position_max": 0.0627,
+            "max_portfolio_risk": 0.0045,
             "risk_reward_ratio": 1.7,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 16.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 19.83 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 21.23 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 16.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 19.96 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 21.36 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2031,7 +2030,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 16.40 元作为防守位，并在 19.83 / 21.23 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 16.50 元作为防守位，并在 19.96 / 21.36 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2039,12 +2038,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485062+00:00"
+            "generated_at": "2026-07-13T06:40:13.491965+00:00"
           },
           "risk_controls": [
-            "止损线参考 16.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 19.83 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 21.23 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 16.50 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 19.96 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 21.36 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -2058,11 +2057,11 @@
           "name": "立方制药",
           "industry": "化学制药",
           "thesis": "立方制药 的新闻事件打分为 56.5，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2078,7 +2077,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2124,13 +2123,13 @@
             "reference_price": 20.61,
             "stop_loss_price": 19.25,
             "stop_loss_pct": 0.066,
-            "signal_quality_score": 78.32,
+            "signal_quality_score": 78.48,
             "take_profit_price_1": 22.92,
             "take_profit_pct_1": 0.1121,
             "take_profit_price_2": 24.42,
             "take_profit_pct_2": 0.1849,
             "trailing_stop_price": 19.49,
-            "suggested_position_min": 0.0413,
+            "suggested_position_min": 0.0414,
             "suggested_position_max": 0.0576,
             "max_portfolio_risk": 0.0038,
             "risk_reward_ratio": 1.7,
@@ -2157,7 +2156,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485102+00:00"
+            "generated_at": "2026-07-13T06:40:13.492003+00:00"
           },
           "risk_controls": [
             "止损线参考 19.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2176,11 +2175,11 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "thesis": "哈药股份 的新闻事件打分为 56.9，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2196,7 +2195,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.92。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2242,14 +2241,14 @@
             "reference_price": 3.71,
             "stop_loss_price": 3.49,
             "stop_loss_pct": 0.0585,
-            "signal_quality_score": 74.57,
+            "signal_quality_score": 74.72,
             "take_profit_price_1": 4.08,
             "take_profit_pct_1": 0.0997,
             "take_profit_price_2": 4.33,
             "take_profit_pct_2": 0.1671,
             "trailing_stop_price": 3.53,
             "suggested_position_min": 0.0497,
-            "suggested_position_max": 0.0703,
+            "suggested_position_max": 0.0704,
             "max_portfolio_risk": 0.0041,
             "risk_reward_ratio": 1.68,
             "action_bias": "谨慎追高",
@@ -2275,7 +2274,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485142+00:00"
+            "generated_at": "2026-07-13T06:40:13.492042+00:00"
           },
           "risk_controls": [
             "止损线参考 3.49 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2289,118 +2288,116 @@
             "当日已接近涨停，避免尾盘情绪化追高。"
           ]
         },
-        "600428": {
-          "symbol": "600428",
-          "name": "中远海特",
-          "industry": "港口航运",
-          "thesis": "中远海特 的新闻事件打分为 58.0，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+        "601939": {
+          "symbol": "601939",
+          "name": "建设银行",
+          "industry": "银行",
+          "thesis": "建设银行 的新闻事件打分为 54.4，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 56.52,
-              "description": "港口航运 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+              "value": 85.85,
+              "description": "银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 75.34,
-              "description": "20 日收益 14.8%，量能倍率 0.64，MA10 / MA20 / MA60 为 8.37 / 8.23 / 8.25。"
+              "value": 60.37,
+              "description": "20 日收益 -5.4%，量能倍率 1.21，MA10 / MA20 / MA60 为 9.57 / 9.73 / 9.71。"
             },
             {
               "name": "事件强度",
-              "value": 58.04,
+              "value": 54.42,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 9.2%，换手 8.4%，量比 7.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 78.24,
+              "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "b55fbc01781a",
-              "title": "中远海特：上半年净利润同比预增55%—70%",
-              "publish_time": "2026-07-09T16:38:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "medium",
-              "summary": "人民财讯7月9日电，中远海特6004287月9日披露业绩预告，预计2026年上半年归母净利润为12.79亿元至14.02亿元，同比增加55%到70%。",
-              "link": "http://finance.eastmoney.com/a/202607093800068415.html"
-            },
-            {
-              "event_id": "de5cd11fb8e5",
-              "title": "中远海特发布上半年预增公告 净利润同比增长55.00%~70.00%",
-              "publish_time": "2026-07-09T21:53:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "中远海特（600428）7月9日发布上半年业绩预增公告，预计实现净利润为12.79亿元~14.02亿元，净利润同比增长55.00%~70.00%。",
-              "link": "http://finance.eastmoney.com/a/202607093800360916.html"
-            },
-            {
-              "event_id": "608912d314bb",
-              "title": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
-              "publish_time": "2026-07-10T00:00:00",
+              "event_id": "5a2f23df94d0",
+              "title": "建设银行2025年年度A股分红派息实施公告",
+              "publish_time": "2026-07-07T00:00:00",
               "source": "巨潮资讯",
               "source_category": "官方公告",
               "event_type": "官方公告",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600428&announcementId=1225416650&orgId=gssh0600428&announcementTime=2026-07-10"
+              "summary": "建设银行2025年年度A股分红派息实施公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225411863&orgId=9900003682&announcementTime=2026-07-07"
+            },
+            {
+              "event_id": "6190408b7b1d",
+              "title": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+              "publish_time": "2026-07-01T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225399960&orgId=9900003682&announcementTime=2026-07-01"
+            },
+            {
+              "event_id": "1fe15d971225",
+              "title": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+              "publish_time": "2026-06-23T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225381225&orgId=9900003682&announcementTime=2026-06-23"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.82,
-            "stop_loss_price": 9.21,
-            "stop_loss_pct": 0.0625,
-            "signal_quality_score": 72.73,
-            "take_profit_price_1": 10.86,
-            "take_profit_pct_1": 0.1059,
-            "take_profit_price_2": 11.53,
-            "take_profit_pct_2": 0.1741,
-            "trailing_stop_price": 9.32,
-            "suggested_position_min": 0.046,
-            "suggested_position_max": 0.0657,
-            "max_portfolio_risk": 0.0041,
-            "risk_reward_ratio": 1.7,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "reference_price": 10.15,
+            "stop_loss_price": 9.76,
+            "stop_loss_pct": 0.038,
+            "signal_quality_score": 70.48,
+            "take_profit_price_1": 10.81,
+            "take_profit_pct_1": 0.065,
+            "take_profit_price_2": 11.24,
+            "take_profit_pct_2": 0.1074,
+            "trailing_stop_price": 9.84,
+            "suggested_position_min": 0.059,
+            "suggested_position_max": 0.085,
+            "max_portfolio_risk": 0.0032,
+            "risk_reward_ratio": 1.69,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 9.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.86 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.53 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
+              "止损线参考 9.76 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 10.81 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.24 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
           "ai_risk_analysis": {
             "status": "rule_stub_ready",
             "model": null,
-            "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 9.21 元作为防守位，并在 10.86 / 11.53 元分批兑现。",
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 9.76 元作为防守位，并在 10.81 / 11.24 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：中远海特：上半年净利润同比预增55%—70%"
+              "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：建设银行2025年年度A股分红派息实施公告"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485181+00:00"
+            "generated_at": "2026-07-13T06:40:13.492079+00:00"
           },
           "risk_controls": [
-            "止损线参考 9.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.86 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.53 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
+            "止损线参考 9.76 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 10.81 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.24 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "若 48 小时内没有新增催化，优先从消息面模式里移除。"
@@ -2427,9 +2424,9 @@
           "name": "太极集团",
           "industry": "中药",
           "rank": 1,
-          "base_score": 94.42,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 95.69,
+          "risk_adjusted_score": 95.74,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2456,9 +2453,9 @@
           "name": "立方制药",
           "industry": "化学制药",
           "rank": 2,
-          "base_score": 83.89,
+          "base_score": 84.05,
           "event_score": 56.52,
-          "risk_adjusted_score": 87.69,
+          "risk_adjusted_score": 87.8,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2485,9 +2482,9 @@
           "name": "天目药业",
           "industry": "中药",
           "rank": 3,
-          "base_score": 87.97,
+          "base_score": 88.04,
           "event_score": 55.75,
-          "risk_adjusted_score": 82.66,
+          "risk_adjusted_score": 82.71,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2514,9 +2511,9 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "rank": 4,
-          "base_score": 79.41,
+          "base_score": 79.57,
           "event_score": 56.87,
-          "risk_adjusted_score": 82.12,
+          "risk_adjusted_score": 82.23,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2543,9 +2540,9 @@
           "name": "亚虹医药",
           "industry": "化学制药",
           "rank": 5,
-          "base_score": 81.86,
+          "base_score": 82.1,
           "event_score": 53.28,
-          "risk_adjusted_score": 79.87,
+          "risk_adjusted_score": 80.03,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -2574,11 +2571,11 @@
           "name": "太极集团",
           "industry": "中药",
           "thesis": "太极集团 具备较完整的均线多头与放量突破结构，技术分 95.2，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2594,7 +2591,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2637,26 +2634,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 16.08,
+            "reference_price": 17.78,
+            "stop_loss_price": 16.18,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 20.85,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 20.98,
             "take_profit_pct_1": 0.18,
-            "take_profit_price_2": 22.92,
-            "take_profit_pct_2": 0.2971,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.0502,
-            "suggested_position_max": 0.0673,
-            "max_portfolio_risk": 0.0061,
+            "take_profit_price_2": 23.06,
+            "take_profit_pct_2": 0.297,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0489,
+            "suggested_position_max": 0.0655,
+            "max_portfolio_risk": 0.0059,
             "risk_reward_ratio": 2.0,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 16.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 20.85 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 22.92 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 16.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 20.98 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 23.06 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -2666,7 +2663,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 16.08 元作为防守位，并在 20.85 / 22.92 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 16.18 元作为防守位，并在 20.98 / 23.06 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -2674,12 +2671,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485243+00:00"
+            "generated_at": "2026-07-13T06:40:13.492139+00:00"
           },
           "risk_controls": [
-            "止损线参考 16.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 20.85 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 22.92 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 16.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 20.98 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 23.06 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -2693,11 +2690,11 @@
           "name": "立方制药",
           "industry": "化学制药",
           "thesis": "立方制药 具备较完整的均线多头与放量突破结构，技术分 90.5，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2713,7 +2710,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 9.7%，量比 1.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2759,13 +2756,13 @@
             "reference_price": 20.61,
             "stop_loss_price": 18.86,
             "stop_loss_pct": 0.0849,
-            "signal_quality_score": 78.32,
+            "signal_quality_score": 78.48,
             "take_profit_price_1": 24.11,
             "take_profit_pct_1": 0.1698,
             "take_profit_price_2": 26.38,
             "take_profit_pct_2": 0.28,
             "trailing_stop_price": 19.49,
-            "suggested_position_min": 0.042,
+            "suggested_position_min": 0.0421,
             "suggested_position_max": 0.0586,
             "max_portfolio_risk": 0.005,
             "risk_reward_ratio": 2.0,
@@ -2792,7 +2789,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485285+00:00"
+            "generated_at": "2026-07-13T06:40:13.492180+00:00"
           },
           "risk_controls": [
             "止损线参考 18.86 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2811,11 +2808,11 @@
           "name": "天目药业",
           "industry": "中药",
           "thesis": "天目药业 具备较完整的均线多头与放量突破结构，技术分 79.0，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2831,7 +2828,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.0%，换手 7.8%，量比 2.66。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2877,7 +2874,7 @@
             "reference_price": 21.13,
             "stop_loss_price": 19.23,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 82.39,
+            "signal_quality_score": 82.46,
             "take_profit_price_1": 24.93,
             "take_profit_pct_1": 0.1798,
             "take_profit_price_2": 27.4,
@@ -2911,7 +2908,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485339+00:00"
+            "generated_at": "2026-07-13T06:40:13.492219+00:00"
           },
           "risk_controls": [
             "止损线参考 19.23 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2931,11 +2928,11 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "thesis": "哈药股份 具备较完整的均线多头与放量突破结构，技术分 79.3，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2951,7 +2948,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.92。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2997,14 +2994,14 @@
             "reference_price": 3.71,
             "stop_loss_price": 3.43,
             "stop_loss_pct": 0.0752,
-            "signal_quality_score": 74.57,
+            "signal_quality_score": 74.72,
             "take_profit_price_1": 4.27,
             "take_profit_pct_1": 0.1509,
             "take_profit_price_2": 4.63,
             "take_profit_pct_2": 0.248,
             "trailing_stop_price": 3.53,
-            "suggested_position_min": 0.0505,
-            "suggested_position_max": 0.0715,
+            "suggested_position_min": 0.0506,
+            "suggested_position_max": 0.0716,
             "max_portfolio_risk": 0.0054,
             "risk_reward_ratio": 2.0,
             "action_bias": "谨慎追高",
@@ -3030,7 +3027,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485380+00:00"
+            "generated_at": "2026-07-13T06:40:13.492257+00:00"
           },
           "risk_controls": [
             "止损线参考 3.43 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3049,11 +3046,11 @@
           "name": "亚虹医药",
           "industry": "化学制药",
           "thesis": "亚虹医药 具备较完整的均线多头与放量突破结构，技术分 85.6，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3068,8 +3065,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 99.74,
-              "description": "日内涨幅 13.5%，换手 8.6%，量比 1.79。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 100,
+              "description": "日内涨幅 13.8%，换手 8.6%，量比 1.78。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3112,26 +3109,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 14.53,
-            "stop_loss_price": 13.22,
+            "reference_price": 14.56,
+            "stop_loss_price": 13.25,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 76.09,
-            "take_profit_price_1": 17.15,
-            "take_profit_pct_1": 0.1803,
-            "take_profit_price_2": 18.85,
-            "take_profit_pct_2": 0.2973,
-            "trailing_stop_price": 13.5,
-            "suggested_position_min": 0.0312,
-            "suggested_position_max": 0.0439,
+            "signal_quality_score": 76.3,
+            "take_profit_price_1": 17.18,
+            "take_profit_pct_1": 0.1799,
+            "take_profit_price_2": 18.88,
+            "take_profit_pct_2": 0.2967,
+            "trailing_stop_price": 13.53,
+            "suggested_position_min": 0.0313,
+            "suggested_position_max": 0.044,
             "max_portfolio_risk": 0.004,
             "risk_reward_ratio": 2.0,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 13.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 17.15 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 18.85 元，若继续上行则把跟踪止损上移到 13.50 元附近。",
+              "止损线参考 13.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 17.18 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 18.88 元，若继续上行则把跟踪止损上移到 13.53 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -3140,7 +3137,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 13.22 元作为防守位，并在 17.15 / 18.85 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 13.25 元作为防守位，并在 17.18 / 18.88 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 5.86，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3148,12 +3145,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485420+00:00"
+            "generated_at": "2026-07-13T06:40:13.492295+00:00"
           },
           "risk_controls": [
-            "止损线参考 13.22 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 17.15 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 18.85 元，若继续上行则把跟踪止损上移到 13.50 元附近。",
+            "止损线参考 13.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 17.18 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 18.88 元，若继续上行则把跟踪止损上移到 13.53 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -3184,9 +3181,9 @@
           "name": "九芝堂",
           "industry": "中药",
           "rank": 1,
-          "base_score": 80.48,
+          "base_score": 80.55,
           "event_score": 59.69,
-          "risk_adjusted_score": 73.59,
+          "risk_adjusted_score": 73.64,
           "holding_window": "10-20D",
           "reasons": [
             {
@@ -3213,9 +3210,9 @@
           "name": "太极集团",
           "industry": "中药",
           "rank": 2,
-          "base_score": 94.42,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 73.47,
+          "risk_adjusted_score": 73.52,
           "holding_window": "10-20D",
           "reasons": [
             {
@@ -3242,9 +3239,9 @@
           "name": "建设银行",
           "industry": "银行",
           "rank": 3,
-          "base_score": 73.23,
+          "base_score": 73.38,
           "event_score": 54.42,
-          "risk_adjusted_score": 71.3,
+          "risk_adjusted_score": 71.35,
           "holding_window": "10-20D",
           "reasons": [
             {
@@ -3267,42 +3264,13 @@
           ]
         },
         {
-          "symbol": "600488",
-          "name": "津药药业",
-          "industry": "化学制药",
-          "rank": 4,
-          "base_score": 78.99,
-          "event_score": 56.56,
-          "risk_adjusted_score": 71.05,
-          "holding_window": "10-20D",
-          "reasons": [
-            {
-              "label": "低位特征",
-              "detail": "RSI14 65.3，近 20 日收益 9.8%，价格处于历史相对低位区间，下跌空间有限。"
-            },
-            {
-              "label": "安全边际",
-              "detail": "当前价 5.58，MA60 5.63，技术面显示中长期支撑区域。"
-            },
-            {
-              "label": "催化信号",
-              "detail": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "其他",
-            "业绩财报"
-          ]
-        },
-        {
           "symbol": "600664",
           "name": "哈药股份",
           "industry": "化学制药",
-          "rank": 5,
-          "base_score": 79.41,
+          "rank": 4,
+          "base_score": 79.57,
           "event_score": 56.87,
-          "risk_adjusted_score": 68.12,
+          "risk_adjusted_score": 68.23,
           "holding_window": "10-20D",
           "reasons": [
             {
@@ -3323,6 +3291,35 @@
             "其他",
             "其他"
           ]
+        },
+        {
+          "symbol": "301277",
+          "name": "新天地",
+          "industry": "化学制药",
+          "rank": 5,
+          "base_score": 79.23,
+          "event_score": 53.03,
+          "risk_adjusted_score": 67.21,
+          "holding_window": "10-20D",
+          "reasons": [
+            {
+              "label": "低位特征",
+              "detail": "RSI14 60.8，近 20 日收益 8.3%，价格处于历史相对低位区间，下跌空间有限。"
+            },
+            {
+              "label": "安全边际",
+              "detail": "当前价 9.87，MA60 10.23，技术面显示中长期支撑区域。"
+            },
+            {
+              "label": "催化信号",
+              "detail": "关于获得化学原料药上市申请批准通知书的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "资金交易",
+            "资金交易"
+          ]
         }
       ],
       "stock_details": {
@@ -3331,11 +3328,11 @@
           "name": "九芝堂",
           "industry": "中药",
           "thesis": "九芝堂 当前股价处于历史低位区间，RSI14 54.9，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3351,7 +3348,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.6%，量比 6.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.7%，量比 6.40。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3397,7 +3394,7 @@
             "reference_price": 8.98,
             "stop_loss_price": 8.31,
             "stop_loss_pct": 0.0743,
-            "signal_quality_score": 76.65,
+            "signal_quality_score": 76.72,
             "take_profit_price_1": 10.66,
             "take_profit_pct_1": 0.1871,
             "take_profit_price_2": 11.66,
@@ -3430,7 +3427,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485496+00:00"
+            "generated_at": "2026-07-13T06:40:13.492366+00:00"
           },
           "risk_controls": [
             "止损线参考 8.31 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3449,11 +3446,11 @@
           "name": "太极集团",
           "industry": "中药",
           "thesis": "太极集团 当前股价处于历史低位区间，RSI14 74.4，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3469,7 +3466,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3512,26 +3509,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 15.9,
+            "reference_price": 17.78,
+            "stop_loss_price": 16.0,
             "stop_loss_pct": 0.1,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 22.1,
-            "take_profit_pct_1": 0.2507,
-            "take_profit_price_2": 24.75,
-            "take_profit_pct_2": 0.4007,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.0299,
-            "suggested_position_max": 0.0401,
-            "max_portfolio_risk": 0.004,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 22.23,
+            "take_profit_pct_1": 0.2503,
+            "take_profit_price_2": 24.9,
+            "take_profit_pct_2": 0.4004,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0291,
+            "suggested_position_max": 0.039,
+            "max_portfolio_risk": 0.0039,
             "risk_reward_ratio": 2.5,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 15.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 22.10 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 24.75 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 16.00 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 22.23 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 24.90 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -3541,7 +3538,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 低位防守埋伏 模式，当前更适合 分批试仓。规则建议以 15.90 元作为防守位，并在 22.10 / 24.75 元分批兑现。",
+            "summary": "基于 低位防守埋伏 模式，当前更适合 分批试仓。规则建议以 16.00 元作为防守位，并在 22.23 / 24.90 元分批兑现。",
             "highlights": [
               "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3549,12 +3546,12 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485537+00:00"
+            "generated_at": "2026-07-13T06:40:13.492405+00:00"
           },
           "risk_controls": [
-            "止损线参考 15.90 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 22.10 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 24.75 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 16.00 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 22.23 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 24.90 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
@@ -3568,11 +3565,11 @@
           "name": "建设银行",
           "industry": "银行",
           "thesis": "建设银行 当前股价处于历史低位区间，RSI14 52.9，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 85.87,
+              "value": 85.85,
               "description": "银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3587,8 +3584,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 77.75,
-              "description": "日内涨幅 3.1%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 78.24,
+              "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3631,16 +3628,16 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 10.14,
-            "stop_loss_price": 9.58,
+            "reference_price": 10.15,
+            "stop_loss_price": 9.59,
             "stop_loss_pct": 0.055,
-            "signal_quality_score": 70.38,
-            "take_profit_price_1": 11.54,
-            "take_profit_pct_1": 0.1381,
-            "take_profit_price_2": 12.38,
-            "take_profit_pct_2": 0.2209,
-            "trailing_stop_price": 9.83,
-            "suggested_position_min": 0.0554,
+            "signal_quality_score": 70.48,
+            "take_profit_price_1": 11.55,
+            "take_profit_pct_1": 0.1379,
+            "take_profit_price_2": 12.39,
+            "take_profit_pct_2": 0.2207,
+            "trailing_stop_price": 9.84,
+            "suggested_position_min": 0.0555,
             "suggested_position_max": 0.08,
             "max_portfolio_risk": 0.0044,
             "risk_reward_ratio": 2.5,
@@ -3648,9 +3645,9 @@
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 9.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.54 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 12.38 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+              "止损线参考 9.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.55 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.39 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
@@ -3658,7 +3655,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 低位防守埋伏 模式，当前更适合 分批试仓。规则建议以 9.58 元作为防守位，并在 11.54 / 12.38 元分批兑现。",
+            "summary": "基于 低位防守埋伏 模式，当前更适合 分批试仓。规则建议以 9.59 元作为防守位，并在 11.55 / 12.39 元分批兑现。",
             "highlights": [
               "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -3666,134 +3663,16 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485600+00:00"
+            "generated_at": "2026-07-13T06:40:13.492444+00:00"
           },
           "risk_controls": [
-            "止损线参考 9.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.54 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 12.38 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+            "止损线参考 9.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.55 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.39 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "低位策略以等待为主，切勿因短期不涨而频繁换股。"
-          ]
-        },
-        "600488": {
-          "symbol": "600488",
-          "name": "津药药业",
-          "industry": "化学制药",
-          "thesis": "津药药业 当前股价处于历史低位区间，RSI14 65.3，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 58.99,
-              "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 92.13,
-              "description": "当前模式重点关注该维度。20 日收益 9.8%，量能倍率 1.24，MA10 / MA20 / MA60 为 5.22 / 4.96 / 5.63。"
-            },
-            {
-              "name": "事件强度",
-              "value": 56.56,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 81.46,
-              "description": "日内涨幅 8.1%，换手 14.9%，量比 1.22。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "d9d4c9572a95",
-              "title": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "publish_time": "2026-07-11T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600488&announcementId=1225418369&orgId=gssh0600488&announcementTime=2026-07-11"
-            },
-            {
-              "event_id": "9f0a8a6bb256",
-              "title": "分红季来了，24只股即将分红",
-              "publish_time": "2026-07-13T09:25:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "其他",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "（数据宝） 即将实施分红的公司一览  证券代码 证券简称 每10股派现（元） 每10股送转（股） 最新收盘价（元） 近5日涨跌幅（%） 301571 国科天成 1.140 - 67.51 11.86 301099 雅创电子 3.000 3.000 95.60 9.75 600488",
-              "link": "http://finance.eastmoney.com/a/202607133802801956.html"
-            },
-            {
-              "event_id": "f33e2b0e9d59",
-              "title": "津药药业：倍他米松原料药获巴西卫生监督局批准上市",
-              "publish_time": "2026-07-07T17:13:26",
-              "source": "财联社",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业600488.SH)公告称，公司近日收到巴西卫生监督局签发的关于倍他米松原料药的批准通知。该药品适用于多种炎症性疾病及自身免疫性疾病，公司于2023年4月提交注册申请，近日获批。此次批准将助力公司拓展巴西市场，提升业绩，但需注意市场销售及汇率波动等风险。",
-              "link": "http://finance.eastmoney.com/a/202607073796810483.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 6.03,
-            "stop_loss_price": 5.43,
-            "stop_loss_pct": 0.1,
-            "signal_quality_score": 74.81,
-            "take_profit_price_1": 7.53,
-            "take_profit_pct_1": 0.2488,
-            "take_profit_price_2": 8.43,
-            "take_profit_pct_2": 0.398,
-            "trailing_stop_price": 5.44,
-            "suggested_position_min": 0.0233,
-            "suggested_position_max": 0.033,
-            "max_portfolio_risk": 0.0033,
-            "risk_reward_ratio": 2.5,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 5.43 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 7.53 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 8.43 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 5.43 元作为防守位，并在 7.53 / 8.43 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485642+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 5.43 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 7.53 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 8.43 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "低位策略以等待为主，切勿因短期不涨而频繁换股。",
-            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
         "600664": {
@@ -3801,11 +3680,11 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "thesis": "哈药股份 当前股价处于历史低位区间，RSI14 62.0，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -3821,7 +3700,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.92。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -3867,7 +3746,7 @@
             "reference_price": 3.71,
             "stop_loss_price": 3.4,
             "stop_loss_pct": 0.0836,
-            "signal_quality_score": 74.57,
+            "signal_quality_score": 74.72,
             "take_profit_price_1": 4.49,
             "take_profit_pct_1": 0.2102,
             "take_profit_price_2": 4.95,
@@ -3900,7 +3779,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485682+00:00"
+            "generated_at": "2026-07-13T06:40:13.492484+00:00"
           },
           "risk_controls": [
             "止损线参考 3.40 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3912,6 +3791,123 @@
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "低位策略以等待为主，切勿因短期不涨而频繁换股。",
             "当日已接近涨停，避免尾盘情绪化追高。"
+          ]
+        },
+        "301277": {
+          "symbol": "301277",
+          "name": "新天地",
+          "industry": "化学制药",
+          "thesis": "新天地 当前股价处于历史低位区间，RSI14 60.8，具备低风险埋伏价值。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 59.55,
+              "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 80.6,
+              "description": "当前模式重点关注该维度。20 日收益 8.3%，量能倍率 2.20，MA10 / MA20 / MA60 为 9.47 / 9.28 / 10.23。"
+            },
+            {
+              "name": "事件强度",
+              "value": 53.03,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 97.07,
+              "description": "日内涨幅 8.0%，换手 3.8%，量比 1.88。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "53ed5a77256c",
+              "title": "关于获得化学原料药上市申请批准通知书的公告",
+              "publish_time": "2026-06-23T15:48:28",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于获得化学原料药上市申请批准通知书的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=301277&announcementId=1225382429&orgId=nssc1000651&announcementTime=2026-06-23 15:48:28"
+            },
+            {
+              "event_id": "ca43398dbc1b",
+              "title": "17.54亿主力资金净流入，CRO概念涨4.43%",
+              "publish_time": "2026-07-10T16:18:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "1.83 300887 谱尼测试 4.85 4.03 577.54 5.53 688076 ST诺泰 0.85 0.84 551.70 7.27 000813 德展健康 2.54 2.37 478.01 3.00 301047 义翘神州 1.93 2.13 428.10 2.40 301277",
+              "link": "http://finance.eastmoney.com/a/202607103801819682.html"
+            },
+            {
+              "event_id": "7145ce8402bf",
+              "title": "减肥药概念涨4.35%，主力资金净流入这些股",
+              "publish_time": "2026-07-10T16:17:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "0.79 688076 ST诺泰 0.85 0.84 551.70 7.27 000813 德展健康 2.54 2.37 478.01 3.00 688166 博瑞医药 4.66 2.24 466.67 1.54 603707 健友股份 3.45 0.94 466.58 4.12 301277",
+              "link": "http://finance.eastmoney.com/a/202607103801821049.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 10.66,
+            "stop_loss_price": 9.59,
+            "stop_loss_pct": 0.1,
+            "signal_quality_score": 73.92,
+            "take_profit_price_1": 13.34,
+            "take_profit_pct_1": 0.2514,
+            "take_profit_price_2": 14.94,
+            "take_profit_pct_2": 0.4015,
+            "trailing_stop_price": 10.02,
+            "suggested_position_min": 0.0264,
+            "suggested_position_max": 0.0375,
+            "max_portfolio_risk": 0.0037,
+            "risk_reward_ratio": 2.5,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 13.34 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 14.94 元，若继续上行则把跟踪止损上移到 10.02 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 9.59 元作为防守位，并在 13.34 / 14.94 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.32，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于获得化学原料药上市申请批准通知书的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-07-13T06:40:13.492522+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 13.34 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 14.94 元，若继续上行则把跟踪止损上移到 10.02 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "低位策略以等待为主，切勿因短期不涨而频繁换股。"
           ]
         }
       },
@@ -3935,9 +3931,9 @@
           "name": "建设银行",
           "industry": "银行",
           "rank": 1,
-          "base_score": 73.23,
+          "base_score": 73.38,
           "event_score": 54.42,
-          "risk_adjusted_score": 76.46,
+          "risk_adjusted_score": 76.5,
           "holding_window": "15-30D",
           "reasons": [
             {
@@ -3960,42 +3956,13 @@
           ]
         },
         {
-          "symbol": "600488",
-          "name": "津药药业",
-          "industry": "化学制药",
-          "rank": 2,
-          "base_score": 78.99,
-          "event_score": 56.56,
-          "risk_adjusted_score": 75.26,
-          "holding_window": "15-30D",
-          "reasons": [
-            {
-              "label": "基本面质量",
-              "detail": "事件分 56.6，最近催化：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告。"
-            },
-            {
-              "label": "价值区间",
-              "detail": "当前价 5.58 相对 MA60 5.63，RSI14 65.3，估值处于合理偏低区间。"
-            },
-            {
-              "label": "中长线逻辑",
-              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "其他",
-            "业绩财报"
-          ]
-        },
-        {
           "symbol": "000989",
           "name": "九芝堂",
           "industry": "中药",
-          "rank": 3,
-          "base_score": 80.48,
+          "rank": 2,
+          "base_score": 80.55,
           "event_score": 59.69,
-          "risk_adjusted_score": 73.1,
+          "risk_adjusted_score": 73.16,
           "holding_window": "15-30D",
           "reasons": [
             {
@@ -4021,10 +3988,10 @@
           "symbol": "600664",
           "name": "哈药股份",
           "industry": "化学制药",
-          "rank": 4,
-          "base_score": 79.41,
+          "rank": 3,
+          "base_score": 79.57,
           "event_score": 56.87,
-          "risk_adjusted_score": 71.37,
+          "risk_adjusted_score": 71.49,
           "holding_window": "15-30D",
           "reasons": [
             {
@@ -4050,10 +4017,10 @@
           "symbol": "600129",
           "name": "太极集团",
           "industry": "中药",
-          "rank": 5,
-          "base_score": 94.42,
+          "rank": 4,
+          "base_score": 94.49,
           "event_score": 55.44,
-          "risk_adjusted_score": 70.94,
+          "risk_adjusted_score": 71.0,
           "holding_window": "15-30D",
           "reasons": [
             {
@@ -4074,6 +4041,35 @@
             "官方公告",
             "官方公告"
           ]
+        },
+        {
+          "symbol": "601665",
+          "name": "齐鲁银行",
+          "industry": "银行",
+          "rank": 5,
+          "base_score": 64.35,
+          "event_score": 54.64,
+          "risk_adjusted_score": 65.03,
+          "holding_window": "15-30D",
+          "reasons": [
+            {
+              "label": "基本面质量",
+              "detail": "事件分 54.6，最近催化：融资客看好4股 买入占成交比例超三成。"
+            },
+            {
+              "label": "价值区间",
+              "detail": "当前价 5.93 相对 MA60 6.03，RSI14 53.0，估值处于合理偏低区间。"
+            },
+            {
+              "label": "中长线逻辑",
+              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "官方公告",
+            "官方公告"
+          ]
         }
       ],
       "stock_details": {
@@ -4082,11 +4078,11 @@
           "name": "建设银行",
           "industry": "银行",
           "thesis": "建设银行 基本面质量良好，事件分 54.4，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 85.87,
+              "value": 85.85,
               "description": "银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -4101,8 +4097,8 @@
             },
             {
               "name": "情绪热度",
-              "value": 77.75,
-              "description": "日内涨幅 3.1%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 78.24,
+              "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -4145,26 +4141,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 10.14,
-            "stop_loss_price": 9.53,
+            "reference_price": 10.15,
+            "stop_loss_price": 9.54,
             "stop_loss_pct": 0.06,
-            "signal_quality_score": 70.38,
-            "take_profit_price_1": 11.85,
-            "take_profit_pct_1": 0.1686,
-            "take_profit_price_2": 12.89,
-            "take_profit_pct_2": 0.2712,
-            "trailing_stop_price": 9.83,
+            "signal_quality_score": 70.48,
+            "take_profit_price_1": 11.86,
+            "take_profit_pct_1": 0.1685,
+            "take_profit_price_2": 12.9,
+            "take_profit_pct_2": 0.2709,
+            "trailing_stop_price": 9.84,
             "suggested_position_min": 0.0565,
-            "suggested_position_max": 0.0814,
+            "suggested_position_max": 0.0815,
             "max_portfolio_risk": 0.0049,
             "risk_reward_ratio": 2.8,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 9.53 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.85 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 12.89 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+              "止损线参考 9.54 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.86 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.90 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。"
             ]
           },
@@ -4172,7 +4168,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 9.53 元作为防守位，并在 11.85 / 12.89 元分批兑现。",
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 9.54 元作为防守位，并在 11.86 / 12.90 元分批兑现。",
             "highlights": [
               "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4180,134 +4176,16 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485757+00:00"
+            "generated_at": "2026-07-13T06:40:13.492640+00:00"
           },
           "risk_controls": [
-            "止损线参考 9.53 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.85 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 12.89 元，若继续上行则把跟踪止损上移到 9.83 元附近。",
+            "止损线参考 9.54 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.86 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.90 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。"
-          ]
-        },
-        "600488": {
-          "symbol": "600488",
-          "name": "津药药业",
-          "industry": "化学制药",
-          "thesis": "津药药业 基本面质量良好，事件分 56.6，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 58.99,
-              "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 92.13,
-              "description": "20 日收益 9.8%，量能倍率 1.24，MA10 / MA20 / MA60 为 5.22 / 4.96 / 5.63。"
-            },
-            {
-              "name": "事件强度",
-              "value": 56.56,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 81.46,
-              "description": "日内涨幅 8.1%，换手 14.9%，量比 1.22。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "d9d4c9572a95",
-              "title": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "publish_time": "2026-07-11T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600488&announcementId=1225418369&orgId=gssh0600488&announcementTime=2026-07-11"
-            },
-            {
-              "event_id": "9f0a8a6bb256",
-              "title": "分红季来了，24只股即将分红",
-              "publish_time": "2026-07-13T09:25:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "其他",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "（数据宝） 即将实施分红的公司一览  证券代码 证券简称 每10股派现（元） 每10股送转（股） 最新收盘价（元） 近5日涨跌幅（%） 301571 国科天成 1.140 - 67.51 11.86 301099 雅创电子 3.000 3.000 95.60 9.75 600488",
-              "link": "http://finance.eastmoney.com/a/202607133802801956.html"
-            },
-            {
-              "event_id": "f33e2b0e9d59",
-              "title": "津药药业：倍他米松原料药获巴西卫生监督局批准上市",
-              "publish_time": "2026-07-07T17:13:26",
-              "source": "财联社",
-              "source_category": "个股资讯",
-              "event_type": "业绩财报",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "津药药业600488.SH)公告称，公司近日收到巴西卫生监督局签发的关于倍他米松原料药的批准通知。该药品适用于多种炎症性疾病及自身免疫性疾病，公司于2023年4月提交注册申请，近日获批。此次批准将助力公司拓展巴西市场，提升业绩，但需注意市场销售及汇率波动等风险。",
-              "link": "http://finance.eastmoney.com/a/202607073796810483.html"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 6.03,
-            "stop_loss_price": 5.37,
-            "stop_loss_pct": 0.11,
-            "signal_quality_score": 74.81,
-            "take_profit_price_1": 7.88,
-            "take_profit_pct_1": 0.3068,
-            "take_profit_price_2": 9.0,
-            "take_profit_pct_2": 0.4925,
-            "trailing_stop_price": 5.44,
-            "suggested_position_min": 0.0236,
-            "suggested_position_max": 0.0334,
-            "max_portfolio_risk": 0.0037,
-            "risk_reward_ratio": 2.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 5.37 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 7.88 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 9.00 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 5.37 元作为防守位，并在 7.88 / 9.00 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485798+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 5.37 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 7.88 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 9.00 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。",
-            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
         "000989": {
@@ -4315,11 +4193,11 @@
           "name": "九芝堂",
           "industry": "中药",
           "thesis": "九芝堂 基本面质量良好，事件分 59.7，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -4335,7 +4213,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 10.6%，量比 6.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 10.7%，量比 6.40。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -4381,7 +4259,7 @@
             "reference_price": 8.98,
             "stop_loss_price": 8.25,
             "stop_loss_pct": 0.0817,
-            "signal_quality_score": 76.65,
+            "signal_quality_score": 76.72,
             "take_profit_price_1": 11.02,
             "take_profit_pct_1": 0.2272,
             "take_profit_price_2": 12.27,
@@ -4414,7 +4292,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485837+00:00"
+            "generated_at": "2026-07-13T06:40:13.492686+00:00"
           },
           "risk_controls": [
             "止损线参考 8.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4433,11 +4311,11 @@
           "name": "哈药股份",
           "industry": "化学制药",
           "thesis": "哈药股份 基本面质量良好，事件分 56.9，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 58.99,
+              "value": 59.55,
               "description": "化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -4453,7 +4331,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.92。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -4499,14 +4377,14 @@
             "reference_price": 3.71,
             "stop_loss_price": 3.37,
             "stop_loss_pct": 0.0919,
-            "signal_quality_score": 74.57,
+            "signal_quality_score": 74.72,
             "take_profit_price_1": 4.66,
             "take_profit_pct_1": 0.2561,
             "take_profit_price_2": 5.24,
             "take_profit_pct_2": 0.4124,
             "trailing_stop_price": 3.53,
             "suggested_position_min": 0.0304,
-            "suggested_position_max": 0.043,
+            "suggested_position_max": 0.0431,
             "max_portfolio_risk": 0.004,
             "risk_reward_ratio": 2.79,
             "action_bias": "谨慎追高",
@@ -4532,7 +4410,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485874+00:00"
+            "generated_at": "2026-07-13T06:40:13.492726+00:00"
           },
           "risk_controls": [
             "止损线参考 3.37 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -4551,11 +4429,11 @@
           "name": "太极集团",
           "industry": "中药",
           "thesis": "太极集团 基本面质量良好，事件分 55.4，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 87.84,
+              "value": 88.09,
               "description": "中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -4571,7 +4449,7 @@
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -4614,26 +4492,26 @@
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 17.67,
-            "stop_loss_price": 15.73,
+            "reference_price": 17.78,
+            "stop_loss_price": 15.82,
             "stop_loss_pct": 0.11,
-            "signal_quality_score": 87.82,
-            "take_profit_price_1": 23.1,
-            "take_profit_pct_1": 0.3073,
-            "take_profit_price_2": 26.4,
-            "take_profit_pct_2": 0.4941,
-            "trailing_stop_price": 16.57,
-            "suggested_position_min": 0.0302,
-            "suggested_position_max": 0.0405,
-            "max_portfolio_risk": 0.0045,
+            "signal_quality_score": 87.89,
+            "take_profit_price_1": 23.27,
+            "take_profit_pct_1": 0.3088,
+            "take_profit_price_2": 26.6,
+            "take_profit_pct_2": 0.4961,
+            "trailing_stop_price": 16.68,
+            "suggested_position_min": 0.0294,
+            "suggested_position_max": 0.0394,
+            "max_portfolio_risk": 0.0043,
             "risk_reward_ratio": 2.8,
             "action_bias": "分批试仓",
             "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 15.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 23.10 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 26.40 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+              "止损线参考 15.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 23.27 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 26.60 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
@@ -4643,7 +4521,7 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.78,
-            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 15.73 元作为防守位，并在 23.10 / 26.40 元分批兑现。",
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 15.82 元作为防守位，并在 23.27 / 26.60 元分批兑现。",
             "highlights": [
               "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
               "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4651,15 +4529,130 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-13T06:38:39.485911+00:00"
+            "generated_at": "2026-07-13T06:40:13.492765+00:00"
           },
           "risk_controls": [
-            "止损线参考 15.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 23.10 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 26.40 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+            "止损线参考 15.82 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 23.27 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 26.60 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。"
+          ]
+        },
+        "601665": {
+          "symbol": "601665",
+          "name": "齐鲁银行",
+          "industry": "银行",
+          "thesis": "齐鲁银行 基本面质量良好，事件分 54.6，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 85.85,
+              "description": "银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 45.12,
+              "description": "20 日收益 -5.9%，量能倍率 1.07，MA10 / MA20 / MA60 为 5.83 / 5.92 / 6.03。"
+            },
+            {
+              "name": "事件强度",
+              "value": 54.64,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 68.48,
+              "description": "日内涨幅 2.9%，换手 1.2%，量比 1.57。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "11549957989e",
+              "title": "融资客看好4股 买入占成交比例超三成",
+              "publish_time": "2026-07-13T10:38:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "4765.87 22029.97 21.63 1.74 600251 冠农股份 1794.09 8392.02 21.38 2.22 301318 维海德 570.83 2672.42 21.36 2.28 301626 苏州天脉 9184.16 43208.64 21.26 -3.96 601665",
+              "link": "http://finance.eastmoney.com/a/202607133803250897.html"
+            },
+            {
+              "event_id": "45c08d527701",
+              "title": "齐鲁银行股份有限公司关于2026年无固定期限资本债券发行完毕的公告",
+              "publish_time": "2026-07-02T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "齐鲁银行股份有限公司关于2026年无固定期限资本债券发行完毕的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601665&announcementId=1225403812&orgId=9900010908&announcementTime=2026-07-02"
+            },
+            {
+              "event_id": "c251c3d0769e",
+              "title": "齐鲁银行股份有限公司2025年度权益分派实施公告",
+              "publish_time": "2026-07-02T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "齐鲁银行股份有限公司2025年度权益分派实施公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601665&announcementId=1225403801&orgId=9900010908&announcementTime=2026-07-02"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 6.1,
+            "stop_loss_price": 5.73,
+            "stop_loss_pct": 0.06,
+            "signal_quality_score": 63.19,
+            "take_profit_price_1": 7.14,
+            "take_profit_pct_1": 0.1705,
+            "take_profit_price_2": 7.76,
+            "take_profit_pct_2": 0.2721,
+            "trailing_stop_price": 5.9,
+            "suggested_position_min": 0.0509,
+            "suggested_position_max": 0.0758,
+            "max_portfolio_risk": 0.0045,
+            "risk_reward_ratio": 2.81,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 5.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 7.14 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 7.76 元，若继续上行则把跟踪止损上移到 5.90 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 5.73 元作为防守位，并在 7.14 / 7.76 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 1.55，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：融资客看好4股 买入占成交比例超三成"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-07-13T06:40:13.492803+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 5.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 7.14 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 7.76 元，若继续上行则把跟踪止损上移到 5.90 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
             "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。"
@@ -4682,9 +4675,9 @@
       "name": "太极集团",
       "industry": "中药",
       "rank": 1,
-      "base_score": 94.42,
+      "base_score": 94.49,
       "event_score": 55.44,
-      "risk_adjusted_score": 91.13,
+      "risk_adjusted_score": 91.2,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4711,9 +4704,9 @@
       "name": "天目药业",
       "industry": "中药",
       "rank": 2,
-      "base_score": 87.97,
+      "base_score": 88.04,
       "event_score": 55.75,
-      "risk_adjusted_score": 86.04,
+      "risk_adjusted_score": 86.11,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4740,9 +4733,9 @@
       "name": "立方制药",
       "industry": "化学制药",
       "rank": 3,
-      "base_score": 83.89,
+      "base_score": 84.05,
       "event_score": 56.52,
-      "risk_adjusted_score": 81.77,
+      "risk_adjusted_score": 81.93,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4765,13 +4758,13 @@
       ]
     },
     {
-      "symbol": "600488",
-      "name": "津药药业",
+      "symbol": "600664",
+      "name": "哈药股份",
       "industry": "化学制药",
       "rank": 4,
-      "base_score": 78.99,
-      "event_score": 56.56,
-      "risk_adjusted_score": 78.6,
+      "base_score": 79.57,
+      "event_score": 56.87,
+      "risk_adjusted_score": 78.41,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -4780,45 +4773,45 @@
         },
         {
           "label": "技术结构",
-          "detail": "津药药业 近 20 日收益 9.8%，技术分 92.1。"
+          "detail": "哈药股份 近 20 日收益 9.1%，技术分 79.3。"
         },
         {
           "label": "事件辅助",
-          "detail": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
+          "detail": "哈药集团股份有限公司2026年半年度业绩预增公告"
         }
       ],
       "event_tags": [
         "官方公告",
         "其他",
-        "业绩财报"
+        "其他"
       ]
     },
     {
-      "symbol": "600428",
-      "name": "中远海特",
-      "industry": "港口航运",
+      "symbol": "601939",
+      "name": "建设银行",
+      "industry": "银行",
       "rank": 5,
-      "base_score": 77.09,
-      "event_score": 58.04,
-      "risk_adjusted_score": 76.54,
+      "base_score": 73.38,
+      "event_score": 54.42,
+      "risk_adjusted_score": 69.89,
       "holding_window": "3-5D",
       "reasons": [
         {
           "label": "行业轮动",
-          "detail": "港口航运 当前仍在强势行业监控池内，优先级高于普通板块。"
+          "detail": "银行 当前仍在强势行业监控池内，优先级高于普通板块。"
         },
         {
           "label": "技术结构",
-          "detail": "中远海特 近 20 日收益 14.8%，技术分 75.3。"
+          "detail": "建设银行 近 20 日收益 -5.4%，技术分 60.4。"
         },
         {
           "label": "事件辅助",
-          "detail": "中远海特：上半年净利润同比预增55%—70%"
+          "detail": "建设银行2025年年度A股分红派息实施公告"
         }
       ],
       "event_tags": [
-        "业绩财报",
-        "业绩财报",
+        "官方公告",
+        "官方公告",
         "官方公告"
       ]
     }
@@ -4828,12 +4821,12 @@
       "symbol": "600129",
       "name": "太极集团",
       "industry": "中药",
-      "thesis": "太极集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.1，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "太极集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.2，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 87.84,
+          "value": 88.09,
           "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4849,7 +4842,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 6.6%，换手 11.8%，量比 2.12。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 7.2%，换手 11.9%，量比 2.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -4892,26 +4885,26 @@
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 17.67,
-        "stop_loss_price": 16.29,
+        "reference_price": 17.78,
+        "stop_loss_price": 16.39,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 87.82,
-        "take_profit_price_1": 20.15,
-        "take_profit_pct_1": 0.1404,
-        "take_profit_price_2": 21.81,
-        "take_profit_pct_2": 0.2343,
-        "trailing_stop_price": 16.57,
-        "suggested_position_min": 0.0511,
-        "suggested_position_max": 0.0685,
-        "max_portfolio_risk": 0.0053,
+        "signal_quality_score": 87.89,
+        "take_profit_price_1": 20.28,
+        "take_profit_pct_1": 0.1406,
+        "take_profit_price_2": 21.95,
+        "take_profit_pct_2": 0.2345,
+        "trailing_stop_price": 16.68,
+        "suggested_position_min": 0.0498,
+        "suggested_position_max": 0.0667,
+        "max_portfolio_risk": 0.0052,
         "risk_reward_ratio": 1.8,
         "action_bias": "分批试仓",
         "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 16.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 20.15 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 21.81 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+          "止损线参考 16.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 21.95 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "信号质量较高，可在纪律范围内使用区间上沿仓位。",
           "价格已处于加速区，建议只用试仓级别仓位。"
@@ -4921,7 +4914,7 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.72,
-        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 16.29 元作为防守位，并在 20.15 / 21.81 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 16.39 元作为防守位，并在 20.28 / 21.95 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
           "近 10 日波动率为 4.52，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
@@ -4929,12 +4922,12 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-13T06:38:39.484449+00:00"
+        "generated_at": "2026-07-13T06:40:13.491372+00:00"
       },
       "risk_controls": [
-        "止损线参考 16.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 20.15 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 21.81 元，若继续上行则把跟踪止损上移到 16.57 元附近。",
+        "止损线参考 16.39 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 20.28 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 21.95 元，若继续上行则把跟踪止损上移到 16.68 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "信号质量较高，可在纪律范围内使用区间上沿仓位。",
         "价格已处于加速区，建议只用试仓级别仓位。",
@@ -4946,12 +4939,12 @@
       "symbol": "600671",
       "name": "天目药业",
       "industry": "中药",
-      "thesis": "天目药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.0，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "天目药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.1，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 87.84,
+          "value": 88.09,
           "description": "当前模式重点关注该维度。中药 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -4967,7 +4960,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 10.0%，换手 7.8%，量比 2.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 10.0%，换手 7.8%，量比 2.66。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -5013,7 +5006,7 @@
         "reference_price": 21.13,
         "stop_loss_price": 19.48,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 82.39,
+        "signal_quality_score": 82.46,
         "take_profit_price_1": 24.1,
         "take_profit_pct_1": 0.1406,
         "take_profit_price_2": 26.08,
@@ -5047,7 +5040,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-13T06:38:39.484507+00:00"
+        "generated_at": "2026-07-13T06:40:13.491428+00:00"
       },
       "risk_controls": [
         "止损线参考 19.48 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -5065,12 +5058,12 @@
       "symbol": "003020",
       "name": "立方制药",
       "industry": "化学制药",
-      "thesis": "立方制药 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 81.8，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "立方制药 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 81.9，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 58.99,
+          "value": 59.55,
           "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -5086,7 +5079,7 @@
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 10.0%，换手 9.7%，量比 1.91。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 10.0%，换手 9.7%，量比 1.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -5132,13 +5125,13 @@
         "reference_price": 20.61,
         "stop_loss_price": 19.1,
         "stop_loss_pct": 0.0731,
-        "signal_quality_score": 78.32,
+        "signal_quality_score": 78.48,
         "take_profit_price_1": 23.33,
         "take_profit_pct_1": 0.132,
         "take_profit_price_2": 25.14,
         "take_profit_pct_2": 0.2198,
         "trailing_stop_price": 19.49,
-        "suggested_position_min": 0.043,
+        "suggested_position_min": 0.0431,
         "suggested_position_max": 0.06,
         "max_portfolio_risk": 0.0044,
         "risk_reward_ratio": 1.8,
@@ -5165,7 +5158,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-13T06:38:39.484557+00:00"
+        "generated_at": "2026-07-13T06:40:13.491476+00:00"
       },
       "risk_controls": [
         "止损线参考 19.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -5178,211 +5171,94 @@
         "当日已接近涨停，避免尾盘情绪化追高。"
       ]
     },
-    "600488": {
-      "symbol": "600488",
-      "name": "津药药业",
+    "600664": {
+      "symbol": "600664",
+      "name": "哈药股份",
       "industry": "化学制药",
-      "thesis": "津药药业 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.6，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "哈药股份 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.4，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 58.99,
+          "value": 59.55,
           "description": "当前模式重点关注该维度。化学制药 当前位于强势行业监控池，行业排序第 3 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
           "name": "技术结构",
-          "value": 92.13,
-          "description": "20 日收益 9.8%，量能倍率 1.24，MA10 / MA20 / MA60 为 5.22 / 4.96 / 5.63。"
+          "value": 79.27,
+          "description": "20 日收益 9.1%，量能倍率 1.04，MA10 / MA20 / MA60 为 3.12 / 3.11 / 3.44。"
         },
         {
           "name": "事件强度",
-          "value": 56.56,
-          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-        },
-        {
-          "name": "情绪热度",
-          "value": 81.46,
-          "description": "日内涨幅 8.1%，换手 14.9%，量比 1.22。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-        }
-      ],
-      "recent_events": [
-        {
-          "event_id": "d9d4c9572a95",
-          "title": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-          "publish_time": "2026-07-11T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600488&announcementId=1225418369&orgId=gssh0600488&announcementTime=2026-07-11"
-        },
-        {
-          "event_id": "9f0a8a6bb256",
-          "title": "分红季来了，24只股即将分红",
-          "publish_time": "2026-07-13T09:25:00",
-          "source": "证券时报网",
-          "source_category": "个股资讯",
-          "event_type": "其他",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "（数据宝） 即将实施分红的公司一览  证券代码 证券简称 每10股派现（元） 每10股送转（股） 最新收盘价（元） 近5日涨跌幅（%） 301571 国科天成 1.140 - 67.51 11.86 301099 雅创电子 3.000 3.000 95.60 9.75 600488",
-          "link": "http://finance.eastmoney.com/a/202607133802801956.html"
-        },
-        {
-          "event_id": "f33e2b0e9d59",
-          "title": "津药药业：倍他米松原料药获巴西卫生监督局批准上市",
-          "publish_time": "2026-07-07T17:13:26",
-          "source": "财联社",
-          "source_category": "个股资讯",
-          "event_type": "业绩财报",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "津药药业600488.SH)公告称，公司近日收到巴西卫生监督局签发的关于倍他米松原料药的批准通知。该药品适用于多种炎症性疾病及自身免疫性疾病，公司于2023年4月提交注册申请，近日获批。此次批准将助力公司拓展巴西市场，提升业绩，但需注意市场销售及汇率波动等风险。",
-          "link": "http://finance.eastmoney.com/a/202607073796810483.html"
-        }
-      ],
-      "risk_plan": {
-        "price_basis": "当前最新价",
-        "reference_price": 6.03,
-        "stop_loss_price": 5.56,
-        "stop_loss_pct": 0.078,
-        "signal_quality_score": 74.81,
-        "take_profit_price_1": 6.88,
-        "take_profit_pct_1": 0.141,
-        "take_profit_price_2": 7.44,
-        "take_profit_pct_2": 0.2338,
-        "trailing_stop_price": 5.44,
-        "suggested_position_min": 0.0399,
-        "suggested_position_max": 0.0564,
-        "max_portfolio_risk": 0.0044,
-        "risk_reward_ratio": 1.81,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-        "analysis_method": "rule_based_v1",
-        "execution_notes": [
-          "止损线参考 5.56 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 6.88 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 7.44 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
-        ]
-      },
-      "ai_risk_analysis": {
-        "status": "rule_stub_ready",
-        "model": null,
-        "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 5.56 元作为防守位，并在 6.88 / 7.44 元分批兑现。",
-        "highlights": [
-          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 5.79，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：津药药业股份有限公司关于子公司药品在《国家基本药物目录》中调整情况的公告"
-        ],
-        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-        "source": "rules",
-        "generated_at": "2026-07-13T06:38:39.484628+00:00"
-      },
-      "risk_controls": [
-        "止损线参考 5.56 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 6.88 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 7.44 元，若继续上行则把跟踪止损上移到 5.44 元附近。",
-        "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
-        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
-      ]
-    },
-    "600428": {
-      "symbol": "600428",
-      "name": "中远海特",
-      "industry": "港口航运",
-      "thesis": "中远海特 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 76.5，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 港口航运 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-      "feature_scores": [
-        {
-          "name": "行业强度",
-          "value": 56.52,
-          "description": "当前模式重点关注该维度。港口航运 当前位于强势行业监控池，行业排序第 5 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-        },
-        {
-          "name": "技术结构",
-          "value": 75.34,
-          "description": "20 日收益 14.8%，量能倍率 0.64，MA10 / MA20 / MA60 为 8.37 / 8.23 / 8.25。"
-        },
-        {
-          "name": "事件强度",
-          "value": 58.04,
+          "value": 56.87,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 9.2%，换手 8.4%，量比 7.53。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 10.1%，换手 8.0%，量比 3.89。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
         {
-          "event_id": "b55fbc01781a",
-          "title": "中远海特：上半年净利润同比预增55%—70%",
-          "publish_time": "2026-07-09T16:38:00",
-          "source": "证券时报网",
-          "source_category": "个股资讯",
-          "event_type": "业绩财报",
-          "sentiment": "neutral",
-          "impact_level": "medium",
-          "summary": "人民财讯7月9日电，中远海特6004287月9日披露业绩预告，预计2026年上半年归母净利润为12.79亿元至14.02亿元，同比增加55%到70%。",
-          "link": "http://finance.eastmoney.com/a/202607093800068415.html"
-        },
-        {
-          "event_id": "de5cd11fb8e5",
-          "title": "中远海特发布上半年预增公告 净利润同比增长55.00%~70.00%",
-          "publish_time": "2026-07-09T21:53:00",
-          "source": "证券时报网",
-          "source_category": "个股资讯",
-          "event_type": "业绩财报",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "中远海特（600428）7月9日发布上半年业绩预增公告，预计实现净利润为12.79亿元~14.02亿元，净利润同比增长55.00%~70.00%。",
-          "link": "http://finance.eastmoney.com/a/202607093800360916.html"
-        },
-        {
-          "event_id": "608912d314bb",
-          "title": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
+          "event_id": "a0ebca57e378",
+          "title": "哈药集团股份有限公司2026年半年度业绩预增公告",
           "publish_time": "2026-07-10T00:00:00",
           "source": "巨潮资讯",
           "source_category": "官方公告",
           "event_type": "官方公告",
           "sentiment": "neutral",
           "impact_level": "low",
-          "summary": "中远海运特种运输股份有限公司2026年半年度业绩预增公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600428&announcementId=1225416650&orgId=gssh0600428&announcementTime=2026-07-10"
+          "summary": "哈药集团股份有限公司2026年半年度业绩预增公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=600664&announcementId=1225416436&orgId=gssh0600664&announcementTime=2026-07-10"
+        },
+        {
+          "event_id": "8a100cf699b6",
+          "title": "今日25只个股突破年线",
+          "publish_time": "2026-07-13T13:00:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "4.57 0.10 20.72 21.49 3.70 601369 陕鼓动力 4.86 2.33 9.25 9.49 2.64 603345 安井食品 2.88 1.18 81.70 83.86 2.64 601156 东航物流 2.98 1.34 16.52 16.95 2.61 600664",
+          "link": "http://finance.eastmoney.com/a/202607133803477532.html"
+        },
+        {
+          "event_id": "1ef4fcca05e4",
+          "title": "32只股中线走稳 站上半年线",
+          "publish_time": "2026-07-13T13:00:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "10.02 8.01 21.79 23.83 9.35 600671 天目药业 9.99 6.08 19.35 21.13 9.17 003020 立方制药 9.98 9.28 19.03 20.61 8.32 688101 三达膜 7.31 5.97 17.22 18.36 6.64 600664",
+          "link": "http://finance.eastmoney.com/a/202607133803477313.html"
         }
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 9.82,
-        "stop_loss_price": 9.14,
-        "stop_loss_pct": 0.0692,
-        "signal_quality_score": 72.73,
-        "take_profit_price_1": 11.04,
-        "take_profit_pct_1": 0.1242,
-        "take_profit_price_2": 11.86,
-        "take_profit_pct_2": 0.2077,
-        "trailing_stop_price": 9.32,
-        "suggested_position_min": 0.048,
-        "suggested_position_max": 0.0685,
-        "max_portfolio_risk": 0.0047,
+        "reference_price": 3.71,
+        "stop_loss_price": 3.47,
+        "stop_loss_pct": 0.0648,
+        "signal_quality_score": 74.72,
+        "take_profit_price_1": 4.14,
+        "take_profit_pct_1": 0.1159,
+        "take_profit_price_2": 4.43,
+        "take_profit_pct_2": 0.1941,
+        "trailing_stop_price": 3.53,
+        "suggested_position_min": 0.0518,
+        "suggested_position_max": 0.0734,
+        "max_portfolio_risk": 0.0048,
         "risk_reward_ratio": 1.79,
         "action_bias": "谨慎追高",
         "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 9.14 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 11.86 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
+          "止损线参考 3.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 4.14 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 4.43 元，若继续上行则把跟踪止损上移到 3.53 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "价格已处于加速区，建议只用试仓级别仓位。"
         ]
@@ -5391,22 +5267,137 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.14 元作为防守位，并在 11.04 / 11.86 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 3.47 元作为防守位，并在 4.14 / 4.43 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：中远海特：上半年净利润同比预增55%—70%"
+          "近 10 日波动率为 3.78，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：哈药集团股份有限公司2026年半年度业绩预增公告"
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-13T06:38:39.484676+00:00"
+        "generated_at": "2026-07-13T06:40:13.491520+00:00"
       },
       "risk_controls": [
-        "止损线参考 9.14 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 11.86 元，若继续上行则把跟踪止损上移到 9.32 元附近。",
+        "止损线参考 3.47 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 4.14 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 4.43 元，若继续上行则把跟踪止损上移到 3.53 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。"
+      ]
+    },
+    "601939": {
+      "symbol": "601939",
+      "name": "建设银行",
+      "industry": "银行",
+      "thesis": "建设银行 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 69.9，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 中药, 银行, 化学制药, 油气开采及服务, 食品加工制造 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 85.85,
+          "description": "当前模式重点关注该维度。银行 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 60.37,
+          "description": "20 日收益 -5.4%，量能倍率 1.21，MA10 / MA20 / MA60 为 9.57 / 9.73 / 9.71。"
+        },
+        {
+          "name": "事件强度",
+          "value": 54.42,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 78.24,
+          "description": "日内涨幅 3.2%，换手 1.8%，量比 1.68。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "5a2f23df94d0",
+          "title": "建设银行2025年年度A股分红派息实施公告",
+          "publish_time": "2026-07-07T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "建设银行2025年年度A股分红派息实施公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225411863&orgId=9900003682&announcementTime=2026-07-07"
+        },
+        {
+          "event_id": "6190408b7b1d",
+          "title": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+          "publish_time": "2026-07-01T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "建设银行关于境内2026年总损失吸收能力非资本债券（第一期）（债券通）发行完毕的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225399960&orgId=9900003682&announcementTime=2026-07-01"
+        },
+        {
+          "event_id": "1fe15d971225",
+          "title": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+          "publish_time": "2026-06-23T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "建设银行关于境内2026年无固定期限资本债券（第一期）（债券通）发行完毕的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=601939&announcementId=1225381225&orgId=9900003682&announcementTime=2026-06-23"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 10.15,
+        "stop_loss_price": 9.73,
+        "stop_loss_pct": 0.0414,
+        "signal_quality_score": 70.48,
+        "take_profit_price_1": 10.91,
+        "take_profit_pct_1": 0.0749,
+        "take_profit_price_2": 11.41,
+        "take_profit_pct_2": 0.1241,
+        "trailing_stop_price": 9.84,
+        "suggested_position_min": 0.0694,
+        "suggested_position_max": 0.1,
+        "max_portfolio_risk": 0.0041,
+        "risk_reward_ratio": 1.81,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 9.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 11.41 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 9.73 元作为防守位，并在 10.91 / 11.41 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 1.53，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：建设银行2025年年度A股分红派息实施公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-07-13T06:40:13.491588+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 9.73 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 10.91 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 11.41 元，若继续上行则把跟踪止损上移到 9.84 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
         "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
       ]
@@ -5415,8 +5406,8 @@
   "selection_meta": {
     "industry_source": "ths_industry_summary",
     "constituent_scan_mode": "行业前 8 成分股全扫",
-    "total_universe_size": 23,
-    "news_watchlist_size": 14,
+    "total_universe_size": 22,
+    "news_watchlist_size": 13,
     "scan_summary": [
       {
         "sector_name": "中药",
@@ -5443,8 +5434,8 @@
         "data_source": "ths_industry_constituents"
       },
       {
-        "sector_name": "港口航运",
-        "sector_code": "881148",
+        "sector_name": "食品加工制造",
+        "sector_code": "881134",
         "scanned_count": 8,
         "data_source": "ths_industry_constituents"
       }
