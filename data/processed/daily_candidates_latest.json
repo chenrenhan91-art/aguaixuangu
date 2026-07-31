@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-07-31T04:40:07.469610+00:00",
+  "generated_at": "2026-07-31T08:05:12.512316+00:00",
   "trade_date": "2026-07-31",
   "snapshot_session": {
-    "session_id": "midday",
-    "label": "午盘信息",
-    "generated_time": "12:40",
-    "generated_at": "2026-07-31T12:40:07.469610+08:00"
+    "session_id": "close",
+    "label": "收盘信息",
+    "generated_time": "16:05",
+    "generated_at": "2026-07-31T16:05:12.512316+08:00"
   },
   "strategy_version": "v2-akshare-multi-mode",
   "default_mode": "balanced",
@@ -49,29 +49,29 @@
   ],
   "market_regime": {
     "regime": "risk_on",
-    "confidence": 0.934,
-    "suggested_exposure": 0.7803,
+    "confidence": 0.9262,
+    "suggested_exposure": 0.7786,
     "breadth_score": 98.11,
     "northbound_score": 89.43,
-    "momentum_score": 97.33,
-    "updated_at": "2026-07-31T04:43:24.468577+00:00"
+    "momentum_score": 95.1,
+    "updated_at": "2026-07-31T08:06:27.692092+00:00"
   },
   "top_sectors": [
     {
       "sector_code": "881271",
       "sector_name": "IT服务",
       "strength_score": 100.0,
-      "momentum_score": 100.0,
+      "momentum_score": 98.93,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
-      "breadth_ratio": 0.9922,
+      "breadth_ratio": 0.9767,
       "member_count": 129
     },
     {
       "sector_code": "881272",
       "sector_name": "软件开发",
       "strength_score": 100.0,
-      "momentum_score": 100.0,
+      "momentum_score": 98.29,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
       "breadth_ratio": 1.0,
@@ -81,81 +81,81 @@
       "sector_code": "881164",
       "sector_name": "文化传媒",
       "strength_score": 100.0,
-      "momentum_score": 96.13,
+      "momentum_score": 94.29,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
-      "breadth_ratio": 0.9286,
-      "member_count": 84
-    },
-    {
-      "sector_code": "881171",
-      "sector_name": "自动化设备",
-      "strength_score": 100.0,
-      "momentum_score": 94.73,
-      "capital_consensus_score": 100.0,
-      "heat_score": 100.0,
-      "breadth_ratio": 0.9896,
-      "member_count": 96
+      "breadth_ratio": 0.9398,
+      "member_count": 83
     },
     {
       "sector_code": "881130",
       "sector_name": "计算机设备",
       "strength_score": 100.0,
-      "momentum_score": 92.86,
+      "momentum_score": 91.16,
       "capital_consensus_score": 100.0,
       "heat_score": 100.0,
-      "breadth_ratio": 0.9753,
-      "member_count": 81
+      "breadth_ratio": 1.0,
+      "member_count": 82
+    },
+    {
+      "sector_code": "881171",
+      "sector_name": "自动化设备",
+      "strength_score": 100.0,
+      "momentum_score": 89.44,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.9792,
+      "member_count": 96
     }
   ],
   "market_news": [
     {
-      "title": "广和通Cat.M模组MQ771-GL通过CE、FCC认证",
-      "summary": "【广和通Cat.M模组MQ771-GL通过CE、FCC认证】据广和通消息，近日，广和通全球版低功耗LTE模组MQ771-GL通过CE、FCC认证。CE和FCC分别是无线设备进入欧洲和美国市场的重要合规要求，覆盖产品安全、电磁兼容、无线频谱及射频发射等关键指标。",
-      "publish_time": "2026-07-31T12:37:33",
-      "link": "https://finance.eastmoney.com/a/202607313828135928.html"
+      "title": "美股存储板块盘前继续上扬",
+      "summary": "【美股存储板块盘前继续上扬】美股存储板块盘前继续上扬，SK海力士涨超6.5%，美光科技涨3.35%，闪迪、西部数据均涨超4.2%，希捷科技涨2.6%。",
+      "publish_time": "2026-07-31T16:03:00",
+      "link": "https://finance.eastmoney.com/a/202607313828302939.html"
     },
     {
-      "title": "晶泰科技发布XtalPi Science 发起“科学智能开放生态联盟”",
-      "summary": "【晶泰科技发布XtalPi Science 发起“科学智能开放生态联盟”】晶泰科技日前在沪发布XtalPiScience科学智能平台与GeniusAgents科学智能体矩阵，并联合26家产业、高校及科研生态伙伴，共同发起成立“科学智能开放生态联盟”。此举标志着晶泰科技开始将其沉淀多年的内部研发能力与项目数据，转化为可由外部科研组织调用、高度可复用的全球科学基础设施，显著降低高阶科研能力的使用门槛，为跨机构研发协作和科学智能的规模化应用提供统一入口。",
-      "publish_time": "2026-07-31T12:35:52",
-      "link": "https://finance.eastmoney.com/a/202607313828133238.html"
+      "title": "长盛轴承：公司已有产品应用于特斯拉汽车上",
+      "summary": "【长盛轴承：公司已有产品应用于特斯拉汽车上】长盛轴承7月31日在互动平台表示，公司作为汽车主机厂的二或三级配套供应商，已有产品应用于特斯拉汽车上；在具身智能零部件领域，公司已与国内多家具身智能产业链相关企业开展业务与技术合作。",
+      "publish_time": "2026-07-31T16:02:48",
+      "link": "https://finance.eastmoney.com/a/202607313828303691.html"
     },
     {
-      "title": "云知声：中标南宁及厦门两地公共市级平台项目 合计签约金额总计超人民币2000万元",
-      "summary": "【云知声：中标南宁及厦门两地公共市级平台项目 合计签约金额总计超人民币2000万元】云知声公告，近日本公司成功中标南宁市级平台公司出资建设的模数空间项目。此外，后本公司再度斩获厦门市级AI公共平台项目，两大市级标杆项目合计签约金额总计超人民币2000万元。",
-      "publish_time": "2026-07-31T12:33:11",
-      "link": "https://finance.eastmoney.com/a/202607313828136096.html"
+      "title": "四部门联合发布22条措施 健全金融机构治理",
+      "summary": "【四部门联合发布22条措施 健全金融机构治理】《实施意见》提出，健全防范大股东违规干预和内部人控制的治理机制，加强对股权和关联交易的穿透式监管，优化董事会结构，强化董事、高管等“关键少数”责任，完善激励约束机制，健全内控合规体系。",
+      "publish_time": "2026-07-31T16:02:10",
+      "link": "https://finance.eastmoney.com/a/202607313828300239.html"
     },
     {
-      "title": "顺络电子：公司已实现多种工艺制作的AI电感产品量产出货",
-      "summary": "【顺络电子：公司已实现多种工艺制作的AI电感产品量产出货】顺络电子在业绩说明会上表示，公司AI电感主要为应用于AI服务器中GPU、CPU、ASIC芯片等各类xPU供电的电感产品，目前公司已实现多种工艺（组装/铜磁共烧/模压）制作的AI电感产品量产出货。在AI电感的TLVR结构迭代趋势下，公司已在多位头部功率模块客户及终端云厂商客户中获得认可并批量供应。受益于数据中心的行业需求爆发，相关产品将持续为公司业绩增长发力。",
-      "publish_time": "2026-07-31T12:30:06",
-      "link": "https://finance.eastmoney.com/a/202607313828133085.html"
+      "title": "上大股份：上半年归母净利润6146.32万元 同比增长2.78%",
+      "summary": "【上大股份：上半年归母净利润6146.32万元 同比增长2.78%】上大股份7月31日披露半年报，公司上半年实现营业收入12.9亿元，同比增长6.47%；归属于上市公司股东的净利润6146.32万元，同比增长2.78%；基本每股收益0.1653元/股。",
+      "publish_time": "2026-07-31T16:01:48",
+      "link": "https://finance.eastmoney.com/a/202607313828301767.html"
     },
     {
-      "title": "索尼半导体子公司将从8月4日起逐步恢复其位于熊本县菊叶町的工厂的运营",
-      "summary": "索尼半导体子公司将从8月4日起逐步恢复其位于熊本县菊叶町的工厂的运营。",
-      "publish_time": "2026-07-31T12:26:01",
-      "link": "https://finance.eastmoney.com/a/202607313828131098.html"
+      "title": "广汽丰田汽车有限公司召回部分铂智7汽车",
+      "summary": "【广汽丰田汽车有限公司召回部分铂智7汽车】据市场监管总局网站消息，日前，广汽丰田汽车有限公司根据《缺陷汽车产品召回管理条例》《缺陷汽车产品召回管理条例实施办法》的要求，向国家市场监督管理总局备案了召回计划。",
+      "publish_time": "2026-07-31T15:59:48",
+      "link": "https://finance.eastmoney.com/a/202607313828301146.html"
     },
     {
-      "title": "美“猎鹰9”火箭第二级残骸预计将撞击月球",
-      "summary": "【美“猎鹰9”火箭第二级残骸预计将撞击月球】据美国媒体30日报道，美太空探索技术公司一枚废弃的“猎鹰9”号火箭第二级残骸预计将于8月5日撞击月球。这一事件有望产生可被地面和空间望远镜观测到的喷射羽流，为研究月球撞击过程和未来月球探测任务提供重要数据。",
-      "publish_time": "2026-07-31T12:23:14",
-      "link": "https://finance.eastmoney.com/a/202607313828130281.html"
+      "title": "亚宝药业：拟以1亿元-2亿元回购公司股份",
+      "summary": "【亚宝药业：拟以1亿元-2亿元回购公司股份】亚宝药业公告，拟以不低于人民币1亿元（含）且不超过人民币2亿元（含）回购公司股份，回购价格不超过6.95元/股（含）。回购股份将依法全部予以注销并减少公司注册资本，回购资金来源为公司自有资金，回购期限为自公司股东会审议通过回购方案之日起不超过12个月。",
+      "publish_time": "2026-07-31T15:59:16",
+      "link": "https://finance.eastmoney.com/a/202607313828299649.html"
     },
     {
-      "title": "全球芯片LOF：7月31日下午开市起停牌至当日收市",
-      "summary": "【全球芯片LOF：7月31日下午开市起停牌至当日收市】景顺长城基金管理有限公司公告，全球芯片LOF(501225)二级市场交易价格明显高于基金份额净值，出现较大幅度溢价。为保护投资者利益，基金将于2026年7月31日下午开市起停牌至当日收市，停牌期间本基金赎回业务照常办理。",
-      "publish_time": "2026-07-31T12:22:00",
-      "link": "https://finance.eastmoney.com/a/202607313828135534.html"
+      "title": "亚宝药业：上半年归母净利润1.78亿元 同比增长1.83%",
+      "summary": "【亚宝药业：上半年归母净利润1.78亿元 同比增长1.83%】亚宝药业7月31日披露半年报，公司上半年实现营业收入11.45亿元，同比增长0.49%；归属于上市公司股东的净利润1.78亿元，同比增长1.83%；基本每股收益0.2566元/股。",
+      "publish_time": "2026-07-31T15:57:48",
+      "link": "https://finance.eastmoney.com/a/202607313828297812.html"
     },
     {
-      "title": "Omdia：第二季度全球智能手机出货量同比下降6%",
-      "summary": "【Omdia：第二季度全球智能手机出货量同比下降6%】根据Omdia最新发布的数据，2026年第二季度全球智能手机出货量同比下降6%，降至2.72亿部。此前，2026年第一季度受提前备货需求带动，市场表现较强，而第二季度则进入存储器成本周期的调整阶段。持续高企的存储价格扰乱了供应，推高了元器件成本，迫使厂商重新思考定价策略、产品组合和渠道战略。",
-      "publish_time": "2026-07-31T12:20:42",
-      "link": "https://finance.eastmoney.com/a/202607313828129529.html"
+      "title": "德国7月季调后失业率为6.4%",
+      "summary": "【德国7月季调后失业率为6.4%】德国7月季调后失业率为6.4%，预期6.3%，前值6.3%。",
+      "publish_time": "2026-07-31T15:56:06",
+      "link": "https://finance.eastmoney.com/a/202607313828298433.html"
     }
   ],
   "strategy_modes": {
@@ -170,9 +170,9 @@
           "name": "普联软件",
           "industry": "软件开发",
           "rank": 1,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 90.42,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 90.04,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -195,13 +195,13 @@
           ]
         },
         {
-          "symbol": "300525",
-          "name": "博思软件",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
           "rank": 2,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 86.04,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 82.19,
           "holding_window": "3-5D",
           "reasons": [
             {
@@ -210,46 +210,17 @@
             },
             {
               "label": "技术结构",
-              "detail": "博思软件 近 20 日收益 8.6%，技术分 85.3。"
+              "detail": "致远互联 近 20 日收益 -4.2%，技术分 55.3。"
             },
             {
               "label": "事件辅助",
-              "detail": "财税数字化概念涨1.98%，主力资金净流入35股"
+              "detail": "5只科创板个股主力资金净流入超亿元"
             }
           ],
           "event_tags": [
             "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 78.54,
-          "holding_window": "3-5D",
-          "reasons": [
-            {
-              "label": "行业轮动",
-              "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
-            },
-            {
-              "label": "技术结构",
-              "detail": "绿盟科技 近 20 日收益 18.4%，技术分 68.9。"
-            },
-            {
-              "label": "事件辅助",
-              "detail": "独立董事候选人声明与承诺（沈朝晖）"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
+            "其他",
+            "其他"
           ]
         }
       ],
@@ -258,12 +229,12 @@
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
-          "thesis": "普联软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.4，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "普联软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.0，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -273,13 +244,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -325,7 +296,7 @@
             "reference_price": 18.62,
             "stop_loss_price": 17.3,
             "stop_loss_pct": 0.0711,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 21.0,
             "take_profit_pct_1": 0.1278,
             "take_profit_price_2": 22.58,
@@ -360,7 +331,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468691+00:00"
+            "generated_at": "2026-07-31T08:06:27.692202+00:00"
           },
           "risk_controls": [
             "止损线参考 17.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -376,213 +347,94 @@
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "博思软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.0，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "thesis": "致远互联 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 82.2，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 85.34,
-              "description": "20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+              "value": 55.32,
+              "description": "20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.67,
+              "value": 58.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
-              "event_type": "资金交易",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 9.12,
-            "stop_loss_pct": 0.0474,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 10.38,
-            "take_profit_pct_1": 0.0846,
-            "take_profit_price_2": 10.92,
-            "take_profit_pct_2": 0.1411,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0745,
-            "suggested_position_max": 0.1,
-            "max_portfolio_risk": 0.0047,
-            "risk_reward_ratio": 1.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 9.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.38 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.12 元作为防守位，并在 10.38 / 10.92 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468752+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 9.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.38 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "thesis": "绿盟科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.5，适合作为默认候选股跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 68.91,
-              "description": "20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.59,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 7.19,
+            "reference_price": 22.0,
+            "stop_loss_price": 20.29,
             "stop_loss_pct": 0.078,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 8.9,
-            "take_profit_pct_1": 0.141,
-            "take_profit_price_2": 9.63,
-            "take_profit_pct_2": 0.2346,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.0437,
-            "suggested_position_max": 0.0606,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 25.08,
+            "take_profit_pct_1": 0.14,
+            "take_profit_price_2": 27.13,
+            "take_profit_pct_2": 0.2332,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0432,
+            "suggested_position_max": 0.0603,
             "max_portfolio_risk": 0.0047,
             "risk_reward_ratio": 1.8,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 7.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 8.90 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 9.63 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+              "止损线参考 20.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.08 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 27.13 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -591,20 +443,20 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 7.19 元作为防守位，并在 8.90 / 9.63 元分批兑现。",
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 20.29 元作为防守位，并在 25.08 / 27.13 元分批兑现。",
             "highlights": [
               "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468799+00:00"
+            "generated_at": "2026-07-31T08:06:27.692264+00:00"
           },
           "risk_controls": [
-            "止损线参考 7.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 8.90 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 9.63 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+            "止损线参考 20.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.08 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 27.13 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -614,7 +466,7 @@
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "行业轮动",
           "技术趋势",
@@ -634,14 +486,14 @@
           "name": "普联软件",
           "industry": "软件开发",
           "rank": 1,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 100,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 99.67,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "软件开发 属于AI产业链重点赛道，当前轮动强度 100.0。"
+              "detail": "软件开发 属于AI产业链重点赛道，当前轮动强度 99.5。"
             },
             {
               "label": "催化事件",
@@ -659,61 +511,32 @@
           ]
         },
         {
-          "symbol": "300525",
-          "name": "博思软件",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
           "rank": 2,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 95.02,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 86.96,
           "holding_window": "3-7D",
           "reasons": [
             {
               "label": "AI产业链",
-              "detail": "软件开发 属于AI产业链重点赛道，当前轮动强度 100.0。"
+              "detail": "软件开发 属于AI产业链重点赛道，当前轮动强度 99.5。"
             },
             {
               "label": "催化事件",
-              "detail": "财税数字化概念涨1.98%，主力资金净流入35股"
+              "detail": "5只科创板个股主力资金净流入超亿元"
             },
             {
               "label": "轮动判断",
-              "detail": "行业排名第 2 位，技术分 85.3，适合跟随AI主线节奏持有。"
+              "detail": "行业排名第 2 位，技术分 55.3，适合跟随AI主线节奏持有。"
             }
           ],
           "event_tags": [
             "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 88.95,
-          "holding_window": "3-7D",
-          "reasons": [
-            {
-              "label": "AI产业链",
-              "detail": "软件开发 属于AI产业链重点赛道，当前轮动强度 100.0。"
-            },
-            {
-              "label": "催化事件",
-              "detail": "独立董事候选人声明与承诺（沈朝晖）"
-            },
-            {
-              "label": "轮动判断",
-              "detail": "行业排名第 2 位，技术分 68.9，适合跟随AI主线节奏持有。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
+            "其他",
+            "其他"
           ]
         }
       ],
@@ -722,12 +545,12 @@
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
-          "thesis": "普联软件 属于AI产业链 软件开发 赛道，当前行业轮动分 100.0，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "普联软件 属于AI产业链 软件开发 赛道，当前行业轮动分 99.5，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -737,13 +560,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -789,13 +612,13 @@
             "reference_price": 18.62,
             "stop_loss_price": 17.25,
             "stop_loss_pct": 0.0733,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 21.15,
             "take_profit_pct_1": 0.1359,
             "take_profit_price_2": 22.73,
             "take_profit_pct_2": 0.2207,
             "trailing_stop_price": 17.64,
-            "suggested_position_min": 0.0421,
+            "suggested_position_min": 0.042,
             "suggested_position_max": 0.0567,
             "max_portfolio_risk": 0.0042,
             "risk_reward_ratio": 1.85,
@@ -824,7 +647,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468879+00:00"
+            "generated_at": "2026-07-31T08:06:27.692349+00:00"
           },
           "risk_controls": [
             "止损线参考 17.25 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -841,214 +664,94 @@
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "博思软件 属于AI产业链 软件开发 赛道，当前行业轮动分 100.0，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "thesis": "致远互联 属于AI产业链 软件开发 赛道，当前行业轮动分 99.5，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 85.34,
-              "description": "20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+              "value": 55.32,
+              "description": "20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.67,
+              "value": 58.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
-              "event_type": "资金交易",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 9.1,
-            "stop_loss_pct": 0.049,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 10.44,
-            "take_profit_pct_1": 0.0909,
-            "take_profit_price_2": 10.98,
-            "take_profit_pct_2": 0.1473,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0745,
-            "suggested_position_max": 0.1,
-            "max_portfolio_risk": 0.0049,
-            "risk_reward_ratio": 1.85,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 9.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.44 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 10.98 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 9.10 元作为防守位，并在 10.44 / 10.98 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468923+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 9.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.44 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 10.98 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "AI板块波动较大，若行业轮动转向请优先收缩仓位。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "thesis": "绿盟科技 属于AI产业链 软件开发 赛道，当前行业轮动分 100.0，适合跟随AI主线节奏持有。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 68.91,
-              "description": "20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.59,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 7.18,
+            "reference_price": 22.0,
+            "stop_loss_price": 20.24,
             "stop_loss_pct": 0.08,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 8.95,
-            "take_profit_pct_1": 0.1474,
-            "take_profit_price_2": 9.66,
-            "take_profit_pct_2": 0.2385,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.044,
-            "suggested_position_max": 0.061,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 25.26,
+            "take_profit_pct_1": 0.1482,
+            "take_profit_price_2": 27.28,
+            "take_profit_pct_2": 0.24,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0435,
+            "suggested_position_max": 0.0607,
             "max_portfolio_risk": 0.0049,
             "risk_reward_ratio": 1.85,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 7.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 8.95 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 9.66 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+              "止损线参考 20.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.26 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 27.28 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -1057,20 +760,20 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 7.18 元作为防守位，并在 8.95 / 9.66 元分批兑现。",
+            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 20.24 元作为防守位，并在 25.26 / 27.28 元分批兑现。",
             "highlights": [
               "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.468964+00:00"
+            "generated_at": "2026-07-31T08:06:27.692395+00:00"
           },
           "risk_controls": [
-            "止损线参考 7.18 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 8.95 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 9.66 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+            "止损线参考 20.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.26 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 27.28 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -1081,7 +784,7 @@
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "AI产业链",
           "主线轮动",
@@ -1100,9 +803,9 @@
           "name": "普联软件",
           "industry": "软件开发",
           "rank": 1,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 80.32,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 79.69,
           "holding_window": "1-3D",
           "reasons": [
             {
@@ -1111,7 +814,7 @@
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 65.0，情绪分 100.0，说明新闻并非纯静态公告。"
+              "detail": "事件分 63.8，情绪分 100.0，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1125,22 +828,22 @@
           ]
         },
         {
-          "symbol": "300525",
-          "name": "博思软件",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
           "rank": 2,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 76.98,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 73.43,
           "holding_window": "1-3D",
           "reasons": [
             {
               "label": "事件催化",
-              "detail": "财税数字化概念涨1.98%，主力资金净流入35股"
+              "detail": "5只科创板个股主力资金净流入超亿元"
             },
             {
               "label": "情绪确认",
-              "detail": "事件分 53.7，情绪分 100.0，说明新闻并非纯静态公告。"
+              "detail": "事件分 58.1，情绪分 100.0，说明新闻并非纯静态公告。"
             },
             {
               "label": "执行方式",
@@ -1149,37 +852,8 @@
           ],
           "event_tags": [
             "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 71.97,
-          "holding_window": "1-3D",
-          "reasons": [
-            {
-              "label": "事件催化",
-              "detail": "独立董事候选人声明与承诺（沈朝晖）"
-            },
-            {
-              "label": "情绪确认",
-              "detail": "事件分 53.6，情绪分 88.8，说明新闻并非纯静态公告。"
-            },
-            {
-              "label": "执行方式",
-              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
+            "其他",
+            "其他"
           ]
         }
       ],
@@ -1188,12 +862,12 @@
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
-          "thesis": "普联软件 的新闻事件打分为 65.0，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "thesis": "普联软件 的新闻事件打分为 63.8，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1203,13 +877,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1255,7 +929,7 @@
             "reference_price": 18.62,
             "stop_loss_price": 17.43,
             "stop_loss_pct": 0.0642,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 20.64,
             "take_profit_pct_1": 0.1085,
             "take_profit_price_2": 21.95,
@@ -1290,7 +964,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469036+00:00"
+            "generated_at": "2026-07-31T08:06:27.692467+00:00"
           },
           "risk_controls": [
             "止损线参考 17.43 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1307,214 +981,94 @@
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "博思软件 的新闻事件打分为 53.7，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "thesis": "致远互联 的新闻事件打分为 58.1，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 85.34,
-              "description": "20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+              "value": 55.32,
+              "description": "20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.67,
+              "value": 58.12,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
-              "event_type": "资金交易",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 9.16,
-            "stop_loss_pct": 0.0428,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 10.27,
-            "take_profit_pct_1": 0.0731,
-            "take_profit_price_2": 10.72,
-            "take_profit_pct_2": 0.1202,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0634,
-            "suggested_position_max": 0.085,
-            "max_portfolio_risk": 0.0036,
-            "risk_reward_ratio": 1.71,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 9.16 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.27 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 10.72 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 9.16 元作为防守位，并在 10.27 / 10.72 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469095+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 9.16 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.27 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 10.72 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "thesis": "绿盟科技 的新闻事件打分为 53.6，适合做盘前消息驱动的重点观察。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 68.91,
-              "description": "20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.59,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 7.24,
-            "stop_loss_pct": 0.072,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 8.75,
-            "take_profit_pct_1": 0.1218,
-            "take_profit_price_2": 9.37,
-            "take_profit_pct_2": 0.2013,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.041,
-            "suggested_position_max": 0.0569,
+            "reference_price": 22.0,
+            "stop_loss_price": 20.45,
+            "stop_loss_pct": 0.0704,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 24.64,
+            "take_profit_pct_1": 0.12,
+            "take_profit_price_2": 26.34,
+            "take_profit_pct_2": 0.1973,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0415,
+            "suggested_position_max": 0.0579,
             "max_portfolio_risk": 0.0041,
             "risk_reward_ratio": 1.7,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 7.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 8.75 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 9.37 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+              "止损线参考 20.45 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 24.64 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 26.34 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -1523,20 +1077,20 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.66,
-            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 7.24 元作为防守位，并在 8.75 / 9.37 元分批兑现。",
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 20.45 元作为防守位，并在 24.64 / 26.34 元分批兑现。",
             "highlights": [
               "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469141+00:00"
+            "generated_at": "2026-07-31T08:06:27.692510+00:00"
           },
           "risk_controls": [
-            "止损线参考 7.24 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 8.75 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 9.37 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+            "止损线参考 20.45 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 24.64 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 26.34 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -1547,7 +1101,7 @@
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "事件催化",
           "政策新闻",
@@ -1562,42 +1116,13 @@
       "holding_window": "5-10D",
       "items": [
         {
-          "symbol": "300525",
-          "name": "博思软件",
-          "industry": "软件开发",
-          "rank": 1,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 93.04,
-          "holding_window": "5-10D",
-          "reasons": [
-            {
-              "label": "均线结构",
-              "detail": "MA10 7.77 / MA20 7.63 / MA60 8.54，趋势结构保持偏强。"
-            },
-            {
-              "label": "放量突破",
-              "detail": "近 5 日成交额倍率 0.94，20 日收益 8.6%。"
-            },
-            {
-              "label": "持有节奏",
-              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
-            }
-          ],
-          "event_tags": [
-            "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
-          "rank": 2,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 89.66,
+          "rank": 1,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 89.44,
           "holding_window": "5-10D",
           "reasons": [
             {
@@ -1620,22 +1145,22 @@
           ]
         },
         {
-          "symbol": "300369",
-          "name": "绿盟科技",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 85.58,
+          "rank": 2,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 73.38,
           "holding_window": "5-10D",
           "reasons": [
             {
               "label": "均线结构",
-              "detail": "MA10 6.54 / MA20 6.50 / MA60 6.47，趋势结构保持偏强。"
+              "detail": "MA10 16.71 / MA20 17.55 / MA60 20.74，趋势结构保持偏强。"
             },
             {
               "label": "放量突破",
-              "detail": "近 5 日成交额倍率 1.03，20 日收益 18.4%。"
+              "detail": "近 5 日成交额倍率 1.09，20 日收益 -4.2%。"
             },
             {
               "label": "持有节奏",
@@ -1643,143 +1168,23 @@
             }
           ],
           "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
+            "资金交易",
+            "其他",
+            "其他"
           ]
         }
       ],
       "stock_details": {
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
-          "industry": "软件开发",
-          "thesis": "博思软件 具备较完整的均线多头与放量突破结构，技术分 85.3，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 85.34,
-              "description": "当前模式重点关注该维度。20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.67,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "资金交易",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
-            },
-            {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
-              "source": "证券时报网",
-              "source_category": "个股资讯",
-              "event_type": "资金交易",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
-            },
-            {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 9.04,
-            "stop_loss_pct": 0.0551,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 10.63,
-            "take_profit_pct_1": 0.1108,
-            "take_profit_price_2": 11.32,
-            "take_profit_pct_2": 0.1829,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0786,
-            "suggested_position_max": 0.1055,
-            "max_portfolio_risk": 0.0058,
-            "risk_reward_ratio": 2.0,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 9.04 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.63 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.32 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 9.04 元作为防守位，并在 10.63 / 11.32 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469208+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 9.04 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.63 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.32 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
         "300996": {
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
           "thesis": "普联软件 具备较完整的均线多头与放量突破结构，技术分 76.3，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -1789,13 +1194,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -1841,7 +1246,7 @@
             "reference_price": 18.62,
             "stop_loss_price": 17.08,
             "stop_loss_pct": 0.0825,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 21.7,
             "take_profit_pct_1": 0.1654,
             "take_profit_price_2": 23.7,
@@ -1876,7 +1281,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469248+00:00"
+            "generated_at": "2026-07-31T08:06:27.692579+00:00"
           },
           "risk_controls": [
             "止损线参考 17.08 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -1893,94 +1298,94 @@
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "绿盟科技 具备较完整的均线多头与放量突破结构，技术分 68.9，适合趋势跟踪。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "thesis": "致远互联 具备较完整的均线多头与放量突破结构，技术分 55.3，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 68.91,
-              "description": "当前模式重点关注该维度。20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
+              "value": 55.32,
+              "description": "当前模式重点关注该维度。20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.59,
+              "value": 58.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "value": 100,
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 7.1,
+            "reference_price": 22.0,
+            "stop_loss_price": 20.02,
             "stop_loss_pct": 0.09,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 9.2,
-            "take_profit_pct_1": 0.1795,
-            "take_profit_price_2": 10.11,
-            "take_profit_pct_2": 0.2962,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.0429,
-            "suggested_position_max": 0.0595,
-            "max_portfolio_risk": 0.0054,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 25.96,
+            "take_profit_pct_1": 0.18,
+            "take_profit_price_2": 28.53,
+            "take_profit_pct_2": 0.2968,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0424,
+            "suggested_position_max": 0.0592,
+            "max_portfolio_risk": 0.0053,
             "risk_reward_ratio": 2.0,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 7.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 9.20 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 10.11 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+              "止损线参考 20.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.96 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 28.53 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -1989,20 +1394,20 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 7.10 元作为防守位，并在 9.20 / 10.11 元分批兑现。",
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 20.02 元作为防守位，并在 25.96 / 28.53 元分批兑现。",
             "highlights": [
               "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469289+00:00"
+            "generated_at": "2026-07-31T08:06:27.692638+00:00"
           },
           "risk_controls": [
-            "止损线参考 7.10 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 9.20 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 10.11 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+            "止损线参考 20.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.96 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 28.53 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -2013,7 +1418,7 @@
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "均线多头",
           "放量突破",
@@ -2032,9 +1437,9 @@
           "name": "普联软件",
           "industry": "软件开发",
           "rank": 1,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 77.79,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 77.31,
           "holding_window": "10-20D",
           "reasons": [
             {
@@ -2057,61 +1462,32 @@
           ]
         },
         {
-          "symbol": "300525",
-          "name": "博思软件",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
           "rank": 2,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 77.6,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 73.52,
           "holding_window": "10-20D",
           "reasons": [
             {
               "label": "低位特征",
-              "detail": "RSI14 63.0，近 20 日收益 8.6%，价格处于历史相对低位区间，下跌空间有限。"
+              "detail": "RSI14 49.6，近 20 日收益 -4.2%，价格处于历史相对低位区间，下跌空间有限。"
             },
             {
               "label": "安全边际",
-              "detail": "当前价 8.24，MA60 8.54，技术面显示中长期支撑区域。"
+              "detail": "当前价 18.94，MA60 20.74，技术面显示中长期支撑区域。"
             },
             {
               "label": "催化信号",
-              "detail": "财税数字化概念涨1.98%，主力资金净流入35股"
+              "detail": "5只科创板个股主力资金净流入超亿元"
             }
           ],
           "event_tags": [
             "资金交易",
-            "资金交易",
-            "官方公告"
-          ]
-        },
-        {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 70.22,
-          "holding_window": "10-20D",
-          "reasons": [
-            {
-              "label": "低位特征",
-              "detail": "RSI14 51.0，近 20 日收益 18.4%，价格处于历史相对低位区间，下跌空间有限。"
-            },
-            {
-              "label": "安全边际",
-              "detail": "当前价 6.56，MA60 6.47，技术面显示中长期支撑区域。"
-            },
-            {
-              "label": "催化信号",
-              "detail": "独立董事候选人声明与承诺（沈朝晖）"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
+            "其他",
+            "其他"
           ]
         }
       ],
@@ -2121,11 +1497,11 @@
           "name": "普联软件",
           "industry": "软件开发",
           "thesis": "普联软件 当前股价处于历史低位区间，RSI14 86.0，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2135,13 +1511,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2187,7 +1563,7 @@
             "reference_price": 18.62,
             "stop_loss_price": 16.91,
             "stop_loss_pct": 0.0917,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 22.9,
             "take_profit_pct_1": 0.2299,
             "take_profit_price_2": 25.46,
@@ -2222,7 +1598,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469364+00:00"
+            "generated_at": "2026-07-31T08:06:27.692745+00:00"
           },
           "risk_controls": [
             "止损线参考 16.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2239,214 +1615,94 @@
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
         },
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "博思软件 当前股价处于历史低位区间，RSI14 63.0，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "thesis": "致远互联 当前股价处于历史低位区间，RSI14 49.6，具备低风险埋伏价值。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 85.34,
-              "description": "当前模式重点关注该维度。20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+              "value": 55.32,
+              "description": "当前模式重点关注该维度。20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.67,
+              "value": 58.12,
               "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
-              "event_type": "资金交易",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 8.98,
-            "stop_loss_pct": 0.0612,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 11.04,
-            "take_profit_pct_1": 0.1536,
-            "take_profit_price_2": 11.93,
-            "take_profit_pct_2": 0.2466,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0468,
-            "suggested_position_max": 0.0628,
-            "max_portfolio_risk": 0.0038,
-            "risk_reward_ratio": 2.49,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 8.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.93 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 8.98 元作为防守位，并在 11.04 / 11.93 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469404+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 8.98 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.04 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.93 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "低位策略以等待为主，切勿因短期不涨而频繁换股。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
-        },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "thesis": "绿盟科技 当前股价处于历史低位区间，RSI14 51.0，具备低风险埋伏价值。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 68.91,
-              "description": "当前模式重点关注该维度。20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.59,
-              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 7.02,
+            "reference_price": 22.0,
+            "stop_loss_price": 19.8,
             "stop_loss_pct": 0.1,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 9.75,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 27.5,
             "take_profit_pct_1": 0.25,
-            "take_profit_price_2": 10.92,
+            "take_profit_price_2": 30.8,
             "take_profit_pct_2": 0.4,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.0255,
-            "suggested_position_max": 0.0354,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0253,
+            "suggested_position_max": 0.0353,
             "max_portfolio_risk": 0.0035,
             "risk_reward_ratio": 2.5,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 7.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 9.75 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+              "止损线参考 19.80 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 27.50 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 30.80 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
@@ -2455,20 +1711,20 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 7.02 元作为防守位，并在 9.75 / 10.92 元分批兑现。",
+            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 19.80 元作为防守位，并在 27.50 / 30.80 元分批兑现。",
             "highlights": [
               "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469443+00:00"
+            "generated_at": "2026-07-31T08:06:27.692790+00:00"
           },
           "risk_controls": [
-            "止损线参考 7.02 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 9.75 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+            "止损线参考 19.80 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 27.50 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 30.80 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -2479,7 +1735,7 @@
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "低位蓄势",
           "安全边际",
@@ -2494,22 +1750,22 @@
       "holding_window": "15-30D",
       "items": [
         {
-          "symbol": "300525",
-          "name": "博思软件",
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
           "rank": 1,
-          "base_score": 94.14,
-          "event_score": 53.67,
-          "risk_adjusted_score": 75.0,
+          "base_score": 81.98,
+          "event_score": 58.12,
+          "risk_adjusted_score": 71.58,
           "holding_window": "15-30D",
           "reasons": [
             {
               "label": "基本面质量",
-              "detail": "事件分 53.7，最近催化：财税数字化概念涨1.98%，主力资金净流入35股。"
+              "detail": "事件分 58.1，最近催化：5只科创板个股主力资金净流入超亿元。"
             },
             {
               "label": "价值区间",
-              "detail": "当前价 8.24 相对 MA60 8.54，RSI14 63.0，估值处于合理偏低区间。"
+              "detail": "当前价 18.94 相对 MA60 20.74，RSI14 49.6，估值处于合理偏低区间。"
             },
             {
               "label": "中长线逻辑",
@@ -2518,8 +1774,8 @@
           ],
           "event_tags": [
             "资金交易",
-            "资金交易",
-            "官方公告"
+            "其他",
+            "其他"
           ]
         },
         {
@@ -2527,14 +1783,14 @@
           "name": "普联软件",
           "industry": "软件开发",
           "rank": 2,
-          "base_score": 90.53,
-          "event_score": 64.96,
-          "risk_adjusted_score": 71.58,
+          "base_score": 90.39,
+          "event_score": 63.75,
+          "risk_adjusted_score": 71.02,
           "holding_window": "15-30D",
           "reasons": [
             {
               "label": "基本面质量",
-              "detail": "事件分 65.0，最近催化：浙商证券股份有限公司关于普联软件股份有限公司详式权益变动报告书之财务顾问核查意见。"
+              "detail": "事件分 63.8，最近催化：浙商证券股份有限公司关于普联软件股份有限公司详式权益变动报告书之财务顾问核查意见。"
             },
             {
               "label": "价值区间",
@@ -2550,128 +1806,98 @@
             "官方公告",
             "官方公告"
           ]
-        },
-        {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "rank": 3,
-          "base_score": 84.22,
-          "event_score": 53.59,
-          "risk_adjusted_score": 68.92,
-          "holding_window": "15-30D",
-          "reasons": [
-            {
-              "label": "基本面质量",
-              "detail": "事件分 53.6，最近催化：独立董事候选人声明与承诺（沈朝晖）。"
-            },
-            {
-              "label": "价值区间",
-              "detail": "当前价 6.56 相对 MA60 6.47，RSI14 51.0，估值处于合理偏低区间。"
-            },
-            {
-              "label": "中长线逻辑",
-              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
-            }
-          ],
-          "event_tags": [
-            "官方公告",
-            "官方公告",
-            "官方公告"
-          ]
         }
       ],
       "stock_details": {
-        "300525": {
-          "symbol": "300525",
-          "name": "博思软件",
+        "688369": {
+          "symbol": "688369",
+          "name": "致远互联",
           "industry": "软件开发",
-          "thesis": "博思软件 基本面质量良好，事件分 53.7，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "thesis": "致远互联 基本面质量良好，事件分 58.1，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
               "name": "技术结构",
-              "value": 85.34,
-              "description": "20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+              "value": 55.32,
+              "description": "20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
             },
             {
               "name": "事件强度",
-              "value": 53.67,
+              "value": 58.12,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
             {
-              "event_id": "8c4160d2430a",
-              "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "51c0d134778d",
+              "title": "5只科创板个股主力资金净流入超亿元",
+              "publish_time": "2026-07-30T17:45:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
               "event_type": "资金交易",
               "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+              "impact_level": "medium",
+              "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+              "link": "http://finance.eastmoney.com/a/202607303826824930.html"
             },
             {
-              "event_id": "976b6a116866",
-              "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-              "publish_time": "2026-07-28T18:47:00",
+              "event_id": "bdf1126847af",
+              "title": "融资客控盘比例超一成个股（附名单）",
+              "publish_time": "2026-07-31T09:52:00",
               "source": "证券时报网",
               "source_category": "个股资讯",
-              "event_type": "资金交易",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-              "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+              "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827910310.html"
             },
             {
-              "event_id": "36102e8991ad",
-              "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "publish_time": "2026-07-24T19:22:07",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
+              "event_id": "da5ea3b39e32",
+              "title": "科创板股融资融券余额每日变动（7月30日）",
+              "publish_time": "2026-07-31T09:09:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
               "sentiment": "neutral",
               "impact_level": "low",
-              "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+              "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+              "link": "http://finance.eastmoney.com/a/202607313827633253.html"
             }
           ],
           "risk_plan": {
             "price_basis": "当前最新价",
-            "reference_price": 9.57,
-            "stop_loss_price": 8.93,
-            "stop_loss_pct": 0.0673,
-            "signal_quality_score": 87.6,
-            "take_profit_price_1": 11.36,
-            "take_profit_pct_1": 0.187,
-            "take_profit_price_2": 12.45,
-            "take_profit_pct_2": 0.3009,
-            "trailing_stop_price": 9.23,
-            "suggested_position_min": 0.0473,
-            "suggested_position_max": 0.0635,
-            "max_portfolio_risk": 0.0043,
+            "reference_price": 22.0,
+            "stop_loss_price": 19.58,
+            "stop_loss_pct": 0.11,
+            "signal_quality_score": 77.97,
+            "take_profit_price_1": 28.78,
+            "take_profit_pct_1": 0.3082,
+            "take_profit_price_2": 32.89,
+            "take_profit_pct_2": 0.495,
+            "trailing_stop_price": 20.73,
+            "suggested_position_min": 0.0255,
+            "suggested_position_max": 0.0356,
+            "max_portfolio_risk": 0.0039,
             "risk_reward_ratio": 2.8,
             "action_bias": "谨慎追高",
             "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
             "analysis_method": "rule_based_v1",
             "execution_notes": [
-              "止损线参考 8.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 11.36 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 12.45 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
+              "止损线参考 19.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 28.78 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 32.89 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
               "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
               "价格已处于加速区，建议只用试仓级别仓位。"
             ]
           },
@@ -2679,22 +1905,21 @@
             "status": "rule_stub_ready",
             "model": null,
             "confidence": 0.72,
-            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 8.93 元作为防守位，并在 11.36 / 12.45 元分批兑现。",
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 19.58 元作为防守位，并在 28.78 / 32.89 元分批兑现。",
             "highlights": [
               "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
+              "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469541+00:00"
+            "generated_at": "2026-07-31T08:06:27.692853+00:00"
           },
           "risk_controls": [
-            "止损线参考 8.93 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 11.36 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 12.45 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
+            "止损线参考 19.58 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 28.78 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 32.89 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
             "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
             "价格已处于加速区，建议只用试仓级别仓位。",
             "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
             "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
@@ -2706,12 +1931,12 @@
           "symbol": "300996",
           "name": "普联软件",
           "industry": "软件开发",
-          "thesis": "普联软件 基本面质量良好，事件分 65.0，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "thesis": "普联软件 基本面质量良好，事件分 63.8，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
           "feature_scores": [
             {
               "name": "行业强度",
-              "value": 100.0,
+              "value": 99.52,
               "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
             },
             {
@@ -2721,13 +1946,13 @@
             },
             {
               "name": "事件强度",
-              "value": 64.96,
+              "value": 63.75,
               "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
             },
             {
               "name": "情绪热度",
               "value": 100,
-              "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+              "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
             }
           ],
           "recent_events": [
@@ -2773,13 +1998,13 @@
             "reference_price": 18.62,
             "stop_loss_price": 16.74,
             "stop_loss_pct": 0.1009,
-            "signal_quality_score": 86.35,
+            "signal_quality_score": 86.02,
             "take_profit_price_1": 23.88,
             "take_profit_pct_1": 0.2825,
             "take_profit_price_2": 27.08,
             "take_profit_pct_2": 0.4544,
             "trailing_stop_price": 17.64,
-            "suggested_position_min": 0.0247,
+            "suggested_position_min": 0.0246,
             "suggested_position_max": 0.0333,
             "max_portfolio_risk": 0.0034,
             "risk_reward_ratio": 2.8,
@@ -2808,7 +2033,7 @@
             ],
             "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
             "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469583+00:00"
+            "generated_at": "2026-07-31T08:06:27.692896+00:00"
           },
           "risk_controls": [
             "止损线参考 16.74 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -2824,128 +2049,10 @@
             "当日已接近涨停，避免尾盘情绪化追高。",
             "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
           ]
-        },
-        "300369": {
-          "symbol": "300369",
-          "name": "绿盟科技",
-          "industry": "软件开发",
-          "thesis": "绿盟科技 基本面质量良好，事件分 53.6，估值处于历史低位，适合中长线布局。",
-          "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
-          "feature_scores": [
-            {
-              "name": "行业强度",
-              "value": 100.0,
-              "description": "软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-            },
-            {
-              "name": "技术结构",
-              "value": 68.91,
-              "description": "20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-            },
-            {
-              "name": "事件强度",
-              "value": 53.59,
-              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-            },
-            {
-              "name": "情绪热度",
-              "value": 88.84,
-              "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-            }
-          ],
-          "recent_events": [
-            {
-              "event_id": "45a7904ee6c9",
-              "title": "独立董事候选人声明与承诺（沈朝晖）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事候选人声明与承诺（沈朝晖）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "cad1be0931ec",
-              "title": "独立董事提名人声明与承诺（李春红）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（李春红）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            },
-            {
-              "event_id": "3841698d51ba",
-              "title": "独立董事提名人声明与承诺（耿芳）",
-              "publish_time": "2026-07-15T00:00:00",
-              "source": "巨潮资讯",
-              "source_category": "官方公告",
-              "event_type": "官方公告",
-              "sentiment": "neutral",
-              "impact_level": "low",
-              "summary": "独立董事提名人声明与承诺（耿芳）",
-              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-            }
-          ],
-          "risk_plan": {
-            "price_basis": "当前最新价",
-            "reference_price": 7.8,
-            "stop_loss_price": 6.94,
-            "stop_loss_pct": 0.11,
-            "signal_quality_score": 79.55,
-            "take_profit_price_1": 10.21,
-            "take_profit_pct_1": 0.309,
-            "take_profit_price_2": 11.67,
-            "take_profit_pct_2": 0.4962,
-            "trailing_stop_price": 7.03,
-            "suggested_position_min": 0.0258,
-            "suggested_position_max": 0.0358,
-            "max_portfolio_risk": 0.0039,
-            "risk_reward_ratio": 2.8,
-            "action_bias": "谨慎追高",
-            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-            "analysis_method": "rule_based_v1",
-            "execution_notes": [
-              "止损线参考 6.94 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-              "第一止盈位参考 10.21 元，可考虑先兑现部分利润。",
-              "第二止盈位参考 11.67 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
-              "更适合分批确认，不建议在信号刚触发时一次性追入。",
-              "价格已处于加速区，建议只用试仓级别仓位。"
-            ]
-          },
-          "ai_risk_analysis": {
-            "status": "rule_stub_ready",
-            "model": null,
-            "confidence": 0.72,
-            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 6.94 元作为防守位，并在 10.21 / 11.67 元分批兑现。",
-            "highlights": [
-              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
-              "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-              "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
-            ],
-            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-            "source": "rules",
-            "generated_at": "2026-07-31T04:43:24.469622+00:00"
-          },
-          "risk_controls": [
-            "止损线参考 6.94 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-            "第一止盈位参考 10.21 元，可考虑先兑现部分利润。",
-            "第二止盈位参考 11.67 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
-            "更适合分批确认，不建议在信号刚触发时一次性追入。",
-            "价格已处于加速区，建议只用试仓级别仓位。",
-            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。",
-            "当日已接近涨停，避免尾盘情绪化追高。"
-          ]
         }
       },
       "selection_meta": {
-        "candidate_count": 3,
+        "candidate_count": 2,
         "preferred_features": [
           "业绩稳定",
           "低估值",
@@ -2960,9 +2067,9 @@
       "name": "普联软件",
       "industry": "软件开发",
       "rank": 1,
-      "base_score": 90.53,
-      "event_score": 64.96,
-      "risk_adjusted_score": 90.42,
+      "base_score": 90.39,
+      "event_score": 63.75,
+      "risk_adjusted_score": 90.04,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -2985,13 +2092,13 @@
       ]
     },
     {
-      "symbol": "300525",
-      "name": "博思软件",
+      "symbol": "688369",
+      "name": "致远互联",
       "industry": "软件开发",
       "rank": 2,
-      "base_score": 94.14,
-      "event_score": 53.67,
-      "risk_adjusted_score": 86.04,
+      "base_score": 81.98,
+      "event_score": 58.12,
+      "risk_adjusted_score": 82.19,
       "holding_window": "3-5D",
       "reasons": [
         {
@@ -3000,46 +2107,17 @@
         },
         {
           "label": "技术结构",
-          "detail": "博思软件 近 20 日收益 8.6%，技术分 85.3。"
+          "detail": "致远互联 近 20 日收益 -4.2%，技术分 55.3。"
         },
         {
           "label": "事件辅助",
-          "detail": "财税数字化概念涨1.98%，主力资金净流入35股"
+          "detail": "5只科创板个股主力资金净流入超亿元"
         }
       ],
       "event_tags": [
         "资金交易",
-        "资金交易",
-        "官方公告"
-      ]
-    },
-    {
-      "symbol": "300369",
-      "name": "绿盟科技",
-      "industry": "软件开发",
-      "rank": 3,
-      "base_score": 84.22,
-      "event_score": 53.59,
-      "risk_adjusted_score": 78.54,
-      "holding_window": "3-5D",
-      "reasons": [
-        {
-          "label": "行业轮动",
-          "detail": "软件开发 当前仍在强势行业监控池内，优先级高于普通板块。"
-        },
-        {
-          "label": "技术结构",
-          "detail": "绿盟科技 近 20 日收益 18.4%，技术分 68.9。"
-        },
-        {
-          "label": "事件辅助",
-          "detail": "独立董事候选人声明与承诺（沈朝晖）"
-        }
-      ],
-      "event_tags": [
-        "官方公告",
-        "官方公告",
-        "官方公告"
+        "其他",
+        "其他"
       ]
     }
   ],
@@ -3048,12 +2126,12 @@
       "symbol": "300996",
       "name": "普联软件",
       "industry": "软件开发",
-      "thesis": "普联软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.4，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "普联软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 90.0，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 100.0,
+          "value": 99.52,
           "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
@@ -3063,13 +2141,13 @@
         },
         {
           "name": "事件强度",
-          "value": 64.96,
+          "value": 63.75,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 20.0%，换手 20.3%，量比 5.11。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 20.0%，换手 20.6%，量比 2.60。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
@@ -3115,7 +2193,7 @@
         "reference_price": 18.62,
         "stop_loss_price": 17.3,
         "stop_loss_pct": 0.0711,
-        "signal_quality_score": 86.35,
+        "signal_quality_score": 86.02,
         "take_profit_price_1": 21.0,
         "take_profit_pct_1": 0.1278,
         "take_profit_price_2": 22.58,
@@ -3150,7 +2228,7 @@
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-31T04:43:24.468691+00:00"
+        "generated_at": "2026-07-31T08:06:27.692202+00:00"
       },
       "risk_controls": [
         "止损线参考 17.30 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
@@ -3166,213 +2244,94 @@
         "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
       ]
     },
-    "300525": {
-      "symbol": "300525",
-      "name": "博思软件",
+    "688369": {
+      "symbol": "688369",
+      "name": "致远互联",
       "industry": "软件开发",
-      "thesis": "博思软件 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 86.0，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "thesis": "致远互联 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 82.2，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 计算机设备, 自动化设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
       "feature_scores": [
         {
           "name": "行业强度",
-          "value": 100.0,
+          "value": 99.52,
           "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
         },
         {
           "name": "技术结构",
-          "value": 85.34,
-          "description": "20 日收益 8.6%，量能倍率 0.94，MA10 / MA20 / MA60 为 7.77 / 7.63 / 8.54。"
+          "value": 55.32,
+          "description": "20 日收益 -4.2%，量能倍率 1.09，MA10 / MA20 / MA60 为 16.71 / 17.55 / 20.74。"
         },
         {
           "name": "事件强度",
-          "value": 53.67,
+          "value": 58.12,
           "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
         },
         {
           "name": "情绪热度",
           "value": 100,
-          "description": "日内涨幅 16.1%，换手 9.0%，量比 6.74。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+          "description": "日内涨幅 16.2%，换手 17.4%，量比 7.32。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
         }
       ],
       "recent_events": [
         {
-          "event_id": "8c4160d2430a",
-          "title": "财税数字化概念涨1.98%，主力资金净流入35股",
-          "publish_time": "2026-07-28T18:47:00",
+          "event_id": "51c0d134778d",
+          "title": "5只科创板个股主力资金净流入超亿元",
+          "publish_time": "2026-07-30T17:45:00",
           "source": "证券时报网",
           "source_category": "个股资讯",
           "event_type": "资金交易",
           "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "6.54 300608 思特奇 1.55 6.41 466.76 2.39 600718 东软集团 0.73 1.04 366.36 3.56 688228 开普云 -1.63 2.00 342.03 4.05 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-          "link": "http://finance.eastmoney.com/a/202607283823622359.html"
+          "impact_level": "medium",
+          "summary": "688691 灿芯股份 3588.09 8.98 -6.67 9.26 688416 恒烁股份 3431.40 7.11 -4.50 7.37 688328 深科达 3352.33 5.00 -9.77 11.35 688363 华熙生物 3193.46 7.34 2.75 2.28 688369",
+          "link": "http://finance.eastmoney.com/a/202607303826824930.html"
         },
         {
-          "event_id": "976b6a116866",
-          "title": "数字货币概念涨1.62%，主力资金净流入这些股",
-          "publish_time": "2026-07-28T18:47:00",
+          "event_id": "bdf1126847af",
+          "title": "融资客控盘比例超一成个股（附名单）",
+          "publish_time": "2026-07-31T09:52:00",
           "source": "证券时报网",
           "source_category": "个股资讯",
-          "event_type": "资金交易",
+          "event_type": "其他",
           "sentiment": "neutral",
           "impact_level": "low",
-          "summary": "3.65 301428 世纪恒通 -0.11 4.60 385.83 4.44 600718 东软集团 0.73 1.04 366.36 3.56 002537 海联金汇 2.01 2.47 319.72 2.00 300188 国投智能 2.51 1.79 306.32 1.97 300525",
-          "link": "http://finance.eastmoney.com/a/202607283823621110.html"
+          "summary": "119516.25 11.47 -1.07 传媒 600201 生物股份 149002.29 11.47 1.47 农林牧渔 300700 岱勒新材 42363.44 11.42 -8.37 机械设备 002903 宇环数控 28102.13 11.41 -8.51 机械设备 688369",
+          "link": "http://finance.eastmoney.com/a/202607313827910310.html"
         },
         {
-          "event_id": "36102e8991ad",
-          "title": "关于控股股东、实际控制人部分股权质押展期的公告",
-          "publish_time": "2026-07-24T19:22:07",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
+          "event_id": "da5ea3b39e32",
+          "title": "科创板股融资融券余额每日变动（7月30日）",
+          "publish_time": "2026-07-31T09:09:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
           "sentiment": "neutral",
           "impact_level": "low",
-          "summary": "关于控股股东、实际控制人部分股权质押展期的公告",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300525&announcementId=1225441564&orgId=9900026107&announcementTime=2026-07-24 19:22:07"
+          "summary": "5.09 0.00 -14.10 688208 道通科技 108281.56 5.03 318.76 7.83 3.12 688600 皖仪科技 5975.18 4.97 9.64 64.21 -2.70 688310 迈得医疗 5597.19 4.43 0.00 -4.73 688369",
+          "link": "http://finance.eastmoney.com/a/202607313827633253.html"
         }
       ],
       "risk_plan": {
         "price_basis": "当前最新价",
-        "reference_price": 9.57,
-        "stop_loss_price": 9.12,
-        "stop_loss_pct": 0.0474,
-        "signal_quality_score": 87.6,
-        "take_profit_price_1": 10.38,
-        "take_profit_pct_1": 0.0846,
-        "take_profit_price_2": 10.92,
-        "take_profit_pct_2": 0.1411,
-        "trailing_stop_price": 9.23,
-        "suggested_position_min": 0.0745,
-        "suggested_position_max": 0.1,
-        "max_portfolio_risk": 0.0047,
-        "risk_reward_ratio": 1.8,
-        "action_bias": "谨慎追高",
-        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
-        "analysis_method": "rule_based_v1",
-        "execution_notes": [
-          "止损线参考 9.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 10.38 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-          "更适合分批确认，不建议在信号刚触发时一次性追入。",
-          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-          "价格已处于加速区，建议只用试仓级别仓位。"
-        ]
-      },
-      "ai_risk_analysis": {
-        "status": "rule_stub_ready",
-        "model": null,
-        "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 9.12 元作为防守位，并在 10.38 / 10.92 元分批兑现。",
-        "highlights": [
-          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 2.35，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：财税数字化概念涨1.98%，主力资金净流入35股"
-        ],
-        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
-        "source": "rules",
-        "generated_at": "2026-07-31T04:43:24.468752+00:00"
-      },
-      "risk_controls": [
-        "止损线参考 9.12 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 10.38 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 10.92 元，若继续上行则把跟踪止损上移到 9.23 元附近。",
-        "更适合分批确认，不建议在信号刚触发时一次性追入。",
-        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
-        "价格已处于加速区，建议只用试仓级别仓位。",
-        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
-        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
-        "当日已接近涨停，避免尾盘情绪化追高。"
-      ]
-    },
-    "300369": {
-      "symbol": "300369",
-      "name": "绿盟科技",
-      "industry": "软件开发",
-      "thesis": "绿盟科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 78.5，适合作为默认候选股跟踪。",
-      "market_context": "当前市场重点围绕 IT服务, 软件开发, 文化传媒, 自动化设备, 计算机设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
-      "feature_scores": [
-        {
-          "name": "行业强度",
-          "value": 100.0,
-          "description": "当前模式重点关注该维度。软件开发 当前位于强势行业监控池，行业排序第 2 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
-        },
-        {
-          "name": "技术结构",
-          "value": 68.91,
-          "description": "20 日收益 18.4%，量能倍率 1.03，MA10 / MA20 / MA60 为 6.54 / 6.50 / 6.47。"
-        },
-        {
-          "name": "事件强度",
-          "value": 53.59,
-          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
-        },
-        {
-          "name": "情绪热度",
-          "value": 88.84,
-          "description": "日内涨幅 18.9%，换手 13.5%，量比 2.73。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
-        }
-      ],
-      "recent_events": [
-        {
-          "event_id": "45a7904ee6c9",
-          "title": "独立董事候选人声明与承诺（沈朝晖）",
-          "publish_time": "2026-07-15T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "独立董事候选人声明与承诺（沈朝晖）",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424571&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-        },
-        {
-          "event_id": "cad1be0931ec",
-          "title": "独立董事提名人声明与承诺（李春红）",
-          "publish_time": "2026-07-15T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "独立董事提名人声明与承诺（李春红）",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424570&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-        },
-        {
-          "event_id": "3841698d51ba",
-          "title": "独立董事提名人声明与承诺（耿芳）",
-          "publish_time": "2026-07-15T00:00:00",
-          "source": "巨潮资讯",
-          "source_category": "官方公告",
-          "event_type": "官方公告",
-          "sentiment": "neutral",
-          "impact_level": "low",
-          "summary": "独立董事提名人声明与承诺（耿芳）",
-          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=300369&announcementId=1225424569&orgId=9900022545&announcementTime=2026-07-15 00:00:00"
-        }
-      ],
-      "risk_plan": {
-        "price_basis": "当前最新价",
-        "reference_price": 7.8,
-        "stop_loss_price": 7.19,
+        "reference_price": 22.0,
+        "stop_loss_price": 20.29,
         "stop_loss_pct": 0.078,
-        "signal_quality_score": 79.55,
-        "take_profit_price_1": 8.9,
-        "take_profit_pct_1": 0.141,
-        "take_profit_price_2": 9.63,
-        "take_profit_pct_2": 0.2346,
-        "trailing_stop_price": 7.03,
-        "suggested_position_min": 0.0437,
-        "suggested_position_max": 0.0606,
+        "signal_quality_score": 77.97,
+        "take_profit_price_1": 25.08,
+        "take_profit_pct_1": 0.14,
+        "take_profit_price_2": 27.13,
+        "take_profit_pct_2": 0.2332,
+        "trailing_stop_price": 20.73,
+        "suggested_position_min": 0.0432,
+        "suggested_position_max": 0.0603,
         "max_portfolio_risk": 0.0047,
         "risk_reward_ratio": 1.8,
         "action_bias": "谨慎追高",
         "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
         "analysis_method": "rule_based_v1",
         "execution_notes": [
-          "止损线参考 7.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-          "第一止盈位参考 8.90 元，可考虑先兑现部分利润。",
-          "第二止盈位参考 9.63 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+          "止损线参考 20.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 25.08 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 27.13 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
           "更适合分批确认，不建议在信号刚触发时一次性追入。",
           "价格已处于加速区，建议只用试仓级别仓位。"
         ]
@@ -3381,20 +2340,20 @@
         "status": "rule_stub_ready",
         "model": null,
         "confidence": 0.66,
-        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 7.19 元作为防守位，并在 8.90 / 9.63 元分批兑现。",
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 20.29 元作为防守位，并在 25.08 / 27.13 元分批兑现。",
         "highlights": [
           "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
-          "近 10 日波动率为 5.27，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
-          "最近的重要事件提要：独立董事候选人声明与承诺（沈朝晖）"
+          "近 10 日波动率为 4.26，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：5只科创板个股主力资金净流入超亿元"
         ],
         "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
         "source": "rules",
-        "generated_at": "2026-07-31T04:43:24.468799+00:00"
+        "generated_at": "2026-07-31T08:06:27.692264+00:00"
       },
       "risk_controls": [
-        "止损线参考 7.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
-        "第一止盈位参考 8.90 元，可考虑先兑现部分利润。",
-        "第二止盈位参考 9.63 元，若继续上行则把跟踪止损上移到 7.03 元附近。",
+        "止损线参考 20.29 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 25.08 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 27.13 元，若继续上行则把跟踪止损上移到 20.73 元附近。",
         "更适合分批确认，不建议在信号刚触发时一次性追入。",
         "价格已处于加速区，建议只用试仓级别仓位。",
         "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
@@ -3406,8 +2365,8 @@
   "selection_meta": {
     "industry_source": "ths_industry_summary",
     "constituent_scan_mode": "行业前 8 成分股全扫",
-    "total_universe_size": 30,
-    "news_watchlist_size": 12,
+    "total_universe_size": 32,
+    "news_watchlist_size": 11,
     "scan_summary": [
       {
         "sector_name": "IT服务",
@@ -3428,14 +2387,14 @@
         "data_source": "ths_industry_constituents"
       },
       {
-        "sector_name": "自动化设备",
-        "sector_code": "881171",
+        "sector_name": "计算机设备",
+        "sector_code": "881130",
         "scanned_count": 8,
         "data_source": "ths_industry_constituents"
       },
       {
-        "sector_name": "计算机设备",
-        "sector_code": "881130",
+        "sector_name": "自动化设备",
+        "sector_code": "881171",
         "scanned_count": 8,
         "data_source": "ths_industry_constituents"
       }
