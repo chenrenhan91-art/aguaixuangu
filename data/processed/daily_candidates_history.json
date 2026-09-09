@@ -2,6 +2,23 @@
   "retention": 10,
   "entries": [
     {
+      "trade_date": "2026-09-09",
+      "sessions": {
+        "midday": {
+          "path": "daily_candidates_2026-09-09_midday.json",
+          "generated_at": "2026-09-09T03:40:42.224243+00:00",
+          "default_mode": "balanced",
+          "snapshot_session": {
+            "session_id": "midday",
+            "label": "午盘信息",
+            "generated_time": "11:40",
+            "generated_at": "2026-09-09T11:40:42.224243+08:00"
+          },
+          "candidate_count": 5
+        }
+      }
+    },
+    {
       "trade_date": "2026-09-08",
       "sessions": {
         "close": {
@@ -257,35 +274,6 @@
             "label": "午盘信息",
             "generated_time": "13:23",
             "generated_at": "2026-08-27T13:23:14.216236+08:00"
-          },
-          "candidate_count": 5
-        }
-      }
-    },
-    {
-      "trade_date": "2026-08-26",
-      "sessions": {
-        "midday": {
-          "path": "daily_candidates_2026-08-26_midday.json",
-          "generated_at": "2026-08-26T03:48:25.292556+00:00",
-          "default_mode": "balanced",
-          "snapshot_session": {
-            "session_id": "midday",
-            "label": "午盘信息",
-            "generated_time": "11:48",
-            "generated_at": "2026-08-26T11:48:25.292556+08:00"
-          },
-          "candidate_count": 5
-        },
-        "close": {
-          "path": "daily_candidates_2026-08-26_close.json",
-          "generated_at": "2026-08-26T07:23:11.250973+00:00",
-          "default_mode": "balanced",
-          "snapshot_session": {
-            "session_id": "close",
-            "label": "收盘信息",
-            "generated_time": "15:23",
-            "generated_at": "2026-08-26T15:23:11.250973+08:00"
           },
           "candidate_count": 5
         }
