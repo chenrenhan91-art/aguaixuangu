@@ -15,6 +15,18 @@
             "generated_at": "2026-09-17T11:41:02.632729+08:00"
           },
           "candidate_count": 5
+        },
+        "close": {
+          "path": "daily_candidates_2026-09-17_close.json",
+          "generated_at": "2026-09-17T07:24:47.027676+00:00",
+          "default_mode": "balanced",
+          "snapshot_session": {
+            "session_id": "close",
+            "label": "收盘信息",
+            "generated_time": "15:24",
+            "generated_at": "2026-09-17T15:24:47.027676+08:00"
+          },
+          "candidate_count": 5
         }
       }
     },
