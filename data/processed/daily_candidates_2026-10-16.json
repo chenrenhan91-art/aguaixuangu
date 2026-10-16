@@ -1,0 +1,3444 @@
+{
+  "generated_at": "2026-10-16T03:42:51.825626+00:00",
+  "trade_date": "2026-10-16",
+  "snapshot_session": {
+    "session_id": "midday",
+    "label": "午盘信息",
+    "generated_time": "11:42",
+    "generated_at": "2026-10-16T11:42:51.825626+08:00"
+  },
+  "strategy_version": "v2-akshare-multi-mode",
+  "default_mode": "balanced",
+  "mode_summaries": [
+    {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D"
+    },
+    {
+      "mode_id": "ai_mainline",
+      "display_name": "AI主线轮动",
+      "description": "聚焦AI产业链上下游，跟踪当前热点子板块，推荐轮动受益标的。",
+      "holding_window": "3-7D"
+    },
+    {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D"
+    },
+    {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D"
+    },
+    {
+      "mode_id": "low_position_defense",
+      "display_name": "低位防守埋伏",
+      "description": "筛选处于历史低位、下跌空间有限、无退市风险的保守标的，适合低风险建仓。",
+      "holding_window": "10-20D"
+    },
+    {
+      "mode_id": "quality_value",
+      "display_name": "蓝筹价值精选",
+      "description": "优选业绩稳定、估值处于历史低位的高质量标的，兼顾大资金建仓迹象，适合中长线埋伏。",
+      "holding_window": "15-30D"
+    }
+  ],
+  "market_regime": {
+    "regime": "risk_on",
+    "confidence": 0.8852,
+    "suggested_exposure": 0.7695,
+    "breadth_score": 97.23,
+    "northbound_score": 90.67,
+    "momentum_score": 82.55,
+    "updated_at": "2026-10-16T03:43:58.723478+00:00"
+  },
+  "top_sectors": [
+    {
+      "sector_code": "881166",
+      "sector_name": "军工装备",
+      "strength_score": 100.0,
+      "momentum_score": 100.0,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 1.0,
+      "member_count": 82
+    },
+    {
+      "sector_code": "881126",
+      "sector_name": "汽车零部件",
+      "strength_score": 96.27,
+      "momentum_score": 85.69,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.9639,
+      "member_count": 277
+    },
+    {
+      "sector_code": "881276",
+      "sector_name": "军工电子",
+      "strength_score": 95.03,
+      "momentum_score": 93.0,
+      "capital_consensus_score": 87.47,
+      "heat_score": 85.84,
+      "breadth_ratio": 0.9836,
+      "member_count": 61
+    },
+    {
+      "sector_code": "881153",
+      "sector_name": "房地产",
+      "strength_score": 98.33,
+      "momentum_score": 73.67,
+      "capital_consensus_score": 100.0,
+      "heat_score": 91.3,
+      "breadth_ratio": 0.977,
+      "member_count": 87
+    },
+    {
+      "sector_code": "881117",
+      "sector_name": "通用设备",
+      "strength_score": 90.04,
+      "momentum_score": 73.95,
+      "capital_consensus_score": 100.0,
+      "heat_score": 100.0,
+      "breadth_ratio": 0.9683,
+      "member_count": 252
+    }
+  ],
+  "market_news": [
+    {
+      "title": "AI算力需求引爆半导体设备，科创半导体设备ETF华泰柏瑞涨超2.64%",
+      "summary": "【AI算力需求引爆半导体设备，科创半导体设备ETF华泰柏瑞涨超2.64%】截至今日11:25，科创半导体设备ETF华泰柏瑞（588710）上涨2.64%，跟踪的科创半导体材料设备指数同步走强。指数行业权重高度集中，电子行业占比98%，电力设备占2%。",
+      "publish_time": "2026-10-16T11:38:34",
+      "link": "https://finance.eastmoney.com/a/202610163898213159.html"
+    },
+    {
+      "title": "算力需求井喷，科创创业人工智能ETF华泰柏瑞涨超2.22%",
+      "summary": "【算力需求井喷，科创创业人工智能ETF华泰柏瑞涨超2.22%】今日市场全线走强，多数板块录得上涨，人工智能方向表现突出。截至今日11:10，科创创业人工智能ETF华泰柏瑞（159139）上涨2.22%，这只指数的行业权重分布很集中，电子占52.03%、通信19.17%、计算机18.38%，合计接近九成，囊括芯片、光模块、服务器等算力核心环节。",
+      "publish_time": "2026-10-16T11:35:43",
+      "link": "https://finance.eastmoney.com/a/202610163898212957.html"
+    },
+    {
+      "title": "A股午评：沪指半日涨近1%，军工装备、房地产、贵金属等概念走强",
+      "summary": "【A股午评：沪指半日涨近1%，军工装备、房地产、贵金属等概念走强】10月16日，A股三大指数早盘集体上涨，截至午间收盘，上证指数涨0.95%，深证成指涨1.19%，创业板指涨0.96%；北证50涨1.3%。沪深两市成交额约9625.54亿元，较前一个交易日缩量约192.18亿元。截至午盘，全市场4890只股票上涨、624只股票下跌，其中78只涨停、0只跌停。",
+      "publish_time": "2026-10-16T11:34:53",
+      "link": "https://finance.eastmoney.com/a/202610163898212684.html"
+    },
+    {
+      "title": "德国央行行长Nagel：欧洲央行可能不得不再次加息",
+      "summary": "【德国央行行长Nagel：欧洲央行可能不得不再次加息】德国央行行长JoachimNagel表示，欧洲央行可能不得不再次加息。Nagel在曼谷出席国际货币基金组织(IMF)年会时对记者表示：“我们已经两次上调政策利率。如果当前形势没有改变，我们不排除可能还需要再次行动。”欧洲央行在本轮紧缩周期中已两次加息，普遍预计该行将在12月政策会议上再次加息25个基点。",
+      "publish_time": "2026-10-16T11:34:49",
+      "link": "https://finance.eastmoney.com/a/202610163898212329.html"
+    },
+    {
+      "title": "铁路车次编排将调整 更高时速动车组新增X字头",
+      "summary": "【铁路车次编排将调整 更高时速动车组新增X字头】据新华社，从中国国家铁路集团有限公司获悉，全国铁路列车车次将于11月下旬、12月下旬分两批调整，其中新增X字头，主要用于未来最高运行时速350公里以上的复兴号动车组列车。",
+      "publish_time": "2026-10-16T11:34:06",
+      "link": "https://finance.eastmoney.com/a/202610163898211263.html"
+    },
+    {
+      "title": "供给收缩叠加政策催化，化工ETF华泰柏瑞涨超2.28%",
+      "summary": "【供给收缩叠加政策催化，化工ETF华泰柏瑞涨超2.28%】今日化工板块在地缘冲突引发的供给收缩与国内政策催化双重驱动下，表现活跃。截至今日11:10，化工ETF华泰柏瑞（561620）强势上涨2.28%，跟踪的细分化工指数同步走强。该指数行业权重分布为石油石化54.73%、交通运输15.21%，上游资源属性突出，对地缘溢价和供给收缩的敏感度较高。",
+      "publish_time": "2026-10-16T11:33:16",
+      "link": "https://finance.eastmoney.com/a/202610163898212887.html"
+    },
+    {
+      "title": "中指研究院：四季度住房租赁市场将进入传统淡季 重点城市租金仍存在调整压力",
+      "summary": "【中指研究院：四季度住房租赁市场将进入传统淡季 重点城市租金仍存在调整压力】中指研究院发布2026三季度中国住房租赁市场总结称，2026年三季度，国内重点城市住房租赁市场整体运行平稳，租金下行压力有所缓解，租赁资产回报水平改善，行业制度框架持续完善。展望四季度，住房租赁市场将进入传统淡季，重点城市租金仍存在调整压力，预计整体将以窄幅波动为主，优质区位房源具备结构性支撑。",
+      "publish_time": "2026-10-16T11:33:00",
+      "link": "https://finance.eastmoney.com/a/202610163898211890.html"
+    },
+    {
+      "title": "政策加码出口高增双轮驱动，智能驾驶ETF华泰柏瑞涨超2.34%",
+      "summary": "【政策加码出口高增双轮驱动，智能驾驶ETF华泰柏瑞涨超2.34%】今日市场全线走强，汽车板块上涨3.29%，叠加国防军工大涨6.81%的带动，智能驾驶主题热度迅速升温。截至今日11:10，智能驾驶ETF华泰柏瑞（516520）强势上涨2.34%，跟踪的CS智汽车指数同步走强。指数权重分布上，汽车行业占37.57%，电子占33.58%，计算机占19.23%，通信占7.94%，国防军工占1.68%，既囊括整车及零部件，也覆盖了智驾芯片、算法和通信环节，",
+      "publish_time": "2026-10-16T11:31:57",
+      "link": "https://finance.eastmoney.com/a/202610163898212780.html"
+    }
+  ],
+  "strategy_modes": {
+    "balanced": {
+      "mode_id": "balanced",
+      "display_name": "综合研判",
+      "description": "行业轮动、技术结构、新闻事件和短线热度均衡打分，适合作为默认模式。",
+      "holding_window": "3-5D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 91.57,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "军工装备 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "晟楠科技 近 20 日收益 18.2%，技术分 85.7。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "611只股短线走稳 站上五日均线"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 70.89,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "房地产 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "深物业A 近 20 日收益 17.9%，技术分 75.9。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "强势股追踪 主力资金连续5日净流入121股"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 67.45,
+          "holding_window": "3-5D",
+          "reasons": [
+            {
+              "label": "行业轮动",
+              "detail": "房地产 当前仍在强势行业监控池内，优先级高于普通板块。"
+            },
+            {
+              "label": "技术结构",
+              "detail": "滨江集团 近 20 日收益 10.8%，技术分 63.2。"
+            },
+            {
+              "label": "事件辅助",
+              "detail": "关于股票交易异常波动的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.6，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 20.71,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 25.61,
+            "take_profit_pct_1": 0.1402,
+            "take_profit_price_2": 27.71,
+            "take_profit_pct_2": 0.2337,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.0296,
+            "suggested_position_max": 0.0396,
+            "max_portfolio_risk": 0.0031,
+            "risk_reward_ratio": 1.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 20.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.61 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 27.71 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 20.71 元作为防守位，并在 25.61 / 27.71 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723575+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 20.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.61 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 27.71 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 70.9，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 10.97,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 13.59,
+            "take_profit_pct_1": 0.142,
+            "take_profit_price_2": 14.69,
+            "take_profit_pct_2": 0.2345,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0413,
+            "suggested_position_max": 0.0594,
+            "max_portfolio_risk": 0.0046,
+            "risk_reward_ratio": 1.82,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 10.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 14.69 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 10.97 元作为防守位，并在 13.59 / 14.69 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723621+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 10.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 14.69 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 67.5，适合作为默认候选股跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 9.13,
+            "stop_loss_pct": 0.078,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 11.29,
+            "take_profit_pct_1": 0.1404,
+            "take_profit_price_2": 12.21,
+            "take_profit_pct_2": 0.2333,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0574,
+            "suggested_position_max": 0.0837,
+            "max_portfolio_risk": 0.0065,
+            "risk_reward_ratio": 1.81,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.29 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.21 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 9.13 元作为防守位，并在 11.29 / 12.21 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723653+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.29 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.21 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "行业轮动",
+          "技术趋势",
+          "新闻催化",
+          "情绪热度"
+        ]
+      }
+    },
+    "ai_mainline": {
+      "mode_id": "ai_mainline",
+      "display_name": "AI主线轮动",
+      "description": "聚焦AI产业链上下游，跟踪当前热点子板块，推荐轮动受益标的。",
+      "holding_window": "3-7D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 89.64,
+          "holding_window": "3-7D",
+          "reasons": [
+            {
+              "label": "AI产业链",
+              "detail": "军工装备 属于AI产业链重点赛道，当前轮动强度 100.0。"
+            },
+            {
+              "label": "催化事件",
+              "detail": "611只股短线走稳 站上五日均线"
+            },
+            {
+              "label": "轮动判断",
+              "detail": "行业排名第 1 位，技术分 85.7，适合跟随AI主线节奏持有。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 73.53,
+          "holding_window": "3-7D",
+          "reasons": [
+            {
+              "label": "AI产业链",
+              "detail": "房地产 属于AI产业链重点赛道，当前轮动强度 90.3。"
+            },
+            {
+              "label": "催化事件",
+              "detail": "强势股追踪 主力资金连续5日净流入121股"
+            },
+            {
+              "label": "轮动判断",
+              "detail": "行业排名第 4 位，技术分 75.9，适合跟随AI主线节奏持有。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 69.47,
+          "holding_window": "3-7D",
+          "reasons": [
+            {
+              "label": "AI产业链",
+              "detail": "房地产 属于AI产业链重点赛道，当前轮动强度 90.3。"
+            },
+            {
+              "label": "催化事件",
+              "detail": "关于股票交易异常波动的公告"
+            },
+            {
+              "label": "轮动判断",
+              "detail": "行业排名第 4 位，技术分 63.2，适合跟随AI主线节奏持有。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 属于AI产业链 军工装备 赛道，当前行业轮动分 100.0，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "当前模式重点关注该维度。军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 20.66,
+            "stop_loss_pct": 0.08,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 25.79,
+            "take_profit_pct_1": 0.1483,
+            "take_profit_price_2": 27.86,
+            "take_profit_pct_2": 0.2404,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.0298,
+            "suggested_position_max": 0.0399,
+            "max_portfolio_risk": 0.0032,
+            "risk_reward_ratio": 1.85,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 20.66 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.79 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 27.86 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 20.66 元作为防守位，并在 25.79 / 27.86 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723703+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 20.66 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.79 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 27.86 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "AI板块波动较大，若行业轮动转向请优先收缩仓位。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 属于AI产业链 房地产 赛道，当前行业轮动分 90.3，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 10.95,
+            "stop_loss_pct": 0.08,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 13.66,
+            "take_profit_pct_1": 0.1479,
+            "take_profit_price_2": 14.75,
+            "take_profit_pct_2": 0.2395,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0416,
+            "suggested_position_max": 0.0598,
+            "max_portfolio_risk": 0.0048,
+            "risk_reward_ratio": 1.85,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 10.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 13.66 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 14.75 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 AI主线轮动 模式，当前更适合 谨慎追高。规则建议以 10.95 元作为防守位，并在 13.66 / 14.75 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723740+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 10.95 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 13.66 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 14.75 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "AI板块波动较大，若行业轮动转向请优先收缩仓位。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 属于AI产业链 房地产 赛道，当前行业轮动分 90.3，适合跟随AI主线节奏持有。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“AI主线轮动”模式，它更强调 AI产业链, 主线轮动, 催化事件。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 9.11,
+            "stop_loss_pct": 0.08,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 11.36,
+            "take_profit_pct_1": 0.1475,
+            "take_profit_price_2": 12.27,
+            "take_profit_pct_2": 0.2394,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0578,
+            "suggested_position_max": 0.0844,
+            "max_portfolio_risk": 0.0067,
+            "risk_reward_ratio": 1.85,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.36 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.27 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 AI主线轮动 模式，当前更适合 分批试仓。规则建议以 9.11 元作为防守位，并在 11.36 / 12.27 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 AI产业链, 主线轮动, 催化事件，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723764+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.11 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.36 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.27 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "AI板块波动较大，若行业轮动转向请优先收缩仓位。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "AI产业链",
+          "主线轮动",
+          "催化事件"
+        ]
+      }
+    },
+    "event_driven": {
+      "mode_id": "event_driven",
+      "display_name": "消息事件驱动",
+      "description": "提高新闻催化和政策事件的权重，适合盘前筛选消息面机会。",
+      "holding_window": "1-3D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 77.92,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "611只股短线走稳 站上五日均线"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 55.7，情绪分 100.0，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 65.61,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "强势股追踪 主力资金连续5日净流入121股"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 56.6，情绪分 49.9，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 62.95,
+          "holding_window": "1-3D",
+          "reasons": [
+            {
+              "label": "事件催化",
+              "detail": "关于股票交易异常波动的公告"
+            },
+            {
+              "label": "情绪确认",
+              "detail": "事件分 52.9，情绪分 56.8，说明新闻并非纯静态公告。"
+            },
+            {
+              "label": "执行方式",
+              "detail": "更适合盘前筛选或消息落地后的次日跟踪，强调催化是否持续。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 的新闻事件打分为 55.7，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 20.84,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 25.21,
+            "take_profit_pct_1": 0.1224,
+            "take_profit_price_2": 27.0,
+            "take_profit_pct_2": 0.2021,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.0278,
+            "suggested_position_max": 0.0372,
+            "max_portfolio_risk": 0.0027,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 20.84 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 25.21 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 27.00 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 20.84 元作为防守位，并在 25.21 / 27.00 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723806+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 20.84 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 25.21 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 27.00 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 的新闻事件打分为 56.6，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 11.04,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 13.59,
+            "take_profit_pct_1": 0.142,
+            "take_profit_price_2": 14.31,
+            "take_profit_pct_2": 0.2025,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0388,
+            "suggested_position_max": 0.0558,
+            "max_portfolio_risk": 0.004,
+            "risk_reward_ratio": 1.97,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 11.04 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 14.31 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.58,
+            "summary": "基于 消息事件驱动 模式，当前更适合 谨慎追高。规则建议以 11.04 元作为防守位，并在 13.59 / 14.31 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723847+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 11.04 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 14.31 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 的新闻事件打分为 52.9，适合做盘前消息驱动的重点观察。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“消息事件驱动”模式，它更强调 事件催化, 政策新闻, 公告情绪。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 9.19,
+            "stop_loss_pct": 0.072,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 11.11,
+            "take_profit_pct_1": 0.1222,
+            "take_profit_price_2": 11.89,
+            "take_profit_pct_2": 0.201,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0539,
+            "suggested_position_max": 0.0786,
+            "max_portfolio_risk": 0.0057,
+            "risk_reward_ratio": 1.7,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.11 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 11.89 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.72,
+            "summary": "基于 消息事件驱动 模式，当前更适合 分批试仓。规则建议以 9.19 元作为防守位，并在 11.11 / 11.89 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 事件催化, 政策新闻, 公告情绪，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723876+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.19 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.11 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 11.89 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "若 48 小时内没有新增催化，优先从消息面模式里移除。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "事件催化",
+          "政策新闻",
+          "公告情绪"
+        ]
+      }
+    },
+    "trend_breakout": {
+      "mode_id": "trend_breakout",
+      "display_name": "技术趋势突破",
+      "description": "突出均线趋势、放量和突破强度，适合波段跟踪和趋势确认。",
+      "holding_window": "5-10D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 100,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 17.78 / MA20 17.91 / MA60 17.13，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 4.09，20 日收益 18.2%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 79.67,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 11.29 / MA20 10.15 / MA60 8.80，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 1.54，20 日收益 17.9%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 74.3,
+          "holding_window": "5-10D",
+          "reasons": [
+            {
+              "label": "均线结构",
+              "detail": "MA10 9.56 / MA20 8.90 / MA60 8.90，趋势结构保持偏强。"
+            },
+            {
+              "label": "放量突破",
+              "detail": "近 5 日成交额倍率 0.47，20 日收益 10.8%。"
+            },
+            {
+              "label": "持有节奏",
+              "detail": "更适合按照趋势节奏持有，等待均线和量能共同失效再撤退。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 具备较完整的均线多头与放量突破结构，技术分 85.7，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "当前模式重点关注该维度。20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 20.44,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 26.5,
+            "take_profit_pct_1": 0.1799,
+            "take_profit_price_2": 29.13,
+            "take_profit_pct_2": 0.297,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.029,
+            "suggested_position_max": 0.0389,
+            "max_portfolio_risk": 0.0035,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 20.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 26.50 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 29.13 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 20.44 元作为防守位，并在 26.50 / 29.13 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723918+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 20.44 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 26.50 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 29.13 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 具备较完整的均线多头与放量突破结构，技术分 75.9，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "当前模式重点关注该维度。20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 10.83,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 14.04,
+            "take_profit_pct_1": 0.1798,
+            "take_profit_price_2": 15.43,
+            "take_profit_pct_2": 0.2966,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0406,
+            "suggested_position_max": 0.0583,
+            "max_portfolio_risk": 0.0052,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 10.83 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 14.04 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 15.43 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 技术趋势突破 模式，当前更适合 谨慎追高。规则建议以 10.83 元作为防守位，并在 14.04 / 15.43 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723944+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 10.83 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 14.04 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 15.43 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 具备较完整的均线多头与放量突破结构，技术分 63.2，适合趋势跟踪。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“技术趋势突破”模式，它更强调 均线多头, 放量突破, 趋势延续。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "当前模式重点关注该维度。20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 9.01,
+            "stop_loss_pct": 0.09,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 11.68,
+            "take_profit_pct_1": 0.1798,
+            "take_profit_price_2": 12.84,
+            "take_profit_pct_2": 0.297,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0564,
+            "suggested_position_max": 0.0823,
+            "max_portfolio_risk": 0.0074,
+            "risk_reward_ratio": 2.0,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 9.01 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 11.68 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 12.84 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 技术趋势突破 模式，当前更适合 分批试仓。规则建议以 9.01 元作为防守位，并在 11.68 / 12.84 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 均线多头, 放量突破, 趋势延续，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.723968+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 9.01 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 11.68 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 12.84 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "趋势模式更关注 10 日线和 20 日线，不建议频繁追涨杀跌。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "均线多头",
+          "放量突破",
+          "趋势延续"
+        ]
+      }
+    },
+    "low_position_defense": {
+      "mode_id": "low_position_defense",
+      "display_name": "低位防守埋伏",
+      "description": "筛选处于历史低位、下跌空间有限、无退市风险的保守标的，适合低风险建仓。",
+      "holding_window": "10-20D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 72.39,
+          "holding_window": "10-20D",
+          "reasons": [
+            {
+              "label": "低位特征",
+              "detail": "RSI14 69.2，近 20 日收益 18.2%，价格处于历史相对低位区间，下跌空间有限。"
+            },
+            {
+              "label": "安全边际",
+              "detail": "当前价 22.46，MA60 17.13，技术面显示中长期支撑区域。"
+            },
+            {
+              "label": "催化信号",
+              "detail": "611只股短线走稳 站上五日均线"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 70.68,
+          "holding_window": "10-20D",
+          "reasons": [
+            {
+              "label": "低位特征",
+              "detail": "RSI14 69.9，近 20 日收益 10.8%，价格处于历史相对低位区间，下跌空间有限。"
+            },
+            {
+              "label": "安全边际",
+              "detail": "当前价 9.31，MA60 8.90，技术面显示中长期支撑区域。"
+            },
+            {
+              "label": "催化信号",
+              "detail": "关于股票交易异常波动的公告"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 70.02,
+          "holding_window": "10-20D",
+          "reasons": [
+            {
+              "label": "低位特征",
+              "detail": "RSI14 67.1，近 20 日收益 17.9%，价格处于历史相对低位区间，下跌空间有限。"
+            },
+            {
+              "label": "安全边际",
+              "detail": "当前价 10.82，MA60 8.80，技术面显示中长期支撑区域。"
+            },
+            {
+              "label": "催化信号",
+              "detail": "强势股追踪 主力资金连续5日净流入121股"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 当前股价处于历史低位区间，RSI14 69.2，具备低风险埋伏价值。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "当前模式重点关注该维度。20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 20.21,
+            "stop_loss_pct": 0.1,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 28.09,
+            "take_profit_pct_1": 0.2507,
+            "take_profit_price_2": 31.46,
+            "take_profit_pct_2": 0.4007,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.0173,
+            "suggested_position_max": 0.0232,
+            "max_portfolio_risk": 0.0023,
+            "risk_reward_ratio": 2.5,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 20.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 28.09 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 31.46 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 20.21 元作为防守位，并在 28.09 / 31.46 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724016+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 20.21 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 28.09 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 31.46 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "低位策略以等待为主，切勿因短期不涨而频繁换股。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 当前股价处于历史低位区间，RSI14 69.9，具备低风险埋伏价值。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "当前模式重点关注该维度。20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 8.91,
+            "stop_loss_pct": 0.1,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 12.38,
+            "take_profit_pct_1": 0.2505,
+            "take_profit_price_2": 13.86,
+            "take_profit_pct_2": 0.4,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0336,
+            "suggested_position_max": 0.049,
+            "max_portfolio_risk": 0.0049,
+            "risk_reward_ratio": 2.51,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 8.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 12.38 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 13.86 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 低位防守埋伏 模式，当前更适合 分批试仓。规则建议以 8.91 元作为防守位，并在 12.38 / 13.86 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724041+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 8.91 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 12.38 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 13.86 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "低位策略以等待为主，切勿因短期不涨而频繁换股。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 当前股价处于历史低位区间，RSI14 67.1，具备低风险埋伏价值。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“低位防守埋伏”模式，它更强调 低位蓄势, 安全边际, 基本面改善。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "当前模式重点关注该维度。20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 10.71,
+            "stop_loss_pct": 0.1,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 14.88,
+            "take_profit_pct_1": 0.2504,
+            "take_profit_price_2": 16.66,
+            "take_profit_pct_2": 0.4,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0242,
+            "suggested_position_max": 0.0347,
+            "max_portfolio_risk": 0.0035,
+            "risk_reward_ratio": 2.5,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 10.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 14.88 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 16.66 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 低位防守埋伏 模式，当前更适合 谨慎追高。规则建议以 10.71 元作为防守位，并在 14.88 / 16.66 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 低位蓄势, 安全边际, 基本面改善，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724063+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 10.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 14.88 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 16.66 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "低位策略以等待为主，切勿因短期不涨而频繁换股。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "低位蓄势",
+          "安全边际",
+          "基本面改善"
+        ]
+      }
+    },
+    "quality_value": {
+      "mode_id": "quality_value",
+      "display_name": "蓝筹价值精选",
+      "description": "优选业绩稳定、估值处于历史低位的高质量标的，兼顾大资金建仓迹象，适合中长线埋伏。",
+      "holding_window": "15-30D",
+      "items": [
+        {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "rank": 1,
+          "base_score": 94.3,
+          "event_score": 55.66,
+          "risk_adjusted_score": 70.87,
+          "holding_window": "15-30D",
+          "reasons": [
+            {
+              "label": "基本面质量",
+              "detail": "事件分 55.7，最近催化：611只股短线走稳 站上五日均线。"
+            },
+            {
+              "label": "价值区间",
+              "detail": "当前价 22.46 相对 MA60 17.13，RSI14 69.2，估值处于合理偏低区间。"
+            },
+            {
+              "label": "中长线逻辑",
+              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
+            }
+          ],
+          "event_tags": [
+            "其他",
+            "其他",
+            "其他"
+          ]
+        },
+        {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "rank": 2,
+          "base_score": 72.44,
+          "event_score": 56.59,
+          "risk_adjusted_score": 69.14,
+          "holding_window": "15-30D",
+          "reasons": [
+            {
+              "label": "基本面质量",
+              "detail": "事件分 56.6，最近催化：强势股追踪 主力资金连续5日净流入121股。"
+            },
+            {
+              "label": "价值区间",
+              "detail": "当前价 10.82 相对 MA60 8.80，RSI14 67.1，估值处于合理偏低区间。"
+            },
+            {
+              "label": "中长线逻辑",
+              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
+            }
+          ],
+          "event_tags": [
+            "资金交易",
+            "官方公告",
+            "政策行业"
+          ]
+        },
+        {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "rank": 3,
+          "base_score": 69.41,
+          "event_score": 52.92,
+          "risk_adjusted_score": 64.61,
+          "holding_window": "15-30D",
+          "reasons": [
+            {
+              "label": "基本面质量",
+              "detail": "事件分 52.9，最近催化：关于股票交易异常波动的公告。"
+            },
+            {
+              "label": "价值区间",
+              "detail": "当前价 9.31 相对 MA60 8.90，RSI14 69.9，估值处于合理偏低区间。"
+            },
+            {
+              "label": "中长线逻辑",
+              "detail": "适合低风险建仓，主要依赖基本面改善驱动，不适合短线追涨。"
+            }
+          ],
+          "event_tags": [
+            "官方公告",
+            "官方公告",
+            "其他"
+          ]
+        }
+      ],
+      "stock_details": {
+        "920006": {
+          "symbol": "920006",
+          "name": "晟楠科技",
+          "industry": "军工装备",
+          "thesis": "晟楠科技 基本面质量良好，事件分 55.7，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 100.0,
+              "description": "军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 85.74,
+              "description": "20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+            },
+            {
+              "name": "事件强度",
+              "value": 55.66,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 100,
+              "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "0f84fb26afa8",
+              "title": "611只股短线走稳 站上五日均线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+              "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+            },
+            {
+              "event_id": "3c52590a8df9",
+              "title": "【盘中播报】233只个股突破半年线",
+              "publish_time": "2026-10-16T10:48:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+              "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+            },
+            {
+              "event_id": "8fa370c62c44",
+              "title": "12只北交所股票获融资净买入超百万元",
+              "publish_time": "2026-10-16T10:42:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+              "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 22.46,
+            "stop_loss_price": 19.99,
+            "stop_loss_pct": 0.11,
+            "signal_quality_score": 88.06,
+            "take_profit_price_1": 29.38,
+            "take_profit_pct_1": 0.3081,
+            "take_profit_price_2": 33.58,
+            "take_profit_pct_2": 0.4951,
+            "trailing_stop_price": 20.97,
+            "suggested_position_min": 0.0175,
+            "suggested_position_max": 0.0234,
+            "max_portfolio_risk": 0.0026,
+            "risk_reward_ratio": 2.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 19.99 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 29.38 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 33.58 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 19.99 元作为防守位，并在 29.38 / 33.58 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：611只股短线走稳 站上五日均线"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724103+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 19.99 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 29.38 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 33.58 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "000011": {
+          "symbol": "000011",
+          "name": "深物业A",
+          "industry": "房地产",
+          "thesis": "深物业A 基本面质量良好，事件分 56.6，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 75.93,
+              "description": "20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+            },
+            {
+              "name": "事件强度",
+              "value": 56.59,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 49.91,
+              "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "69d033053b1b",
+              "title": "强势股追踪 主力资金连续5日净流入121股",
+              "publish_time": "2026-10-15T17:40:00",
+              "source": "证券时报网",
+              "source_category": "个股资讯",
+              "event_type": "资金交易",
+              "sentiment": "neutral",
+              "impact_level": "medium",
+              "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+              "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+            },
+            {
+              "event_id": "17079295b6dc",
+              "title": "股票交易异常波动公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "股票交易异常波动公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "f63254c6a360",
+              "title": "000011，直线涨停，四连板！",
+              "publish_time": "2026-10-08T09:57:05",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "政策行业",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+              "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 11.9,
+            "stop_loss_price": 10.59,
+            "stop_loss_pct": 0.11,
+            "signal_quality_score": 71.14,
+            "take_profit_price_1": 15.57,
+            "take_profit_pct_1": 0.3084,
+            "take_profit_price_2": 17.8,
+            "take_profit_pct_2": 0.4958,
+            "trailing_stop_price": 11.2,
+            "suggested_position_min": 0.0244,
+            "suggested_position_max": 0.0351,
+            "max_portfolio_risk": 0.0039,
+            "risk_reward_ratio": 2.8,
+            "action_bias": "谨慎追高",
+            "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 10.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 15.57 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 17.80 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.64,
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 谨慎追高。规则建议以 10.59 元作为防守位，并在 15.57 / 17.80 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724127+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 10.59 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 15.57 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 17.80 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。",
+            "当日已接近涨停，避免尾盘情绪化追高。",
+            "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+          ]
+        },
+        "002244": {
+          "symbol": "002244",
+          "name": "滨江集团",
+          "industry": "房地产",
+          "thesis": "滨江集团 基本面质量良好，事件分 52.9，估值处于历史低位，适合中长线布局。",
+          "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“蓝筹价值精选”模式，它更强调 业绩稳定, 低估值, 主力持仓。",
+          "feature_scores": [
+            {
+              "name": "行业强度",
+              "value": 90.32,
+              "description": "房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+            },
+            {
+              "name": "技术结构",
+              "value": 63.16,
+              "description": "20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+            },
+            {
+              "name": "事件强度",
+              "value": 52.92,
+              "description": "当前模式重点关注该维度。基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+            },
+            {
+              "name": "情绪热度",
+              "value": 56.82,
+              "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+            }
+          ],
+          "recent_events": [
+            {
+              "event_id": "65c522eadd13",
+              "title": "关于股票交易异常波动的公告",
+              "publish_time": "2026-10-08T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于股票交易异常波动的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+            },
+            {
+              "event_id": "2ca9410680f7",
+              "title": "关于竞得土地使用权的公告",
+              "publish_time": "2026-09-30T00:00:00",
+              "source": "巨潮资讯",
+              "source_category": "官方公告",
+              "event_type": "官方公告",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "关于竞得土地使用权的公告",
+              "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+            },
+            {
+              "event_id": "4a038dc66b85",
+              "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+              "publish_time": "2026-10-08T07:11:11",
+              "source": "上海证券报",
+              "source_category": "个股资讯",
+              "event_type": "其他",
+              "sentiment": "neutral",
+              "impact_level": "low",
+              "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+              "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+            }
+          ],
+          "risk_plan": {
+            "price_basis": "当前最新价",
+            "reference_price": 9.9,
+            "stop_loss_price": 8.81,
+            "stop_loss_pct": 0.11,
+            "signal_quality_score": 67.73,
+            "take_profit_price_1": 12.95,
+            "take_profit_pct_1": 0.3081,
+            "take_profit_price_2": 14.8,
+            "take_profit_pct_2": 0.4949,
+            "trailing_stop_price": 9.48,
+            "suggested_position_min": 0.0339,
+            "suggested_position_max": 0.0495,
+            "max_portfolio_risk": 0.0054,
+            "risk_reward_ratio": 2.8,
+            "action_bias": "分批试仓",
+            "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+            "analysis_method": "rule_based_v1",
+            "execution_notes": [
+              "止损线参考 8.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+              "第一止盈位参考 12.95 元，可考虑先兑现部分利润。",
+              "第二止盈位参考 14.80 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+              "更适合分批确认，不建议在信号刚触发时一次性追入。",
+              "价格已处于加速区，建议只用试仓级别仓位。"
+            ]
+          },
+          "ai_risk_analysis": {
+            "status": "rule_stub_ready",
+            "model": null,
+            "confidence": 0.78,
+            "summary": "基于 蓝筹价值精选 模式，当前更适合 分批试仓。规则建议以 8.81 元作为防守位，并在 12.95 / 14.80 元分批兑现。",
+            "highlights": [
+              "当前模式更看重 业绩稳定, 低估值, 主力持仓，因此执行上更适合轻仓试错、确认后再逐步加码。",
+              "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+              "最近的重要事件提要：关于股票交易异常波动的公告"
+            ],
+            "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+            "source": "rules",
+            "generated_at": "2026-10-16T03:43:58.724151+00:00"
+          },
+          "risk_controls": [
+            "止损线参考 8.81 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+            "第一止盈位参考 12.95 元，可考虑先兑现部分利润。",
+            "第二止盈位参考 14.80 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+            "更适合分批确认，不建议在信号刚触发时一次性追入。",
+            "价格已处于加速区，建议只用试仓级别仓位。",
+            "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+            "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+            "中长线持仓需耐心等待基本面驱动，避免追涨杀跌。"
+          ]
+        }
+      },
+      "selection_meta": {
+        "candidate_count": 3,
+        "preferred_features": [
+          "业绩稳定",
+          "低估值",
+          "主力持仓"
+        ]
+      }
+    }
+  },
+  "candidate_pool": [
+    {
+      "symbol": "920006",
+      "name": "晟楠科技",
+      "industry": "军工装备",
+      "rank": 1,
+      "base_score": 94.3,
+      "event_score": 55.66,
+      "risk_adjusted_score": 91.57,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "军工装备 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "晟楠科技 近 20 日收益 18.2%，技术分 85.7。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "611只股短线走稳 站上五日均线"
+        }
+      ],
+      "event_tags": [
+        "其他",
+        "其他",
+        "其他"
+      ]
+    },
+    {
+      "symbol": "000011",
+      "name": "深物业A",
+      "industry": "房地产",
+      "rank": 2,
+      "base_score": 72.44,
+      "event_score": 56.59,
+      "risk_adjusted_score": 70.89,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "房地产 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "深物业A 近 20 日收益 17.9%，技术分 75.9。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "强势股追踪 主力资金连续5日净流入121股"
+        }
+      ],
+      "event_tags": [
+        "资金交易",
+        "官方公告",
+        "政策行业"
+      ]
+    },
+    {
+      "symbol": "002244",
+      "name": "滨江集团",
+      "industry": "房地产",
+      "rank": 3,
+      "base_score": 69.41,
+      "event_score": 52.92,
+      "risk_adjusted_score": 67.45,
+      "holding_window": "3-5D",
+      "reasons": [
+        {
+          "label": "行业轮动",
+          "detail": "房地产 当前仍在强势行业监控池内，优先级高于普通板块。"
+        },
+        {
+          "label": "技术结构",
+          "detail": "滨江集团 近 20 日收益 10.8%，技术分 63.2。"
+        },
+        {
+          "label": "事件辅助",
+          "detail": "关于股票交易异常波动的公告"
+        }
+      ],
+      "event_tags": [
+        "官方公告",
+        "官方公告",
+        "其他"
+      ]
+    }
+  ],
+  "stock_details": {
+    "920006": {
+      "symbol": "920006",
+      "name": "晟楠科技",
+      "industry": "军工装备",
+      "thesis": "晟楠科技 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 91.6，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 100.0,
+          "description": "当前模式重点关注该维度。军工装备 当前位于强势行业监控池，行业排序第 1 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 85.74,
+          "description": "20 日收益 18.2%，量能倍率 4.09，MA10 / MA20 / MA60 为 17.78 / 17.91 / 17.13。"
+        },
+        {
+          "name": "事件强度",
+          "value": 55.66,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 100,
+          "description": "日内涨幅 30.0%，换手 24.0%，量比 7.42。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "0f84fb26afa8",
+          "title": "611只股短线走稳 站上五日均线",
+          "publish_time": "2026-10-16T10:48:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "10月16日突破五日均线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 五日均线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 18.41 21.42 16.32 300581 晨曦航空 20.02 7.51 10.30",
+          "link": "http://finance.eastmoney.com/a/202610163898123728.html"
+        },
+        {
+          "event_id": "3c52590a8df9",
+          "title": "【盘中播报】233只个股突破半年线",
+          "publish_time": "2026-10-16T10:48:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "10月16日突破半年线个股乖离率排名 证券代码 证券简称 今日涨跌幅（%） 今日换手率（%） 半年线（元） 最新价（元） 乖离率（%） 920006 晟楠科技 23.96 17.89 17.35 21.42 23.45 603168 莎普爱思 10.05 5.59 5.67 6.24",
+          "link": "http://finance.eastmoney.com/a/202610163898123090.html"
+        },
+        {
+          "event_id": "8fa370c62c44",
+          "title": "12只北交所股票获融资净买入超百万元",
+          "publish_time": "2026-10-16T10:42:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "150.15 3.98 电力设备 920284 灵鸽科技 2.34 2333.50 144.25 1.90 机械设备 920726 朱老六 1.01 996.39 141.53 1.11 食品饮料 920207 众诚科技 -2.93 1193.84 139.58 1.05 计算机 920006",
+          "link": "http://finance.eastmoney.com/a/202610163898114596.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 22.46,
+        "stop_loss_price": 20.71,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 88.06,
+        "take_profit_price_1": 25.61,
+        "take_profit_pct_1": 0.1402,
+        "take_profit_price_2": 27.71,
+        "take_profit_pct_2": 0.2337,
+        "trailing_stop_price": 20.97,
+        "suggested_position_min": 0.0296,
+        "suggested_position_max": 0.0396,
+        "max_portfolio_risk": 0.0031,
+        "risk_reward_ratio": 1.8,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 20.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 25.61 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 27.71 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+          "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.58,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 20.71 元作为防守位，并在 25.61 / 27.71 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 9.61，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：611只股短线走稳 站上五日均线"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-10-16T03:43:58.723575+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 20.71 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 25.61 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 27.71 元，若继续上行则把跟踪止损上移到 20.97 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "信号质量较高，可在纪律范围内使用区间上沿仓位。",
+        "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。",
+        "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+      ]
+    },
+    "000011": {
+      "symbol": "000011",
+      "name": "深物业A",
+      "industry": "房地产",
+      "thesis": "深物业A 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 70.9，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 90.32,
+          "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 75.93,
+          "description": "20 日收益 17.9%，量能倍率 1.54，MA10 / MA20 / MA60 为 11.29 / 10.15 / 8.80。"
+        },
+        {
+          "name": "事件强度",
+          "value": 56.59,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 49.91,
+          "description": "日内涨幅 10.0%，换手 11.8%，量比 1.43。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "69d033053b1b",
+          "title": "强势股追踪 主力资金连续5日净流入121股",
+          "publish_time": "2026-10-15T17:40:00",
+          "source": "证券时报网",
+          "source_category": "个股资讯",
+          "event_type": "资金交易",
+          "sentiment": "neutral",
+          "impact_level": "medium",
+          "summary": "百亚股份 21 19.70 9.56 44.43 600519 贵州茅台 5 9.07 4.04 4.55 301536 星宸科技 5 5.34 5.12 -2.19 605058 澳弘电子 6 4.15 5.77 31.41 603893 瑞芯微 5 3.44 3.54 -4.79 000011",
+          "link": "http://finance.eastmoney.com/a/202610153897189442.html"
+        },
+        {
+          "event_id": "17079295b6dc",
+          "title": "股票交易异常波动公告",
+          "publish_time": "2026-09-30T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "股票交易异常波动公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=000011&announcementId=1225588392&orgId=gssz0000011&announcementTime=2026-09-30"
+        },
+        {
+          "event_id": "f63254c6a360",
+          "title": "000011，直线涨停，四连板！",
+          "publish_time": "2026-10-08T09:57:05",
+          "source": "上海证券报",
+          "source_category": "个股资讯",
+          "event_type": "政策行业",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "今日早盘，A股房地产板块异动拉升，陆家嘴、深物业A（000011）开盘直线涨停，世联行、大名城、华丽家族等个股跟涨。深物业A四连板，截至发稿报13.46元/股。 近期房地产政策持续推进，北京、上海、广州相继落地商品住房销售制度改革地方细则。",
+          "link": "http://finance.eastmoney.com/a/202610083889248893.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 11.9,
+        "stop_loss_price": 10.97,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 71.14,
+        "take_profit_price_1": 13.59,
+        "take_profit_pct_1": 0.142,
+        "take_profit_price_2": 14.69,
+        "take_profit_pct_2": 0.2345,
+        "trailing_stop_price": 11.2,
+        "suggested_position_min": 0.0413,
+        "suggested_position_max": 0.0594,
+        "max_portfolio_risk": 0.0046,
+        "risk_reward_ratio": 1.82,
+        "action_bias": "谨慎追高",
+        "action_note": "当前价格已经偏离均线较多，若参与建议只做试仓，不适合一次性重仓。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 10.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 14.69 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.58,
+        "summary": "基于 综合研判 模式，当前更适合 谨慎追高。规则建议以 10.97 元作为防守位，并在 13.59 / 14.69 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 6.31，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：强势股追踪 主力资金连续5日净流入121股"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-10-16T03:43:58.723621+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 10.97 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 13.59 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 14.69 元，若继续上行则把跟踪止损上移到 11.20 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "近期波动偏高，仓位应更偏防守，优先保留机动资金。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。",
+        "当日已接近涨停，避免尾盘情绪化追高。",
+        "近 10 日波动偏大，更适合降低暴露而非加杠杆。"
+      ]
+    },
+    "002244": {
+      "symbol": "002244",
+      "name": "滨江集团",
+      "industry": "房地产",
+      "thesis": "滨江集团 同时满足行业、技术、消息和情绪四个维度的均衡要求，当前模式分 67.5，适合作为默认候选股跟踪。",
+      "market_context": "当前市场重点围绕 军工装备, 汽车零部件, 军工电子, 房地产, 通用设备 展开。当前查看的是“综合研判”模式，它更强调 行业轮动, 技术趋势, 新闻催化, 情绪热度。",
+      "feature_scores": [
+        {
+          "name": "行业强度",
+          "value": 90.32,
+          "description": "当前模式重点关注该维度。房地产 当前位于强势行业监控池，行业排序第 4 位。 该维度反映主线持续性、板块扩散能力和资金共识。"
+        },
+        {
+          "name": "技术结构",
+          "value": 63.16,
+          "description": "20 日收益 10.8%，量能倍率 0.47，MA10 / MA20 / MA60 为 9.56 / 8.90 / 8.90。"
+        },
+        {
+          "name": "事件强度",
+          "value": 52.92,
+          "description": "基于官方公告、个股资讯和券商研报的来源质量、时效性与关键词权重综合计算。 得分越高，说明近期催化越明确。"
+        },
+        {
+          "name": "情绪热度",
+          "value": 56.82,
+          "description": "日内涨幅 6.3%，换手 1.4%，量比 1.90。 该维度主要衡量资金活跃度、接力意愿和短线拥挤程度。"
+        }
+      ],
+      "recent_events": [
+        {
+          "event_id": "65c522eadd13",
+          "title": "关于股票交易异常波动的公告",
+          "publish_time": "2026-10-08T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于股票交易异常波动的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225590783&orgId=9900004730&announcementTime=2026-10-08"
+        },
+        {
+          "event_id": "2ca9410680f7",
+          "title": "关于竞得土地使用权的公告",
+          "publish_time": "2026-09-30T00:00:00",
+          "source": "巨潮资讯",
+          "source_category": "官方公告",
+          "event_type": "官方公告",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "关于竞得土地使用权的公告",
+          "link": "http://www.cninfo.com.cn/new/disclosure/detail?stockCode=002244&announcementId=1225587854&orgId=9900004730&announcementTime=2026-09-30"
+        },
+        {
+          "event_id": "4a038dc66b85",
+          "title": "上证早知道｜002244，机构净买入5105.55万元；688110，预计利基存储涨价周期有望延续",
+          "publish_time": "2026-10-08T07:11:11",
+          "source": "上海证券报",
+          "source_category": "个股资讯",
+          "event_type": "其他",
+          "sentiment": "neutral",
+          "impact_level": "low",
+          "summary": "资金观潮 ○机构席位净买入滨江集团 9月30日交易公开信息显示，滨江集团（002244）获机构席位净买入5105.55万元，占总成交额比例3.02%。 中国银河证券研报认为，2026年上半年，滨江集团实现销售金额431.5亿元，在全国房企排名第9，民营房企排名第1。",
+          "link": "http://finance.eastmoney.com/a/202610083889044930.html"
+        }
+      ],
+      "risk_plan": {
+        "price_basis": "当前最新价",
+        "reference_price": 9.9,
+        "stop_loss_price": 9.13,
+        "stop_loss_pct": 0.078,
+        "signal_quality_score": 67.73,
+        "take_profit_price_1": 11.29,
+        "take_profit_pct_1": 0.1404,
+        "take_profit_price_2": 12.21,
+        "take_profit_pct_2": 0.2333,
+        "trailing_stop_price": 9.48,
+        "suggested_position_min": 0.0574,
+        "suggested_position_max": 0.0837,
+        "max_portfolio_risk": 0.0065,
+        "risk_reward_ratio": 1.81,
+        "action_bias": "分批试仓",
+        "action_note": "价格强于短均线，但位置并不低，适合等待回踩或用更小仓位跟踪。",
+        "analysis_method": "rule_based_v1",
+        "execution_notes": [
+          "止损线参考 9.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+          "第一止盈位参考 11.29 元，可考虑先兑现部分利润。",
+          "第二止盈位参考 12.21 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+          "更适合分批确认，不建议在信号刚触发时一次性追入。",
+          "价格已处于加速区，建议只用试仓级别仓位。"
+        ]
+      },
+      "ai_risk_analysis": {
+        "status": "rule_stub_ready",
+        "model": null,
+        "confidence": 0.72,
+        "summary": "基于 综合研判 模式，当前更适合 分批试仓。规则建议以 9.13 元作为防守位，并在 11.29 / 12.21 元分批兑现。",
+        "highlights": [
+          "当前模式更看重 行业轮动, 技术趋势, 新闻催化, 情绪热度，因此执行上更适合轻仓试错、确认后再逐步加码。",
+          "近 10 日波动率为 4.34，因此更适合分批执行，不建议脱离纪律临时放大暴露。",
+          "最近的重要事件提要：关于股票交易异常波动的公告"
+        ],
+        "next_step": "后续接入 AI 后，可在这一区域输出个性化止盈止损解释和执行节奏建议。",
+        "source": "rules",
+        "generated_at": "2026-10-16T03:43:58.723653+00:00"
+      },
+      "risk_controls": [
+        "止损线参考 9.13 元，跌破后优先缩回观察仓，若次日无法收回则考虑离场。",
+        "第一止盈位参考 11.29 元，可考虑先兑现部分利润。",
+        "第二止盈位参考 12.21 元，若继续上行则把跟踪止损上移到 9.48 元附近。",
+        "更适合分批确认，不建议在信号刚触发时一次性追入。",
+        "价格已处于加速区，建议只用试仓级别仓位。",
+        "单票宜轻仓起步，不建议在信号刚触发时一次性重仓。",
+        "若收盘跌破 20 日线且成交额放大，优先主动减仓。"
+      ]
+    }
+  },
+  "selection_meta": {
+    "industry_source": "ths_industry_summary",
+    "constituent_scan_mode": "行业前 8 成分股全扫",
+    "total_universe_size": 23,
+    "news_watchlist_size": 17,
+    "scan_summary": [
+      {
+        "sector_name": "军工装备",
+        "sector_code": "881166",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "汽车零部件",
+        "sector_code": "881126",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "军工电子",
+        "sector_code": "881276",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "房地产",
+        "sector_code": "881153",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      },
+      {
+        "sector_name": "通用设备",
+        "sector_code": "881117",
+        "scanned_count": 8,
+        "data_source": "ths_industry_constituents"
+      }
+    ]
+  }
+}
